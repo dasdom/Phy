@@ -1,0 +1,1200 @@
+/* Ebene 0: Begruessungsbildschirm */
+	"Physik Formeln" = "Physics Formulas";
+	"Mathe Formeln" = "Math Formulas";
+	"Chemische Elemente" = "Table of Elements";
+    "Formeln üben (Werbung)" = "Practice Formulas (Ad)";
+
+/* Ebene 1: */
+	/* Physik Formeln: */
+		"Mechanik" = "Mechanics";
+		"Fluidmechanik" = "Fluidmechanics";
+		"Relativitätstheorie" = "Relativity";
+		"Wärme" = "Thermodynamics";
+		"Thermodynamik" = "Thermodynamics";
+		"Elektrodynamik" = "Electrodynamics";
+		"Strahlenoptik" = "Geometrical Optics";
+		"Wellenoptik" = "Wave Optics";
+		"Quantenmechanik" = "Quantum Mechanics";
+		"Atomphysik" = "Atom Physics";
+		"Physikalische Konstanten" = "Physics Constants";
+		"Dezimale Vorsilben" = "Decimal Prefixes";
+		"Einheiten" = "Units";
+		"Dummy-Rechner" = "Dummy Calculator";
+
+	/* Mathe Formeln */
+		"Kegelschnitte" = "Conic Sections";
+		"Koordinatensysteme" = "Coordinate Systems";
+		"Statistik" = "Statistics";
+		"Vektoren" = "Vectors";
+		"Komplexe Zahlen" = "Complex Numbers";
+		"Taylorreihen" = "Taylor Series";
+		"Stammfunktionen" = "Integrals";
+		
+	/* Chemische Elemente */
+		"1   Wasserstoff" =		"1   Hydrogen";
+		"2   Helium" =			"2   Helium";
+		"3   Lithium" =			"3   Lithium";
+		"4   Beryllium" =		"4   Beryllium";
+		"5   Bor" =				"5   Boron";
+		"6   Kohlenstoff" =		"6   Carbon";
+		"7   Stickstoff" =		"7   Nitrogen";
+		"8   Sauerstoff" =		"8   Oxygen";
+		"9   Fluor" =			"9   Fluorine";
+		"10  Neon" =			"10  Neon";
+		"11  Natrium" =			"11  Sodium";
+		"12  Magnesium" =		"12  Magnesium";
+		"13  Aluminium" =		"13  Aluminium";
+		"14  Silicium" =		"14  Silicium";
+		"15  Phosphor" =		"15  Phosphor";
+		"16  Schwefel" =		"16  Sulfur";
+		"17  Chlor" =			"17  Chlorine";
+		"18  Argon" =			"18  Argon";
+		"19  Kalium" =			"19  Potassium";
+		"20  Calcium" =			"20  Calcium";
+		"21  Scandium" =		"21  Scandium";
+		"22  Titan" =			"22  Titanium";
+		"23  Vanadin" =			"23  Vanadium";
+		"24  Chrom" =			"24  Chromium";
+		"25  Mangan" =			"25  Manganese";
+		"26  Eisen" =			"26  Iron";
+		"27  Kobalt" =			"27  Cobalt";
+		"28  Nickel" =			"28  Nickel";
+		"29  Kupfer" =			"29  Copper";
+		"30  Zink" =			"30  Zinc";
+		"31  Gallium" =			"31  Gallium";
+		"32  Germanium" =		"32  Germanium";
+		"33  Arsen" =			"33  Arsenic";
+		"34  Selen" =			"34  Selenium";
+		"35  Brom" =			"35  Bromine";
+		"36  Krypton" =			"36  Krypton";
+		"37  Rubidium" =		"37  Rubidium";
+		"38  Strontium" =		"38  Strontium";
+		"39  Yttrium" =			"39  Yttrium";
+		"40  Zirkonium" =		"40  Zirconium";
+		"41  Niob" =			"41  Niobium";
+		"42  Molybdän" =		"42  Molybdenium";
+		"43  Technetium" =		"43  Technetium";
+		"44  Ruthenium" =		"44  Ruthenium";
+		"45  Rhodium" =			"45  Rhodium";
+		"46  Palladium" =		"46  Palladium";
+		"47  Silber" =			"47  Silver";
+		"48  Cadmium" =			"48  Cadmium";
+		"49  Indium" =			"49  Indium";
+		"50  Zinn" =			"50  Tin";
+		"51  Antimon" =			"51  Antimony";
+		"52  Tellur" =			"52  Tellurium";
+		"53  Jod" =				"53  Iodine";
+		"54  Xenon" =			"54  Xenon";
+		"55  Cäsium" =			"55  Caesium";
+		"56  Barium" =			"56  Barium";
+		"57  Lanthan" =			"57  Lanthanum";
+		"58  Cer" =				"58  Cerium";
+		"59  Praseodym" =		"59  Praseodymium";
+		"60  Neodym" =			"60  Neodymium";
+		"61  Promethium" =		"61  Promethium";
+		"62  Samarium" =		"62  Samarium";
+		"63  Europium" =		"63  Europium";
+		"64  Gadolinium" =		"64  Gadolinium";
+		"65  Terbium" =			"65  Terbium";
+		"66  Dysprosium" =		"66  Dysprosium";
+		"67  Holmium" =			"67  Holmium";
+		"68  Erbium" =			"68  Erbium";
+		"69  Thulium" =			"69  Thulium";
+		"70  Ytterbium" =		"70  Ytterbium";
+		"71  Lutetium" =		"71  Lutetium";
+		"72  Hafnium" =			"72  Hafnium";
+		"73  Tantal" =			"73  Tantalum";
+		"74  Wolfram" =			"74  Wolfram";
+		"75  Rhenium" =			"75  Rhenium";
+		"76  Osmium" =			"76  Osmium";
+		"77  Iridium" =			"77  Iridium";
+		"78  Platin" =			"78  Platinum";
+		"79  Gold" =			"79  Gold";
+		"80  Quecksilber" =		"80  Mercury";
+		"81  Thallium" =		"81  Thallium";
+		"82  Blei" =			"82  Lead";
+		"83  Wismut" =			"83  Bismuth";
+		"84  Polonium" =		"84  Polonium";
+		"85  Astat" =			"85  Astatine";
+		"86  Radon" =			"86  Radon";
+		"87  Francium" =		"87  Francium";
+		"88  Radium" =			"88  Radium";
+		"89  Actinium" =		"89  Actinium";
+		"90  Thorium" =			"90  Thorium";
+		"91  Protactinium" =	"91  Protactinium";
+		"92  Uran" =			"92  Uranium";
+		"93  Neptunium" =		"93  Neptunium";
+		"94  Plutonium" =		"94  Plutonium";
+		"95  Americium" =		"95  Americium";
+		"96  Curium" =			"96  Curium";
+		"97  Berkelium" =		"97  Berkelium";
+		"98  Californium" =		"98  Californium";
+		"99  Einsteinium" =		"99  Einsteinium";
+		"100 Fermium" =			"100 Fermiun";
+		"101 Mendelevium" =		"101 Mendelevium";
+		"102 Nobelium" =		"102 Nobelium";
+		"103 Lawrencium" =		"103 Lawrencium";
+		
+        "zurück"        = "back";
+        
+        "Name: %@"      = "Name: %@";
+        "Masse: %@"     = "Mass: %@";
+        "El.-Konf.: %@" = "El. Conf.: %@";
+        "Periode: %@"   = "Period: %@";
+        "Gruppe: %@"    = "Group: %@";
+        "Pauling-El.neg.: %@" = "Pauling El.Neg.: %@";
+
+/* Ebene 2 */
+	/* Namen der Elemente */
+		"Wasserstoff" =		"Hydrogen";
+		"Helium" =			"Helium";
+		"Lithium" =			"Lithium";
+		"Beryllium" =		"Beryllium";
+		"Bor" =				"Boron";
+		"Kohlenstoff" =		"Carbon";
+		"Stickstoff" =		"Nitrogen";
+		"Sauerstoff" =		"Oxygen";
+		"Fluor" =			"Fluorine";
+		"Neon" =			"Neon";
+		"Natrium" =			"Sodium";
+		"Magnesium" =		"Magnesium";
+		"Aluminium" =		"Aluminium";
+		"Silicium" =		"Silicium";
+		"Phosphor" =		"Phosphor";
+		"Schwefel" =		"Sulfur";
+		"Chlor" =			"Chlorine";
+		"Argon" =			"Argon";
+		"Kalium" =			"Potassium";
+		"Calcium" =			"Calcium";
+		"Scandium" =		"Scandium";
+		"Titan" =			"Titanium";
+		"Vanadin" =			"Vanadium";
+		"Chrom" =			"Chromium";
+		"Mangan" =			"Manganese";
+		"Eisen" =			"Iron";
+		"Kobalt" =			"Cobalt";
+		"Nickel" =			"Nickel";
+		"Kupfer" =			"Copper";
+		"Zink" =			"Zinc";
+		"Gallium" =			"Gallium";
+		"Germanium" =		"Germanium";
+		"Arsen" =			"Arsenic";
+		"Selen" =			"Selenium";
+		"Brom" =			"Bromine";
+		"Krypton" =			"Krypton";
+		"Rubidium" =		"Rubidium";
+		"Strontium" =		"Strontium";
+		"Yttrium" =			"Yttrium";
+		"Zirkonium" =		"Zirconium";
+		"Niob" =			"Niobium";
+		"Molybdän" =		"Molybdenium";
+		"Technetium" =		"Technetium";
+		"Ruthenium" =		"Ruthenium";
+		"Rhodium" =			"Rhodium";
+		"Palladium" =		"Palladium";
+		"Silber" =			"Silver";
+		"Cadmium" =			"Cadmium";
+		"Indium" =			"Indium";
+		"Zinn" =			"Tin";
+		"Antimon" =			"Antimony";
+		"Tellur" =			"Tellurium";
+		"Jod" =				"Iodine";
+		"Xenon" =			"Xenon";
+		"Cäsium" =			"Caesium";
+		"Barium" =			"Barium";
+		"Lanthan" =			"Lanthanum";
+		"Cer" =				"Cerium";
+		"Praseodym" =		"Praseodymium";
+		"Neodym" =			"Neodymium";
+		"Promethium" =		"Promethium";
+		"Samarium" =		"Samarium";
+		"Europium" =		"Europium";
+		"Gadolinium" =		"Gadolinium";
+		"Terbium" =			"Terbium";
+		"Dysprosium" =		"Dysprosium";
+		"Holmium" =			"Holmium";
+		"Erbium" =			"Erbium";
+		"Thulium" =			"Thulium";
+		"Ytterbium" =		"Ytterbium";
+		"Lutetium" =		"Lutetium";
+		"Hafnium" =			"Hafnium";
+		"Tantal" =			"Tantalum";
+		"Wolfram" =			"Wolfram";
+		"Rhenium" =			"Rhenium";
+		"Osmium" =			"Osmium";
+		"Iridium" =			"Iridium";
+		"Platin" =			"Platinum";
+		"Gold" =			"Gold";
+		"Quecksilber" =		"Mercury";
+		"Thallium" =		"Thallium";
+		"Blei" =			"Lead";
+		"Wismut" =			"Bismuth";
+		"Polonium" =		"Polonium";
+		"Astat" =			"Astatine";
+		"Radon" =			"Radon";
+		"Francium" =		"Francium";
+		"Radium" =			"Radium";
+		"Actinium" =		"Actinium";
+		"Thorium" =			"Thorium";
+		"Protactinium" =	"Protactinium";
+		"Uran" =			"Uranium";
+		"Neptunium" =		"Neptunium";
+		"Plutonium" =		"Plutonium";
+		"Americium" =		"Americium";
+		"Curium" =			"Curium";
+		"Berkelium" =		"Berkelium";
+		"Californium" =		"Californium";
+		"Einsteinium" =		"Einsteinium";
+		"Fermium" =			"Fermiun";
+		"Mendelevium" =		"Mendelevium";
+		"Nobelium" =		"Nobelium";
+		"Lawrencium" =		"Lawrencium";
+
+		"Ordnungszahl:" = "Atomic Number:";
+		"Atommasse:" = "Atomic Mass:";
+		"El.-Konfig.:" = "El.-Config.:";
+		"Periode:" = "Period:";
+		"Gruppe:" = "Group:";
+        "Pauling-El.neg.:"  = "Pauling El. Neg.";
+        "wich. radioak. Isotop:" = "Most Imp.Radio.Iso.";
+        "Zerfallsart:"      = "Decay Type";
+        "Lebensdauer:"      = "Livetime";
+        "Phase (Normbed.):" = "Phase (norm.)";
+        "Kristallstruktur:" = "Cristal Structure";
+        "Gas"               = "Gas";
+        "Halbmetall"        = "Half Metal";
+        "Halbleiter"        = "Semiconductor";
+        "Flüssigkeit"       = "Fluid";
+        "Diamant"           = "Diamant";
+        "Metall"            = "Metal";
+        "Hauptgr. I"        = "Main Group I";
+        "Hauptgr. II"       = "Main Group II";
+        "Hauptgr. III"      = "Main Group III";
+        "Hauptgr. IV"       = "Main Group IV";
+        "Hauptgr. V"        = "Main Group V";
+        "Hauptgr. VI"       = "Main Group VI";
+        "Hauptgr. VII"      = "Main Group VII";
+        "Hauptgr. VIII"     = "Main Group VIII";
+        "Nebengr. Ia"       = "Second. Group Ia";
+        "Nebengr. IIa"      = "Second. Group IIa";
+        "Nebengr. IIIa"     = "Second. Group IIIa";
+        "Nebengr. IVa"      = "Second. Group IVa";
+        "Nebengr. Va"       = "Second. Group Va";
+        "Nebengr. VIa"      = "Second. Group VIa";
+        "Nebengr. VIIa"     = "Second. Group VIIa";
+        "Nebengr. VIIIa"    = "Second. Group VIIIa";
+        "kubischraumzentriert" = "Body-centered Cubic";
+        "kubischfl.zentriert" = "Face-centered Cubic";
+        "rhomboedrisch"     = "Rhomboedric";
+        "hexagonal, Diamant" = "Hexagonal, Diamant";
+        "kubisch"           = "Cubic";
+        "Sauerst. Molekül"  = "Oxigen Molecule";
+        "orthorhombisch"    = "Orthorombic";
+        "orthorhomb., monoklin"  = "Orthorhomb., Monoklin";
+        "Ferromagnetikum"   = "Ferromagneticum";
+        "tetragonal"        = "Tetragonal";
+        "tetragonal, Diamant" = "Tetragonal, Diamant";
+        "Lanthanide"        = "Lanthanids";
+        "Flüssigkeit, Metall" = "Fluid, Metal";
+        "monoklin"          = "Monoklin";
+        "Actinide"          = "Actinids";
+        "Masse"             = "Mass";
+        "Phase (Normbed.)"  = "Phase (norm.)";
+        "Pauling-Skala"     = "Pauling";
+
+/* Ebene 2: */
+	/* Mechanik: */
+		//Newtonsche Gesetze
+		"Newtonsche Gesetze" = "Newtons laws"; // Sektion Titel
+		"1. Newtonsches Gesetz" = "1st Newton law";
+		"2. Newtonsches Gesetz" = "2nd Newton law";
+		"3. Newtonsches Gesetz" = "3rd Newton law";
+		"Keplerschen Gesetze" = "Keplers laws";
+		"1. Keplersches Gesetz" = "1st Kepler law";
+		"2. Keplersches Gesetz" = "2nd Kepler law";
+		"3. Keplersches Gesetz" = "3rd Kepler law";
+		
+		//unbeschleunigte Bewegung
+		"unbeschleunigte Bewegung" = "Non-Accelerated Movement";  //Sektion Titel
+		"Geschwindigkeit" = "Velocity";
+		"Impuls" = "Momentum";
+		"Impulserhaltungssatz" = "Conservation of Momentum";
+		"Kraft" = "Force";
+        "konservative Kraft" = "Conservative Force";
+		"Kraftstoss" = "Impulse"; //???
+		"Reibungskraft" = "Friction Force"; 
+		"Hangabtriebskraft" = "Downhill-slope Force"; 
+		"Normalkraft" = "Normal Force";
+		"Arbeit allgemein" = "General Work";
+		"Arbeit von A nach B" = "Work Along A To B";
+		"Arbeit" = "Work";
+		"Arbeit bei konstanter Kraft" = "Work With Constant Force"; 
+		"Leistung" = "Power";
+		"kinetische Energie" = "Kinetic Energy";
+        "potentielle Energie" = "Potential Wnergy";
+		
+		//konstante Beschleunigung
+		"konstante Beschleunigung" = "Constant Acceleration";  //Sektion Titel 
+		"Beschleunigung" = "Acceleration";
+		"moment. Geschwindigkeit" = "Actual Velocity";
+		"(momentane) Geschwindigkeit" = "Actual Velocity";
+		"zurückgelegter Weg" = "Passed Distance";
+		"Bremsweg" = "Deceleration Distance";
+		"Bremsdauer" = "Deceleration Time";
+		
+		//raeumliche Bewegung
+		"räumliche Bewegung" = "Movement in 3D"; //Sekton Titel
+		"Beschleunigung." = "Acceleration.";
+		
+		//Bewegung im Gravitationsfeld
+		"Bewegung im Gravitationsfeld" = "Movement in Gravitational Field";  //Sektion Titel
+		"Gewichtskraft" = "Weight"; 
+		"Gravitationskraft" = "Gravitational Force";
+		"Gravitationspotential" = "Gravitational Potential";
+		"Fluchtgeschwindigkeit" = "Escape Velocity";
+		"Fluchtgeschwindigkeit der Erde" = "Escape Velocity On Earth";
+		"freier Fall" = "Free Fall";
+		"Freier Fall" = "Free Fall";
+		
+		//schiefer Wurf
+		"schiefer Wurf" = "Oblique Throw"; //Sektion Titel
+		"Beschleunigung (schiefer Wurf)" = "Acceleration (Oblique Throw)";
+		"x(t) (schiefer Wurf)" = "x(t) (Oblique Throw)";
+		"y(t) (schiefer Wurf)" = "y(t) (Oblique Throw)";
+		"horizontale Geschwindigkeit (schiefer Wurf)" = "Horizontal Velocity (Oblique Throw)";
+		"vertikale Geschwindigkeit (schiefer Wurf)" = "Vertical Velocity (Oblique Throw)";
+		"Komponentengleichung (schiefer Wurf)" = "Components Equation (Oblique Throw)";
+		"Maximalhöhe (schiefer Wurf)" = "Maximal Height (Oblique Throw)";
+		"Maximalweite (schiefer Wurf)" = "Maximal Range (Oblique Throw)";
+		"Steigzeit (schiefer Wurf)" = "Rise Time (Oblique Throw)";
+		"Wurfdauer (schiefer Wurf)" = "Throw Time (Oblique Throw)";
+		
+		"horizontale Geschwindigkeit" = "Horizontal Velocity";
+		"vertikale Geschwindigkeit" = "Vertical Velocity";
+		"Komponentengleichung" = "Components Equation";
+		"Maximalhöhe (schiefer Wurf)" = "Maximal Height (Oblique Throw)";
+		"Maximalweite (schiefer Wurf)" = "Maximal Range (Oblique Throw)";
+		"Steigzeit (schiefer Wurf)" = "Rise Time (Oblique Throw)";
+		"Wurfdauer (schiefer Wurf)" = "Throw Time (Oblique Throw)";
+		
+		//Drehbewegung
+		"Drehbewegung" = "Circular Movement";  //Sektion Titel
+		"Drehimpuls" = "Circular Momentum";
+		"Drehimpulserhaltungssatz" = "Conservation of Circular Momentum";
+		"Drehmoment" = "Torsional Moment"; 
+		"Trägheitsmoment" = "Moment of Inertia"; 
+		"Satz von Steiner" = "Steiners Theorem"; // ??
+		"Rotationsarbeit" = "Rotation Work";
+		"Rotationsenergie" = "Rotation Energy";
+		"Zentripetalkraft" = "Centripetal Force";
+		"Kreisgeschwindigkeit" = "Velocity In Circular Motion";
+
+		//harmonischer Oszillator
+		"harmonischer Oszillator" = "Harmonic Oscillator";  //Sektion Titel
+		"Differentialgleichung (harmonischer Oszillator)" = "Differential Equation (Harmonic Oscillator";
+		"Bewegungsgleichung (harmonischer Oszillator)" = "Equation of Motion (Harmonic Oscillator";
+		"Periodendauer (harmonischer Oszillator)" = "Periodic Time (Harmonic Oscillator)";
+        "Periodendauer (Fadenpendel)" = "Periodic Time (Pendulum)";
+        "Kreisfrequenz" = "Angular Frequency";
+		"potentielle Energie (harmonischer Oszillator)" = "Potential Energy (Harmonic Oscillator)";
+		"potentielle Energie in Bodennähe" = "Potential Energy Near Ground";
+		"potentielle Energie eines Oszillators" = "Potential Energy of a Oscillator";
+		"Federkraft" = "Hooks Law";
+
+        //Lagrange Formalismus
+        "Lagrange Formalismus" = "Lagrange formalism";
+        "Prinzip der kleinsten Wirkung" = "Principal of Least Action";
+        "Lagrangefunktion" = "Lagrange Function";
+        "Randbedingung" = "Boundary Condition";
+        "Euler-Lagrange-Gleichungen" = "Euler-Lagrange-Equations";
+        "Euler-Lagrange-Gleichungen (nicht-konservatives System)" = "Euler-Lagrange-Equations (Not-Conservative System)";
+
+	/* Relativitaetstheorie */
+		"Lorentz-Transformation" = "Lorentz Transformation";
+		"Massenzunahme" = "Mass Increase";
+		"Zeitdilatation" = "Time Dilatation";
+		"Längenkontraktion" = "Length Contraction";
+		"Addition von Geschwindigkeiten" = "Addition of Velocities";
+		"Relativistische Addition von Geschwindigkeiten" = "Relativistic Addition of Velocities";
+		"Relativistischer Impuls" = "Relativistic Momentum";
+		"Energie-Impuls-Beziehung" = "Energy Momentum Relation";
+	
+	/* Fluidmechanik: */
+		//Statik
+		"Statik" = "Statics"; // Sektion Titel
+		"Dichte" = "Density";
+		"Druck" = "Pressure";
+		"Druck einer Flüssigkeitsäule" = "Pressure of a Liquid Column";
+		"Auftriebskraft" = "Lifting Force";
+		
+		//Dynamik
+		"Dynamik" = "Dynamics"; // Sektion Titel
+		"Stokesreibung" = "Stokes Friction";
+		"Bernouilli-Gleichung" = "Bernouilli Equation";
+			
+	/* Thermodynamik: */
+		"Temperatur" = "Temperature";  //Sektion Titel
+		"Celsius-Skala" = "Celsius Scale";
+		"Kelvin-Skala" = "Kelvin Scale";
+		
+		"Verhalten idealer Gase" = "Behavior of Ideal Gases";  //Sektion Titel
+		"Gay-Lussac" = "Gay-Lussac";
+		"Amonton" = "Amonton";
+		"Boyle-Mariotte" = "Boyle-Mariotte";
+		"Satz von Avogadro" = "Theorem of Avogadro";
+		"Allgemeine Gasgl." = "General Gas Equation";
+		"Allgemeine Gasgleichung" = "General Gas Equation";
+		"Adiabate" = "Adiabatic Curve";
+		"Adiabatische Zustandsänderung" = "Adiabatic Curve";
+		
+		"Hauptsätze der Wärmelehre" = "Main Theorems of Thermodynamics";  //Sektion Titel
+		"0. Hauptsatz" = "0th Fundamental Theorem";
+		"1. Hauptsatz" = "1st Fundamental Theorem";
+		"2. Hauptsatz" = "2nd Fundamental Theorem";
+		"Wirkungsgrad" = "Efficiency";
+		"Thermodynamischer Wirkungsgrad" = "Thermodynamic Efficiency";
+		
+		"kinetische Gastheorie" = "Kinetic Theory of Gases";  //Sektion Titel
+		"Grundgleichung" = "Fundamental Equation";
+		"Grundgleichung der kin. Gastheo." = "Fundamental Equation of Kinetic Gas Theory";
+		"kin. Energie (Gas)" = "Kin. Energy (Gas)";
+		"kin. Energie eines Gases" = "Kinetic Energy of a Gas"; 
+		"allg. Gaskonstante" = "General Gas Constant";
+		"allgemeine Gaskonstante" = "General Gas Constant";
+		"mittlere Geschwindigkeit" = "Mean Velocity";
+		"mittlere Geschwindigkeit eines Teilchens" = "Mean Velocity of a Particle";
+		
+		"molare Grössen" = "Molar Quantities";  //Sektion Titel
+		"Avogadrozahl" = "Avogadro Number";
+		"Molvolumen" = "Molar Volume";
+		"Molmasse" = "Molar Mass";
+		
+		"Wärmekapazitäten" = "Thermal Capacities";  //Sektion Titel
+		"Wärmekapazität" = "Thermal Capacity";
+		"spezifische Wärmekapazität" = "Specific Thermal Capacity";
+		"molare Wärmekapazität" = "Molar Thermal Capacity";
+		"molare Wärmekapazität bei konstantem Volumen" = "Molar Thermal Capacity at Constant Volume";
+		"molare Wärmekapazität bei konstantem Druck" = "Molar Thermal Capacity at Constant Pressure";
+		"Mischungstemperatur" = "Mixture Temperature";
+		
+	/* Elektrodynamik */
+		"Gleichstrom" = "DC";  //Sektion Titel
+		"Stromstärke" = "Current";
+		"elektrische Arbeit" = "Electric Work";
+		"elektrische Leistung" = "Electric Power";
+		"Ohmsches Gesetz" = "Ohms Law";
+		"Reihenschaltung" = "Series Connection";
+		"Reihenschaltung von Widerständen" = "Series Connection of Resistors";
+		"Parallelschaltung" = "Parallel Connection";
+		"Parallelschaltung von Widerständen" = "Parallel Connection of Resistors";
+		
+		"elektrisches Feld" = "Electric Field";  //Sektion Title
+		"elektrische Feldstärke" = "Electric Field Strength";
+		"elektrische Spannung" = "Electric Voltage";
+		"elektrische Spannung, homogen" = "Electric Voltage, Homogeneous";
+		"elektrische Spannung im homogenen Feld" = "Electric Voltage in Homogeneous Field";
+		"elektrisches Potential" = "Electric Potential";
+		"elektrisches Potential zwischen zwei Orten" = "Electric Potential Between Two Points";
+		"Coulomb-Gesetz" = "Coulombs Law";
+		"el. Feldstärke" = "El. Field Strength";
+		"el. Feldstärke einer Punktladung" = "El. Field Strength of a Point Charge";
+		"el. Potential" = "El. Potential";
+		"el. Potential einer Punktladung" = "El. Potential of a Point Charge";
+		"elektrische Flussdichte" = "Electric Flux Density";
+		"Energiedichte" = "Energy Density";
+		"Energiedichte des el. Feldes" = "Energy Density of the El. Field";
+		
+		"Kapazität" = "capacity";
+		"Kapazität eines Plattenkondensators" = "Capacity of a Plate Capacitor";
+		"el. Feldstärke Plattenkondensator" = "El. Field of a Plate Capacitor";
+		"elektrische Feldstärke in einem Plattenkondensator" = "El. Field Strength Within a Plate Capacity";
+		"Energie des geladenen Kondensators" = "Energie of a Charged Capacitor";
+		"Reihenschaltung Kondensatoren" = "Series Connection of Capacitors";
+        "Reihenschaltung von Kondensatoren" = "Series Connection of Capacitors";
+		"Parallelschaltung Kondensatoren" = "Parallel Connection of Capacitors";
+		"Parallelschaltung von Kondensatoren" = "Parallel Connection of Capacitors";
+		"Kapazitaet Kugel" = "Capacity of a Sphere";
+		"Kapazitaet einer freistehenden Kugel" = "Capacity of a Sphere";
+		"Aufladung Kondensator" = "Charging of a Capacitor";
+		"Aufladung eines Kondensators" = "Charging of a Capacitor";
+		"Entladung Kondensator" = "Discharging of a Capacitor";
+		"Entladung eines Kondensators" = "Discharging of a Capacitor";
+		
+		"Magnetfeld" = "Magnetic Field";
+		"magnetische Flussdichte" = "Magnetic Field Density";
+		"Lorentzkraft" = "Lorentz Force";
+		"Kraft auf stromdurchflossenen Leiter" = "Force on Conductor With Current";
+        "Kraft auf einen stromdurchflossenen Leiter" = "Force on Conductor With Current";
+        "Im Innern einer langen Spule" = "Within Long Inductor";
+		"Magnetfeld im Innern einer langen Spule" = "Magnetic Field Within a Long Inductor";
+		"Um geraden Leiter" = "Around Straight Conductor";
+		"Magnetfeld um einen geraden Leiter" = "Magnetic Field Around a Straight Conductor";
+		"Im Mittelpunkt eines kreisf. Leiters" = "In the Middle of a Conductor Loop";
+		"Magnetfeld im Mittelpunkt eines kreisförmigen Leiters" = "Magnetic Field in the Middle of a Conductor Loop";
+		"magnetischer Fluss" = "Magnetic Flux";
+		"Induktionsspannung" = "Inductive Voltage";
+		"Reihenschaltung von Induktivitaeten" = "Series Connection of Inductivities";
+		"Parallelschaltung von Induktivitaeten" = "Parallel Connection of Inductivities";
+		
+		"Wechselspannung" = "Alternating Voltage";
+		"Wechselstrom" = "Alternating Current";
+		"kapazitiver Widerstand" = "Capacity Reactance";
+		"induktiver Widerstand" = "Inductive Reactance";
+
+        "Maxwellsche Gesetze" = "Maxwell Laws";
+        "Gaußsches Gesetz" = "Gauss' Law";
+        "Gaußsches Gesetz für Magnetfelder" = "Gauss' Law for Magnetic Fields";
+        "Induktionsgesetz" = "Induction Law";
+        "Durchflutungsgesetz" = "La Pace Law";
+		
+	// Strahlenoptik
+		"Reflexion und Brechung" = "Reflexion and Refraction"; //Ueberschrift
+		"Reflexion" = "Reflexion";
+		"Brechungsgesetz" = "Refraction Law";
+		"Totalreflexion" = "Total Reflexion";
+		"Lichtgeschwindigkeit in Materie" = "Speed of Light in Material";
+		
+		"Dünne Linsen" = "Thin Lens"; //Ueberschrift
+		"Abbildungsgl. f. dünne Linsen" = "Reproduction Equation for Thin Lens";
+		"Abbildungsmaßst. f. dünne L." = "Reproduction Scale for Thin Lens";
+		"Brennweite" = "Local Length";
+		"Brennweite eines Linsensystems" = "Focal Length of a System of Lens";
+		
+		"Optische Instrumente" = "Optical Instruments"; //Ueberschrift
+		"Vergrößerung" = "Amplification";
+		
+	// Wellenoptik
+		"Allgemein" = "General"; //Ueberschrift
+		"Lichtgeschwindigkeit" = "Speed of Light";
+		"Frequenz an Grenzflaechen" = "Frequency at Boundary Layer";
+		"Frequenz an Grenzfläche" = "Rrequency at Boundary Layer";
+		
+		"Beugung und Interferenz" = "Diffraction and Interference"; //Ueberschrift
+		"Interferenzmaximum" = "Interference Maximum";
+		"Interferenzminimum" = "Interference Minimum";
+		"Phasenverschiebung" = "Phase Shift";
+		"Interferenz an dünnen Schichten" = "Interference a Thin Layers";
+		"Interf. a. dünnen Schichten" = "Interference a Thin Layers";
+		"Brewstersches Gesetz" = "Brewster Law";
+		"Dopplereffekt" = "Doppler Effect";
+		
+		"Beugung am Spalt" = "Diffraction at Slit";
+		"Interferenzmaximum Spalt" = "Interference Max Slit";
+		
+		"Beugung am Doppelspalt" = "Diffraction at Dopple-Slit";
+		"Interferenzmaximum Doppelspalt" = "Interference Max Douple-slit";
+		"Interferenzmax. Doppelspalt" = "Interference Max Douple-slit";
+		
+		"Beugung am Gitter" = "Diffraction at Lattice";
+		"Interferenzmaximum Gitter" = "Interference Max Lattice";
+		
+	//Quantenmechanik
+		"Kommutator" = "Commutator";
+		"Kommutator [xi, xj]" = "Commutator [xi, xj]";
+        "Ortskommutator" = "Spatial Commutator";
+		"Kommutator [pi, pj]" = "Commutator [pi, pj]";
+        "Impulskommutator" = "Momentum Commutator";
+		"Kommutator [xi, pj]" = "Commutator [xi, pj]";
+        "Orts-Impuls-Kommutator" = "Space-Momentum-Commutator";
+		"Schrödingergleichung" = "Schrödinger Equation";
+		"Schrödingergl; Orts-Darstellung" = "Schrödinger Eq. Spatial Description";
+		"stationäre Schrödingergl." = "Static Schrödinger Eq.";
+		"Normierungsbedingung" = "Norm Condition";
+		"Orts-Impuls-Unschärfe" = "Space Momentum Uncertainty";
+		"Energie-Zeit-Unschärfe" = "Energy Time Uncertainty";
+		"Hamiltonoperator" = "Hamilton Operator";
+		"Absteigeoperator" = "Decrease Operator";
+		"Aufsteigeoperator" = "Increase Operator";
+		"Kommutator Absteiger und Aufsteiger" = "Commutator Decrease and Increase Operator";
+		"Besetzungszahloperator" = "Population Number Operator";
+		"Ortsoperator harmonischer Oszi" = "Spatial Operator Harmonic Osci";
+        "Ortsoperator" = "Space Operator";
+		"Impulsoperator harmonischer Oszi" = "Momentum Operator Harmonic Osci";
+        "Impulsoperator" = "Momentum Operator";
+		"Grundzustand" = "Ground State";
+		"Hamiltonoperator2 harmonischer Oszi" = "Hamilton Operator 2 Harm. Osci";
+		"Hamiltonoperator harmonischer Oszi" = "Hamilton Operator Harm. Osci";
+		"Zustände Harmonischer Oszi" = "States Harmonic Osci";
+		"Zustände" = "States";
+		"Drehimpulskomponenten" = "Angular Momentum Components";
+		"Kommutator [Li, Lj]" = "Commutator [Li, Lj]";
+		"Kommutator [Li, xj]" = "Commutator [Li, xj]";
+		"Kommutator [Li, pj]" = "Commutator [Li, pj]";
+		"Kommutator [L², Li]" = "Commutator [L², Li]";
+        "Kommutator [Li,Lj]" = "Commutator [Li,Lj]";
+        "Kommutator [Li,xj]" = "Commutator [Li,xj]";
+        "Kommutator [Li,pj]" = "Commutator [Li,pj]";
+        "Kommutator [L²,Li]" = "Commutator [L²,Li]";
+        "Eigenwertgleichung 1" = "Eigen Value Equation 1";
+		"Eigenwertgleichung 2" = "Eigen Value Equation 2";
+		"Eigenwertgleichung" = "Eigen Value Equation";
+		
+	//Atomphysik
+		"1. Bohrsches Postulat" = "1st Bohr postulate";
+		"2. Bohrsches Postulat" = "2nd Bohr postulate";
+		"Wellenzahl" = "Wave Number";
+        "Wellenzahl der Spektrallinie" = "Wave Number of Spectral Line";
+		"Rydbergkonstante" = "Rydberg Contant";
+		"Radius der n-ten Bahn" = "Radius of Path n";
+		"Bohrscher Radius" = "Bohr Radius";
+		"Bindungsenergie" = "Binding Energy";
+	
+		/* Physikalische Konstanten */
+		"Gravitationsbeschleunigung" = "local gravity";
+		"Gravitationskonstante" = "gravitation constant";
+		"allgemeine Gaskonstante" = "general gas constant";
+		"Boltzmannkonstante" = "Boltzmann constant";
+		"Molvolumen eines idealen Gases" = "volume of a mol of an ideal gas";
+		"Normdruck" = "norm pressure";
+		"elektrische Feldkonstante" = "electric field constante";
+		"magnetische Feldkonstante" = "magnetic constant";
+		"absoluter Nullpunkt" = "absolute zero";
+		"Tripelpunkt des Wassers" = "triple point of water";
+		"Vakuumlichtgeschwindigkeit" = "speed of light in vacuum";
+		"Elementarladung" = "elementary charge";
+		"Plancksches Wirkungsquantum" = "Planck constant";
+//		"Atomphysik" = "atom physics";
+		"Sommerfeldsche Feinstrukturkonstante" = "fine structure constant";
+		"inverse Sommerfeldsche Feinstrukturkonstante" = "inverse fine structure constant";
+		"reduziertes Plancksches Wirkungsquantum" = "reduced Planck constant";
+		"Ruhemasse des Elektrons" = "restmass of the electron";
+		"Ruhemasse des Neutrons" = "restmass of the neutron";
+		"Ruhemasse des Protons" = "restmass of the proton";
+		"Heisenbergsche Unschärferelation" = "uncertainty principle";
+	
+	/* Mathe Formeln */
+		// Kegelschnitte
+		"Kreis" = "circle";
+		"Ellipse" = "ellipse";
+		"Hyperbel" = "hyperbola";
+		"Parabel" = "parabola";
+	
+		// Koordinatensysteme
+		"kartesische Koordinaten" = "Cartesian coordinates";
+		"Kugelkoordinaten" = "spherical coordinates";
+		"Zylinderkoordinaten" = "cylindrical coordinates";
+		
+		// Statistik
+		"Mittelwert" = "mean value";
+		"Varianz" = "variance";
+		"diskrete Verteilung; allg." = "discrete distribution; general";
+		"Norm; diskrete Verteilung" = "norm; discrete distribution";
+		"Mittelwert; diskrete Verteilung" = "mean value; discrete distribution";
+		
+		"kontinuierliche Verteilung; allg." = "continious distribution; general";
+		"Wahrscheinlichkeit; kontinuierliche Verteilung" = "probability; continious distribution"; 
+		"nicht-negativ; kontinuierliche Verteilung" = "not negative; continious distribution"; 
+		"Norm; kontinuierliche Verteilung" = "norm; continious distribution"; 
+		"Mittelwert; kontinuierliche Verteilung" = "mean value; continious distribution"; 
+		
+		"diskrete Verteilung" = "discrete distribution";
+		"Binomialverteilung" = "binomial distribution";
+		"Poissonverteilung" = "Poisson distribution";
+		
+		"kontinuierliche Verteilung" = "continious distribution";
+		"Normalverteilung" = "normal distribution";
+		"Gammaverteilung" = "gamma distribution";
+		"χ²-Verteilung" = "χ² distribution";
+		"Cauchyverteilung" = "Cauchy distribution";
+		"t-verteilung" = "t distribution";
+	
+		// Vektoren
+		"Komponenten" = "components";
+		"Betrag" = "norm";
+		"Richtung" = "direction";
+		"Skalarprodukt" = "scalar product";
+		"Kreuzprodukt" = "cross product";
+		"Spatprodukt" = "parallelepidial product";
+		"Langrange-Identität" = "lagrange identity";
+		"Entwicklungssatz" = "expansion theorem";
+		
+		// Komplexe Zahlen
+		"allgemein" = "general";
+		"exponentielle Darstellung" = "exponential description";
+		"Eulergleichung" = "Euler equation";
+		"Beweis für die Existenz Gottes" = "prove of the existence of god";
+		
+		// Stammfunktionen
+		"Potenzfunktionen" = "power functions";
+		"Exponentialfuntionen" = "exponential functions";
+		"trigonometrische Funktionen" = "trigonometric functions";
+		
+		// trigonometrische Funktionen
+		"Cotangens" = "cotangent";
+		
+		// Taylorreihen
+		"oft auftretende Reihen" = "often used series";
+
+
+/* Ebene 3: */
+	/* Ueberschriften bei den Konstanten */
+		"Symbol" = "symbol";
+		"Zahlenwert und Einheit" = "number and unit";
+		"relative Unsicherheit" = "relative uncertainty";
+		"Konstanten" = "constants";
+		
+		
+		
+	/* Abkuerzungen */
+		"(konstante) Geschwindigkeit" = "(constant) velocity";  //Sektion Titel
+		"Abkürzung" = "Abbreviation";
+		
+		//Mechanik
+		"GeschwindigkeitAbk" = "velocity";
+		"WegAbk" = "distance";
+		"ZeitAbk" = "time";
+		"ImpulsAbk" = "momentum";
+		"MasseAbk" = "mass";
+		"EinzelimpulsAbk" = "single momentum";
+		"KraftAbk" = "force";
+		"KonservativeKraftAbk" = "coservative force";
+		"ReibungskraftAbk" = "friction force";
+		"ReibungskoeffAbk" = "coefficient of friction";
+		"NormalkraftAbk" = "normal force";
+		"HangabtriebskraftAbk" = "downhill-slope force";
+		"GravitationsbeschleunigungAbk" = "gravitational acceleration";
+		"NeigungswinkelAbk" = "angle of inclination";
+		"ArbeitAbk" = "work";
+		"LeistungAbk" = "power";
+		"EKinAbk" = "kinetic energy";
+		"BeschleunigungAbk" = "acceleration";
+		"AnfangsgeschwindigkeitAbk" = "inital speed";
+		"OrtsvektorAbk" = "position vector";
+		"NormalbeschleunigungAbk" = "normal acceleration";
+		"TangentialbeschleunigungAbk" = "tangential acceleration";
+		"KruemmungsradiusAbk" = "radius of curvature";
+		"Masse1Abk" = "mass 1";
+		"Masse2Abk" = "mass 2";
+		"AbstandAbk" = "distance";
+		"GravitationspotentialAbk" = "gravitational potential";
+		"GravitationskonstanteAbk" = "gravitational constant";
+		"Masse3Abk" = "mass of attractive body";
+		"RadiusRAbk" = "radius of attractive body";
+		"XAbk" = "horizontal position";
+		"V0Abk" = "initial velocity";
+		"AbwurfwinkelAbk" = "throw angle";
+		"YAbk" = "vertical position";
+		"DrehimpulsAbk" = "angular momentum";
+		"AbstandZurDrehachseAbk" = "dictance to axis";
+		"TraegheitsmomentAbk" = "momentum of inertia";
+		"WinkelgeschwindigkeitAbk" = "angular velocity";
+		"EinzeldrehimpulsAbk" = "single angular momentum";
+		"WinkelAbk" = "angle";
+		"TraegheitsmomentHauptAbk" = "moment o. iner. for main axis";
+		"Drehmoment01Abk" = "torsional moment";
+		"RotationsenergieAbk" = "rotational energy";
+		"ZentripetalkraftAbk" = "centripetal force";
+		"RadiusAbk" = "radius";
+		"PeriodeAbk" = "period";
+        "FadenlaengeAbk" = "pendulum length";
+		"FrequenzAbk" = "frequency";
+		"EPotAbk" = "potential energy";
+		"FederkonstanteAbk" = "spring constant";
+		"AuslenkungAbk" = "displacement";
+		"FederkraftAbk" = "spring force";
+		"MittlereKraftAbk" = "average force during Δt";
+		"ZeitintervallAbk" = "time interval";
+		"ImpulsaenderungAbk" = "change of inertia";
+		"AmplitudeAbk" = "amplitude";
+		"PhaseVarphiAbk" = "phase";
+        "WirkungAbk" = "action";
+        "kinetischeEnerigeLagrangeAbk" = "kinetic energy";
+        "kinetischeEnergieLagrangeAbk" = "kinetic energy";
+        "potentielleEnerigeLagrangeAbk" = "potential energy";
+        "generalisierteKoordinatenAbk" = "generalized coordinates";
+        "lagrangefunktionAbk" = "Lagrange function";
+        "generalisierteGeschwindigkeitenAbk" = "generalized velocity";
+		"generalisierteKraefteAbk" = "generalized forces";
+		
+		//Relativitaet
+		"XYZCTStrichAbk" = "coordinates in S΄";
+		"XYZCTAbk" = "coordinates in S";
+		"GeschwindigkeitVonSStrichAbk" = "velocity of Sʹ w. respect to S";
+		"RuhemasseAbk" = "rest mass";
+		"DeltatAbk" = "time difference in S";
+		"DeltatStrichAbk" = "time difference in S΄";
+		"DeltaxAbk" = "length in S";
+		"DeltaxStrichAbk" = "length in S΄";
+		"GeschwindigkeitInSAbk" = "velocity in S";
+		"GeschwindigkeitInSStrichAbk" = "velocity in S΄";
+		"EnergieAbk" = "energy";
+			
+		//Fluidmechanik
+		"Hoehe" = "height of the fluid";
+		"EingetauchtesVolumenAbk" = "dipped volume";
+		"ViskositaetAbk" = "viscosity";
+		"AuftriebskraftAbk" = "lifting force";
+		"HoeheAbk" = "height";
+		"FlaecheAbk" = "area";
+		"HoeheDerFluessigkeitAbk" = "height of the liquid";
+				
+		//Thermodynamik
+		"CelsiusAbk" = "temp. in Celsius";
+		"KelvinAbk" = "temp. in Kelvin";
+		"VolumenBeiThetaAbk" = "volume at ϑ";
+		"VolumenNullAbk" = "volume at ϑ = 0";
+		"DruckAbk" = "pressure"; 
+        "Druch0Abk" = "pressure at h=0";
+        "Dichte0Abk" = "density at h=0";
+		"DruckBeiThetaAbk" = "pressure bei ϑ";
+		"DruckNullAbk" = "pressure bei ϑ = 0";
+		"VolumenAbk" = "volume";
+		"StoffmengeAbk" = "quantity of material"; 
+		"GaskonstanteAbk" = "gas constant";
+		"MolareMasseAbk" = "molar mass";
+        "MolmasseAbk" = "molar mass";
+		"TeilchenzahlAbk" = "particle number";
+		"AvogadrozahlAbk" = "Avogadro number";
+		"AdiabatenexponentAbk" = "adiabatic exponent";
+		"CPAbk" = "thermal cap. at const. pressure";
+		"CVAbk" = "thermal cap. at const. volumen";
+		"ZugefuehrteWaermeAbk" = "input heat"; 
+		"InnereEnergieAbk" = "energy";
+		"WirkungsgradAbk" = "efficiency"; 
+		"WaermeAbk" = "heat"; 
+		"TemperaturWaermebad1Abk" = "temp. thermal bath 1"; 
+		"TemperaturWaermebad2Abk" = "temp. thermal bath 2"; 
+		"TeilchenmasseAbk" = "particle mass";
+		"FreiheitsgradeAbk" = "degrees of freedom";
+		"TemperaturAbk" = "temperature";
+		"BoltzmannkonstanteAbk" = "Boltzmann constant";
+		"DichteAbk" = "density";
+		"MolvolumenAbk" = "molar volume";
+		"WaermekapazitaetAbk" = "heat capacity";
+		"spezifischeWaermekapazitaetAbk" = "spezific heat capacity";
+		"molareWaermekapazitaetAbk" = "molar heat capacity";
+		"molareWaermekapazitaet_pAbk" = "mol. heat cap. at const. p";
+		"molareWaermekapazitaet_VAbk" = "mol. heat cap. at const. V";
+		
+		//Elektrodynamik
+		"StromstaerkeAbk" = "current";
+		"Ladung01Abk" = "flowed charge";
+		"ElektrischeArbeitAbk" = "electric work";
+		"TransportierteLadungAbk" = "transported charge";
+		"SpannungAbk" = "voltage";
+		"ElektrischeLeistungAbk" = "electric power";
+		"ElektrischerWiderstandAbk" = "electric resistance";
+		"ElektrischesFeldAbk" = "electric field strength";
+		"KraftAufProbeladungAbk" = "force on test charge";
+		"ProbeladungAbk" = "test charge";
+		"ElektrischeSpannungAbk" = "voltage";
+		"ElektrischesPotentialAbk" = "electric potential";
+        "ElPotentialAbk" = "electric potential";
+		"ElektrischeFeldkonstanteAbk" = "electric field constante";
+		"DielektrizitaetszahlAbk" = "dielectric number";
+		"Ladung03Abk" = "charge 1";
+		"Ladung04Abk" = "charge 2";
+		"ElFeldstaerkeAbk" = "electric field strength";
+		"Ladung05Abk" = "charge";
+		"ElFlussdichteAbk" = "electric field density";
+		"ElEnergiedichteAbk" = "electric energy density";
+		"KapazitaetAbk" = "capacity";
+		"LadungAbk" = "charge";
+		"Flaeche01Abk" = "plate area";
+		"PlattenabstandAbk" = "plate distance";
+		"EnergieWAbk" = "energy";
+		"ElektrischeMaximalspannungAbk" = "max electric voltage";
+		"MagFlussdichteAbk" = "magnetic field density";
+		"MagFeldkonstanteAbk" = "magnetic field constante";
+		"PermeabilitaetszahlAbk" = "relative permeability";
+        "AbstandLeiterachseAbk" = "distance from conductor";
+		"magnetischeFeldstaerkeAbk" = "magnetic field strength";
+		"LorentzkraftAbk" = "Lorentz force";
+		"LaengeAbk" = "length";
+		"AnzahlWindungenAbk" = "number of windings";
+		"AbstandLeiderachseAbk" = "radial distance to conductor";
+		"RadiusLeiterAbk" = "radius of the conductor loop";
+		"magnetischerFlussAbk" = "magnetic flux";
+		"DurchsetzteFlaecheAbk" = "penetrated area";
+		"InduktionsspannungAbk" = "induced voltage";
+		"InduktivitaetAbk" = "inductance";
+		"KreisfrequenzAbk" = "angular frequency";
+		"PhaseSpannungAbk" = "phase of the voltage";
+		"StromAbk" = "current";
+		"PhaseStromAbk" = "phase of the current";
+		"kapazitiverWiderstandAbk" = "capacity reactance";
+		"imaginaereEinheitAbk" = "imaginary unit";
+		"induktiverWiderstandAbk" = "inductive reactance";
+        "StromdichteAbk" = "current density";
+        "LadungsdichteAbk" = "chanrge density";
+
+		//Strahlenoptik
+		"EinfallswinkelAbk" = "incident angle";
+		"AusfallswinkelAbk" = "angle of reflexion";
+		"Brechungsindex1Abk" = "refrection index material 1";
+		"Brechungsindex2Abk" = "refreckton index material 2";
+		"BrechungswinkelAbk" = "angle of refraction";
+		"GrenzwinkelAbk" = "critical angle";
+		"LichtgeschwindigkeitAbk" = "speed of light";
+		"BrechungsindexAbk" = "refraction index";
+		"BrennweiteAbk" = "focal length";
+		"GegenstandsweiteAbk" = "object distance";
+		"BildweiteAbk" = "image distance";
+		"AbbildungsmassstabAbk" = "reproduction scale";
+		"KruemmungsradienDerLinseAbk" = "radii of curvature";
+		"Brennweite1Abk" = "focal length of lens 1";
+		"Brennweite2Abk" = "focal length of lens 2";
+		"VergroesserungAbk" = "amplification";
+		"SehwinkelMitAbk" = "angle of sight with";
+		"SehwinkelOhneAbk" = "angle of sight without";
+
+		//Wellenoptik
+		"WellenlaengeAbk" = "wave length";
+		"FrequenzImMaterial1Abk" = "frequency in material 1";
+		"FrequenzImMaterial2Abk" = "frequency in material 2";
+		"GangunterschiedAbk" = "optical path difference";
+		"PhasenverschiebungAbk" = "phase shift";
+		"SchichtDickeAbk" = "layer thickness";
+		"polarisationswinkelAbk" = "polarisation angle";
+		"FrequenzEmpfaengerAbk" = "frequency at receiver";
+		"FrequenzSenderAbk" = "frequency at emitter";
+		"SpaltbreiteAbk" = "slit width";
+		"AbstandDerSpaltmittenAbk" = "distance of the slits";
+		"GitterkonstanteAbk" = "lattice constant";
+	
+		//Quantenmechanik
+		"AOpAbk" = "arbitrary operator";
+		"BOpAbk" = "arbitrary Operator";
+		"XiXjAbk" = "spatial component";
+		"PiPjAbk" = "momentum component";
+		"hQuerAbk" = "red. Planck action quantum";
+		"ketPsiVonTAbk" = "eigen state";
+		"HamiltonOpAbk" = "hamilton operator";
+		"PsiVonRUndTAbk" = "eigen state in spatial description";
+		"PotentialAbk" = "potential";
+		"PsiVonRAbk" = "eigen state in spatial description";
+		"DeltaXAbk" = "spatial uncertainty";
+		"DeltaPAbk" = "momentum uncertainty";
+		"DeltaEAbk" = "energy uncertainty";
+		"DeltaTAbk" = "time uncertainty";
+		"OrtsoperatorAbk" = "spatial operator";
+		"ImpulsoperatorAbk" = "momentum oberator";
+		"AbsteigeopAbk" = "decrease operator";
+		"AufsteigeopAbk" = "increase operator";
+		"GrundzustandHarmonischerOsziAbk" = "ground state harm. osci";
+		"LiLjAbk" = "angular momentum component";
+		"DrehimpulsQZAbk" = "angular momentum quantum number";
+		"DrehimpulsQZ2Abk" = "magnetic quantum number";
+
+	//Atomphysik
+		"RuhemasseElektronAbk" = "rest mass electron";
+		"RadiusNteBahnAbk" = "radius n-th path";
+		"BahngeschwindigkeitAbk" = "path velocity";
+		"HauptquantenzahlAbk" = "main quantum number";
+        "HauptquantenzahlenAbk" = "main quantum numbers";
+		"PlanckschenWirkungsquantumAbk" = "Planck action quantum";
+		"FrequenzDesPhotonsAbk" = "frequenz of the photon";
+		"EnergieDerItenBahnAbk" = "energy of i-th path";
+		"RydbergkonstanteAbk" = "Rydberg contant";
+		"ElementarladungAbk" = "elementary charge";
+		"BohrscherRadiusAbk" = "Bohr radius";
+		"BindungsenergieAbk" = "binding energy";
+
+/* Ebene 4: */
+	/* Erklaerungen: */
+		"ErklaerNewton01" = "If there is no force in a inertial frame every object moves on a straight line or stays without movement.";
+		"ErklaerNewton02" = "The change of the momentum in time is equal to the force.";
+		"ErklaerNewton03" = "Action is equal to reaction.";
+		"ErklaerGeschwindigkeit01" = "";
+		"ErklaerImpuls01" = "";
+		"ErklaerImpulserhaltungssatz01" = "";
+		"ErklaerKraft01" = "";
+		"ErklaerKraft02" = "";
+		"ErklaerReibungskraft01" = "";
+		"ErklaerHangabtriebskraft01" = "";
+		"ErklaerNormalkraft01" = "";
+		"ErklaerArbeit01" = "";
+		"ErklaerLeistung01" = "";
+		"ErklaerLeistung02" = "";
+		"ErklaerEKin01" = "";
+		"ErklaerEKin02" = "";
+		"ErklaerBeschleunigung01" = "";
+		"ErklaerKepler01" = "";
+		"ErklaerKepler02" = "";
+		"ErklaerKepler03" = "";
+		
+		"ErklaerGravitationspotential01" = "";
+		"ErklaerDrehimpuls01" = "";
+		"ErklaerDrehimpuls02" = "";
+		"ErklaerDrehimpulserhaltung01" = "";
+		"ErklaerDrehmoment01" = "";
+		"ErklaerDrehmoment02" = "";
+		"ErklaerTraegheitsmoment01" = "";
+		"ErklaerSatzVonSteiner01" = "";
+		"ErklaerRotationsarbeit01" = "";
+		"ErklaerRotationsenergie01" = "";
+		"ErklaerRotationsenergie01" = "";
+		
+		"ErklaerCelsiusSkala01" = "The first basing point of the Celsius scale is the temperatur of melting ice.";
+		"ErklaerCelsiusSkala02" = "The second basing point of the Celsius scale is the temperatur of boiling water.";
+		"ErklaerKelvinSkala01" = "The temperatur 0 K is the absolute zero point.";
+		"ErklaerKelvinSkala02" = "The second basing point of the Kelvin scale is the temperature of boiling water.";
+		"ErklaerGayLussac01" = "Change of volume because of change in temperature.";
+		"ErklaerAmonton01" = "Change of pressure because of change of temperature.";
+		"ErklaerBoyleMariotte01" = "";
+		"ErklaerSatzVonAvogadro01" = "Theorem of Avogadro: Equal volume contain the same amount molecules.";
+		"ErklaerAllgemeineGasgleichung01" = "";
+		"ErklaerAdiabate01" = "Adiabatic: no exchange of heat";
+		"ErklaerAdiabate02" = "Adiabatic: no exchange of heat";
+		"ErklaerNullterHauptsatz01" = "The direction of heat flow is always from cold to hot.";
+		"ErklaerErsterHauptsatz01" = "Energy is conserved.";
+		"ErklaerZweiterHauptsatz01" = "It is not possible to construct a maschine which performs work by cooling a heat bath.";
+		"ErklaerWirkungsgrad01" = "";
+		"ErklaerWirkungsgrad02" = ""; 
+		"ErklaerGrundgleichung01" = "";
+		"ErklaerKinEnergieEinesGases01" = "";
+		"ErklaerFreiheitsgradIdeal01" = "";
+		"ErklaerAvogadrozahl01" = "";
+		"ErklaerMolvolumen01" = "";
+		"ErklaerMolmasse01" = "";
+		"ErklaerWaermekapazitaet01" = "";
+		"ErklaerMolareWaermekapazitaetV01" = "";
+		"ErklaerMolareWaermekapazitaetp01" = "";
+		"ErklaerMischungstemperatur01" = "";
+		
+		"ErklaerStromstaerke01" = "";
+		"ErklaerElektrischesFeld01" = "";
+		"ErklaerSpannung01" = "";
+		"ErklaerSpannungHomogen01" = "";
+		"ErklaerCoulombGesetz01" = "";
+		"ErklaerElFeld01" = "";
+		"ErklaerElPotential01" = "";
+		"ErklaerKapazitaet01" = "";
+		"ErklaerKapazitaetPlattenKondensator01" = "";
+		"ErklaerElFeldPlattenKondensator01" = "";
+		
+		"ErklaerBinomialverteilung01" = "";
+		"ErklaerPoissonverteilung01" = "";
+		"ErklaerNormalverteilung01" = "";
+		"ErklaerGammaverteilung01" = "";
+		"ErklaerChiquadratverteilung01" = "";
+		"ErklaerCauchyverteilung01" = "";
+		"ErklaerTverteilung01" = "";
+		
+		
+// Taschenrechner
+	"Eingabe der Ziffer 0" = "digit 0";
+	"Eingabe der Ziffer 1" = "digit 1";
+	"Eingabe der Ziffer 2" = "digit 2";
+	"Eingabe der Ziffer 3" = "digit 3";
+	"Eingabe der Ziffer 4" = "digit 4";
+	"Eingabe der Ziffer 5" = "digit 5";
+	"Eingabe der Ziffer 6" = "digit 6";
+	"Eingabe der Ziffer 7" = "digit 7";
+	"Eingabe der Ziffer 8" = "digit 8";
+	"Eingabe der Ziffer 9" = "digit 9";
+	"Addition" = "addition";
+	"Subtraktion" = "subtraction";
+	"Multiplikation" = "multiplication";
+	"Division" = "division";
+	"Potenz" = "power";
+	"Zehnerpotenz" = "order of magnitude";
+	"Natürlicher Logarithmus" = "natural logarithm";
+	"Exponentialfunktion" = "exponential function";
+	"Logarithmus zur Basis Zehn" = "logarithm with base ten";
+	"Logarithmus zur Basis 2" = "logarithm with base two";
+	"Sinus oder Arkussinus" = "sine or arc sine";
+	"Sinus" = "sine";
+	"Cosinus oder Arkuscosinus" = "cosine or arc cosine";
+	"Tangens oder Arkustangens" = "tangent or arc tangent";  
+	"Arkuscosinus" = "arc cosine";
+	"Arkustangens" = "arc tangent";
+	"Zahl Pi" = "number pi";
+	"Wurzelfunktion" = "square root";
+	"Wechsel zwischen Winkelfunktionen und deren Umkehrfunktionen" = "toggle trigonometric functions and their inverse";
+	"Wechsel der Tastenbelegung" = "toggle of the keyboard layout";
+	"Umschalten zwischen Degrees und Radian" = "toggle of degree and radian";
+	"Bitte drücke die Taste, die ich Dir erklären soll. (Zum Beenden nochmal help drücken)" = "please press the button I shall explain (press help again to cancel)";
+	"Eingabe des letzten Ergebnisses" = "input of the last result";
+	"Eingabe der Gravitationskonstante" = "gravitational constant";
+	"Eingabe der Gaskonstante" = "gas constant";
+	"Eingabe der Avogadrozahl" = "avogadro constant";
+	"Die Antwort auf die Frage nach dem Universum, dem Leben und dem Rest" = "the answer to universe, life and everything";
+	"Eingabe einer öffnenden Klammer" = "opening parenthesis";
+	"Eingabe einer schliessenden Klammer" = "closing parenthesis";
+	"Entfernung des Zeichens vor dem Unterstrich" = "delete digit left to the underscore";
+	"Ein Zeichen nach links im Eingabestring" = "one digit to the left in the input string";
+	"Ein Zeichen nach rechts im Eingabestring" = "one digit to the right in the input string";
+	"Zugriff auf die letzten fünf Berechnungen" = "access to the last five calculations";
+	"Eingabe eines Dezimaltrennungszeichens" = "digits seperator";
+	"Durchführung der Berechnung" = "make calculation";
+	
+/* Referenz */
+	"gasförmig" = "aerially";
+	"flüssig" = "fluid";
+	"fest" = "solid";
+	"Quelle: Wikipedia, 03.2010" = "source: Wikipedia.de, 03/2010";
+	"Summenformel" = "elemental formula";
+	"Sublimationspunkt" = "sublimation point";
+	"Dampfdruck" = "vapour pressure";
+	"mol. Masse" = "mol. mass";
+	"mol. Volumen" = "mol. volume";
+	"Siedepunkt" = "boiling point";
+	"Schmelzpunkt" = "freezing point";
+	"Verdampfungswärme" = "evaporation heat";
+	"Schmelzwärme" = "melting heat";
+	"Wärmeleitfähigkeit" = "heat conductivity";
+	"Brechungsindex" = "refraction index";
+	"Schmelzbereich" = "melting range";
+	"Siedebereich" = "boiling range";
+	"Kristallstruktur" = "crystal structure";
+	"Mohshärte" = "Mohs hardness";
+	"Magnetismus" = "magnetism";
+	"Schallgeschwindigkeit" = "sonic speed";
+	"spez. Wärmekapazität" = "specific head";
+	"elektrische Leitfähigkeit" = "electrical conductivity";
+	"Poissonzahl" = "Poisson ratio";
+	"kubisch raumzentriert" = "bcc";
+	"kubisch flächenzentriert" = "fcc";
+	"rhomboedrisch" = "rhombohedral";
+	"Diamantstruktur" = "diamond structure";
+	"paramagnetisch" = "paramagnetic";
+	"diamagnetisch" = "diamagnetic";
+	"ferromagnetisch" = "ferromagnetic";
+	"Acetylen" = "Acetylene";
+	"Ammoniak" = "Ammoniac";
+	"Ethan" = "Ethane";
+	"Ethylen" = "Ethylene";
+	"Kohlenmonoxid" = "Carbon Monoxide";
+	"Kohlendioxid" = "Carbon Dioxide";
+	"Lachgas" = "Nitrous Oxide";
+	"Leuchtgas" = "City Gas";
+	"Luft" = "Air";
+	"Methan" = "Methane";
+	"Methylchlorid" = "Chloromethane";
+	"Ozon" = "Ozone";
+	"Propan" = "Propane";
+	"Propen" = "Propene";
+	"Schwefeldioxid" = "Sulphur Dioxide";
+	"Schwefelhexafluorid" = "Sulphur Hexafluoride";
+	"Stickstoffmonoxid" = "Nitrate Monoxide";
+	"Wasserdampf" = "Steam";
+	"Wolframhexafluorid" = "Wolfram Hexafluorid";
+	"Aceton" = "Acetone";
+	"Anilin" = "Aniline";
+	"Diethylether" = "Diethyl Ether";
+	"Essigsäure" = "Acetic Acid";
+	"Meerwasser" = "Seawater";
+	"Nitrobenzol" = "Nitrobenzene";
+	"Salpetersäure" = "Azotic Acid";
+	"Schwefelkohlenstoff" = "Carbon Disulphide";
+	"Schwefelsäure" = "Sulphuric Acid";
+	"Schweres Wasser" = "Deuterium Oxide";
+	"Terpentinöl" = "Turpentine Oil";
+	"Kohlenstoff: Diamant" = "Carbon: Diamond";
+	"Kohlenstoff: Graphit" = "Graphite";
+	"Phosphor (weiss)" = "Phosphor (white)";
+	"Quarzglas" = "Quartz Glass";
+	
+	
+/* Allgemein */
+	"(erlaubte Zeichen: -123456789.e)" = "(allowed digits: -123456789.e)"; 
+	"Eingabe" = "Input";
+	"Energie" = "energy";
+	"Länge" = "length";
+	"Zeit" = "time";
+	"Leistung" = "power";
+	"Formel '%@' wurde zu den Favoriten hinzugefügt." = "Formula '%@' added to favorites.";
+	"Formeln können im Bereich 'Formulas' durch einen Tab auf den rechten Tabbar-Knopf zu den Favoriten hinzugefügt werden. Formeln koennen durch einen Swipe ueber die Zelle entfernt werden." =  "Add formulas to favorites in the 'Formulas' section by tabbing the right tabbar button. Swipe to delete.";
+	"Irrtümer vorbehalten" = "errors excepted";
+    "PhyLer - Physik Formeln Lernen" = "PhyLer";

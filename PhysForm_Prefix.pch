@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'PhysForm' target in the 'PhysForm' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#endif
+
+#ifdef DEBUG
+#define dhDebug(msg, ...) NSLog((@"%s line: %d " msg), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define dhDebug(msg, ...)
+#endif
