@@ -1,117 +1,92 @@
-//
-//  ReferenzView.m
-//  PhysForm
-//
 //  Created by Dominik Hauser on 21.02.10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "ReferenzView.h"
 
-#define kToolbarHeight			40.0
+@interface ReferenzView ()
+@property (nonatomic, strong) UILabel *outputValue;
+@property (nonatomic, strong) UILabel *bedingung;
+@property (nonatomic, strong) UILabel *material;
+@property (nonatomic, strong) UILabel *eigenschaft;
+@property (nonatomic, strong) UILabel *quelle;
+@end
 
 @implementation ReferenzView
 
-@synthesize pickerView;
-@synthesize outputValue;
-@synthesize bedingung;
-@synthesize material;
-@synthesize eigenschaft;
-@synthesize quelle;
-@synthesize segmentedControl;
-
-- (CGRect)pickerFrameWithSize:(CGSize)size
-{
-	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		screenRect.size.height = screenRect.size.height/2-20;
-	}
-	CGRect pickerRect = CGRectMake(	0.0,
-								   screenRect.size.height - 44.0 - size.height,
-								   screenRect.size.width,
-								   size.height);
-	return pickerRect;
-}
-
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        // Initialization code
-		//pickerArray0 = [[NSArray alloc] initWithObjects: @"Energie", @"Länge", nil];
-		pickerView = [[UIPickerView alloc] initWithFrame: CGRectZero];
-		CGSize pickerSize = [pickerView sizeThatFits: CGSizeZero];
-		pickerView.frame = [self pickerFrameWithSize: pickerSize];
-		//[pickerView setDelegate: self];
-		[pickerView setShowsSelectionIndicator: YES];
-		[self addSubview: pickerView];
+    
+        self.backgroundColor = [UIColor whiteColor];
+        
+		_pickerView = [UIPickerView new];
+        _pickerView.showsSelectionIndicator = true;
 		
-		/*
-		frame = CGRectMake(70, 100, 15, 30);
-		gleichZeichen = [[UILabel alloc] initWithFrame: frame];
-		[gleichZeichen setText: @"="];
-		[gleichZeichen setTextColor: [UIColor whiteColor]];
-		[gleichZeichen setBackgroundColor: [UIColor blackColor]];
-		[self addSubview: gleichZeichen];
-		*/
-		CGRect dummyFrame = CGRectMake(10, 70, frame.size.width-20, 30);
-		outputValue = [[UILabel alloc] initWithFrame: dummyFrame];
-		[outputValue setTextColor: [UIColor whiteColor]];
-		[outputValue setBackgroundColor: [UIColor blackColor]];
-		[outputValue setTextAlignment: UITextAlignmentCenter];
-		[self addSubview: outputValue];
-				 
-		dummyFrame = CGRectMake(10, 110, frame.size.width-20, 20);
-		bedingung = [[UILabel alloc] initWithFrame: dummyFrame];
-		[bedingung setTextColor: [UIColor whiteColor]];
-		[bedingung setBackgroundColor: [UIColor blackColor]];
-		[bedingung setTextAlignment: UITextAlignmentCenter];
-		[bedingung setFont: [[bedingung font] fontWithSize: 12]];
-		[bedingung setText: @""];
-		[self addSubview: bedingung];
+        _material = [UILabel new];
+        _material.textAlignment = NSTextAlignmentCenter;
+        _material.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+        
+        _eigenschaft = [UILabel new];
+        _eigenschaft.textAlignment = NSTextAlignmentCenter;
+        _eigenschaft.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+
+        _outputValue = [UILabel new];
+        _outputValue.textAlignment = NSTextAlignmentCenter;
+        _outputValue.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
+        
+        _bedingung = [UILabel new];
+        _bedingung.textAlignment = NSTextAlignmentCenter;
+        _bedingung.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+        _bedingung.text = @"";
+        
+        _quelle = [UILabel new];
+        _quelle.textAlignment = NSTextAlignmentCenter;
+        _quelle.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];
+        _quelle.text = NSLocalizedString(@"Quelle: Wikipedia, 03.2010",@"");
 		
-		dummyFrame = CGRectMake(10, 140, frame.size.width-20, 20);
-		quelle = [[UILabel alloc] initWithFrame: dummyFrame];
-		[quelle setTextColor: [UIColor whiteColor]];
-		[quelle setBackgroundColor: [UIColor blackColor]];
-		[quelle setTextAlignment: UITextAlignmentCenter];
-		[quelle setFont: [[quelle font] fontWithSize: 9]];
-		[quelle setText: NSLocalizedString(@"Quelle: Wikipedia, 03.2010",@"")];
-		[self addSubview: quelle];
-		
-		dummyFrame = CGRectMake(10, 10, frame.size.width-20, 30);
-		material = [[UILabel alloc] initWithFrame: dummyFrame];
-		[material setTextColor: [UIColor whiteColor]];
-		[material setBackgroundColor: [UIColor blackColor]];
-		[material setTextAlignment: UITextAlignmentCenter];
-		[material setFont: [[material font] fontWithSize: 20]];
-		[material setText: @"Test"];
-		[self addSubview: material];
-		
-		dummyFrame = CGRectMake(10, 40, frame.size.width-20, 30);
-		eigenschaft = [[UILabel alloc] initWithFrame: dummyFrame];
-		[eigenschaft setTextColor: [UIColor whiteColor]];
-		[eigenschaft setBackgroundColor: [UIColor blackColor]];
-		[eigenschaft setTextAlignment: UITextAlignmentCenter];
-		[eigenschaft setFont: [[eigenschaft font] fontWithSize: 18]];
-		[eigenschaft setText: @"Test"];
-		[self addSubview: eigenschaft];
-		
-		dummyFrame = CGRectMake(10, 165, frame.size.width-20, 30);
-		NSArray *segmentArray = @[NSLocalizedString(@"gasförmig",@""), 
+		NSArray *segmentArray = @[NSLocalizedString(@"gasförmig",@""),
 								 NSLocalizedString(@"flüssig",@""), NSLocalizedString(@"fest",@"")];
-		segmentedControl = [[UISegmentedControl alloc] initWithItems: segmentArray];
-		segmentedControl.frame = dummyFrame;
-		segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-		[self addSubview: segmentedControl];
+		_segmentedControl = [[UISegmentedControl alloc] initWithItems: segmentArray];
+        _segmentedControl.translatesAutoresizingMaskIntoConstraints = false;
+        
+        UIView *segmentedControlHostView = [UIView new];
+        [segmentedControlHostView addSubview:_segmentedControl];
+        
+        UIStackView *infoStackView = [[UIStackView alloc] initWithArrangedSubviews:@[_material, _eigenschaft, _outputValue]];
+        infoStackView.axis = UILayoutConstraintAxisVertical;
+        infoStackView.spacing = 5;
+        
+        UIStackView *metaStackView = [[UIStackView alloc] initWithArrangedSubviews:@[_bedingung, _quelle]];
+        metaStackView.axis = UILayoutConstraintAxisVertical;
+        metaStackView.spacing = 5;
+        
+        _stackView = [[UIStackView alloc] initWithArrangedSubviews:@[infoStackView, metaStackView, segmentedControlHostView, _pickerView]];
+        _stackView.translatesAutoresizingMaskIntoConstraints = false;
+        _stackView.axis = UILayoutConstraintAxisVertical;
+        _stackView.spacing = 20;
+        
+        [self addSubview:_stackView];
+        
+        [NSLayoutConstraint activateConstraints:@[
+                                                  [_stackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor],
+                                                  [_stackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor],
+                                                  [_segmentedControl.leadingAnchor constraintEqualToAnchor:segmentedControlHostView.leadingAnchor constant:10],
+                                                  [_segmentedControl.trailingAnchor constraintEqualToAnchor:segmentedControlHostView.trailingAnchor constant:-10],
+                                                  [_segmentedControl.topAnchor constraintEqualToAnchor:segmentedControlHostView.topAnchor],
+                                                  [_segmentedControl.bottomAnchor constraintEqualToAnchor:segmentedControlHostView.bottomAnchor],
+                                                  ]];
 		
     }
     return self;
 }
 
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)updateWithMaterialDict:(NSDictionary *)materialDict propertyDict:(NSDictionary *)propertyDict {
+    self.outputValue.text = [NSString stringWithFormat: @"%@ %@", NSLocalizedString(propertyDict[@"Wert"],nil), propertyDict[@"Einheit"]];
+    self.material.text = NSLocalizedString(materialDict[@"Name"], nil);
+    self.eigenschaft.text = NSLocalizedString(propertyDict[@"Name"], nil);
+    self.bedingung.text = propertyDict[@"Bedingung"];
+    
+    [self.pickerView reloadAllComponents];
 }
-
-
-
 
 @end

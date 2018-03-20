@@ -1,7 +1,3 @@
-//
-//  PhysFormViewController.m
-//  PhysForm
-//
 //  Created by Dominik Hauser on 21.04.09.
 //  Copyright __MyCompanyName__ 2009. All rights reserved.
 //
@@ -111,13 +107,7 @@
 							   @"Ruhemasse des Protons", nil];
 			NSSet *subSet = [[NSSet alloc] initWithObjects: currentTitle, nil];
 			if (![subSet isSubsetOfSet: titleSet]) {
-				//favorites = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAction 
-				//													   target: self 
-				//													   action: @selector(addToFavorites) ] autorelease];
-				favorites = [[UIBarButtonItem alloc] initWithTitle: @"add" 
-															  style: UIBarButtonItemStyleBordered 
-															 target: self 
-															 action: @selector(addButtonPressed)];
+                favorites = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(addButtonPressed)];
 				self.navigationItem.rightBarButtonItem = favorites;
 			}
 		}
@@ -129,16 +119,27 @@
 	
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSSet *titleSet = [[NSSet alloc] initWithObjects: @"Mechanik", @"Relativitätstheorie", @"Fluidmechanik", @"Elektrodynamik", @"Wärme", @"Strahlenoptik", @"Wellenoptik", @"Physikalische Konstanten", @"Chemische Elemente", @"trigonometrische Funktionen", nil];
+    NSSet *subSet = [[NSSet alloc] initWithObjects: self.currentTitle, nil];
+    if ([subSet isSubsetOfSet: titleSet]) {
+        searchBar = [[UISearchBar alloc] initWithFrame: self.tableView.bounds];
+        [searchBar sizeToFit];
+        
+        searchBar.delegate = self;
+        
+        self.tableView.tableHeaderView = searchBar;
+    }
+    [searchBar setShowsCancelButton: YES];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"MyIdentifier"];
+}
+
 - (NSInteger)numberOfSectionsInTableView: (UITableView *)tableView {
 	return [self.listOfItems count];
 }
-
-//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-//	if ([self interfaceOrientation] == UIInterfaceOrientationPortrait)
-//		return nil;
-//	else 
-//	    return self.namesOfSections;
-//}
 
 - (NSInteger)tableView: (UITableView *)tableView numberOfRowsInSection: (NSInteger)section {
 	// Remember: each element in listOfItems is an array of dictionaries
@@ -158,159 +159,55 @@
 }
 
 - (UITableViewCell *)tableView: (UITableView *)tableView cellForRowAtIndexPath: (NSIndexPath *)indexPath {
-	// Get the array holding the dictionaries from the listOfItems
-	NSArray *array = [self.listOfItems objectAtIndex: indexPath.section];
 	
-	// Get dictionary at index path
+    NSArray *array = self.listOfItems[indexPath.section];
+	
 	NSInteger row = indexPath.row;
-	NSDictionary *dictionary = [array objectAtIndex: row];
+	NSDictionary *dictionary = array[row];
 	
-	// Set cellIdentifier for cell at index
-	NSString *cellIdentifier = [dictionary objectForKey: @"Title"];
+	NSString *title = [dictionary objectForKey: @"Title"];
 
-	// Get cell
-	//UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier];
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"MyIdentifier"];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"MyIdentifier" forIndexPath:indexPath];
 
-	// make the cell
-	if (cell == nil || [dictionary objectForKey: @"noText"]) {
-		//cell = [[[UITableViewCell alloc] initWithFrame: CGRectZero reuseIdentifier: @"MyIdentifier"] autorelease];
-		cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault
-									   reuseIdentifier: @"MyIdentifier"];
-	}
-    
-    // If there is an element in the dictionary with the name "noText" the cell text is set 
-    // to "" and the selection style is set to non 
     if ([dictionary objectForKey: @"noText"]) {
         cell.textLabel.text = @"";
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //} else if ([dictionary objectForKey: @"chemieBool"]) {
-    //	cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //	cell.text = NSLocalizedString(cellIdentifier, @"Localized cell text");
     } else {
-        cell.textLabel.text = NSLocalizedString(cellIdentifier, @"Localized cell text");
-        //cell.detailTextLabel.text = NSLocalizedString(cellIdentifier, @"Localized cell text");
-        // Add disclosure indicator
-        //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.text = NSLocalizedString(title, @"Localized cell text");
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
     }
     
-    // If there is an object "calculator" or "textForMoreInfo" there is a subview 
-    if ([dictionary objectForKey: @"textForMoreInfo"] != nil) 
+    if ([dictionary objectForKey: @"textForMoreInfo"] != nil) {
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    if ([dictionary objectForKey: @"calculator"] != nil)
+    }
+    if ([dictionary objectForKey: @"calculator"] != nil) {
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-
+    }
     
-    // The name of the image is the same as the cellIdentifier
-    //NSString *imageName = [dictionary objectForKey: cellIdentifier];
-    NSString *imageName = NSLocalizedString([dictionary objectForKey: cellIdentifier], @"image");
+    NSString *imageName = NSLocalizedString([dictionary objectForKey: title], @"image");
     
     // Set font
-    UIFont *font = [UIFont fontWithName: @"ArialRoundedMTBold" size: 16.0];
+    UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
             
     // Check if there is an image
     if ([imageName length] != 0) {
         if ([dictionary objectForKey: @"AbkBool"] != nil) {
-            [[cell textLabel] setTextAlignment:UITextAlignmentLeft];
+            cell.textLabel.textAlignment = NSTextAlignmentLeft;
             cell.accessoryType = UITableViewCellAccessoryNone;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            font = [UIFont fontWithName: @"Arial" size: 17.0];
+            font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
         } else {
             // If there is an image set the text alignment to right
-            [[cell textLabel] setTextAlignment:UITextAlignmentRight];
+            cell.textLabel.textAlignment = NSTextAlignmentRight;
         }
         UIImage *bigImage = [UIImage imageNamed: imageName];
+        if (!bigImage) {
+            NSLog(@"missing image: >>>%@<<<", imageName);
+        }
         cell.imageView.image = bigImage;
     }
-    [[cell textLabel] setFont: font];
+    cell.textLabel.font = font;
 	
-	if ([[dictionary objectForKey: @"animation"] isEqualToString:@"mechanik"]) {
-		UIImage *bigImage = [UIImage imageNamed: imageName];
-		cell.imageView.image = bigImage;
-		[[cell imageView] setAnimationImages: @[[UIImage imageNamed:@"a1image4.png"],
-											   [UIImage imageNamed:@"a1image5.png"], 
-											   [UIImage imageNamed:@"a1image6.png"],
-											   [UIImage imageNamed:@"a1image7.png"], 
-											   [UIImage imageNamed:@"a1image8.png"],
-											   [UIImage imageNamed:@"a1image9.png"], 
-											   [UIImage imageNamed:@"a1image10.png"],
-											   [UIImage imageNamed:@"a1image11.png"], 
-											   [UIImage imageNamed:@"a1image12.png"],
-											   [UIImage imageNamed:@"a1image11.png"],
-											   [UIImage imageNamed:@"a1image10.png"],
-											   [UIImage imageNamed:@"a1image9.png"],
-											   [UIImage imageNamed:@"a1image8.png"],
-											   [UIImage imageNamed:@"a1image7.png"],
-											   [UIImage imageNamed:@"a1image6.png"],
-											   [UIImage imageNamed:@"a1image5.png"]]];
-		[[cell imageView] setAnimationDuration: 2.0];
-		[[cell imageView] setAnimationRepeatCount: 0];
-		[[cell imageView] startAnimating];
-	} else if ([[dictionary objectForKey: @"animation"] isEqualToString:@"mathe"]) {
-		UIImage *bigImage = [UIImage imageNamed: imageName];
-		cell.imageView.image = bigImage;
-		[[cell imageView] setAnimationImages: @[[UIImage imageNamed:@"a2image2.png"],
-											   [UIImage imageNamed:@"a2image3.png"],
-											   [UIImage imageNamed:@"a2image4.png"],
-											   [UIImage imageNamed:@"a2image5.png"],
-											   [UIImage imageNamed:@"a2image6.png"],
-											   [UIImage imageNamed:@"a2image7.png"],
-											   [UIImage imageNamed:@"a2image8.png"],
-											   [UIImage imageNamed:@"a2image9.png"],
-											   [UIImage imageNamed:@"a2image10.png"],
-											   [UIImage imageNamed:@"a2image11.png"],
-											   [UIImage imageNamed:@"a2image12.png"],
-											   [UIImage imageNamed:@"a2image13.png"],
-											   [UIImage imageNamed:@"a2image14.png"],
-											   [UIImage imageNamed:@"a2image15.png"],
-											   [UIImage imageNamed:@"a2image16.png"],
-											   [UIImage imageNamed:@"a2image17.png"],
-											   [UIImage imageNamed:@"a2image18.png"],
-											   [UIImage imageNamed:@"a2image19.png"],
-											   [UIImage imageNamed:@"a2image20.png"],
-											   [UIImage imageNamed:@"a2image21.png"],
-											   [UIImage imageNamed:@"a2image22.png"],
-											   [UIImage imageNamed:@"a2image23.png"],
-											   [UIImage imageNamed:@"a2image24.png"],
-											   [UIImage imageNamed:@"a2image25.png"],
-											   [UIImage imageNamed:@"a2image26.png"],
-											   [UIImage imageNamed:@"a2image27.png"],
-											   [UIImage imageNamed:@"a2image28.png"],
-											   [UIImage imageNamed:@"a2image29.png"],
-											   [UIImage imageNamed:@"a2image30.png"],
-											   [UIImage imageNamed:@"a2image31.png"],
-											   [UIImage imageNamed:@"a2image32.png"],
-											   [UIImage imageNamed:@"a2image33.png"],
-											   [UIImage imageNamed:@"a2image34.png"],
-											   [UIImage imageNamed:@"a2image35.png"],
-											   [UIImage imageNamed:@"a2image36.png"],
-											   [UIImage imageNamed:@"a2image37.png"]]];
-		[[cell imageView] setAnimationDuration: 3.0];
-		[[cell imageView] setAnimationRepeatCount: 0];
-		[[cell imageView] startAnimating];
-	} else if ([[dictionary objectForKey: @"animation"] isEqualToString:@"chemie"]) {
-		UIImage *bigImage = [UIImage imageNamed: imageName];
-		cell.imageView.image = bigImage;
-		[[cell imageView] setAnimationImages: @[[UIImage imageNamed:@"a3image1.png"],
-											   [UIImage imageNamed:@"a3image2.png"],
-											   [UIImage imageNamed:@"a3image3.png"],
-											   [UIImage imageNamed:@"a3image4.png"],
-											   [UIImage imageNamed:@"a3image5.png"],
-											   [UIImage imageNamed:@"a3image6.png"],
-											   [UIImage imageNamed:@"a3image7.png"],
-											   [UIImage imageNamed:@"a3image8.png"],
-											   [UIImage imageNamed:@"a3image9.png"],
-											   [UIImage imageNamed:@"a3image10.png"],
-											   [UIImage imageNamed:@"a3image11.png"]]];
-		[[cell imageView] setAnimationDuration: 2.0];
-		[[cell imageView] setAnimationRepeatCount: 0];
-		[[cell imageView] startAnimating];
-	}
-	
-	//}
 	return cell;
 }
 
@@ -322,10 +219,10 @@
 	NSDictionary *dictionary = [array objectAtIndex: indexPath.row];
 	
 	// Get the Child; the Child holds the lext (deeper) level 
-	NSArray *Child = [dictionary objectForKey: @"Child"];
+	NSArray *childArray = [dictionary objectForKey: @"Child"];
 	
 	// If there is a child construct a table view for this child
-	if ([Child count] != 0) {
+	if ([childArray count] != 0) {
 		
 		// Init a table view 
 		NSString *title = [dictionary objectForKey: @"Title"];
@@ -333,7 +230,7 @@
 		
 		if ([title isEqualToString: @"Chemische Elemente"]) {
             ChemieTableViewController *chemieTableViewController = [[ChemieTableViewController alloc] initWithStyle: UITableViewStylePlain];
-            [chemieTableViewController setElementsDictArray: Child];
+            [chemieTableViewController setElementsDictArray: childArray];
 //            [[self navigationController] pushViewController: chemieTableViewController animated: YES];
             UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: chemieTableViewController];
             [navController setModalTransitionStyle: UIModalTransitionStyleFlipHorizontal ];
@@ -370,37 +267,37 @@
             subViewController.namesOfSections = [dictionary objectForKey: @"namesOfSections"];
             
             // Set the data source for the next table view
-            subViewController.tableDataSource = Child;
+            subViewController.tableDataSource = childArray;
             
             // push the table view onto the navigationController
             [self.navigationController pushViewController: subViewController animated: YES];
             
             // release the allocated subViewController
 		}
-	} else if ([dictionary objectForKey: @"calculator"] || [dictionary objectForKey: @"textForMoreInfo"] != nil) {
-		// Allocate a DestignatedCalculatorViewController
-		DestignatedCalculaterViewController *subViewController = [[DestignatedCalculaterViewController alloc] init];
-		
-		// Get the different strings to print from the dictionary and set them
-		subViewController.stringForLabelNull = [dictionary objectForKey: @"stringForLabelNull"];
-		subViewController.stringForUnitLabel = [dictionary objectForKey: @"stringForUnitLabel"];
-		subViewController.textFile = NSLocalizedString([dictionary objectForKey: @"textForMoreInfo"], @"Erklaerung");
-		
-		// the value of calculator is the parameter which has to be squared; calculator == 0 -> no squared parameter
-		NSString *integerString = [dictionary objectForKey: @"calculator"];
-		subViewController.squarePara = [integerString integerValue];
-		 
-		// Get the placeholder for the fields from the dictionary and set them
-		subViewController.stringForFieldsAbove = [dictionary objectForKey: @"stringForFieldsAbove"];
-		subViewController.stringForFieldsBelow = [dictionary objectForKey: @"stringForFieldsBelow"];
-		
-		// Set the name of the image to draw
-		subViewController.nameOfTheImage = [dictionary objectForKey: [dictionary objectForKey: @"Title"]];
-		
-		// Push the view onto the navigationController
-		[self.navigationController pushViewController: subViewController animated: YES];
-		
-		// release the allocated subViewController
+    } else if ([dictionary objectForKey: @"calculator"] || [dictionary objectForKey: @"textForMoreInfo"] != nil) {
+        // Allocate a DestignatedCalculatorViewController
+        DestignatedCalculaterViewController *subViewController = [[DestignatedCalculaterViewController alloc] init];
+
+        // Get the different strings to print from the dictionary and set them
+        subViewController.stringForLabelNull = [dictionary objectForKey: @"stringForLabelNull"];
+        subViewController.stringForUnitLabel = [dictionary objectForKey: @"stringForUnitLabel"];
+        subViewController.textFile = NSLocalizedString([dictionary objectForKey: @"textForMoreInfo"], @"Erklaerung");
+
+        // the value of calculator is the parameter which has to be squared; calculator == 0 -> no squared parameter
+        NSString *integerString = [dictionary objectForKey: @"calculator"];
+        subViewController.squarePara = [integerString integerValue];
+
+        // Get the placeholder for the fields from the dictionary and set them
+        subViewController.stringForFieldsAbove = [dictionary objectForKey: @"stringForFieldsAbove"];
+        subViewController.stringForFieldsBelow = [dictionary objectForKey: @"stringForFieldsBelow"];
+
+        // Set the name of the image to draw
+        subViewController.nameOfTheImage = [dictionary objectForKey: [dictionary objectForKey: @"Title"]];
+
+        // Push the view onto the navigationController
+        [self.navigationController pushViewController: subViewController animated: YES];
+
+        // release the allocated subViewController
 	} else if ([dictionary objectForKey: @"chemieBool"] != nil) {
 		ElementsDetailViewController *subViewController = [[ElementsDetailViewController alloc] init];
 		
@@ -463,35 +360,6 @@
 	return returnString;
 }
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
- 
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-	
-	NSSet *titleSet = [[NSSet alloc] initWithObjects: @"Mechanik", @"Relativitätstheorie", @"Fluidmechanik", @"Elektrodynamik", @"Wärme", @"Strahlenoptik", @"Wellenoptik", @"Physikalische Konstanten", @"Chemische Elemente", @"trigonometrische Funktionen", nil];
-	NSSet *subSet = [[NSSet alloc] initWithObjects: self.currentTitle, nil];
-	if ([subSet isSubsetOfSet: titleSet]) {
-		searchBar = [[UISearchBar alloc] initWithFrame: self.tableView.bounds];
-		[searchBar sizeToFit];
-	
-		searchBar.delegate = self;
-	
-		self.tableView.tableHeaderView = searchBar;
-	}
-	[searchBar setShowsCancelButton: YES];
-}
-
 //- (void)searchBarSearchButtonClicked: (UISearchBar *)aSearchBar {
 - (void)searchBar:(UISearchBar *)aSearchBar textDidChange:(NSString *)searchText {  
 	//[aSearchBar endEditing:YES];
@@ -530,19 +398,6 @@
 	aSearchBar.text = @"";
 	[self.tableView reloadData];
 }
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return YES;
-}
-*/
-/*
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-	[[self.navigationController navigationBar] setHidden: YES];
-}
-*/
 
 - (void)addButtonPressed {
 	NSArray *array = [self.listOfItems objectAtIndex: 0];

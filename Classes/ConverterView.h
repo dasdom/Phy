@@ -1,7 +1,3 @@
-//
-//  ConverterView.h
-//  PhysForm
-//
 //  Created by Dominik Hauser on 21.02.10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
@@ -28,6 +24,7 @@
 @property (nonatomic, strong) UILabel *einheitOutput;
 @property (nonatomic, strong) UILabel *outputValue;
 @property (nonatomic, strong) UITextField *inputValue;
+@property (nonatomic, strong) UIStackView *stackView;
 
 - (CGRect)pickerFrameWithSize: (CGSize)size;
 

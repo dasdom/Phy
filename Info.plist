@@ -34,6 +34,10 @@
 	<string>Default.png</string>
 	<key>UILaunchImageFile~ipad</key>
 	<string>DefaultiPad.png</string>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
+	<key>UIStatusBarHidden~ipad</key>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -43,6 +47,9 @@
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 </dict>
 </plist>

@@ -18587,7 +18587,7 @@
 													<key>AbkBool</key>
 													<true/>
 													<key>DeltaXAbk</key>
-													<string>deltaX_abk.png</string>
+													<string>deltax_abk.png</string>
 													<key>Title</key>
 													<string>DeltaXAbk</string>
 												</dict>
@@ -18611,7 +18611,7 @@
 											<array>
 												<dict>
 													<key>DeltaXEinh</key>
-													<string>deltaX_einh.png</string>
+													<string>deltax_einh.png</string>
 													<key>noText</key>
 													<true/>
 													<key>Title</key>

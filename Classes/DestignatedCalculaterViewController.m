@@ -162,7 +162,7 @@
 		CGFloat frameX = 200.0f;
 		CGFloat frameY = 5.0f;
 		CGRect frame = CGRectMake(frameX, frameY, 80.0f, 40.0f);
-		calculate = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+		calculate = [UIButton buttonWithType: UIButtonTypeSystem];
 		calculate.frame = frame;
 		[calculate setTitle: @"Calculate" forState: UIControlStateNormal];
 		[calculate addTarget: self action: @selector(doCalculation:) forControlEvents: UIControlEventTouchUpInside];

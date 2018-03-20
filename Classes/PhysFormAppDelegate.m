@@ -42,10 +42,10 @@
 	// Initialize the window
 	self.window = [[UIWindow alloc] initWithFrame: screenBounds];
 	
-	UIView *dummyView = [[UIView alloc] initWithFrame: screenBounds];
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		//[window addSubview: dummyView];
-	}
+//    UIView *dummyView = [[UIView alloc] initWithFrame: screenBounds];
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        //[window addSubview: dummyView];
+//    }
 	
 	//*****************************************************
 	[self copyDatabaseIfNeeded];
@@ -65,11 +65,12 @@
 	// Initialize the navigation controller and set the title
 	navigationController = [[UINavigationController alloc] initWithRootViewController: viewController];
 	navigationController.title = @"Formulas";
+    navigationController.navigationBar.translucent = false;
 	
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		navigationController.view.frame = CGRectMake(0, 20, screenBounds.size.width, screenBounds.size.height/2);
-		[dummyView addSubview: [navigationController view]];
-	}
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        navigationController.view.frame = CGRectMake(0, 20, screenBounds.size.width, screenBounds.size.height/2);
+//        [dummyView addSubview: [navigationController view]];
+//    }
 	
 	// Initialize the general calculator
 	generalCalculatorViewController = [[GeneralCalculatorViewController alloc] init];
@@ -94,19 +95,19 @@
 #else
 	
 	// populate the tabBar
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		tabBarController.viewControllers = @[generalCalculatorViewController, 
-											//converterViewController, referenzViewController,
-											//favoritesViewController
-                                             ];
-        tabBarController.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-	} else {
-		tabBarController.viewControllers = @[navigationController, 
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        tabBarController.viewControllers = @[generalCalculatorViewController,
+//                                            //converterViewController, referenzViewController,
+//                                            //favoritesViewController
+//                                             ];
+//        tabBarController.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+//    } else {
+		tabBarController.viewControllers = @[navigationController,
 											generalCalculatorViewController, 
                                             converterViewController, referenzViewController,
                                             favoritesViewController
                                              ];
-	}
+//    }
 
 #endif	
 	// TODO: How can I get images to the tabBarItems?

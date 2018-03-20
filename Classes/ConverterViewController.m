@@ -1,7 +1,3 @@
-//
-//  ConverterViewController.m
-//  PhysForm
-//
 //  Created by Dominik Hauser on 21.02.10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
@@ -13,13 +9,12 @@
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
-	[super loadView];
 	
-	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		screenRect.size.height = screenRect.size.height/2-20;
-	}
-	converterView = [[ConverterView alloc] initWithFrame: screenRect];
+//    CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        screenRect.size.height = screenRect.size.height/2-20;
+//    }
+	converterView = [ConverterView new];
 	converterModel = [[ConverterModel alloc] init];
 	
 	converterView.pickerArray0 = converterModel.pickerArray0;
@@ -30,6 +25,16 @@
 	arrayString = [[NSMutableString alloc] initWithString: @"energieStringArray"];
 	
 	self.view = converterView;
+}
+
+- (ConverterView *)contentView {
+    return (ConverterView *)self.view;
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    [[self contentView].stackView.bottomAnchor constraintEqualToAnchor:self.bottomLayoutGuide.topAnchor].active = true;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
