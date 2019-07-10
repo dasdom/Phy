@@ -888,6 +888,8 @@
 		F2385DB50FCDDE72009BA295 /* satzVonAvogadro.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385DB40FCDDE72009BA295 /* satzVonAvogadro.png */; };
 		F2385DB90FCDE009009BA295 /* nullterHS.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385DB80FCDE009009BA295 /* nullterHS.png */; };
 		F2395285115427F300BC63BA /* fooDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = F2395284115427F300BC63BA /* fooDefault.png */; };
+		F239BAC320F75A6B00612965 /* DHSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F239BAC220F75A6A00612965 /* DHSmartTableViewCell.m */; };
+		F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */; };
 		F23A215D0FB6419000DEA6B3 /* gayLussac.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A215C0FB6419000DEA6B3 /* gayLussac.png */; };
 		F23A21630FB6F39500DEA6B3 /* amonton.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21600FB6F39500DEA6B3 /* amonton.png */; };
 		F23A21640FB6F39500DEA6B3 /* druck_const.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21610FB6F39500DEA6B3 /* druck_const.png */; };
@@ -2100,6 +2102,7 @@
 		F2953C3C112EE28B008795E8 /* taylorreihe_sin_quadrat.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C3A112EE28B008795E8 /* taylorreihe_sin_quadrat.png */; };
 		F29558B12055B298001D776D /* deltax_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F29558B02055B298001D776D /* deltax_abk.png */; };
 		F29558B320586259001D776D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29558B220586259001D776D /* Launch Screen.storyboard */; };
+		F29558B620615546001D776D /* GeneralCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29558B520615546001D776D /* GeneralCalculatorView.m */; };
 		F2959E111141A1120014525F /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959E101141A1120014525F /* FavoritesViewController.m */; };
 		F2959F0E114249E30014525F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2959F0D114249E30014525F /* libsqlite3.dylib */; };
 		F2959F2711424D200014525F /* DetailFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959F2611424D200014525F /* DetailFormula.m */; };
@@ -2121,7 +2124,6 @@
 		F2996C460FD856E9002F1C59 /* elektrischeSpannungHomogenesFeld.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C450FD856E9002F1C59 /* elektrischeSpannungHomogenesFeld.png */; };
 		F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29CAD5112AC3E1800139C35 /* Calculator.m */; };
 		F2A120A2149D0D1500AD3215 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */; };
-		F2A120A6149D34A800AD3215 /* DHSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120A5149D34A800AD3215 /* DHSmartTableViewCell.m */; };
 		F2A120AA149D351700AD3215 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120A9149D351700AD3215 /* HistoryTableViewCell.m */; };
 		F2A120BB149E527100AD3215 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A120BA149E527100AD3215 /* MessageUI.framework */; };
 		F2A120BE149E793100AD3215 /* ChemieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120BD149E793000AD3215 /* ChemieTableViewController.m */; };
@@ -2492,6 +2494,16 @@
 		F2F921EA107244D400B8F894 /* energie_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921E8107244D400B8F894 /* energie_abk.png */; };
 		F2F921EB107244D400B8F894 /* energie_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921E9107244D400B8F894 /* energie_einh.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F239BACD20F8C0CE00612965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = PhysForm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3360,6 +3372,11 @@
 		F2385DB40FCDDE72009BA295 /* satzVonAvogadro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = satzVonAvogadro.png; sourceTree = "<group>"; };
 		F2385DB80FCDE009009BA295 /* nullterHS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nullterHS.png; sourceTree = "<group>"; };
 		F2395284115427F300BC63BA /* fooDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fooDefault.png; sourceTree = "<group>"; };
+		F239BAC120F75A6A00612965 /* DHSmartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSmartTableViewCell.h; sourceTree = "<group>"; };
+		F239BAC220F75A6A00612965 /* DHSmartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSmartTableViewCell.m; sourceTree = "<group>"; };
+		F239BAC820F8C0CD00612965 /* PhyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F239BACC20F8C0CE00612965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorViewControllerTests.m; sourceTree = "<group>"; };
 		F23A215C0FB6419000DEA6B3 /* gayLussac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gayLussac.png; sourceTree = "<group>"; };
 		F23A21600FB6F39500DEA6B3 /* amonton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amonton.png; sourceTree = "<group>"; };
 		F23A21610FB6F39500DEA6B3 /* druck_const.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = druck_const.png; sourceTree = "<group>"; };
@@ -3830,6 +3847,8 @@
 		F2953C3A112EE28B008795E8 /* taylorreihe_sin_quadrat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taylorreihe_sin_quadrat.png; sourceTree = "<group>"; };
 		F29558B02055B298001D776D /* deltax_abk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deltax_abk.png; sourceTree = "<group>"; };
 		F29558B220586259001D776D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F29558B420615545001D776D /* GeneralCalculatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorView.h; sourceTree = "<group>"; };
+		F29558B520615546001D776D /* GeneralCalculatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorView.m; sourceTree = "<group>"; };
 		F2959E0F1141A1120014525F /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		F2959E101141A1120014525F /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		F2959F0D114249E30014525F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -3855,8 +3874,6 @@
 		F29CAD5112AC3E1800139C35 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		F2A120A0149D0D1400AD3215 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
 		F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
-		F2A120A4149D34A800AD3215 /* DHSmartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSmartTableViewCell.h; path = ../../reusableCode/DHSmartTableViewCell.h; sourceTree = "<group>"; };
-		F2A120A5149D34A800AD3215 /* DHSmartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSmartTableViewCell.m; path = ../../reusableCode/DHSmartTableViewCell.m; sourceTree = "<group>"; };
 		F2A120A8149D351700AD3215 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
 		F2A120A9149D351700AD3215 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		F2A120BA149E527100AD3215 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -4249,6 +4266,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F239BAC520F8C0CD00612965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F27EEE5C1154D3A5008449FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4283,7 +4307,8 @@
 				F205EA8814ACBF2E001F8AF6 /* CollectionOfElementsViewController.m */,
 				F205EA8414ACB9DC001F8AF6 /* CollectionOfElementsView.h */,
 				F205EA8514ACB9DC001F8AF6 /* CollectionOfElementsView.m */,
-				F2A120A3149D348400AD3215 /* Smart Table View Cell */,
+				F239BAC120F75A6A00612965 /* DHSmartTableViewCell.h */,
+				F239BAC220F75A6A00612965 /* DHSmartTableViewCell.m */,
 				F207F3181144FA9E00256864 /* Converter */,
 				F207F31F1144FB9A00256864 /* Referenz */,
 				F2959E0F1141A1120014525F /* FavoritesViewController.h */,
@@ -4299,6 +4324,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* Phy.app */,
 				F27EEE651154D3A5008449FC /* PhyLite.app */,
+				F239BAC820F8C0CD00612965 /* PhyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4310,6 +4336,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				F2D8687B11C6CE27000DC559 /* Resources-iPad */,
+				F239BAC920F8C0CE00612965 /* PhyTests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -5301,6 +5328,15 @@
 			name = Konstanten;
 			sourceTree = "<group>";
 		};
+		F239BAC920F8C0CE00612965 /* PhyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */,
+				F239BACC20F8C0CE00612965 /* Info.plist */,
+			);
+			path = PhyTests;
+			sourceTree = "<group>";
+		};
 		F25C557B0FB5D13000C6B82E /* Waerme */ = {
 			isa = PBXGroup;
 			children = (
@@ -5904,15 +5940,6 @@
 			name = Einheiten;
 			sourceTree = "<group>";
 		};
-		F2A120A3149D348400AD3215 /* Smart Table View Cell */ = {
-			isa = PBXGroup;
-			children = (
-				F2A120A4149D34A800AD3215 /* DHSmartTableViewCell.h */,
-				F2A120A5149D34A800AD3215 /* DHSmartTableViewCell.m */,
-			);
-			name = "Smart Table View Cell";
-			sourceTree = "<group>";
-		};
 		F2A120A7149D34B900AD3215 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -5920,6 +5947,8 @@
 				F29CAD5112AC3E1800139C35 /* Calculator.m */,
 				F23699B90FE8332100C2890F /* GeneralCalculatorViewController.h */,
 				F23699BA0FE8332100C2890F /* GeneralCalculatorViewController.m */,
+				F29558B420615545001D776D /* GeneralCalculatorView.h */,
+				F29558B520615546001D776D /* GeneralCalculatorView.m */,
 				F2A120A0149D0D1400AD3215 /* HistoryTableViewController.h */,
 				F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */,
 				F2A120A8149D351700AD3215 /* HistoryTableViewCell.h */,
@@ -6387,6 +6416,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Phy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F239BAC720F8C0CD00612965 /* PhyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F239BACF20F8C0CE00612965 /* Build configuration list for PBXNativeTarget "PhyTests" */;
+			buildPhases = (
+				F239BAC420F8C0CD00612965 /* Sources */,
+				F239BAC520F8C0CD00612965 /* Frameworks */,
+				F239BAC620F8C0CD00612965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F239BACE20F8C0CE00612965 /* PBXTargetDependency */,
+			);
+			name = PhyTests;
+			productName = PhyTests;
+			productReference = F239BAC820F8C0CD00612965 /* PhyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F27EEBA81154D3A5008449FC /* PhysFormLite */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F27EEE611154D3A5008449FC /* Build configuration list for PBXNativeTarget "PhysFormLite" */;
@@ -6411,6 +6458,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0910;
+				TargetAttributes = {
+					F239BAC720F8C0CD00612965 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = Q6PD97MRX4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D6058900D05DD3D006BFB54;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PhysForm" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -6430,6 +6485,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* PhysForm */,
 				F27EEBA81154D3A5008449FC /* PhysFormLite */,
+				F239BAC720F8C0CD00612965 /* PhyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -8126,6 +8182,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F239BAC620F8C0CD00612965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F27EEBA91154D3A5008449FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -8899,6 +8962,7 @@
 				28D7ACF80DDB3853001CB0EB /* PhysFormViewController.m in Sources */,
 				F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */,
 				F222169E0FE3EF1400967918 /* drawTest.m in Sources */,
+				F239BAC320F75A6B00612965 /* DHSmartTableViewCell.m in Sources */,
 				F23699BB0FE8332100C2890F /* GeneralCalculatorViewController.m in Sources */,
 				F2D4ED8910662A8400AD1905 /* ElementsDetailViewController.m in Sources */,
 				F2EB614C113176F900D3A010 /* ConverterViewController.m in Sources */,
@@ -8910,11 +8974,19 @@
 				F207F31E1144FB8700256864 /* ReferenzViewController.m in Sources */,
 				F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */,
 				F2A120A2149D0D1500AD3215 /* HistoryTableViewController.m in Sources */,
-				F2A120A6149D34A800AD3215 /* DHSmartTableViewCell.m in Sources */,
 				F2A120AA149D351700AD3215 /* HistoryTableViewCell.m in Sources */,
 				F2A120BE149E793100AD3215 /* ChemieTableViewController.m in Sources */,
 				F205EA8614ACB9DC001F8AF6 /* CollectionOfElementsView.m in Sources */,
 				F205EA8914ACBF2E001F8AF6 /* CollectionOfElementsViewController.m in Sources */,
+				F29558B620615546001D776D /* GeneralCalculatorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F239BAC420F8C0CD00612965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8941,6 +9013,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F239BACE20F8C0CE00612965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* PhysForm */;
+			targetProxy = F239BACD20F8C0CE00612965 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F270E2041005DD7000843391 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -8966,7 +9046,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -8985,7 +9065,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -9113,13 +9193,125 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D567812F-663E-418F-9D37-73687E8BC730";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		F239BAD020F8C0CE00612965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phy.app/Phy";
+			};
+			name = Debug;
+		};
+		F239BAD120F8C0CE00612965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phy.app/Phy";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F239BAD220F8C0CE00612965 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phy.app/Phy";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -9206,6 +9398,16 @@
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
 				F21C82341022259600522F12 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F239BACF20F8C0CE00612965 /* Build configuration list for PBXNativeTarget "PhyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F239BAD020F8C0CE00612965 /* Debug */,
+				F239BAD120F8C0CE00612965 /* Release */,
+				F239BAD220F8C0CE00612965 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
