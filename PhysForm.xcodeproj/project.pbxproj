@@ -141,32 +141,6 @@
 		F215E588116BBCAA00167B46 /* lichtgeschwindigkeitVsWellenlaenge.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E582116BBCAA00167B46 /* lichtgeschwindigkeitVsWellenlaenge.png */; };
 		F215E589116BBCAA00167B46 /* wellenlaenge_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E583116BBCAA00167B46 /* wellenlaenge_abk.png */; };
 		F215E58A116BBCAA00167B46 /* wellenlaenge_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E584116BBCAA00167B46 /* wellenlaenge_einh.png */; };
-		F218785E12032F7E00E0A74C /* spaltbreite_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E6F1177AF61007EF8D0 /* spaltbreite_einh.png */; };
-		F218785F12032F7E00E0A74C /* brewsterschesGesetz.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E301177A1D9007EF8D0 /* brewsterschesGesetz.png */; };
-		F218786012032F7E00E0A74C /* dopplereffekt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E311177A1D9007EF8D0 /* dopplereffekt.png */; };
-		F218786112032F7E00E0A74C /* frequenzEmpfaenger_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E321177A1D9007EF8D0 /* frequenzEmpfaenger_abk.png */; };
-		F218786212032F7E00E0A74C /* frequenzSender_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E331177A1D9007EF8D0 /* frequenzSender_abk.png */; };
-		F218786312032F7E00E0A74C /* gangunterschied_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E341177A1D9007EF8D0 /* gangunterschied_abk.png */; };
-		F218786412032F7E00E0A74C /* gangunterschied_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E351177A1D9007EF8D0 /* gangunterschied_einh.png */; };
-		F218786512032F7E00E0A74C /* interferenzAnDuennenSchichten.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E361177A1D9007EF8D0 /* interferenzAnDuennenSchichten.png */; };
-		F218786612032F7E00E0A74C /* interferenzmaximumAllgemein.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E371177A1D9007EF8D0 /* interferenzmaximumAllgemein.png */; };
-		F218786712032F7E00E0A74C /* interferenzmaximumSpalt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E381177A1D9007EF8D0 /* interferenzmaximumSpalt.png */; };
-		F218786812032F7E00E0A74C /* interferenzminimumAllgemein.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E391177A1D9007EF8D0 /* interferenzminimumAllgemein.png */; };
-		F218786912032F7E00E0A74C /* interferenzminimumSpalt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E3A1177A1D9007EF8D0 /* interferenzminimumSpalt.png */; };
-		F218786A12032F7E00E0A74C /* optischerWeg.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E3B1177A1D9007EF8D0 /* optischerWeg.png */; };
-		F218786B12032F7E00E0A74C /* ordnungen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E3C1177A1D9007EF8D0 /* ordnungen.png */; };
-		F218786C12032F7E00E0A74C /* phasenverschiebung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E3D1177A1D9007EF8D0 /* phasenverschiebung.png */; };
-		F218786D12032F7E00E0A74C /* phasenverschiebung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E3E1177A1D9007EF8D0 /* phasenverschiebung_abk.png */; };
-		F218786E12032F7E00E0A74C /* polarisationswinkel_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E3F1177A1D9007EF8D0 /* polarisationswinkel_abk.png */; };
-		F218786F12032F7E00E0A74C /* schichtDicke_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E401177A1D9007EF8D0 /* schichtDicke_abk.png */; };
-		F218787012032F7E00E0A74C /* schichtDicke_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E411177A1D9007EF8D0 /* schichtDicke_einh.png */; };
-		F218787112032F7E00E0A74C /* spaltbreite_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE0E421177A1D9007EF8D0 /* spaltbreite_abk.png */; };
-		F218787212032F7E00E0A74C /* frequenz1_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E57F116BBCAA00167B46 /* frequenz1_abk.png */; };
-		F218787312032F7E00E0A74C /* frequenz2_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E580116BBCAA00167B46 /* frequenz2_abk.png */; };
-		F218787412032F7E00E0A74C /* frequenzAnGrenzflaeche.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E581116BBCAA00167B46 /* frequenzAnGrenzflaeche.png */; };
-		F218787512032F7E00E0A74C /* lichtgeschwindigkeitVsWellenlaenge.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E582116BBCAA00167B46 /* lichtgeschwindigkeitVsWellenlaenge.png */; };
-		F218787612032F7E00E0A74C /* wellenlaenge_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E583116BBCAA00167B46 /* wellenlaenge_abk.png */; };
-		F218787712032F7E00E0A74C /* wellenlaenge_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F215E584116BBCAA00167B46 /* wellenlaenge_einh.png */; };
 		F218A14F101C94980034C1EC /* imaginaereEinheit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A14A101C94980034C1EC /* imaginaereEinheit_abk.png */; };
 		F218A150101C94980034C1EC /* induktiverWiderstand.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A14B101C94980034C1EC /* induktiverWiderstand.png */; };
 		F218A151101C94980034C1EC /* kapazitiverWiderstand.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A14C101C94980034C1EC /* kapazitiverWiderstand.png */; };
@@ -1106,77 +1080,6 @@
 		F272700A115FEC320076EFD1 /* kontinuierlicheVerteilungWahrscheinlichkeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2727004115FEC320076EFD1 /* kontinuierlicheVerteilungWahrscheinlichkeit.png */; };
 		F2748C6E11370F7600D2C9D7 /* tabbaritem2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2748C6D11370F7600D2C9D7 /* tabbaritem2.png */; };
 		F2748C88113712A000D2C9D7 /* tabbaritem1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2748C87113712A000D2C9D7 /* tabbaritem1.png */; };
-		F274F25C12032F2C00F48A28 /* drehimpulskomponente.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E1A9921202EEAF00464904 /* drehimpulskomponente.png */; };
-		F274F25D12032F2C00F48A28 /* kommutatorLiLj.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E1A9931202EEAF00464904 /* kommutatorLiLj.png */; };
-		F274F25E12032F2C00F48A28 /* kommutatorLiPj.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E1A9941202EEAF00464904 /* kommutatorLiPj.png */; };
-		F274F25F12032F2C00F48A28 /* kommutatorLiXj.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E1A9951202EEAF00464904 /* kommutatorLiXj.png */; };
-		F274F26012032F2C00F48A28 /* kommutatorLQuadratLi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E1A9961202EEAF00464904 /* kommutatorLQuadratLi.png */; };
-		F274F26112032F2C00F48A28 /* kommutatorPiPj.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E555120182AA0008853B /* kommutatorPiPj.png */; };
-		F274F26212032F2C00F48A28 /* kommutatorXiPj.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E556120182AA0008853B /* kommutatorXiPj.png */; };
-		F274F26312032F2C00F48A28 /* kommutatorXiXj.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E557120182AA0008853B /* kommutatorXiXj.png */; };
-		F274F26412032F2C00F48A28 /* eigenzustandHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E53E12017C470008853B /* eigenzustandHarmonischerOszi.png */; };
-		F274F26512032F2C00F48A28 /* absteigeopHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4C4120167010008853B /* absteigeopHarmonischerOszi.png */; };
-		F274F26612032F2C00F48A28 /* aufsteigeopHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4B6120164A70008853B /* aufsteigeopHarmonischerOszi.png */; };
-		F274F26712032F2C00F48A28 /* besetzungszahlopHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4B7120164A70008853B /* besetzungszahlopHarmonischerOszi.png */; };
-		F274F26812032F2C00F48A28 /* grundzustandHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4B8120164A70008853B /* grundzustandHarmonischerOszi.png */; };
-		F274F26912032F2C00F48A28 /* hamiltonop2HarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4B9120164A70008853B /* hamiltonop2HarmonischerOszi.png */; };
-		F274F26A12032F2C00F48A28 /* impulsopHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4BA120164A70008853B /* impulsopHarmonischerOszi.png */; };
-		F274F26B12032F2C00F48A28 /* kommutatorAAKreuz.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4BB120164A70008853B /* kommutatorAAKreuz.png */; };
-		F274F26C12032F2C00F48A28 /* ortsopHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4BC120164A70008853B /* ortsopHarmonischerOszi.png */; };
-		F274F26D12032F2C00F48A28 /* hamiltonopHarmonischerOszi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E46D12015A0B0008853B /* hamiltonopHarmonischerOszi.png */; };
-		F274F26E12032F2C00F48A28 /* drehimpulsEigenwertgl1.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB53E11FCCBA800D33824 /* drehimpulsEigenwertgl1.png */; };
-		F274F26F12032F2C00F48A28 /* drehimpulsEigenwertgl2.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB53F11FCCBA800D33824 /* drehimpulsEigenwertgl2.png */; };
-		F274F27012032F2C00F48A28 /* hamiltonop2.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB52111FCC78700D33824 /* hamiltonop2.png */; };
-		F274F27112032F2C00F48A28 /* schroedingergl3.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB51B11FCC5FD00D33824 /* schroedingergl3.png */; };
-		F274F27212032F2C00F48A28 /* kommutatorAB.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB50911FCC42800D33824 /* kommutatorAB.png */; };
-		F274F27312032F2C00F48A28 /* heisenbergUnschaerfe1.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4DE11FC9E5F00D33824 /* heisenbergUnschaerfe1.png */; };
-		F274F27412032F2C00F48A28 /* heisenbergUnschaerfe2.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4DF11FC9E5F00D33824 /* heisenbergUnschaerfe2.png */; };
-		F274F27512032F2C00F48A28 /* hamiltonop1.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46A11FC77A500D33824 /* hamiltonop1.png */; };
-		F274F27612032F2C00F48A28 /* normierungsbedingung.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46E11FC77A500D33824 /* normierungsbedingung.png */; };
-		F274F27712032F2C00F48A28 /* schroedingergl1.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB47011FC77A500D33824 /* schroedingergl1.png */; };
-		F274F27812032F2C00F48A28 /* schroedingergl2.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB47111FC77A500D33824 /* schroedingergl2.png */; };
-		F274F27912032F2C00F48A28 /* LiLj_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E1A9AE1202F16600464904 /* LiLj_abk.png */; };
-		F274F27A12032F2C00F48A28 /* PiPj_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E55B120183820008853B /* PiPj_abk.png */; };
-		F274F27B12032F2C00F48A28 /* XiXj_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E55C120183820008853B /* XiXj_abk.png */; };
-		F274F27C12032F2C00F48A28 /* grundzustandHarmonischerOszi_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E54412017D820008853B /* grundzustandHarmonischerOszi_abk.png */; };
-		F274F27D12032F2C00F48A28 /* hatA_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4F512016C370008853B /* hatA_abk.png */; };
-		F274F27E12032F2C00F48A28 /* hatADag_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4F712016C370008853B /* hatADag_abk.png */; };
-		F274F27F12032F2C00F48A28 /* hatP_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4E4120169A30008853B /* hatP_abk.png */; };
-		F274F28012032F2C00F48A28 /* hatX_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4E6120169A30008853B /* hatX_abk.png */; };
-		F274F28112032F2C00F48A28 /* drehimpulsQuantenzahl2_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB55011FCCF3D00D33824 /* drehimpulsQuantenzahl2_abk.png */; };
-		F274F28212032F2C00F48A28 /* drehimpuls_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB53C11FCCBA800D33824 /* drehimpuls_abk.png */; };
-		F274F28312032F2C00F48A28 /* drehimpulsQuantenzahl_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB54011FCCBA800D33824 /* drehimpulsQuantenzahl_abk.png */; };
-		F274F28412032F2C00F48A28 /* grossVVonR_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB51F11FCC78700D33824 /* grossVVonR_abk.png */; };
-		F274F28512032F2C00F48A28 /* psiVonR_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB52211FCC78700D33824 /* psiVonR_abk.png */; };
-		F274F28612032F2C00F48A28 /* AOp_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB50711FCC42800D33824 /* AOp_abk.png */; };
-		F274F28712032F2C00F48A28 /* BOp_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB50811FCC42800D33824 /* BOp_abk.png */; };
-		F274F28812032F2C00F48A28 /* deltaE_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4D611FC9E5F00D33824 /* deltaE_abk.png */; };
-		F274F28912032F2C00F48A28 /* deltaP_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4D811FC9E5F00D33824 /* deltaP_abk.png */; };
-		F274F28A12032F2C00F48A28 /* deltaT_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4DA11FC9E5F00D33824 /* deltaT_abk.png */; };
-		F274F28C12032F2C00F48A28 /* grossVVonRUndT_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46811FC77A500D33824 /* grossVVonRUndT_abk.png */; };
-		F274F28D12032F2C00F48A28 /* hamiltonop_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46911FC77A500D33824 /* hamiltonop_abk.png */; };
-		F274F28E12032F2C00F48A28 /* hbar_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46B11FC77A500D33824 /* hbar_abk.png */; };
-		F274F28F12032F2C00F48A28 /* i_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46C11FC77A500D33824 /* i_abk.png */; };
-		F274F29012032F2C00F48A28 /* ketPsiVonT_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46D11FC77A500D33824 /* ketPsiVonT_abk.png */; };
-		F274F29112032F2C00F48A28 /* psiVonRUndT_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB46F11FC77A500D33824 /* psiVonRUndT_abk.png */; };
-		F274F29212032F2C00F48A28 /* hatA_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4F612016C370008853B /* hatA_einh.png */; };
-		F274F29312032F2C00F48A28 /* hatADag_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4F812016C370008853B /* hatADag_einh.png */; };
-		F274F29412032F2C00F48A28 /* hatP_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4E5120169A30008853B /* hatP_einh.png */; };
-		F274F29512032F2C00F48A28 /* hatX_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B0E4E7120169A30008853B /* hatX_einh.png */; };
-		F274F29612032F2C00F48A28 /* drehimpulsQuantenzahl2_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB55111FCCF3D00D33824 /* drehimpulsQuantenzahl2_einh.png */; };
-		F274F29712032F2C00F48A28 /* drehimpuls_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB53D11FCCBA800D33824 /* drehimpuls_einh.png */; };
-		F274F29812032F2C00F48A28 /* drehimpulsQuantenzahl_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB54111FCCBA800D33824 /* drehimpulsQuantenzahl_einh.png */; };
-		F274F29912032F2C00F48A28 /* grossVVonR_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB52011FCC78700D33824 /* grossVVonR_einh.png */; };
-		F274F29A12032F2C00F48A28 /* psiVonR_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB52311FCC78700D33824 /* psiVonR_einh.png */; };
-		F274F29B12032F2C00F48A28 /* deltaE_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4D711FC9E5F00D33824 /* deltaE_einh.png */; };
-		F274F29C12032F2C00F48A28 /* deltaP_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4D911FC9E5F00D33824 /* deltaP_einh.png */; };
-		F274F29D12032F2C00F48A28 /* deltaT_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB4DB11FC9E5F00D33824 /* deltaT_einh.png */; };
-		F274F29F12032F2C00F48A28 /* grossVVonRUndT_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB48411FC795900D33824 /* grossVVonRUndT_einh.png */; };
-		F274F2A012032F2C00F48A28 /* hamiltonop_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB48511FC795900D33824 /* hamiltonop_einh.png */; };
-		F274F2A112032F2C00F48A28 /* hbar_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB48611FC795900D33824 /* hbar_einh.png */; };
-		F274F2A212032F2C00F48A28 /* i_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB48711FC795900D33824 /* i_einh.png */; };
-		F274F2A312032F2C00F48A28 /* ketPsiVonT_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB48811FC795900D33824 /* ketPsiVonT_einh.png */; };
-		F274F2A412032F2C00F48A28 /* psiVonRUndT_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22FB48911FC795900D33824 /* psiVonRUndT_einh.png */; };
 		F278DEF3101FA1A10035C8CF /* tabbaritem0.png in Resources */ = {isa = PBXBuildFile; fileRef = F278DEF2101FA1A10035C8CF /* tabbaritem0.png */; };
 		F27963FE1143F7BC00B8EBDE /* tabbaritem4.png in Resources */ = {isa = PBXBuildFile; fileRef = F27963FD1143F7BC00B8EBDE /* tabbaritem4.png */; };
 		F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
@@ -1207,683 +1110,8 @@
 		F27B09630FDEEF5F0005F61D /* plattenabstand_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09510FDEEF5F0005F61D /* plattenabstand_abk.png */; };
 		F27B09640FDEEF5F0005F61D /* plattenabstand_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09520FDEEF5F0005F61D /* plattenabstand_einh.png */; };
 		F27B09650FDEEF5F0005F61D /* reiheKondensator.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09530FDEEF5F0005F61D /* reiheKondensator.png */; };
-		F27EEBAB1154D3A5008449FC /* geschwindigkeit01.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F220FA0745800B2CD25 /* geschwindigkeit01.png */; };
-		F27EEBAC1154D3A5008449FC /* kraft01.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F440FA079C400B2CD25 /* kraft01.png */; };
-		F27EEBAD1154D3A5008449FC /* reibungskraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F540FA0C59A00B2CD25 /* reibungskraft.png */; };
-		F27EEBAE1154D3A5008449FC /* arbeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F560FA0C66200B2CD25 /* arbeit.png */; };
-		F27EEBAF1154D3A5008449FC /* leistung01.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F5A0FA0C7EE00B2CD25 /* leistung01.png */; };
-		F27EEBB01154D3A5008449FC /* e_kin01.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F5C0FA0C8DD00B2CD25 /* e_kin01.png */; };
-		F27EEBB11154D3A5008449FC /* beschleunigung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F5F0FA0C9EB00B2CD25 /* beschleunigung.png */; };
-		F27EEBB21154D3A5008449FC /* geschwindigkeit02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AB4F610FA0CA7700B2CD25 /* geschwindigkeit02.png */; };
-		F27EEBB31154D3A5008449FC /* geschwindigkeit_einh01.png in Resources */ = {isa = PBXBuildFile; fileRef = F22622130FA2FEA600053994 /* geschwindigkeit_einh01.png */; };
-		F27EEBB41154D3A5008449FC /* geschwindigkeit_einh02.png in Resources */ = {isa = PBXBuildFile; fileRef = F22622140FA2FEA600053994 /* geschwindigkeit_einh02.png */; };
-		F27EEBB51154D3A5008449FC /* geschwindigkeit_einh03.png in Resources */ = {isa = PBXBuildFile; fileRef = F22622150FA2FEA600053994 /* geschwindigkeit_einh03.png */; };
-		F27EEBB61154D3A5008449FC /* e_pot_schwingung01.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79BF0FA48ED800B638F9 /* e_pot_schwingung01.png */; };
-		F27EEBB71154D3A5008449FC /* arbeit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79C50FA49CD100B638F9 /* arbeit_abk.png */; };
-		F27EEBB81154D3A5008449FC /* arbeit_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79C60FA49CD100B638F9 /* arbeit_einh.png */; };
-		F27EEBB91154D3A5008449FC /* beschleunigung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79C70FA49CD100B638F9 /* beschleunigung_abk.png */; };
-		F27EEBBA1154D3A5008449FC /* beschleunigung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79C80FA49CD100B638F9 /* beschleunigung_einh.png */; };
-		F27EEBBB1154D3A5008449FC /* e_kin_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79C90FA49CD100B638F9 /* e_kin_abk.png */; };
-		F27EEBBC1154D3A5008449FC /* e_kin_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79CA0FA49CD100B638F9 /* e_kin_einh.png */; };
-		F27EEBBD1154D3A5008449FC /* e_pot_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79CB0FA49CD100B638F9 /* e_pot_abk.png */; };
-		F27EEBBE1154D3A5008449FC /* e_pot_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79CC0FA49CD100B638F9 /* e_pot_einh.png */; };
-		F27EEBBF1154D3A5008449FC /* geschwindigkeit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79CD0FA49CD100B638F9 /* geschwindigkeit_abk.png */; };
-		F27EEBC01154D3A5008449FC /* geschwindigkeit_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79CE0FA49CD100B638F9 /* geschwindigkeit_einh.png */; };
-		F27EEBC11154D3A5008449FC /* gewichtskraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79CF0FA49CD100B638F9 /* gewichtskraft_abk.png */; };
-		F27EEBC21154D3A5008449FC /* gravitationsbeschleunigung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D00FA49CD100B638F9 /* gravitationsbeschleunigung_abk.png */; };
-		F27EEBC31154D3A5008449FC /* impuls@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D10FA49CD100B638F9 /* impuls@2x.png */; };
-		F27EEBC41154D3A5008449FC /* impuls_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D20FA49CD100B638F9 /* impuls_abk.png */; };
-		F27EEBC51154D3A5008449FC /* impuls_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D30FA49CD100B638F9 /* impuls_einh.png */; };
-		F27EEBC61154D3A5008449FC /* kraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D40FA49CD100B638F9 /* kraft_abk.png */; };
-		F27EEBC71154D3A5008449FC /* kraft_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D50FA49CD100B638F9 /* kraft_einh.png */; };
-		F27EEBC81154D3A5008449FC /* leistung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D60FA49CD100B638F9 /* leistung_abk.png */; };
-		F27EEBC91154D3A5008449FC /* masse_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79D70FA49CD100B638F9 /* masse_abk.png */; };
-		F27EEBCA1154D3A5008449FC /* zeit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79DA0FA49CD100B638F9 /* zeit_abk.png */; };
-		F27EEBCB1154D3A5008449FC /* zeit_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79DB0FA49CD100B638F9 /* zeit_einh.png */; };
-		F27EEBCC1154D3A5008449FC /* masse_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A79FD0FA4DB3300B638F9 /* masse_einh.png */; };
-		F27EEBCD1154D3A5008449FC /* normalkraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A040FA4F56100B638F9 /* normalkraft_abk.png */; };
-		F27EEBCE1154D3A5008449FC /* normalkraft_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A050FA4F56100B638F9 /* normalkraft_einh.png */; };
-		F27EEBCF1154D3A5008449FC /* reibungskraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A060FA4F56100B638F9 /* reibungskraft_abk.png */; };
-		F27EEBD01154D3A5008449FC /* reibungskraft_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A070FA4F56100B638F9 /* reibungskraft_einh.png */; };
-		F27EEBD11154D3A5008449FC /* leistung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A0E0FA4F92100B638F9 /* leistung_einh.png */; };
-		F27EEBD21154D3A5008449FC /* reibungskoeff_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A0F0FA4F92100B638F9 /* reibungskoeff_abk.png */; };
-		F27EEBD31154D3A5008449FC /* reibungskoeff_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A100FA4F92100B638F9 /* reibungskoeff_einh.png */; };
-		F27EEBD41154D3A5008449FC /* auslenkung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A1D0FA50B4A00B638F9 /* auslenkung_abk.png */; };
-		F27EEBD51154D3A5008449FC /* auslenkung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A1E0FA50B4A00B638F9 /* auslenkung_einh.png */; };
-		F27EEBD61154D3A5008449FC /* federkonstante_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A1F0FA50B4A00B638F9 /* federkonstante_abk.png */; };
-		F27EEBD71154D3A5008449FC /* federkonstante_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A200FA50B4A00B638F9 /* federkonstante_einh.png */; };
-		F27EEBD81154D3A5008449FC /* federkraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A260FA50DCA00B638F9 /* federkraft.png */; };
-		F27EEBD91154D3A5008449FC /* federkraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A270FA50DCA00B638F9 /* federkraft_abk.png */; };
-		F27EEBDA1154D3A5008449FC /* leistung02.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A2D0FA61BB900B638F9 /* leistung02.png */; };
-		F27EEBDB1154D3A5008449FC /* zurueckgelegter_weg.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A320FA61FCB00B638F9 /* zurueckgelegter_weg.png */; };
-		F27EEBDC1154D3A5008449FC /* anfangsgeschwindigkeit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A370FA6516600B638F9 /* anfangsgeschwindigkeit_abk.png */; };
-		F27EEBDD1154D3A5008449FC /* anfangsgeschwindigkeit_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A380FA6516600B638F9 /* anfangsgeschwindigkeit_einh.png */; };
-		F27EEBDE1154D3A5008449FC /* bremsdauer.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A390FA6516600B638F9 /* bremsdauer.png */; };
-		F27EEBDF1154D3A5008449FC /* bremsweg.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A3A0FA6516600B638F9 /* bremsweg.png */; };
-		F27EEBE01154D3A5008449FC /* geschwindigkeit03.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A3B0FA6516600B638F9 /* geschwindigkeit03.png */; };
-		F27EEBE11154D3A5008449FC /* geschwindigkeit04.png in Resources */ = {isa = PBXBuildFile; fileRef = F20A7A3C0FA6516600B638F9 /* geschwindigkeit04.png */; };
-		F27EEBE21154D3A5008449FC /* gewichtskraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858A40FAE08E900E12844 /* gewichtskraft.png */; };
-		F27EEBE31154D3A5008449FC /* gravitationskraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858A50FAE08E900E12844 /* gravitationskraft.png */; };
-		F27EEBE41154D3A5008449FC /* hangabtriebskraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858A60FAE08E900E12844 /* hangabtriebskraft.png */; };
-		F27EEBE51154D3A5008449FC /* kreisgeschwindigkeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858A70FAE08E900E12844 /* kreisgeschwindigkeit.png */; };
-		F27EEBE61154D3A5008449FC /* normalkraft02.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858A80FAE08E900E12844 /* normalkraft02.png */; };
-		F27EEBE71154D3A5008449FC /* zentripetalkraft01.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858A90FAE08E900E12844 /* zentripetalkraft01.png */; };
-		F27EEBE81154D3A5008449FC /* zentripetalkraft02.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858AA0FAE08E900E12844 /* zentripetalkraft02.png */; };
-		F27EEBE91154D3A5008449FC /* gewichtskraft_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858B20FAE091600E12844 /* gewichtskraft_einh.png */; };
-		F27EEBEA1154D3A5008449FC /* hangabtriebskraft_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858B30FAE091600E12844 /* hangabtriebskraft_einh.png */; };
-		F27EEBEB1154D3A5008449FC /* frequenz_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858B80FAE094000E12844 /* frequenz_abk.png */; };
-		F27EEBEC1154D3A5008449FC /* hangabtriebskraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858B90FAE094000E12844 /* hangabtriebskraft_abk.png */; };
-		F27EEBED1154D3A5008449FC /* periode_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858BB0FAE094000E12844 /* periode_abk.png */; };
-		F27EEBEE1154D3A5008449FC /* zentripetalkraft01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858BC0FAE094000E12844 /* zentripetalkraft01_abk.png */; };
-		F27EEBEF1154D3A5008449FC /* gravitationsbeschleunigung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858C50FAE0DF200E12844 /* gravitationsbeschleunigung_einh.png */; };
-		F27EEBF01154D3A5008449FC /* gravitationsbeschleunigung.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858C80FAE0EBD00E12844 /* gravitationsbeschleunigung.png */; };
-		F27EEBF11154D3A5008449FC /* neigungswinkel_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23858CB0FAE119F00E12844 /* neigungswinkel_abk.png */; };
-		F27EEBF21154D3A5008449FC /* radius_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F26255AD0FAE44D800B0B052 /* radius_einh.png */; };
-		F27EEBF31154D3A5008449FC /* radius_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F26255AF0FAE44EB00B0B052 /* radius_abk.png */; };
-		F27EEBF41154D3A5008449FC /* frequenz_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F26255B40FAE480800B0B052 /* frequenz_einh.png */; };
-		F27EEBF51154D3A5008449FC /* periode_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F26255B50FAE480800B0B052 /* periode_einh.png */; };
-		F27EEBF61154D3A5008449FC /* winkelgeschwindigkeit_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F26255B60FAE480800B0B052 /* winkelgeschwindigkeit_einh.png */; };
-		F27EEBF71154D3A5008449FC /* winkelgeschwindigkeit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F26255BA0FAE481D00B0B052 /* winkelgeschwindigkeit_abk.png */; };
-		F27EEBF81154D3A5008449FC /* kraft02.png in Resources */ = {isa = PBXBuildFile; fileRef = F22849CC0FAF90C2007113C6 /* kraft02.png */; };
-		F27EEBF91154D3A5008449FC /* beschleunigung_const.png in Resources */ = {isa = PBXBuildFile; fileRef = F248582A0FB22C7D00528A2E /* beschleunigung_const.png */; };
-		F27EEBFA1154D3A5008449FC /* gravitationskonstante.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858300FB2355200528A2E /* gravitationskonstante.png */; };
-		F27EEBFB1154D3A5008449FC /* gravitationskonstante_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858320FB2356F00528A2E /* gravitationskonstante_einh.png */; };
-		F27EEBFC1154D3A5008449FC /* abstand_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858340FB235A400528A2E /* abstand_abk.png */; };
-		F27EEBFD1154D3A5008449FC /* gravitationskonstante_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858350FB235A400528A2E /* gravitationskonstante_abk.png */; };
-		F27EEBFE1154D3A5008449FC /* masse1_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858360FB235A400528A2E /* masse1_abk.png */; };
-		F27EEBFF1154D3A5008449FC /* masse2_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858370FB235A400528A2E /* masse2_abk.png */; };
-		F27EEC001154D3A5008449FC /* gravitationspotential.png in Resources */ = {isa = PBXBuildFile; fileRef = F248585F0FB23EFE00528A2E /* gravitationspotential.png */; };
-		F27EEC011154D3A5008449FC /* gravitationspotential_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858610FB23F0C00528A2E /* gravitationspotential_einh.png */; };
-		F27EEC021154D3A5008449FC /* gravitationspotential_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24858630FB23F1C00528A2E /* gravitationspotential_abk.png */; };
-		F27EEC031154D3A5008449FC /* drehimpuls01.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55310FB4829700C6B82E /* drehimpuls01.png */; };
-		F27EEC041154D3A5008449FC /* drehimpuls02.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55320FB4829700C6B82E /* drehimpuls02.png */; };
-		F27EEC051154D3A5008449FC /* drehmoment01.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55330FB4829700C6B82E /* drehmoment01.png */; };
-		F27EEC061154D3A5008449FC /* drehmoment02.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55340FB4829700C6B82E /* drehmoment02.png */; };
-		F27EEC071154D3A5008449FC /* drehmoment_const.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55350FB4829700C6B82E /* drehmoment_const.png */; };
-		F27EEC081154D3A5008449FC /* drehimpulserhaltungssatz.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55360FB4829700C6B82E /* drehimpulserhaltungssatz.png */; };
-		F27EEC091154D3A5008449FC /* rotationsarbeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55370FB4829700C6B82E /* rotationsarbeit.png */; };
-		F27EEC0A1154D3A5008449FC /* rotationsenergie01.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55380FB4829700C6B82E /* rotationsenergie01.png */; };
-		F27EEC0B1154D3A5008449FC /* rotationsleistung.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55390FB4829700C6B82E /* rotationsleistung.png */; };
-		F27EEC0C1154D3A5008449FC /* traegheitsmoment.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C553A0FB4829700C6B82E /* traegheitsmoment.png */; };
-		F27EEC0D1154D3A5008449FC /* drehimpuls01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55450FB482D200C6B82E /* drehimpuls01_einh.png */; };
-		F27EEC0E1154D3A5008449FC /* drehmoment01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55460FB482D200C6B82E /* drehmoment01_einh.png */; };
-		F27EEC0F1154D3A5008449FC /* einzeldrehimpuls_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55470FB482D200C6B82E /* einzeldrehimpuls_einh.png */; };
-		F27EEC101154D3A5008449FC /* rotationsenergie01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55480FB482D200C6B82E /* rotationsenergie01_einh.png */; };
-		F27EEC111154D3A5008449FC /* traegheitsmoment_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55490FB482D200C6B82E /* traegheitsmoment_einh.png */; };
-		F27EEC121154D3A5008449FC /* abstandZurDrehachse_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C554F0FB482F900C6B82E /* abstandZurDrehachse_abk.png */; };
-		F27EEC131154D3A5008449FC /* drehimpuls01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55500FB482F900C6B82E /* drehimpuls01_abk.png */; };
-		F27EEC141154D3A5008449FC /* drehmoment01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55510FB482F900C6B82E /* drehmoment01_abk.png */; };
-		F27EEC151154D3A5008449FC /* einzeldrehimpuls_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55520FB482F900C6B82E /* einzeldrehimpuls_abk.png */; };
-		F27EEC161154D3A5008449FC /* rotationsenergie01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55530FB482F900C6B82E /* rotationsenergie01_abk.png */; };
-		F27EEC171154D3A5008449FC /* traegheitsmoment_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55540FB482F900C6B82E /* traegheitsmoment_abk.png */; };
-		F27EEC181154D3A5008449FC /* winkel_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55610FB48C6700C6B82E /* winkel_abk.png */; };
-		F27EEC191154D3A5008449FC /* winkel_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55630FB48D0E00C6B82E /* winkel_einh.png */; };
-		F27EEC1A1154D3A5008449FC /* satzVonSteiner.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55670FB4928400C6B82E /* satzVonSteiner.png */; };
-		F27EEC1B1154D3A5008449FC /* traegheitsmomentHaupt_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55690FB4929E00C6B82E /* traegheitsmomentHaupt_abk.png */; };
-		F27EEC1C1154D3A5008449FC /* rotationsenergie02.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55700FB49A3C00C6B82E /* rotationsenergie02.png */; };
-		F27EEC1D1154D3A5008449FC /* impulserhaltungssatz.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55740FB5CA0D00C6B82E /* impulserhaltungssatz.png */; };
-		F27EEC1E1154D3A5008449FC /* einzelimpuls_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55760FB5CA1D00C6B82E /* einzelimpuls_einh.png */; };
-		F27EEC1F1154D3A5008449FC /* einzelimpuls_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55780FB5CA3600C6B82E /* einzelimpuls_abk.png */; };
-		F27EEC201154D3A5008449FC /* celsiusNull.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55C20FB5D20C00C6B82E /* celsiusNull.png */; };
-		F27EEC211154D3A5008449FC /* theta.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55C40FB5D21D00C6B82E /* theta.png */; };
-		F27EEC221154D3A5008449FC /* celsius_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55C60FB5D23700C6B82E /* celsius_abk.png */; };
-		F27EEC231154D3A5008449FC /* celsius_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55C70FB5D23700C6B82E /* celsius_einh.png */; };
-		F27EEC241154D3A5008449FC /* celsiusHundert.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C55EE0FB5D62300C6B82E /* celsiusHundert.png */; };
-		F27EEC251154D3A5008449FC /* kelvin.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C56030FB6339300C6B82E /* kelvin.png */; };
-		F27EEC261154D3A5008449FC /* kelvinHundert.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C56040FB6339300C6B82E /* kelvinHundert.png */; };
-		F27EEC271154D3A5008449FC /* kelvinNull.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C56050FB6339300C6B82E /* kelvinNull.png */; };
-		F27EEC281154D3A5008449FC /* kelvin_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C56090FB633AB00C6B82E /* kelvin_einh.png */; };
-		F27EEC291154D3A5008449FC /* kelvin_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25C560B0FB633FA00C6B82E /* kelvin_abk.png */; };
-		F27EEC2A1154D3A5008449FC /* gayLussac.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A215C0FB6419000DEA6B3 /* gayLussac.png */; };
-		F27EEC2B1154D3A5008449FC /* amonton.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21600FB6F39500DEA6B3 /* amonton.png */; };
-		F27EEC2C1154D3A5008449FC /* druck_const.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21610FB6F39500DEA6B3 /* druck_const.png */; };
-		F27EEC2D1154D3A5008449FC /* volumen_const.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21620FB6F39500DEA6B3 /* volumen_const.png */; };
-		F27EEC2E1154D3A5008449FC /* druckBeiTheta_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21660FB6F3C700DEA6B3 /* druckBeiTheta_abk.png */; };
-		F27EEC2F1154D3A5008449FC /* druckNull_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21670FB6F3C700DEA6B3 /* druckNull_abk.png */; };
-		F27EEC301154D3A5008449FC /* volumenBeiTheta_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21680FB6F3C700DEA6B3 /* volumenBeiTheta_abk.png */; };
-		F27EEC311154D3A5008449FC /* volumenNull_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21690FB6F3C700DEA6B3 /* volumenNull_abk.png */; };
-		F27EEC321154D3A5008449FC /* druck_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A216E0FB6F3E200DEA6B3 /* druck_einh.png */; };
-		F27EEC331154D3A5008449FC /* volumen_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A216F0FB6F3E200DEA6B3 /* volumen_einh.png */; };
-		F27EEC341154D3A5008449FC /* druck_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21720FB6F78700DEA6B3 /* druck_abk.png */; };
-		F27EEC351154D3A5008449FC /* volumen_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21730FB6F78700DEA6B3 /* volumen_abk.png */; };
-		F27EEC361154D3A5008449FC /* theta_const.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A217A0FB759E500DEA6B3 /* theta_const.png */; };
-		F27EEC371154D3A5008449FC /* boyleMariotte.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A217C0FB759F800DEA6B3 /* boyleMariotte.png */; };
-		F27EEC381154D3A5008449FC /* gaskonstante.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21890FB760BD00DEA6B3 /* gaskonstante.png */; };
-		F27EEC391154D3A5008449FC /* allgemeineGasgl.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A218B0FB760D800DEA6B3 /* allgemeineGasgl.png */; };
-		F27EEC3A1154D3A5008449FC /* stoffmenge.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A218C0FB760D800DEA6B3 /* stoffmenge.png */; };
-		F27EEC3B1154D3A5008449FC /* gaskonstante_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A218F0FB760F100DEA6B3 /* gaskonstante_abk.png */; };
-		F27EEC3C1154D3A5008449FC /* stoffmenge_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21900FB760F100DEA6B3 /* stoffmenge_abk.png */; };
-		F27EEC3D1154D3A5008449FC /* gaskonstante_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21930FB7610C00DEA6B3 /* gaskonstante_einh.png */; };
-		F27EEC3E1154D3A5008449FC /* stoffmenge_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21940FB7610C00DEA6B3 /* stoffmenge_einh.png */; };
-		F27EEC3F1154D3A5008449FC /* avogadrozahl.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21980FB7643500DEA6B3 /* avogadrozahl.png */; };
-		F27EEC401154D3A5008449FC /* avogadrozahl_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A219A0FB7646000DEA6B3 /* avogadrozahl_abk.png */; };
-		F27EEC411154D3A5008449FC /* molareMasse_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A219B0FB7646000DEA6B3 /* molareMasse_abk.png */; };
-		F27EEC421154D3A5008449FC /* teilchenzahl_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A219C0FB7646000DEA6B3 /* teilchenzahl_abk.png */; };
-		F27EEC431154D3A5008449FC /* avogadrozahl_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21A00FB7648E00DEA6B3 /* avogadrozahl_einh.png */; };
-		F27EEC441154D3A5008449FC /* molareMasse_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21A10FB7648E00DEA6B3 /* molareMasse_einh.png */; };
-		F27EEC451154D3A5008449FC /* teilchenzahl_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21A20FB7648E00DEA6B3 /* teilchenzahl_einh.png */; };
-		F27EEC461154D3A5008449FC /* adiabate01.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21A80FB76BB400DEA6B3 /* adiabate01.png */; };
-		F27EEC471154D3A5008449FC /* adiabate02.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21A90FB76BB400DEA6B3 /* adiabate02.png */; };
-		F27EEC481154D3A5008449FC /* adiabatenexponent.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21AA0FB76BB400DEA6B3 /* adiabatenexponent.png */; };
-		F27EEC491154D3A5008449FC /* c_V_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21AE0FB76BFA00DEA6B3 /* c_V_abk.png */; };
-		F27EEC4A1154D3A5008449FC /* c_V_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21AF0FB76BFA00DEA6B3 /* c_V_einh.png */; };
-		F27EEC4B1154D3A5008449FC /* c_p_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21B20FB76C1300DEA6B3 /* c_p_abk.png */; };
-		F27EEC4C1154D3A5008449FC /* c_p_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21B30FB76C1300DEA6B3 /* c_p_einh.png */; };
-		F27EEC4D1154D3A5008449FC /* adiabatenexponent_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21B70FB76E4900DEA6B3 /* adiabatenexponent_abk.png */; };
-		F27EEC4E1154D3A5008449FC /* adiabatenexponent_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A21B90FB76E5500DEA6B3 /* adiabatenexponent_einh.png */; };
-		F27EEC501154D3A5008449FC /* ersterHS.png in Resources */ = {isa = PBXBuildFile; fileRef = F22556FA0FC460E20003F982 /* ersterHS.png */; };
-		F27EEC511154D3A5008449FC /* innereEnergie_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22556FC0FC461070003F982 /* innereEnergie_abk.png */; };
-		F27EEC521154D3A5008449FC /* waerme_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22556FE0FC461070003F982 /* waerme_abk.png */; };
-		F27EEC531154D3A5008449FC /* innereEnergie_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22557020FC461260003F982 /* innereEnergie_einh.png */; };
-		F27EEC541154D3A5008449FC /* platzhalter.png in Resources */ = {isa = PBXBuildFile; fileRef = F225570C0FC466150003F982 /* platzhalter.png */; };
-		F27EEC551154D3A5008449FC /* wirkungsgrad01.png in Resources */ = {isa = PBXBuildFile; fileRef = F22557120FC46AD70003F982 /* wirkungsgrad01.png */; };
-		F27EEC561154D3A5008449FC /* wirkungsgrad02.png in Resources */ = {isa = PBXBuildFile; fileRef = F22557130FC46AD70003F982 /* wirkungsgrad02.png */; };
-		F27EEC571154D3A5008449FC /* waerme_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22557160FC46AF50003F982 /* waerme_einh.png */; };
-		F27EEC581154D3A5008449FC /* temperatur_waermebad1_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22557180FC46ED60003F982 /* temperatur_waermebad1_abk.png */; };
-		F27EEC591154D3A5008449FC /* temperatur_waermebad2_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22557190FC46ED60003F982 /* temperatur_waermebad2_abk.png */; };
-		F27EEC5A1154D3A5008449FC /* wirkungsgrad01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F225571A0FC46ED60003F982 /* wirkungsgrad01_abk.png */; };
-		F27EEC5B1154D3A5008449FC /* e_kin02.png in Resources */ = {isa = PBXBuildFile; fileRef = F21EE3820FC684FE00F6DE37 /* e_kin02.png */; };
-		F27EEC5C1154D3A5008449FC /* temperatur_waermebad1_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F46F4D0FC7DA1D0074A152 /* temperatur_waermebad1_einh.png */; };
-		F27EEC5D1154D3A5008449FC /* temperatur_waermebad2_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F46F4E0FC7DA1D0074A152 /* temperatur_waermebad2_einh.png */; };
-		F27EEC5E1154D3A5008449FC /* wirkungsgrad01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F46F4F0FC7DA1D0074A152 /* wirkungsgrad01_einh.png */; };
-		F27EEC5F1154D3A5008449FC /* grundGlKinGasTheo.png in Resources */ = {isa = PBXBuildFile; fileRef = F24D9B230FCB275F000B1450 /* grundGlKinGasTheo.png */; };
-		F27EEC601154D3A5008449FC /* teilchenmasse_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24D9B250FCB2775000B1450 /* teilchenmasse_abk.png */; };
-		F27EEC611154D3A5008449FC /* teilchenmasse_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24D9B270FCB2785000B1450 /* teilchenmasse_einh.png */; };
-		F27EEC621154D3A5008449FC /* e_kin_idealesGas.png in Resources */ = {isa = PBXBuildFile; fileRef = F25357A40FCB353100AB28B4 /* e_kin_idealesGas.png */; };
-		F27EEC631154D3A5008449FC /* temperatur_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC2F0FCC76D40062F45E /* temperatur_abk.png */; };
-		F27EEC641154D3A5008449FC /* e_kin_idealesGas02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC560FCC79A30062F45E /* e_kin_idealesGas02.png */; };
-		F27EEC651154D3A5008449FC /* freiheitsgrade_ideal.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC5A0FCC7E2A0062F45E /* freiheitsgrade_ideal.png */; };
-		F27EEC661154D3A5008449FC /* freiheitsgrade_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC5C0FCC7E3C0062F45E /* freiheitsgrade_abk.png */; };
-		F27EEC671154D3A5008449FC /* freiheitsgrade_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC5E0FCC7E4B0062F45E /* freiheitsgrade_einh.png */; };
-		F27EEC681154D3A5008449FC /* e_kin_idealesGas03.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC670FCC83560062F45E /* e_kin_idealesGas03.png */; };
-		F27EEC691154D3A5008449FC /* boltzmannkonstante.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC690FCC861F0062F45E /* boltzmannkonstante.png */; };
-		F27EEC6A1154D3A5008449FC /* boltzmannkonstante_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC6B0FCC86540062F45E /* boltzmannkonstante_abk.png */; };
-		F27EEC6B1154D3A5008449FC /* boltzmannkonstante_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E7BC6D0FCC86650062F45E /* boltzmannkonstante_einh.png */; };
-		F27EEC6C1154D3A5008449FC /* gaskonstante02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385D8C0FCDD417009BA295 /* gaskonstante02.png */; };
-		F27EEC6D1154D3A5008449FC /* mittlereGeschw.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385D9C0FCDDBB5009BA295 /* mittlereGeschw.png */; };
-		F27EEC6E1154D3A5008449FC /* dichte_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385D9E0FCDDD8B009BA295 /* dichte_abk.png */; };
-		F27EEC6F1154D3A5008449FC /* dichte_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385D9F0FCDDD8B009BA295 /* dichte_einh.png */; };
-		F27EEC701154D3A5008449FC /* satzVonAvogadro.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385DB40FCDDE72009BA295 /* satzVonAvogadro.png */; };
-		F27EEC711154D3A5008449FC /* nullterHS.png in Resources */ = {isa = PBXBuildFile; fileRef = F2385DB80FCDE009009BA295 /* nullterHS.png */; };
-		F27EEC721154D3A5008449FC /* molvolumen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262410FD0304F00FFCE07 /* molvolumen.png */; };
-		F27EEC731154D3A5008449FC /* molvolumen_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262430FD0313000FFCE07 /* molvolumen_abk.png */; };
-		F27EEC741154D3A5008449FC /* molvolumen_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262440FD0313000FFCE07 /* molvolumen_einh.png */; };
-		F27EEC751154D3A5008449FC /* molmasse.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F2624B0FD0340C00FFCE07 /* molmasse.png */; };
-		F27EEC761154D3A5008449FC /* waermekapazitaet.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262710FD046B400FFCE07 /* waermekapazitaet.png */; };
-		F27EEC771154D3A5008449FC /* waermekapazitaet_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262720FD046B400FFCE07 /* waermekapazitaet_abk.png */; };
-		F27EEC781154D3A5008449FC /* waermekapazitaet_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262730FD046B400FFCE07 /* waermekapazitaet_einh.png */; };
-		F27EEC791154D3A5008449FC /* molareWaermekapazitaet.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262870FD0488D00FFCE07 /* molareWaermekapazitaet.png */; };
-		F27EEC7A1154D3A5008449FC /* molareWaermekapazitaet_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262880FD0488D00FFCE07 /* molareWaermekapazitaet_abk.png */; };
-		F27EEC7B1154D3A5008449FC /* molareWaermekapazitaet_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F262890FD0488D00FFCE07 /* molareWaermekapazitaet_einh.png */; };
-		F27EEC7C1154D3A5008449FC /* molareWaermekapazitaet_p.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FC830FD2FA0500BD0BA0 /* molareWaermekapazitaet_p.png */; };
-		F27EEC7D1154D3A5008449FC /* molareWaermekapazitaet_p_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FC840FD2FA0500BD0BA0 /* molareWaermekapazitaet_p_abk.png */; };
-		F27EEC7E1154D3A5008449FC /* molareWaermekapazitaet_p_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FC850FD2FA0500BD0BA0 /* molareWaermekapazitaet_p_einh.png */; };
-		F27EEC7F1154D3A5008449FC /* molareWaermekapazitaet_V.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FC860FD2FA0500BD0BA0 /* molareWaermekapazitaet_V.png */; };
-		F27EEC801154D3A5008449FC /* molareWaermekapazitaet_V_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FC870FD2FA0500BD0BA0 /* molareWaermekapazitaet_V_abk.png */; };
-		F27EEC811154D3A5008449FC /* molareWaermekapazitaet_V_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FC880FD2FA0500BD0BA0 /* molareWaermekapazitaet_V_einh.png */; };
-		F27EEC821154D3A5008449FC /* molareWaermekapazitaetenZusammenh.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FC940FD30D5C00BD0BA0 /* molareWaermekapazitaetenZusammenh.png */; };
-		F27EEC831154D3A5008449FC /* spezifischeWaermekapazitaet.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FCC30FD3363000BD0BA0 /* spezifischeWaermekapazitaet.png */; };
-		F27EEC841154D3A5008449FC /* spezifischeWaermekapazitaet_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FCC40FD3363000BD0BA0 /* spezifischeWaermekapazitaet_abk.png */; };
-		F27EEC851154D3A5008449FC /* spezifischeWaermekapazitaet_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FCC50FD3363000BD0BA0 /* spezifischeWaermekapazitaet_einh.png */; };
-		F27EEC861154D3A5008449FC /* mischungstemp.png in Resources */ = {isa = PBXBuildFile; fileRef = F227FCE60FD3394200BD0BA0 /* mischungstemp.png */; };
-		F27EEC871154D3A5008449FC /* ladung01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2992AD00FD440AF0005D176 /* ladung01_abk.png */; };
-		F27EEC881154D3A5008449FC /* ladung01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2992AD10FD440AF0005D176 /* ladung01_einh.png */; };
-		F27EEC891154D3A5008449FC /* stromstaerke.png in Resources */ = {isa = PBXBuildFile; fileRef = F2992AD20FD440AF0005D176 /* stromstaerke.png */; };
-		F27EEC8A1154D3A5008449FC /* stromstaerke_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2992AD30FD440AF0005D176 /* stromstaerke_abk.png */; };
-		F27EEC8B1154D3A5008449FC /* stromstaerke_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2992AD40FD440AF0005D176 /* stromstaerke_einh.png */; };
-		F27EEC8C1154D3A5008449FC /* elektrischeArbeit01.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A242D0FD5B8EF00B35251 /* elektrischeArbeit01.png */; };
-		F27EEC8D1154D3A5008449FC /* elektrischeArbeit01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A242E0FD5B8EF00B35251 /* elektrischeArbeit01_abk.png */; };
-		F27EEC8E1154D3A5008449FC /* elektrischeArbeit02.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A242F0FD5B8EF00B35251 /* elektrischeArbeit02.png */; };
-		F27EEC8F1154D3A5008449FC /* elektrischerWiderstand.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24300FD5B8EF00B35251 /* elektrischerWiderstand.png */; };
-		F27EEC901154D3A5008449FC /* elektrischerWiderstand_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24310FD5B8EF00B35251 /* elektrischerWiderstand_abk.png */; };
-		F27EEC911154D3A5008449FC /* elektrischerWiderstand_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24320FD5B8EF00B35251 /* elektrischerWiderstand_einh.png */; };
-		F27EEC921154D3A5008449FC /* ohmschesGesetz.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24350FD5B8EF00B35251 /* ohmschesGesetz.png */; };
-		F27EEC931154D3A5008449FC /* parallelSpannung.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24360FD5B8EF00B35251 /* parallelSpannung.png */; };
-		F27EEC941154D3A5008449FC /* parallelStrom.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24370FD5B8EF00B35251 /* parallelStrom.png */; };
-		F27EEC951154D3A5008449FC /* parallelWiderstand.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24380FD5B8EF00B35251 /* parallelWiderstand.png */; };
-		F27EEC961154D3A5008449FC /* reiheSpannung.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24390FD5B8EF00B35251 /* reiheSpannung.png */; };
-		F27EEC971154D3A5008449FC /* reiheStrom.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A243A0FD5B8EF00B35251 /* reiheStrom.png */; };
-		F27EEC981154D3A5008449FC /* reiheWiderstand.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A243B0FD5B8EF00B35251 /* reiheWiderstand.png */; };
-		F27EEC991154D3A5008449FC /* spannung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A243C0FD5B8EF00B35251 /* spannung_abk.png */; };
-		F27EEC9A1154D3A5008449FC /* spannung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A24540FD5BC6400B35251 /* spannung_einh.png */; };
-		F27EEC9B1154D3A5008449FC /* elektrischeLeistung01.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A245D0FD5C1F300B35251 /* elektrischeLeistung01.png */; };
-		F27EEC9C1154D3A5008449FC /* elektrischeLeistung02.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A245E0FD5C1F300B35251 /* elektrischeLeistung02.png */; };
-		F27EEC9D1154D3A5008449FC /* elektrischeFeldstaerke_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22710CC0FD70D5200A6E97F /* elektrischeFeldstaerke_abk.png */; };
-		F27EEC9E1154D3A5008449FC /* elektrischeFeldstaerke_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22710CD0FD70D5200A6E97F /* elektrischeFeldstaerke_einh.png */; };
-		F27EEC9F1154D3A5008449FC /* elektrischesFeld.png in Resources */ = {isa = PBXBuildFile; fileRef = F22710CE0FD70D5200A6E97F /* elektrischesFeld.png */; };
-		F27EECA01154D3A5008449FC /* probeladung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22710D10FD70D5200A6E97F /* probeladung_einh.png */; };
-		F27EECA11154D3A5008449FC /* elektrischeSpannung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C1A0FD8522B002F1C59 /* elektrischeSpannung.png */; };
-		F27EECA21154D3A5008449FC /* elektrischeSpannung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C1B0FD8522B002F1C59 /* elektrischeSpannung_abk.png */; };
-		F27EECA31154D3A5008449FC /* elektrischeSpannung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C1C0FD8522B002F1C59 /* elektrischeSpannung_einh.png */; };
-		F27EECA41154D3A5008449FC /* elektrischesPotential.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C1D0FD8522B002F1C59 /* elektrischesPotential.png */; };
-		F27EECA51154D3A5008449FC /* elektrischesPotential_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C1E0FD8522B002F1C59 /* elektrischesPotential_abk.png */; };
-		F27EECA61154D3A5008449FC /* elektrischesPotential_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C1F0FD8522B002F1C59 /* elektrischesPotential_einh.png */; };
-		F27EECA71154D3A5008449FC /* zurueckgelegter_weg_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C260FD8534E002F1C59 /* zurueckgelegter_weg_abk.png */; };
-		F27EECA81154D3A5008449FC /* zurueckgelegter_weg_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C270FD8534E002F1C59 /* zurueckgelegter_weg_einh.png */; };
-		F27EECA91154D3A5008449FC /* weg_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C410FD8539D002F1C59 /* weg_abk.png */; };
-		F27EECAA1154D3A5008449FC /* weg_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C420FD8539D002F1C59 /* weg_einh.png */; };
-		F27EECAB1154D3A5008449FC /* elektrischeSpannungHomogenesFeld.png in Resources */ = {isa = PBXBuildFile; fileRef = F2996C450FD856E9002F1C59 /* elektrischeSpannungHomogenesFeld.png */; };
-		F27EECAC1154D3A5008449FC /* coulombGesetz.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F07A0FDC616900927308 /* coulombGesetz.png */; };
-		F27EECAD1154D3A5008449FC /* dielektrizitaetszahl_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F07B0FDC616900927308 /* dielektrizitaetszahl_einh.png */; };
-		F27EECAE1154D3A5008449FC /* elektrischeFeldkonstante.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F07C0FDC616900927308 /* elektrischeFeldkonstante.png */; };
-		F27EECAF1154D3A5008449FC /* elektrischeFeldkonstante_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F07D0FDC616900927308 /* elektrischeFeldkonstante_abk.png */; };
-		F27EECB01154D3A5008449FC /* elektrischeFeldkonstante_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F07E0FDC616900927308 /* elektrischeFeldkonstante_einh.png */; };
-		F27EECB11154D3A5008449FC /* ladung03_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F07F0FDC616900927308 /* ladung03_abk.png */; };
-		F27EECB21154D3A5008449FC /* ladung03_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F0800FDC616900927308 /* ladung03_einh.png */; };
-		F27EECB31154D3A5008449FC /* ladung04_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F0810FDC616900927308 /* ladung04_abk.png */; };
-		F27EECB41154D3A5008449FC /* dielektrizitaetszahl_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A4F08A0FDC633100927308 /* dielektrizitaetszahl_abk.png */; };
-		F27EECB51154D3A5008449FC /* elektrischesFeld02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8B70FDD9FE9003F58B6 /* elektrischesFeld02.png */; };
-		F27EECB61154D3A5008449FC /* ladung05_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8B90FDDA00C003F58B6 /* ladung05_abk.png */; };
-		F27EECB71154D3A5008449FC /* elektrischesPotential02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8BC0FDDA1C3003F58B6 /* elektrischesPotential02.png */; };
-		F27EECB81154D3A5008449FC /* elektrischeFlussdichte01.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8BF0FDDA373003F58B6 /* elektrischeFlussdichte01.png */; };
-		F27EECB91154D3A5008449FC /* elektrischeFlussdichte01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8C00FDDA373003F58B6 /* elektrischeFlussdichte01_abk.png */; };
-		F27EECBA1154D3A5008449FC /* elektrischeFlussdichte01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8C10FDDA373003F58B6 /* elektrischeFlussdichte01_einh.png */; };
-		F27EECBB1154D3A5008449FC /* elektrischeEnergiedichte.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8DB0FDDA9EC003F58B6 /* elektrischeEnergiedichte.png */; };
-		F27EECBC1154D3A5008449FC /* elektrischeEnergiedichte_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8DC0FDDA9EC003F58B6 /* elektrischeEnergiedichte_abk.png */; };
-		F27EECBD1154D3A5008449FC /* elektrischeEnergiedichte_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8DD0FDDA9EC003F58B6 /* elektrischeEnergiedichte_einh.png */; };
-		F27EECBE1154D3A5008449FC /* elektrischesFeldKondensator.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09420FDEEF5F0005F61D /* elektrischesFeldKondensator.png */; };
-		F27EECBF1154D3A5008449FC /* energieKondensator01.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09430FDEEF5F0005F61D /* energieKondensator01.png */; };
-		F27EECC01154D3A5008449FC /* energieKondensator02.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09440FDEEF5F0005F61D /* energieKondensator02.png */; };
-		F27EECC11154D3A5008449FC /* energieKondensator03.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09450FDEEF5F0005F61D /* energieKondensator03.png */; };
-		F27EECC21154D3A5008449FC /* energieW_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09460FDEEF5F0005F61D /* energieW_abk.png */; };
-		F27EECC31154D3A5008449FC /* energieW_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09470FDEEF5F0005F61D /* energieW_einh.png */; };
-		F27EECC41154D3A5008449FC /* flaeche01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09480FDEEF5F0005F61D /* flaeche01_abk.png */; };
-		F27EECC51154D3A5008449FC /* flaeche01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09490FDEEF5F0005F61D /* flaeche01_einh.png */; };
-		F27EECC61154D3A5008449FC /* kapazitaet.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B094A0FDEEF5F0005F61D /* kapazitaet.png */; };
-		F27EECC71154D3A5008449FC /* kapazitaet_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B094B0FDEEF5F0005F61D /* kapazitaet_abk.png */; };
-		F27EECC81154D3A5008449FC /* kapazitaet_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B094C0FDEEF5F0005F61D /* kapazitaet_einh.png */; };
-		F27EECC91154D3A5008449FC /* kapazitaetPlattenkondensator.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B094D0FDEEF5F0005F61D /* kapazitaetPlattenkondensator.png */; };
-		F27EECCA1154D3A5008449FC /* kapazitaetKugel.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B094E0FDEEF5F0005F61D /* kapazitaetKugel.png */; };
-		F27EECCB1154D3A5008449FC /* parallelKondensator.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09500FDEEF5F0005F61D /* parallelKondensator.png */; };
-		F27EECCC1154D3A5008449FC /* plattenabstand_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09510FDEEF5F0005F61D /* plattenabstand_abk.png */; };
-		F27EECCD1154D3A5008449FC /* plattenabstand_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09520FDEEF5F0005F61D /* plattenabstand_einh.png */; };
-		F27EECCE1154D3A5008449FC /* reiheKondensator.png in Resources */ = {isa = PBXBuildFile; fileRef = F27B09530FDEEF5F0005F61D /* reiheKondensator.png */; };
-		F27EECCF1154D3A5008449FC /* aufladungKondensator.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCCB40FE173A80034A791 /* aufladungKondensator.png */; };
-		F27EECD01154D3A5008449FC /* entladungKondensator.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCCB50FE173A80034A791 /* entladungKondensator.png */; };
-		F27EECD11154D3A5008449FC /* elektrischeMaximalspannung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCCB80FE174F00034A791 /* elektrischeMaximalspannung_abk.png */; };
-		F27EECD51154D3A5008449FC /* normdruck.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCCF40FE2AEE10034A791 /* normdruck.png */; };
-		F27EECD61154D3A5008449FC /* molvolumenNull.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCCF60FE2AF3A0034A791 /* molvolumenNull.png */; };
-		F27EECD71154D3A5008449FC /* magnetischeFeldkonstante_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD080FE2B5FB0034A791 /* magnetischeFeldkonstante_abk.png */; };
-		F27EECD81154D3A5008449FC /* magnetischeFeldkonstante_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD090FE2B5FB0034A791 /* magnetischeFeldkonstante_einh.png */; };
-		F27EECD91154D3A5008449FC /* magnetischeFeldstaerke_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD0A0FE2B5FB0034A791 /* magnetischeFeldstaerke_abk.png */; };
-		F27EECDA1154D3A5008449FC /* magnetischeFeldstaerke_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD0B0FE2B5FB0034A791 /* magnetischeFeldstaerke_einh.png */; };
-		F27EECDB1154D3A5008449FC /* magnetischeFlussdichte.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD0C0FE2B5FB0034A791 /* magnetischeFlussdichte.png */; };
-		F27EECDC1154D3A5008449FC /* magnetischeFlussdichte_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD0D0FE2B5FB0034A791 /* magnetischeFlussdichte_abk.png */; };
-		F27EECDD1154D3A5008449FC /* magnetischeFlussdichte_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD0E0FE2B5FB0034A791 /* magnetischeFlussdichte_einh.png */; };
-		F27EECDE1154D3A5008449FC /* permeabilitaetszahl_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD0F0FE2B5FB0034A791 /* permeabilitaetszahl_abk.png */; };
-		F27EECDF1154D3A5008449FC /* permeabilitaetszahl_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD100FE2B5FB0034A791 /* permeabilitaetszahl_einh.png */; };
-		F27EECE01154D3A5008449FC /* magnetischeFeldkonstante.png in Resources */ = {isa = PBXBuildFile; fileRef = F24DCD1D0FE2BA930034A791 /* magnetischeFeldkonstante.png */; };
-		F27EECE11154D3A5008449FC /* lorentzkraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F226B35F0FE3BB8E005BEB1A /* lorentzkraft.png */; };
-		F27EECE21154D3A5008449FC /* lorentzkraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F226B3600FE3BB8E005BEB1A /* lorentzkraft_abk.png */; };
-		F27EECE31154D3A5008449FC /* lorentzkraft_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F226B3610FE3BB8E005BEB1A /* lorentzkraft_einh.png */; };
-		F27EECF11154D3A5008449FC /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F254F9A50FF6B50700EBBFF8 /* whiteButton.png */; };
-		F27EECF21154D3A5008449FC /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F254F9B80FF773CF00EBBFF8 /* blueButton.png */; };
-		F27EECF31154D3A5008449FC /* stammFuncXHochN.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3831000C48C007F8200 /* stammFuncXHochN.png */; };
-		F27EECF41154D3A5008449FC /* stammFuncEinsDurchX.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F38A1000C6A0007F8200 /* stammFuncEinsDurchX.png */; };
-		F27EECF51154D3A5008449FC /* stammFuncExp.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F38D1000C749007F8200 /* stammFuncExp.png */; };
-		F27EECF61154D3A5008449FC /* stammFuncSin.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3901000C8D0007F8200 /* stammFuncSin.png */; };
-		F27EECF71154D3A5008449FC /* stammFuncCos.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3931000C9AB007F8200 /* stammFuncCos.png */; };
-		F27EECF81154D3A5008449FC /* stammFuncA.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3961000CA88007F8200 /* stammFuncA.png */; };
-		F27EECF91154D3A5008449FC /* stammFunc0.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3991000CCC1007F8200 /* stammFunc0.png */; };
-		F27EECFA1154D3A5008449FC /* stammFuncTan.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F39D1000CEFD007F8200 /* stammFuncTan.png */; };
-		F27EECFB1154D3A5008449FC /* stammFuncCot.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3A41000EFEA007F8200 /* stammFuncCot.png */; };
-		F27EECFC1154D3A5008449FC /* stammFuncEinsDurchCosQuad.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3A61000F0E9007F8200 /* stammFuncEinsDurchCosQuad.png */; };
-		F27EECFD1154D3A5008449FC /* stammFuncAHochX.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3AD10013010007F8200 /* stammFuncAHochX.png */; };
-		F27EECFE1154D3A5008449FC /* stammFuncUStrichVonXLnUVonX.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3AF10013123007F8200 /* stammFuncUStrichVonXLnUVonX.png */; };
-		F27EECFF1154D3A5008449FC /* stammFuncEinsDurchWurzel.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3B61001331E007F8200 /* stammFuncEinsDurchWurzel.png */; };
-		F27EED001154D3A5008449FC /* stammFuncEinsDurchXQuadPlusEins.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3B91001340B007F8200 /* stammFuncEinsDurchXQuadPlusEins.png */; };
-		F27EED011154D3A5008449FC /* imaginaereEinheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3BE100136CD007F8200 /* imaginaereEinheit.png */; };
-		F27EED021154D3A5008449FC /* komplexeZahl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3C01001388A007F8200 /* komplexeZahl.png */; };
-		F27EED031154D3A5008449FC /* multiKomplexeZahl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3C21001396B007F8200 /* multiKomplexeZahl.png */; };
-		F27EED041154D3A5008449FC /* quotientKomplexeZahl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3C710013AC6007F8200 /* quotientKomplexeZahl.png */; };
-		F27EED051154D3A5008449FC /* betragKomplexeZahl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3CA10013B9F007F8200 /* betragKomplexeZahl.png */; };
-		F27EED061154D3A5008449FC /* komplexeZahlExpDarstellung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3CD10013D06007F8200 /* komplexeZahlExpDarstellung.png */; };
-		F27EED071154D3A5008449FC /* komplexeZahlR.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3CE10013D06007F8200 /* komplexeZahlR.png */; };
-		F27EED081154D3A5008449FC /* komplexeZahlPhi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3D110013DE2007F8200 /* komplexeZahlPhi.png */; };
-		F27EED091154D3A5008449FC /* komplexeZahlEulerGl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3D610013EAF007F8200 /* komplexeZahlEulerGl.png */; };
-		F27EED0A1154D3A5008449FC /* komplexeZahlGottesbeweis.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3D810013F56007F8200 /* komplexeZahlGottesbeweis.png */; };
-		F27EED0B1154D3A5008449FC /* komplexKonjugierteZahl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D3F3DD1001401F007F8200 /* komplexKonjugierteZahl.png */; };
-		F27EED0C1154D3A5008449FC /* kraftAufLeiter.png in Resources */ = {isa = PBXBuildFile; fileRef = F227353A10052B1900343955 /* kraftAufLeiter.png */; };
-		F27EED0D1154D3A5008449FC /* laenge_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F227353C10052C4E00343955 /* laenge_abk.png */; };
-		F27EED0E1154D3A5008449FC /* laenge_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F227353D10052C4E00343955 /* laenge_einh.png */; };
-		F27EED0F1154D3A5008449FC /* anzahlWindungen_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F227355B1005348500343955 /* anzahlWindungen_abk.png */; };
-		F27EED101154D3A5008449FC /* anzahlWindungen_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F227355C1005348500343955 /* anzahlWindungen_einh.png */; };
-		F27EED111154D3A5008449FC /* BimInnernEinerSpule.png in Resources */ = {isa = PBXBuildFile; fileRef = F227355D1005348500343955 /* BimInnernEinerSpule.png */; };
-		F27EED121154D3A5008449FC /* BimMittelpunktKreisfoermig.png in Resources */ = {isa = PBXBuildFile; fileRef = F227355E1005348500343955 /* BimMittelpunktKreisfoermig.png */; };
-		F27EED131154D3A5008449FC /* BumGeradenLeiter.png in Resources */ = {isa = PBXBuildFile; fileRef = F227355F1005348500343955 /* BumGeradenLeiter.png */; };
-		F27EED141154D3A5008449FC /* durchsetzteFlaeche_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22735601005348500343955 /* durchsetzteFlaeche_abk.png */; };
-		F27EED151154D3A5008449FC /* induktionsspannung.png in Resources */ = {isa = PBXBuildFile; fileRef = F22735611005348500343955 /* induktionsspannung.png */; };
-		F27EED161154D3A5008449FC /* induktionsspannung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22735621005348500343955 /* induktionsspannung_abk.png */; };
-		F27EED171154D3A5008449FC /* magnetischerFluss.png in Resources */ = {isa = PBXBuildFile; fileRef = F22735631005348500343955 /* magnetischerFluss.png */; };
-		F27EED181154D3A5008449FC /* magnetischerFluss_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F22735641005348500343955 /* magnetischerFluss_abk.png */; };
-		F27EED191154D3A5008449FC /* magnetischerFluss_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F22735651005348500343955 /* magnetischerFluss_einh.png */; };
-		F27EED1A1154D3A5008449FC /* radiusLeiter_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2273572100535C900343955 /* radiusLeiter_abk.png */; };
-		F27EED1B1154D3A5008449FC /* radiusLeiter_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2273573100535C900343955 /* radiusLeiter_einh.png */; };
-		F27EED1C1154D3A5008449FC /* durchsetzteFlaeche_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F227357710053A4A00343955 /* durchsetzteFlaeche_einh.png */; };
-		F27EED1D1154D3A5008449FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F270E2041005DD7000843391 /* Localizable.strings */; };
-		F27EED1E1154D3A5008449FC /* induktivitaet_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2829039100691D2001898A1 /* induktivitaet_abk.png */; };
-		F27EED1F1154D3A5008449FC /* induktivitaet_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F282903A100691D2001898A1 /* induktivitaet_einh.png */; };
-		F27EED201154D3A5008449FC /* parallelInduktivitaet.png in Resources */ = {isa = PBXBuildFile; fileRef = F282903B100691D2001898A1 /* parallelInduktivitaet.png */; };
-		F27EED211154D3A5008449FC /* reiheInduktivitaet.png in Resources */ = {isa = PBXBuildFile; fileRef = F282903C100691D2001898A1 /* reiheInduktivitaet.png */; };
-		F27EED231154D3A5008449FC /* omega_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C61101A1527000D7C92 /* omega_abk.png */; };
-		F27EED241154D3A5008449FC /* phase_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C62101A1527000D7C92 /* phase_einh.png */; };
-		F27EED251154D3A5008449FC /* phaseStrom_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C63101A1527000D7C92 /* phaseStrom_abk.png */; };
-		F27EED261154D3A5008449FC /* spannungNull_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C64101A1527000D7C92 /* spannungNull_abk.png */; };
-		F27EED271154D3A5008449FC /* stromstaerkeNull_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C65101A1527000D7C92 /* stromstaerkeNull_abk.png */; };
-		F27EED281154D3A5008449FC /* wechselstromSpannung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C66101A1527000D7C92 /* wechselstromSpannung.png */; };
-		F27EED291154D3A5008449FC /* wechselstromStromstaerke.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C67101A1527000D7C92 /* wechselstromStromstaerke.png */; };
-		F27EED2A1154D3A5008449FC /* kreisfrequenz_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C7B101A176A000D7C92 /* kreisfrequenz_einh.png */; };
-		F27EED2B1154D3A5008449FC /* phaseSpannung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2084C7D101A1806000D7C92 /* phaseSpannung_abk.png */; };
-		F27EED2C1154D3A5008449FC /* imaginaereEinheit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A14A101C94980034C1EC /* imaginaereEinheit_abk.png */; };
-		F27EED2D1154D3A5008449FC /* induktiverWiderstand.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A14B101C94980034C1EC /* induktiverWiderstand.png */; };
-		F27EED2E1154D3A5008449FC /* kapazitiverWiderstand.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A14C101C94980034C1EC /* kapazitiverWiderstand.png */; };
-		F27EED2F1154D3A5008449FC /* komplexerWiderstand_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A14E101C94980034C1EC /* komplexerWiderstand_einh.png */; };
-		F27EED301154D3A5008449FC /* induktiverWiderstand_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A156101C961D0034C1EC /* induktiverWiderstand_abk.png */; };
-		F27EED311154D3A5008449FC /* kapazitiverWiderstand_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A157101C961D0034C1EC /* kapazitiverWiderstand_abk.png */; };
-		F27EED321154D3A5008449FC /* absoluterNullpunkt.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A195101CE3FB0034C1EC /* absoluterNullpunkt.png */; };
-		F27EED331154D3A5008449FC /* elementarladung.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A196101CE3FB0034C1EC /* elementarladung.png */; };
-		F27EED341154D3A5008449FC /* planckschesWirkungsquantum.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A197101CE3FB0034C1EC /* planckschesWirkungsquantum.png */; };
-		F27EED351154D3A5008449FC /* tripelpunktWasser.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A198101CE3FB0034C1EC /* tripelpunktWasser.png */; };
-		F27EED361154D3A5008449FC /* vacuumlichtgeschwindigkeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F218A199101CE3FB0034C1EC /* vacuumlichtgeschwindigkeit.png */; };
-		F27EED371154D3A5008449FC /* tabbaritem0.png in Resources */ = {isa = PBXBuildFile; fileRef = F278DEF2101FA1A10035C8CF /* tabbaritem0.png */; };
-		F27EED381154D3A5008449FC /* vacuumlichtgeschwindigkeit_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F21E4F1F1028C571007DA520 /* vacuumlichtgeschwindigkeit_symbol.png */; };
-		F27EED391154D3A5008449FC /* vacuumlichtgeschwindigkeit_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F21E4F201028C571007DA520 /* vacuumlichtgeschwindigkeit_zahlenwert.png */; };
-		F27EED3A1154D3A5008449FC /* magnetischeFeldkonstante_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F26AE34B102A2C23006D212B /* magnetischeFeldkonstante_symbol.png */; };
-		F27EED3B1154D3A5008449FC /* magnetischeFeldkonstante_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F26AE34C102A2C23006D212B /* magnetischeFeldkonstante_zahlenwert.png */; };
-		F27EED3C1154D3A5008449FC /* absoluterNullpunkt_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551D8104B0C860069732F /* absoluterNullpunkt_symbol.png */; };
-		F27EED3D1154D3A5008449FC /* absoluterNullpunkt_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551D9104B0C860069732F /* absoluterNullpunkt_zahlenwert.png */; };
-		F27EED3E1154D3A5008449FC /* avogadrozahl_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551DB104B0C860069732F /* avogadrozahl_symbol.png */; };
-		F27EED3F1154D3A5008449FC /* avogadrozahl_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551DC104B0C860069732F /* avogadrozahl_zahlenwert.png */; };
-		F27EED401154D3A5008449FC /* boltzmannkonstante_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551DE104B0C860069732F /* boltzmannkonstante_symbol.png */; };
-		F27EED411154D3A5008449FC /* boltzmannkonstante_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551DF104B0C860069732F /* boltzmannkonstante_zahlenwert.png */; };
-		F27EED421154D3A5008449FC /* elementarladung_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551ED104B15530069732F /* elementarladung_symbol.png */; };
-		F27EED431154D3A5008449FC /* elementarladung_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551EE104B15530069732F /* elementarladung_zahlenwert.png */; };
-		F27EED441154D3A5008449FC /* gaskonstante_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551F4104B17860069732F /* gaskonstante_symbol.png */; };
-		F27EED451154D3A5008449FC /* gaskonstante_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F22551F5104B17860069732F /* gaskonstante_zahlenwert.png */; };
-		F27EED461154D3A5008449FC /* avogadrozahl_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FA4104E988300298C86 /* avogadrozahl_unsicherheit.png */; };
-		F27EED471154D3A5008449FC /* boltzmannkonstante_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FA5104E988300298C86 /* boltzmannkonstante_unsicherheit.png */; };
-		F27EED481154D3A5008449FC /* elementarladung_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FA6104E988300298C86 /* elementarladung_unsicherheit.png */; };
-		F27EED491154D3A5008449FC /* gaskonstante_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FA7104E988300298C86 /* gaskonstante_unsicherheit.png */; };
-		F27EED4A1154D3A5008449FC /* gravitationsbeschleunigung_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FA9104E988300298C86 /* gravitationsbeschleunigung_symbol.png */; };
-		F27EED4B1154D3A5008449FC /* gravitationsbeschleunigung_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FAA104E988300298C86 /* gravitationsbeschleunigung_zahlenwert.png */; };
-		F27EED4C1154D3A5008449FC /* magnetischeFeldkonstante_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FAB104E988300298C86 /* magnetischeFeldkonstante_unsicherheit.png */; };
-		F27EED4D1154D3A5008449FC /* vacuumlichtgeschwindigkeit_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D23FAC104E988300298C86 /* vacuumlichtgeschwindigkeit_unsicherheit.png */; };
-		F27EED4E1154D3A5008449FC /* gravitationskonstante_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8983104EF4C600A49FDE /* gravitationskonstante_symbol.png */; };
-		F27EED4F1154D3A5008449FC /* gravitationskonstante_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8984104EF4C600A49FDE /* gravitationskonstante_unsicherheit.png */; };
-		F27EED501154D3A5008449FC /* gravitationskonstante_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8985104EF4C600A49FDE /* gravitationskonstante_zahlenwert.png */; };
-		F27EED511154D3A5008449FC /* molvolumenNull_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8987104EF4C600A49FDE /* molvolumenNull_symbol.png */; };
-		F27EED521154D3A5008449FC /* molvolumenNull_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8988104EF4C600A49FDE /* molvolumenNull_zahlenwert.png */; };
-		F27EED531154D3A5008449FC /* normdruck_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF898A104EF4C600A49FDE /* normdruck_symbol.png */; };
-		F27EED541154D3A5008449FC /* normdruck_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF898B104EF4C600A49FDE /* normdruck_zahlenwert.png */; };
-		F27EED551154D3A5008449FC /* planckschesWirkungsquantum_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF898D104EF4C600A49FDE /* planckschesWirkungsquantum_symbol.png */; };
-		F27EED561154D3A5008449FC /* planckschesWirkungsquantum_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF898E104EF4C600A49FDE /* planckschesWirkungsquantum_unsicherheit.png */; };
-		F27EED571154D3A5008449FC /* planckschesWirkungsquantum_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF898F104EF4C600A49FDE /* planckschesWirkungsquantum_zahlenwert.png */; };
-		F27EED581154D3A5008449FC /* querPlanckschesWirkungsquantum_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8991104EF4C600A49FDE /* querPlanckschesWirkungsquantum_symbol.png */; };
-		F27EED591154D3A5008449FC /* querPlanckschesWirkungsquantum_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8992104EF4C600A49FDE /* querPlanckschesWirkungsquantum_unsicherheit.png */; };
-		F27EED5A1154D3A5008449FC /* querPlanckschesWirkungsquantum_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8993104EF4C600A49FDE /* querPlanckschesWirkungsquantum_zahlenwert.png */; };
-		F27EED5B1154D3A5008449FC /* tripelpunktWasser_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8995104EF4C600A49FDE /* tripelpunktWasser_symbol.png */; };
-		F27EED5C1154D3A5008449FC /* tripelpunktWasser_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8996104EF4C600A49FDE /* tripelpunktWasser_zahlenwert.png */; };
-		F27EED5D1154D3A5008449FC /* einsDurchFeinstruktur_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A53104F0C3700A49FDE /* einsDurchFeinstruktur_symbol.png */; };
-		F27EED5E1154D3A5008449FC /* einsDurchFeinstruktur_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A54104F0C3700A49FDE /* einsDurchFeinstruktur_unsicherheit.png */; };
-		F27EED5F1154D3A5008449FC /* einsDurchFeinstruktur_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A55104F0C3700A49FDE /* einsDurchFeinstruktur_zahlenwert.png */; };
-		F27EED601154D3A5008449FC /* elektrischeFeldkonstante_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A57104F0C3700A49FDE /* elektrischeFeldkonstante_symbol.png */; };
-		F27EED611154D3A5008449FC /* elektrischeFeldkonstante_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A58104F0C3700A49FDE /* elektrischeFeldkonstante_unsicherheit.png */; };
-		F27EED621154D3A5008449FC /* elektrischeFeldkonstante_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A59104F0C3700A49FDE /* elektrischeFeldkonstante_zahlenwert.png */; };
-		F27EED631154D3A5008449FC /* feinstrukturkonstante_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A5B104F0C3700A49FDE /* feinstrukturkonstante_symbol.png */; };
-		F27EED641154D3A5008449FC /* feinstrukturkonstante_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A5C104F0C3700A49FDE /* feinstrukturkonstante_unsicherheit.png */; };
-		F27EED651154D3A5008449FC /* feinstrukturkonstante_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BF8A5D104F0C3700A49FDE /* feinstrukturkonstante_zahlenwert.png */; };
-		F27EED661154D3A5008449FC /* ruhemasseElektron_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A368310500D9800B9E066 /* ruhemasseElektron_symbol.png */; };
-		F27EED671154D3A5008449FC /* ruhemasseElektron_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A368410500D9800B9E066 /* ruhemasseElektron_unsicherheit.png */; };
-		F27EED681154D3A5008449FC /* ruhemasseElektron_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A368510500D9800B9E066 /* ruhemasseElektron_zahlenwert.png */; };
-		F27EED691154D3A5008449FC /* ruhemasseNeutron_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A369310501C5A00B9E066 /* ruhemasseNeutron_symbol.png */; };
-		F27EED6A1154D3A5008449FC /* ruhemasseNeutron_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A369410501C5A00B9E066 /* ruhemasseNeutron_unsicherheit.png */; };
-		F27EED6B1154D3A5008449FC /* ruhemasseNeutron_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A369510501C5A00B9E066 /* ruhemasseNeutron_zahlenwert.png */; };
-		F27EED6C1154D3A5008449FC /* ruhemasseProton_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A369610501C5A00B9E066 /* ruhemasseProton_symbol.png */; };
-		F27EED6D1154D3A5008449FC /* ruhemasseProton_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A369710501C5A00B9E066 /* ruhemasseProton_unsicherheit.png */; };
-		F27EED6E1154D3A5008449FC /* ruhemasseProton_zahlenwert.png in Resources */ = {isa = PBXBuildFile; fileRef = F27A369810501C5A00B9E066 /* ruhemasseProton_zahlenwert.png */; };
-		F27EED6F1154D3A5008449FC /* auftriebskraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBF410505BA2009ABC78 /* auftriebskraft.png */; };
-		F27EED701154D3A5008449FC /* auftriebskraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBF510505BA2009ABC78 /* auftriebskraft_abk.png */; };
-		F27EED711154D3A5008449FC /* barometrischeHoehenformel.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBF610505BA2009ABC78 /* barometrischeHoehenformel.png */; };
-		F27EED721154D3A5008449FC /* bernouilli.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBF710505BA2009ABC78 /* bernouilli.png */; };
-		F27EED731154D3A5008449FC /* dichte.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBF810505BA2009ABC78 /* dichte.png */; };
-		F27EED741154D3A5008449FC /* druck.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBF910505BA2009ABC78 /* druck.png */; };
-		F27EED751154D3A5008449FC /* druckFluessigkeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBFA10505BA2009ABC78 /* druckFluessigkeit.png */; };
-		F27EED761154D3A5008449FC /* molvolumenNull_unsicherheit.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBFB10505BA2009ABC78 /* molvolumenNull_unsicherheit.png */; };
-		F27EED771154D3A5008449FC /* stokesreibung.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CBFC10505BA2009ABC78 /* stokesreibung.png */; };
-		F27EED781154D3A5008449FC /* hoehe_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CC20105063E8009ABC78 /* hoehe_abk.png */; };
-		F27EED791154D3A5008449FC /* hoehe_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F226CC21105063E8009ABC78 /* hoehe_einh.png */; };
-		F27EED7A1154D3A5008449FC /* viskositaet_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F173131051009A00DFAEF1 /* viskositaet_abk.png */; };
-		F27EED7B1154D3A5008449FC /* viskositaet_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F173141051009A00DFAEF1 /* viskositaet_einh.png */; };
-		F27EED7C1154D3A5008449FC /* impulsaenderung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DF653510529E12006DBE4C /* impulsaenderung_abk.png */; };
-		F27EED7D1154D3A5008449FC /* kraftstoss.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DF653610529E12006DBE4C /* kraftstoss.png */; };
-		F27EED7E1154D3A5008449FC /* mittlereKraft_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DF653710529E12006DBE4C /* mittlereKraft_abk.png */; };
-		F27EED7F1154D3A5008449FC /* zeitintervall_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DF653810529E12006DBE4C /* zeitintervall_abk.png */; };
-		F27EED801154D3A5008449FC /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9216C10714FAA00B8F894 /* beta.png */; };
-		F27EED811154D3A5008449FC /* ct.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9216D10714FAA00B8F894 /* ct.png */; };
-		F27EED821154D3A5008449FC /* ctStrich.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9216E10714FAA00B8F894 /* ctStrich.png */; };
-		F27EED831154D3A5008449FC /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9216F10714FAA00B8F894 /* x.png */; };
-		F27EED841154D3A5008449FC /* xStrich.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9217010714FAA00B8F894 /* xStrich.png */; };
-		F27EED851154D3A5008449FC /* xyzct_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9217110714FAA00B8F894 /* xyzct_abk.png */; };
-		F27EED861154D3A5008449FC /* xyzct_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9217210714FAA00B8F894 /* xyzct_einh.png */; };
-		F27EED871154D3A5008449FC /* xyzctStrich_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9217310714FAA00B8F894 /* xyzctStrich_abk.png */; };
-		F27EED881154D3A5008449FC /* xyzctStrich_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9217410714FAA00B8F894 /* xyzctStrich_einh.png */; };
-		F27EED891154D3A5008449FC /* yStrich.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9217510714FAA00B8F894 /* yStrich.png */; };
-		F27EED8A1154D3A5008449FC /* zStrich.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9217610714FAA00B8F894 /* zStrich.png */; };
-		F27EED8B1154D3A5008449FC /* massenzunahme.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9218910721F3E00B8F894 /* massenzunahme.png */; };
-		F27EED8C1154D3A5008449FC /* ruhemasse_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9218A10721F3E00B8F894 /* ruhemasse_abk.png */; };
-		F27EED8D1154D3A5008449FC /* deltat_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9218E1072228E00B8F894 /* deltat_abk.png */; };
-		F27EED8E1154D3A5008449FC /* deltatStrich_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9218F1072228E00B8F894 /* deltatStrich_abk.png */; };
-		F27EED8F1154D3A5008449FC /* zeitdilatation.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921901072228E00B8F894 /* zeitdilatation.png */; };
-		F27EED911154D3A5008449FC /* deltaxStrich_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F92198107224DC00B8F894 /* deltaxStrich_abk.png */; };
-		F27EED921154D3A5008449FC /* laengenkontraktion.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F92199107224DC00B8F894 /* laengenkontraktion.png */; };
-		F27EED931154D3A5008449FC /* deltax_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F9219D107225AD00B8F894 /* deltax_einh.png */; };
-		F27EED941154D3A5008449FC /* additionVonGeschwindigkeiten.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921A010723C9300B8F894 /* additionVonGeschwindigkeiten.png */; };
-		F27EED951154D3A5008449FC /* geschwindigkeitInS_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921A110723C9300B8F894 /* geschwindigkeitInS_abk.png */; };
-		F27EED961154D3A5008449FC /* geschwindigkeitInS_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921A210723C9300B8F894 /* geschwindigkeitInS_einh.png */; };
-		F27EED971154D3A5008449FC /* geschwindigkeitInSStrich_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921A310723C9300B8F894 /* geschwindigkeitInSStrich_abk.png */; };
-		F27EED981154D3A5008449FC /* geschwindigkeitVonSStrich_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921A410723C9300B8F894 /* geschwindigkeitVonSStrich_abk.png */; };
-		F27EED991154D3A5008449FC /* energieImpulsBeziehung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921E31072423900B8F894 /* energieImpulsBeziehung.png */; };
-		F27EED9A1154D3A5008449FC /* relativistischerImpuls.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921E41072423900B8F894 /* relativistischerImpuls.png */; };
-		F27EED9B1154D3A5008449FC /* energie_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921E8107244D400B8F894 /* energie_abk.png */; };
-		F27EED9C1154D3A5008449FC /* energie_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F921E9107244D400B8F894 /* energie_einh.png */; };
-		F27EED9D1154D3A5008449FC /* zehnHochAchtzehn.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B2108E523200C077C2 /* zehnHochAchtzehn.png */; };
-		F27EED9E1154D3A5008449FC /* zehnHochDrei.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B3108E523200C077C2 /* zehnHochDrei.png */; };
-		F27EED9F1154D3A5008449FC /* zehnHochFuenfzehn.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B4108E523200C077C2 /* zehnHochFuenfzehn.png */; };
-		F27EEDA01154D3A5008449FC /* zehnHochMinusAchtzehn.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B5108E523200C077C2 /* zehnHochMinusAchtzehn.png */; };
-		F27EEDA11154D3A5008449FC /* zehnHochMinusDrei.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B6108E523200C077C2 /* zehnHochMinusDrei.png */; };
-		F27EEDA21154D3A5008449FC /* zehnHochMinusEins.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B7108E523200C077C2 /* zehnHochMinusEins.png */; };
-		F27EEDA31154D3A5008449FC /* zehnHochMinusFuenfzehn.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B8108E523200C077C2 /* zehnHochMinusFuenfzehn.png */; };
-		F27EEDA41154D3A5008449FC /* zehnHochMinusNeun.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7B9108E523200C077C2 /* zehnHochMinusNeun.png */; };
-		F27EEDA51154D3A5008449FC /* zehnHochMinusSechs.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7BA108E523200C077C2 /* zehnHochMinusSechs.png */; };
-		F27EEDA61154D3A5008449FC /* zehnHochMinusZwei.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7BB108E523200C077C2 /* zehnHochMinusZwei.png */; };
-		F27EEDA71154D3A5008449FC /* zehnHochMinusZwoelf.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7BC108E523200C077C2 /* zehnHochMinusZwoelf.png */; };
-		F27EEDA81154D3A5008449FC /* zehnHochNeun.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7BD108E523200C077C2 /* zehnHochNeun.png */; };
-		F27EEDA91154D3A5008449FC /* zehnHochNull.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7BE108E523200C077C2 /* zehnHochNull.png */; };
-		F27EEDAA1154D3A5008449FC /* zehnHochSechs.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7BF108E523200C077C2 /* zehnHochSechs.png */; };
-		F27EEDAB1154D3A5008449FC /* zehnHochZwei.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7C0108E523200C077C2 /* zehnHochZwei.png */; };
-		F27EEDAC1154D3A5008449FC /* zehnHochZwoelf.png in Resources */ = {isa = PBXBuildFile; fileRef = F230D7C1108E523200C077C2 /* zehnHochZwoelf.png */; };
-		F27EEDAD1154D3A5008449FC /* drehimpuls02_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F28FE3F010A7156300B88C0A /* drehimpuls02_abk.png */; };
-		F27EEDAE1154D3A5008449FC /* drehmoment03.png in Resources */ = {isa = PBXBuildFile; fileRef = F262F81810E2520500B28BC8 /* drehmoment03.png */; };
-		F27EEDAF1154D3A5008449FC /* dritterNewton.png in Resources */ = {isa = PBXBuildFile; fileRef = F262F87B10E64B3B00B28BC8 /* dritterNewton.png */; };
-		F27EEDB01154D3A5008449FC /* ersterNewton.png in Resources */ = {isa = PBXBuildFile; fileRef = F262F87C10E64B3B00B28BC8 /* ersterNewton.png */; };
-		F27EEDB11154D3A5008449FC /* zweiterNewton.png in Resources */ = {isa = PBXBuildFile; fileRef = F262F87D10E64B3B00B28BC8 /* zweiterNewton.png */; };
-		F27EEDB21154D3A5008449FC /* dritterKepler.png in Resources */ = {isa = PBXBuildFile; fileRef = F262F88E10E6AFAF00B28BC8 /* dritterKepler.png */; };
-		F27EEDB31154D3A5008449FC /* ersterKepler.png in Resources */ = {isa = PBXBuildFile; fileRef = F262F88F10E6AFAF00B28BC8 /* ersterKepler.png */; };
-		F27EEDB41154D3A5008449FC /* zweiterKepler.png in Resources */ = {isa = PBXBuildFile; fileRef = F262F89010E6AFAF00B28BC8 /* zweiterKepler.png */; };
-		F27EEDB51154D3A5008449FC /* freierFall01.png in Resources */ = {isa = PBXBuildFile; fileRef = F270C91F10E8E613004D0049 /* freierFall01.png */; };
-		F27EEDB61154D3A5008449FC /* freierFall02.png in Resources */ = {isa = PBXBuildFile; fileRef = F270C92010E8E613004D0049 /* freierFall02.png */; };
-		F27EEDB71154D3A5008449FC /* freierFall03.png in Resources */ = {isa = PBXBuildFile; fileRef = F270C92110E8E613004D0049 /* freierFall03.png */; };
-		F27EEDB81154D3A5008449FC /* calc.png in Resources */ = {isa = PBXBuildFile; fileRef = F230F29010FD219F0076EE37 /* calc.png */; };
-		F27EEDB91154D3A5008449FC /* beschleunigung02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F96112AEAC8009FDC32 /* beschleunigung02.png */; };
-		F27EEDBA1154D3A5008449FC /* beschleunigung02_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F97112AEAC8009FDC32 /* beschleunigung02_abk.png */; };
-		F27EEDBB1154D3A5008449FC /* beschleunigung03.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F98112AEAC8009FDC32 /* beschleunigung03.png */; };
-		F27EEDBC1154D3A5008449FC /* geschwindigkeit05.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F99112AEAC8009FDC32 /* geschwindigkeit05.png */; };
-		F27EEDBD1154D3A5008449FC /* geschwindigkeit05_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F9A112AEAC8009FDC32 /* geschwindigkeit05_abk.png */; };
-		F27EEDBE1154D3A5008449FC /* geschwindigkeit_abk02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F9B112AEAC8009FDC32 /* geschwindigkeit_abk02.png */; };
-		F27EEDBF1154D3A5008449FC /* geschwindigkeit_abk03.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F9C112AEAC8009FDC32 /* geschwindigkeit_abk03.png */; };
-		F27EEDC01154D3A5008449FC /* kruemmungsradius_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F9D112AEAC8009FDC32 /* kruemmungsradius_abk.png */; };
-		F27EEDC11154D3A5008449FC /* normalbeschleunigung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F9E112AEAC8009FDC32 /* normalbeschleunigung.png */; };
-		F27EEDC21154D3A5008449FC /* normalbeschleunigung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F9F112AEAC8009FDC32 /* normalbeschleunigung_abk.png */; };
-		F27EEDC31154D3A5008449FC /* ortsvektor_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818FA0112AEAC8009FDC32 /* ortsvektor_abk.png */; };
-		F27EEDC41154D3A5008449FC /* ortsvektor_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818FA1112AEAC8009FDC32 /* ortsvektor_einh.png */; };
-		F27EEDC51154D3A5008449FC /* tangentialbeschleunigung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818FA2112AEAC8009FDC32 /* tangentialbeschleunigung.png */; };
-		F27EEDC61154D3A5008449FC /* tangentialbeschleunigung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818FA3112AEAC8009FDC32 /* tangentialbeschleunigung_abk.png */; };
-		F27EEDC71154D3A5008449FC /* schieferWurf_beschleunigung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD96B112C286000A9FCD2 /* schieferWurf_beschleunigung.png */; };
-		F27EEDC81154D3A5008449FC /* schieferWurf_komponentengleichung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD96C112C286000A9FCD2 /* schieferWurf_komponentengleichung.png */; };
-		F27EEDC91154D3A5008449FC /* schieferWurf_maximalhoehe.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD96D112C286000A9FCD2 /* schieferWurf_maximalhoehe.png */; };
-		F27EEDCA1154D3A5008449FC /* schieferWurf_maximalweite.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD96E112C286000A9FCD2 /* schieferWurf_maximalweite.png */; };
-		F27EEDCB1154D3A5008449FC /* schieferWurf_steigzeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD96F112C286000A9FCD2 /* schieferWurf_steigzeit.png */; };
-		F27EEDCC1154D3A5008449FC /* schieferWurf_vx.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD970112C286000A9FCD2 /* schieferWurf_vx.png */; };
-		F27EEDCD1154D3A5008449FC /* schieferWurf_vy.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD971112C286000A9FCD2 /* schieferWurf_vy.png */; };
-		F27EEDCE1154D3A5008449FC /* schieferWurf_wurfdauer.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD972112C286000A9FCD2 /* schieferWurf_wurfdauer.png */; };
-		F27EEDCF1154D3A5008449FC /* schieferWurf_x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD973112C286000A9FCD2 /* schieferWurf_x.png */; };
-		F27EEDD01154D3A5008449FC /* schieferWurf_y.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD974112C286000A9FCD2 /* schieferWurf_y.png */; };
-		F27EEDD11154D3A5008449FC /* X_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD990112C2DB400A9FCD2 /* X_abk.png */; };
-		F27EEDD21154D3A5008449FC /* X_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD991112C2DB400A9FCD2 /* X_einh.png */; };
-		F27EEDD31154D3A5008449FC /* Y_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD992112C2DB400A9FCD2 /* Y_abk.png */; };
-		F27EEDD41154D3A5008449FC /* Y_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD993112C2DB400A9FCD2 /* Y_einh.png */; };
-		F27EEDD51154D3A5008449FC /* V0_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD998112C2E5A00A9FCD2 /* V0_abk.png */; };
-		F27EEDD61154D3A5008449FC /* fluchtgeschwindigkeit_allgemein.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C109112D828400AE84FF /* fluchtgeschwindigkeit_allgemein.png */; };
-		F27EEDD71154D3A5008449FC /* fluchtgeschwindigkeit_erde.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C10A112D828400AE84FF /* fluchtgeschwindigkeit_erde.png */; };
-		F27EEDD81154D3A5008449FC /* masse3_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C10D112D831200AE84FF /* masse3_abk.png */; };
-		F27EEDD91154D3A5008449FC /* masse3_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C10E112D831200AE84FF /* masse3_einh.png */; };
-		F27EEDDA1154D3A5008449FC /* radiusR_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C111112D838500AE84FF /* radiusR_abk.png */; };
-		F27EEDDB1154D3A5008449FC /* radiusR_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C112112D838500AE84FF /* radiusR_einh.png */; };
-		F27EEDDC1154D3A5008449FC /* arbeit2.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C12C112D874E00AE84FF /* arbeit2.png */; };
-		F27EEDDD1154D3A5008449FC /* kraft_konstant.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C12D112D874E00AE84FF /* kraft_konstant.png */; };
-		F27EEDDE1154D3A5008449FC /* additionstheorem_cos.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C13B112D965A00AE84FF /* additionstheorem_cos.png */; };
-		F27EEDDF1154D3A5008449FC /* additionstheorem_sin.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C13C112D965A00AE84FF /* additionstheorem_sin.png */; };
-		F27EEDE01154D3A5008449FC /* cos_taylor.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C13D112D965A00AE84FF /* cos_taylor.png */; };
-		F27EEDE11154D3A5008449FC /* sin_taylor.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C142112D965A00AE84FF /* sin_taylor.png */; };
-		F27EEDE21154D3A5008449FC /* sin_x_2pi.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C143112D965A00AE84FF /* sin_x_2pi.png */; };
-		F27EEDE31154D3A5008449FC /* cos_minusX.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C168112D99E000AE84FF /* cos_minusX.png */; };
-		F27EEDE41154D3A5008449FC /* sin_minusX.png in Resources */ = {isa = PBXBuildFile; fileRef = F292C169112D99E000AE84FF /* sin_minusX.png */; };
-		F27EEDE51154D3A5008449FC /* additionstheorem_cot.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A58112E9D7800012C8F /* additionstheorem_cot.png */; };
-		F27EEDE61154D3A5008449FC /* additionstheorem_tan.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A59112E9D7800012C8F /* additionstheorem_tan.png */; };
-		F27EEDE71154D3A5008449FC /* sin_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A5A112E9D7800012C8F /* sin_2x.png */; };
-		F27EEDE81154D3A5008449FC /* sin_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A5B112E9D7800012C8F /* sin_3x.png */; };
-		F27EEDE91154D3A5008449FC /* sin_quadrat_x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A5C112E9D7800012C8F /* sin_quadrat_x.png */; };
-		F27EEDEA1154D3A5008449FC /* sin_x_minus_sin_y.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A5D112E9D7800012C8F /* sin_x_minus_sin_y.png */; };
-		F27EEDEB1154D3A5008449FC /* sin_x_plus_sin_y.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A5E112E9D7800012C8F /* sin_x_plus_sin_y.png */; };
-		F27EEDEC1154D3A5008449FC /* cos_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A6D112EA27D00012C8F /* cos_2x.png */; };
-		F27EEDED1154D3A5008449FC /* cos_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A6E112EA27D00012C8F /* cos_3x.png */; };
-		F27EEDEE1154D3A5008449FC /* cos_quadrat_x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A6F112EA27D00012C8F /* cos_quadrat_x.png */; };
-		F27EEDEF1154D3A5008449FC /* cos_x_minus_cos_y.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A70112EA27D00012C8F /* cos_x_minus_cos_y.png */; };
-		F27EEDF01154D3A5008449FC /* cos_x_plus_cos_y.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A71112EA27D00012C8F /* cos_x_plus_cos_y.png */; };
-		F27EEDF11154D3A5008449FC /* cot_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A7D112EBD7000012C8F /* cot_2x.png */; };
-		F27EEDF21154D3A5008449FC /* tan_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A7F112EBD8300012C8F /* tan_2x.png */; };
-		F27EEDF31154D3A5008449FC /* tan_x_pm_tan_y.png in Resources */ = {isa = PBXBuildFile; fileRef = F20B1A80112EBD8300012C8F /* tan_x_pm_tan_y.png */; };
-		F27EEDF41154D3A5008449FC /* potentielle_energie01.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953BF5112ED56B008795E8 /* potentielle_energie01.png */; };
-		F27EEDF51154D3A5008449FC /* potentielle_energie01_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953BFF112ED8E0008795E8 /* potentielle_energie01_abk.png */; };
-		F27EEDF61154D3A5008449FC /* potentielle_energie01_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C00112ED8E0008795E8 /* potentielle_energie01_einh.png */; };
-		F27EEDF71154D3A5008449FC /* taylorreihe_allgemein.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C17112EDD82008795E8 /* taylorreihe_allgemein.png */; };
-		F27EEDF81154D3A5008449FC /* taylorreihe_sin.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C19112EDEBC008795E8 /* taylorreihe_sin.png */; };
-		F27EEDF91154D3A5008449FC /* taylorreihe_cos.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C26112EE084008795E8 /* taylorreihe_cos.png */; };
-		F27EEDFA1154D3A5008449FC /* taylorreihe_exp.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C27112EE084008795E8 /* taylorreihe_exp.png */; };
-		F27EEDFB1154D3A5008449FC /* taylorreihe_cos_quadrat.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C39112EE28B008795E8 /* taylorreihe_cos_quadrat.png */; };
-		F27EEDFC1154D3A5008449FC /* taylorreihe_sin_quadrat.png in Resources */ = {isa = PBXBuildFile; fileRef = F2953C3A112EE28B008795E8 /* taylorreihe_sin_quadrat.png */; };
-		F27EEDFD1154D3A5008449FC /* taylorreihe_arcsin.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D145C112F39FD008D9934 /* taylorreihe_arcsin.png */; };
-		F27EEDFE1154D3A5008449FC /* taylorreihe_arctan.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D145D112F39FD008D9934 /* taylorreihe_arctan.png */; };
-		F27EEDFF1154D3A5008449FC /* taylorreihe_cot.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D145E112F39FD008D9934 /* taylorreihe_cot.png */; };
-		F27EEE001154D3A5008449FC /* taylorreihe_tan.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D145F112F39FD008D9934 /* taylorreihe_tan.png */; };
-		F27EEE011154D3A5008449FC /* taylorreihe_ln_einsplusx.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D147A112F3DF7008D9934 /* taylorreihe_ln_einsplusx.png */; };
-		F27EEE021154D3A5008449FC /* vektor_betrag.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60791130A01300D3A010 /* vektor_betrag.png */; };
-		F27EEE031154D3A5008449FC /* vektor_komponenten.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60801130A15500D3A010 /* vektor_komponenten.png */; };
-		F27EEE041154D3A5008449FC /* vektor_richtung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60871130A2F300D3A010 /* vektor_richtung.png */; };
-		F27EEE051154D3A5008449FC /* vektor_skalarprodukt01.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60881130A2F300D3A010 /* vektor_skalarprodukt01.png */; };
-		F27EEE061154D3A5008449FC /* vektor_skalarprodukt02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60891130A2F300D3A010 /* vektor_skalarprodukt02.png */; };
-		F27EEE071154D3A5008449FC /* vektor_kreuzprodukt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB609D1130A50B00D3A010 /* vektor_kreuzprodukt.png */; };
-		F27EEE081154D3A5008449FC /* harmonischer_oszi_dgl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60A611313E5100D3A010 /* harmonischer_oszi_dgl.png */; };
-		F27EEE091154D3A5008449FC /* harmonischer_oszi_bewegungsgl.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60A81131401D00D3A010 /* harmonischer_oszi_bewegungsgl.png */; };
-		F27EEE0A1154D3A5008449FC /* amplitudeX0_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60AC1131416000D3A010 /* amplitudeX0_abk.png */; };
-		F27EEE0B1154D3A5008449FC /* phaseVarphi_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60AE113142FA00D3A010 /* phaseVarphi_abk.png */; };
-		F27EEE0C1154D3A5008449FC /* phaseVarphi_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60B91131445700D3A010 /* phaseVarphi_einh.png */; };
-		F27EEE0D1154D3A5008449FC /* harmonischer_oszi_beschleunigung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60C11131465700D3A010 /* harmonischer_oszi_beschleunigung.png */; };
-		F27EEE0E1154D3A5008449FC /* harmonischer_oszi_geschwindigkeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EB60C21131465700D3A010 /* harmonischer_oszi_geschwindigkeit.png */; };
-		F27EEE0F1154D3A5008449FC /* spatprodukt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AEFCFC1133383000FBAD0D /* spatprodukt.png */; };
-		F27EEE101154D3A5008449FC /* entwicklungssatz.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AEFD041133394E00FBAD0D /* entwicklungssatz.png */; };
-		F27EEE111154D3A5008449FC /* vektor_kreuzprodukt_antikommutativ.png in Resources */ = {isa = PBXBuildFile; fileRef = F24E254F11346ACB0072C0EC /* vektor_kreuzprodukt_antikommutativ.png */; };
-		F27EEE121154D3A5008449FC /* vektor_kreuzprodukt_assoziativ.png in Resources */ = {isa = PBXBuildFile; fileRef = F24E255011346ACB0072C0EC /* vektor_kreuzprodukt_assoziativ.png */; };
-		F27EEE131154D3A5008449FC /* vektor_kreuzprodukt_betrag.png in Resources */ = {isa = PBXBuildFile; fileRef = F24E255111346ACB0072C0EC /* vektor_kreuzprodukt_betrag.png */; };
-		F27EEE141154D3A5008449FC /* vektor_kreuzprodukt_distributiv.png in Resources */ = {isa = PBXBuildFile; fileRef = F24E255211346ACB0072C0EC /* vektor_kreuzprodukt_distributiv.png */; };
-		F27EEE151154D3A5008449FC /* vektor_kreuzprodukt_lagrange.png in Resources */ = {isa = PBXBuildFile; fileRef = F24E255311346ACB0072C0EC /* vektor_kreuzprodukt_lagrange.png */; };
-		F27EEE161154D3A5008449FC /* vektor_skalarprodukt_kommutativ.png in Resources */ = {isa = PBXBuildFile; fileRef = F24E255411346ACB0072C0EC /* vektor_skalarprodukt_kommutativ.png */; };
-		F27EEE171154D3A5008449FC /* kruemmungsradius_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F24E25721134867B0072C0EC /* kruemmungsradius_einh.png */; };
-		F27EEE181154D3A5008449FC /* dichte0_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B77AF71135683000EEA876 /* dichte0_abk.png */; };
-		F27EEE191154D3A5008449FC /* druck0_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B77AF81135683000EEA876 /* druck0_abk.png */; };
-		F27EEE1A1154D3A5008449FC /* periodendauer.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B77B06113569CC00EEA876 /* periodendauer.png */; };
-		F27EEE1B1154D3A5008449FC /* kreisfrequenz.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B77B0D11356BAD00EEA876 /* kreisfrequenz.png */; };
-		F27EEE1C1154D3A5008449FC /* tabbaritem2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2748C6D11370F7600D2C9D7 /* tabbaritem2.png */; };
-		F27EEE1D1154D3A5008449FC /* tabbaritem1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2748C87113712A000D2C9D7 /* tabbaritem1.png */; };
-		F27EEE1E1154D3A5008449FC /* tabbaritem4.png in Resources */ = {isa = PBXBuildFile; fileRef = F27963FD1143F7BC00B8EBDE /* tabbaritem4.png */; };
-		F27EEE1F1154D3A5008449FC /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
-		F27EEE201154D3A5008449FC /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
-		F27EEE211154D3A5008449FC /* konservativeKraft.png in Resources */ = {isa = PBXBuildFile; fileRef = F207F2A911444E4900256864 /* konservativeKraft.png */; };
-		F27EEE221154D3A5008449FC /* Referenz.plist in Resources */ = {isa = PBXBuildFile; fileRef = F207F4FA1145B67200256864 /* Referenz.plist */; };
-		F27EEE231154D3A5008449FC /* tabbaritem3.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EA84681146FB520042E35B /* tabbaritem3.png */; };
-		F27EEE241154D3A5008449FC /* fadenlaenge_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E740114A9DC3008D187F /* fadenlaenge_abk.png */; };
-		F27EEE251154D3A5008449FC /* fadenlaenge_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E741114A9DC3008D187F /* fadenlaenge_einh.png */; };
-		F27EEE261154D3A5008449FC /* periodendauer_fadenpendel.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E742114A9DC3008D187F /* periodendauer_fadenpendel.png */; };
-		F27EEE271154D3A5008449FC /* ausfallswinkel_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E75E114AA227008D187F /* ausfallswinkel_abk.png */; };
-		F27EEE281154D3A5008449FC /* ausfallswinkel_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E75F114AA227008D187F /* ausfallswinkel_einh.png */; };
-		F27EEE291154D3A5008449FC /* einfallswinkel_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E760114AA227008D187F /* einfallswinkel_abk.png */; };
-		F27EEE2A1154D3A5008449FC /* einfallswinkel_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E761114AA227008D187F /* einfallswinkel_einh.png */; };
-		F27EEE2B1154D3A5008449FC /* reflexion.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E762114AA227008D187F /* reflexion.png */; };
-		F27EEE2C1154D3A5008449FC /* brechungsgesetz.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E768114AA47E008D187F /* brechungsgesetz.png */; };
-		F27EEE2D1154D3A5008449FC /* brechungsindex1_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E769114AA47E008D187F /* brechungsindex1_abk.png */; };
-		F27EEE2E1154D3A5008449FC /* brechungsindex2_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E76A114AA47E008D187F /* brechungsindex2_abk.png */; };
-		F27EEE2F1154D3A5008449FC /* brechungsindex_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E76B114AA47E008D187F /* brechungsindex_einh.png */; };
-		F27EEE301154D3A5008449FC /* brechungswinkel_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E76C114AA47E008D187F /* brechungswinkel_abk.png */; };
-		F27EEE311154D3A5008449FC /* brechungsgesetz2.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E77E114AA68C008D187F /* brechungsgesetz2.png */; };
-		F27EEE321154D3A5008449FC /* totalreflexion.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E798114AA886008D187F /* totalreflexion.png */; };
-		F27EEE331154D3A5008449FC /* grenzwinkel_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F211E7A8114AA8FC008D187F /* grenzwinkel_abk.png */; };
-		F27EEE341154D3A5008449FC /* brechungsindex_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02C7114ECE2F00F9F773 /* brechungsindex_abk.png */; };
-		F27EEE351154D3A5008449FC /* lichtgeschwindigkeit.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02C8114ECE2F00F9F773 /* lichtgeschwindigkeit.png */; };
-		F27EEE361154D3A5008449FC /* lichtgeschwindigkeit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02C9114ECE2F00F9F773 /* lichtgeschwindigkeit_abk.png */; };
-		F27EEE371154D3A5008449FC /* lichtgeschwindigkeit_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02CA114ECE2F00F9F773 /* lichtgeschwindigkeit_einh.png */; };
-		F27EEE381154D3A5008449FC /* abbildungsgleichung.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02E5114ED0E900F9F773 /* abbildungsgleichung.png */; };
-		F27EEE391154D3A5008449FC /* bildweite_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02E6114ED0E900F9F773 /* bildweite_abk.png */; };
-		F27EEE3A1154D3A5008449FC /* bildweite_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02E7114ED0E900F9F773 /* bildweite_einh.png */; };
-		F27EEE3B1154D3A5008449FC /* brennweite_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02E8114ED0E900F9F773 /* brennweite_abk.png */; };
-		F27EEE3C1154D3A5008449FC /* brennweite_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02E9114ED0E900F9F773 /* brennweite_einh.png */; };
-		F27EEE3D1154D3A5008449FC /* gegenstandsweite_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02EA114ED0E900F9F773 /* gegenstandsweite_abk.png */; };
-		F27EEE3E1154D3A5008449FC /* gegenstandsweite_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F02EB114ED0E900F9F773 /* gegenstandsweite_einh.png */; };
-		F27EEE3F1154D3A5008449FC /* abbildungsmassstab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F0304114EE43300F9F773 /* abbildungsmassstab.png */; };
-		F27EEE401154D3A5008449FC /* abbildungsmassstab_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F0305114EE43300F9F773 /* abbildungsmassstab_abk.png */; };
-		F27EEE411154D3A5008449FC /* abbildungsmassstab_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F0306114EE43300F9F773 /* abbildungsmassstab_einh.png */; };
-		F27EEE421154D3A5008449FC /* brennweite.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F030F114EE6D800F9F773 /* brennweite.png */; };
-		F27EEE431154D3A5008449FC /* kruemmunsradienDerLinse_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F0310114EE6D800F9F773 /* kruemmunsradienDerLinse_abk.png */; };
-		F27EEE441154D3A5008449FC /* brennweiteLinse1_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6B6115005080027A27B /* brennweiteLinse1_abk.png */; };
-		F27EEE451154D3A5008449FC /* brennweiteLinse2_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6B7115005080027A27B /* brennweiteLinse2_abk.png */; };
-		F27EEE461154D3A5008449FC /* brennweiteLinsensystem.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6B8115005080027A27B /* brennweiteLinsensystem.png */; };
-		F27EEE471154D3A5008449FC /* sehwinkelMit_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6C311500A170027A27B /* sehwinkelMit_abk.png */; };
-		F27EEE481154D3A5008449FC /* sehwinkelOhne_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6C411500A170027A27B /* sehwinkelOhne_abk.png */; };
-		F27EEE491154D3A5008449FC /* vergroesserung.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6C511500A170027A27B /* vergroesserung.png */; };
-		F27EEE4A1154D3A5008449FC /* vergroesserung_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6C911500A9A0027A27B /* vergroesserung_abk.png */; };
-		F27EEE4B1154D3A5008449FC /* vergroesserung_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6CA11500A9A0027A27B /* vergroesserung_einh.png */; };
-		F27EEE4C1154D3A5008449FC /* fooDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = F2395284115427F300BC63BA /* fooDefault.png */; };
-		F27EEE4E1154D3A5008449FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		F27EEE4F1154D3A5008449FC /* PhysFormAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PhysFormAppDelegate.m */; };
-		F27EEE501154D3A5008449FC /* PhysFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PhysFormViewController.m */; };
-		F27EEE511154D3A5008449FC /* DestignatedCalculaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */; };
-		F27EEE521154D3A5008449FC /* drawTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F222169D0FE3EF1400967918 /* drawTest.m */; };
-		F27EEE531154D3A5008449FC /* GeneralCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23699BA0FE8332100C2890F /* GeneralCalculatorViewController.m */; };
-		F27EEE541154D3A5008449FC /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4ED8810662A8400AD1905 /* ElementsDetailViewController.m */; };
-		F27EEE551154D3A5008449FC /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB614B113176F900D3A010 /* ConverterViewController.m */; };
-		F27EEE561154D3A5008449FC /* ConverterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB61521131787300D3A010 /* ConverterView.m */; };
-		F27EEE571154D3A5008449FC /* ConverterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB61CE1131802700D3A010 /* ConverterModel.m */; };
-		F27EEE581154D3A5008449FC /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959E101141A1120014525F /* FavoritesViewController.m */; };
-		F27EEE591154D3A5008449FC /* DetailFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959F2611424D200014525F /* DetailFormula.m */; };
-		F27EEE5A1154D3A5008449FC /* ReferenzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F207F31A1144FB8700256864 /* ReferenzView.m */; };
-		F27EEE5B1154D3A5008449FC /* ReferenzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207F31C1144FB8700256864 /* ReferenzViewController.m */; };
-		F27EEE5D1154D3A5008449FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		F27EEE5E1154D3A5008449FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		F27EEE5F1154D3A5008449FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		F27EEE601154D3A5008449FC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2959F0D114249E30014525F /* libsqlite3.dylib */; };
 		F27EEE771154D661008449FC /* IconLite.png in Resources */ = {isa = PBXBuildFile; fileRef = F27EEE761154D661008449FC /* IconLite.png */; };
-		F27EEF451154E47D008449FC /* IconLite.png in Resources */ = {isa = PBXBuildFile; fileRef = F27EEE761154D661008449FC /* IconLite.png */; };
 		F27EEF771154F1F3008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
-		F27EEF781154F252008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
 		F2818FA4112AEAC8009FDC32 /* beschleunigung02.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F96112AEAC8009FDC32 /* beschleunigung02.png */; };
 		F2818FA5112AEAC8009FDC32 /* beschleunigung02_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F97112AEAC8009FDC32 /* beschleunigung02_abk.png */; };
 		F2818FA6112AEAC8009FDC32 /* beschleunigung03.png in Resources */ = {isa = PBXBuildFile; fileRef = F2818F98112AEAC8009FDC32 /* beschleunigung03.png */; };
@@ -2406,6 +1634,9 @@
 		F2D5A8DF0FDDA9EC003F58B6 /* elektrischeEnergiedichte_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8DC0FDDA9EC003F58B6 /* elektrischeEnergiedichte_abk.png */; };
 		F2D5A8E00FDDA9EC003F58B6 /* elektrischeEnergiedichte_einh.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D5A8DD0FDDA9EC003F58B6 /* elektrischeEnergiedichte_einh.png */; };
 		F2D6A1B0137882CC00766751 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D6A1AF137882CC00766751 /* background2.png */; };
+		F2D84C7622D68B7C00B9DA2A /* ConstantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D84C7522D68B7C00B9DA2A /* ConstantsTableViewController.m */; };
+		F2D84C7922D68BA200B9DA2A /* ConstantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D84C7822D68BA200B9DA2A /* ConstantCell.m */; };
+		F2D84C7C22D68C0600B9DA2A /* CalculatorConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D84C7B22D68C0600B9DA2A /* CalculatorConstant.m */; };
 		F2DDE6B9115005080027A27B /* brennweiteLinse1_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6B6115005080027A27B /* brennweiteLinse1_abk.png */; };
 		F2DDE6BA115005080027A27B /* brennweiteLinse2_abk.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6B7115005080027A27B /* brennweiteLinse2_abk.png */; };
 		F2DDE6BB115005080027A27B /* brennweiteLinsensystem.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DDE6B8115005080027A27B /* brennweiteLinsensystem.png */; };
@@ -3625,7 +2856,6 @@
 		F27B09510FDEEF5F0005F61D /* plattenabstand_abk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plattenabstand_abk.png; sourceTree = "<group>"; };
 		F27B09520FDEEF5F0005F61D /* plattenabstand_einh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plattenabstand_einh.png; sourceTree = "<group>"; };
 		F27B09530FDEEF5F0005F61D /* reiheKondensator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reiheKondensator.png; sourceTree = "<group>"; };
-		F27EEE651154D3A5008449FC /* PhyLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhyLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27EEE671154D3A5008449FC /* InfoLite.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoLite.plist; sourceTree = "<group>"; };
 		F27EEE761154D661008449FC /* IconLite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconLite.png; sourceTree = "<group>"; };
 		F27EEF761154F1F3008449FC /* DataLite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataLite.plist; sourceTree = "<group>"; };
@@ -4159,6 +3389,12 @@
 		F2D5A8DC0FDDA9EC003F58B6 /* elektrischeEnergiedichte_abk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elektrischeEnergiedichte_abk.png; sourceTree = "<group>"; };
 		F2D5A8DD0FDDA9EC003F58B6 /* elektrischeEnergiedichte_einh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elektrischeEnergiedichte_einh.png; sourceTree = "<group>"; };
 		F2D6A1AF137882CC00766751 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		F2D84C7422D68B7C00B9DA2A /* ConstantsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantsTableViewController.h; sourceTree = "<group>"; };
+		F2D84C7522D68B7C00B9DA2A /* ConstantsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantsTableViewController.m; sourceTree = "<group>"; };
+		F2D84C7722D68BA200B9DA2A /* ConstantCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantCell.h; sourceTree = "<group>"; };
+		F2D84C7822D68BA200B9DA2A /* ConstantCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantCell.m; sourceTree = "<group>"; };
+		F2D84C7A22D68C0600B9DA2A /* CalculatorConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorConstant.h; sourceTree = "<group>"; };
+		F2D84C7B22D68C0600B9DA2A /* CalculatorConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorConstant.m; sourceTree = "<group>"; };
 		F2DDE6B6115005080027A27B /* brennweiteLinse1_abk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brennweiteLinse1_abk.png; sourceTree = "<group>"; };
 		F2DDE6B7115005080027A27B /* brennweiteLinse2_abk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brennweiteLinse2_abk.png; sourceTree = "<group>"; };
 		F2DDE6B8115005080027A27B /* brennweiteLinsensystem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brennweiteLinsensystem.png; sourceTree = "<group>"; };
@@ -4273,17 +3509,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F27EEE5C1154D3A5008449FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F27EEE5D1154D3A5008449FC /* Foundation.framework in Frameworks */,
-				F27EEE5E1154D3A5008449FC /* UIKit.framework in Frameworks */,
-				F27EEE5F1154D3A5008449FC /* CoreGraphics.framework in Frameworks */,
-				F27EEE601154D3A5008449FC /* libsqlite3.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -4323,7 +3548,6 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Phy.app */,
-				F27EEE651154D3A5008449FC /* PhyLite.app */,
 				F239BAC820F8C0CD00612965 /* PhyTests.xctest */,
 			);
 			name = Products;
@@ -5953,6 +5177,12 @@
 				F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */,
 				F2A120A8149D351700AD3215 /* HistoryTableViewCell.h */,
 				F2A120A9149D351700AD3215 /* HistoryTableViewCell.m */,
+				F2D84C7422D68B7C00B9DA2A /* ConstantsTableViewController.h */,
+				F2D84C7522D68B7C00B9DA2A /* ConstantsTableViewController.m */,
+				F2D84C7722D68BA200B9DA2A /* ConstantCell.h */,
+				F2D84C7822D68BA200B9DA2A /* ConstantCell.m */,
+				F2D84C7A22D68C0600B9DA2A /* CalculatorConstant.h */,
+				F2D84C7B22D68C0600B9DA2A /* CalculatorConstant.m */,
 			);
 			name = Calculator;
 			sourceTree = "<group>";
@@ -6434,30 +5664,13 @@
 			productReference = F239BAC820F8C0CD00612965 /* PhyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F27EEBA81154D3A5008449FC /* PhysFormLite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F27EEE611154D3A5008449FC /* Build configuration list for PBXNativeTarget "PhysFormLite" */;
-			buildPhases = (
-				F27EEBA91154D3A5008449FC /* Resources */,
-				F27EEE4D1154D3A5008449FC /* Sources */,
-				F27EEE5C1154D3A5008449FC /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PhysFormLite;
-			productName = PhysForm;
-			productReference = F27EEE651154D3A5008449FC /* PhyLite.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1100;
 				TargetAttributes = {
 					F239BAC720F8C0CD00612965 = {
 						CreatedOnToolsVersion = 9.1;
@@ -6484,7 +5697,6 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* PhysForm */,
-				F27EEBA81154D3A5008449FC /* PhysFormLite */,
 				F239BAC720F8C0CD00612965 /* PhyTests */,
 			);
 		};
@@ -8189,767 +7401,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F27EEBA91154D3A5008449FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F27EEBAB1154D3A5008449FC /* geschwindigkeit01.png in Resources */,
-				F27EEBAC1154D3A5008449FC /* kraft01.png in Resources */,
-				F27EEBAD1154D3A5008449FC /* reibungskraft.png in Resources */,
-				F27EEBAE1154D3A5008449FC /* arbeit.png in Resources */,
-				F27EEBAF1154D3A5008449FC /* leistung01.png in Resources */,
-				F27EEBB01154D3A5008449FC /* e_kin01.png in Resources */,
-				F27EEBB11154D3A5008449FC /* beschleunigung.png in Resources */,
-				F27EEBB21154D3A5008449FC /* geschwindigkeit02.png in Resources */,
-				F27EEBB31154D3A5008449FC /* geschwindigkeit_einh01.png in Resources */,
-				F27EEBB41154D3A5008449FC /* geschwindigkeit_einh02.png in Resources */,
-				F27EEBB51154D3A5008449FC /* geschwindigkeit_einh03.png in Resources */,
-				F27EEBB61154D3A5008449FC /* e_pot_schwingung01.png in Resources */,
-				F27EEBB71154D3A5008449FC /* arbeit_abk.png in Resources */,
-				F27EEBB81154D3A5008449FC /* arbeit_einh.png in Resources */,
-				F27EEBB91154D3A5008449FC /* beschleunigung_abk.png in Resources */,
-				F27EEBBA1154D3A5008449FC /* beschleunigung_einh.png in Resources */,
-				F27EEBBB1154D3A5008449FC /* e_kin_abk.png in Resources */,
-				F27EEBBC1154D3A5008449FC /* e_kin_einh.png in Resources */,
-				F27EEBBD1154D3A5008449FC /* e_pot_abk.png in Resources */,
-				F27EEBBE1154D3A5008449FC /* e_pot_einh.png in Resources */,
-				F27EEBBF1154D3A5008449FC /* geschwindigkeit_abk.png in Resources */,
-				F27EEBC01154D3A5008449FC /* geschwindigkeit_einh.png in Resources */,
-				F27EEBC11154D3A5008449FC /* gewichtskraft_abk.png in Resources */,
-				F27EEBC21154D3A5008449FC /* gravitationsbeschleunigung_abk.png in Resources */,
-				F27EEBC31154D3A5008449FC /* impuls@2x.png in Resources */,
-				F27EEBC41154D3A5008449FC /* impuls_abk.png in Resources */,
-				F27EEBC51154D3A5008449FC /* impuls_einh.png in Resources */,
-				F27EEBC61154D3A5008449FC /* kraft_abk.png in Resources */,
-				F27EEBC71154D3A5008449FC /* kraft_einh.png in Resources */,
-				F27EEBC81154D3A5008449FC /* leistung_abk.png in Resources */,
-				F27EEBC91154D3A5008449FC /* masse_abk.png in Resources */,
-				F27EEBCA1154D3A5008449FC /* zeit_abk.png in Resources */,
-				F27EEBCB1154D3A5008449FC /* zeit_einh.png in Resources */,
-				F27EEBCC1154D3A5008449FC /* masse_einh.png in Resources */,
-				F27EEBCD1154D3A5008449FC /* normalkraft_abk.png in Resources */,
-				F27EEBCE1154D3A5008449FC /* normalkraft_einh.png in Resources */,
-				F27EEBCF1154D3A5008449FC /* reibungskraft_abk.png in Resources */,
-				F27EEBD01154D3A5008449FC /* reibungskraft_einh.png in Resources */,
-				F27EEBD11154D3A5008449FC /* leistung_einh.png in Resources */,
-				F27EEBD21154D3A5008449FC /* reibungskoeff_abk.png in Resources */,
-				F27EEBD31154D3A5008449FC /* reibungskoeff_einh.png in Resources */,
-				F27EEBD41154D3A5008449FC /* auslenkung_abk.png in Resources */,
-				F27EEBD51154D3A5008449FC /* auslenkung_einh.png in Resources */,
-				F27EEBD61154D3A5008449FC /* federkonstante_abk.png in Resources */,
-				F27EEBD71154D3A5008449FC /* federkonstante_einh.png in Resources */,
-				F27EEBD81154D3A5008449FC /* federkraft.png in Resources */,
-				F27EEBD91154D3A5008449FC /* federkraft_abk.png in Resources */,
-				F27EEBDA1154D3A5008449FC /* leistung02.png in Resources */,
-				F27EEBDB1154D3A5008449FC /* zurueckgelegter_weg.png in Resources */,
-				F27EEBDC1154D3A5008449FC /* anfangsgeschwindigkeit_abk.png in Resources */,
-				F27EEBDD1154D3A5008449FC /* anfangsgeschwindigkeit_einh.png in Resources */,
-				F27EEBDE1154D3A5008449FC /* bremsdauer.png in Resources */,
-				F27EEBDF1154D3A5008449FC /* bremsweg.png in Resources */,
-				F27EEBE01154D3A5008449FC /* geschwindigkeit03.png in Resources */,
-				F27EEBE11154D3A5008449FC /* geschwindigkeit04.png in Resources */,
-				F27EEBE21154D3A5008449FC /* gewichtskraft.png in Resources */,
-				F27EEBE31154D3A5008449FC /* gravitationskraft.png in Resources */,
-				F27EEBE41154D3A5008449FC /* hangabtriebskraft.png in Resources */,
-				F27EEBE51154D3A5008449FC /* kreisgeschwindigkeit.png in Resources */,
-				F27EEBE61154D3A5008449FC /* normalkraft02.png in Resources */,
-				F27EEBE71154D3A5008449FC /* zentripetalkraft01.png in Resources */,
-				F27EEBE81154D3A5008449FC /* zentripetalkraft02.png in Resources */,
-				F27EEBE91154D3A5008449FC /* gewichtskraft_einh.png in Resources */,
-				F27EEBEA1154D3A5008449FC /* hangabtriebskraft_einh.png in Resources */,
-				F27EEBEB1154D3A5008449FC /* frequenz_abk.png in Resources */,
-				F27EEBEC1154D3A5008449FC /* hangabtriebskraft_abk.png in Resources */,
-				F27EEBED1154D3A5008449FC /* periode_abk.png in Resources */,
-				F27EEBEE1154D3A5008449FC /* zentripetalkraft01_abk.png in Resources */,
-				F27EEBEF1154D3A5008449FC /* gravitationsbeschleunigung_einh.png in Resources */,
-				F27EEBF01154D3A5008449FC /* gravitationsbeschleunigung.png in Resources */,
-				F27EEBF11154D3A5008449FC /* neigungswinkel_abk.png in Resources */,
-				F27EEBF21154D3A5008449FC /* radius_einh.png in Resources */,
-				F27EEBF31154D3A5008449FC /* radius_abk.png in Resources */,
-				F27EEBF41154D3A5008449FC /* frequenz_einh.png in Resources */,
-				F27EEBF51154D3A5008449FC /* periode_einh.png in Resources */,
-				F27EEBF61154D3A5008449FC /* winkelgeschwindigkeit_einh.png in Resources */,
-				F27EEBF71154D3A5008449FC /* winkelgeschwindigkeit_abk.png in Resources */,
-				F27EEBF81154D3A5008449FC /* kraft02.png in Resources */,
-				F27EEBF91154D3A5008449FC /* beschleunigung_const.png in Resources */,
-				F27EEBFA1154D3A5008449FC /* gravitationskonstante.png in Resources */,
-				F27EEBFB1154D3A5008449FC /* gravitationskonstante_einh.png in Resources */,
-				F27EEBFC1154D3A5008449FC /* abstand_abk.png in Resources */,
-				F27EEBFD1154D3A5008449FC /* gravitationskonstante_abk.png in Resources */,
-				F27EEBFE1154D3A5008449FC /* masse1_abk.png in Resources */,
-				F27EEBFF1154D3A5008449FC /* masse2_abk.png in Resources */,
-				F27EEC001154D3A5008449FC /* gravitationspotential.png in Resources */,
-				F27EEC011154D3A5008449FC /* gravitationspotential_einh.png in Resources */,
-				F27EEC021154D3A5008449FC /* gravitationspotential_abk.png in Resources */,
-				F27EEC031154D3A5008449FC /* drehimpuls01.png in Resources */,
-				F27EEC041154D3A5008449FC /* drehimpuls02.png in Resources */,
-				F27EEC051154D3A5008449FC /* drehmoment01.png in Resources */,
-				F27EEC061154D3A5008449FC /* drehmoment02.png in Resources */,
-				F27EEC071154D3A5008449FC /* drehmoment_const.png in Resources */,
-				F27EEC081154D3A5008449FC /* drehimpulserhaltungssatz.png in Resources */,
-				F27EEC091154D3A5008449FC /* rotationsarbeit.png in Resources */,
-				F27EEC0A1154D3A5008449FC /* rotationsenergie01.png in Resources */,
-				F27EEC0B1154D3A5008449FC /* rotationsleistung.png in Resources */,
-				F27EEC0C1154D3A5008449FC /* traegheitsmoment.png in Resources */,
-				F27EEC0D1154D3A5008449FC /* drehimpuls01_einh.png in Resources */,
-				F27EEC0E1154D3A5008449FC /* drehmoment01_einh.png in Resources */,
-				F27EEC0F1154D3A5008449FC /* einzeldrehimpuls_einh.png in Resources */,
-				F27EEC101154D3A5008449FC /* rotationsenergie01_einh.png in Resources */,
-				F27EEC111154D3A5008449FC /* traegheitsmoment_einh.png in Resources */,
-				F27EEC121154D3A5008449FC /* abstandZurDrehachse_abk.png in Resources */,
-				F27EEC131154D3A5008449FC /* drehimpuls01_abk.png in Resources */,
-				F27EEC141154D3A5008449FC /* drehmoment01_abk.png in Resources */,
-				F27EEC151154D3A5008449FC /* einzeldrehimpuls_abk.png in Resources */,
-				F27EEC161154D3A5008449FC /* rotationsenergie01_abk.png in Resources */,
-				F27EEC171154D3A5008449FC /* traegheitsmoment_abk.png in Resources */,
-				F27EEC181154D3A5008449FC /* winkel_abk.png in Resources */,
-				F27EEC191154D3A5008449FC /* winkel_einh.png in Resources */,
-				F27EEC1A1154D3A5008449FC /* satzVonSteiner.png in Resources */,
-				F27EEC1B1154D3A5008449FC /* traegheitsmomentHaupt_abk.png in Resources */,
-				F27EEC1C1154D3A5008449FC /* rotationsenergie02.png in Resources */,
-				F27EEC1D1154D3A5008449FC /* impulserhaltungssatz.png in Resources */,
-				F27EEC1E1154D3A5008449FC /* einzelimpuls_einh.png in Resources */,
-				F27EEC1F1154D3A5008449FC /* einzelimpuls_abk.png in Resources */,
-				F27EEC201154D3A5008449FC /* celsiusNull.png in Resources */,
-				F27EEC211154D3A5008449FC /* theta.png in Resources */,
-				F27EEC221154D3A5008449FC /* celsius_abk.png in Resources */,
-				F27EEC231154D3A5008449FC /* celsius_einh.png in Resources */,
-				F27EEC241154D3A5008449FC /* celsiusHundert.png in Resources */,
-				F27EEC251154D3A5008449FC /* kelvin.png in Resources */,
-				F27EEC261154D3A5008449FC /* kelvinHundert.png in Resources */,
-				F27EEC271154D3A5008449FC /* kelvinNull.png in Resources */,
-				F27EEC281154D3A5008449FC /* kelvin_einh.png in Resources */,
-				F27EEC291154D3A5008449FC /* kelvin_abk.png in Resources */,
-				F27EEC2A1154D3A5008449FC /* gayLussac.png in Resources */,
-				F27EEC2B1154D3A5008449FC /* amonton.png in Resources */,
-				F27EEC2C1154D3A5008449FC /* druck_const.png in Resources */,
-				F27EEC2D1154D3A5008449FC /* volumen_const.png in Resources */,
-				F27EEC2E1154D3A5008449FC /* druckBeiTheta_abk.png in Resources */,
-				F27EEC2F1154D3A5008449FC /* druckNull_abk.png in Resources */,
-				F27EEC301154D3A5008449FC /* volumenBeiTheta_abk.png in Resources */,
-				F27EEC311154D3A5008449FC /* volumenNull_abk.png in Resources */,
-				F27EEC321154D3A5008449FC /* druck_einh.png in Resources */,
-				F27EEC331154D3A5008449FC /* volumen_einh.png in Resources */,
-				F27EEC341154D3A5008449FC /* druck_abk.png in Resources */,
-				F27EEC351154D3A5008449FC /* volumen_abk.png in Resources */,
-				F27EEC361154D3A5008449FC /* theta_const.png in Resources */,
-				F27EEC371154D3A5008449FC /* boyleMariotte.png in Resources */,
-				F27EEC381154D3A5008449FC /* gaskonstante.png in Resources */,
-				F27EEC391154D3A5008449FC /* allgemeineGasgl.png in Resources */,
-				F27EEC3A1154D3A5008449FC /* stoffmenge.png in Resources */,
-				F27EEC3B1154D3A5008449FC /* gaskonstante_abk.png in Resources */,
-				F27EEC3C1154D3A5008449FC /* stoffmenge_abk.png in Resources */,
-				F27EEC3D1154D3A5008449FC /* gaskonstante_einh.png in Resources */,
-				F27EEC3E1154D3A5008449FC /* stoffmenge_einh.png in Resources */,
-				F27EEC3F1154D3A5008449FC /* avogadrozahl.png in Resources */,
-				F27EEC401154D3A5008449FC /* avogadrozahl_abk.png in Resources */,
-				F27EEC411154D3A5008449FC /* molareMasse_abk.png in Resources */,
-				F27EEC421154D3A5008449FC /* teilchenzahl_abk.png in Resources */,
-				F27EEC431154D3A5008449FC /* avogadrozahl_einh.png in Resources */,
-				F27EEC441154D3A5008449FC /* molareMasse_einh.png in Resources */,
-				F27EEC451154D3A5008449FC /* teilchenzahl_einh.png in Resources */,
-				F27EEC461154D3A5008449FC /* adiabate01.png in Resources */,
-				F27EEC471154D3A5008449FC /* adiabate02.png in Resources */,
-				F27EEC481154D3A5008449FC /* adiabatenexponent.png in Resources */,
-				F27EEC491154D3A5008449FC /* c_V_abk.png in Resources */,
-				F27EEC4A1154D3A5008449FC /* c_V_einh.png in Resources */,
-				F27EEC4B1154D3A5008449FC /* c_p_abk.png in Resources */,
-				F27EEC4C1154D3A5008449FC /* c_p_einh.png in Resources */,
-				F27EEC4D1154D3A5008449FC /* adiabatenexponent_abk.png in Resources */,
-				F27EEC4E1154D3A5008449FC /* adiabatenexponent_einh.png in Resources */,
-				F27EEC501154D3A5008449FC /* ersterHS.png in Resources */,
-				F27EEC511154D3A5008449FC /* innereEnergie_abk.png in Resources */,
-				F27EEC521154D3A5008449FC /* waerme_abk.png in Resources */,
-				F27EEC531154D3A5008449FC /* innereEnergie_einh.png in Resources */,
-				F27EEC541154D3A5008449FC /* platzhalter.png in Resources */,
-				F27EEC551154D3A5008449FC /* wirkungsgrad01.png in Resources */,
-				F27EEC561154D3A5008449FC /* wirkungsgrad02.png in Resources */,
-				F27EEC571154D3A5008449FC /* waerme_einh.png in Resources */,
-				F27EEC581154D3A5008449FC /* temperatur_waermebad1_abk.png in Resources */,
-				F27EEC591154D3A5008449FC /* temperatur_waermebad2_abk.png in Resources */,
-				F27EEC5A1154D3A5008449FC /* wirkungsgrad01_abk.png in Resources */,
-				F27EEC5B1154D3A5008449FC /* e_kin02.png in Resources */,
-				F27EEC5C1154D3A5008449FC /* temperatur_waermebad1_einh.png in Resources */,
-				F27EEC5D1154D3A5008449FC /* temperatur_waermebad2_einh.png in Resources */,
-				F27EEC5E1154D3A5008449FC /* wirkungsgrad01_einh.png in Resources */,
-				F27EEC5F1154D3A5008449FC /* grundGlKinGasTheo.png in Resources */,
-				F27EEC601154D3A5008449FC /* teilchenmasse_abk.png in Resources */,
-				F27EEC611154D3A5008449FC /* teilchenmasse_einh.png in Resources */,
-				F27EEC621154D3A5008449FC /* e_kin_idealesGas.png in Resources */,
-				F27EEC631154D3A5008449FC /* temperatur_abk.png in Resources */,
-				F27EEC641154D3A5008449FC /* e_kin_idealesGas02.png in Resources */,
-				F27EEC651154D3A5008449FC /* freiheitsgrade_ideal.png in Resources */,
-				F27EEC661154D3A5008449FC /* freiheitsgrade_abk.png in Resources */,
-				F27EEC671154D3A5008449FC /* freiheitsgrade_einh.png in Resources */,
-				F27EEC681154D3A5008449FC /* e_kin_idealesGas03.png in Resources */,
-				F27EEC691154D3A5008449FC /* boltzmannkonstante.png in Resources */,
-				F27EEC6A1154D3A5008449FC /* boltzmannkonstante_abk.png in Resources */,
-				F27EEC6B1154D3A5008449FC /* boltzmannkonstante_einh.png in Resources */,
-				F27EEC6C1154D3A5008449FC /* gaskonstante02.png in Resources */,
-				F27EEC6D1154D3A5008449FC /* mittlereGeschw.png in Resources */,
-				F27EEC6E1154D3A5008449FC /* dichte_abk.png in Resources */,
-				F27EEC6F1154D3A5008449FC /* dichte_einh.png in Resources */,
-				F27EEC701154D3A5008449FC /* satzVonAvogadro.png in Resources */,
-				F27EEC711154D3A5008449FC /* nullterHS.png in Resources */,
-				F27EEC721154D3A5008449FC /* molvolumen.png in Resources */,
-				F27EEC731154D3A5008449FC /* molvolumen_abk.png in Resources */,
-				F27EEC741154D3A5008449FC /* molvolumen_einh.png in Resources */,
-				F27EEC751154D3A5008449FC /* molmasse.png in Resources */,
-				F27EEC761154D3A5008449FC /* waermekapazitaet.png in Resources */,
-				F27EEC771154D3A5008449FC /* waermekapazitaet_abk.png in Resources */,
-				F27EEC781154D3A5008449FC /* waermekapazitaet_einh.png in Resources */,
-				F27EEC791154D3A5008449FC /* molareWaermekapazitaet.png in Resources */,
-				F27EEC7A1154D3A5008449FC /* molareWaermekapazitaet_abk.png in Resources */,
-				F27EEC7B1154D3A5008449FC /* molareWaermekapazitaet_einh.png in Resources */,
-				F27EEC7C1154D3A5008449FC /* molareWaermekapazitaet_p.png in Resources */,
-				F27EEC7D1154D3A5008449FC /* molareWaermekapazitaet_p_abk.png in Resources */,
-				F27EEC7E1154D3A5008449FC /* molareWaermekapazitaet_p_einh.png in Resources */,
-				F27EEC7F1154D3A5008449FC /* molareWaermekapazitaet_V.png in Resources */,
-				F27EEC801154D3A5008449FC /* molareWaermekapazitaet_V_abk.png in Resources */,
-				F27EEC811154D3A5008449FC /* molareWaermekapazitaet_V_einh.png in Resources */,
-				F27EEC821154D3A5008449FC /* molareWaermekapazitaetenZusammenh.png in Resources */,
-				F27EEC831154D3A5008449FC /* spezifischeWaermekapazitaet.png in Resources */,
-				F27EEC841154D3A5008449FC /* spezifischeWaermekapazitaet_abk.png in Resources */,
-				F27EEC851154D3A5008449FC /* spezifischeWaermekapazitaet_einh.png in Resources */,
-				F27EEC861154D3A5008449FC /* mischungstemp.png in Resources */,
-				F27EEC871154D3A5008449FC /* ladung01_abk.png in Resources */,
-				F27EEC881154D3A5008449FC /* ladung01_einh.png in Resources */,
-				F27EEC891154D3A5008449FC /* stromstaerke.png in Resources */,
-				F27EEC8A1154D3A5008449FC /* stromstaerke_abk.png in Resources */,
-				F27EEC8B1154D3A5008449FC /* stromstaerke_einh.png in Resources */,
-				F27EEC8C1154D3A5008449FC /* elektrischeArbeit01.png in Resources */,
-				F27EEC8D1154D3A5008449FC /* elektrischeArbeit01_abk.png in Resources */,
-				F27EEC8E1154D3A5008449FC /* elektrischeArbeit02.png in Resources */,
-				F27EEC8F1154D3A5008449FC /* elektrischerWiderstand.png in Resources */,
-				F27EEC901154D3A5008449FC /* elektrischerWiderstand_abk.png in Resources */,
-				F27EEC911154D3A5008449FC /* elektrischerWiderstand_einh.png in Resources */,
-				F27EEC921154D3A5008449FC /* ohmschesGesetz.png in Resources */,
-				F27EEC931154D3A5008449FC /* parallelSpannung.png in Resources */,
-				F27EEC941154D3A5008449FC /* parallelStrom.png in Resources */,
-				F27EEC951154D3A5008449FC /* parallelWiderstand.png in Resources */,
-				F27EEC961154D3A5008449FC /* reiheSpannung.png in Resources */,
-				F27EEC971154D3A5008449FC /* reiheStrom.png in Resources */,
-				F27EEC981154D3A5008449FC /* reiheWiderstand.png in Resources */,
-				F27EEC991154D3A5008449FC /* spannung_abk.png in Resources */,
-				F27EEC9A1154D3A5008449FC /* spannung_einh.png in Resources */,
-				F27EEC9B1154D3A5008449FC /* elektrischeLeistung01.png in Resources */,
-				F27EEC9C1154D3A5008449FC /* elektrischeLeistung02.png in Resources */,
-				F27EEC9D1154D3A5008449FC /* elektrischeFeldstaerke_abk.png in Resources */,
-				F27EEC9E1154D3A5008449FC /* elektrischeFeldstaerke_einh.png in Resources */,
-				F27EEC9F1154D3A5008449FC /* elektrischesFeld.png in Resources */,
-				F27EECA01154D3A5008449FC /* probeladung_einh.png in Resources */,
-				F27EECA11154D3A5008449FC /* elektrischeSpannung.png in Resources */,
-				F27EECA21154D3A5008449FC /* elektrischeSpannung_abk.png in Resources */,
-				F27EECA31154D3A5008449FC /* elektrischeSpannung_einh.png in Resources */,
-				F27EECA41154D3A5008449FC /* elektrischesPotential.png in Resources */,
-				F27EECA51154D3A5008449FC /* elektrischesPotential_abk.png in Resources */,
-				F27EECA61154D3A5008449FC /* elektrischesPotential_einh.png in Resources */,
-				F27EECA71154D3A5008449FC /* zurueckgelegter_weg_abk.png in Resources */,
-				F27EECA81154D3A5008449FC /* zurueckgelegter_weg_einh.png in Resources */,
-				F27EECA91154D3A5008449FC /* weg_abk.png in Resources */,
-				F27EECAA1154D3A5008449FC /* weg_einh.png in Resources */,
-				F27EECAB1154D3A5008449FC /* elektrischeSpannungHomogenesFeld.png in Resources */,
-				F27EECAC1154D3A5008449FC /* coulombGesetz.png in Resources */,
-				F27EECAD1154D3A5008449FC /* dielektrizitaetszahl_einh.png in Resources */,
-				F27EECAE1154D3A5008449FC /* elektrischeFeldkonstante.png in Resources */,
-				F27EECAF1154D3A5008449FC /* elektrischeFeldkonstante_abk.png in Resources */,
-				F27EECB01154D3A5008449FC /* elektrischeFeldkonstante_einh.png in Resources */,
-				F27EECB11154D3A5008449FC /* ladung03_abk.png in Resources */,
-				F27EECB21154D3A5008449FC /* ladung03_einh.png in Resources */,
-				F27EECB31154D3A5008449FC /* ladung04_abk.png in Resources */,
-				F27EECB41154D3A5008449FC /* dielektrizitaetszahl_abk.png in Resources */,
-				F27EECB51154D3A5008449FC /* elektrischesFeld02.png in Resources */,
-				F27EECB61154D3A5008449FC /* ladung05_abk.png in Resources */,
-				F27EECB71154D3A5008449FC /* elektrischesPotential02.png in Resources */,
-				F27EECB81154D3A5008449FC /* elektrischeFlussdichte01.png in Resources */,
-				F27EECB91154D3A5008449FC /* elektrischeFlussdichte01_abk.png in Resources */,
-				F27EECBA1154D3A5008449FC /* elektrischeFlussdichte01_einh.png in Resources */,
-				F27EECBB1154D3A5008449FC /* elektrischeEnergiedichte.png in Resources */,
-				F27EECBC1154D3A5008449FC /* elektrischeEnergiedichte_abk.png in Resources */,
-				F27EECBD1154D3A5008449FC /* elektrischeEnergiedichte_einh.png in Resources */,
-				F27EECBE1154D3A5008449FC /* elektrischesFeldKondensator.png in Resources */,
-				F27EECBF1154D3A5008449FC /* energieKondensator01.png in Resources */,
-				F27EECC01154D3A5008449FC /* energieKondensator02.png in Resources */,
-				F27EECC11154D3A5008449FC /* energieKondensator03.png in Resources */,
-				F27EECC21154D3A5008449FC /* energieW_abk.png in Resources */,
-				F27EECC31154D3A5008449FC /* energieW_einh.png in Resources */,
-				F27EECC41154D3A5008449FC /* flaeche01_abk.png in Resources */,
-				F27EECC51154D3A5008449FC /* flaeche01_einh.png in Resources */,
-				F27EECC61154D3A5008449FC /* kapazitaet.png in Resources */,
-				F27EECC71154D3A5008449FC /* kapazitaet_abk.png in Resources */,
-				F27EECC81154D3A5008449FC /* kapazitaet_einh.png in Resources */,
-				F27EECC91154D3A5008449FC /* kapazitaetPlattenkondensator.png in Resources */,
-				F27EECCA1154D3A5008449FC /* kapazitaetKugel.png in Resources */,
-				F27EECCB1154D3A5008449FC /* parallelKondensator.png in Resources */,
-				F27EECCC1154D3A5008449FC /* plattenabstand_abk.png in Resources */,
-				F27EECCD1154D3A5008449FC /* plattenabstand_einh.png in Resources */,
-				F27EECCE1154D3A5008449FC /* reiheKondensator.png in Resources */,
-				F27EECCF1154D3A5008449FC /* aufladungKondensator.png in Resources */,
-				F27EECD01154D3A5008449FC /* entladungKondensator.png in Resources */,
-				F27EECD11154D3A5008449FC /* elektrischeMaximalspannung_abk.png in Resources */,
-				F27EECD51154D3A5008449FC /* normdruck.png in Resources */,
-				F27EECD61154D3A5008449FC /* molvolumenNull.png in Resources */,
-				F27EECD71154D3A5008449FC /* magnetischeFeldkonstante_abk.png in Resources */,
-				F27EECD81154D3A5008449FC /* magnetischeFeldkonstante_einh.png in Resources */,
-				F27EECD91154D3A5008449FC /* magnetischeFeldstaerke_abk.png in Resources */,
-				F27EECDA1154D3A5008449FC /* magnetischeFeldstaerke_einh.png in Resources */,
-				F27EECDB1154D3A5008449FC /* magnetischeFlussdichte.png in Resources */,
-				F27EECDC1154D3A5008449FC /* magnetischeFlussdichte_abk.png in Resources */,
-				F27EECDD1154D3A5008449FC /* magnetischeFlussdichte_einh.png in Resources */,
-				F27EECDE1154D3A5008449FC /* permeabilitaetszahl_abk.png in Resources */,
-				F27EECDF1154D3A5008449FC /* permeabilitaetszahl_einh.png in Resources */,
-				F27EECE01154D3A5008449FC /* magnetischeFeldkonstante.png in Resources */,
-				F27EECE11154D3A5008449FC /* lorentzkraft.png in Resources */,
-				F27EECE21154D3A5008449FC /* lorentzkraft_abk.png in Resources */,
-				F27EECE31154D3A5008449FC /* lorentzkraft_einh.png in Resources */,
-				F27EECF11154D3A5008449FC /* whiteButton.png in Resources */,
-				F27EECF21154D3A5008449FC /* blueButton.png in Resources */,
-				F27EECF31154D3A5008449FC /* stammFuncXHochN.png in Resources */,
-				F27EECF41154D3A5008449FC /* stammFuncEinsDurchX.png in Resources */,
-				F27EECF51154D3A5008449FC /* stammFuncExp.png in Resources */,
-				F27EECF61154D3A5008449FC /* stammFuncSin.png in Resources */,
-				F27EECF71154D3A5008449FC /* stammFuncCos.png in Resources */,
-				F27EECF81154D3A5008449FC /* stammFuncA.png in Resources */,
-				F27EECF91154D3A5008449FC /* stammFunc0.png in Resources */,
-				F27EECFA1154D3A5008449FC /* stammFuncTan.png in Resources */,
-				F27EECFB1154D3A5008449FC /* stammFuncCot.png in Resources */,
-				F27EECFC1154D3A5008449FC /* stammFuncEinsDurchCosQuad.png in Resources */,
-				F27EECFD1154D3A5008449FC /* stammFuncAHochX.png in Resources */,
-				F27EECFE1154D3A5008449FC /* stammFuncUStrichVonXLnUVonX.png in Resources */,
-				F27EECFF1154D3A5008449FC /* stammFuncEinsDurchWurzel.png in Resources */,
-				F27EED001154D3A5008449FC /* stammFuncEinsDurchXQuadPlusEins.png in Resources */,
-				F27EED011154D3A5008449FC /* imaginaereEinheit.png in Resources */,
-				F27EED021154D3A5008449FC /* komplexeZahl.png in Resources */,
-				F27EED031154D3A5008449FC /* multiKomplexeZahl.png in Resources */,
-				F27EED041154D3A5008449FC /* quotientKomplexeZahl.png in Resources */,
-				F27EED051154D3A5008449FC /* betragKomplexeZahl.png in Resources */,
-				F27EED061154D3A5008449FC /* komplexeZahlExpDarstellung.png in Resources */,
-				F27EED071154D3A5008449FC /* komplexeZahlR.png in Resources */,
-				F27EED081154D3A5008449FC /* komplexeZahlPhi.png in Resources */,
-				F27EED091154D3A5008449FC /* komplexeZahlEulerGl.png in Resources */,
-				F27EED0A1154D3A5008449FC /* komplexeZahlGottesbeweis.png in Resources */,
-				F27EED0B1154D3A5008449FC /* komplexKonjugierteZahl.png in Resources */,
-				F27EED0C1154D3A5008449FC /* kraftAufLeiter.png in Resources */,
-				F27EED0D1154D3A5008449FC /* laenge_abk.png in Resources */,
-				F27EED0E1154D3A5008449FC /* laenge_einh.png in Resources */,
-				F27EED0F1154D3A5008449FC /* anzahlWindungen_abk.png in Resources */,
-				F27EED101154D3A5008449FC /* anzahlWindungen_einh.png in Resources */,
-				F27EED111154D3A5008449FC /* BimInnernEinerSpule.png in Resources */,
-				F27EED121154D3A5008449FC /* BimMittelpunktKreisfoermig.png in Resources */,
-				F27EED131154D3A5008449FC /* BumGeradenLeiter.png in Resources */,
-				F27EED141154D3A5008449FC /* durchsetzteFlaeche_abk.png in Resources */,
-				F27EED151154D3A5008449FC /* induktionsspannung.png in Resources */,
-				F27EED161154D3A5008449FC /* induktionsspannung_abk.png in Resources */,
-				F27EED171154D3A5008449FC /* magnetischerFluss.png in Resources */,
-				F27EED181154D3A5008449FC /* magnetischerFluss_abk.png in Resources */,
-				F27EED191154D3A5008449FC /* magnetischerFluss_einh.png in Resources */,
-				F27EED1A1154D3A5008449FC /* radiusLeiter_abk.png in Resources */,
-				F27EED1B1154D3A5008449FC /* radiusLeiter_einh.png in Resources */,
-				F27EED1C1154D3A5008449FC /* durchsetzteFlaeche_einh.png in Resources */,
-				F27EED1D1154D3A5008449FC /* Localizable.strings in Resources */,
-				F27EED1E1154D3A5008449FC /* induktivitaet_abk.png in Resources */,
-				F27EED1F1154D3A5008449FC /* induktivitaet_einh.png in Resources */,
-				F27EED201154D3A5008449FC /* parallelInduktivitaet.png in Resources */,
-				F27EED211154D3A5008449FC /* reiheInduktivitaet.png in Resources */,
-				F27EED231154D3A5008449FC /* omega_abk.png in Resources */,
-				F27EED241154D3A5008449FC /* phase_einh.png in Resources */,
-				F27EED251154D3A5008449FC /* phaseStrom_abk.png in Resources */,
-				F27EED261154D3A5008449FC /* spannungNull_abk.png in Resources */,
-				F27EED271154D3A5008449FC /* stromstaerkeNull_abk.png in Resources */,
-				F27EED281154D3A5008449FC /* wechselstromSpannung.png in Resources */,
-				F27EED291154D3A5008449FC /* wechselstromStromstaerke.png in Resources */,
-				F27EED2A1154D3A5008449FC /* kreisfrequenz_einh.png in Resources */,
-				F27EED2B1154D3A5008449FC /* phaseSpannung_abk.png in Resources */,
-				F27EED2C1154D3A5008449FC /* imaginaereEinheit_abk.png in Resources */,
-				F27EED2D1154D3A5008449FC /* induktiverWiderstand.png in Resources */,
-				F27EED2E1154D3A5008449FC /* kapazitiverWiderstand.png in Resources */,
-				F27EED2F1154D3A5008449FC /* komplexerWiderstand_einh.png in Resources */,
-				F27EED301154D3A5008449FC /* induktiverWiderstand_abk.png in Resources */,
-				F27EED311154D3A5008449FC /* kapazitiverWiderstand_abk.png in Resources */,
-				F27EED321154D3A5008449FC /* absoluterNullpunkt.png in Resources */,
-				F27EED331154D3A5008449FC /* elementarladung.png in Resources */,
-				F27EED341154D3A5008449FC /* planckschesWirkungsquantum.png in Resources */,
-				F27EED351154D3A5008449FC /* tripelpunktWasser.png in Resources */,
-				F27EED361154D3A5008449FC /* vacuumlichtgeschwindigkeit.png in Resources */,
-				F27EED371154D3A5008449FC /* tabbaritem0.png in Resources */,
-				F27EED381154D3A5008449FC /* vacuumlichtgeschwindigkeit_symbol.png in Resources */,
-				F27EED391154D3A5008449FC /* vacuumlichtgeschwindigkeit_zahlenwert.png in Resources */,
-				F27EED3A1154D3A5008449FC /* magnetischeFeldkonstante_symbol.png in Resources */,
-				F27EED3B1154D3A5008449FC /* magnetischeFeldkonstante_zahlenwert.png in Resources */,
-				F27EED3C1154D3A5008449FC /* absoluterNullpunkt_symbol.png in Resources */,
-				F27EED3D1154D3A5008449FC /* absoluterNullpunkt_zahlenwert.png in Resources */,
-				F27EED3E1154D3A5008449FC /* avogadrozahl_symbol.png in Resources */,
-				F27EED3F1154D3A5008449FC /* avogadrozahl_zahlenwert.png in Resources */,
-				F27EED401154D3A5008449FC /* boltzmannkonstante_symbol.png in Resources */,
-				F27EED411154D3A5008449FC /* boltzmannkonstante_zahlenwert.png in Resources */,
-				F27EED421154D3A5008449FC /* elementarladung_symbol.png in Resources */,
-				F27EED431154D3A5008449FC /* elementarladung_zahlenwert.png in Resources */,
-				F27EED441154D3A5008449FC /* gaskonstante_symbol.png in Resources */,
-				F27EED451154D3A5008449FC /* gaskonstante_zahlenwert.png in Resources */,
-				F27EED461154D3A5008449FC /* avogadrozahl_unsicherheit.png in Resources */,
-				F27EED471154D3A5008449FC /* boltzmannkonstante_unsicherheit.png in Resources */,
-				F27EED481154D3A5008449FC /* elementarladung_unsicherheit.png in Resources */,
-				F27EED491154D3A5008449FC /* gaskonstante_unsicherheit.png in Resources */,
-				F27EED4A1154D3A5008449FC /* gravitationsbeschleunigung_symbol.png in Resources */,
-				F27EED4B1154D3A5008449FC /* gravitationsbeschleunigung_zahlenwert.png in Resources */,
-				F27EED4C1154D3A5008449FC /* magnetischeFeldkonstante_unsicherheit.png in Resources */,
-				F27EED4D1154D3A5008449FC /* vacuumlichtgeschwindigkeit_unsicherheit.png in Resources */,
-				F27EED4E1154D3A5008449FC /* gravitationskonstante_symbol.png in Resources */,
-				F27EED4F1154D3A5008449FC /* gravitationskonstante_unsicherheit.png in Resources */,
-				F27EED501154D3A5008449FC /* gravitationskonstante_zahlenwert.png in Resources */,
-				F27EED511154D3A5008449FC /* molvolumenNull_symbol.png in Resources */,
-				F27EED521154D3A5008449FC /* molvolumenNull_zahlenwert.png in Resources */,
-				F27EED531154D3A5008449FC /* normdruck_symbol.png in Resources */,
-				F27EED541154D3A5008449FC /* normdruck_zahlenwert.png in Resources */,
-				F27EED551154D3A5008449FC /* planckschesWirkungsquantum_symbol.png in Resources */,
-				F27EED561154D3A5008449FC /* planckschesWirkungsquantum_unsicherheit.png in Resources */,
-				F27EED571154D3A5008449FC /* planckschesWirkungsquantum_zahlenwert.png in Resources */,
-				F27EED581154D3A5008449FC /* querPlanckschesWirkungsquantum_symbol.png in Resources */,
-				F27EED591154D3A5008449FC /* querPlanckschesWirkungsquantum_unsicherheit.png in Resources */,
-				F27EED5A1154D3A5008449FC /* querPlanckschesWirkungsquantum_zahlenwert.png in Resources */,
-				F27EED5B1154D3A5008449FC /* tripelpunktWasser_symbol.png in Resources */,
-				F27EED5C1154D3A5008449FC /* tripelpunktWasser_zahlenwert.png in Resources */,
-				F27EED5D1154D3A5008449FC /* einsDurchFeinstruktur_symbol.png in Resources */,
-				F27EED5E1154D3A5008449FC /* einsDurchFeinstruktur_unsicherheit.png in Resources */,
-				F27EED5F1154D3A5008449FC /* einsDurchFeinstruktur_zahlenwert.png in Resources */,
-				F27EED601154D3A5008449FC /* elektrischeFeldkonstante_symbol.png in Resources */,
-				F27EED611154D3A5008449FC /* elektrischeFeldkonstante_unsicherheit.png in Resources */,
-				F27EED621154D3A5008449FC /* elektrischeFeldkonstante_zahlenwert.png in Resources */,
-				F27EED631154D3A5008449FC /* feinstrukturkonstante_symbol.png in Resources */,
-				F27EED641154D3A5008449FC /* feinstrukturkonstante_unsicherheit.png in Resources */,
-				F27EED651154D3A5008449FC /* feinstrukturkonstante_zahlenwert.png in Resources */,
-				F27EED661154D3A5008449FC /* ruhemasseElektron_symbol.png in Resources */,
-				F27EED671154D3A5008449FC /* ruhemasseElektron_unsicherheit.png in Resources */,
-				F27EED681154D3A5008449FC /* ruhemasseElektron_zahlenwert.png in Resources */,
-				F27EED691154D3A5008449FC /* ruhemasseNeutron_symbol.png in Resources */,
-				F27EED6A1154D3A5008449FC /* ruhemasseNeutron_unsicherheit.png in Resources */,
-				F27EED6B1154D3A5008449FC /* ruhemasseNeutron_zahlenwert.png in Resources */,
-				F27EED6C1154D3A5008449FC /* ruhemasseProton_symbol.png in Resources */,
-				F27EED6D1154D3A5008449FC /* ruhemasseProton_unsicherheit.png in Resources */,
-				F27EED6E1154D3A5008449FC /* ruhemasseProton_zahlenwert.png in Resources */,
-				F27EED6F1154D3A5008449FC /* auftriebskraft.png in Resources */,
-				F27EED701154D3A5008449FC /* auftriebskraft_abk.png in Resources */,
-				F27EED711154D3A5008449FC /* barometrischeHoehenformel.png in Resources */,
-				F27EED721154D3A5008449FC /* bernouilli.png in Resources */,
-				F27EED731154D3A5008449FC /* dichte.png in Resources */,
-				F27EED741154D3A5008449FC /* druck.png in Resources */,
-				F27EED751154D3A5008449FC /* druckFluessigkeit.png in Resources */,
-				F27EED761154D3A5008449FC /* molvolumenNull_unsicherheit.png in Resources */,
-				F27EED771154D3A5008449FC /* stokesreibung.png in Resources */,
-				F27EED781154D3A5008449FC /* hoehe_abk.png in Resources */,
-				F27EED791154D3A5008449FC /* hoehe_einh.png in Resources */,
-				F27EED7A1154D3A5008449FC /* viskositaet_abk.png in Resources */,
-				F27EED7B1154D3A5008449FC /* viskositaet_einh.png in Resources */,
-				F27EED7C1154D3A5008449FC /* impulsaenderung_abk.png in Resources */,
-				F27EED7D1154D3A5008449FC /* kraftstoss.png in Resources */,
-				F27EED7E1154D3A5008449FC /* mittlereKraft_abk.png in Resources */,
-				F27EED7F1154D3A5008449FC /* zeitintervall_abk.png in Resources */,
-				F27EED801154D3A5008449FC /* beta.png in Resources */,
-				F27EED811154D3A5008449FC /* ct.png in Resources */,
-				F27EED821154D3A5008449FC /* ctStrich.png in Resources */,
-				F27EED831154D3A5008449FC /* x.png in Resources */,
-				F27EED841154D3A5008449FC /* xStrich.png in Resources */,
-				F27EED851154D3A5008449FC /* xyzct_abk.png in Resources */,
-				F27EED861154D3A5008449FC /* xyzct_einh.png in Resources */,
-				F27EED871154D3A5008449FC /* xyzctStrich_abk.png in Resources */,
-				F27EED881154D3A5008449FC /* xyzctStrich_einh.png in Resources */,
-				F27EED891154D3A5008449FC /* yStrich.png in Resources */,
-				F27EED8A1154D3A5008449FC /* zStrich.png in Resources */,
-				F27EED8B1154D3A5008449FC /* massenzunahme.png in Resources */,
-				F27EED8C1154D3A5008449FC /* ruhemasse_abk.png in Resources */,
-				F27EED8D1154D3A5008449FC /* deltat_abk.png in Resources */,
-				F27EED8E1154D3A5008449FC /* deltatStrich_abk.png in Resources */,
-				F27EED8F1154D3A5008449FC /* zeitdilatation.png in Resources */,
-				F27EED911154D3A5008449FC /* deltaxStrich_abk.png in Resources */,
-				F27EED921154D3A5008449FC /* laengenkontraktion.png in Resources */,
-				F27EED931154D3A5008449FC /* deltax_einh.png in Resources */,
-				F27EED941154D3A5008449FC /* additionVonGeschwindigkeiten.png in Resources */,
-				F27EED951154D3A5008449FC /* geschwindigkeitInS_abk.png in Resources */,
-				F27EED961154D3A5008449FC /* geschwindigkeitInS_einh.png in Resources */,
-				F27EED971154D3A5008449FC /* geschwindigkeitInSStrich_abk.png in Resources */,
-				F27EED981154D3A5008449FC /* geschwindigkeitVonSStrich_abk.png in Resources */,
-				F27EED991154D3A5008449FC /* energieImpulsBeziehung.png in Resources */,
-				F27EED9A1154D3A5008449FC /* relativistischerImpuls.png in Resources */,
-				F27EED9B1154D3A5008449FC /* energie_abk.png in Resources */,
-				F27EED9C1154D3A5008449FC /* energie_einh.png in Resources */,
-				F27EED9D1154D3A5008449FC /* zehnHochAchtzehn.png in Resources */,
-				F27EED9E1154D3A5008449FC /* zehnHochDrei.png in Resources */,
-				F27EED9F1154D3A5008449FC /* zehnHochFuenfzehn.png in Resources */,
-				F27EEDA01154D3A5008449FC /* zehnHochMinusAchtzehn.png in Resources */,
-				F27EEDA11154D3A5008449FC /* zehnHochMinusDrei.png in Resources */,
-				F27EEDA21154D3A5008449FC /* zehnHochMinusEins.png in Resources */,
-				F27EEDA31154D3A5008449FC /* zehnHochMinusFuenfzehn.png in Resources */,
-				F27EEDA41154D3A5008449FC /* zehnHochMinusNeun.png in Resources */,
-				F27EEDA51154D3A5008449FC /* zehnHochMinusSechs.png in Resources */,
-				F27EEDA61154D3A5008449FC /* zehnHochMinusZwei.png in Resources */,
-				F27EEDA71154D3A5008449FC /* zehnHochMinusZwoelf.png in Resources */,
-				F27EEDA81154D3A5008449FC /* zehnHochNeun.png in Resources */,
-				F27EEDA91154D3A5008449FC /* zehnHochNull.png in Resources */,
-				F27EEDAA1154D3A5008449FC /* zehnHochSechs.png in Resources */,
-				F27EEDAB1154D3A5008449FC /* zehnHochZwei.png in Resources */,
-				F27EEDAC1154D3A5008449FC /* zehnHochZwoelf.png in Resources */,
-				F27EEDAD1154D3A5008449FC /* drehimpuls02_abk.png in Resources */,
-				F27EEDAE1154D3A5008449FC /* drehmoment03.png in Resources */,
-				F27EEDAF1154D3A5008449FC /* dritterNewton.png in Resources */,
-				F27EEDB01154D3A5008449FC /* ersterNewton.png in Resources */,
-				F27EEDB11154D3A5008449FC /* zweiterNewton.png in Resources */,
-				F27EEDB21154D3A5008449FC /* dritterKepler.png in Resources */,
-				F27EEDB31154D3A5008449FC /* ersterKepler.png in Resources */,
-				F27EEDB41154D3A5008449FC /* zweiterKepler.png in Resources */,
-				F27EEDB51154D3A5008449FC /* freierFall01.png in Resources */,
-				F27EEDB61154D3A5008449FC /* freierFall02.png in Resources */,
-				F27EEDB71154D3A5008449FC /* freierFall03.png in Resources */,
-				F27EEDB81154D3A5008449FC /* calc.png in Resources */,
-				F27EEDB91154D3A5008449FC /* beschleunigung02.png in Resources */,
-				F27EEDBA1154D3A5008449FC /* beschleunigung02_abk.png in Resources */,
-				F27EEDBB1154D3A5008449FC /* beschleunigung03.png in Resources */,
-				F27EEDBC1154D3A5008449FC /* geschwindigkeit05.png in Resources */,
-				F27EEDBD1154D3A5008449FC /* geschwindigkeit05_abk.png in Resources */,
-				F27EEDBE1154D3A5008449FC /* geschwindigkeit_abk02.png in Resources */,
-				F27EEDBF1154D3A5008449FC /* geschwindigkeit_abk03.png in Resources */,
-				F27EEDC01154D3A5008449FC /* kruemmungsradius_abk.png in Resources */,
-				F27EEDC11154D3A5008449FC /* normalbeschleunigung.png in Resources */,
-				F27EEDC21154D3A5008449FC /* normalbeschleunigung_abk.png in Resources */,
-				F27EEDC31154D3A5008449FC /* ortsvektor_abk.png in Resources */,
-				F27EEDC41154D3A5008449FC /* ortsvektor_einh.png in Resources */,
-				F27EEDC51154D3A5008449FC /* tangentialbeschleunigung.png in Resources */,
-				F27EEDC61154D3A5008449FC /* tangentialbeschleunigung_abk.png in Resources */,
-				F27EEDC71154D3A5008449FC /* schieferWurf_beschleunigung.png in Resources */,
-				F27EEDC81154D3A5008449FC /* schieferWurf_komponentengleichung.png in Resources */,
-				F27EEDC91154D3A5008449FC /* schieferWurf_maximalhoehe.png in Resources */,
-				F27EEDCA1154D3A5008449FC /* schieferWurf_maximalweite.png in Resources */,
-				F27EEDCB1154D3A5008449FC /* schieferWurf_steigzeit.png in Resources */,
-				F27EEDCC1154D3A5008449FC /* schieferWurf_vx.png in Resources */,
-				F27EEDCD1154D3A5008449FC /* schieferWurf_vy.png in Resources */,
-				F27EEDCE1154D3A5008449FC /* schieferWurf_wurfdauer.png in Resources */,
-				F27EEDCF1154D3A5008449FC /* schieferWurf_x.png in Resources */,
-				F27EEDD01154D3A5008449FC /* schieferWurf_y.png in Resources */,
-				F27EEDD11154D3A5008449FC /* X_abk.png in Resources */,
-				F27EEDD21154D3A5008449FC /* X_einh.png in Resources */,
-				F27EEDD31154D3A5008449FC /* Y_abk.png in Resources */,
-				F27EEDD41154D3A5008449FC /* Y_einh.png in Resources */,
-				F27EEDD51154D3A5008449FC /* V0_abk.png in Resources */,
-				F27EEDD61154D3A5008449FC /* fluchtgeschwindigkeit_allgemein.png in Resources */,
-				F27EEDD71154D3A5008449FC /* fluchtgeschwindigkeit_erde.png in Resources */,
-				F27EEDD81154D3A5008449FC /* masse3_abk.png in Resources */,
-				F27EEDD91154D3A5008449FC /* masse3_einh.png in Resources */,
-				F27EEDDA1154D3A5008449FC /* radiusR_abk.png in Resources */,
-				F27EEDDB1154D3A5008449FC /* radiusR_einh.png in Resources */,
-				F27EEDDC1154D3A5008449FC /* arbeit2.png in Resources */,
-				F27EEDDD1154D3A5008449FC /* kraft_konstant.png in Resources */,
-				F27EEDDE1154D3A5008449FC /* additionstheorem_cos.png in Resources */,
-				F27EEDDF1154D3A5008449FC /* additionstheorem_sin.png in Resources */,
-				F27EEDE01154D3A5008449FC /* cos_taylor.png in Resources */,
-				F27EEDE11154D3A5008449FC /* sin_taylor.png in Resources */,
-				F27EEDE21154D3A5008449FC /* sin_x_2pi.png in Resources */,
-				F27EEDE31154D3A5008449FC /* cos_minusX.png in Resources */,
-				F27EEDE41154D3A5008449FC /* sin_minusX.png in Resources */,
-				F27EEDE51154D3A5008449FC /* additionstheorem_cot.png in Resources */,
-				F27EEDE61154D3A5008449FC /* additionstheorem_tan.png in Resources */,
-				F27EEDE71154D3A5008449FC /* sin_2x.png in Resources */,
-				F27EEDE81154D3A5008449FC /* sin_3x.png in Resources */,
-				F27EEDE91154D3A5008449FC /* sin_quadrat_x.png in Resources */,
-				F27EEDEA1154D3A5008449FC /* sin_x_minus_sin_y.png in Resources */,
-				F27EEDEB1154D3A5008449FC /* sin_x_plus_sin_y.png in Resources */,
-				F27EEDEC1154D3A5008449FC /* cos_2x.png in Resources */,
-				F27EEDED1154D3A5008449FC /* cos_3x.png in Resources */,
-				F27EEDEE1154D3A5008449FC /* cos_quadrat_x.png in Resources */,
-				F27EEDEF1154D3A5008449FC /* cos_x_minus_cos_y.png in Resources */,
-				F27EEDF01154D3A5008449FC /* cos_x_plus_cos_y.png in Resources */,
-				F27EEDF11154D3A5008449FC /* cot_2x.png in Resources */,
-				F27EEDF21154D3A5008449FC /* tan_2x.png in Resources */,
-				F27EEDF31154D3A5008449FC /* tan_x_pm_tan_y.png in Resources */,
-				F27EEDF41154D3A5008449FC /* potentielle_energie01.png in Resources */,
-				F27EEDF51154D3A5008449FC /* potentielle_energie01_abk.png in Resources */,
-				F27EEDF61154D3A5008449FC /* potentielle_energie01_einh.png in Resources */,
-				F27EEDF71154D3A5008449FC /* taylorreihe_allgemein.png in Resources */,
-				F27EEDF81154D3A5008449FC /* taylorreihe_sin.png in Resources */,
-				F27EEDF91154D3A5008449FC /* taylorreihe_cos.png in Resources */,
-				F27EEDFA1154D3A5008449FC /* taylorreihe_exp.png in Resources */,
-				F27EEDFB1154D3A5008449FC /* taylorreihe_cos_quadrat.png in Resources */,
-				F27EEDFC1154D3A5008449FC /* taylorreihe_sin_quadrat.png in Resources */,
-				F27EEDFD1154D3A5008449FC /* taylorreihe_arcsin.png in Resources */,
-				F27EEDFE1154D3A5008449FC /* taylorreihe_arctan.png in Resources */,
-				F27EEDFF1154D3A5008449FC /* taylorreihe_cot.png in Resources */,
-				F27EEE001154D3A5008449FC /* taylorreihe_tan.png in Resources */,
-				F27EEE011154D3A5008449FC /* taylorreihe_ln_einsplusx.png in Resources */,
-				F27EEE021154D3A5008449FC /* vektor_betrag.png in Resources */,
-				F27EEE031154D3A5008449FC /* vektor_komponenten.png in Resources */,
-				F27EEE041154D3A5008449FC /* vektor_richtung.png in Resources */,
-				F27EEE051154D3A5008449FC /* vektor_skalarprodukt01.png in Resources */,
-				F27EEE061154D3A5008449FC /* vektor_skalarprodukt02.png in Resources */,
-				F27EEE071154D3A5008449FC /* vektor_kreuzprodukt.png in Resources */,
-				F27EEE081154D3A5008449FC /* harmonischer_oszi_dgl.png in Resources */,
-				F27EEE091154D3A5008449FC /* harmonischer_oszi_bewegungsgl.png in Resources */,
-				F27EEE0A1154D3A5008449FC /* amplitudeX0_abk.png in Resources */,
-				F27EEE0B1154D3A5008449FC /* phaseVarphi_abk.png in Resources */,
-				F27EEE0C1154D3A5008449FC /* phaseVarphi_einh.png in Resources */,
-				F27EEE0D1154D3A5008449FC /* harmonischer_oszi_beschleunigung.png in Resources */,
-				F27EEE0E1154D3A5008449FC /* harmonischer_oszi_geschwindigkeit.png in Resources */,
-				F27EEE0F1154D3A5008449FC /* spatprodukt.png in Resources */,
-				F27EEE101154D3A5008449FC /* entwicklungssatz.png in Resources */,
-				F27EEE111154D3A5008449FC /* vektor_kreuzprodukt_antikommutativ.png in Resources */,
-				F27EEE121154D3A5008449FC /* vektor_kreuzprodukt_assoziativ.png in Resources */,
-				F27EEE131154D3A5008449FC /* vektor_kreuzprodukt_betrag.png in Resources */,
-				F27EEE141154D3A5008449FC /* vektor_kreuzprodukt_distributiv.png in Resources */,
-				F27EEE151154D3A5008449FC /* vektor_kreuzprodukt_lagrange.png in Resources */,
-				F27EEE161154D3A5008449FC /* vektor_skalarprodukt_kommutativ.png in Resources */,
-				F27EEE171154D3A5008449FC /* kruemmungsradius_einh.png in Resources */,
-				F27EEE181154D3A5008449FC /* dichte0_abk.png in Resources */,
-				F27EEE191154D3A5008449FC /* druck0_abk.png in Resources */,
-				F27EEE1A1154D3A5008449FC /* periodendauer.png in Resources */,
-				F27EEE1B1154D3A5008449FC /* kreisfrequenz.png in Resources */,
-				F27EEE1C1154D3A5008449FC /* tabbaritem2.png in Resources */,
-				F27EEE1D1154D3A5008449FC /* tabbaritem1.png in Resources */,
-				F27EEE1E1154D3A5008449FC /* tabbaritem4.png in Resources */,
-				F27EEE1F1154D3A5008449FC /* addFormula.png in Resources */,
-				F27EEE201154D3A5008449FC /* favorites.db in Resources */,
-				F27EEE211154D3A5008449FC /* konservativeKraft.png in Resources */,
-				F27EEE221154D3A5008449FC /* Referenz.plist in Resources */,
-				F27EEE231154D3A5008449FC /* tabbaritem3.png in Resources */,
-				F27EEE241154D3A5008449FC /* fadenlaenge_abk.png in Resources */,
-				F27EEE251154D3A5008449FC /* fadenlaenge_einh.png in Resources */,
-				F27EEE261154D3A5008449FC /* periodendauer_fadenpendel.png in Resources */,
-				F27EEE271154D3A5008449FC /* ausfallswinkel_abk.png in Resources */,
-				F27EEE281154D3A5008449FC /* ausfallswinkel_einh.png in Resources */,
-				F27EEE291154D3A5008449FC /* einfallswinkel_abk.png in Resources */,
-				F27EEE2A1154D3A5008449FC /* einfallswinkel_einh.png in Resources */,
-				F27EEE2B1154D3A5008449FC /* reflexion.png in Resources */,
-				F27EEE2C1154D3A5008449FC /* brechungsgesetz.png in Resources */,
-				F27EEE2D1154D3A5008449FC /* brechungsindex1_abk.png in Resources */,
-				F27EEE2E1154D3A5008449FC /* brechungsindex2_abk.png in Resources */,
-				F27EEE2F1154D3A5008449FC /* brechungsindex_einh.png in Resources */,
-				F27EEE301154D3A5008449FC /* brechungswinkel_abk.png in Resources */,
-				F27EEE311154D3A5008449FC /* brechungsgesetz2.png in Resources */,
-				F27EEE321154D3A5008449FC /* totalreflexion.png in Resources */,
-				F27EEE331154D3A5008449FC /* grenzwinkel_abk.png in Resources */,
-				F27EEE341154D3A5008449FC /* brechungsindex_abk.png in Resources */,
-				F27EEE351154D3A5008449FC /* lichtgeschwindigkeit.png in Resources */,
-				F27EEE361154D3A5008449FC /* lichtgeschwindigkeit_abk.png in Resources */,
-				F27EEE371154D3A5008449FC /* lichtgeschwindigkeit_einh.png in Resources */,
-				F27EEE381154D3A5008449FC /* abbildungsgleichung.png in Resources */,
-				F27EEE391154D3A5008449FC /* bildweite_abk.png in Resources */,
-				F27EEE3A1154D3A5008449FC /* bildweite_einh.png in Resources */,
-				F27EEE3B1154D3A5008449FC /* brennweite_abk.png in Resources */,
-				F27EEE3C1154D3A5008449FC /* brennweite_einh.png in Resources */,
-				F27EEE3D1154D3A5008449FC /* gegenstandsweite_abk.png in Resources */,
-				F27EEE3E1154D3A5008449FC /* gegenstandsweite_einh.png in Resources */,
-				F27EEE3F1154D3A5008449FC /* abbildungsmassstab.png in Resources */,
-				F27EEE401154D3A5008449FC /* abbildungsmassstab_abk.png in Resources */,
-				F27EEE411154D3A5008449FC /* abbildungsmassstab_einh.png in Resources */,
-				F27EEE421154D3A5008449FC /* brennweite.png in Resources */,
-				F27EEE431154D3A5008449FC /* kruemmunsradienDerLinse_abk.png in Resources */,
-				F27EEE441154D3A5008449FC /* brennweiteLinse1_abk.png in Resources */,
-				F27EEE451154D3A5008449FC /* brennweiteLinse2_abk.png in Resources */,
-				F27EEE461154D3A5008449FC /* brennweiteLinsensystem.png in Resources */,
-				F27EEE471154D3A5008449FC /* sehwinkelMit_abk.png in Resources */,
-				F27EEE481154D3A5008449FC /* sehwinkelOhne_abk.png in Resources */,
-				F27EEE491154D3A5008449FC /* vergroesserung.png in Resources */,
-				F27EEE4A1154D3A5008449FC /* vergroesserung_abk.png in Resources */,
-				F27EEE4B1154D3A5008449FC /* vergroesserung_einh.png in Resources */,
-				F27EEE4C1154D3A5008449FC /* fooDefault.png in Resources */,
-				F27EEF451154E47D008449FC /* IconLite.png in Resources */,
-				F27EEF781154F252008449FC /* DataLite.plist in Resources */,
-				F274F25C12032F2C00F48A28 /* drehimpulskomponente.png in Resources */,
-				F274F25D12032F2C00F48A28 /* kommutatorLiLj.png in Resources */,
-				F274F25E12032F2C00F48A28 /* kommutatorLiPj.png in Resources */,
-				F274F25F12032F2C00F48A28 /* kommutatorLiXj.png in Resources */,
-				F274F26012032F2C00F48A28 /* kommutatorLQuadratLi.png in Resources */,
-				F274F26112032F2C00F48A28 /* kommutatorPiPj.png in Resources */,
-				F274F26212032F2C00F48A28 /* kommutatorXiPj.png in Resources */,
-				F274F26312032F2C00F48A28 /* kommutatorXiXj.png in Resources */,
-				F274F26412032F2C00F48A28 /* eigenzustandHarmonischerOszi.png in Resources */,
-				F274F26512032F2C00F48A28 /* absteigeopHarmonischerOszi.png in Resources */,
-				F274F26612032F2C00F48A28 /* aufsteigeopHarmonischerOszi.png in Resources */,
-				F274F26712032F2C00F48A28 /* besetzungszahlopHarmonischerOszi.png in Resources */,
-				F274F26812032F2C00F48A28 /* grundzustandHarmonischerOszi.png in Resources */,
-				F274F26912032F2C00F48A28 /* hamiltonop2HarmonischerOszi.png in Resources */,
-				F274F26A12032F2C00F48A28 /* impulsopHarmonischerOszi.png in Resources */,
-				F274F26B12032F2C00F48A28 /* kommutatorAAKreuz.png in Resources */,
-				F274F26C12032F2C00F48A28 /* ortsopHarmonischerOszi.png in Resources */,
-				F274F26D12032F2C00F48A28 /* hamiltonopHarmonischerOszi.png in Resources */,
-				F274F26E12032F2C00F48A28 /* drehimpulsEigenwertgl1.png in Resources */,
-				F274F26F12032F2C00F48A28 /* drehimpulsEigenwertgl2.png in Resources */,
-				F274F27012032F2C00F48A28 /* hamiltonop2.png in Resources */,
-				F274F27112032F2C00F48A28 /* schroedingergl3.png in Resources */,
-				F274F27212032F2C00F48A28 /* kommutatorAB.png in Resources */,
-				F274F27312032F2C00F48A28 /* heisenbergUnschaerfe1.png in Resources */,
-				F274F27412032F2C00F48A28 /* heisenbergUnschaerfe2.png in Resources */,
-				F274F27512032F2C00F48A28 /* hamiltonop1.png in Resources */,
-				F274F27612032F2C00F48A28 /* normierungsbedingung.png in Resources */,
-				F274F27712032F2C00F48A28 /* schroedingergl1.png in Resources */,
-				F274F27812032F2C00F48A28 /* schroedingergl2.png in Resources */,
-				F274F27912032F2C00F48A28 /* LiLj_abk.png in Resources */,
-				F274F27A12032F2C00F48A28 /* PiPj_abk.png in Resources */,
-				F274F27B12032F2C00F48A28 /* XiXj_abk.png in Resources */,
-				F274F27C12032F2C00F48A28 /* grundzustandHarmonischerOszi_abk.png in Resources */,
-				F274F27D12032F2C00F48A28 /* hatA_abk.png in Resources */,
-				F274F27E12032F2C00F48A28 /* hatADag_abk.png in Resources */,
-				F274F27F12032F2C00F48A28 /* hatP_abk.png in Resources */,
-				F274F28012032F2C00F48A28 /* hatX_abk.png in Resources */,
-				F274F28112032F2C00F48A28 /* drehimpulsQuantenzahl2_abk.png in Resources */,
-				F274F28212032F2C00F48A28 /* drehimpuls_abk.png in Resources */,
-				F274F28312032F2C00F48A28 /* drehimpulsQuantenzahl_abk.png in Resources */,
-				F274F28412032F2C00F48A28 /* grossVVonR_abk.png in Resources */,
-				F274F28512032F2C00F48A28 /* psiVonR_abk.png in Resources */,
-				F274F28612032F2C00F48A28 /* AOp_abk.png in Resources */,
-				F274F28712032F2C00F48A28 /* BOp_abk.png in Resources */,
-				F274F28812032F2C00F48A28 /* deltaE_abk.png in Resources */,
-				F274F28912032F2C00F48A28 /* deltaP_abk.png in Resources */,
-				F274F28A12032F2C00F48A28 /* deltaT_abk.png in Resources */,
-				F274F28C12032F2C00F48A28 /* grossVVonRUndT_abk.png in Resources */,
-				F274F28D12032F2C00F48A28 /* hamiltonop_abk.png in Resources */,
-				F274F28E12032F2C00F48A28 /* hbar_abk.png in Resources */,
-				F274F28F12032F2C00F48A28 /* i_abk.png in Resources */,
-				F274F29012032F2C00F48A28 /* ketPsiVonT_abk.png in Resources */,
-				F274F29112032F2C00F48A28 /* psiVonRUndT_abk.png in Resources */,
-				F274F29212032F2C00F48A28 /* hatA_einh.png in Resources */,
-				F274F29312032F2C00F48A28 /* hatADag_einh.png in Resources */,
-				F274F29412032F2C00F48A28 /* hatP_einh.png in Resources */,
-				F274F29512032F2C00F48A28 /* hatX_einh.png in Resources */,
-				F274F29612032F2C00F48A28 /* drehimpulsQuantenzahl2_einh.png in Resources */,
-				F274F29712032F2C00F48A28 /* drehimpuls_einh.png in Resources */,
-				F274F29812032F2C00F48A28 /* drehimpulsQuantenzahl_einh.png in Resources */,
-				F274F29912032F2C00F48A28 /* grossVVonR_einh.png in Resources */,
-				F274F29A12032F2C00F48A28 /* psiVonR_einh.png in Resources */,
-				F274F29B12032F2C00F48A28 /* deltaE_einh.png in Resources */,
-				F274F29C12032F2C00F48A28 /* deltaP_einh.png in Resources */,
-				F274F29D12032F2C00F48A28 /* deltaT_einh.png in Resources */,
-				F274F29F12032F2C00F48A28 /* grossVVonRUndT_einh.png in Resources */,
-				F274F2A012032F2C00F48A28 /* hamiltonop_einh.png in Resources */,
-				F274F2A112032F2C00F48A28 /* hbar_einh.png in Resources */,
-				F274F2A212032F2C00F48A28 /* i_einh.png in Resources */,
-				F274F2A312032F2C00F48A28 /* ketPsiVonT_einh.png in Resources */,
-				F274F2A412032F2C00F48A28 /* psiVonRUndT_einh.png in Resources */,
-				F218785E12032F7E00E0A74C /* spaltbreite_einh.png in Resources */,
-				F218785F12032F7E00E0A74C /* brewsterschesGesetz.png in Resources */,
-				F218786012032F7E00E0A74C /* dopplereffekt.png in Resources */,
-				F218786112032F7E00E0A74C /* frequenzEmpfaenger_abk.png in Resources */,
-				F218786212032F7E00E0A74C /* frequenzSender_abk.png in Resources */,
-				F218786312032F7E00E0A74C /* gangunterschied_abk.png in Resources */,
-				F218786412032F7E00E0A74C /* gangunterschied_einh.png in Resources */,
-				F218786512032F7E00E0A74C /* interferenzAnDuennenSchichten.png in Resources */,
-				F218786612032F7E00E0A74C /* interferenzmaximumAllgemein.png in Resources */,
-				F218786712032F7E00E0A74C /* interferenzmaximumSpalt.png in Resources */,
-				F218786812032F7E00E0A74C /* interferenzminimumAllgemein.png in Resources */,
-				F218786912032F7E00E0A74C /* interferenzminimumSpalt.png in Resources */,
-				F218786A12032F7E00E0A74C /* optischerWeg.png in Resources */,
-				F218786B12032F7E00E0A74C /* ordnungen.png in Resources */,
-				F218786C12032F7E00E0A74C /* phasenverschiebung.png in Resources */,
-				F218786D12032F7E00E0A74C /* phasenverschiebung_abk.png in Resources */,
-				F218786E12032F7E00E0A74C /* polarisationswinkel_abk.png in Resources */,
-				F218786F12032F7E00E0A74C /* schichtDicke_abk.png in Resources */,
-				F218787012032F7E00E0A74C /* schichtDicke_einh.png in Resources */,
-				F218787112032F7E00E0A74C /* spaltbreite_abk.png in Resources */,
-				F218787212032F7E00E0A74C /* frequenz1_abk.png in Resources */,
-				F218787312032F7E00E0A74C /* frequenz2_abk.png in Resources */,
-				F218787412032F7E00E0A74C /* frequenzAnGrenzflaeche.png in Resources */,
-				F218787512032F7E00E0A74C /* lichtgeschwindigkeitVsWellenlaenge.png in Resources */,
-				F218787612032F7E00E0A74C /* wellenlaenge_abk.png in Resources */,
-				F218787712032F7E00E0A74C /* wellenlaenge_einh.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -8968,6 +7419,7 @@
 				F2EB614C113176F900D3A010 /* ConverterViewController.m in Sources */,
 				F2EB61531131787300D3A010 /* ConverterView.m in Sources */,
 				F2EB61CF1131802700D3A010 /* ConverterModel.m in Sources */,
+				F2D84C7622D68B7C00B9DA2A /* ConstantsTableViewController.m in Sources */,
 				F2959E111141A1120014525F /* FavoritesViewController.m in Sources */,
 				F2959F2711424D200014525F /* DetailFormula.m in Sources */,
 				F207F31D1144FB8700256864 /* ReferenzView.m in Sources */,
@@ -8975,8 +7427,10 @@
 				F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */,
 				F2A120A2149D0D1500AD3215 /* HistoryTableViewController.m in Sources */,
 				F2A120AA149D351700AD3215 /* HistoryTableViewCell.m in Sources */,
+				F2D84C7922D68BA200B9DA2A /* ConstantCell.m in Sources */,
 				F2A120BE149E793100AD3215 /* ChemieTableViewController.m in Sources */,
 				F205EA8614ACB9DC001F8AF6 /* CollectionOfElementsView.m in Sources */,
+				F2D84C7C22D68C0600B9DA2A /* CalculatorConstant.m in Sources */,
 				F205EA8914ACBF2E001F8AF6 /* CollectionOfElementsViewController.m in Sources */,
 				F29558B620615546001D776D /* GeneralCalculatorView.m in Sources */,
 			);
@@ -8987,27 +7441,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F27EEE4D1154D3A5008449FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F27EEE4E1154D3A5008449FC /* main.m in Sources */,
-				F27EEE4F1154D3A5008449FC /* PhysFormAppDelegate.m in Sources */,
-				F27EEE501154D3A5008449FC /* PhysFormViewController.m in Sources */,
-				F27EEE511154D3A5008449FC /* DestignatedCalculaterViewController.m in Sources */,
-				F27EEE521154D3A5008449FC /* drawTest.m in Sources */,
-				F27EEE531154D3A5008449FC /* GeneralCalculatorViewController.m in Sources */,
-				F27EEE541154D3A5008449FC /* ElementsDetailViewController.m in Sources */,
-				F27EEE551154D3A5008449FC /* ConverterViewController.m in Sources */,
-				F27EEE561154D3A5008449FC /* ConverterView.m in Sources */,
-				F27EEE571154D3A5008449FC /* ConverterModel.m in Sources */,
-				F27EEE581154D3A5008449FC /* FavoritesViewController.m in Sources */,
-				F27EEE591154D3A5008449FC /* DetailFormula.m in Sources */,
-				F27EEE5A1154D3A5008449FC /* ReferenzView.m in Sources */,
-				F27EEE5B1154D3A5008449FC /* ReferenzViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9082,11 +7515,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -9120,11 +7555,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -9154,11 +7591,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -9316,69 +7755,6 @@
 			};
 			name = Distribution;
 		};
-		F27EEE621154D3A5008449FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dominik Hauser (MNX8UVNQT5)";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
-				INFOPLIST_FILE = InfoLite.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_CFLAGS = (
-					"-D",
-					LITE_VERSION,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dominikhauser.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = PhyLite;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		F27EEE631154D3A5008449FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dominik Hauser (MNX8UVNQT5)";
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
-				INFOPLIST_FILE = InfoLite.plist;
-				OTHER_CFLAGS = (
-					"-D",
-					LITE_VERSION,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dominikhauser.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = PhyLite;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2CB9CE06-C2B9-4F35-B1CE-DC9AA7474CB2";
-				SDKROOT = iphoneos;
-			};
-			name = Release;
-		};
-		F27EEE641154D3A5008449FC /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominik Hauser";
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
-				INFOPLIST_FILE = InfoLite.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_CFLAGS = (
-					"-D",
-					LITE_VERSION,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dominikhauser.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = PhyLite;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F775E8D0-2EFA-4180-B1A6-6D8D00BE7574";
-				SDKROOT = iphoneos;
-			};
-			name = Distribution;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -9408,16 +7784,6 @@
 				F239BAD020F8C0CE00612965 /* Debug */,
 				F239BAD120F8C0CE00612965 /* Release */,
 				F239BAD220F8C0CE00612965 /* Distribution */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F27EEE611154D3A5008449FC /* Build configuration list for PBXNativeTarget "PhysFormLite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F27EEE621154D3A5008449FC /* Debug */,
-				F27EEE631154D3A5008449FC /* Release */,
-				F27EEE641154D3A5008449FC /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

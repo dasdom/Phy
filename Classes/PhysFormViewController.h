@@ -18,7 +18,7 @@
 	
 	UIBarButtonItem *favorites;
 	
-	UIAlertView *formulaAlert;
+//	UIAlertView *formulaAlert;
 	
 	NSURL *iTunesURL;
 }

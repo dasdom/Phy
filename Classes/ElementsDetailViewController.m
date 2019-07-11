@@ -187,51 +187,13 @@
 - (UILabel*)labelWithFrame: (CGRect)pFrame andText: (NSString*)pText {
     UILabel *label = [[UILabel alloc] initWithFrame: pFrame];
     [label setText: pText];
-    UIColor *bColor = [UIColor scrollViewTexturedBackgroundColor];
+    UIColor *bColor = [UIColor grayColor];
 	UIColor *tColor = [UIColor colorWithRed: 1.0 green: 1.0 blue: 1.0 alpha: 1.0];
     [label setBackgroundColor: bColor];
     [label setTextColor: tColor];
-    [label setTextAlignment: UITextAlignmentLeft];
+    [label setTextAlignment: NSTextAlignmentLeft];
     [label setFont: [UIFont systemFontOfSize: 15.0f]];
     return label;
 }
-
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return YES;
-}
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    NSLog(@"rotated");
-}
-
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-    NSLog(@"will rotate");
-}
-*/
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-}
-
-
-
 
 @end

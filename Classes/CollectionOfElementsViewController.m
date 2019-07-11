@@ -31,10 +31,13 @@
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
-    [[UIApplication sharedApplication] setStatusBarHidden: YES];
     collenctionView = [[CollectionOfElementsView alloc] initWithFrame: [[UIScreen mainScreen] bounds] andElementsArray: [self elementArray]];
     [collenctionView setDelegate: self];
     [self setView: collenctionView];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 
@@ -57,16 +60,14 @@
     [[collenctionView abkLabel] setText: [elementsDict objectForKey: @"Abk"]];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-//    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+//    // Return YES for supported orientations
+////    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+//    return YES;
+//}
+
+- (BOOL)shouldAutorotate {
     return YES;
 }
 
@@ -74,9 +75,16 @@
 //    [self dismissModalViewControllerAnimated: YES];
 //}
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    if (fromInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || fromInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-        [self dismissModalViewControllerAnimated: YES];
+//- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+//    if (fromInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || fromInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+//        [self dismissModalViewControllerAnimated: YES];
+//    }
+//}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+    if (size.width < size.height) {
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
@@ -84,7 +92,6 @@
     NSDictionary *colorDictionary = @{@"Gas": @0.2f, @"Metall": @0.3f, @"Halbleiter": @0.4f, @"Ferromagnetikum": @0.5f, @"Halbmetall": @0.6f, @"Flüssigkeit": @0.7f, @"Flüssigkeit, Metall": @0.8f};
 //    NSDictionary *cristalStructDictionary = [[NSDictionary alloc] initWithObjectsAndKeys: [NSNumber numberWithFloat: 0.2], @"hexagonal", [NSNumber numberWithFloat: 0.3],@"kubischraumzentriert", [NSNumber numberWithFloat: 0.4],@"rhomboedrisch", [NSNumber numberWithFloat: 0.5],@"orthorhombisch", [NSNumber numberWithFloat: 0.6],@"kubisch", [NSNumber numberWithFloat: 0.7], @"kubischfl.zentriert", [NSNumber numberWithFloat: 0.8], @"Diamant", nil]; 
     UISegmentedControl *segmentedControl = sender;
-    NSLog(@"[segmentedControl  selectedSegmentIndex]: %d", [segmentedControl selectedSegmentIndex]);
     for (int i = 0; i < [[self elementArray] count]; i++) {
         NSDictionary *elementsDict = [[self elementArray] objectAtIndex: i];
         CGFloat colorFloat = 0.0f;

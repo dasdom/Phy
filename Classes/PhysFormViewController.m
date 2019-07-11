@@ -237,7 +237,7 @@
             if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
                 [[self navigationController] pushViewController: chemieTableViewController animated: YES];
             } else {
-                [self presentModalViewController: navController animated: YES];
+                [self presentViewController:navController animated:YES completion:nil];
             }
         } else {
             NSSet *subSet = [[NSSet alloc] initWithObjects: title, nil];
@@ -329,36 +329,36 @@
 	
 }
 
-// Process a LinkShare/TradeDoubler/DGM URL to something iPhone can handle
-- (void)openReferralURL:(NSURL *)referralURL {
-    [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:referralURL] delegate:self];
-}
-// Save the most recent URL in case multiple redirects occur
-// "iTunesURL" is an NSURL property in your class declaration
-- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response {
-    self.iTunesURL = [response URL];
-    return request;
-}
-
-// No more redirects; use the last URL saved
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    [[UIApplication sharedApplication] openURL:self.iTunesURL];
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-	NSString *returnString = @"";
-#ifdef LITE_VERSION 
-	NSString *titleString = @"Phy Lite";
-#else
-	NSString *titleString = @"Phy";
-#endif
-	if (section == [self numberOfSections]-1 && [[[self navigationItem] title] isEqualToString: titleString]) {
-		returnString = NSLocalizedString(@"Irrtümer vorbehalten", @"");
-	} else if (section == [self numberOfSections]-1 && [[[self navigationItem] title] isEqualToString: @"Formeln üben (Werbung)"]) {
-		returnString = NSLocalizedString(@"PhyLer ist ein iOS-App mit dem Sie physikaliche Formeln üben können. Mit einem Klick werden Sie zum App-Store weitergeleitet. Vielen Dank für Ihr Interesse!", @"");
-	}
-	return returnString;
-}
+//// Process a LinkShare/TradeDoubler/DGM URL to something iPhone can handle
+//- (void)openReferralURL:(NSURL *)referralURL {
+//    [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:referralURL] delegate:self];
+//}
+//// Save the most recent URL in case multiple redirects occur
+//// "iTunesURL" is an NSURL property in your class declaration
+//- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response {
+//    self.iTunesURL = [response URL];
+//    return request;
+//}
+//
+//// No more redirects; use the last URL saved
+//- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+//    [[UIApplication sharedApplication] openURL:self.iTunesURL];
+//}
+//
+//- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+//	NSString *returnString = @"";
+//#ifdef LITE_VERSION
+//	NSString *titleString = @"Phy Lite";
+//#else
+//	NSString *titleString = @"Phy";
+//#endif
+//	if (section == [self numberOfSections]-1 && [[[self navigationItem] title] isEqualToString: titleString]) {
+//		returnString = NSLocalizedString(@"Irrtümer vorbehalten", @"");
+//	} else if (section == [self numberOfSections]-1 && [[[self navigationItem] title] isEqualToString: @"Formeln üben (Werbung)"]) {
+//		returnString = NSLocalizedString(@"PhyLer ist ein iOS-App mit dem Sie physikaliche Formeln üben können. Mit einem Klick werden Sie zum App-Store weitergeleitet. Vielen Dank für Ihr Interesse!", @"");
+//	}
+//	return returnString;
+//}
 
 //- (void)searchBarSearchButtonClicked: (UISearchBar *)aSearchBar {
 - (void)searchBar:(UISearchBar *)aSearchBar textDidChange:(NSString *)searchText {  
@@ -405,39 +405,27 @@
 	
 	// Set cellIdentifier for cell at index
 	NSString *notificationString = [dictionary objectForKey: @"Formula"];
-		
-	UIAlertView *alert; 
+		    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Export" message:@"Add/Send formula to" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+   
+    [alert addAction:[UIAlertAction actionWithTitle:@"Favorites" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self addToFavorites];
+    }]];
 	
 	if (notificationString != nil) {
-		alert = [[UIAlertView alloc] initWithTitle:@"Export" message:@"Add/Send formula to"
-													delegate:self cancelButtonTitle:@"Cancel" 
-											otherButtonTitles:@"Favorites", @"Calculator", nil];
-	} else {
-		alert = [[UIAlertView alloc] initWithTitle:@"Export" message:@"Add formula to"
-										  delegate:self cancelButtonTitle:@"Cancel" 
-								 otherButtonTitles:@"Favorites", nil];
+        [alert addAction:[UIAlertAction actionWithTitle:@"Calculator" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self sendNotificationToCalc];
+        }]];
 	}
 
-	[alert show];
-}
-
-- (void)alertView:(UIAlertView *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-	// use "buttonIndex" to decide your action
-	//
-	if (buttonIndex == 1) {
-		NSLog(@"Favorites");
-		[self addToFavorites];
-	} else if (buttonIndex == 2) {
-		NSLog(@"Calculator");
-		[self sendNotificationToCalc];
-	}
+	[self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)addToFavorites {
 	
 	NSInteger sections = [self.listOfItems count];
-	NSLog(@"sections: %d", sections);
 	for (int i = 0; i < sections; i++) {
 		NSLog(@"names: %@", [self.namesOfSections objectAtIndex: i]);
 	}
@@ -461,23 +449,20 @@
 }
 
 - (void)formulaAdded: (NSString *)formulaName {
-	NSString *string = [NSString stringWithFormat: 
+	NSString *message = [NSString stringWithFormat:
 						NSLocalizedString(@"Formel '%@' wurde zu den Favoriten hinzugefügt.",@""), 
 						NSLocalizedString(formulaName, @"")];
-	formulaAlert = [[UIAlertView alloc] 
-					initWithTitle: NSLocalizedString(@"Formel hinzugefügt", @"")
-					message: string
-					delegate: self 
-					cancelButtonTitle: nil 
-					otherButtonTitles: @"OK", nil];
-	formulaAlert.delegate = self;
-	[formulaAlert show];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Formel hinzugefügt", @"") message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)sendNotificationToCalc {
 	
 	NSInteger sections = [self.listOfItems count];
-	NSLog(@"sections: %d", sections);
 	for (int i = 0; i < sections; i++) {
 		NSLog(@"names: %@", [self.namesOfSections objectAtIndex: i]);
 	}

@@ -11,6 +11,7 @@
 #import "Calculator.h"
 #import "HistoryTableViewController.h"
 #import "GeneralCalculatorView.h"
+#import "ConstantsTableViewController.h"
 
 #import <math.h>
 
@@ -54,58 +55,29 @@ static NSString * const DDHDivide = @"/";
 
 @implementation GeneralCalculatorViewController
 
-//@synthesize sinFunc;
-//@synthesize cosFunc;
-//@synthesize tanFunc;
-//@synthesize second;
-//@synthesize constants;
-//@synthesize degOrRad;
-//@synthesize helpButton;
-//
-////@synthesize calcStringView;
-//@synthesize ansView;
-//@synthesize calcString;
-//@synthesize alreadyDot;
-//@synthesize alreadyRechenzeichen;
-//@synthesize alreadyPlus;
-//@synthesize alreadyMinus;
-//@synthesize alreadyNumber;
-//@synthesize secondFunctions;
-//@synthesize digitsToDelete;
-//@synthesize historyIndex;
-//
-//@synthesize historyCalcStrings;
-//
 @synthesize deg;
-//@synthesize help;
-//
-//@synthesize answerDouble;
-//@synthesize buttonView;
-//@synthesize constButtonsView;
 
-- (id)init {
-	if ((self = [super init])) {
-		// calcString holds the string which is going to be interpreted by the calculator
-//		calcString = [[NSMutableString alloc] initWithString: @"_"];
+- (instancetype)init {
+    self = [super init];
+	if (self) {
         self.calcString = [[NSMutableString alloc] initWithString: @"_"];
         self.historyCalcStrings = [[NSMutableArray alloc] init];
 	}
 	return self;
 }
 
-- (void)viewWillAppear: (BOOL)animated {
-	[[self calcStringView] setText: [self calcString]];
-}
-
 - (void)loadView {
-
-    GeneralCalculatorView *contentView = [GeneralCalculatorView new];
-
-    self.view = contentView;
+    self.view = [[GeneralCalculatorView alloc] init];
 }
 
 - (GeneralCalculatorView *)contentView {
     return (GeneralCalculatorView *)self.view;
+}
+
+- (void)viewWillAppear: (BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.calcStringView.text = self.calcString;
 }
 
 - (UITextView *)calcStringView {
@@ -124,175 +96,175 @@ static NSString * const DDHDivide = @"/";
 	}
 }
 
-- (void)createConstButtons {
-    CGFloat floatX1 = kX1;
-	CGFloat floatX2 = kX2;
-	CGFloat floatX3 = kX3;
-	CGFloat floatX4 = kX4;
-	CGFloat floatX5 = kX5;
-    CGFloat floatX6 = kX6;
-    
-    //CGFloat floatY1 = kY1;
-//	CGFloat floatY2 = kY2;
-//	CGFloat floatY3 = kY3;
-	CGFloat floatY4 = kY4;
-	CGFloat floatY5 = kY5;
-	CGFloat floatY6 = kY6;
-	CGFloat floatY7 = kY7;
-    
-    CGFloat width1 = kWidth1;
-	CGFloat height1 = kHeight1;
+//- (void)createConstButtons {
+//    CGFloat floatX1 = kX1;
+//	CGFloat floatX2 = kX2;
+//	CGFloat floatX3 = kX3;
+//	CGFloat floatX4 = kX4;
+//	CGFloat floatX5 = kX5;
+//    CGFloat floatX6 = kX6;
+//    
+//    //CGFloat floatY1 = kY1;
+////	CGFloat floatY2 = kY2;
+////	CGFloat floatY3 = kY3;
+//	CGFloat floatY4 = kY4;
+//	CGFloat floatY5 = kY5;
+//	CGFloat floatY6 = kY6;
+//	CGFloat floatY7 = kY7;
+//    
+//    CGFloat width1 = kWidth1;
+//	CGFloat height1 = kHeight1;
+//
+//	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//		width1 = kWidth1*2;
+//		height1 = kHeight1;
+//		
+//		floatX1 = kX1+70;
+//		floatX2 = floatX1+width1;
+//		floatX3 = floatX2+width1;
+//		floatX4 = floatX3+width1;
+//		floatX5 = floatX4+width1;
+//		floatX6 = floatX5+width1;
+//		
+//		//CGFloat floatY1 = kY1;
+////		floatY2 = kY2;
+////		floatY3 = kY3;
+//		floatY4 = kY4;
+//		floatY5 = kY5;
+//		floatY6 = kY6;
+//		floatY7 = kY7;
+//		
+//		//CGFloat width2 = kWidth2;
+//	}
+//	
+//    CGRect buttonFrame = CGRectMake(floatX1, floatY7, width1, height1);
+//	[self constButtonWithFrame:buttonFrame title:@"g" andTag:1];
+//    
+//    buttonFrame = CGRectMake(floatX2, floatY7, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"p" andTag:2];
+//	
+//    buttonFrame = CGRectMake(floatX3, floatY7, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"γ" andTag:3];
+//	
+//    buttonFrame = CGRectMake(floatX4, floatY7, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"ϑ₀" andTag:4];
+//	
+//    buttonFrame = CGRectMake(floatX5, floatY7, width1, height1);
+//	[self constButtonWithFrame:buttonFrame title:@"V₀" andTag:5];
+//	
+//    buttonFrame = CGRectMake(floatX6, floatY7, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"R" andTag:6];
+//	
+//    buttonFrame = CGRectMake(floatX1, floatY6, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"NA" andTag:7];
+//	
+//    buttonFrame = CGRectMake(floatX2, floatY6, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"k" andTag:8];
+//	
+//    buttonFrame = CGRectMake(floatX3, floatY6, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"ε₀" andTag:9];
+//	
+//    buttonFrame = CGRectMake(floatX4, floatY6, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"μ₀" andTag:10];
+//	
+//    buttonFrame = CGRectMake(floatX5, floatY6, width1, height1);
+//	[self constButtonWithFrame:buttonFrame title:@"c" andTag:11];
+//	
+//    buttonFrame = CGRectMake(floatX6, floatY6, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"σ" andTag:12];
+//	
+//    buttonFrame = CGRectMake(floatX1, floatY5, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"h" andTag:13];
+//	
+//    buttonFrame = CGRectMake(floatX2, floatY5, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"e" andTag:14];
+//	
+//    buttonFrame = CGRectMake(floatX3, floatY5, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"me" andTag:15];
+//	
+//    buttonFrame = CGRectMake(floatX4, floatY5, width1, height1);
+//	[self constButtonWithFrame:buttonFrame title:@"mp" andTag:16];
+//	
+//    buttonFrame = CGRectMake(floatX5, floatY5, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"mn" andTag:17];
+//	
+//    buttonFrame = CGRectMake(floatX6, floatY5, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"λc" andTag:18];
+//	
+//	buttonFrame = CGRectMake(floatX1, floatY4, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"ℏ" andTag:19];
+//	
+//	buttonFrame = CGRectMake(floatX2, floatY4, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"α" andTag:20];
+//	
+//	buttonFrame = CGRectMake(floatX3, floatY4, width1, height1);
+//    [self constButtonWithFrame:buttonFrame title:@"Rʜ" andTag:21];
+//	
+//}
 
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		width1 = kWidth1*2;
-		height1 = kHeight1;
-		
-		floatX1 = kX1+70;
-		floatX2 = floatX1+width1;
-		floatX3 = floatX2+width1;
-		floatX4 = floatX3+width1;
-		floatX5 = floatX4+width1;
-		floatX6 = floatX5+width1;
-		
-		//CGFloat floatY1 = kY1;
-//		floatY2 = kY2;
-//		floatY3 = kY3;
-		floatY4 = kY4;
-		floatY5 = kY5;
-		floatY6 = kY6;
-		floatY7 = kY7;
-		
-		//CGFloat width2 = kWidth2;
-	}
-	
-    CGRect buttonFrame = CGRectMake(floatX1, floatY7, width1, height1);
-	[self constButtonWithFrame:buttonFrame title:@"g" andTag:1];
-    
-    buttonFrame = CGRectMake(floatX2, floatY7, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"p" andTag:2];
-	
-    buttonFrame = CGRectMake(floatX3, floatY7, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"γ" andTag:3];
-	
-    buttonFrame = CGRectMake(floatX4, floatY7, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"ϑ₀" andTag:4];
-	
-    buttonFrame = CGRectMake(floatX5, floatY7, width1, height1);
-	[self constButtonWithFrame:buttonFrame title:@"V₀" andTag:5];
-	
-    buttonFrame = CGRectMake(floatX6, floatY7, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"R" andTag:6];
-	
-    buttonFrame = CGRectMake(floatX1, floatY6, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"NA" andTag:7];
-	
-    buttonFrame = CGRectMake(floatX2, floatY6, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"k" andTag:8];
-	
-    buttonFrame = CGRectMake(floatX3, floatY6, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"ε₀" andTag:9];
-	
-    buttonFrame = CGRectMake(floatX4, floatY6, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"μ₀" andTag:10];
-	
-    buttonFrame = CGRectMake(floatX5, floatY6, width1, height1);
-	[self constButtonWithFrame:buttonFrame title:@"c" andTag:11];
-	
-    buttonFrame = CGRectMake(floatX6, floatY6, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"σ" andTag:12];
-	
-    buttonFrame = CGRectMake(floatX1, floatY5, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"h" andTag:13];
-	
-    buttonFrame = CGRectMake(floatX2, floatY5, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"e" andTag:14];
-	
-    buttonFrame = CGRectMake(floatX3, floatY5, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"me" andTag:15];
-	
-    buttonFrame = CGRectMake(floatX4, floatY5, width1, height1);
-	[self constButtonWithFrame:buttonFrame title:@"mp" andTag:16];
-	
-    buttonFrame = CGRectMake(floatX5, floatY5, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"mn" andTag:17];
-	
-    buttonFrame = CGRectMake(floatX6, floatY5, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"λc" andTag:18];
-	
-	buttonFrame = CGRectMake(floatX1, floatY4, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"ℏ" andTag:19];
-	
-	buttonFrame = CGRectMake(floatX2, floatY4, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"α" andTag:20];
-	
-	buttonFrame = CGRectMake(floatX3, floatY4, width1, height1);
-    [self constButtonWithFrame:buttonFrame title:@"Rʜ" andTag:21];
-	
-}
+//- (void)constButtonWithFrame:(CGRect)frame title:(NSString *)bTitle andTag:(NSInteger)bTag {
+//	UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+//    button.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+//    [button setFrame:frame];
+//    [button setTitle:bTitle forState:UIControlStateNormal];
+//    [button setTag:bTag];
+//    [button addTarget:self action:@selector(constButtonPressed:) forControlEvents:UIControlEventTouchDown];
+//    [constButtonsView addSubview:button];
+//}
 
-- (void)constButtonWithFrame:(CGRect)frame title:(NSString *)bTitle andTag:(NSInteger)bTag {
-	UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-    button.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
-    [button setFrame:frame];
-    [button setTitle:bTitle forState:UIControlStateNormal];
-    [button setTag:bTag];
-    [button addTarget:self action:@selector(constButtonPressed:) forControlEvents:UIControlEventTouchDown];
-    [constButtonsView addSubview:button];
-}
-
-- (void)constButtonPressed:(id)sender {
-    if (self.help == YES) {
-        switch ([sender tag]) {
-            case 1: [self.calcStringView setText: NSLocalizedString(@"Gravitationsbeschleunigung [m s⁻²]", @"")]; break;
-            case 2: [self.calcStringView setText: NSLocalizedString(@"Normdruck [Pa]", @"")]; break;
-            case 3: [self.calcStringView setText: NSLocalizedString(@"Gravitationskonstante [m³ kg⁻¹ s⁻²]", @"")]; break;
-            case 4: [self.calcStringView setText: NSLocalizedString(@"absoluter Nullpunkt [C]", @"")]; break;
-            case 5: [self.calcStringView setText: NSLocalizedString(@"molares Volumen idealer Gase [dm³ mol⁻¹]", @"")]; break;
-            case 6: [self.calcStringView setText: NSLocalizedString(@"allgemeine Gaskonstante [J K⁻¹ mol⁻¹]", @"")]; break;
-            case 7: [self.calcStringView setText: NSLocalizedString(@"Avogadrosche Konstante [mol⁻¹]", @"")]; break;
-            case 8: [self.calcStringView setText: NSLocalizedString(@"Boltzmann-Konstante [J K⁻¹]", @"")]; break;
-            case 9: [self.calcStringView setText: NSLocalizedString(@"elektrische Feldkonstante [A s V⁻¹ m⁻¹]", @"")]; break;
-            case 10: [self.calcStringView setText: NSLocalizedString(@"magnetische Feldkonstante [V s A⁻¹ m⁻¹]", @"")]; break;
-            case 11: [self.calcStringView setText: NSLocalizedString(@"Lichtgeschwindigkeit im Vakuum [m s⁻¹]", @"")]; break;
-            case 12: [self.calcStringView setText: NSLocalizedString(@"Stefan-Boltzmann-Konstante [W m⁻² K⁻⁴]", @"")]; break;
-            case 13: [self.calcStringView setText: NSLocalizedString(@"Plancksches Wirkungsquantum [J s]", @"")]; break;
-            case 14: [self.calcStringView setText: NSLocalizedString(@"Elementarladung [C]", @"")]; break;
-            case 15: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Elektrons [kg]", @"")]; break;
-            case 16: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Proton [kg]", @"")]; break;
-            case 17: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Neutron [kg]", @"")]; break;
-            case 18: [self.calcStringView setText: NSLocalizedString(@"Comptonwellenlänge [m]", @"")]; break;
-            case 19: [self.calcStringView setText: NSLocalizedString(@"reduziertes Plancksches Wirkungsquantum [Js]", @"")]; break;
-            case 20: [self.calcStringView setText: NSLocalizedString(@"Feinstrukturkonstante [1]", @"")]; break;
-            case 21: [self.calcStringView setText: NSLocalizedString(@"Rydberg-Konstante [m⁻¹]", @"")]; break;
-            default: break;
-        }
-    } else {
-		NSArray *underScore = [self.calcString componentsSeparatedByString: @"_"];
-		[self.calcString setString: [underScore objectAtIndex: 0]];
-        switch ([sender tag]) {
-            case 1: [self.calcString appendString: @"9.80665_"]; break;
-            case 2: [self.calcString appendString: @"101325_"]; break;
-            case 3: [self.calcString appendString: @"6.673e-11_"]; break;
-            case 4: [self.calcString appendString: @"-273.15_"]; break;
-            case 5: [self.calcString appendString: @"22.413996_"]; break;
-            case 6: [self.calcString appendString: @"8.314472_"]; break;
-            case 7: [self.calcString appendString: @"6.02214199e23_"]; break;
-            case 8: [self.calcString appendString: @"1.3806503e-23_"]; break;
-            case 9: [self.calcString appendString: @"8.85418782e-12_"]; break;
-            case 10: [self.calcString appendString: @"pi*4e-7_"]; break;
-            case 11: [self.calcString appendString: @"2.99792458e8_"]; break;
-            case 12: [self.calcString appendString: @"5.670400e-8_"]; break;
-            case 13: [self.calcString appendString: @"6.62606876e-34_"]; break;
-            case 14: [self.calcString appendString: @"1.602176462e-19_"]; break;
-            case 15: [self.calcString appendString: @"9.10938199e-31_"]; break;
-            case 16: [self.calcString appendString: @"1.67262158e-27_"]; break;
-            case 17: [self.calcString appendString: @"1.67492716e-27_"]; break;
-            case 18: [self.calcString appendString: @"2.426310215e-12_"]; break;
-            case 19: [self.calcString appendString: @"1.054571596e-34_"]; break;
-            case 20: [self.calcString appendString: @"7.297352533e-3_"]; break;
-            case 21: [self.calcString appendString: @"1.0973731568549e7_"]; break;
-            default: [self.calcString appendString: @"_"]; break;
-        }
+- (void)constButtonPressed:(UIButton *)sender {
+//    if (self.help == YES) {
+//        switch ([sender tag]) {
+//            case 1: [self.calcStringView setText: NSLocalizedString(@"Gravitationsbeschleunigung [m s⁻²]", @"")]; break;
+//            case 2: [self.calcStringView setText: NSLocalizedString(@"Normdruck [Pa]", @"")]; break;
+//            case 3: [self.calcStringView setText: NSLocalizedString(@"Gravitationskonstante [m³ kg⁻¹ s⁻²]", @"")]; break;
+//            case 4: [self.calcStringView setText: NSLocalizedString(@"absoluter Nullpunkt [C]", @"")]; break;
+//            case 5: [self.calcStringView setText: NSLocalizedString(@"molares Volumen idealer Gase [dm³ mol⁻¹]", @"")]; break;
+//            case 6: [self.calcStringView setText: NSLocalizedString(@"allgemeine Gaskonstante [J K⁻¹ mol⁻¹]", @"")]; break;
+//            case 7: [self.calcStringView setText: NSLocalizedString(@"Avogadrosche Konstante [mol⁻¹]", @"")]; break;
+//            case 8: [self.calcStringView setText: NSLocalizedString(@"Boltzmann-Konstante [J K⁻¹]", @"")]; break;
+//            case 9: [self.calcStringView setText: NSLocalizedString(@"elektrische Feldkonstante [A s V⁻¹ m⁻¹]", @"")]; break;
+//            case 10: [self.calcStringView setText: NSLocalizedString(@"magnetische Feldkonstante [V s A⁻¹ m⁻¹]", @"")]; break;
+//            case 11: [self.calcStringView setText: NSLocalizedString(@"Lichtgeschwindigkeit im Vakuum [m s⁻¹]", @"")]; break;
+//            case 12: [self.calcStringView setText: NSLocalizedString(@"Stefan-Boltzmann-Konstante [W m⁻² K⁻⁴]", @"")]; break;
+//            case 13: [self.calcStringView setText: NSLocalizedString(@"Plancksches Wirkungsquantum [J s]", @"")]; break;
+//            case 14: [self.calcStringView setText: NSLocalizedString(@"Elementarladung [C]", @"")]; break;
+//            case 15: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Elektrons [kg]", @"")]; break;
+//            case 16: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Proton [kg]", @"")]; break;
+//            case 17: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Neutron [kg]", @"")]; break;
+//            case 18: [self.calcStringView setText: NSLocalizedString(@"Comptonwellenlänge [m]", @"")]; break;
+//            case 19: [self.calcStringView setText: NSLocalizedString(@"reduziertes Plancksches Wirkungsquantum [Js]", @"")]; break;
+//            case 20: [self.calcStringView setText: NSLocalizedString(@"Feinstrukturkonstante [1]", @"")]; break;
+//            case 21: [self.calcStringView setText: NSLocalizedString(@"Rydberg-Konstante [m⁻¹]", @"")]; break;
+//            default: break;
+//        }
+//    } else {
+//		NSArray *underScore = [self.calcString componentsSeparatedByString: @"_"];
+//		[self.calcString setString: [underScore objectAtIndex: 0]];
+//        switch ([sender tag]) {
+//            case 1: [self.calcString appendString: @"9.80665_"]; break;
+//            case 2: [self.calcString appendString: @"101325_"]; break;
+//            case 3: [self.calcString appendString: @"6.673e-11_"]; break;
+//            case 4: [self.calcString appendString: @"-273.15_"]; break;
+//            case 5: [self.calcString appendString: @"22.413996_"]; break;
+//            case 6: [self.calcString appendString: @"8.314472_"]; break;
+//            case 7: [self.calcString appendString: @"6.02214199e23_"]; break;
+//            case 8: [self.calcString appendString: @"1.3806503e-23_"]; break;
+//            case 9: [self.calcString appendString: @"8.85418782e-12_"]; break;
+//            case 10: [self.calcString appendString: @"pi*4e-7_"]; break;
+//            case 11: [self.calcString appendString: @"2.99792458e8_"]; break;
+//            case 12: [self.calcString appendString: @"5.670400e-8_"]; break;
+//            case 13: [self.calcString appendString: @"6.62606876e-34_"]; break;
+//            case 14: [self.calcString appendString: @"1.602176462e-19_"]; break;
+//            case 15: [self.calcString appendString: @"9.10938199e-31_"]; break;
+//            case 16: [self.calcString appendString: @"1.67262158e-27_"]; break;
+//            case 17: [self.calcString appendString: @"1.67492716e-27_"]; break;
+//            case 18: [self.calcString appendString: @"2.426310215e-12_"]; break;
+//            case 19: [self.calcString appendString: @"1.054571596e-34_"]; break;
+//            case 20: [self.calcString appendString: @"7.297352533e-3_"]; break;
+//            case 21: [self.calcString appendString: @"1.0973731568549e7_"]; break;
+//            default: [self.calcString appendString: @"_"]; break;
+//        }
 //        [UIView beginAnimations:@"moveConstButtonsDown" context:nil];
 //        [UIView setAnimationDuration: 0.5];
 //        CGRect frame = [[self constButtonsView] frame];
@@ -311,11 +283,16 @@ static NSString * const DDHDivide = @"/";
 //		self.alreadyRechenzeichen = NO;
 //		self.alreadyPlus = NO;
 //		self.alreadyMinus = NO;
-	}
+//	}
+    
+    ConstantsTableViewController *constsViewController = [[ConstantsTableViewController alloc] init];
+    constsViewController.delegate = self;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:constsViewController];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
-- (void)buttonPressedDown: (id)sender {
-    [[sender layer] setBorderColor: [[UIColor blueColor] CGColor]];
+- (void)buttonPressedDown:(UIButton *)sender {
+    sender.layer.borderColor = [[UIColor blueColor] CGColor];
 }
 
 #pragma mark -
@@ -771,7 +748,7 @@ static NSString * const DDHDivide = @"/";
 }
 
 #pragma mark - Meta
-- (void)meta:(UIButton *)sender {
+- (void)metaButtonPressed:(UIButton *)sender {
     switch (sender.tag) {
         case DDHButtonTagSecond:
             [self secondPressed:sender];
@@ -784,6 +761,9 @@ static NSString * const DDHDivide = @"/";
             break;
         case DDHButtonTagDelete:
             [self deleteButtonPressed:sender];
+            break;
+        case DDHButtonTagConsts:
+            [self constButtonPressed:sender];
             break;
         default:
             break;
@@ -911,7 +891,7 @@ static NSString * const DDHDivide = @"/";
 	}
 }
 
-- (void)backButtonPressed: (id)sender {
+- (void)backButtonPressed:(UIButton *)sender {
 //    [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
     [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
     if (self.help == YES) {
@@ -946,7 +926,7 @@ static NSString * const DDHDivide = @"/";
 	}
 }
 
-- (void)forwardButtonPressed: (id)sender {
+- (void)forwardButtonPressed:(UIButton *)sender {
 //    [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
 	[[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
     if (self.help == YES) {
@@ -980,7 +960,7 @@ static NSString * const DDHDivide = @"/";
 	}
 }
 
-- (void)historyButtonPressed: (id)sender {
+- (void)historyButtonPressed:(UIButton *)sender {
 //    [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
 	[[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
 //    if (self.help == YES) {
@@ -1001,10 +981,10 @@ static NSString * const DDHDivide = @"/";
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         [navigationController setModalPresentationStyle: UIModalPresentationPageSheet];
     }
-    [self presentModalViewController: navigationController animated: YES];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
-- (void)ansButtonPressed: (id)sender {
+- (void)ansButtonPressed:(UIButton *)sender {
 	[[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
        HistoryTableViewController *historyTableViewController = [[HistoryTableViewController alloc] initWithStyle: UITableViewStylePlain];
     [historyTableViewController setCalcDictArray: [self historyCalcStrings]];
@@ -1014,10 +994,10 @@ static NSString * const DDHDivide = @"/";
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         [navigationController setModalPresentationStyle: UIModalPresentationPageSheet];
     }
-    [self presentModalViewController: navigationController animated: YES];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
-- (void)mailButtonPressed: (id)sender {
+- (void)mailButtonPressed:(UIButton *)sender {
     [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
     if ([MFMailComposeViewController canSendMail]) {
 	} else {
@@ -1036,12 +1016,11 @@ static NSString * const DDHDivide = @"/";
         body = NSLocalizedString(@"Keine Berechnungen bisher durchgeführt.", nil);
     }
 	[mailComposerViewController setMessageBody: body isHTML: NO];
-	[self presentModalViewController: mailComposerViewController animated: YES];
-
+    [self presentViewController:mailComposerViewController animated:YES completion:nil];
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-	[self dismissModalViewControllerAnimated: YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)calculatePressed: (id)sender {
@@ -1243,58 +1222,36 @@ static NSString * const DDHDivide = @"/";
 #pragma mark alerts
 
 - (void)nichtGenugKlammern {
-	klammerAlert = [[UIAlertView alloc] 
-					 initWithTitle: @"Klammer" 
-					 message: @"Warnung: Da sind mehr oeffnende Klammern als schliessende Klammern" 
-					 delegate: self 
-					 cancelButtonTitle: nil 
-					 otherButtonTitles: @"OK", nil];
-	klammerAlert.delegate = self;
-	[klammerAlert show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Klammer" message:@"Warnung: Da sind mehr oeffnende Klammern als schliessende Klammern" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)kommaFehlt {
-	kommaAlert = [[UIAlertView alloc] 
-					initWithTitle: @"Komma" 
-					message: @"Warnung: pow-Funktion ohne Komma. Die pow-Funktion braucht zwei Argumente." 
-					delegate: self 
-					cancelButtonTitle: nil 
-					otherButtonTitles: @"OK", nil];
-	kommaAlert.delegate = self;
-	[kommaAlert show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Komma" message:@"Warnung: pow-Funktion ohne Komma. Die pow-Funktion braucht zwei Argumente." preferredStyle:UIAlertControllerStyleAlert];
+
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)calcSignAtTheEnd {
-	UIAlertView *calcSignAlert = [[UIAlertView alloc] 
-                  initWithTitle: @"Rechenzeichen" 
-                  message: @"Rechnung endet mit einen Rechenzeichen." 
-                  delegate: self 
-                  cancelButtonTitle: nil 
-                  otherButtonTitles: @"OK", nil];
-	calcSignAlert.delegate = self;
-	[calcSignAlert show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Rechenzeichen" message:@"Rechnung endet mit einen Rechenzeichen." preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)insertString:(NSString *)stringToInsert {
+    NSArray *components = [self.calcString componentsSeparatedByString:@"_"];
+    NSMutableString *mutableString = [[NSMutableString alloc] initWithFormat:@"%@%@_", components.firstObject, stringToInsert];
+    [mutableString appendString:components.lastObject];
+    self.calcString = mutableString;
+    self.calcStringView.text = self.calcString;
 }
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return YES;
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
-    // Release anything that's not essential, such as cached data
-}
-
 
 - (void)dealloc {
 	[[NSNotificationCenter defaultCenter] removeObserver: self];

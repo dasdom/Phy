@@ -14,7 +14,7 @@
 	//NSMutableArray *tableDataSource;
 	//NSMutableArray *formulaNames;
 	PhysFormAppDelegate *appDelegate;
-	UIAlertView *howToAlert;
+//	UIAlertView *howToAlert;
 	BOOL showHowTo;
 }
 

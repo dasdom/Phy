@@ -26,6 +26,6 @@
 @property (nonatomic, strong) UITextField *inputValue;
 @property (nonatomic, strong) UIStackView *stackView;
 
-- (CGRect)pickerFrameWithSize: (CGSize)size;
+//- (CGRect)pickerFrameWithSize: (CGSize)size;
 
 @end

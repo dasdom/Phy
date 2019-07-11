@@ -173,7 +173,7 @@
 		resultLabel = [[UILabel alloc] initWithFrame: frame];
 		resultLabel.text = NSLocalizedString(@"(erlaubte Zeichen: -123456789.e)", @"");
 		[resultLabel setAdjustsFontSizeToFitWidth: YES];
-		[resultLabel setTextAlignment: UITextAlignmentRight];
+		[resultLabel setTextAlignment: NSTextAlignmentRight];
 		//[resultLabel setBackgroundColor: [UIColor grayColor]];
 		[self.view addSubview: resultLabel];
 	
@@ -372,7 +372,7 @@
 		NSArray *numberTwo = [[numberOne objectAtIndex: 0] componentsSeparatedByString: @"."];
 		if ([numberTwo count] > 1) {
 			dummyNumber = [numberTwo objectAtIndex: 1];
-			int afterDot = [dummyNumber integerValue];
+			NSInteger afterDot = [dummyNumber integerValue];
 			if (afterDot > 0 && afterDot < 10) {
 				mantisse *= 10;
 				e -= 1;

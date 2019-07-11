@@ -67,15 +67,17 @@
         
         [self addSubview:_stackView];
         
-        [NSLayoutConstraint activateConstraints:@[
-                                                  [_stackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor],
-                                                  [_stackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor],
-                                                  [_segmentedControl.leadingAnchor constraintEqualToAnchor:segmentedControlHostView.leadingAnchor constant:10],
-                                                  [_segmentedControl.trailingAnchor constraintEqualToAnchor:segmentedControlHostView.trailingAnchor constant:-10],
-                                                  [_segmentedControl.topAnchor constraintEqualToAnchor:segmentedControlHostView.topAnchor],
-                                                  [_segmentedControl.bottomAnchor constraintEqualToAnchor:segmentedControlHostView.bottomAnchor],
-                                                  ]];
-		
+        [NSLayoutConstraint activateConstraints:
+         @[
+             [_stackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor],
+             [_stackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor],
+             [_stackView.bottomAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.bottomAnchor],
+             [_segmentedControl.leadingAnchor constraintEqualToAnchor:segmentedControlHostView.leadingAnchor constant:10],
+             [_segmentedControl.trailingAnchor constraintEqualToAnchor:segmentedControlHostView.trailingAnchor constant:-10],
+             [_segmentedControl.topAnchor constraintEqualToAnchor:segmentedControlHostView.topAnchor],
+             [_segmentedControl.bottomAnchor constraintEqualToAnchor:segmentedControlHostView.bottomAnchor],
+         ]];
+        
     }
     return self;
 }

@@ -50,11 +50,11 @@
     return (ReferenzView *)self.view;
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    [[self contentView].stackView.bottomAnchor constraintEqualToAnchor:self.bottomLayoutGuide.topAnchor].active = true;
-}
+//- (void)viewDidLayoutSubviews {
+//    [super viewDidLayoutSubviews];
+//    
+//    [[self contentView].stackView.bottomAnchor constraintEqualToAnchor:self.bottomLayoutGuide.topAnchor].active = true;
+//}
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     switch (component) {

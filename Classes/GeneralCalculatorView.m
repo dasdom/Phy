@@ -145,7 +145,7 @@
     button.backgroundColor = [UIColor colorWithWhite:0.85 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
-    [button addTarget:nil action:@selector(meta:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:nil action:@selector(metaButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 

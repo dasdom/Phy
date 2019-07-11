@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class GeneralCalculatorViewController;
+
 @interface HistoryTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *calcDictArray;
-@property (nonatomic, unsafe_unretained) id delegate;
+@property (nonatomic, unsafe_unretained) GeneralCalculatorViewController *delegate;
 @property (nonatomic) BOOL isCalcHistory;
 
 @end

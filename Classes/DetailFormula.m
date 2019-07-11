@@ -63,7 +63,7 @@ static sqlite3_stmt *addStmt = nil;
 			NSAssert1(0, @"Error while creating delete statement. '%s'", sqlite3_errmsg(database));
 		}
 	}
-	sqlite3_bind_int(deleteStmt, 1, formulaID);
+	sqlite3_bind_int(deleteStmt, 1, (int)formulaID);
 	
 	if (SQLITE_DONE != sqlite3_step(deleteStmt))
 		NSAssert1(0, @"Error while deleting. '%s'", sqlite3_errmsg(database));

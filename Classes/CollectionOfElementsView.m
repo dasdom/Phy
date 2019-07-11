@@ -66,22 +66,22 @@
         }
         UILabel *sternLabel = [[UILabel alloc] initWithFrame: CGRectMake(x0+2*(buttonWidth+1), y0+5*(buttonHeight+1), buttonWidth, buttonHeight)];
         [sternLabel setText: @"*"];
-        [sternLabel setTextAlignment: UITextAlignmentCenter];
+        [sternLabel setTextAlignment: NSTextAlignmentCenter];
         [self addSubview: sternLabel];
         
         UILabel *doppelSternLabel = [[UILabel alloc] initWithFrame: CGRectMake(x0+2*(buttonWidth+1), y0+6*(buttonHeight+1), buttonWidth, buttonHeight)];
         [doppelSternLabel setText: @"**"];
-        [doppelSternLabel setTextAlignment: UITextAlignmentCenter];
+        [doppelSternLabel setTextAlignment: NSTextAlignmentCenter];
         [self addSubview: doppelSternLabel];
         
         UILabel *sternLabel2 = [[UILabel alloc] initWithFrame: CGRectMake(x0+1*(buttonWidth+1), y0+5*(buttonHeight+1)+lanthanideOffset, buttonWidth, buttonHeight)];
         [sternLabel2 setText: @"*"];
-        [sternLabel2 setTextAlignment: UITextAlignmentCenter];
+        [sternLabel2 setTextAlignment: NSTextAlignmentCenter];
         [self addSubview: sternLabel2];
         
         UILabel *doppelSternLabel2 = [[UILabel alloc] initWithFrame: CGRectMake(x0+1*(buttonWidth+1), y0+6*(buttonHeight+1)+lanthanideOffset, buttonWidth, buttonHeight)];
         [doppelSternLabel2 setText: @"**"];
-        [doppelSternLabel2 setTextAlignment: UITextAlignmentCenter];
+        [doppelSternLabel2 setTextAlignment: NSTextAlignmentCenter];
         [self addSubview: doppelSternLabel2];
         [self addSubview: doppelSternLabel2];
         
@@ -89,7 +89,6 @@
         UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems: @[NSLocalizedString(@"Masse", nil), NSLocalizedString(@"Phase (Normbed.)", nil), NSLocalizedString(@"Pauling-Skala", nil)]];
         [segmentedControl addTarget: delegate action: @selector(changeColor:) forControlEvents: UIControlEventValueChanged];
         [segmentedControl setFrame: CGRectMake(10.0f, 290.0f, 460.0f, 20.0f)];
-        [segmentedControl setSegmentedControlStyle: UISegmentedControlStyleBar];
         [segmentedControl setSelectedSegmentIndex: 0];
         [segmentedControl setTintColor: [UIColor grayColor]];
         [self addSubview: segmentedControl];
@@ -102,7 +101,7 @@
         [[self abkLabel] setBackgroundColor: [UIColor clearColor]];
         [[self abkLabel] setTextColor: [UIColor whiteColor]];
         [[self abkLabel] setFont: [UIFont systemFontOfSize: 21.0f]];
-        [[self abkLabel] setTextAlignment: UITextAlignmentCenter];
+        [[self abkLabel] setTextAlignment: NSTextAlignmentCenter];
         [[self labelView] addSubview: [self abkLabel]];
         
         mNameLabel = [[UILabel alloc] initWithFrame: CGRectMake(50.0f, 5.0f, 165.0f, 15.0f)];

@@ -126,29 +126,15 @@ static int MyCallback(void *context, int count, char **values, char **columns) {
 }
 */
 
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-}
-
 - (void)howToAddFormulas {
-	NSString *string = [NSString stringWithString: 
+	NSString *message = [NSString stringWithString:
 						NSLocalizedString(@"Formeln können im Bereich 'Formulas' durch einen Tab auf den rechten Tabbar-Knopf zu den Favoriten hinzugefügt werden. Formeln koennen durch einen Swipe ueber die Zelle entfernt werden.",@"")];
-	howToAlert = [[UIAlertView alloc] 
-					initWithTitle: NSLocalizedString(@"How To", @"")
-					message: string
-					delegate: self 
-					cancelButtonTitle: nil 
-					otherButtonTitles: @"OK", nil];
-	howToAlert.delegate = self;
-	[howToAlert show];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"How To", @"") message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 

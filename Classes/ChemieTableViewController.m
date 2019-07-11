@@ -44,42 +44,17 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
-        UIBarButtonItem *dismissBarButton = [[UIBarButtonItem alloc] initWithTitle: NSLocalizedString(@"zurück", nil) style: UIBarButtonItemStylePlain target: self action: @selector(dismissThisView:)];
+        UIBarButtonItem *dismissBarButton = [[UIBarButtonItem alloc] initWithTitle: NSLocalizedString(@"zurück", nil) style: UIBarButtonItemStylePlain target: self action: @selector(dismiss)];
         [[self navigationItem] setLeftBarButtonItem: dismissBarButton];
     }
     [self setTitle: NSLocalizedString(@"Chemische Elemente", nil)];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (BOOL)prefersStatusBarHidden {
+    return NO;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [[UIApplication sharedApplication] setStatusBarHidden: NO];
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
+- (BOOL)shouldAutorotate {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         return NO;
     }
@@ -106,34 +81,25 @@
 //    }
 //}
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         return;
     }
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+    if (size.width > size.height) {
         CollectionOfElementsViewController *collectionOfElementsViewController = [[CollectionOfElementsViewController alloc] init];
         [collectionOfElementsViewController setElementArray: [self elementsDictArray]];
         [collectionOfElementsViewController setModalTransitionStyle: UIModalTransitionStyleCrossDissolve];
-        [self presentModalViewController: collectionOfElementsViewController animated: YES];
+        [self presentViewController:collectionOfElementsViewController animated:YES completion:nil];
     }
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[self elementsDictArray] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier];
@@ -209,8 +175,8 @@
     
 }
 
-- (void)dismissThisView: (id)sender {
-    [self dismissModalViewControllerAnimated: YES];
+- (void)dismiss {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

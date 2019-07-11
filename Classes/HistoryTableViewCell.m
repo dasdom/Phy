@@ -10,21 +10,29 @@
 
 @implementation HistoryTableViewCell
 
-@synthesize calcStringTextView=mCalcStringTextView;
-@synthesize solutionLabel=mSolutionLabel;
-
 - (id)initWithCellIdentifier:(NSString *)cellID {
     if ((self = [super initWithStyle: UITableViewCellStyleDefault reuseIdentifier: cellID])) {
-        CGRect contentFrame = [[self contentView] frame];
-        mCalcStringTextView = [[UILabel alloc] initWithFrame: CGRectMake(10.0f, 5.0f, contentFrame.size.width-20.0f, 50.0f)];
-//        [[self calcStringTextView] setFont: [UIFont boldSystemFontOfSize: 14.0f]];
-        [[self calcStringTextView] setNumberOfLines: 2];
-        [[self calcStringTextView] setLineBreakMode: UILineBreakModeCharacterWrap];
-        [[self contentView] addSubview: [self calcStringTextView]];
         
-        mSolutionLabel = [[UILabel alloc] initWithFrame: CGRectMake(10.0f, 55.0f, contentFrame.size.width-20.0f, 20.0f)];
-//        [[self solutionLabel] setFont: [UIFont systemFontOfSize: 14.0f]];
-        [[self contentView] addSubview: [self solutionLabel]];
+        _calcStringTextView = [[UILabel alloc] init];
+        _calcStringTextView.numberOfLines = 2;
+        _calcStringTextView.lineBreakMode = NSLineBreakByCharWrapping;
+
+        _solutionLabel = [[UILabel alloc] init];
+        
+        UIStackView *stackView = [[UIStackView alloc] initWithArrangedSubviews:@[_calcStringTextView, _solutionLabel]];
+        stackView.translatesAutoresizingMaskIntoConstraints = NO;
+        stackView.axis = UILayoutConstraintAxisVertical;
+        stackView.spacing = 5;
+        [self.contentView addSubview:stackView];
+        
+        [NSLayoutConstraint activateConstraints:
+         @[
+             [stackView.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor constant:16],
+             [stackView.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor constant:-16],
+             [stackView.topAnchor constraintEqualToAnchor:self.contentView.topAnchor constant:8],
+             [stackView.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-8]
+         ]
+         ];
     }
     return self;
 }

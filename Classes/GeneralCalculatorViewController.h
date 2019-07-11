@@ -29,14 +29,14 @@
 
 //	NSMutableArray *historyCalcStrings;
 
-	UIAlertView *klammerAlert;
-	UIAlertView *kommaAlert;
+//	UIAlertView *klammerAlert;
+//	UIAlertView *kommaAlert;
 
-	NSInteger digitsToDeleteAtPosition[100];
-	NSInteger inputPosition;
-
-    UIView *buttonView;
-    UIView *constButtonsView;
+//	NSInteger digitsToDeleteAtPosition[100];
+//	NSInteger inputPosition;
+//
+//    UIView *buttonView;
+//    UIView *constButtonsView;
 }
 
 @property (nonatomic, strong) UIButton *sinFunc;
@@ -60,5 +60,7 @@
 
 @property (nonatomic, strong) UIView *buttonView;
 @property (nonatomic, strong) UIView *constButtonsView;
+
+- (void)insertString:(NSString *)stringToInsert;
 
 @end
