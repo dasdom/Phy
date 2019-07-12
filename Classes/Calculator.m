@@ -24,28 +24,28 @@
 - (NSDecimalNumber *)calculateString:(NSString *)calculationString {    
 	NSMutableString *mutableCalcString = [[NSMutableString alloc] initWithString: calculationString];
 	
-	NSArray *eMinus = [mutableCalcString componentsSeparatedByString: @"e-"];
+	NSArray *eMinus = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"e%@", DDHMinus]];
 	[mutableCalcString setString: [eMinus objectAtIndex: 0]];
 	for (int i = 1; i < [eMinus count]; i++) {
 		[mutableCalcString appendFormat: @"Eminus"];
 		[mutableCalcString appendString: [eMinus objectAtIndex: i]];
 	}
 	
-	NSArray *ePlus = [mutableCalcString componentsSeparatedByString: @"e+"];
+	NSArray *ePlus = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"e%@", DDHPlus]];
 	[mutableCalcString setString: [ePlus objectAtIndex: 0]];
 	for (int i = 1; i < [ePlus count]; i++) {
 		[mutableCalcString appendFormat: @"e"];
 		[mutableCalcString appendString: [ePlus objectAtIndex: i]];
 	}
 	
-	NSArray *squareMinus = [mutableCalcString componentsSeparatedByString: @"^-"];
+	NSArray *squareMinus = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"^%@", DDHMinus]];
 	[mutableCalcString setString: [squareMinus objectAtIndex: 0]];
 	for (int i = 1; i < [squareMinus count]; i++) {
 		[mutableCalcString appendFormat: @"Sqminus"];
 		[mutableCalcString appendString: [squareMinus objectAtIndex: i]];
 	}
 	
-	NSArray *squarePlus = [mutableCalcString componentsSeparatedByString: @"^+"];
+	NSArray *squarePlus = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"^%@", DDHPlus]];
 	[mutableCalcString setString: [squarePlus objectAtIndex: 0]];
 	for (int i = 1; i < [squarePlus count]; i++) {
 		[mutableCalcString appendFormat: @"^"];
@@ -110,42 +110,42 @@
 		[mutableCalcString setString: addString];
 	}
 	
-	NSArray *findNDot = [mutableCalcString componentsSeparatedByString: @"*-"];
+	NSArray *findNDot = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHTimes, DDHMinus]];
 	[mutableCalcString setString: [findNDot objectAtIndex: 0]];
 	for (int i = 1; i < [findNDot count]; i++) {
 		[mutableCalcString appendFormat: @"ndot"];
 		[mutableCalcString appendString: [findNDot objectAtIndex: i]];
 	}
     
-    NSArray *findNDiff = [mutableCalcString componentsSeparatedByString: @"/-"];
+    NSArray *findNDiff = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHDivide, DDHMinus]];
 	[mutableCalcString setString: [findNDiff objectAtIndex: 0]];
 	for (int i = 1; i < [findNDiff count]; i++) {
 		[mutableCalcString appendFormat: @"ndiff"];
 		[mutableCalcString appendString: [findNDiff objectAtIndex: i]];
 	}
 	
-	NSArray *findMinusMinus = [mutableCalcString componentsSeparatedByString: @"--"];
+	NSArray *findMinusMinus = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHMinus, DDHMinus]];
 	[mutableCalcString setString: [findMinusMinus objectAtIndex: 0]];
 	for (int i = 1; i < [findMinusMinus count]; i++) {
 		[mutableCalcString appendFormat: @"+"];
 		[mutableCalcString appendString: [findMinusMinus objectAtIndex: i]];
 	}
     
-    NSArray *findPlusMinus = [mutableCalcString componentsSeparatedByString: @"+-"];
+    NSArray *findPlusMinus = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHPlus, DDHMinus]];
 	[mutableCalcString setString: [findPlusMinus objectAtIndex: 0]];
 	for (int i = 1; i < [findPlusMinus count]; i++) {
 		[mutableCalcString appendFormat: @"-"];
 		[mutableCalcString appendString: [findPlusMinus objectAtIndex: i]];
 	}
 	
-    eMinus = [mutableCalcString componentsSeparatedByString: @"e-"];
+    eMinus = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"e%@", DDHMinus]];
 	[mutableCalcString setString: [eMinus objectAtIndex: 0]];
 	for (int i = 1; i < [eMinus count]; i++) {
 		[mutableCalcString appendFormat: @"Eminus"];
 		[mutableCalcString appendString: [eMinus objectAtIndex: i]];
 	}
 	
-	ePlus = [mutableCalcString componentsSeparatedByString: @"e+"];
+	ePlus = [mutableCalcString componentsSeparatedByString: [NSString stringWithFormat:@"e%@", DDHPlus]];
 	[mutableCalcString setString: [ePlus objectAtIndex: 0]];
 	for (int i = 1; i < [ePlus count]; i++) {
 		[mutableCalcString appendFormat: @"e"];
@@ -524,7 +524,7 @@
 
 - (NSDecimalNumber *)addFromString: (NSString *)addString {
 	//double sum = 0.0;
-	NSArray *plusStrings = [addString componentsSeparatedByString: @"+"];
+	NSArray *plusStrings = [addString componentsSeparatedByString: DDHPlus];
 	/*
 	 for (int i = 0; i < [plusStrings count]; i++) {
 	 sum += [self subtractFromString: [plusStrings objectAtIndex: i]];
@@ -543,7 +543,7 @@
 }
 
 - (NSDecimalNumber *)subtractFromString: (NSString *)subtractString {
-	NSArray *subtractionStrings = [subtractString componentsSeparatedByString: @"-"];
+	NSArray *subtractionStrings = [subtractString componentsSeparatedByString: DDHMinus];
 	/*double subtractionResult;
 	 if ([[subtractionStrings objectAtIndex: 0] isEqualToString: @""])
 	 subtractionResult = 0;
@@ -588,7 +588,7 @@
 }
 
 - (NSDecimalNumber *)multiplyFromString: (NSString *)multString {
-	NSArray *multStrings = [multString componentsSeparatedByString: @"*"];
+	NSArray *multStrings = [multString componentsSeparatedByString:DDHTimes];
     /*
 	 double multResult;
 	 for (int i = 0; i < [multStrings count]; i++) {
@@ -616,7 +616,7 @@
  }
  */
 - (NSDecimalNumber *)diffFromString: (NSString *)diffString {
-	NSArray *diffStrings = [diffString componentsSeparatedByString: @"/"];
+	NSArray *diffStrings = [diffString componentsSeparatedByString:DDHDivide];
 	NSDecimalNumber *decimalNumber1 = [self nDiffFromString:[diffStrings objectAtIndex:0]];
 	for (int i = 1; i < [diffStrings count]; i++) {
 		decimalNumber1 = [decimalNumber1 decimalNumberByDividingBy:

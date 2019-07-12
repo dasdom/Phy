@@ -37,10 +37,10 @@
 #define kY2 kY3+kHeight1
 #define kY1 kY2+kHeight1
 
-static NSString * const DDHPlus = @"+";
-static NSString * const DDHMinus = @"-";
-static NSString * const DDHTimes = @"*";
-static NSString * const DDHDivide = @"/";
+//static NSString * const DDHPlus = @"+";
+//static NSString * const DDHMinus = @"-";
+//static NSString * const DDHTimes = @"*";
+//static NSString * const DDHDivide = @"/";
 
 @interface GeneralCalculatorViewController ()
 @property BOOL alreadyDot;
@@ -84,6 +84,11 @@ static NSString * const DDHDivide = @"/";
     return [self contentView].calculationStringTextView;
 }
 
+- (void)setCalcString:(NSMutableString *)calcString {
+    _calcString = calcString;
+    self.calcStringView.text = _calcString;
+}
+
 - (void)receivedFormula: (NSNotification *)note {
 	NSDictionary *userInfo = [note userInfo];
 	for (NSString *key in userInfo) {
@@ -91,199 +96,12 @@ static NSString * const DDHDivide = @"/";
 	}
 	[self.calcString setString: [userInfo objectForKey: @"Formula"]];
 	[self.calcString appendFormat: @"_"];
-	if (self.calcStringView != nil) {
-		[self.calcStringView setText: self.calcString];
-	}
+//	if (self.calcStringView != nil) {
+//		[self.calcStringView setText: self.calcString];
+//	}
 }
 
-//- (void)createConstButtons {
-//    CGFloat floatX1 = kX1;
-//	CGFloat floatX2 = kX2;
-//	CGFloat floatX3 = kX3;
-//	CGFloat floatX4 = kX4;
-//	CGFloat floatX5 = kX5;
-//    CGFloat floatX6 = kX6;
-//    
-//    //CGFloat floatY1 = kY1;
-////	CGFloat floatY2 = kY2;
-////	CGFloat floatY3 = kY3;
-//	CGFloat floatY4 = kY4;
-//	CGFloat floatY5 = kY5;
-//	CGFloat floatY6 = kY6;
-//	CGFloat floatY7 = kY7;
-//    
-//    CGFloat width1 = kWidth1;
-//	CGFloat height1 = kHeight1;
-//
-//	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-//		width1 = kWidth1*2;
-//		height1 = kHeight1;
-//		
-//		floatX1 = kX1+70;
-//		floatX2 = floatX1+width1;
-//		floatX3 = floatX2+width1;
-//		floatX4 = floatX3+width1;
-//		floatX5 = floatX4+width1;
-//		floatX6 = floatX5+width1;
-//		
-//		//CGFloat floatY1 = kY1;
-////		floatY2 = kY2;
-////		floatY3 = kY3;
-//		floatY4 = kY4;
-//		floatY5 = kY5;
-//		floatY6 = kY6;
-//		floatY7 = kY7;
-//		
-//		//CGFloat width2 = kWidth2;
-//	}
-//	
-//    CGRect buttonFrame = CGRectMake(floatX1, floatY7, width1, height1);
-//	[self constButtonWithFrame:buttonFrame title:@"g" andTag:1];
-//    
-//    buttonFrame = CGRectMake(floatX2, floatY7, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"p" andTag:2];
-//	
-//    buttonFrame = CGRectMake(floatX3, floatY7, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"γ" andTag:3];
-//	
-//    buttonFrame = CGRectMake(floatX4, floatY7, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"ϑ₀" andTag:4];
-//	
-//    buttonFrame = CGRectMake(floatX5, floatY7, width1, height1);
-//	[self constButtonWithFrame:buttonFrame title:@"V₀" andTag:5];
-//	
-//    buttonFrame = CGRectMake(floatX6, floatY7, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"R" andTag:6];
-//	
-//    buttonFrame = CGRectMake(floatX1, floatY6, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"NA" andTag:7];
-//	
-//    buttonFrame = CGRectMake(floatX2, floatY6, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"k" andTag:8];
-//	
-//    buttonFrame = CGRectMake(floatX3, floatY6, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"ε₀" andTag:9];
-//	
-//    buttonFrame = CGRectMake(floatX4, floatY6, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"μ₀" andTag:10];
-//	
-//    buttonFrame = CGRectMake(floatX5, floatY6, width1, height1);
-//	[self constButtonWithFrame:buttonFrame title:@"c" andTag:11];
-//	
-//    buttonFrame = CGRectMake(floatX6, floatY6, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"σ" andTag:12];
-//	
-//    buttonFrame = CGRectMake(floatX1, floatY5, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"h" andTag:13];
-//	
-//    buttonFrame = CGRectMake(floatX2, floatY5, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"e" andTag:14];
-//	
-//    buttonFrame = CGRectMake(floatX3, floatY5, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"me" andTag:15];
-//	
-//    buttonFrame = CGRectMake(floatX4, floatY5, width1, height1);
-//	[self constButtonWithFrame:buttonFrame title:@"mp" andTag:16];
-//	
-//    buttonFrame = CGRectMake(floatX5, floatY5, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"mn" andTag:17];
-//	
-//    buttonFrame = CGRectMake(floatX6, floatY5, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"λc" andTag:18];
-//	
-//	buttonFrame = CGRectMake(floatX1, floatY4, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"ℏ" andTag:19];
-//	
-//	buttonFrame = CGRectMake(floatX2, floatY4, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"α" andTag:20];
-//	
-//	buttonFrame = CGRectMake(floatX3, floatY4, width1, height1);
-//    [self constButtonWithFrame:buttonFrame title:@"Rʜ" andTag:21];
-//	
-//}
-
-//- (void)constButtonWithFrame:(CGRect)frame title:(NSString *)bTitle andTag:(NSInteger)bTag {
-//	UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-//    button.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
-//    [button setFrame:frame];
-//    [button setTitle:bTitle forState:UIControlStateNormal];
-//    [button setTag:bTag];
-//    [button addTarget:self action:@selector(constButtonPressed:) forControlEvents:UIControlEventTouchDown];
-//    [constButtonsView addSubview:button];
-//}
-
 - (void)constButtonPressed:(UIButton *)sender {
-//    if (self.help == YES) {
-//        switch ([sender tag]) {
-//            case 1: [self.calcStringView setText: NSLocalizedString(@"Gravitationsbeschleunigung [m s⁻²]", @"")]; break;
-//            case 2: [self.calcStringView setText: NSLocalizedString(@"Normdruck [Pa]", @"")]; break;
-//            case 3: [self.calcStringView setText: NSLocalizedString(@"Gravitationskonstante [m³ kg⁻¹ s⁻²]", @"")]; break;
-//            case 4: [self.calcStringView setText: NSLocalizedString(@"absoluter Nullpunkt [C]", @"")]; break;
-//            case 5: [self.calcStringView setText: NSLocalizedString(@"molares Volumen idealer Gase [dm³ mol⁻¹]", @"")]; break;
-//            case 6: [self.calcStringView setText: NSLocalizedString(@"allgemeine Gaskonstante [J K⁻¹ mol⁻¹]", @"")]; break;
-//            case 7: [self.calcStringView setText: NSLocalizedString(@"Avogadrosche Konstante [mol⁻¹]", @"")]; break;
-//            case 8: [self.calcStringView setText: NSLocalizedString(@"Boltzmann-Konstante [J K⁻¹]", @"")]; break;
-//            case 9: [self.calcStringView setText: NSLocalizedString(@"elektrische Feldkonstante [A s V⁻¹ m⁻¹]", @"")]; break;
-//            case 10: [self.calcStringView setText: NSLocalizedString(@"magnetische Feldkonstante [V s A⁻¹ m⁻¹]", @"")]; break;
-//            case 11: [self.calcStringView setText: NSLocalizedString(@"Lichtgeschwindigkeit im Vakuum [m s⁻¹]", @"")]; break;
-//            case 12: [self.calcStringView setText: NSLocalizedString(@"Stefan-Boltzmann-Konstante [W m⁻² K⁻⁴]", @"")]; break;
-//            case 13: [self.calcStringView setText: NSLocalizedString(@"Plancksches Wirkungsquantum [J s]", @"")]; break;
-//            case 14: [self.calcStringView setText: NSLocalizedString(@"Elementarladung [C]", @"")]; break;
-//            case 15: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Elektrons [kg]", @"")]; break;
-//            case 16: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Proton [kg]", @"")]; break;
-//            case 17: [self.calcStringView setText: NSLocalizedString(@"Ruhemasse des Neutron [kg]", @"")]; break;
-//            case 18: [self.calcStringView setText: NSLocalizedString(@"Comptonwellenlänge [m]", @"")]; break;
-//            case 19: [self.calcStringView setText: NSLocalizedString(@"reduziertes Plancksches Wirkungsquantum [Js]", @"")]; break;
-//            case 20: [self.calcStringView setText: NSLocalizedString(@"Feinstrukturkonstante [1]", @"")]; break;
-//            case 21: [self.calcStringView setText: NSLocalizedString(@"Rydberg-Konstante [m⁻¹]", @"")]; break;
-//            default: break;
-//        }
-//    } else {
-//		NSArray *underScore = [self.calcString componentsSeparatedByString: @"_"];
-//		[self.calcString setString: [underScore objectAtIndex: 0]];
-//        switch ([sender tag]) {
-//            case 1: [self.calcString appendString: @"9.80665_"]; break;
-//            case 2: [self.calcString appendString: @"101325_"]; break;
-//            case 3: [self.calcString appendString: @"6.673e-11_"]; break;
-//            case 4: [self.calcString appendString: @"-273.15_"]; break;
-//            case 5: [self.calcString appendString: @"22.413996_"]; break;
-//            case 6: [self.calcString appendString: @"8.314472_"]; break;
-//            case 7: [self.calcString appendString: @"6.02214199e23_"]; break;
-//            case 8: [self.calcString appendString: @"1.3806503e-23_"]; break;
-//            case 9: [self.calcString appendString: @"8.85418782e-12_"]; break;
-//            case 10: [self.calcString appendString: @"pi*4e-7_"]; break;
-//            case 11: [self.calcString appendString: @"2.99792458e8_"]; break;
-//            case 12: [self.calcString appendString: @"5.670400e-8_"]; break;
-//            case 13: [self.calcString appendString: @"6.62606876e-34_"]; break;
-//            case 14: [self.calcString appendString: @"1.602176462e-19_"]; break;
-//            case 15: [self.calcString appendString: @"9.10938199e-31_"]; break;
-//            case 16: [self.calcString appendString: @"1.67262158e-27_"]; break;
-//            case 17: [self.calcString appendString: @"1.67492716e-27_"]; break;
-//            case 18: [self.calcString appendString: @"2.426310215e-12_"]; break;
-//            case 19: [self.calcString appendString: @"1.054571596e-34_"]; break;
-//            case 20: [self.calcString appendString: @"7.297352533e-3_"]; break;
-//            case 21: [self.calcString appendString: @"1.0973731568549e7_"]; break;
-//            default: [self.calcString appendString: @"_"]; break;
-//        }
-//        [UIView beginAnimations:@"moveConstButtonsDown" context:nil];
-//        [UIView setAnimationDuration: 0.5];
-//        CGRect frame = [[self constButtonsView] frame];
-//        frame.origin.y = 600;
-//        [constants setTitle:@"const" forState:UIControlStateNormal];
-//		[constants setBackgroundImage: nil forState: UIControlStateNormal];
-//		[constants setTitleColor: [UIColor darkGrayColor] forState: UIControlStateNormal];
-//        [[self constButtonsView] setFrame: frame];
-//        [UIView commitAnimations];
-//		if ([underScore count] > 1) {
-//			[self.calcString appendString: [underScore objectAtIndex: 1]];
-//		}
-//		self.calcStringView.text = self.calcString;
-//		//digitsToDeleteAtPosition[inputPosition++] = 1;
-//		self.digitsToDelete = 1;
-//		self.alreadyRechenzeichen = NO;
-//		self.alreadyPlus = NO;
-//		self.alreadyMinus = NO;
-//	}
     
     ConstantsTableViewController *constsViewController = [[ConstantsTableViewController alloc] init];
     constsViewController.delegate = self;
@@ -326,9 +144,7 @@ static NSString * const DDHDivide = @"/";
                 break;
         }
         
-        self.calcString = [[self stringByInsertingString:stringToInsert inInputString:self.calcString] mutableCopy];
-	
-        self.calcStringView.text = self.calcString;
+        self.calcString = [self stringByInsertingString:stringToInsert inInputString:self.calcString];
     }
 
 }
@@ -364,275 +180,22 @@ static NSString * const DDHDivide = @"/";
         if ([self activeCharacterIsBasicCalcSign:self.calcString]) {
             self.calcString = [[self stringByReplacingActiveCharacterWith:stringToInsert inInputString:self.calcString] mutableCopy];
         } else {
-            self.calcString = [[self stringByInsertingString:stringToInsert inInputString:self.calcString] mutableCopy];
+            self.calcString = [self stringByInsertingString:stringToInsert inInputString:self.calcString];
         }
-        
-        self.calcStringView.text = self.calcString;
     }
 }
 
 - (void)insertFunction:(UIButton *)sender {
-//    [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
-//	[[sender layer] setBackgroundColor: [[UIColor whiteColor] CGColor]];
     [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
     if (self.help) {
         [self showHelpTextForButton:sender];
 	} else {
-//        NSArray *underScore = [[self calcString] componentsSeparatedByString:@"_"];
-//        [[self calcString] setString:[underScore objectAtIndex:0]];
-//        [self setDigitsToDelete:1];
-//        [self setAlreadyDot:NO];
-//        [self setAlreadyPlus:NO];
-//        [self setAlreadyMinus:NO];
-//        switch (sender.tag) {
-//            case 0:
-//                if ([self alreadyRechenzeichen] == YES) {
-//                    NSRange range;
-//                    range.location = [[self calcString] length] - 1;
-//                    range.length = 1;
-//                    [[self calcString] deleteCharactersInRange:range];
-//                }
-//                if ([[self calcString] isEqualToString: @""]) {
-//                    [[self calcString] appendFormat: @"%lf", answerDouble];
-//                }
-//                [[self calcString] appendString:@"+_"];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:YES];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 1:
-//                if ([self alreadyPlus] == YES || [self alreadyMinus] == YES) {
-//                    NSRange range;
-//                    range.location = [[self calcString] length] - 1;
-//                    range.length = 1;
-//                    [[self calcString] deleteCharactersInRange: range];
-//                }
-//                if ([[self calcString] isEqualToString: @""]) {
-//                    [[self calcString] appendFormat: @"%lf", answerDouble];
-//                }
-//                [[self calcString] appendString: @"-_"];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyMinus:YES];
-//                [self setAlreadyPlus:NO];
-//                break;
-//            case 2:
-//                if ([self alreadyRechenzeichen] == YES) {
-//                    NSRange range;
-//                    range.location = [[self calcString] length] - 1;
-//                    range.length = 1;
-//                    [[self calcString] deleteCharactersInRange: range];
-//                }
-//                if ([[self calcString] isEqualToString: @""]) {
-//                    [[self calcString] appendFormat: @"%lf", answerDouble];
-//                }
-//                [[self calcString] appendString: @"*_"];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 3:
-//                if ([self alreadyRechenzeichen] == YES) {
-//                    NSRange range;
-//                    range.location = [[self calcString] length] - 1;
-//                    range.length = 1;
-//                    [[self calcString] deleteCharactersInRange: range];
-//                }
-//                if ([[self calcString] isEqualToString: @""]) {
-//                    [[self calcString] appendFormat: @"%lf", answerDouble];
-//                }
-//                [[self calcString] appendString: @"/_"];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 4:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*(_"];
-//                } else {
-//                    [[self calcString] appendString: @"(_"];
-//                }
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 5:
-//                [[self calcString] appendString: @")_"];
-//                [self setAlreadyRechenzeichen:NO];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 6:
-//                //[[self calcString] appendString: @"pow(_,)"];
-//                if ([[self calcString] isEqualToString: @""]) {
-//                    [[self calcString] appendFormat: @"%lf", answerDouble];
-//                }
-//                [[self calcString] appendString: @"^_"];
-//                [self setAlreadyRechenzeichen:NO];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 7:
-//                [[self calcString] appendString: @"e_"];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 8:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*pi_"];
-//                } else {
-//                    [[self calcString] appendString: @"pi_"];
-//                }
-//                [self setAlreadyRechenzeichen:NO];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 9:
-//                break;
-//            case 10:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*42_"];
-//                } else {
-//                    [[self calcString] appendString: @"42_"];
-//                }
-//                [self setDigitsToDelete:2];
-//                [self setAlreadyDot:YES];
-//                [self setAlreadyRechenzeichen:NO];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 11:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*log10(_"];
-//                } else {
-//                    [[self calcString] appendString: @"log10(_"];
-//                }
-//                [self setDigitsToDelete:6];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 12:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*log2(_"];
-//                } else {
-//                    [[self calcString] appendString: @"log2(_"];
-//                }
-//                [self setDigitsToDelete:5];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 13:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*ln(_"];
-//                } else {
-//                    [[self calcString] appendString: @"ln(_"];
-//                }
-//                [self setDigitsToDelete:3];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 14:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*exp(_"];
-//                } else {
-//                    [[self calcString] appendString: @"exp(_"];
-//                }
-//                [self setDigitsToDelete:4];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 15:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*sqrt(_"];
-//                } else {
-//                    [[self calcString] appendString: @"sqrt(_"];
-//                }
-//                [self setDigitsToDelete:5];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 16:
-//                if ([[self calcString] rangeOfString: @"pow("].location != NSNotFound)
-//                    [[self calcString] appendString: @",_"];
-//                else
-//                    [[self calcString] appendString: @"_"];
-//                [self setAlreadyRechenzeichen:NO];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 17:
-//                if ([self secondFunctions] == YES) {
-//                    if ([self alreadyNumber]) {
-//                        [[self calcString] appendString: @"*asin(_"];
-//                    } else {
-//                        [[self calcString] appendString: @"asin(_"];
-//                    }
-//                    [self setDigitsToDelete:5];
-//                } else {
-//                    if ([self alreadyNumber]) {
-//                        [[self calcString] appendString: @"*sin(_"];
-//                    } else {
-//                        [[self calcString] appendString: @"sin(_"];
-//                    }
-//                    [self setDigitsToDelete:4];
-//                }
-//                [self setAlreadyDot:NO];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 18:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*"];
-//                }
-//                if ([self secondFunctions] == YES) {
-//                    [[self calcString] appendString: @"acos(_"];
-//                    [self setDigitsToDelete:5];
-//                } else {
-//                    [[self calcString] appendString: @"cos(_"];
-//                    [self setDigitsToDelete:4];
-//                }
-//                [self setAlreadyDot:NO];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//            case 19:
-//                if ([self alreadyNumber]) {
-//                    [[self calcString] appendString: @"*"];
-//                }
-//                if ([self secondFunctions] == YES) {
-//                    [[self calcString] appendString: @"atan(_"];
-//                    [self setDigitsToDelete:5];
-//                } else {
-//                    [[self calcString] appendString: @"tan(_"];
-//                    [self setDigitsToDelete:4];
-//                }
-//                [self setAlreadyDot:NO];
-//                [self setAlreadyRechenzeichen:YES];
-//                [self setAlreadyPlus:NO];
-//                [self setAlreadyMinus:NO];
-//                break;
-//
-//            default:
-//                break;
-//        }
-//        if ([underScore count] > 1) {
-//            [[self calcString] appendString:[underScore objectAtIndex:1]];
-//        }
-//        [[self calcStringView] setText:[self calcString]];
-//        [self setAlreadyNumber: NO];
         
         NSString *stringToInsert = @"";
         switch (sender.tag) {
             case DDHButtonTagOpenParantheses:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*(";
+                    stringToInsert = [NSString stringWithFormat:@"%@(", DDHTimes];
                 } else {
                     stringToInsert = @"(";
                 }
@@ -642,7 +205,7 @@ static NSString * const DDHDivide = @"/";
                 break;
             case DDHButtonTagSin:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*";
+                    stringToInsert = DDHTimes;
                 }
                 if (self.secondFunctions) {
                     stringToInsert = [stringToInsert stringByAppendingString:@"a"];
@@ -651,7 +214,7 @@ static NSString * const DDHDivide = @"/";
                 break;
             case DDHButtonTagCos:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*";
+                    stringToInsert = DDHTimes;
                 }
                 if (self.secondFunctions) {
                     stringToInsert = [stringToInsert stringByAppendingString:@"a"];
@@ -660,7 +223,7 @@ static NSString * const DDHDivide = @"/";
                 break;
             case DDHButtonTagTan:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*";
+                    stringToInsert = DDHTimes;
                 }
                 if (self.secondFunctions) {
                     stringToInsert = [stringToInsert stringByAppendingString:@"a"];
@@ -669,42 +232,42 @@ static NSString * const DDHDivide = @"/";
                 break;
             case DDHButtonTagPi:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*𝜋";
+                    stringToInsert = [NSString stringWithFormat:@"%@𝜋", DDHTimes];
                 } else {
                     stringToInsert = @"𝜋";
                 }
                 break;
             case DDHButtonTagSqrt:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*sqrt(";
+                    stringToInsert = [NSString stringWithFormat:@"%@sqrt(", DDHTimes];
                 } else {
                     stringToInsert = @"sqrt(";
                 }
                 break;
             case DDHButtonTagLn:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*ln(";
+                    stringToInsert = [NSString stringWithFormat:@"%@ln(", DDHTimes];
                 } else {
                     stringToInsert = @"ln(";
                 }
                 break;
             case DDHButtonTagExp:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*exp(";
+                    stringToInsert = [NSString stringWithFormat:@"%@exp(", DDHTimes];
                 } else {
                     stringToInsert = @"exp(";
                 }
                 break;
             case DDHButtonTagLog10:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*log10(";
+                    stringToInsert = [NSString stringWithFormat:@"%@log10(", DDHTimes];
                 } else {
                     stringToInsert = @"log10(";
                 }
                 break;
             case DDHButtonTagLog2:
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*log2(";
+                    stringToInsert = [NSString stringWithFormat:@"%@log2(", DDHTimes];
                 } else {
                     stringToInsert = @"log2(";
                 }
@@ -731,18 +294,15 @@ static NSString * const DDHDivide = @"/";
                 [self.calcString replaceCharactersInRange:range withString:replacementString];
             } else {
                 if ([self activeCharacterIsDigitInCalcString:self.calcString]) {
-                    stringToInsert = @"*pow(_,";
+                    stringToInsert = [NSString stringWithFormat:@"%@pow(_,", DDHTimes];
                 } else {
                     stringToInsert = @"pow(_,";
                 }
                 [self.calcString replaceOccurrencesOfString:@"_" withString:stringToInsert options:0 range:NSMakeRange(0, self.calcString.length)];
             }
         } else {
-            self.calcString = [[self stringByInsertingString:stringToInsert inInputString:self.calcString] mutableCopy];
+            self.calcString = [self stringByInsertingString:stringToInsert inInputString:self.calcString];
         }
-        
-        self.calcStringView.text = self.calcString;
-    
     }
 
 }
@@ -765,6 +325,18 @@ static NSString * const DDHDivide = @"/";
         case DDHButtonTagConsts:
             [self constButtonPressed:sender];
             break;
+        case DDHButtonTagShare:
+            [self shareButtonPressed:sender];
+            break;
+        case DDHButtonTagMoveLeft:
+            [self backButtonPressed:sender];
+            break;
+        case DDHButtonTagMoveRight:
+            [self forwardButtonPressed:sender];
+            break;
+        case DDHButtonTagFourtyTwo:
+            self.calcString = [self stringByInsertingString:@"42" inInputString:self.calcString];
+            break;
         default:
             break;
     }
@@ -786,27 +358,6 @@ static NSString * const DDHDivide = @"/";
 	}
 }
 
-- (void)constPressed:(UIButton *)sender {
-//    [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
-//    if (self.help == YES) {
-//		self.calcStringView.text = NSLocalizedString(@"Wechsel der Tastenbelegung", @"");
-//	} else {
-//		[UIView beginAnimations:@"moveConstButtonView" context:nil];
-//        [UIView setAnimationDuration: 0.5];
-//        CGRect frame = [[self constButtonsView] frame];
-//        if (frame.origin.y > 400) {
-//            frame.origin.y = buttonView.frame.origin.y + 90.0f;
-//            [constants setTitle:@"done" forState:UIControlStateNormal];
-//        } else {
-//            frame.origin.y = 600;
-//            [constants setTitle:@"c" forState:UIControlStateNormal];
-//            [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
-//        }
-//        [[self constButtonsView] setFrame: frame];
-//        [UIView commitAnimations];
-//	}
-}
-
 - (void)degOrRadPressed:(UIButton *)sender {
     [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
 	if (self.help == YES) {
@@ -817,7 +368,6 @@ static NSString * const DDHDivide = @"/";
 		} else {
 			self.deg = NO;
 		}
-//		[self reCreateButtons];
 	}
 }
 
@@ -852,27 +402,27 @@ static NSString * const DDHDivide = @"/";
 			range.length = 1;
 			
 			// get substing which is to delete
-			NSString *substring = [self.calcString substringWithRange: range];
+//			NSString *substring = [self.calcString substringWithRange: range];
 			
 			if ([self.calcString length] > 1) {
 				
-				// check if there are some special characters in the substring and reset some bool values if neccessary
-				if ([substring rangeOfString: @"."].location != NSNotFound) 
-					self.alreadyDot = NO;
-				if ([substring rangeOfString: @"-"].location != NSNotFound) { 
-					self.alreadyMinus = NO;
-					self.alreadyRechenzeichen = NO;
-				}
-				if ([substring rangeOfString: @"+"].location != NSNotFound) { 
-					self.alreadyPlus = NO;
-					self.alreadyRechenzeichen = NO;
-				}
-				if ([substring rangeOfString: @"*"].location != NSNotFound) { 
-					self.alreadyRechenzeichen = NO;
-				}
-				if ([substring rangeOfString: @"/"].location != NSNotFound) { 
-					self.alreadyRechenzeichen = NO;
-				}
+//				// check if there are some special characters in the substring and reset some bool values if neccessary
+//				if ([substring rangeOfString: @"."].location != NSNotFound)
+//					self.alreadyDot = NO;
+//				if ([substring rangeOfString: @"-"].location != NSNotFound) {
+//					self.alreadyMinus = NO;
+//					self.alreadyRechenzeichen = NO;
+//				}
+//				if ([substring rangeOfString: @"+"].location != NSNotFound) {
+//					self.alreadyPlus = NO;
+//					self.alreadyRechenzeichen = NO;
+//				}
+//				if ([substring rangeOfString: @"*"].location != NSNotFound) {
+//					self.alreadyRechenzeichen = NO;
+//				}
+//				if ([substring rangeOfString: @"/"].location != NSNotFound) {
+//					self.alreadyRechenzeichen = NO;
+//				}
 				
 				// delete substring from calcString
 				[self.calcString deleteCharactersInRange: range];
@@ -892,19 +442,17 @@ static NSString * const DDHDivide = @"/";
 }
 
 - (void)backButtonPressed:(UIButton *)sender {
-//    [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
     [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
     if (self.help == YES) {
 		self.calcStringView.text = NSLocalizedString(@"Ein Zeichen nach links im Eingabestring", @"");
 	} else {
-		NSArray *underScore = [self.calcString componentsSeparatedByString: @"_"];
-		[self.calcString setString: [underScore objectAtIndex: 0]];
+		NSArray *components = [self.calcString componentsSeparatedByString: @"_"];
+		[self.calcString setString: [components objectAtIndex: 0]];
 
 		if (![self.calcString isEqualToString: @""]) {
 			NSRange range;
 			range.location = [self.calcString length] - 1;
 			range.length = 1;
-			//digitsToDeleteAtPosition[inputPosition--];
 		
 			NSString *substring = [self.calcString substringWithRange: range];
 		
@@ -915,8 +463,8 @@ static NSString * const DDHDivide = @"/";
 			[self.calcString appendString: @"_"];
 		}
 		
-		if ([underScore count] > 1) {
-			[self.calcString appendString: [underScore objectAtIndex: 1]];
+		if ([components count] > 1) {
+			[self.calcString appendString: [components objectAtIndex: 1]];
 		}
 		self.calcStringView.text = self.calcString;
 		self.digitsToDelete = 1;
@@ -961,18 +509,8 @@ static NSString * const DDHDivide = @"/";
 }
 
 - (void)historyButtonPressed:(UIButton *)sender {
-//    [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
 	[[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
-//    if (self.help == YES) {
-//		self.calcStringView.text = NSLocalizedString(@"Zugriff auf die letzten fünf Berechnungen", @"");
-//	} else {
-//		if (historyIndex < 0) {
-//			self.historyIndex = 9;
-//		}
-//		[calcString setString: [[historyCalcStrings objectAtIndex: historyIndex] objectForKey: @"calcString"]];
-//		self.calcStringView.text = calcString;
-//		historyIndex--;
-//	}
+
     HistoryTableViewController *historyTableViewController = [[HistoryTableViewController alloc] initWithStyle: UITableViewStylePlain];
     [historyTableViewController setCalcDictArray: [self historyCalcStrings]];
     [historyTableViewController setDelegate: self];
@@ -997,36 +535,16 @@ static NSString * const DDHDivide = @"/";
     [self presentViewController:navigationController animated:YES completion:nil];
 }
 
-- (void)mailButtonPressed:(UIButton *)sender {
-    [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
-    if ([MFMailComposeViewController canSendMail]) {
-	} else {
-        return;
-	}
-	MFMailComposeViewController *mailComposerViewController = [[MFMailComposeViewController alloc] init];
-	[mailComposerViewController setMailComposeDelegate: self];
-//	[mailComposerViewController setToRecipients: 
-//     [NSArray arrayWithObjects: @"dominik.hauser@dasdom.de", nil]];
-	[mailComposerViewController setSubject: NSLocalizedString(@"Meine letzte Berechnung", nil)];
-    NSString *body;
-    if ([[self historyCalcStrings] count] > 0) {
-        NSDictionary *lastCalculation = [[self historyCalcStrings] objectAtIndex: 0];
-        body = [NSString stringWithFormat: @"%@\n=%@", [lastCalculation objectForKey: @"calcString"], [lastCalculation objectForKey: @"solution"]];
-    } else {
-        body = NSLocalizedString(@"Keine Berechnungen bisher durchgeführt.", nil);
-    }
-	[mailComposerViewController setMessageBody: body isHTML: NO];
-    [self presentViewController:mailComposerViewController animated:YES completion:nil];
-}
-
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (void)shareButtonPressed:(UIButton *)sender {
+    
+    NSDictionary *lastCalculationDict = [[self historyCalcStrings] objectAtIndex: 0];
+    NSString *lastCalculation = [NSString stringWithFormat: @"%@\n=%@", lastCalculationDict[@"calcString"], lastCalculationDict[@"solution"]];
+    
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[lastCalculation] applicationActivities:nil];
+    [self presentViewController:activityViewController animated:YES completion:nil];
 }
 
 - (void)calculatePressed: (id)sender {
-    // [[[[sender layer] sublayers] objectAtIndex: 0] setGeometryFlipped: NO];
-//	[[sender layer] setBackgroundColor: [[UIColor whiteColor] CGColor]];
-    
     [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
     if (self.help == YES) {
 		self.calcStringView.text = NSLocalizedString(@"Durchführung der Berechnung", @"");
@@ -1035,9 +553,9 @@ static NSString * const DDHDivide = @"/";
 		NSInteger indexForSubstring = 0;
         NSString *lastCharString;
         if (![self.calcString isEqualToString:@""]) {
-            lastCharString = [self.calcString substringFromIndex: [self.calcString length]-1];
+            lastCharString = [self.calcString substringFromIndex: self.calcString.length-1];
         }
-        NSSet *calcSignsSet = [NSSet setWithObjects: @"*", @"-", @"+", @"/", nil];
+        NSSet *calcSignsSet = [NSSet setWithObjects: DDHTimes, DDHMinus, DDHPlus, DDHDivide, nil];
         if ([calcSignsSet containsObject: lastCharString]) {
             [self calcSignAtTheEnd];
             return;
@@ -1055,44 +573,43 @@ static NSString * const DDHDivide = @"/";
 			[self kommaFehlt];
 			[self.calcString appendFormat: @"_"];
 		} else {
-			[self calculateString: [self calcString]];
-//            for (int i = 9; i > 0; i--) {
-//                [historyCalcStrings replaceObjectAtIndex: i withObject: [historyCalcStrings objectAtIndex: i-1]];
-//            }
+			[self calculateString: self.calcString];
             NSString *tempString = [[NSString alloc] initWithFormat: @"%@", self.calcString];
             NSDictionary *historyDict = @{@"calcString": tempString, @"solution": @(self.answerDouble)};
-//            [historyCalcStrings replaceObjectAtIndex: 0 withObject: historyDict];
             [self.historyCalcStrings insertObject: historyDict atIndex: 0];
             if ([[self historyCalcStrings] count] > 50) {
                 [[self historyCalcStrings] removeLastObject];
             }
             self.historyIndex = 9;
             
-            [[self calcString] setString: @"_"];
+            [self.calcString setString:@"_"];
 		}
-        [self setAlreadyNumber: NO];
+        [self setAlreadyNumber:NO];
 	}
 } 
 
 - (void)calculateString:(NSString *)cString {
-	NSString *calcStringOrg = [[NSString alloc] initWithString: cString];
 	
 	Calculator *calculator = [[Calculator alloc] initWithDeg:deg];
 	NSDecimalNumber *sum = [calculator calculateString: cString];
-	
-	self.answerDouble = [sum doubleValue];
+    
+    [self presentResult:[sum doubleValue] forCalcString:cString];
+}
+
+- (void)presentResult:(double)answer forCalcString:(NSString *)calcString {
+    self.answerDouble = answer;
     
     UILabel *resultLabel = [self contentView].resultLabel;
     
-	if ((self.answerDouble < 100000 && self.answerDouble > 0.001) ||
-		(self.answerDouble > -100000 && self.answerDouble < -0.001)) {
-		self.calcStringView.text = [NSString stringWithFormat: @"%@\nans = %.10lf", calcStringOrg, [sum doubleValue]];
-		[resultLabel setText:[NSString stringWithFormat: @" ans = %.10lf", [sum doubleValue]]];
-	} else {
-		self.calcStringView.text = [NSString stringWithFormat: @"%@\nans = %.10e", calcStringOrg, [sum doubleValue]];
-		[resultLabel setText:[NSString stringWithFormat: @" ans = %.10e", [sum doubleValue]]];
-	}
-	self.alreadyDot = NO;
+    if ((self.answerDouble < 100000 && self.answerDouble > 0.001) ||
+        (self.answerDouble > -100000 && self.answerDouble < -0.001)) {
+        self.calcStringView.text = [NSString stringWithFormat: @"%@\nans = %.10lf", calcString, self.answerDouble];
+        [resultLabel setText:[NSString stringWithFormat: @" ans = %.10lf", self.answerDouble]];
+    } else {
+        self.calcStringView.text = [NSString stringWithFormat: @"%@\nans = %.10e", calcString, self.answerDouble];
+        [resultLabel setText:[NSString stringWithFormat: @" ans = %.10e", self.answerDouble]];
+    }
+    self.alreadyDot = NO;
 }
 
 #pragma mark - Helper methods
@@ -1103,7 +620,7 @@ static NSString * const DDHDivide = @"/";
     if (length > 0) {
         NSString *first = components[0];
         NSString *substring = [first substringFromIndex:length-1];
-        if ([@[@"+", @"-", @"*", @"/"] containsObject:substring]) {
+        if ([@[DDHPlus, DDHMinus, DDHTimes, DDHDivide] containsObject:substring]) {
             [returnString appendString:[first substringToIndex:length-1]];
         }
     }
@@ -1114,7 +631,7 @@ static NSString * const DDHDivide = @"/";
     return returnString;
 }
 
-- (NSString *)stringByInsertingString:(NSString *)string inInputString:(NSString *)inputString {
+- (NSMutableString *)stringByInsertingString:(NSString *)string inInputString:(NSString *)inputString {
     NSArray *components = [inputString componentsSeparatedByString:@"_"];
     NSMutableString *first = [components[0] mutableCopy];
     [first appendString:string];
@@ -1122,7 +639,7 @@ static NSString * const DDHDivide = @"/";
     if ([components count] > 1 && [components[1] length] > 0) {
         [first appendString:components[1]];
     }
-    return [first copy];
+    return [first mutableCopy];
 }
 
 - (NSString *)stringByReplacingActiveCharacterWith:(NSString *)string inInputString:(NSString *)inputString {

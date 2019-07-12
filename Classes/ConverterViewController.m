@@ -31,10 +31,10 @@
     return (ConverterView *)self.view;
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    [[self contentView].stackView.bottomAnchor constraintEqualToAnchor:self.bottomLayoutGuide.topAnchor].active = true;
+    [[self contentView].inputValue becomeFirstResponder];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
@@ -76,11 +76,14 @@
 							   [converterView.pickerView selectedRowInComponent: 2]]] 
 				 forKeyPath: @"einheitOutput.text"];
 	
-	double result = [converterModel convertValue: [converterView.inputValue.text doubleValue] 
-											from: [converterView.pickerView selectedRowInComponent: 1] 
-											  to: [converterView.pickerView selectedRowInComponent: 2]
-								 withFaktorArray: [converterView.pickerView selectedRowInComponent: 0]];
-	converterView.outputValue.text = [NSString stringWithFormat: @"%e", result];
+//	double result = [converterModel convertValue: [converterView.inputValue.text doubleValue]
+//											from: [converterView.pickerView selectedRowInComponent: 1]
+//											  to: [converterView.pickerView selectedRowInComponent: 2]
+//								 withFaktorArray: [converterView.pickerView selectedRowInComponent: 0]];
+//	converterView.outputValue.text = [NSString stringWithFormat: @"%e", result];
+    
+    [self updateResult:converterView.inputValue.text];
+    
 	[converterView.pickerView reloadAllComponents];
 	[self.view setNeedsDisplay];
 }
@@ -113,16 +116,20 @@
 	return 3;
 }
 
-- (BOOL)textFieldShouldReturn: (UITextField *)theTextField {
-	// Hide the keyboard when done
-	NSLog(@"textFieldShouldReturn");
-	[theTextField resignFirstResponder];
-	double result = [converterModel convertValue: [converterView.inputValue.text doubleValue] 
-											from: [converterView.pickerView selectedRowInComponent: 1] 
-											  to: [converterView.pickerView selectedRowInComponent: 2] 
-								 withFaktorArray: [converterView.pickerView selectedRowInComponent: 0]];
-	converterView.outputValue.text = [NSString stringWithFormat: @"%e", result];
-	return YES;
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    NSString *text = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    [self updateResult:text];
+    
+    return YES;
+}
+
+- (void)updateResult:(NSString *)text {
+    double result = [converterModel convertValue: [text doubleValue]
+                                            from: [converterView.pickerView selectedRowInComponent: 1]
+                                              to: [converterView.pickerView selectedRowInComponent: 2]
+                                 withFaktorArray: [converterView.pickerView selectedRowInComponent: 0]];
+    converterView.outputValue.text = [NSString stringWithFormat: @"%e", result];
 }
 
 @end

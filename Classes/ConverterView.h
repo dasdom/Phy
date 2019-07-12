@@ -5,18 +5,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ConverterView : UIView /*<UIPickerViewDelegate>*/ {
-	UIPickerView *pickerView;
-	NSArray *pickerArray0;
-	NSArray *pickerArray1;
-	NSArray *pickerArray2;
-	UILabel *einheitInput;
-	UILabel *einheitOutput;
-	UILabel *outputValue;
-	UITextField *inputValue;
-	UILabel *erlaubteZeichen;
-	UILabel *gleichZeichen;
-}
+@interface ConverterView : UIView
 
 @property (nonatomic, strong) NSArray *pickerArray0;
 @property (nonatomic, strong) UIPickerView *pickerView;
@@ -25,7 +14,5 @@
 @property (nonatomic, strong) UILabel *outputValue;
 @property (nonatomic, strong) UITextField *inputValue;
 @property (nonatomic, strong) UIStackView *stackView;
-
-//- (CGRect)pickerFrameWithSize: (CGSize)size;
 
 @end

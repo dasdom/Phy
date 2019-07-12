@@ -6,7 +6,7 @@
 #import "ConverterView.h"
 #import "ConverterModel.h"
 
-@interface ConverterViewController : UIViewController <UIPickerViewDelegate,UITextFieldDelegate> {
+@interface ConverterViewController : UIViewController <UIPickerViewDelegate, UITextFieldDelegate> {
 	ConverterView *converterView;
 	ConverterModel *converterModel;
 	NSMutableString *arrayString;

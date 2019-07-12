@@ -2,6 +2,7 @@
 //
 
 #import "GeneralCalculatorView.h"
+#import "Calculator.h"
 
 @interface GeneralCalculatorView ()
 @property (nonatomic) UIButton *sinButton;
@@ -16,10 +17,10 @@
     if (self) {
         
         _calculationStringTextView = [UITextView new];
-        _calculationStringTextView.backgroundColor = [UIColor redColor];
+        _calculationStringTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
         
         _resultLabel = [[UILabel alloc] init];
-        _resultLabel.backgroundColor = [UIColor yellowColor];
+        _resultLabel.backgroundColor = [UIColor lightGrayColor];
         [_resultLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
         _resultLabel.text = @" ans = ";
         
@@ -28,7 +29,7 @@
         
         UIButton *mailButton = [self metaButtonWithTitle:@"share" tag:DDHButtonTagShare];
         UIButton *blankButton = [self metaButtonWithTitle:@"" tag:DDHButtonTagNone];
-        UIButton *historyButton = [self metaButtonWithTitle:@"history" tag:DDHButtonTagHistory];
+        UIButton *historyButton = [self metaButtonWithTitle:@"hist" tag:DDHButtonTagHistory];
         UIButton *moveLeftButton = [self metaButtonWithTitle:@"←" tag:DDHButtonTagMoveLeft];
         UIButton *moveRightButton = [self metaButtonWithTitle:@"→" tag:DDHButtonTagMoveRight];
         
@@ -37,11 +38,11 @@
         rowOneStackView.distribution = UIStackViewDistributionFillEqually;
         
         UIButton *toggleSecondFunctionsButton = [self metaButtonWithTitle:@"2nd" tag:DDHButtonTagSecond];
-        UIButton *constantsButton = [self metaButtonWithTitle:@"consts" tag:DDHButtonTagConsts];
+        UIButton *constantsButton = [self metaButtonWithTitle:@"const" tag:DDHButtonTagConsts];
         UIButton *degButton = [self metaButtonWithTitle:@"DEG" tag:DDHButtonTagDEG];
         UIButton *answersButton = [self metaButtonWithTitle:@"ans" tag:DDHButtonTagAns];
         UIButton *fourtyTwoButton = [self metaButtonWithTitle:@"42" tag:DDHButtonTagFourtyTwo];
-        UIButton *deleteButton = [self metaButtonWithTitle:@"delete" tag:DDHButtonTagDelete];
+        UIButton *deleteButton = [self metaButtonWithTitle:@"del" tag:DDHButtonTagDelete];
         
         UIStackView *rowTwoStackView = [[UIStackView alloc] initWithArrangedSubviews:@[toggleSecondFunctionsButton, constantsButton, degButton, fourtyTwoButton, answersButton, deleteButton]];
         rowTwoStackView.spacing = 1;
@@ -52,7 +53,7 @@
         _tanButton = [self functionButtonWithTitle:@"tan" tag:DDHButtonTagTan];
         UIButton *leftParanthesesButton = [self paranthesesButtonWithTitle:@"(" tag:DDHButtonTagOpenParantheses];
         UIButton *rightParanthesesButton = [self paranthesesButtonWithTitle:@")" tag:DDHButtonTagCloseParantheses];
-        UIButton *devideButton = [self basicCalculationButtonWithTitle:@"÷" tag:DDHButtonTagDevide];
+        UIButton *devideButton = [self basicCalculationButtonWithTitle:DDHDivide tag:DDHButtonTagDevide];
         
         UIStackView *rowThreeStackView = [[UIStackView alloc] initWithArrangedSubviews:@[_sinButton, _cosButton, _tanButton, leftParanthesesButton, rightParanthesesButton, devideButton]];
         rowThreeStackView.spacing = 1;
@@ -65,7 +66,7 @@
         UIButton *eightButton = [self numberButtonWithTitle:@"8" tag:DDHButtonTagEight];
         UIButton *nineButton = [self numberButtonWithTitle:@"9" tag:DDHButtonTagNine];
         
-        UIButton *multiplyButton = [self basicCalculationButtonWithTitle:@"×" tag:DDHButtonTagTimes];
+        UIButton *multiplyButton = [self basicCalculationButtonWithTitle:DDHTimes tag:DDHButtonTagTimes];
         
         UIStackView *rowFourStackView = [[UIStackView alloc] initWithArrangedSubviews:@[piButton, sqrtButton, sevenButton, eightButton, nineButton, multiplyButton]];
         rowFourStackView.spacing = 1;
@@ -78,7 +79,7 @@
         UIButton *fiveButton = [self numberButtonWithTitle:@"5" tag:DDHButtonTagFive];
         UIButton *sixButton = [self numberButtonWithTitle:@"6" tag:DDHButtonTagSix];
         
-        UIButton *minusButton = [self basicCalculationButtonWithTitle:@"-" tag:DDHButtonTagMinus];
+        UIButton *minusButton = [self basicCalculationButtonWithTitle:DDHMinus tag:DDHButtonTagMinus];
         
         UIStackView *rowFiveStackView = [[UIStackView alloc] initWithArrangedSubviews:@[lnButton, expButton, fourButton, fiveButton, sixButton, minusButton]];
         rowFiveStackView.spacing = 1;
@@ -91,7 +92,7 @@
         UIButton *twoButton = [self numberButtonWithTitle:@"2" tag:DDHButtonTagTwo];
         UIButton *threeButton = [self numberButtonWithTitle:@"3" tag:DDHButtonTagThree];
         
-        UIButton *plusButton = [self basicCalculationButtonWithTitle:@"+" tag:DDHButtonTagPlus];
+        UIButton *plusButton = [self basicCalculationButtonWithTitle:DDHPlus tag:DDHButtonTagPlus];
         
         UIStackView *rowSixStackView = [[UIStackView alloc] initWithArrangedSubviews:@[log10Button, log2Button, oneButton, twoButton, threeButton, plusButton]];
         rowSixStackView.spacing = 1;
@@ -145,6 +146,7 @@
     button.backgroundColor = [UIColor colorWithWhite:0.85 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
     [button addTarget:nil action:@selector(metaButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -154,6 +156,7 @@
     button.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
     [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -164,6 +167,7 @@
     button.tintColor = [UIColor whiteColor];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
     [button addTarget:nil action:@selector(insertBasicCalculation:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -174,6 +178,7 @@
     button.tintColor = [UIColor whiteColor];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
     [button addTarget:nil action:@selector(calculatePressed:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -183,6 +188,7 @@
     button.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
     [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -190,9 +196,10 @@
 - (UIButton *)numberButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.backgroundColor = [UIColor colorWithWhite:0.98 alpha:1.0];
-    [button addTarget:nil action:@selector(insertDigit:) forControlEvents: UIControlEventTouchUpInside];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle3];
+    [button addTarget:nil action:@selector(insertDigit:) forControlEvents: UIControlEventTouchUpInside];
     return button;
 }
 

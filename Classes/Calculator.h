@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const DDHPlus = @"+";
+static NSString * const DDHMinus = @"-";
+static NSString * const DDHTimes = @"×";
+static NSString * const DDHDivide = @"÷";
 
 @interface Calculator : NSObject {
 	BOOL deg;
