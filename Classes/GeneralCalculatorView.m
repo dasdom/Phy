@@ -146,7 +146,7 @@
     button.backgroundColor = [UIColor colorWithWhite:0.85 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     [button addTarget:nil action:@selector(metaButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -156,7 +156,7 @@
     button.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -188,7 +188,7 @@
     button.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+    button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
