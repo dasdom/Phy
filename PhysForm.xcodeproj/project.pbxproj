@@ -32,6 +32,7 @@
 		F20E53BB22D9C0D8001794E9 /* Mathematics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BA22D9C0D8001794E9 /* Mathematics.xcassets */; };
 		F20E53BD22D9C121001794E9 /* Units.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BC22D9C121001794E9 /* Units.xcassets */; };
 		F20E53BF22D9C284001794E9 /* DecimalPotents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BE22D9C284001794E9 /* DecimalPotents.xcassets */; };
+		F20E53C122D9C6CA001794E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53C022D9C6CA001794E9 /* Assets.xcassets */; };
 		F20F3D8414D42A10007388C0 /* fooDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20F3D8314D42A10007388C0 /* fooDefault@2x.png */; };
 		F2115481160A62D00065A1D4 /* fooDefault-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2115480160A62D00065A1D4 /* fooDefault-568h@2x.png */; };
 		F211D5FF120442C300107F12 /* fooDefaultiPad-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = F211D5FE120442C300107F12 /* fooDefaultiPad-Portrait.png */; };
@@ -135,6 +136,7 @@
 		F20E53BA22D9C0D8001794E9 /* Mathematics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mathematics.xcassets; sourceTree = "<group>"; };
 		F20E53BC22D9C121001794E9 /* Units.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Units.xcassets; sourceTree = "<group>"; };
 		F20E53BE22D9C284001794E9 /* DecimalPotents.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DecimalPotents.xcassets; sourceTree = "<group>"; };
+		F20E53C022D9C6CA001794E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20F3D8314D42A10007388C0 /* fooDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fooDefault@2x.png"; sourceTree = "<group>"; };
 		F2115480160A62D00065A1D4 /* fooDefault-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fooDefault-568h@2x.png"; sourceTree = "<group>"; };
 		F211D5FE120442C300107F12 /* fooDefaultiPad-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fooDefaultiPad-Portrait.png"; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				F2D2E6E41204D894008B13F1 /* fooDefaultiPad-Landscape.png */,
 				F29558B220586259001D776D /* Launch Screen.storyboard */,
 				F27EEE671154D3A5008449FC /* InfoLite.plist */,
+				F20E53C022D9C6CA001794E9 /* Assets.xcassets */,
 				F20E53A822D9B94C001794E9 /* Mechanics.xcassets */,
 				F20E53A622D9B914001794E9 /* Relativity.xcassets */,
 				F20E53A422D9B6D4001794E9 /* Constants.xcassets */,
@@ -492,6 +495,10 @@
 			attributes = {
 				LastUpgradeCheck = 1100;
 				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = Q6PD97MRX4;
+						ProvisioningStyle = Automatic;
+					};
 					F239BAC720F8C0CD00612965 = {
 						CreatedOnToolsVersion = 9.1;
 						DevelopmentTeam = Q6PD97MRX4;
@@ -552,6 +559,7 @@
 				F27EEF771154F1F3008449FC /* DataLite.plist in Resources */,
 				F20E53AF22D9BB09001794E9 /* Electrodynamics.xcassets in Resources */,
 				F20E53A922D9B94C001794E9 /* Mechanics.xcassets in Resources */,
+				F20E53C122D9C6CA001794E9 /* Assets.xcassets in Resources */,
 				F20E53B522D9BF18001794E9 /* QuantumPhysics.xcassets in Resources */,
 				F211D5FF120442C300107F12 /* fooDefaultiPad-Portrait.png in Resources */,
 				F2B2B0491204BD6300125110 /* Icon~ipad.png in Resources */,
@@ -655,9 +663,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -667,6 +679,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -676,9 +689,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -686,6 +703,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -809,10 +827,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominik Hauser";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -821,6 +842,7 @@
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D567812F-663E-418F-9D37-73687E8BC730";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
