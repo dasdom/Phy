@@ -8,6 +8,7 @@
 @property (nonatomic) UIButton *sinButton;
 @property (nonatomic) UIButton *cosButton;
 @property (nonatomic) UIButton *tanButton;
+@property (nonatomic) UIButton *degButton;
 @end
 
 @implementation GeneralCalculatorView
@@ -18,15 +19,14 @@
         
         _calculationStringTextView = [UITextView new];
         _calculationStringTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+        _calculationStringTextView.inputView = [UIView new];
         
-        _resultLabel = [[UILabel alloc] init];
-        _resultLabel.backgroundColor = [UIColor lightGrayColor];
-        [_resultLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
-        _resultLabel.text = @" ans = ";
+//        _resultLabel = [[UILabel alloc] init];
+//        _resultLabel.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+//        [_resultLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+//        _resultLabel.text = @" = ";
         
-        UIButton *helpButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        [helpButton setTitle:@"help" forState:UIControlStateNormal];
-        
+        UIButton *helpButton = [self metaButtonWithTitle:@"help" tag:DDHButtonTagsHelp];        
         UIButton *mailButton = [self metaButtonWithTitle:@"share" tag:DDHButtonTagShare];
         UIButton *blankButton = [self metaButtonWithTitle:@"" tag:DDHButtonTagNone];
         UIButton *historyButton = [self metaButtonWithTitle:@"hist" tag:DDHButtonTagHistory];
@@ -39,12 +39,12 @@
         
         UIButton *toggleSecondFunctionsButton = [self metaButtonWithTitle:@"2nd" tag:DDHButtonTagSecond];
         UIButton *constantsButton = [self metaButtonWithTitle:@"const" tag:DDHButtonTagConsts];
-        UIButton *degButton = [self metaButtonWithTitle:@"DEG" tag:DDHButtonTagDEG];
+        _degButton = [self metaButtonWithTitle:@"DEG" tag:DDHButtonTagDEG];
         UIButton *answersButton = [self metaButtonWithTitle:@"ans" tag:DDHButtonTagAns];
         UIButton *fourtyTwoButton = [self metaButtonWithTitle:@"42" tag:DDHButtonTagFourtyTwo];
         UIButton *deleteButton = [self metaButtonWithTitle:@"del" tag:DDHButtonTagDelete];
         
-        UIStackView *rowTwoStackView = [[UIStackView alloc] initWithArrangedSubviews:@[toggleSecondFunctionsButton, constantsButton, degButton, fourtyTwoButton, answersButton, deleteButton]];
+        UIStackView *rowTwoStackView = [[UIStackView alloc] initWithArrangedSubviews:@[toggleSecondFunctionsButton, constantsButton, _degButton, fourtyTwoButton, answersButton, deleteButton]];
         rowTwoStackView.spacing = 1;
         rowTwoStackView.distribution = UIStackViewDistributionFillEqually;
         
@@ -114,12 +114,12 @@
         buttonStackView.spacing = 1;
         buttonStackView.distribution = UIStackViewDistributionFillEqually;
         
-        _stackView = [[UIStackView alloc] initWithArrangedSubviews:@[_calculationStringTextView, _resultLabel, buttonStackView]];
+        _stackView = [[UIStackView alloc] initWithArrangedSubviews:@[_calculationStringTextView, buttonStackView]];
         _stackView.translatesAutoresizingMaskIntoConstraints = false;
         _stackView.axis = UILayoutConstraintAxisVertical;
         _stackView.spacing = 1;
         
-        self.backgroundColor = [UIColor grayColor];
+        self.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
         
         [self addSubview:_stackView];
         
@@ -143,7 +143,7 @@
 #pragma mark - Button creation helpers
 - (UIButton *)metaButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-    button.backgroundColor = [UIColor colorWithWhite:0.85 alpha:1.0];
+    button.backgroundColor = [UIColor colorWithWhite:0.90 alpha:1.0];
     button.tag = tag;
     [button setTitle:title forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
@@ -213,6 +213,14 @@
         [self.sinButton setTitle:@"sin" forState:UIControlStateNormal];
         [self.cosButton setTitle:@"cos" forState:UIControlStateNormal];
         [self.tanButton setTitle:@"tan" forState:UIControlStateNormal];
+    }
+}
+
+- (void)updateDEGButtonForDEGState:(BOOL)deg {
+    if (deg) {
+        [self.degButton setTitle:@"DEG" forState:UIControlStateNormal];
+    } else {
+        [self.degButton setTitle:@"RAD" forState:UIControlStateNormal];
     }
 }
 

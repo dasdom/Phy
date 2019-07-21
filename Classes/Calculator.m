@@ -52,10 +52,10 @@
 		[mutableCalcString appendString: [squarePlus objectAtIndex: i]];
 	}
 	
-	while ([mutableCalcString rangeOfString: @"pow("].location != NSNotFound) {
-		NSString *addString = [self calcPow: mutableCalcString];
-		[mutableCalcString setString: addString];
-	}			
+//    while ([mutableCalcString rangeOfString: @"^("].location != NSNotFound) {
+//        NSString *addString = [self calcPow: mutableCalcString];
+//        [mutableCalcString setString: addString];
+//    }
 	while ([mutableCalcString rangeOfString: @"exp("].location != NSNotFound) {
 		NSString *addString = [self calcExp: mutableCalcString];
 		[mutableCalcString setString: addString];
@@ -96,7 +96,7 @@
 		NSString *addString = [self calcTan: mutableCalcString];
 		[mutableCalcString setString: addString];
 	}
-	while ([mutableCalcString rangeOfString: @"pi"].location != NSNotFound) {
+	while ([mutableCalcString rangeOfString: @"𝜋"].location != NSNotFound) {
 		NSString *addString = [self calcPi: mutableCalcString];
 		[mutableCalcString setString: addString];
 	}
@@ -107,15 +107,18 @@
 	
 	while ([mutableCalcString rangeOfString: @"("].location != NSNotFound) {
 		NSString *addString = [self calcKlammers: mutableCalcString];
+        mutableCalcString = [[self mutableStringByReplaceNDotInCalcString:mutableCalcString] mutableCopy];
 		[mutableCalcString setString: addString];
 	}
 	
-	NSArray *findNDot = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHTimes, DDHMinus]];
-	[mutableCalcString setString: [findNDot objectAtIndex: 0]];
-	for (int i = 1; i < [findNDot count]; i++) {
-		[mutableCalcString appendFormat: @"ndot"];
-		[mutableCalcString appendString: [findNDot objectAtIndex: i]];
-	}
+//    NSArray *findNDot = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHTimes, DDHMinus]];
+//    [mutableCalcString setString: [findNDot objectAtIndex: 0]];
+//    for (int i = 1; i < [findNDot count]; i++) {
+//        [mutableCalcString appendFormat: @"ndot"];
+//        [mutableCalcString appendString: [findNDot objectAtIndex: i]];
+//    }
+    
+    mutableCalcString = [[self mutableStringByReplaceNDotInCalcString:mutableCalcString] mutableCopy];
     
     NSArray *findNDiff = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHDivide, DDHMinus]];
 	[mutableCalcString setString: [findNDiff objectAtIndex: 0]];
@@ -155,11 +158,25 @@
 	return [self addFromString: mutableCalcString];
 }
 
+- (NSString *)mutableStringByReplaceNDotInCalcString:(NSString *)calcString {
+    
+    NSMutableString *mutableCalcString = [calcString mutableCopy];
+    
+    NSArray *findNDot = [mutableCalcString componentsSeparatedByString:[NSString stringWithFormat:@"%@%@", DDHTimes, DDHMinus]];
+    [mutableCalcString setString: [findNDot objectAtIndex: 0]];
+    for (int i = 1; i < [findNDot count]; i++) {
+        [mutableCalcString appendFormat: @"ndot"];
+        [mutableCalcString appendString: [findNDot objectAtIndex: i]];
+    }
+    
+    return [mutableCalcString copy];
+}
+
 - (NSString *)getFunctionStringFromString:(NSString *)calculationString forFunction:(NSString *)function withRange:(NSRange)range {
 	NSRange funcRange = NSMakeRange(range.location + [function length], range.length - [function length] - 1);
 	NSString *funcString = [calculationString substringWithRange: funcRange];
 	NSMutableString *dummyString = [[NSMutableString alloc] initWithString: funcString];
-	if ([dummyString rangeOfString: @"pow("].location != NSNotFound) {
+	if ([dummyString rangeOfString: @"^("].location != NSNotFound) {
 		[dummyString setString: [self calcPow: dummyString]];
 	}
 	if ([dummyString rangeOfString: @"exp("].location != NSNotFound) {
@@ -192,7 +209,7 @@
 	if ([dummyString rangeOfString: @"tan("].location != NSNotFound) {
 		[dummyString setString: [self calcTan: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"pi"].location != NSNotFound) {
+	if ([dummyString rangeOfString: @"𝜋"].location != NSNotFound) {
 		[dummyString setString: [self calcPi: dummyString]];
 	}
 	if ([dummyString rangeOfString: @"sqrt("].location != NSNotFound) {
@@ -443,30 +460,43 @@
 }
 
 - (NSString *)calcPow: (NSString *)dummyCalcString {
-	NSRange range = [self getRangeOfSubstringFromString: dummyCalcString bySearchingFor: @"pow("];
-	NSInteger indexForSubstring = range.location;
-	NSString *subString1 = [dummyCalcString substringToIndex: indexForSubstring];
-	indexForSubstring = range.location + range.length;
-	NSString *subString2 = [dummyCalcString substringFromIndex: indexForSubstring];
-	//NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble: 
-	//							   sqrt([self addFromString: [self getFunctionStringFromString: dummyCalcString forFunction: @"pow(" withRange: range]])];
-	
-	NSArray *kommaArray = [dummyCalcString componentsSeparatedByString: @","];
-	NSRange range1 = NSMakeRange(range.location, [[kommaArray objectAtIndex: 0] length] + 1 - range.location);
-	NSRange range2 = NSMakeRange([[kommaArray objectAtIndex: 0] length], range.length - range1.length + 1);
-	NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble: 
-								  pow([[self addFromString: 
-										[self getFunctionStringFromString:dummyCalcString 
-															  forFunction:@"pow(" withRange:range1]] doubleValue],
-									  [[self addFromString: 
-										[self getFunctionStringFromString:dummyCalcString 
-															  forFunction:@"," withRange:range2]] doubleValue])];					  
-	NSString *returnString = [[NSString alloc] initWithFormat: @"%@%@%@", subString1, powResult, subString2];
-	return returnString;
+    NSRange range = [self getRangeOfSubstringFromString: dummyCalcString bySearchingFor: @"^("];
+    NSInteger indexForSubstring = range.location;
+    NSString *subString1 = [dummyCalcString substringToIndex: indexForSubstring];
+    indexForSubstring = range.location + range.length;
+    NSString *subString2 = [dummyCalcString substringFromIndex: indexForSubstring];
+//    //NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble:
+//    //                               sqrt([self addFromString: [self getFunctionStringFromString: dummyCalcString forFunction: @"pow(" withRange: range]])];
+//
+//    NSArray *kommaArray = [dummyCalcString componentsSeparatedByString: @","];
+//    NSRange range1 = NSMakeRange(range.location, [[kommaArray objectAtIndex: 0] length] + 1 - range.location);
+//    NSRange range2 = NSMakeRange([[kommaArray objectAtIndex: 0] length], range.length - range1.length + 1);
+//    NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble:
+//                                  pow([[self addFromString:
+//                                        [self getFunctionStringFromString:dummyCalcString
+//                                                              forFunction:@"pow(" withRange:range1]] doubleValue],
+//                                      [[self addFromString:
+//                                        [self getFunctionStringFromString:dummyCalcString
+//                                                              forFunction:@"," withRange:range2]] doubleValue])];
+//    NSString *returnString = [[NSString alloc] initWithFormat: @"%@%@%@", subString1, powResult, subString2];
+//    return returnString;
+    
+    NSArray *squareStrings = [dummyCalcString componentsSeparatedByString: @"^("];
+    NSDecimalNumber *decimalNumber1 = [self addFromString:[squareStrings objectAtIndex:0]];
+    NSDecimalNumber *decimalNumber3 = decimalNumber1;
+    if ([squareStrings count] > 1) {
+        NSDecimalNumber *decimalNumber2 = [self addFromString:[self getFunctionStringFromString:dummyCalcString
+                                                                                    forFunction:@"^(" withRange:range]];
+        decimalNumber3 = (NSDecimalNumber *)[NSDecimalNumber numberWithDouble:
+                                             pow([decimalNumber1 doubleValue], [decimalNumber2 doubleValue])];
+    }
+    
+    NSString *returnString = [[NSString alloc] initWithFormat: @"%@%@", decimalNumber3, subString2];
+    return returnString;
 }
 
 - (NSString *)calcPi: (NSString *)dummyCalcString {
-	NSRange range = [dummyCalcString rangeOfString: @"pi"];
+	NSRange range = [dummyCalcString rangeOfString: @"𝜋"];
 	NSInteger indexForSubstring = range.location;
 	NSString *subString1 = [dummyCalcString substringToIndex: indexForSubstring];
 	indexForSubstring = range.location + range.length;
@@ -522,23 +552,24 @@
 	
 }
 
+#pragma mark -
+
 - (NSDecimalNumber *)addFromString: (NSString *)addString {
-	//double sum = 0.0;
 	NSArray *plusStrings = [addString componentsSeparatedByString: DDHPlus];
-	/*
-	 for (int i = 0; i < [plusStrings count]; i++) {
-	 sum += [self subtractFromString: [plusStrings objectAtIndex: i]];
-	 }
-	 return sum;
-	 */
 	
 	NSDecimalNumber *decimalNumber1 = (NSDecimalNumber *)[NSDecimalNumber numberWithDouble: 0.0];
-	//NSDecimalNumber *decimalNumber1 = [self subtractFromString:[plusStrings objectAtIndex:0]];
-	for (int i = 0; i < [plusStrings count]; i++) {
-		//decimalNumber1 = [decimalNumber1 decimalNumberByAdding:[self subtractFromString:[plusStrings objectAtIndex: i]] 
-		//										  withBehavior:decimalNumberHandler];
-		decimalNumber1 = [decimalNumber1 decimalNumberByAdding:[self subtractFromString:[plusStrings objectAtIndex: i]]];
-	}
+
+    for (NSString *plusString in plusStrings) {
+        NSString *temp = [[self mutableStringByReplaceNDotInCalcString:plusString] copy];
+        
+        decimalNumber1 = [decimalNumber1 decimalNumberByAdding:[self subtractFromString:temp]];
+    }
+    
+//    for (int i = 0; i < [plusStrings count]; i++) {
+//        //decimalNumber1 = [decimalNumber1 decimalNumberByAdding:[self subtractFromString:[plusStrings objectAtIndex: i]]
+//        //                                          withBehavior:decimalNumberHandler];
+//        decimalNumber1 = [decimalNumber1 decimalNumberByAdding:[self subtractFromString:[plusStrings objectAtIndex: i]]];
+//    }
 	return decimalNumber1;
 }
 
@@ -627,16 +658,27 @@
 
 - (NSDecimalNumber *)nDiffFromString: (NSString *)diffString {
 	NSArray *diffStrings = [diffString componentsSeparatedByString: @"ndiff"];
-	NSDecimalNumber *decimalNumber1 = [self squareFromString:[diffStrings objectAtIndex:0]];
+	NSDecimalNumber *decimalNumber1 = [self powFromString:[diffStrings objectAtIndex:0]];
 	for (int i = 1; i < [diffStrings count]; i++) {
 		decimalNumber1 = [decimalNumber1 decimalNumberByDividingBy:
-						  [self squareFromString:[diffStrings objectAtIndex:1]]];
+						  [self powFromString:[diffStrings objectAtIndex:1]]];
         decimalNumber1 = [decimalNumber1 decimalNumberByMultiplyingBy:
 						  (NSDecimalNumber *)[NSDecimalNumber numberWithInt: -1]];
 	}
 	return decimalNumber1;
 }
 
+- (NSDecimalNumber *)powFromString:(NSString *)powString {
+    NSArray *squareStrings = [powString componentsSeparatedByString: @"^("];
+    NSDecimalNumber *decimalNumber1 = [self squareFromString:[squareStrings objectAtIndex:0]];
+    NSDecimalNumber *decimalNumber3 = decimalNumber1;
+    if ([squareStrings count] > 1) {
+        NSDecimalNumber *decimalNumber2 = [NSDecimalNumber decimalNumberWithString:[squareStrings objectAtIndex:1]];
+        decimalNumber3 = (NSDecimalNumber *)[NSDecimalNumber numberWithDouble:
+                                             pow([decimalNumber1 doubleValue], [decimalNumber2 doubleValue])];
+    }
+    return decimalNumber3;
+}
 
 - (NSDecimalNumber *)squareFromString: (NSString *)squareString {
 	NSArray *squareStrings = [squareString componentsSeparatedByString: @"^"];

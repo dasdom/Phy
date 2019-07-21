@@ -122,7 +122,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSSet *titleSet = [[NSSet alloc] initWithObjects: @"Mechanik", @"Relativitätstheorie", @"Fluidmechanik", @"Elektrodynamik", @"Wärme", @"Strahlenoptik", @"Wellenoptik", @"Physikalische Konstanten", @"Chemische Elemente", @"trigonometrische Funktionen", nil];
+    NSSet *titleSet = [[NSSet alloc] initWithObjects: @"Physik Formeln", @"Mechanik", @"Relativitätstheorie", @"Fluidmechanik", @"Elektrodynamik", @"Wärme", @"Strahlenoptik", @"Wellenoptik", @"Physikalische Konstanten", @"Chemische Elemente", @"trigonometrische Funktionen", nil];
     NSSet *subSet = [[NSSet alloc] initWithObjects: self.currentTitle, nil];
     if ([subSet isSubsetOfSet: titleSet]) {
         searchBar = [[UISearchBar alloc] initWithFrame: self.tableView.bounds];
@@ -169,12 +169,15 @@
 
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"MyIdentifier" forIndexPath:indexPath];
 
+    cell.imageView.image = nil;
+    
     if ([dictionary objectForKey: @"noText"]) {
         cell.textLabel.text = @"";
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     } else {
         cell.textLabel.text = NSLocalizedString(title, @"Localized cell text");
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.textAlignment = NSTextAlignmentLeft;
     }
     
     if ([dictionary objectForKey: @"textForMoreInfo"] != nil) {
@@ -189,6 +192,7 @@
     // Set font
     UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
             
+    cell.textLabel.numberOfLines = 2;
     // Check if there is an image
     if ([imageName length] != 0) {
         if ([dictionary objectForKey: @"AbkBool"] != nil) {
@@ -212,26 +216,17 @@
 }
 
 - (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath {
-	// Get the array holding the dictionaries from listOfItems
-	NSArray *array = [self.listOfItems objectAtIndex: indexPath.section];
+    NSDictionary *dictionary = self.listOfItems[indexPath.section][indexPath.row];
 	
-	// Get the dictionary of the data source
-	NSDictionary *dictionary = [array objectAtIndex: indexPath.row];
-	
-	// Get the Child; the Child holds the lext (deeper) level 
 	NSArray *childArray = [dictionary objectForKey: @"Child"];
 	
-	// If there is a child construct a table view for this child
 	if ([childArray count] != 0) {
 		
-		// Init a table view 
 		NSString *title = [dictionary objectForKey: @"Title"];
-		
 		
 		if ([title isEqualToString: @"Chemische Elemente"]) {
             ChemieTableViewController *chemieTableViewController = [[ChemieTableViewController alloc] initWithStyle: UITableViewStylePlain];
             [chemieTableViewController setElementsDictArray: childArray];
-//            [[self navigationController] pushViewController: chemieTableViewController animated: YES];
             UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: chemieTableViewController];
             [navController setModalTransitionStyle: UIModalTransitionStyleFlipHorizontal ];
             if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -258,46 +253,33 @@
             }
             subViewController.currentLevel += 1;
             
-            // Set the title to the subview
             subViewController.currentTitle = title;
             
-            // Get number and names of the sections for the subview
-            NSString *integerString = [dictionary objectForKey: @"numberOfSections"]; 
+            NSString *integerString = [dictionary objectForKey: @"numberOfSections"];
             subViewController.numberOfSections = [integerString integerValue];
             subViewController.namesOfSections = [dictionary objectForKey: @"namesOfSections"];
             
-            // Set the data source for the next table view
             subViewController.tableDataSource = childArray;
             
-            // push the table view onto the navigationController
-            [self.navigationController pushViewController: subViewController animated: YES];
-            
-            // release the allocated subViewController
-		}
+            [self.navigationController pushViewController:subViewController animated:YES];
+        }
     } else if ([dictionary objectForKey: @"calculator"] || [dictionary objectForKey: @"textForMoreInfo"] != nil) {
-        // Allocate a DestignatedCalculatorViewController
         DestignatedCalculaterViewController *subViewController = [[DestignatedCalculaterViewController alloc] init];
 
-        // Get the different strings to print from the dictionary and set them
         subViewController.stringForLabelNull = [dictionary objectForKey: @"stringForLabelNull"];
         subViewController.stringForUnitLabel = [dictionary objectForKey: @"stringForUnitLabel"];
         subViewController.textFile = NSLocalizedString([dictionary objectForKey: @"textForMoreInfo"], @"Erklaerung");
 
-        // the value of calculator is the parameter which has to be squared; calculator == 0 -> no squared parameter
         NSString *integerString = [dictionary objectForKey: @"calculator"];
         subViewController.squarePara = [integerString integerValue];
 
-        // Get the placeholder for the fields from the dictionary and set them
         subViewController.stringForFieldsAbove = [dictionary objectForKey: @"stringForFieldsAbove"];
         subViewController.stringForFieldsBelow = [dictionary objectForKey: @"stringForFieldsBelow"];
 
-        // Set the name of the image to draw
         subViewController.nameOfTheImage = [dictionary objectForKey: [dictionary objectForKey: @"Title"]];
 
-        // Push the view onto the navigationController
-        [self.navigationController pushViewController: subViewController animated: YES];
+        [self.navigationController pushViewController:subViewController animated:YES];
 
-        // release the allocated subViewController
 	} else if ([dictionary objectForKey: @"chemieBool"] != nil) {
 		ElementsDetailViewController *subViewController = [[ElementsDetailViewController alloc] init];
 		
@@ -314,51 +296,11 @@
 	} else if ([dictionary objectForKey: @"generalCalculator"] != nil) {
 		GeneralCalculatorViewController *subViewController = [[GeneralCalculatorViewController alloc] init];
 
-		// Push the view onto the navigationController
-		[self.navigationController pushViewController: subViewController animated: YES];
+		[self.navigationController pushViewController:subViewController animated:YES];
 		
 		// release the allocated subViewController
-		
-	} else if ([dictionary objectForKey: @"link"] != nil) {
-		NSLog(@"open link");
-		NSURL *url = [NSURL URLWithString: [dictionary objectForKey: @"linkToAppStore"]];
-		//[[UIApplication sharedApplication] openURL: url];
-		[self openReferralURL: url];
 	}
-	
-	
 }
-
-//// Process a LinkShare/TradeDoubler/DGM URL to something iPhone can handle
-//- (void)openReferralURL:(NSURL *)referralURL {
-//    [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:referralURL] delegate:self];
-//}
-//// Save the most recent URL in case multiple redirects occur
-//// "iTunesURL" is an NSURL property in your class declaration
-//- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response {
-//    self.iTunesURL = [response URL];
-//    return request;
-//}
-//
-//// No more redirects; use the last URL saved
-//- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-//    [[UIApplication sharedApplication] openURL:self.iTunesURL];
-//}
-//
-//- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-//	NSString *returnString = @"";
-//#ifdef LITE_VERSION
-//	NSString *titleString = @"Phy Lite";
-//#else
-//	NSString *titleString = @"Phy";
-//#endif
-//	if (section == [self numberOfSections]-1 && [[[self navigationItem] title] isEqualToString: titleString]) {
-//		returnString = NSLocalizedString(@"Irrtümer vorbehalten", @"");
-//	} else if (section == [self numberOfSections]-1 && [[[self navigationItem] title] isEqualToString: @"Formeln üben (Werbung)"]) {
-//		returnString = NSLocalizedString(@"PhyLer ist ein iOS-App mit dem Sie physikaliche Formeln üben können. Mit einem Klick werden Sie zum App-Store weitergeleitet. Vielen Dank für Ihr Interesse!", @"");
-//	}
-//	return returnString;
-//}
 
 //- (void)searchBarSearchButtonClicked: (UISearchBar *)aSearchBar {
 - (void)searchBar:(UISearchBar *)aSearchBar textDidChange:(NSString *)searchText {  
@@ -372,22 +314,51 @@
 		self.numberOfSections = [self.namesOfSections count];
 	} else {
 		self.numberOfSections = 1;
-		NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-		for (int i = 0; i < [listOfAllItems count]; i++) {
-			NSArray *array = [listOfAllItems objectAtIndex: i];
-			for (int j = 0; j < [array count]; j++) {
-				NSDictionary *dictionary = [array objectAtIndex: j];
-				NSString *title = [dictionary objectForKey: @"Title"];
-				NSRange range = [NSLocalizedString(title,@"") rangeOfString:query options:NSCaseInsensitiveSearch];
-				
-				if (range.length > 0) {
-					[tempArray addObject: dictionary];
-				}
-			}
-		}
+        
+        NSArray *tempArray = [self searchResultForQuery:query fromItems:listOfAllItems];
+        
 		[listOfItems addObject: tempArray];
 	}
 	[self.tableView reloadData];
+}
+
+- (NSArray *)searchResultForQuery:(NSString *)query fromItems:(NSArray *)items {
+    
+    NSMutableArray *searchResultItems = [[NSMutableArray alloc] init];
+    for (int i = 0; i < [items count]; i++) {
+        NSArray *array = [items objectAtIndex: i];
+        if (NO == [array isKindOfClass:[NSArray class]]) {
+            continue;
+        }
+        for (int j = 0; j < [array count]; j++) {
+            NSDictionary *dictionary = [array objectAtIndex: j];
+            NSString *title = [dictionary objectForKey: @"Title"];
+            
+            NSRange range = NSMakeRange(NSNotFound, 0);
+            NSString *imageName = NSLocalizedString([dictionary objectForKey: title], @"image");
+
+            if (imageName.length > 0 &&
+                nil == [dictionary objectForKey: @"AbkBool"] &&
+                NO == [dictionary objectForKey: @"noText"]) {
+                
+                range = [NSLocalizedString(title,@"") rangeOfString:query options:NSCaseInsensitiveSearch];
+            }
+            
+            if (range.length > 0) {
+                [searchResultItems addObject: dictionary];
+            } else {
+                // Get the Child; the Child holds the lext (deeper) level
+                NSArray *childArray = [dictionary objectForKey: @"Child"];
+                
+                // If there is a child construct a table view for this child
+                if ([childArray count] != 0) {
+                    NSArray *childSearchResultItems = [self searchResultForQuery:query fromItems:childArray];
+                    [searchResultItems addObjectsFromArray:childSearchResultItems];
+                }
+            }
+        }
+    }
+    return [searchResultItems copy];
 }
 
 - (void)searchBarCancelButtonClicked: (UISearchBar *)aSearchBar {
@@ -477,12 +448,5 @@
 	[[NSNotificationCenter defaultCenter] postNotificationName: @"FormulaIsSent" object: self 
 													  userInfo: userInfo];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
-    // Release anything that's not essential, such as cached data
-}
-
-
 
 @end

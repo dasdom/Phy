@@ -10,29 +10,88 @@
 #import "HistoryTableViewCell.h"
 #import "GeneralCalculatorViewController.h"
 
+@interface HistoryTableViewController ()
+@property (nonatomic, strong) NSArray *calcDictArray;
+@end
+
 @implementation HistoryTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style {
-    self = [super initWithStyle:style];
+- (instancetype)initWithHistoryArray:(NSArray *)historyArray {
+    self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
-        _calcDictArray = [[NSArray alloc] init];
+        _calcDictArray = historyArray;
     }
     return self;
 }
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *headerText = @"";
     if ([self isCalcHistory]) {
         [self setTitle: NSLocalizedString(@"letzte Berechnungen", nil)];
+        headerText = NSLocalizedString(@"Wähle die Rechnung aus, die in den Rechner eingefügt werden soll.", nil);
     } else {
         [self setTitle: NSLocalizedString(@"letzte Ergebnisse", nil)];
+        headerText = NSLocalizedString(@"Wähle das Ergebnis aus, das in den Rechner eingefügt werden soll.", nil);
     }
     
-    UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"zurück", nil) style:UIBarButtonItemStylePlain target:self action:@selector(backButtonPressed:)];
-    self.navigationItem.leftBarButtonItem = backBarButtonItem;
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(backButtonPressed:)];
+    self.navigationItem.leftBarButtonItem = cancelButton;
+    
+    self.tableView.tableHeaderView = [self headerViewWithText:headerText];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    UIView *headerView = self.tableView.tableHeaderView;
+    headerView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    CGFloat headerWidth = headerView.bounds.size.width;
+    NSLayoutConstraint *widthConstraint = [headerView.widthAnchor constraintEqualToConstant:headerWidth];
+    
+    widthConstraint.active = YES;
+    
+    [headerView setNeedsLayout];
+    [headerView layoutIfNeeded];
+    
+    CGSize headerSize = [headerView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    CGFloat height = headerSize.height;
+    CGRect frame = headerView.frame;
+    frame.size.height = height;
+    headerView.frame = frame;
+    
+    self.tableView.tableHeaderView = headerView;
+    
+    widthConstraint.active = NO;
+    headerView.translatesAutoresizingMaskIntoConstraints = YES;
+}
+
+- (UIView *)headerViewWithText:(NSString *)headerText {
+    
+    UIView *headerView = [[UIView alloc] init];
+    
+    UILabel *headerLabel = [[UILabel alloc] init];
+    headerLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    headerLabel.numberOfLines = 0;
+    headerLabel.text = headerText;
+    headerLabel.textAlignment = NSTextAlignmentCenter;
+    headerLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+    
+    [headerView addSubview:headerLabel];
+    
+    [NSLayoutConstraint activateConstraints:
+     @[
+       [headerLabel.leadingAnchor constraintEqualToAnchor:headerView.leadingAnchor constant:8],
+       [headerLabel.trailingAnchor constraintEqualToAnchor:headerView.trailingAnchor constant:-8],
+       [headerLabel.topAnchor constraintEqualToAnchor:headerView.topAnchor constant:8],
+       [headerLabel.bottomAnchor constraintEqualToAnchor:headerView.bottomAnchor constant:-8],
+       ]];
+    
+    return headerView;
 }
 
 #pragma mark - Table view data source
@@ -62,20 +121,18 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSMutableString *mutableString;
     
     NSDictionary *calcDict = self.calcDictArray[indexPath.row];
 
+    NSString *stringToInsert = @"";
     if (self.isCalcHistory) {
-        mutableString = [[NSMutableString alloc] initWithFormat:@"%@_", calcDict[@"calcString"]];
+        stringToInsert = calcDict[@"calcString"];
     } else {
-        NSArray *components = [self.delegate.calcString componentsSeparatedByString:@"_"];
-        mutableString = [[NSMutableString alloc] initWithFormat:@"%@%@_", components.firstObject, calcDict[@"solution"]];
-        [mutableString appendString:components.lastObject];
+        stringToInsert = [NSString stringWithFormat:@"%@", calcDict[@"solution"]];
     }
-
-    self.delegate.calcString = mutableString;
-    self.delegate.calcStringView.text = self.delegate.calcString;
+    
+    [self.delegate insertString:stringToInsert];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

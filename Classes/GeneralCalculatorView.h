@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, DDHButtonTags) {
     DDHButtonTagDot,
     
     // Meta
-    DDHButtonTagShare = 100,
+    DDHButtonTagsHelp = 100,
+    DDHButtonTagShare,
     DDHButtonTagHistory,
     DDHButtonTagMoveLeft,
     DDHButtonTagMoveRight,
@@ -58,8 +59,8 @@ typedef NS_ENUM(NSInteger, DDHButtonTags) {
 
 @property (nonatomic, strong) UIStackView *stackView;
 @property (nonatomic, strong) UITextView *calculationStringTextView;
-@property (nonatomic, strong) UILabel *resultLabel;
+//@property (nonatomic, strong) UILabel *resultLabel;
 
 - (void)updateButtonTitlesForSecond:(BOOL)second;
-
+- (void)updateDEGButtonForDEGState:(BOOL)deg;
 @end

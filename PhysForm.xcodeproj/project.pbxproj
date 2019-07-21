@@ -53,6 +53,9 @@
 		F24082F214CB3CA000292D9E /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = F24082EF14CB3CA000292D9E /* icon57.png */; };
 		F24082F314CB3CA000292D9E /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = F24082F014CB3CA000292D9E /* icon72.png */; };
 		F24082F414CB3CA000292D9E /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = F24082F114CB3CA000292D9E /* icon114.png */; };
+		F24E129C22DF4D8000F4038F /* PhyFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = F24E129822DF4D8000F4038F /* PhyFormula.m */; };
+		F24E129D22DF4D8000F4038F /* PhyCollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24E129922DF4D8000F4038F /* PhyCollectionTableViewController.m */; };
+		F24E12A022DF4F4300F4038F /* PhyFormulaSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F24E129F22DF4F4300F4038F /* PhyFormulaSection.m */; };
 		F254F9A60FF6B50700EBBFF8 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F254F9A50FF6B50700EBBFF8 /* whiteButton.png */; };
 		F254F9B90FF773CF00EBBFF8 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F254F9B80FF773CF00EBBFF8 /* blueButton.png */; };
 		F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */; };
@@ -72,6 +75,7 @@
 		F2959F0E114249E30014525F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2959F0D114249E30014525F /* libsqlite3.dylib */; };
 		F2959F2711424D200014525F /* DetailFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959F2611424D200014525F /* DetailFormula.m */; };
 		F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29CAD5112AC3E1800139C35 /* Calculator.m */; };
+		F29F212D22E1EB4400426712 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* CalculatorTests.m */; };
 		F2A120A2149D0D1500AD3215 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */; };
 		F2A120AA149D351700AD3215 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120A9149D351700AD3215 /* HistoryTableViewCell.m */; };
 		F2A120BB149E527100AD3215 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A120BA149E527100AD3215 /* MessageUI.framework */; };
@@ -89,6 +93,10 @@
 		F2EB614C113176F900D3A010 /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB614B113176F900D3A010 /* ConverterViewController.m */; };
 		F2EB61531131787300D3A010 /* ConverterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB61521131787300D3A010 /* ConverterView.m */; };
 		F2EB61CF1131802700D3A010 /* ConverterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB61CE1131802700D3A010 /* ConverterModel.m */; };
+		F2F76E4D22DF504900834CA2 /* PhyDiscipline.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E4C22DF504900834CA2 /* PhyDiscipline.m */; };
+		F2F76E5022DF519400834CA2 /* PhyMainSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E4F22DF519400834CA2 /* PhyMainSection.m */; };
+		F2F76E5322DF52FE00834CA2 /* DDHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E5222DF52FE00834CA2 /* DDHBaseTableViewCell.m */; };
+		F2F76E5622DF53E900834CA2 /* PhyMainSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E5522DF53E900834CA2 /* PhyMainSectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,7 +160,7 @@
 		F22D76FF123C216A00F6B84D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		F230F29010FD219F0076EE37 /* calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calc.png; sourceTree = "<group>"; };
 		F23699B90FE8332100C2890F /* GeneralCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorViewController.h; sourceTree = "<group>"; };
-		F23699BA0FE8332100C2890F /* GeneralCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GeneralCalculatorViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		F23699BA0FE8332100C2890F /* GeneralCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GeneralCalculatorViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F2395284115427F300BC63BA /* fooDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fooDefault.png; sourceTree = "<group>"; };
 		F239BAC120F75A6A00612965 /* DHSmartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSmartTableViewCell.h; sourceTree = "<group>"; };
 		F239BAC220F75A6A00612965 /* DHSmartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSmartTableViewCell.m; sourceTree = "<group>"; };
@@ -162,6 +170,12 @@
 		F24082EF14CB3CA000292D9E /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		F24082F014CB3CA000292D9E /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
 		F24082F114CB3CA000292D9E /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		F24E129822DF4D8000F4038F /* PhyFormula.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhyFormula.m; sourceTree = "<group>"; };
+		F24E129922DF4D8000F4038F /* PhyCollectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhyCollectionTableViewController.m; sourceTree = "<group>"; };
+		F24E129A22DF4D8000F4038F /* PhyFormula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhyFormula.h; sourceTree = "<group>"; };
+		F24E129B22DF4D8000F4038F /* PhyCollectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhyCollectionTableViewController.h; sourceTree = "<group>"; };
+		F24E129E22DF4F4300F4038F /* PhyFormulaSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyFormulaSection.h; sourceTree = "<group>"; };
+		F24E129F22DF4F4300F4038F /* PhyFormulaSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyFormulaSection.m; sourceTree = "<group>"; };
 		F254F9A50FF6B50700EBBFF8 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
 		F254F9B80FF773CF00EBBFF8 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 		F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestignatedCalculaterViewController.h; sourceTree = "<group>"; };
@@ -188,6 +202,7 @@
 		F2959F2611424D200014525F /* DetailFormula.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailFormula.m; sourceTree = "<group>"; };
 		F29CAD5012AC3E1800139C35 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		F29CAD5112AC3E1800139C35 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		F29F212C22E1EB4400426712 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
 		F2A120A0149D0D1400AD3215 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
 		F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
 		F2A120A8149D351700AD3215 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
@@ -215,6 +230,14 @@
 		F2EB61521131787300D3A010 /* ConverterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterView.m; sourceTree = "<group>"; };
 		F2EB61CD1131802700D3A010 /* ConverterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterModel.h; sourceTree = "<group>"; };
 		F2EB61CE1131802700D3A010 /* ConverterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterModel.m; sourceTree = "<group>"; };
+		F2F76E4B22DF504900834CA2 /* PhyDiscipline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyDiscipline.h; sourceTree = "<group>"; };
+		F2F76E4C22DF504900834CA2 /* PhyDiscipline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyDiscipline.m; sourceTree = "<group>"; };
+		F2F76E4E22DF519400834CA2 /* PhyMainSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyMainSection.h; sourceTree = "<group>"; };
+		F2F76E4F22DF519400834CA2 /* PhyMainSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyMainSection.m; sourceTree = "<group>"; };
+		F2F76E5122DF52FE00834CA2 /* DDHBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDHBaseTableViewCell.h; sourceTree = "<group>"; };
+		F2F76E5222DF52FE00834CA2 /* DDHBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDHBaseTableViewCell.m; sourceTree = "<group>"; };
+		F2F76E5422DF53E900834CA2 /* PhyMainSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyMainSectionCell.h; sourceTree = "<group>"; };
+		F2F76E5522DF53E900834CA2 /* PhyMainSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyMainSectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,10 +272,13 @@
 				1D3623250D0F684500981E51 /* PhysFormAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* PhysFormViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* PhysFormViewController.m */,
+				F24E129722DF4D8000F4038F /* FormulaCollection */,
 				F222169C0FE3EF1400967918 /* drawTest.h */,
 				F222169D0FE3EF1400967918 /* drawTest.m */,
 				F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */,
 				F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */,
+				F2F76E5122DF52FE00834CA2 /* DDHBaseTableViewCell.h */,
+				F2F76E5222DF52FE00834CA2 /* DDHBaseTableViewCell.m */,
 				F2A120A7149D34B900AD3215 /* Calculator */,
 				F2A120BC149E793000AD3215 /* ChemieTableViewController.h */,
 				F2A120BD149E793000AD3215 /* ChemieTableViewController.m */,
@@ -414,9 +440,29 @@
 			isa = PBXGroup;
 			children = (
 				F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */,
+				F29F212C22E1EB4400426712 /* CalculatorTests.m */,
 				F239BACC20F8C0CE00612965 /* Info.plist */,
 			);
 			path = PhyTests;
+			sourceTree = "<group>";
+		};
+		F24E129722DF4D8000F4038F /* FormulaCollection */ = {
+			isa = PBXGroup;
+			children = (
+				F24E129B22DF4D8000F4038F /* PhyCollectionTableViewController.h */,
+				F24E129922DF4D8000F4038F /* PhyCollectionTableViewController.m */,
+				F24E129A22DF4D8000F4038F /* PhyFormula.h */,
+				F24E129822DF4D8000F4038F /* PhyFormula.m */,
+				F24E129E22DF4F4300F4038F /* PhyFormulaSection.h */,
+				F24E129F22DF4F4300F4038F /* PhyFormulaSection.m */,
+				F2F76E4B22DF504900834CA2 /* PhyDiscipline.h */,
+				F2F76E4C22DF504900834CA2 /* PhyDiscipline.m */,
+				F2F76E4E22DF519400834CA2 /* PhyMainSection.h */,
+				F2F76E4F22DF519400834CA2 /* PhyMainSection.m */,
+				F2F76E5422DF53E900834CA2 /* PhyMainSectionCell.h */,
+				F2F76E5522DF53E900834CA2 /* PhyMainSectionCell.m */,
+			);
+			path = FormulaCollection;
 			sourceTree = "<group>";
 		};
 		F2A120A7149D34B900AD3215 /* Calculator */ = {
@@ -602,6 +648,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* PhysFormAppDelegate.m in Sources */,
+				F2F76E5322DF52FE00834CA2 /* DDHBaseTableViewCell.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* PhysFormViewController.m in Sources */,
 				F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */,
 				F222169E0FE3EF1400967918 /* drawTest.m in Sources */,
@@ -618,12 +665,18 @@
 				F207F31E1144FB8700256864 /* ReferenzViewController.m in Sources */,
 				F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */,
 				F2A120A2149D0D1500AD3215 /* HistoryTableViewController.m in Sources */,
+				F24E12A022DF4F4300F4038F /* PhyFormulaSection.m in Sources */,
 				F2A120AA149D351700AD3215 /* HistoryTableViewCell.m in Sources */,
+				F2F76E5022DF519400834CA2 /* PhyMainSection.m in Sources */,
 				F2D84C7922D68BA200B9DA2A /* ConstantCell.m in Sources */,
+				F24E129C22DF4D8000F4038F /* PhyFormula.m in Sources */,
+				F24E129D22DF4D8000F4038F /* PhyCollectionTableViewController.m in Sources */,
 				F2A120BE149E793100AD3215 /* ChemieTableViewController.m in Sources */,
+				F2F76E5622DF53E900834CA2 /* PhyMainSectionCell.m in Sources */,
 				F205EA8614ACB9DC001F8AF6 /* CollectionOfElementsView.m in Sources */,
 				F2D84C7C22D68C0600B9DA2A /* CalculatorConstant.m in Sources */,
 				F205EA8914ACBF2E001F8AF6 /* CollectionOfElementsViewController.m in Sources */,
+				F2F76E4D22DF504900834CA2 /* PhyDiscipline.m in Sources */,
 				F29558B620615546001D776D /* GeneralCalculatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */,
+				F29F212D22E1EB4400426712 /* CalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

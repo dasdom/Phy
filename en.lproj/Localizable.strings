@@ -1036,7 +1036,7 @@
 		"ErklaerAllgemeineGasgleichung01" = "";
 		"ErklaerAdiabate01" = "Adiabatic: no exchange of heat";
 		"ErklaerAdiabate02" = "Adiabatic: no exchange of heat";
-		"ErklaerNullterHauptsatz01" = "The direction of heat flow is always from cold to hot.";
+		"ErklaerNullterHauptsatz01" = "The direction of heat flow is always from hot to cold .";
 		"ErklaerErsterHauptsatz01" = "Energy is conserved.";
 		"ErklaerZweiterHauptsatz01" = "It is not possible to construct a maschine which performs work by cooling a heat bath.";
 		"ErklaerWirkungsgrad01" = "";

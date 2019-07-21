@@ -9,6 +9,9 @@
 #import "PhysFormAppDelegate.h"
 #import "PhysFormViewController.h"
 #import "DetailFormula.h"
+#import "PhyFormula.h"
+#import "PhyFormulaSection.h"
+#import "PhyDiscipline.h"
 
 @implementation PhysFormAppDelegate
 
@@ -35,7 +38,17 @@
 	
 	// Set data source for self; date holds the first dictionary
 	self.data = tempDict;
-	
+    
+//    NSArray *rawArray = tempDict[@"Rows"];
+//    for (NSArray *array in rawArray) {
+//        NSDictionary *dict = array.firstObject;
+//        NSLog(@"title: %@", dict[@"Title"]);
+//        
+//        id foo = [self itemFromDict:dict];
+//        
+//        NSLog(@"foo: %@", foo);
+//    }
+    
 	// Get screen bounds
 	CGRect screenBounds = [[UIScreen mainScreen] bounds];
 	
@@ -59,8 +72,8 @@
 	tabBarController = [[UITabBarController alloc] init];
 	
 	// Initialize the view controller
-	viewController = [[PhysFormViewController alloc] initWithStyle: UITableViewStyleGrouped];
-	//viewController = [[PhysFormViewController alloc] initWithStyle: UITableViewStylePlain];
+//    viewController = [[PhysFormViewController alloc] initWithStyle: UITableViewStyleGrouped];
+    viewController = [[PhysFormViewController alloc] initWithStyle: UITableViewStylePlain];
 
 	// Initialize the navigation controller and set the title
 	navigationController = [[UINavigationController alloc] initWithRootViewController: viewController];
@@ -154,6 +167,65 @@
 	NSLog(@"finished loading");
     
     return true;
+}
+
+- (id)itemFromDict:(NSDictionary *)dict {
+    NSArray *namesOfSections = dict[@"namesOfSections"];
+    NSArray *childArray = dict[@"Child"];
+    
+    if ([childArray count] < 1) {
+        PhyFormula *formula = [[PhyFormula alloc] init];
+        formula.name = dict[@"Title"];
+        formula.imageName = dict[formula.name];
+        NSLog(@"formula: %@", formula);
+        return formula;
+    }
+    
+    if ([childArray isKindOfClass:[NSDictionary class]]) {
+        NSLog(@"***********************************************");
+        NSLog(@"* Needs implementation !!!!");
+        NSLog(@"***********************************************");
+        return nil;
+    }
+    
+    NSMutableArray *sections = [[NSMutableArray alloc] init];
+    
+    [childArray enumerateObjectsUsingBlock:^(NSArray *sectionsArray, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSMutableArray *items = [[NSMutableArray alloc] init];
+        
+        if ([sectionsArray isKindOfClass:[NSDictionary class]]) {
+            
+            id item = [self itemFromDict:(NSDictionary *)sectionsArray];
+            
+            [items addObject:item];
+        } else {
+            NSLog(@"=======================================");
+            NSLog(@"sectionsArray: %@", sectionsArray);
+            NSLog(@"=======================================");
+            
+            [sectionsArray enumerateObjectsUsingBlock:^(NSDictionary *sectionDict, NSUInteger idx_2, BOOL * _Nonnull stop_2) {
+                
+                id item = [self itemFromDict:sectionDict];
+                
+                [items addObject:item];
+            }];
+        }
+        
+        if ([items.firstObject isKindOfClass:[PhyFormula class]]) {
+            PhyFormulaSection *formulaSection = [[PhyFormulaSection alloc] init];
+            formulaSection.name = namesOfSections[idx];
+            formulaSection.formulas = items;
+            [sections addObject:formulaSection];
+        }
+
+    }];
+    
+    PhyDiscipline *formulaDiscripline = [[PhyDiscipline alloc] init];
+    formulaDiscripline.name = dict[@"Title"];
+    formulaDiscripline.sections = sections;
+    
+    return formulaDiscripline;
 }
 
 - (void)copyDatabaseIfNeeded {

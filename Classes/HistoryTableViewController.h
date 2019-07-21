@@ -12,8 +12,8 @@
 
 @interface HistoryTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *calcDictArray;
 @property (nonatomic, unsafe_unretained) GeneralCalculatorViewController *delegate;
 @property (nonatomic) BOOL isCalcHistory;
 
+- (instancetype)initWithHistoryArray:(NSArray *)historyArray;
 @end
