@@ -95,8 +95,8 @@
 	converterViewController = [[ConverterViewController alloc] init];
 	converterViewController.title = @"Converter";
 	
-	favoritesViewController = [[FavoritesViewController alloc] init];
-	favoritesViewController.title = @"Favorites";
+//    favoritesViewController = [[FavoritesViewController alloc] init];
+//    favoritesViewController.title = @"Favorites";
 	
 	referenzViewController = [[ReferenzViewController alloc] init];
 	referenzViewController.title = @"Referenz";
@@ -118,7 +118,6 @@
 		tabBarController.viewControllers = @[navigationController,
 											generalCalculatorViewController, 
                                             converterViewController, referenzViewController,
-                                            favoritesViewController
                                              ];
 //    }
 
@@ -141,7 +140,7 @@
 		[[array objectAtIndex:1] setImage: [UIImage imageNamed: @"tabbaritem1.png"]];
         [[array objectAtIndex:2] setImage: [UIImage imageNamed: @"tabbaritem2.png"]];
         [[array objectAtIndex:3] setImage: [UIImage imageNamed: @"tabbaritem3.png"]];
-        [[array objectAtIndex:4] setImage: [UIImage imageNamed: @"tabbaritem4.png"]];
+//        [[array objectAtIndex:4] setImage: [UIImage imageNamed: @"tabbaritem4.png"]];
 	}
 
 	

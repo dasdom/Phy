@@ -69,6 +69,11 @@
 		F279640E1143FAFD00B8EBDE /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
 		F27EEE771154D661008449FC /* IconLite.png in Resources */ = {isa = PBXBuildFile; fileRef = F27EEE761154D661008449FC /* IconLite.png */; };
 		F27EEF771154F1F3008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
+		F294101222E7AD1B00379868 /* ImpressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100D22E7AD1B00379868 /* ImpressViewController.swift */; };
+		F294101322E7AD1B00379868 /* ImpressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100E22E7AD1B00379868 /* ImpressView.swift */; };
+		F294101422E7AD1B00379868 /* CaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100F22E7AD1B00379868 /* CaveScene.swift */; };
+		F294101522E7AD1B00379868 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = F294101022E7AD1B00379868 /* Spark.sks */; };
+		F294101622E7AD1B00379868 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294101122E7AD1B00379868 /* StartScene.swift */; };
 		F29558B320586259001D776D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29558B220586259001D776D /* Launch Screen.storyboard */; };
 		F29558B620615546001D776D /* GeneralCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29558B520615546001D776D /* GeneralCalculatorView.m */; };
 		F2959E111141A1120014525F /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959E101141A1120014525F /* FavoritesViewController.m */; };
@@ -192,6 +197,12 @@
 		F27EEE671154D3A5008449FC /* InfoLite.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoLite.plist; sourceTree = "<group>"; };
 		F27EEE761154D661008449FC /* IconLite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconLite.png; sourceTree = "<group>"; };
 		F27EEF761154F1F3008449FC /* DataLite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataLite.plist; sourceTree = "<group>"; };
+		F294100922E7ACF600379868 /* PhysForm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhysForm-Bridging-Header.h"; sourceTree = "<group>"; };
+		F294100D22E7AD1B00379868 /* ImpressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressViewController.swift; sourceTree = "<group>"; };
+		F294100E22E7AD1B00379868 /* ImpressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressView.swift; sourceTree = "<group>"; };
+		F294100F22E7AD1B00379868 /* CaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaveScene.swift; sourceTree = "<group>"; };
+		F294101022E7AD1B00379868 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
+		F294101122E7AD1B00379868 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		F29558B220586259001D776D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F29558B420615545001D776D /* GeneralCalculatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorView.h; sourceTree = "<group>"; };
 		F29558B520615546001D776D /* GeneralCalculatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorView.m; sourceTree = "<group>"; };
@@ -296,6 +307,8 @@
 				F2959E101141A1120014525F /* FavoritesViewController.m */,
 				F2959F2511424D200014525F /* DetailFormula.h */,
 				F2959F2611424D200014525F /* DetailFormula.m */,
+				F294100C22E7AD1B00379868 /* Impress */,
+				F294100922E7ACF600379868 /* PhysForm-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -465,6 +478,18 @@
 			path = FormulaCollection;
 			sourceTree = "<group>";
 		};
+		F294100C22E7AD1B00379868 /* Impress */ = {
+			isa = PBXGroup;
+			children = (
+				F294100D22E7AD1B00379868 /* ImpressViewController.swift */,
+				F294100E22E7AD1B00379868 /* ImpressView.swift */,
+				F294100F22E7AD1B00379868 /* CaveScene.swift */,
+				F294101022E7AD1B00379868 /* Spark.sks */,
+				F294101122E7AD1B00379868 /* StartScene.swift */,
+			);
+			path = Impress;
+			sourceTree = "<group>";
+		};
 		F2A120A7149D34B900AD3215 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +568,7 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = Q6PD97MRX4;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					F239BAC720F8C0CD00612965 = {
@@ -581,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2569B350F9E2B0100968581 /* Data.plist in Resources */,
+				F294101522E7AD1B00379868 /* Spark.sks in Resources */,
 				F22556F50FC366440003F982 /* Icon.png in Resources */,
 				F225570D0FC466150003F982 /* platzhalter.png in Resources */,
 				F20E53AD22D9B9FE001794E9 /* Thermodynamics.xcassets in Resources */,
@@ -653,6 +680,7 @@
 				F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */,
 				F222169E0FE3EF1400967918 /* drawTest.m in Sources */,
 				F239BAC320F75A6B00612965 /* DHSmartTableViewCell.m in Sources */,
+				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
 				F23699BB0FE8332100C2890F /* GeneralCalculatorViewController.m in Sources */,
 				F2D4ED8910662A8400AD1905 /* ElementsDetailViewController.m in Sources */,
 				F2EB614C113176F900D3A010 /* ConverterViewController.m in Sources */,
@@ -661,6 +689,8 @@
 				F2D84C7622D68B7C00B9DA2A /* ConstantsTableViewController.m in Sources */,
 				F2959E111141A1120014525F /* FavoritesViewController.m in Sources */,
 				F2959F2711424D200014525F /* DetailFormula.m in Sources */,
+				F294101222E7AD1B00379868 /* ImpressViewController.swift in Sources */,
+				F294101322E7AD1B00379868 /* ImpressView.swift in Sources */,
 				F207F31D1144FB8700256864 /* ReferenzView.m in Sources */,
 				F207F31E1144FB8700256864 /* ReferenzViewController.m in Sources */,
 				F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */,
@@ -671,6 +701,7 @@
 				F2D84C7922D68BA200B9DA2A /* ConstantCell.m in Sources */,
 				F24E129C22DF4D8000F4038F /* PhyFormula.m in Sources */,
 				F24E129D22DF4D8000F4038F /* PhyCollectionTableViewController.m in Sources */,
+				F294101422E7AD1B00379868 /* CaveScene.swift in Sources */,
 				F2A120BE149E793100AD3215 /* ChemieTableViewController.m in Sources */,
 				F2F76E5622DF53E900834CA2 /* PhyMainSectionCell.m in Sources */,
 				F205EA8614ACB9DC001F8AF6 /* CollectionOfElementsView.m in Sources */,
@@ -718,11 +749,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -730,11 +763,15 @@
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/PhysForm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -744,21 +781,26 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/PhysForm-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -882,22 +924,27 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominik Hauser";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D567812F-663E-418F-9D37-73687E8BC730";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/PhysForm-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -906,6 +953,7 @@
 		F239BAD020F8C0CE00612965 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -946,6 +994,7 @@
 		F239BAD120F8C0CE00612965 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -982,6 +1031,7 @@
 		F239BAD220F8C0CE00612965 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

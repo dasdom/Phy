@@ -11,6 +11,7 @@
 #import "GeneralCalculatorViewController.h"
 
 #import "DetailFormula.h"
+#import "Phy-Swift.h"
 
 #import <sqlite3.h>
 
@@ -55,6 +56,8 @@
 		// Set the first array to the tableDateSource of the ViewController 
 		self.tableDataSource = [AppDelegate.data objectForKey: @"Rows"];
 		
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Impress" style:UIBarButtonItemStylePlain target:self action:@selector(showImpress:)];
+    
 		// There is a section for physics, one for math and one for chemics right now
 #ifdef LITE_VERSION
 		self.numberOfSections = 4;
@@ -135,6 +138,8 @@
     [searchBar setShowsCancelButton: YES];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"MyIdentifier"];
+    
+    self.tableView.tableFooterView = [[UIView alloc] init];
 }
 
 - (NSInteger)numberOfSectionsInTableView: (UITableView *)tableView {
@@ -447,6 +452,13 @@
 	NSDictionary *userInfo = @{@"Formula": notificationString};
 	[[NSNotificationCenter defaultCenter] postNotificationName: @"FormulaIsSent" object: self 
 													  userInfo: userInfo];
+}
+
+- (void)showImpress:(UIBarButtonItem *)sender {
+  ImpressViewController *impress = [[ImpressViewController alloc] init];
+  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:impress];
+  navController.modalPresentationStyle = UIModalPresentationFormSheet;
+  [self presentViewController:navController animated:YES completion:nil];
 }
 
 @end

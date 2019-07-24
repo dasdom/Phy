@@ -562,7 +562,11 @@
     for (NSString *plusString in plusStrings) {
         NSString *temp = [[self mutableStringByReplaceNDotInCalcString:plusString] copy];
         
-        decimalNumber1 = [decimalNumber1 decimalNumberByAdding:[self subtractFromString:temp]];
+        NSDecimalNumber *decimalNumber2 = [self subtractFromString:temp];
+        if ([decimalNumber2 isEqual:NSDecimalNumber.notANumber]) {
+            return NSDecimalNumber.notANumber;
+        }
+        decimalNumber1 = [decimalNumber1 decimalNumberByAdding:decimalNumber2];
     }
     
 //    for (int i = 0; i < [plusStrings count]; i++) {
@@ -650,8 +654,11 @@
 	NSArray *diffStrings = [diffString componentsSeparatedByString:DDHDivide];
 	NSDecimalNumber *decimalNumber1 = [self nDiffFromString:[diffStrings objectAtIndex:0]];
 	for (int i = 1; i < [diffStrings count]; i++) {
-		decimalNumber1 = [decimalNumber1 decimalNumberByDividingBy:
-						  [self nDiffFromString:[diffStrings objectAtIndex:1]]]; 
+        NSDecimalNumber *divident = [self nDiffFromString:[diffStrings objectAtIndex:1]];
+        if ([divident isEqual:NSDecimalNumber.notANumber]) {
+            return NSDecimalNumber.notANumber;
+        }
+		decimalNumber1 = [decimalNumber1 decimalNumberByDividingBy:divident];
 	}
 	return decimalNumber1;
 }
@@ -659,6 +666,9 @@
 - (NSDecimalNumber *)nDiffFromString: (NSString *)diffString {
 	NSArray *diffStrings = [diffString componentsSeparatedByString: @"ndiff"];
 	NSDecimalNumber *decimalNumber1 = [self powFromString:[diffStrings objectAtIndex:0]];
+    if ([decimalNumber1 isEqual:NSDecimalNumber.notANumber]) {
+        return NSDecimalNumber.notANumber;
+    }
 	for (int i = 1; i < [diffStrings count]; i++) {
 		decimalNumber1 = [decimalNumber1 decimalNumberByDividingBy:
 						  [self powFromString:[diffStrings objectAtIndex:1]]];
@@ -671,6 +681,9 @@
 - (NSDecimalNumber *)powFromString:(NSString *)powString {
     NSArray *squareStrings = [powString componentsSeparatedByString: @"^("];
     NSDecimalNumber *decimalNumber1 = [self squareFromString:[squareStrings objectAtIndex:0]];
+    if ([decimalNumber1 isEqual:NSDecimalNumber.notANumber]) {
+        return NSDecimalNumber.notANumber;
+    }
     NSDecimalNumber *decimalNumber3 = decimalNumber1;
     if ([squareStrings count] > 1) {
         NSDecimalNumber *decimalNumber2 = [NSDecimalNumber decimalNumberWithString:[squareStrings objectAtIndex:1]];
@@ -683,6 +696,9 @@
 - (NSDecimalNumber *)squareFromString: (NSString *)squareString {
 	NSArray *squareStrings = [squareString componentsSeparatedByString: @"^"];
 	NSDecimalNumber *decimalNumber1 = [self sqminusFromString:[squareStrings objectAtIndex:0]];
+    if ([decimalNumber1 isEqual:NSDecimalNumber.notANumber]) {
+        return NSDecimalNumber.notANumber;
+    }
 	NSDecimalNumber *decimalNumber3 = decimalNumber1;
 	if ([squareStrings count] > 1) {
 		NSDecimalNumber *decimalNumber2 = [NSDecimalNumber decimalNumberWithString:[squareStrings objectAtIndex:1]];
@@ -696,6 +712,9 @@
 - (NSDecimalNumber *)sqminusFromString: (NSString *)squareString {
 	NSArray *squareStrings = [squareString componentsSeparatedByString: @"Sqminus"];
 	NSDecimalNumber *decimalNumber1 = [self eminusFromString:[squareStrings objectAtIndex:0]];
+    if ([decimalNumber1 isEqual:NSDecimalNumber.notANumber]) {
+        return NSDecimalNumber.notANumber;
+    }
 	NSDecimalNumber *decimalNumber3 = decimalNumber1;
 	if ([squareStrings count] > 1) {
 		NSDecimalNumber *decimalNumber2 = [NSDecimalNumber decimalNumberWithString:[squareStrings objectAtIndex:1]];
@@ -709,6 +728,9 @@
 - (NSDecimalNumber *)eminusFromString: (NSString *)eminusString {
 	NSArray *eminusStrings = [eminusString componentsSeparatedByString: @"Eminus"];
 	NSDecimalNumber *decimalNumber1 = [self exponentFromString:[eminusStrings objectAtIndex:0]];
+    if ([decimalNumber1 isEqual:NSDecimalNumber.notANumber]) {
+        return NSDecimalNumber.notANumber;
+    }
 	BOOL negative = NO;
 	unsigned long long ma = [[decimalNumber1 decimalNumberByMultiplyingByPowerOf10:15] unsignedLongLongValue];
 	NSDecimalNumber *decimalNumber2 = decimalNumber1; 
@@ -722,6 +744,9 @@
 - (NSDecimalNumber *)exponentFromString: (NSString *)exponentString {
 	NSArray *exponentStrings = [exponentString componentsSeparatedByString: @"e"];
 	NSDecimalNumber *decimalNumber1 = [NSDecimalNumber decimalNumberWithString:[exponentStrings objectAtIndex:0]];
+    if ([decimalNumber1 isEqual:NSDecimalNumber.notANumber]) {
+        return NSDecimalNumber.notANumber;
+    }
 	BOOL negative = NO;
 	unsigned long long ma = [[decimalNumber1 decimalNumberByMultiplyingByPowerOf10:15] unsignedLongLongValue];
 	NSDecimalNumber *decimalNumber2 = [NSDecimalNumber decimalNumberWithString:[exponentStrings objectAtIndex:0]]; 

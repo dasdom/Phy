@@ -9,16 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ElementsDetailViewController : UIViewController {
-	NSString *name;
-	NSString *abk;
-	NSString *ordnungszahl;
-	NSString *atommasse;
-	NSString *periode;
-	NSString *gruppe;
-	NSString *elKonfiguration;
-}
-
+@interface ElementsDetailViewController : UIViewController
 //@property (nonatomic, retain) UILabel *name;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *abk;

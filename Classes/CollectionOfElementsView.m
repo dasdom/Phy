@@ -14,17 +14,6 @@
 
 @implementation CollectionOfElementsView
 
-@synthesize buttonArray;
-@synthesize delegate;
-@synthesize labelView=mLabelView;
-@synthesize nameLabel=mNameLabel;
-@synthesize massLabel=mMassLabel;
-@synthesize elConfigLabel=mElConfigLabel;
-@synthesize periodeLabel=mPeriodeLabel;
-@synthesize gruppeLabel=mGruppeLabel;
-@synthesize paulingLabel=mPaulingLabel;
-@synthesize abkLabel=mAbkLabel;
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -37,12 +26,12 @@
 - (id)initWithFrame: (CGRect)frame andElementsArray: (NSArray*)pElementsArray {
     if ((self = [super initWithFrame: frame])) {
         [self setBackgroundColor: [UIColor whiteColor]];
-        CGFloat x0 = 20.0f;
-        CGFloat y0 = 50.0f;
-        CGFloat buttonWidth = 23.0f;
-        CGFloat buttonHeight = 23.0f;
-        CGFloat lanthanideOffset = 60.0f;
-        buttonArray = [[NSMutableArray alloc] init];
+        CGFloat buttonWidth = (frame.size.height-17)/20.0;
+        CGFloat x0 = buttonWidth;
+        CGFloat buttonHeight = (frame.size.width-8)/12.0;
+        CGFloat y0 = buttonHeight;
+        CGFloat lanthanideOffset = 2.0*buttonHeight+20.0;
+        _buttonArray = [[NSMutableArray alloc] init];
         for (int i = 0; i < [pElementsArray count]; i++) {
             NSDictionary *elementsDict = [pElementsArray objectAtIndex: i];
             CGFloat x = x0+(buttonWidth+1)*([[elementsDict objectForKey: @"YPos"] floatValue]-1);
@@ -56,12 +45,14 @@
 //            [[button layer] setBorderWidth: 1.0f];
 //            [[button layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
             [button setTag: i];
-            [button addTarget: delegate action: @selector(elementButtonPressed:) forControlEvents: UIControlEventTouchUpInside];
+            [button addTarget: _delegate action: @selector(elementButtonPressed:) forControlEvents: UIControlEventTouchUpInside];
             CGFloat colorFloat = 0.7f-[[elementsDict objectForKey: @"Atommasse"] floatValue]/kMaxMass;
+//            UIColor *backgroundColor = [UIColor colorWithHue:colorFloat saturation:1.0 brightness:1.0 alpha:1.0];
             [button setBackgroundColor: [UIColor colorWithRed: colorFloat green: colorFloat blue: colorFloat alpha: 1.0f]];
+//            button.backgroundColor = backgroundColor;
             [button setTitle: [elementsDict objectForKey: @"Abk"] forState: UIControlStateNormal];
             [[button titleLabel] setFont: [UIFont systemFontOfSize: 11.0f]];
-            [buttonArray addObject: button];
+            [_buttonArray addObject: button];
             [self addSubview: button];
         }
         UILabel *sternLabel = [[UILabel alloc] initWithFrame: CGRectMake(x0+2*(buttonWidth+1), y0+5*(buttonHeight+1), buttonWidth, buttonHeight)];
@@ -83,75 +74,63 @@
         [doppelSternLabel2 setText: @"**"];
         [doppelSternLabel2 setTextAlignment: NSTextAlignmentCenter];
         [self addSubview: doppelSternLabel2];
-        [self addSubview: doppelSternLabel2];
-        
         
         UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems: @[NSLocalizedString(@"Masse", nil), NSLocalizedString(@"Phase (Normbed.)", nil), NSLocalizedString(@"Pauling-Skala", nil)]];
-        [segmentedControl addTarget: delegate action: @selector(changeColor:) forControlEvents: UIControlEventValueChanged];
-        [segmentedControl setFrame: CGRectMake(10.0f, 290.0f, 460.0f, 20.0f)];
+        [segmentedControl addTarget: _delegate action: @selector(changeColor:) forControlEvents: UIControlEventValueChanged];
+        [segmentedControl setFrame: CGRectMake(10.0f, frame.size.width-30, frame.size.height-20, 20.0f)];
         [segmentedControl setSelectedSegmentIndex: 0];
         [segmentedControl setTintColor: [UIColor grayColor]];
         [self addSubview: segmentedControl];
         
-        mLabelView = [[UIView alloc] initWithFrame: CGRectMake(75.0f, 10.0f, 225.0f, 100.0f)];
-        [[self labelView] setBackgroundColor: [UIColor grayColor]];
-        [self addSubview: [self labelView]];
+        _labelView = [[UIView alloc] initWithFrame: CGRectMake(x0+2.5*buttonWidth, 0.2*buttonHeight, 9*buttonWidth+8, 3.5*buttonHeight)];
+        _labelView.backgroundColor = [UIColor grayColor];
+        [self addSubview:_labelView];
+        _labelView.layer.cornerRadius = 5;
         
-        mAbkLabel = [[UILabel alloc] initWithFrame: CGRectMake(5.0f, 5.0f, 40.0f, 40.0f)];
-        [[self abkLabel] setBackgroundColor: [UIColor clearColor]];
-        [[self abkLabel] setTextColor: [UIColor whiteColor]];
-        [[self abkLabel] setFont: [UIFont systemFontOfSize: 21.0f]];
-        [[self abkLabel] setTextAlignment: NSTextAlignmentCenter];
-        [[self labelView] addSubview: [self abkLabel]];
+        _abkLabel = [self infoLabel];
+        _abkLabel.font = [UIFont systemFontOfSize: 21.0f];
+        _abkLabel.textAlignment = NSTextAlignmentCenter;
+
+        UIStackView *abbStackView = [[UIStackView alloc] initWithArrangedSubviews:@[_abkLabel]];
+        abbStackView.alignment = UIStackViewAlignmentTop;
         
-        mNameLabel = [[UILabel alloc] initWithFrame: CGRectMake(50.0f, 5.0f, 165.0f, 15.0f)];
-        [[self nameLabel] setBackgroundColor: [UIColor clearColor]];
-        [[self nameLabel] setTextColor: [UIColor whiteColor]];
-        [[self nameLabel] setFont: [UIFont systemFontOfSize: 13.0f]];
-        [[self labelView] addSubview: [self nameLabel]];
+        _nameLabel = [self infoLabel];
+        _massLabel = [self infoLabel];
+        _elConfigLabel = [self infoLabel];
+        _periodeLabel = [self infoLabel];
+        _gruppeLabel = [self infoLabel];
+        _paulingLabel = [self infoLabel];
         
-        mMassLabel = [[UILabel alloc] initWithFrame: CGRectMake(50.0f, 20.0f, 165.0f, 15.0f)];
-        [[self massLabel] setBackgroundColor: [UIColor clearColor]];
-        [[self massLabel] setTextColor: [UIColor whiteColor]];
-        [[self massLabel] setFont: [UIFont systemFontOfSize: 13.0f]];
-        [[self labelView] addSubview: [self massLabel]];
+        UIStackView *numbersStackView = [[UIStackView alloc] initWithArrangedSubviews:@[_nameLabel, _massLabel, _elConfigLabel, _periodeLabel, _gruppeLabel, _paulingLabel]];
+        numbersStackView.axis = UILayoutConstraintAxisVertical;
+        numbersStackView.spacing = 2;
         
-        mElConfigLabel = [[UILabel alloc] initWithFrame: CGRectMake(50.0f, 35.0f, 165.0f, 15.0f)];
-        [[self elConfigLabel] setBackgroundColor: [UIColor clearColor]];
-        [[self elConfigLabel] setTextColor: [UIColor whiteColor]];
-        [[self elConfigLabel] setFont: [UIFont systemFontOfSize: 13.0f]];
-        [[self labelView] addSubview: [self elConfigLabel]];
+        UIStackView *infoStackView = [[UIStackView alloc] initWithArrangedSubviews:@[abbStackView, numbersStackView]];
+        infoStackView.translatesAutoresizingMaskIntoConstraints = NO;
+        infoStackView.spacing = 5;
+        infoStackView.distribution = UIStackViewDistributionFillProportionally;
         
-        mPeriodeLabel = [[UILabel alloc] initWithFrame: CGRectMake(50.0f, 50.0f, 165.0f, 15.0f)];
-        [[self periodeLabel] setBackgroundColor: [UIColor clearColor]];
-        [[self periodeLabel] setTextColor: [UIColor whiteColor]];
-        [[self periodeLabel] setFont: [UIFont systemFontOfSize: 13.0f]];
-        [[self labelView] addSubview: [self periodeLabel]];
+        [_labelView addSubview:infoStackView];
         
-        mGruppeLabel = [[UILabel alloc] initWithFrame: CGRectMake(50.0f, 65.0f, 165.0f, 15.0f)];
-        [[self gruppeLabel] setBackgroundColor: [UIColor clearColor]];
-        [[self gruppeLabel] setTextColor: [UIColor whiteColor]];
-        [[self gruppeLabel] setFont: [UIFont systemFontOfSize: 13.0f]];
-        [[self labelView] addSubview: [self gruppeLabel]];
-        
-        mPaulingLabel = [[UILabel alloc] initWithFrame: CGRectMake(50.0f, 80.0f, 165.0f, 15.0f)];
-        [[self paulingLabel] setBackgroundColor: [UIColor clearColor]];
-        [[self paulingLabel] setTextColor: [UIColor whiteColor]];
-        [[self paulingLabel] setFont: [UIFont systemFontOfSize: 13.0f]];
-        [[self labelView] addSubview: [self paulingLabel]];
-        
+        [NSLayoutConstraint activateConstraints:
+         @[
+           [infoStackView.leadingAnchor constraintEqualToAnchor:_labelView.leadingAnchor constant:8],
+           [infoStackView.trailingAnchor constraintEqualToAnchor:_labelView.trailingAnchor constant:-8],
+           [infoStackView.topAnchor constraintEqualToAnchor:_labelView.topAnchor constant:8],
+           [infoStackView.bottomAnchor constraintEqualToAnchor:_labelView.bottomAnchor constant:-8],
+           [abbStackView.widthAnchor constraintEqualToConstant:70],
+           ]
+         ];
     }
     return self;
 }
 
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (UILabel *)infoLabel {
+    UILabel *label = [[UILabel alloc] init];
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont systemFontOfSize: 13.0f];
+    return label;
 }
-*/
 
 @end

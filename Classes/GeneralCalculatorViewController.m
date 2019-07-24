@@ -156,7 +156,7 @@
 - (void)constButtonPressed:(UIButton *)sender {
     
     if (YES == self.help) {
-        self.calcStringView.text = NSLocalizedString(@"Liste oft benutzter Konstanten", @"");
+        self.calcStringView.text = NSLocalizedString(@"Liste oft benutzter Konstanten anzeigen", @"");
         return;
     }
     

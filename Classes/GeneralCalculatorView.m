@@ -20,7 +20,10 @@
         _calculationStringTextView = [UITextView new];
         _calculationStringTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
         _calculationStringTextView.inputView = [UIView new];
-        
+        _calculationStringTextView.autocorrectionType = UITextAutocorrectionTypeNo;
+        _calculationStringTextView.inputAssistantItem.leadingBarButtonGroups = @[];
+        _calculationStringTextView.inputAssistantItem.trailingBarButtonGroups = @[];
+
 //        _resultLabel = [[UILabel alloc] init];
 //        _resultLabel.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
 //        [_resultLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
