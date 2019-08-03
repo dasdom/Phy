@@ -331,7 +331,7 @@
 		"Arbeit bei konstanter Kraft" = "Work With Constant Force"; 
 		"Leistung"                  = "Power";
 		"kinetische Energie"        = "Kinetic Energy";
-        "potentielle Energie"       = "Potential Wnergy";
+        "potentielle Energie"       = "Potential Energy";
 		
 		//konstante Beschleunigung
 		"konstante Beschleunigung"  = "Constant Acceleration";  //Sektion Titel
@@ -344,7 +344,7 @@
 		
 		//raeumliche Bewegung
 		"räumliche Bewegung"    = "Movement in 3D"; //Sekton Titel
-		"Beschleunigung."       = "Acceleration.";
+		"Beschleunigung"       = "Acceleration";
 		
 		//Bewegung im Gravitationsfeld
 		"Bewegung im Gravitationsfeld"  = "Movement in Gravitational Field";  //Sektion Titel
@@ -1193,7 +1193,9 @@
 	"Kohlenstoff: Graphit"          = "Graphite";
 	"Phosphor (weiss)"              = "Phosphor (white)";
 	"Quarzglas"                     = "Quartz Glass";
-	
+
+/* Solver */
+"Werkzeuge" = "Tools";
 	
 /* Allgemein */
 	"(erlaubte Zeichen: -123456789.e)" = "(allowed digits: -123456789.e)"; 
@@ -1206,3 +1208,4 @@
 	"Formeln können im Bereich 'Formulas' durch einen Tab auf den rechten Tabbar-Knopf zu den Favoriten hinzugefügt werden. Formeln koennen durch einen Swipe ueber die Zelle entfernt werden." =  "Add formulas to favorites in the 'Formulas' section by tabbing the right tabbar button. Swipe to delete.";
 	"Irrtümer vorbehalten" = "errors excepted";
     "PhyLer - Physik Formeln Lernen" = "PhyLer";
+"Impressum" = "Legal Notice";

@@ -29,19 +29,8 @@
 
 @synthesize iTunesURL;
 
-// Create the view hierarchy programmatically, without using a nib.
 - (void)loadView {
-	[super loadView];
-	
-    /*
-    UIImageView *backgroundView0 = [[UIImageView alloc] initWithFrame: 
-                                    CGRectMake(0.0f, 0.0f, self.tableView.frame.size.width, 1000.0f)];
-    [backgroundView0 setImage: [UIImage imageNamed: @"background2.png"]];
-    [[self tableView] setBackgroundView: backgroundView0];
-    [backgroundView0 release];
-    
-    [[[self navigationController] navigationBar] setTranslucent: YES];
-    */
+    [super loadView];
     
 	// listOfItems will hold arrays: one array of dictionaries for every section
 	listOfItems = [[NSMutableArray alloc] init];
@@ -56,7 +45,7 @@
 		// Set the first array to the tableDateSource of the ViewController 
 		self.tableDataSource = [AppDelegate.data objectForKey: @"Rows"];
 		
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Impress" style:UIBarButtonItemStylePlain target:self action:@selector(showImpress:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Impressum", nil) style:UIBarButtonItemStylePlain target:self action:@selector(showImpress:)];
     
 		// There is a section for physics, one for math and one for chemics right now
 #ifdef LITE_VERSION

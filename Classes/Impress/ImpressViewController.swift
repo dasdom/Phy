@@ -51,6 +51,8 @@ class ImpressViewController: UIViewController {
     super.viewDidLoad()
     
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismiss(sender:)))
+    
+    self.title = NSLocalizedString("Impressum", comment: "")
   }
   
   @objc func dismiss(sender: UIBarButtonItem) {

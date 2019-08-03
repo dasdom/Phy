@@ -12,6 +12,7 @@
 #import "PhyFormula.h"
 #import "PhyFormulaSection.h"
 #import "PhyDiscipline.h"
+#import "Phy-Swift.h"
 
 @implementation PhysFormAppDelegate
 
@@ -100,7 +101,6 @@
 	
 	referenzViewController = [[ReferenzViewController alloc] init];
 	referenzViewController.title = @"Referenz";
-
     
 #ifdef LITE_VERSION
 	tabBarController.viewControllers = [NSArray arrayWithObjects: navigationController, 
@@ -115,36 +115,30 @@
 //                                             ];
 //        tabBarController.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
 //    } else {
-		tabBarController.viewControllers = @[navigationController,
-											generalCalculatorViewController, 
-                                            converterViewController, referenzViewController,
-                                             ];
+    
+    SolverTableViewController *solverTableViewController = [[SolverTableViewController alloc] init];
+    solverTableViewController.title = NSLocalizedString(@"Werkzeuge", comment: "");
+
+    UINavigationController *solverNavigationController = [[UINavigationController alloc] initWithRootViewController:solverTableViewController];
+    
+    tabBarController.viewControllers = @[navigationController,
+                                         generalCalculatorViewController,
+                                         converterViewController,
+                                         referenzViewController,
+                                         solverNavigationController
+                                         ];
 //    }
 
 #endif	
 	// TODO: How can I get images to the tabBarItems?
-	NSArray *array = tabBarController.tabBar.items;
-	
-	//[[array objectAtIndex:1] setImage: [UIImage imageNamed: @"calc.png"]];
-#ifdef LITE_VERSION
-	[[array objectAtIndex:0] setImage: [UIImage imageNamed: @"tabbaritem0.png"]];
-	[[array objectAtIndex:1] setImage: [UIImage imageNamed: @"tabbaritem4.png"]];
-#else
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		[[array objectAtIndex:0] setImage: [UIImage imageNamed: @"tabbaritem1.png"]];
-//		[[array objectAtIndex:1] setImage: [UIImage imageNamed: @"tabbaritem2.png"]];
-//		[[array objectAtIndex:2] setImage: [UIImage imageNamed: @"tabbaritem3.png"]];
-//		[[array objectAtIndex:3] setImage: [UIImage imageNamed: @"tabbaritem4.png"]];
-	} else {
-		[[array objectAtIndex:0] setImage: [UIImage imageNamed: @"tabbaritem0.png"]];
-		[[array objectAtIndex:1] setImage: [UIImage imageNamed: @"tabbaritem1.png"]];
-        [[array objectAtIndex:2] setImage: [UIImage imageNamed: @"tabbaritem2.png"]];
-        [[array objectAtIndex:3] setImage: [UIImage imageNamed: @"tabbaritem3.png"]];
-//        [[array objectAtIndex:4] setImage: [UIImage imageNamed: @"tabbaritem4.png"]];
-	}
+    NSArray *array = tabBarController.tabBar.items;
+    
+    [[array objectAtIndex:0] setImage: [UIImage imageNamed: @"list"]];
+    [[array objectAtIndex:1] setImage: [UIImage imageNamed: @"calculator"]];
+    [[array objectAtIndex:2] setImage: [UIImage imageNamed: @"converter"]];
+    [[array objectAtIndex:3] setImage: [UIImage imageNamed: @"reference"]];
+    [[array objectAtIndex:4] setImage: [UIImage imageNamed: @"tool"]];
 
-	
-#endif
 	 
 //    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 //        tabBarController.view.frame = CGRectMake(0, screenBounds.size.height/2+20, screenBounds.size.width, screenBounds.size.height/2-20);

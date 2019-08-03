@@ -2867,7 +2867,7 @@
 										<string>moment. Geschwindigkeit</string>
 									</dict>
 									<dict>
-										<key>Beschleunigung.</key>
+										<key>Beschleunigung</key>
 										<string>beschleunigung03.png</string>
 										<key>Child</key>
 										<array>
@@ -2977,7 +2977,7 @@
 										<key>numberOfSections</key>
 										<string>3</string>
 										<key>Title</key>
-										<string>Beschleunigung.</string>
+										<string>Beschleunigung</string>
 									</dict>
 								</array>
 								<array>
@@ -7701,7 +7701,7 @@
 												<key>Title</key>
 												<string>ZeitEinh</string>
 												<key>ZeitEinh</key>
-												<string>Zeit_einh.png</string>
+												<string>zeit_einh.png</string>
 											</dict>
 											<dict>
 												<key>GeschwindigkeitEinh</key>
@@ -11247,7 +11247,7 @@
 											<array>
 												<dict>
 													<key>MolmasseEinh</key>
-													<string>molmasse_einh.png</string>
+													<string>molareMasse_einh.png</string>
 													<key>noText</key>
 													<true/>
 													<key>Title</key>
@@ -12290,7 +12290,7 @@
 													<key>AbkBool</key>
 													<true/>
 													<key>StromdichteEinh</key>
-													<string>stromdichte_eing.png</string>
+													<string>stromdichte_ein.png</string>
 													<key>Title</key>
 													<string>StromdichteEinh</string>
 												</dict>
@@ -18773,7 +18773,7 @@
 													<key>Title</key>
 													<string>XAbk</string>
 													<key>XAbk</key>
-													<string>x_abk.png</string>
+													<string>X_abk.png</string>
 												</dict>
 											</array>
 											<array>
@@ -18807,7 +18807,7 @@
 													<key>Title</key>
 													<string>XEinh</string>
 													<key>XEinh</key>
-													<string>x_einh.png</string>
+													<string>X_einh.png</string>
 												</dict>
 											</array>
 										</array>
@@ -19533,7 +19533,7 @@
 													<key>Title</key>
 													<string>XAbk</string>
 													<key>XAbk</key>
-													<string>x_abk.png</string>
+													<string>X_abk.png</string>
 												</dict>
 											</array>
 											<array>

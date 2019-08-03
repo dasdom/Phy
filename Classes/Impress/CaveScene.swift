@@ -12,6 +12,7 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
   var pathBottom: SKShapeNode?
   var scrollSpeed: CGFloat = 0
   var sparkEmitter: SKEmitterNode?
+  var smokeEmitter: SKEmitterNode?
   weak var impressView: ImpressView?
 
   override func didMove(to view: SKView) {
@@ -25,10 +26,10 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
     physicsWorld.contactDelegate = self
     
     pointsTop.append(CGPoint(x: -size.width/2.0, y: size.height/2.0-20))
-    pointsBottom.append(CGPoint(x: -size.width/2.0, y: -size.height/2.0+20))
+    pointsBottom.append(CGPoint(x: -size.width/2.0, y: -size.height))
 
     pointsTop.append(CGPoint(x: 0.0, y: size.height/2.0-20))
-    pointsBottom.append(CGPoint(x: 0.0, y: -size.height/2.0+20))
+    pointsBottom.append(CGPoint(x: 0.0, y: -size.height))
   
     for i in 1..<100 {
       let y: CGFloat = CGFloat(arc4random_uniform(280))-100.0
@@ -66,7 +67,9 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
     
     addChild(pathBottom)
     
-    spaceship = SKSpriteNode(color: UIColor.red, size: CGSize(width: 10, height: 10))
+//    spaceship = SKSpriteNode(color: UIColor.red, size: CGSize(width: 16, height: 10))
+    let texture = SKTextureAtlas(named: "Sprites").textureNamed("rocket")
+    spaceship = SKSpriteNode(texture: texture)
     
     guard let spaceship = spaceship else { return }
     
@@ -83,10 +86,16 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
     updatePosition(for: 0)
     
     preloadParticles()
+    
+    smokeEmitter?.position = CGPoint(x: -spaceship.size.width/2.0, y: 0.0)
+    if let smokeEmitter = smokeEmitter {
+      spaceship.addChild(smokeEmitter)
+    }
   }
   
   func preloadParticles() {
     sparkEmitter = SKEmitterNode(fileNamed: "Spark")
+    smokeEmitter = SKEmitterNode(fileNamed: "Smoke")
   }
   
   func didBegin(_ contact: SKPhysicsContact) {
@@ -98,15 +107,14 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
     emitterCopy.position = spaceship.position
     addChild(emitterCopy)
     
-    emitterCopy.run(SKAction.sequence([SKAction.wait(forDuration: 0.1), SKAction.scale(by: 1.5, duration: 0.1), SKAction.run({
+    emitterCopy.run(SKAction.sequence([SKAction.wait(forDuration: 0.1), SKAction.scale(by: 1.5, duration: 0.2), SKAction.run({
       
       emitterCopy.particleBirthRate = 0;
-      SKAction.wait(forDuration: 0.1)
+      SKAction.wait(forDuration: 1)
       self.impressView?.didFinish()
       SKAction.run {
         emitterCopy.removeFromParent()
       }
-      
     })]))
   }
   
@@ -120,7 +128,9 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
   
   func updatePosition(for percentage: CGFloat) {
     if scrollSpeed > 0 {
-      spaceship?.position = CGPoint(x: -size.width/4.0, y: (percentage)*240-120)
+//      let yPosition: CGFloat = min(120, max(-120, (percentage)*400-120))
+      let yPosition: CGFloat = (percentage)*240-120
+      spaceship?.position = CGPoint(x: -size.width/4.0, y: yPosition)
     }
   }
 }

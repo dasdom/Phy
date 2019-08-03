@@ -2888,8 +2888,8 @@
 									</dict>
 									<dict>
 										<key>Title</key>
-										<string>Beschleunigung.</string>
-										<key>Beschleunigung.</key>
+										<string>Beschleunigung</string>
+										<key>Beschleunigung</key>
 										<string>beschleunigung03.png</string>
 										<key>numberOfSections</key>
 										<string>3</string>
@@ -7490,7 +7490,7 @@
 												<key>noText</key>
 												<true/>
 												<key>ZeitEinh</key>
-												<string>Zeit_einh.png</string>
+												<string>zeit_einh.png</string>
 											</dict>
 											<dict>
 												<key>Title</key>
@@ -11049,7 +11049,7 @@
 													<key>noText</key>
 													<true/>
 													<key>MolmasseEinh</key>
-													<string>molmasse_einh.png</string>
+													<string>molareMasse_einh.png</string>
 												</dict>
 												<dict>
 													<key>Title</key>
@@ -18213,7 +18213,7 @@
 													<key>AbkBool</key>
 													<true/>
 													<key>XAbk</key>
-													<string>x_abk.png</string>
+													<string>X_abk.png</string>
 												</dict>
 											</array>
 											<array>
@@ -18247,7 +18247,7 @@
 													<key>noText</key>
 													<true/>
 													<key>XEinh</key>
-													<string>x_einh.png</string>
+													<string>X_einh.png</string>
 												</dict>
 											</array>
 										</array>
@@ -18973,7 +18973,7 @@
 													<key>AbkBool</key>
 													<true/>
 													<key>XAbk</key>
-													<string>x_abk.png</string>
+													<string>X_abk.png</string>
 												</dict>
 											</array>
 											<array>

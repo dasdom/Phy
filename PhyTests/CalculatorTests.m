@@ -48,6 +48,56 @@
     XCTAssertEqualWithAccuracy(16, [number doubleValue], 0.1);
 }
 
+- (void)test_calcPower_6 {
+    NSDecimalNumber *result = [calculator calculateString:@"(0-1)^(2)"];
+    
+    XCTAssertEqualWithAccuracy(1, [result doubleValue], 0.1);
+}
+
+- (void)test_calcPower_7 {
+    NSDecimalNumber *result = [calculator calculateString:@"(-1)^(2)"];
+    
+    XCTAssertEqualWithAccuracy(1, [result doubleValue], 0.1);
+}
+
+- (void)test_calcPower_8 {
+    NSDecimalNumber *result = [calculator calculateString:@"(1-2)^(2)"];
+    
+    XCTAssertEqualWithAccuracy(1, [result doubleValue], 0.1);
+}
+
+- (void)test_calcPower_9 {
+    NSDecimalNumber *result = [calculator calculateString:@"(-1-1)^(2)"];
+    
+    XCTAssertEqualWithAccuracy(4, [result doubleValue], 0.1);
+}
+
+- (void)test_calcPower_10 {
+    NSDecimalNumber *result = [calculator calculateString:@"2^2"];
+    
+    XCTAssertEqualWithAccuracy(4, [result doubleValue], 0.1);
+}
+
+- (void)test_calcPower_11 {
+    NSDecimalNumber *result = [calculator calculateString:@"2^2.2"];
+    
+    XCTAssertEqualWithAccuracy(4.59479341998814, [result doubleValue], 0.0000000001);
+}
+
+- (void)test_calcPower_12 {
+    NSDecimalNumber *result = [calculator calculateString:@"2.2^2.2"];
+    
+    XCTAssertEqualWithAccuracy(5.666695778750081, [result doubleValue], 0.0000000001);
+}
+
+- (void)test_calcPower_13 {
+    NSDecimalNumber *result = [calculator calculateString:@"2^2e2"];
+    
+    XCTAssertEqualWithAccuracy(1.6069380442589903e+60, [result doubleValue], 1e50);
+}
+
+#pragma mark - Parentheses
+
 - (void)test_calcParentheses_1 {
     NSDecimalNumber *result = [calculator calculateString:@"2×(1-2)"];
     
@@ -58,6 +108,20 @@
     NSDecimalNumber *result = [calculator calculateString:@"2×(2×(1-2))"];
     
     XCTAssertEqualWithAccuracy(-4, [result doubleValue], 0.1);
+}
+
+#pragma mark - Sqrt
+
+- (void)test_calcSqrt_1 {
+    NSDecimalNumber *result = [calculator calculateString:@"sqrt(1)"];
+    
+    XCTAssertEqualWithAccuracy(1, [result doubleValue], 0.0000000001);
+}
+
+- (void)test_calcSqrt_2 {
+    NSDecimalNumber *result = [calculator calculateString:@"sqrt(2)"];
+    
+    XCTAssertEqualWithAccuracy(1.4142135623730951, [result doubleValue], 0.0000000001);
 }
 
 @end

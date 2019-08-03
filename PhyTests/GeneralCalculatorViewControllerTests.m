@@ -96,15 +96,15 @@
 }
 
 - (void)test_insertPlus_whenLastInsertedIsPlus {
-    NSString *calcString = [self calcStringWithInitialCalcString:@"1+_" invokingSelector:@selector(insertBasicCalculation:) fromButtonWithTag:DDHButtonTagPlus];
+    NSString *calcString = [self calcStringWithInitialCalcString:@"1+" invokingSelector:@selector(insertBasicCalculation:) fromButtonWithTag:DDHButtonTagPlus];
     
-    XCTAssertEqualObjects(calcString, @"1+_");
+    XCTAssertEqualObjects(calcString, @"1+");
 }
 
 - (void)test_insertPlus_whenLastInsertedIsMinus {
-    NSString *calcString = [self calcStringWithInitialCalcString:@"1-_" invokingSelector:@selector(insertBasicCalculation:) fromButtonWithTag:DDHButtonTagPlus];
+    NSString *calcString = [self calcStringWithInitialCalcString:@"1-" invokingSelector:@selector(insertBasicCalculation:) fromButtonWithTag:DDHButtonTagPlus];
     
-    XCTAssertEqualObjects(calcString, @"1+_");
+    XCTAssertEqualObjects(calcString, @"1+");
 }
 
 - (void)test_insertMinus {

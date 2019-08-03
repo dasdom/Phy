@@ -1,0 +1,76 @@
+[
+    {
+        "type": "section",
+        "title": "Newtonsche Gesetze",
+        "content": [
+            {
+                "title": "1. Newtonsches Gesetz",
+                "image": "ersterNewton.png",
+                "moreInfo": "ErklaerNewton01"
+            }
+        ]
+    },
+    {
+        "type": "section",
+        "title": "unbeschleunigte Bewegung",
+        "content": [
+            {
+                "formulas": [
+                    {
+                        "title": "(konstante) Geschwindigkeit",
+                        "content": [
+                            {
+                                "title": "Geschwindigkeit",
+                                "image": "geschwindigkeit01.png",
+                                "moreInfo": "ErklaerGeschwindigkeit01",
+                                "calculator": 0,
+                                "stringsAbove": [
+                                    "s in m"
+                                ],
+                                "stringsBelow": [
+                                    "t in s"
+                                ],
+                                "stringZero": "v =",
+                                "unit": "m/s"
+                            }
+                        ]
+                    }
+                ]
+                "meta": [
+                    {
+                        "title": "Abkürzung",
+                        "content": [
+                            {
+                                "title": "GeschwindigkeitAbk",
+                                "image": "geschwindigkeit_abk.png"
+                            },
+                            {
+                                "title": "WegAbk",
+                                "image": "zurueckgelegter_weg_abk.png"
+                            },
+                            {
+                                "title": "ZeitAbk",
+                                "image": "zeit_abk.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Einheiten",
+                        "content": [
+                            {
+                                "title": "GeschwindigkeitEinh",
+                                "image": "geschwindigkeit_einh.png"
+                            },
+                            {
+                                "title": "WegEinh",
+                                "image": "zurueckgelegter_weg_einh.png"
+                            },
+                            {
+                                "title": "ZeitEinh",
+                                "image": "zeit_einh.png"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]

@@ -22,8 +22,8 @@ class ImpressView: UIView, UITextViewDelegate {
     gameView = SKView(frame: gameFrame)
     gameView.ignoresSiblingOrder = true
     
-    gameView.showsFPS = true
-    gameView.showsNodeCount = true
+//    gameView.showsFPS = true
+//    gameView.showsNodeCount = true
     
     textView = UITextView()
     textView.isEditable = false

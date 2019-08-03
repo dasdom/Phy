@@ -5,22 +5,20 @@
 #import <UIKit/UIKit.h>
 
 @interface PhysFormViewController : UITableViewController <UISearchBarDelegate> {
-	NSArray *tableDataSource;
-	NSString *currentTitle;
-	NSInteger currentLevel;
-	NSInteger numberOfSections;
-	NSArray *namesOfSections;
-	NSMutableArray *listOfItems;
-	
-	NSArray *listOfAllItems;
-	
-	UISearchBar *searchBar;
-	
-	UIBarButtonItem *favorites;
-	
-//	UIAlertView *formulaAlert;
-	
-	NSURL *iTunesURL;
+    NSArray *tableDataSource;
+    NSString *currentTitle;
+    NSInteger currentLevel;
+    NSInteger numberOfSections;
+    NSArray *namesOfSections;
+    NSMutableArray *listOfItems;
+    
+    NSArray *listOfAllItems;
+
+    UISearchBar *searchBar;
+
+    UIBarButtonItem *favorites;
+
+    NSURL *iTunesURL;
 }
 @property (nonatomic, strong) NSArray *tableDataSource;
 @property (nonatomic, strong) NSString *currentTitle;

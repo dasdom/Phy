@@ -13,10 +13,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28D7ACF80DDB3853001CB0EB /* PhysFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PhysFormViewController.m */; };
-		F205EA8614ACB9DC001F8AF6 /* CollectionOfElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F205EA8514ACB9DC001F8AF6 /* CollectionOfElementsView.m */; };
-		F205EA8914ACBF2E001F8AF6 /* CollectionOfElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F205EA8814ACBF2E001F8AF6 /* CollectionOfElementsViewController.m */; };
-		F207F31D1144FB8700256864 /* ReferenzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F207F31A1144FB8700256864 /* ReferenzView.m */; };
-		F207F31E1144FB8700256864 /* ReferenzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207F31C1144FB8700256864 /* ReferenzViewController.m */; };
 		F207F4FB1145B67200256864 /* Referenz.plist in Resources */ = {isa = PBXBuildFile; fileRef = F207F4FA1145B67200256864 /* Referenz.plist */; };
 		F20E53A522D9B6D4001794E9 /* Constants.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A422D9B6D4001794E9 /* Constants.xcassets */; };
 		F20E53A722D9B914001794E9 /* Relativity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A622D9B914001794E9 /* Relativity.xcassets */; };
@@ -33,41 +29,17 @@
 		F20E53BD22D9C121001794E9 /* Units.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BC22D9C121001794E9 /* Units.xcassets */; };
 		F20E53BF22D9C284001794E9 /* DecimalPotents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BE22D9C284001794E9 /* DecimalPotents.xcassets */; };
 		F20E53C122D9C6CA001794E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53C022D9C6CA001794E9 /* Assets.xcassets */; };
-		F20F3D8414D42A10007388C0 /* fooDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20F3D8314D42A10007388C0 /* fooDefault@2x.png */; };
-		F2115481160A62D00065A1D4 /* fooDefault-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2115480160A62D00065A1D4 /* fooDefault-568h@2x.png */; };
-		F211D5FF120442C300107F12 /* fooDefaultiPad-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = F211D5FE120442C300107F12 /* fooDefaultiPad-Portrait.png */; };
-		F222169E0FE3EF1400967918 /* drawTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F222169D0FE3EF1400967918 /* drawTest.m */; };
-		F22556F50FC366440003F982 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F22556F40FC366440003F982 /* Icon.png */; };
-		F225570D0FC466150003F982 /* platzhalter.png in Resources */ = {isa = PBXBuildFile; fileRef = F225570C0FC466150003F982 /* platzhalter.png */; };
-		F22D769D123C19DE00F6B84D /* tabbaritem1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22D769C123C19DE00F6B84D /* tabbaritem1@2x.png */; };
-		F22D76CF123C1AE500F6B84D /* tabbaritem0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22D76CE123C1AE500F6B84D /* tabbaritem0@2x.png */; };
-		F22D76DD123C1E1200F6B84D /* tabbaritem2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22D76DC123C1E1200F6B84D /* tabbaritem2@2x.png */; };
-		F22D76E6123C1E8200F6B84D /* tabbaritem3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22D76E5123C1E8200F6B84D /* tabbaritem3@2x.png */; };
-		F22D76E8123C1EDA00F6B84D /* tabbaritem4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22D76E7123C1EDA00F6B84D /* tabbaritem4@2x.png */; };
-		F22D7700123C216A00F6B84D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22D76FF123C216A00F6B84D /* Icon@2x.png */; };
-		F230F29110FD219F0076EE37 /* calc.png in Resources */ = {isa = PBXBuildFile; fileRef = F230F29010FD219F0076EE37 /* calc.png */; };
-		F23699BB0FE8332100C2890F /* GeneralCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23699BA0FE8332100C2890F /* GeneralCalculatorViewController.m */; };
-		F2395285115427F300BC63BA /* fooDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = F2395284115427F300BC63BA /* fooDefault.png */; };
-		F239BAC320F75A6B00612965 /* DHSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F239BAC220F75A6A00612965 /* DHSmartTableViewCell.m */; };
+		F2372E1522F0E3B4003C0605 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F2372E1422F0E3B4003C0605 /* Data.json */; };
+		F2372E4922F5687B003C0605 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F2372E4822F5687A003C0605 /* ReleaseNotes.txt */; };
 		F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */; };
-		F24082F214CB3CA000292D9E /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = F24082EF14CB3CA000292D9E /* icon57.png */; };
-		F24082F314CB3CA000292D9E /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = F24082F014CB3CA000292D9E /* icon72.png */; };
-		F24082F414CB3CA000292D9E /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = F24082F114CB3CA000292D9E /* icon114.png */; };
 		F24E129C22DF4D8000F4038F /* PhyFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = F24E129822DF4D8000F4038F /* PhyFormula.m */; };
 		F24E129D22DF4D8000F4038F /* PhyCollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24E129922DF4D8000F4038F /* PhyCollectionTableViewController.m */; };
 		F24E12A022DF4F4300F4038F /* PhyFormulaSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F24E129F22DF4F4300F4038F /* PhyFormulaSection.m */; };
-		F254F9A60FF6B50700EBBFF8 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F254F9A50FF6B50700EBBFF8 /* whiteButton.png */; };
-		F254F9B90FF773CF00EBBFF8 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F254F9B80FF773CF00EBBFF8 /* blueButton.png */; };
 		F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */; };
 		F2569B350F9E2B0100968581 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2569B340F9E2B0100968581 /* Data.plist */; };
 		F270E2061005DD7000843391 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F270E2041005DD7000843391 /* Localizable.strings */; };
-		F2748C6E11370F7600D2C9D7 /* tabbaritem2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2748C6D11370F7600D2C9D7 /* tabbaritem2.png */; };
-		F2748C88113712A000D2C9D7 /* tabbaritem1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2748C87113712A000D2C9D7 /* tabbaritem1.png */; };
-		F278DEF3101FA1A10035C8CF /* tabbaritem0.png in Resources */ = {isa = PBXBuildFile; fileRef = F278DEF2101FA1A10035C8CF /* tabbaritem0.png */; };
-		F27963FE1143F7BC00B8EBDE /* tabbaritem4.png in Resources */ = {isa = PBXBuildFile; fileRef = F27963FD1143F7BC00B8EBDE /* tabbaritem4.png */; };
 		F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
 		F279640E1143FAFD00B8EBDE /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
-		F27EEE771154D661008449FC /* IconLite.png in Resources */ = {isa = PBXBuildFile; fileRef = F27EEE761154D661008449FC /* IconLite.png */; };
 		F27EEF771154F1F3008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
 		F294101222E7AD1B00379868 /* ImpressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100D22E7AD1B00379868 /* ImpressViewController.swift */; };
 		F294101322E7AD1B00379868 /* ImpressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100E22E7AD1B00379868 /* ImpressView.swift */; };
@@ -75,32 +47,46 @@
 		F294101522E7AD1B00379868 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = F294101022E7AD1B00379868 /* Spark.sks */; };
 		F294101622E7AD1B00379868 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294101122E7AD1B00379868 /* StartScene.swift */; };
 		F29558B320586259001D776D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29558B220586259001D776D /* Launch Screen.storyboard */; };
-		F29558B620615546001D776D /* GeneralCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29558B520615546001D776D /* GeneralCalculatorView.m */; };
 		F2959E111141A1120014525F /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959E101141A1120014525F /* FavoritesViewController.m */; };
 		F2959F0E114249E30014525F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2959F0D114249E30014525F /* libsqlite3.dylib */; };
 		F2959F2711424D200014525F /* DetailFormula.m in Sources */ = {isa = PBXBuildFile; fileRef = F2959F2611424D200014525F /* DetailFormula.m */; };
-		F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29CAD5112AC3E1800139C35 /* Calculator.m */; };
+		F29AEAFE22EA466900EB4E26 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F29AEAFC22EA466900EB4E26 /* Smoke.sks */; };
+		F29AEAFF22EA466900EB4E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29AEAFD22EA466900EB4E26 /* Assets.xcassets */; };
+		F29AEB0A22EB01EE00EB4E26 /* SolverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB0922EB01ED00EB4E26 /* SolverTableViewController.swift */; };
+		F29AEB1222EB024800EB4E26 /* drawTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB0C22EB024800EB4E26 /* drawTest.m */; };
+		F29AEB1322EB024800EB4E26 /* DDHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB0D22EB024800EB4E26 /* DDHBaseTableViewCell.m */; };
+		F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */; };
+		F29AEB1A22EB028300EB4E26 /* ReferenzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1622EB028300EB4E26 /* ReferenzViewController.m */; };
+		F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1922EB028300EB4E26 /* ReferenzView.m */; };
+		F29AEB2322EB02B600EB4E26 /* ConverterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1D22EB02B600EB4E26 /* ConverterModel.m */; };
+		F29AEB2422EB02B600EB4E26 /* ConverterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1E22EB02B600EB4E26 /* ConverterView.m */; };
+		F29AEB2522EB02B600EB4E26 /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1F22EB02B600EB4E26 /* ConverterViewController.m */; };
+		F29AEB2F22EB02FE00EB4E26 /* ChemieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2A22EB02FE00EB4E26 /* ChemieTableViewController.m */; };
+		F29AEB3022EB02FE00EB4E26 /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */; };
+		F29AEB3122EB02FE00EB4E26 /* CollectionOfElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2C22EB02FE00EB4E26 /* CollectionOfElementsView.m */; };
+		F29AEB3222EB02FE00EB4E26 /* CollectionOfElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */; };
+		F29AEB4422EB034E00EB4E26 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3422EB034E00EB4E26 /* Calculator.m */; };
+		F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */; };
+		F29AEB4622EB034E00EB4E26 /* GeneralCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */; };
+		F29AEB4722EB034E00EB4E26 /* CalculatorConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3922EB034E00EB4E26 /* CalculatorConstant.m */; };
+		F29AEB4822EB034E00EB4E26 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3A22EB034E00EB4E26 /* HistoryTableViewController.m */; };
+		F29AEB4922EB034E00EB4E26 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3B22EB034E00EB4E26 /* HistoryTableViewCell.m */; };
+		F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3D22EB034E00EB4E26 /* GeneralCalculatorViewController.m */; };
+		F29AEB4B22EB034E00EB4E26 /* ConstantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3E22EB034E00EB4E26 /* ConstantCell.m */; };
+		F29AEB4D22EB052700EB4E26 /* solver.json in Resources */ = {isa = PBXBuildFile; fileRef = F29AEB4C22EB052700EB4E26 /* solver.json */; };
+		F29AEB4F22EB2C5A00EB4E26 /* Soulver.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29AEB4E22EB2C5A00EB4E26 /* Soulver.xcassets */; };
+		F29AEB5322EB2DB900EB4E26 /* SolverTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5222EB2DB900EB4E26 /* SolverTool.swift */; };
+		F29AEB5522EB2E1F00EB4E26 /* SolverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5422EB2E1F00EB4E26 /* SolverCell.swift */; };
+		F29AEB5722EB2EEA00EB4E26 /* SolverInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5622EB2EEA00EB4E26 /* SolverInput.swift */; };
+		F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5822EB2F2100EB4E26 /* SolverResult.swift */; };
+		F29AEB5B22EB545E00EB4E26 /* SolverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5A22EB545E00EB4E26 /* SolverDetailViewController.swift */; };
+		F29AEB5D22EB54DC00EB4E26 /* SolverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5C22EB54DC00EB4E26 /* SolverDetailView.swift */; };
 		F29F212D22E1EB4400426712 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* CalculatorTests.m */; };
-		F2A120A2149D0D1500AD3215 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */; };
-		F2A120AA149D351700AD3215 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120A9149D351700AD3215 /* HistoryTableViewCell.m */; };
 		F2A120BB149E527100AD3215 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A120BA149E527100AD3215 /* MessageUI.framework */; };
-		F2A120BE149E793100AD3215 /* ChemieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A120BD149E793000AD3215 /* ChemieTableViewController.m */; };
 		F2A120C614A141CF00AD3215 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A120C514A141CF00AD3215 /* CoreText.framework */; };
 		F2AC138913659F62006465C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AC138813659F61006465C7 /* QuartzCore.framework */; };
-		F2B2B0491204BD6300125110 /* Icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B2B0481204BD6300125110 /* Icon~ipad.png */; };
-		F2D2E6E51204D894008B13F1 /* fooDefaultiPad-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D2E6E41204D894008B13F1 /* fooDefaultiPad-Landscape.png */; };
-		F2D4ED8910662A8400AD1905 /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4ED8810662A8400AD1905 /* ElementsDetailViewController.m */; };
-		F2D6A1B0137882CC00766751 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D6A1AF137882CC00766751 /* background2.png */; };
-		F2D84C7622D68B7C00B9DA2A /* ConstantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D84C7522D68B7C00B9DA2A /* ConstantsTableViewController.m */; };
-		F2D84C7922D68BA200B9DA2A /* ConstantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D84C7822D68BA200B9DA2A /* ConstantCell.m */; };
-		F2D84C7C22D68C0600B9DA2A /* CalculatorConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D84C7B22D68C0600B9DA2A /* CalculatorConstant.m */; };
-		F2EA84691146FB520042E35B /* tabbaritem3.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EA84681146FB520042E35B /* tabbaritem3.png */; };
-		F2EB614C113176F900D3A010 /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB614B113176F900D3A010 /* ConverterViewController.m */; };
-		F2EB61531131787300D3A010 /* ConverterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB61521131787300D3A010 /* ConverterView.m */; };
-		F2EB61CF1131802700D3A010 /* ConverterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB61CE1131802700D3A010 /* ConverterModel.m */; };
 		F2F76E4D22DF504900834CA2 /* PhyDiscipline.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E4C22DF504900834CA2 /* PhyDiscipline.m */; };
 		F2F76E5022DF519400834CA2 /* PhyMainSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E4F22DF519400834CA2 /* PhyMainSection.m */; };
-		F2F76E5322DF52FE00834CA2 /* DDHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E5222DF52FE00834CA2 /* DDHBaseTableViewCell.m */; };
 		F2F76E5622DF53E900834CA2 /* PhyMainSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F76E5522DF53E900834CA2 /* PhyMainSectionCell.m */; };
 /* End PBXBuildFile section */
 
@@ -126,14 +112,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PhysForm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysForm_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F205EA8414ACB9DC001F8AF6 /* CollectionOfElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsView.h; sourceTree = "<group>"; };
-		F205EA8514ACB9DC001F8AF6 /* CollectionOfElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsView.m; sourceTree = "<group>"; };
-		F205EA8714ACBF2E001F8AF6 /* CollectionOfElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsViewController.h; sourceTree = "<group>"; };
-		F205EA8814ACBF2E001F8AF6 /* CollectionOfElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsViewController.m; sourceTree = "<group>"; };
-		F207F3191144FB8600256864 /* ReferenzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzView.h; sourceTree = "<group>"; };
-		F207F31A1144FB8700256864 /* ReferenzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenzView.m; sourceTree = "<group>"; };
-		F207F31B1144FB8700256864 /* ReferenzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzViewController.h; sourceTree = "<group>"; };
-		F207F31C1144FB8700256864 /* ReferenzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenzViewController.m; sourceTree = "<group>"; };
 		F207F4FA1145B67200256864 /* Referenz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Referenz.plist; sourceTree = "<group>"; };
 		F20E53A422D9B6D4001794E9 /* Constants.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Constants.xcassets; sourceTree = "<group>"; };
 		F20E53A622D9B914001794E9 /* Relativity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Relativity.xcassets; sourceTree = "<group>"; };
@@ -150,103 +128,97 @@
 		F20E53BC22D9C121001794E9 /* Units.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Units.xcassets; sourceTree = "<group>"; };
 		F20E53BE22D9C284001794E9 /* DecimalPotents.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DecimalPotents.xcassets; sourceTree = "<group>"; };
 		F20E53C022D9C6CA001794E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F20F3D8314D42A10007388C0 /* fooDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fooDefault@2x.png"; sourceTree = "<group>"; };
-		F2115480160A62D00065A1D4 /* fooDefault-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fooDefault-568h@2x.png"; sourceTree = "<group>"; };
-		F211D5FE120442C300107F12 /* fooDefaultiPad-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fooDefaultiPad-Portrait.png"; sourceTree = "<group>"; };
-		F222169C0FE3EF1400967918 /* drawTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawTest.h; sourceTree = "<group>"; };
-		F222169D0FE3EF1400967918 /* drawTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawTest.m; sourceTree = "<group>"; };
-		F22556F40FC366440003F982 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		F225570C0FC466150003F982 /* platzhalter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platzhalter.png; sourceTree = "<group>"; };
-		F22D769C123C19DE00F6B84D /* tabbaritem1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaritem1@2x.png"; sourceTree = "<group>"; };
-		F22D76CE123C1AE500F6B84D /* tabbaritem0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaritem0@2x.png"; sourceTree = "<group>"; };
-		F22D76DC123C1E1200F6B84D /* tabbaritem2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaritem2@2x.png"; sourceTree = "<group>"; };
-		F22D76E5123C1E8200F6B84D /* tabbaritem3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaritem3@2x.png"; sourceTree = "<group>"; };
-		F22D76E7123C1EDA00F6B84D /* tabbaritem4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaritem4@2x.png"; sourceTree = "<group>"; };
-		F22D76FF123C216A00F6B84D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		F230F29010FD219F0076EE37 /* calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calc.png; sourceTree = "<group>"; };
-		F23699B90FE8332100C2890F /* GeneralCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorViewController.h; sourceTree = "<group>"; };
-		F23699BA0FE8332100C2890F /* GeneralCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GeneralCalculatorViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
-		F2395284115427F300BC63BA /* fooDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fooDefault.png; sourceTree = "<group>"; };
-		F239BAC120F75A6A00612965 /* DHSmartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSmartTableViewCell.h; sourceTree = "<group>"; };
-		F239BAC220F75A6A00612965 /* DHSmartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSmartTableViewCell.m; sourceTree = "<group>"; };
+		F2372E1422F0E3B4003C0605 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		F2372E4822F5687A003C0605 /* ReleaseNotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
 		F239BAC820F8C0CD00612965 /* PhyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F239BACC20F8C0CE00612965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorViewControllerTests.m; sourceTree = "<group>"; };
-		F24082EF14CB3CA000292D9E /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
-		F24082F014CB3CA000292D9E /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
-		F24082F114CB3CA000292D9E /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		F24E129822DF4D8000F4038F /* PhyFormula.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhyFormula.m; sourceTree = "<group>"; };
 		F24E129922DF4D8000F4038F /* PhyCollectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhyCollectionTableViewController.m; sourceTree = "<group>"; };
 		F24E129A22DF4D8000F4038F /* PhyFormula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhyFormula.h; sourceTree = "<group>"; };
 		F24E129B22DF4D8000F4038F /* PhyCollectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhyCollectionTableViewController.h; sourceTree = "<group>"; };
 		F24E129E22DF4F4300F4038F /* PhyFormulaSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyFormulaSection.h; sourceTree = "<group>"; };
 		F24E129F22DF4F4300F4038F /* PhyFormulaSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyFormulaSection.m; sourceTree = "<group>"; };
-		F254F9A50FF6B50700EBBFF8 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
-		F254F9B80FF773CF00EBBFF8 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 		F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestignatedCalculaterViewController.h; sourceTree = "<group>"; };
 		F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DestignatedCalculaterViewController.m; sourceTree = "<group>"; };
 		F2569B340F9E2B0100968581 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F270E2051005DD7000843391 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F270E2081005DDE400843391 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; wrapsLines = 1; };
-		F2748C6D11370F7600D2C9D7 /* tabbaritem2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaritem2.png; sourceTree = "<group>"; };
-		F2748C87113712A000D2C9D7 /* tabbaritem1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaritem1.png; sourceTree = "<group>"; };
-		F278DEF2101FA1A10035C8CF /* tabbaritem0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaritem0.png; sourceTree = "<group>"; };
-		F27963FD1143F7BC00B8EBDE /* tabbaritem4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaritem4.png; sourceTree = "<group>"; };
 		F279640B1143FAEA00B8EBDE /* addFormula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addFormula.png; sourceTree = "<group>"; };
 		F279640D1143FAFD00B8EBDE /* favorites.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favorites.db; sourceTree = "<group>"; };
 		F27EEE671154D3A5008449FC /* InfoLite.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoLite.plist; sourceTree = "<group>"; };
-		F27EEE761154D661008449FC /* IconLite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconLite.png; sourceTree = "<group>"; };
 		F27EEF761154F1F3008449FC /* DataLite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataLite.plist; sourceTree = "<group>"; };
 		F294100922E7ACF600379868 /* PhysForm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhysForm-Bridging-Header.h"; sourceTree = "<group>"; };
 		F294100D22E7AD1B00379868 /* ImpressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressViewController.swift; sourceTree = "<group>"; };
 		F294100E22E7AD1B00379868 /* ImpressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressView.swift; sourceTree = "<group>"; };
-		F294100F22E7AD1B00379868 /* CaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaveScene.swift; sourceTree = "<group>"; };
+		F294100F22E7AD1B00379868 /* CaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CaveScene.swift; sourceTree = "<group>"; tabWidth = 2; };
 		F294101022E7AD1B00379868 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
 		F294101122E7AD1B00379868 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		F29558B220586259001D776D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		F29558B420615545001D776D /* GeneralCalculatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorView.h; sourceTree = "<group>"; };
-		F29558B520615546001D776D /* GeneralCalculatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorView.m; sourceTree = "<group>"; };
 		F2959E0F1141A1120014525F /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		F2959E101141A1120014525F /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		F2959F0D114249E30014525F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F2959F2511424D200014525F /* DetailFormula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailFormula.h; sourceTree = "<group>"; };
 		F2959F2611424D200014525F /* DetailFormula.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailFormula.m; sourceTree = "<group>"; };
-		F29CAD5012AC3E1800139C35 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
-		F29CAD5112AC3E1800139C35 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		F29AEAFC22EA466900EB4E26 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
+		F29AEAFD22EA466900EB4E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F29AEB0922EB01ED00EB4E26 /* SolverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SolverTableViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		F29AEB0C22EB024800EB4E26 /* drawTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawTest.m; sourceTree = "<group>"; };
+		F29AEB0D22EB024800EB4E26 /* DDHBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHBaseTableViewCell.m; sourceTree = "<group>"; };
+		F29AEB0E22EB024800EB4E26 /* DHSmartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSmartTableViewCell.h; sourceTree = "<group>"; };
+		F29AEB0F22EB024800EB4E26 /* drawTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawTest.h; sourceTree = "<group>"; };
+		F29AEB1022EB024800EB4E26 /* DDHBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHBaseTableViewCell.h; sourceTree = "<group>"; };
+		F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSmartTableViewCell.m; sourceTree = "<group>"; };
+		F29AEB1622EB028300EB4E26 /* ReferenzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenzViewController.m; sourceTree = "<group>"; };
+		F29AEB1722EB028300EB4E26 /* ReferenzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzView.h; sourceTree = "<group>"; };
+		F29AEB1822EB028300EB4E26 /* ReferenzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzViewController.h; sourceTree = "<group>"; };
+		F29AEB1922EB028300EB4E26 /* ReferenzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenzView.m; sourceTree = "<group>"; };
+		F29AEB1D22EB02B600EB4E26 /* ConverterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterModel.m; sourceTree = "<group>"; };
+		F29AEB1E22EB02B600EB4E26 /* ConverterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterView.m; sourceTree = "<group>"; };
+		F29AEB1F22EB02B600EB4E26 /* ConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterViewController.m; sourceTree = "<group>"; };
+		F29AEB2022EB02B600EB4E26 /* ConverterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterModel.h; sourceTree = "<group>"; };
+		F29AEB2122EB02B600EB4E26 /* ConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterViewController.h; sourceTree = "<group>"; };
+		F29AEB2222EB02B600EB4E26 /* ConverterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterView.h; sourceTree = "<group>"; };
+		F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsViewController.h; sourceTree = "<group>"; };
+		F29AEB2822EB02FE00EB4E26 /* CollectionOfElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsView.h; sourceTree = "<group>"; };
+		F29AEB2922EB02FE00EB4E26 /* ElementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsDetailViewController.h; sourceTree = "<group>"; };
+		F29AEB2A22EB02FE00EB4E26 /* ChemieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChemieTableViewController.m; sourceTree = "<group>"; };
+		F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsDetailViewController.m; sourceTree = "<group>"; };
+		F29AEB2C22EB02FE00EB4E26 /* CollectionOfElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsView.m; sourceTree = "<group>"; };
+		F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsViewController.m; sourceTree = "<group>"; };
+		F29AEB2E22EB02FE00EB4E26 /* ChemieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChemieTableViewController.h; sourceTree = "<group>"; };
+		F29AEB3422EB034E00EB4E26 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantsTableViewController.m; sourceTree = "<group>"; };
+		F29AEB3622EB034E00EB4E26 /* ConstantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantCell.h; sourceTree = "<group>"; };
+		F29AEB3722EB034E00EB4E26 /* GeneralCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorViewController.h; sourceTree = "<group>"; };
+		F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorView.m; sourceTree = "<group>"; };
+		F29AEB3922EB034E00EB4E26 /* CalculatorConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorConstant.m; sourceTree = "<group>"; };
+		F29AEB3A22EB034E00EB4E26 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		F29AEB3B22EB034E00EB4E26 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		F29AEB3C22EB034E00EB4E26 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		F29AEB3D22EB034E00EB4E26 /* GeneralCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorViewController.m; sourceTree = "<group>"; };
+		F29AEB3E22EB034E00EB4E26 /* ConstantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantCell.m; sourceTree = "<group>"; };
+		F29AEB3F22EB034E00EB4E26 /* ConstantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantsTableViewController.h; sourceTree = "<group>"; };
+		F29AEB4022EB034E00EB4E26 /* GeneralCalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorView.h; sourceTree = "<group>"; };
+		F29AEB4122EB034E00EB4E26 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		F29AEB4222EB034E00EB4E26 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		F29AEB4322EB034E00EB4E26 /* CalculatorConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorConstant.h; sourceTree = "<group>"; };
+		F29AEB4C22EB052700EB4E26 /* solver.json */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.json; path = solver.json; sourceTree = "<group>"; tabWidth = 2; };
+		F29AEB4E22EB2C5A00EB4E26 /* Soulver.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Soulver.xcassets; sourceTree = "<group>"; };
+		F29AEB5222EB2DB900EB4E26 /* SolverTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverTool.swift; sourceTree = "<group>"; };
+		F29AEB5422EB2E1F00EB4E26 /* SolverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SolverCell.swift; sourceTree = "<group>"; tabWidth = 2; };
+		F29AEB5622EB2EEA00EB4E26 /* SolverInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverInput.swift; sourceTree = "<group>"; };
+		F29AEB5822EB2F2100EB4E26 /* SolverResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverResult.swift; sourceTree = "<group>"; };
+		F29AEB5A22EB545E00EB4E26 /* SolverDetailViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SolverDetailViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		F29AEB5C22EB54DC00EB4E26 /* SolverDetailView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SolverDetailView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		F29F212C22E1EB4400426712 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
-		F2A120A0149D0D1400AD3215 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
-		F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
-		F2A120A8149D351700AD3215 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
-		F2A120A9149D351700AD3215 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		F2A120BA149E527100AD3215 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		F2A120BC149E793000AD3215 /* ChemieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChemieTableViewController.h; sourceTree = "<group>"; };
-		F2A120BD149E793000AD3215 /* ChemieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChemieTableViewController.m; sourceTree = "<group>"; };
 		F2A120C514A141CF00AD3215 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F2AC138813659F61006465C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		F2B2B0481204BD6300125110 /* Icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~ipad.png"; sourceTree = "<group>"; };
-		F2D2E6E41204D894008B13F1 /* fooDefaultiPad-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fooDefaultiPad-Landscape.png"; sourceTree = "<group>"; };
-		F2D4ED8710662A8400AD1905 /* ElementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsDetailViewController.h; sourceTree = "<group>"; };
-		F2D4ED8810662A8400AD1905 /* ElementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ElementsDetailViewController.m; sourceTree = "<group>"; };
-		F2D6A1AF137882CC00766751 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
-		F2D84C7422D68B7C00B9DA2A /* ConstantsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantsTableViewController.h; sourceTree = "<group>"; };
-		F2D84C7522D68B7C00B9DA2A /* ConstantsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantsTableViewController.m; sourceTree = "<group>"; };
-		F2D84C7722D68BA200B9DA2A /* ConstantCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantCell.h; sourceTree = "<group>"; };
-		F2D84C7822D68BA200B9DA2A /* ConstantCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantCell.m; sourceTree = "<group>"; };
-		F2D84C7A22D68C0600B9DA2A /* CalculatorConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorConstant.h; sourceTree = "<group>"; };
-		F2D84C7B22D68C0600B9DA2A /* CalculatorConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorConstant.m; sourceTree = "<group>"; };
-		F2EA84681146FB520042E35B /* tabbaritem3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaritem3.png; sourceTree = "<group>"; };
-		F2EB614A113176F900D3A010 /* ConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterViewController.h; sourceTree = "<group>"; };
-		F2EB614B113176F900D3A010 /* ConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ConverterViewController.m; sourceTree = "<group>"; };
-		F2EB61511131787300D3A010 /* ConverterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterView.h; sourceTree = "<group>"; };
-		F2EB61521131787300D3A010 /* ConverterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterView.m; sourceTree = "<group>"; };
-		F2EB61CD1131802700D3A010 /* ConverterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterModel.h; sourceTree = "<group>"; };
-		F2EB61CE1131802700D3A010 /* ConverterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterModel.m; sourceTree = "<group>"; };
 		F2F76E4B22DF504900834CA2 /* PhyDiscipline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyDiscipline.h; sourceTree = "<group>"; };
 		F2F76E4C22DF504900834CA2 /* PhyDiscipline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyDiscipline.m; sourceTree = "<group>"; };
 		F2F76E4E22DF519400834CA2 /* PhyMainSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyMainSection.h; sourceTree = "<group>"; };
 		F2F76E4F22DF519400834CA2 /* PhyMainSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyMainSection.m; sourceTree = "<group>"; };
-		F2F76E5122DF52FE00834CA2 /* DDHBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDHBaseTableViewCell.h; sourceTree = "<group>"; };
-		F2F76E5222DF52FE00834CA2 /* DDHBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDHBaseTableViewCell.m; sourceTree = "<group>"; };
 		F2F76E5422DF53E900834CA2 /* PhyMainSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhyMainSectionCell.h; sourceTree = "<group>"; };
 		F2F76E5522DF53E900834CA2 /* PhyMainSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhyMainSectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -284,30 +256,19 @@
 				28D7ACF60DDB3853001CB0EB /* PhysFormViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* PhysFormViewController.m */,
 				F24E129722DF4D8000F4038F /* FormulaCollection */,
-				F222169C0FE3EF1400967918 /* drawTest.h */,
-				F222169D0FE3EF1400967918 /* drawTest.m */,
+				F29AEB3322EB034E00EB4E26 /* Calculator */,
+				F29AEB2622EB02FE00EB4E26 /* Elements */,
+				F29AEB1C22EB02B600EB4E26 /* Converter */,
+				F29AEB1522EB028300EB4E26 /* Reference */,
+				F294100C22E7AD1B00379868 /* Impress */,
+				F29AEB0B22EB024800EB4E26 /* Helper */,
+				F29AEB0822EB01ED00EB4E26 /* Soulver */,
 				F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */,
 				F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */,
-				F2F76E5122DF52FE00834CA2 /* DDHBaseTableViewCell.h */,
-				F2F76E5222DF52FE00834CA2 /* DDHBaseTableViewCell.m */,
-				F2A120A7149D34B900AD3215 /* Calculator */,
-				F2A120BC149E793000AD3215 /* ChemieTableViewController.h */,
-				F2A120BD149E793000AD3215 /* ChemieTableViewController.m */,
-				F2D4ED8710662A8400AD1905 /* ElementsDetailViewController.h */,
-				F2D4ED8810662A8400AD1905 /* ElementsDetailViewController.m */,
-				F205EA8714ACBF2E001F8AF6 /* CollectionOfElementsViewController.h */,
-				F205EA8814ACBF2E001F8AF6 /* CollectionOfElementsViewController.m */,
-				F205EA8414ACB9DC001F8AF6 /* CollectionOfElementsView.h */,
-				F205EA8514ACB9DC001F8AF6 /* CollectionOfElementsView.m */,
-				F239BAC120F75A6A00612965 /* DHSmartTableViewCell.h */,
-				F239BAC220F75A6A00612965 /* DHSmartTableViewCell.m */,
-				F207F3181144FA9E00256864 /* Converter */,
-				F207F31F1144FB9A00256864 /* Referenz */,
 				F2959E0F1141A1120014525F /* FavoritesViewController.h */,
 				F2959E101141A1120014525F /* FavoritesViewController.m */,
 				F2959F2511424D200014525F /* DetailFormula.h */,
 				F2959F2611424D200014525F /* DetailFormula.m */,
-				F294100C22E7AD1B00379868 /* Impress */,
 				F294100922E7ACF600379868 /* PhysForm-Bridging-Header.h */,
 			);
 			path = Classes;
@@ -350,17 +311,12 @@
 			children = (
 				F279640D1143FAFD00B8EBDE /* favorites.db */,
 				F279640B1143FAEA00B8EBDE /* addFormula.png */,
-				F223BDAC0FA2E1130053C773 /* Images */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				F2569B340F9E2B0100968581 /* Data.plist */,
 				F27EEF761154F1F3008449FC /* DataLite.plist */,
 				F207F4FA1145B67200256864 /* Referenz.plist */,
+				F2372E1422F0E3B4003C0605 /* Data.json */,
 				F270E2041005DD7000843391 /* Localizable.strings */,
-				F2395284115427F300BC63BA /* fooDefault.png */,
-				F20F3D8314D42A10007388C0 /* fooDefault@2x.png */,
-				F2115480160A62D00065A1D4 /* fooDefault-568h@2x.png */,
-				F211D5FE120442C300107F12 /* fooDefaultiPad-Portrait.png */,
-				F2D2E6E41204D894008B13F1 /* fooDefaultiPad-Landscape.png */,
 				F29558B220586259001D776D /* Launch Screen.storyboard */,
 				F27EEE671154D3A5008449FC /* InfoLite.plist */,
 				F20E53C022D9C6CA001794E9 /* Assets.xcassets */,
@@ -378,6 +334,8 @@
 				F20E53BA22D9C0D8001794E9 /* Mathematics.xcassets */,
 				F20E53BC22D9C121001794E9 /* Units.xcassets */,
 				F20E53BE22D9C284001794E9 /* DecimalPotents.xcassets */,
+				F29AEB4E22EB2C5A00EB4E26 /* Soulver.xcassets */,
+				F2372E4822F5687A003C0605 /* ReleaseNotes.txt */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -394,59 +352,6 @@
 				F2AC138813659F61006465C7 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F207F3181144FA9E00256864 /* Converter */ = {
-			isa = PBXGroup;
-			children = (
-				F2EB61CD1131802700D3A010 /* ConverterModel.h */,
-				F2EB61CE1131802700D3A010 /* ConverterModel.m */,
-				F2EB61511131787300D3A010 /* ConverterView.h */,
-				F2EB61521131787300D3A010 /* ConverterView.m */,
-				F2EB614A113176F900D3A010 /* ConverterViewController.h */,
-				F2EB614B113176F900D3A010 /* ConverterViewController.m */,
-			);
-			name = Converter;
-			sourceTree = "<group>";
-		};
-		F207F31F1144FB9A00256864 /* Referenz */ = {
-			isa = PBXGroup;
-			children = (
-				F207F3191144FB8600256864 /* ReferenzView.h */,
-				F207F31A1144FB8700256864 /* ReferenzView.m */,
-				F207F31B1144FB8700256864 /* ReferenzViewController.h */,
-				F207F31C1144FB8700256864 /* ReferenzViewController.m */,
-			);
-			name = Referenz;
-			sourceTree = "<group>";
-		};
-		F223BDAC0FA2E1130053C773 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				F2D6A1AF137882CC00766751 /* background2.png */,
-				F22D76E7123C1EDA00F6B84D /* tabbaritem4@2x.png */,
-				F22D76E5123C1E8200F6B84D /* tabbaritem3@2x.png */,
-				F22D76DC123C1E1200F6B84D /* tabbaritem2@2x.png */,
-				F22D76CE123C1AE500F6B84D /* tabbaritem0@2x.png */,
-				F2EA84681146FB520042E35B /* tabbaritem3.png */,
-				F22D769C123C19DE00F6B84D /* tabbaritem1@2x.png */,
-				F27963FD1143F7BC00B8EBDE /* tabbaritem4.png */,
-				F2748C87113712A000D2C9D7 /* tabbaritem1.png */,
-				F2748C6D11370F7600D2C9D7 /* tabbaritem2.png */,
-				F230F29010FD219F0076EE37 /* calc.png */,
-				F278DEF2101FA1A10035C8CF /* tabbaritem0.png */,
-				F254F9B80FF773CF00EBBFF8 /* blueButton.png */,
-				F254F9A50FF6B50700EBBFF8 /* whiteButton.png */,
-				F22556F40FC366440003F982 /* Icon.png */,
-				F22D76FF123C216A00F6B84D /* Icon@2x.png */,
-				F2B2B0481204BD6300125110 /* Icon~ipad.png */,
-				F27EEE761154D661008449FC /* IconLite.png */,
-				F225570C0FC466150003F982 /* platzhalter.png */,
-				F24082EF14CB3CA000292D9E /* icon57.png */,
-				F24082F014CB3CA000292D9E /* icon72.png */,
-				F24082F114CB3CA000292D9E /* icon114.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		F239BAC920F8C0CE00612965 /* PhyTests */ = {
@@ -485,32 +390,101 @@
 				F294100E22E7AD1B00379868 /* ImpressView.swift */,
 				F294100F22E7AD1B00379868 /* CaveScene.swift */,
 				F294101022E7AD1B00379868 /* Spark.sks */,
+				F29AEAFC22EA466900EB4E26 /* Smoke.sks */,
+				F29AEAFD22EA466900EB4E26 /* Assets.xcassets */,
 				F294101122E7AD1B00379868 /* StartScene.swift */,
 			);
 			path = Impress;
 			sourceTree = "<group>";
 		};
-		F2A120A7149D34B900AD3215 /* Calculator */ = {
+		F29AEB0822EB01ED00EB4E26 /* Soulver */ = {
 			isa = PBXGroup;
 			children = (
-				F29CAD5012AC3E1800139C35 /* Calculator.h */,
-				F29CAD5112AC3E1800139C35 /* Calculator.m */,
-				F23699B90FE8332100C2890F /* GeneralCalculatorViewController.h */,
-				F23699BA0FE8332100C2890F /* GeneralCalculatorViewController.m */,
-				F29558B420615545001D776D /* GeneralCalculatorView.h */,
-				F29558B520615546001D776D /* GeneralCalculatorView.m */,
-				F2A120A0149D0D1400AD3215 /* HistoryTableViewController.h */,
-				F2A120A1149D0D1500AD3215 /* HistoryTableViewController.m */,
-				F2A120A8149D351700AD3215 /* HistoryTableViewCell.h */,
-				F2A120A9149D351700AD3215 /* HistoryTableViewCell.m */,
-				F2D84C7422D68B7C00B9DA2A /* ConstantsTableViewController.h */,
-				F2D84C7522D68B7C00B9DA2A /* ConstantsTableViewController.m */,
-				F2D84C7722D68BA200B9DA2A /* ConstantCell.h */,
-				F2D84C7822D68BA200B9DA2A /* ConstantCell.m */,
-				F2D84C7A22D68C0600B9DA2A /* CalculatorConstant.h */,
-				F2D84C7B22D68C0600B9DA2A /* CalculatorConstant.m */,
+				F29AEB0922EB01ED00EB4E26 /* SolverTableViewController.swift */,
+				F29AEB5422EB2E1F00EB4E26 /* SolverCell.swift */,
+				F29AEB5A22EB545E00EB4E26 /* SolverDetailViewController.swift */,
+				F29AEB5C22EB54DC00EB4E26 /* SolverDetailView.swift */,
+				F29AEB5222EB2DB900EB4E26 /* SolverTool.swift */,
+				F29AEB5622EB2EEA00EB4E26 /* SolverInput.swift */,
+				F29AEB5822EB2F2100EB4E26 /* SolverResult.swift */,
+				F29AEB4C22EB052700EB4E26 /* solver.json */,
 			);
-			name = Calculator;
+			path = Soulver;
+			sourceTree = "<group>";
+		};
+		F29AEB0B22EB024800EB4E26 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F29AEB0C22EB024800EB4E26 /* drawTest.m */,
+				F29AEB0D22EB024800EB4E26 /* DDHBaseTableViewCell.m */,
+				F29AEB0E22EB024800EB4E26 /* DHSmartTableViewCell.h */,
+				F29AEB0F22EB024800EB4E26 /* drawTest.h */,
+				F29AEB1022EB024800EB4E26 /* DDHBaseTableViewCell.h */,
+				F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F29AEB1522EB028300EB4E26 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				F29AEB1622EB028300EB4E26 /* ReferenzViewController.m */,
+				F29AEB1722EB028300EB4E26 /* ReferenzView.h */,
+				F29AEB1822EB028300EB4E26 /* ReferenzViewController.h */,
+				F29AEB1922EB028300EB4E26 /* ReferenzView.m */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		F29AEB1C22EB02B600EB4E26 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				F29AEB2022EB02B600EB4E26 /* ConverterModel.h */,
+				F29AEB1D22EB02B600EB4E26 /* ConverterModel.m */,
+				F29AEB2122EB02B600EB4E26 /* ConverterViewController.h */,
+				F29AEB1F22EB02B600EB4E26 /* ConverterViewController.m */,
+				F29AEB2222EB02B600EB4E26 /* ConverterView.h */,
+				F29AEB1E22EB02B600EB4E26 /* ConverterView.m */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		F29AEB2622EB02FE00EB4E26 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */,
+				F29AEB2822EB02FE00EB4E26 /* CollectionOfElementsView.h */,
+				F29AEB2922EB02FE00EB4E26 /* ElementsDetailViewController.h */,
+				F29AEB2A22EB02FE00EB4E26 /* ChemieTableViewController.m */,
+				F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */,
+				F29AEB2C22EB02FE00EB4E26 /* CollectionOfElementsView.m */,
+				F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */,
+				F29AEB2E22EB02FE00EB4E26 /* ChemieTableViewController.h */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		F29AEB3322EB034E00EB4E26 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				F29AEB3C22EB034E00EB4E26 /* Calculator.h */,
+				F29AEB3422EB034E00EB4E26 /* Calculator.m */,
+				F29AEB4322EB034E00EB4E26 /* CalculatorConstant.h */,
+				F29AEB3922EB034E00EB4E26 /* CalculatorConstant.m */,
+				F29AEB3622EB034E00EB4E26 /* ConstantCell.h */,
+				F29AEB3E22EB034E00EB4E26 /* ConstantCell.m */,
+				F29AEB3F22EB034E00EB4E26 /* ConstantsTableViewController.h */,
+				F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */,
+				F29AEB4022EB034E00EB4E26 /* GeneralCalculatorView.h */,
+				F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */,
+				F29AEB3722EB034E00EB4E26 /* GeneralCalculatorViewController.h */,
+				F29AEB3D22EB034E00EB4E26 /* GeneralCalculatorViewController.m */,
+				F29AEB4122EB034E00EB4E26 /* HistoryTableViewCell.h */,
+				F29AEB3B22EB034E00EB4E26 /* HistoryTableViewCell.m */,
+				F29AEB4222EB034E00EB4E26 /* HistoryTableViewController.h */,
+				F29AEB3A22EB034E00EB4E26 /* HistoryTableViewController.m */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		F2D8687B11C6CE27000DC559 /* Resources-iPad */ = {
@@ -608,54 +582,33 @@
 			files = (
 				F2569B350F9E2B0100968581 /* Data.plist in Resources */,
 				F294101522E7AD1B00379868 /* Spark.sks in Resources */,
-				F22556F50FC366440003F982 /* Icon.png in Resources */,
-				F225570D0FC466150003F982 /* platzhalter.png in Resources */,
+				F29AEB4F22EB2C5A00EB4E26 /* Soulver.xcassets in Resources */,
 				F20E53AD22D9B9FE001794E9 /* Thermodynamics.xcassets in Resources */,
-				F254F9A60FF6B50700EBBFF8 /* whiteButton.png in Resources */,
-				F254F9B90FF773CF00EBBFF8 /* blueButton.png in Resources */,
+				F29AEAFF22EA466900EB4E26 /* Assets.xcassets in Resources */,
 				F20E53B922D9C0A1001794E9 /* Fluidmechanics.xcassets in Resources */,
 				F270E2061005DD7000843391 /* Localizable.strings in Resources */,
-				F278DEF3101FA1A10035C8CF /* tabbaritem0.png in Resources */,
 				F29558B320586259001D776D /* Launch Screen.storyboard in Resources */,
 				F20E53BF22D9C284001794E9 /* DecimalPotents.xcassets in Resources */,
-				F230F29110FD219F0076EE37 /* calc.png in Resources */,
 				F20E53B722D9BFA2001794E9 /* AtomPhysics.xcassets in Resources */,
-				F2748C6E11370F7600D2C9D7 /* tabbaritem2.png in Resources */,
-				F2748C88113712A000D2C9D7 /* tabbaritem1.png in Resources */,
-				F27963FE1143F7BC00B8EBDE /* tabbaritem4.png in Resources */,
 				F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */,
+				F2372E1522F0E3B4003C0605 /* Data.json in Resources */,
 				F279640E1143FAFD00B8EBDE /* favorites.db in Resources */,
 				F207F4FB1145B67200256864 /* Referenz.plist in Resources */,
-				F2EA84691146FB520042E35B /* tabbaritem3.png in Resources */,
-				F2395285115427F300BC63BA /* fooDefault.png in Resources */,
-				F27EEE771154D661008449FC /* IconLite.png in Resources */,
 				F27EEF771154F1F3008449FC /* DataLite.plist in Resources */,
 				F20E53AF22D9BB09001794E9 /* Electrodynamics.xcassets in Resources */,
 				F20E53A922D9B94C001794E9 /* Mechanics.xcassets in Resources */,
 				F20E53C122D9C6CA001794E9 /* Assets.xcassets in Resources */,
 				F20E53B522D9BF18001794E9 /* QuantumPhysics.xcassets in Resources */,
-				F211D5FF120442C300107F12 /* fooDefaultiPad-Portrait.png in Resources */,
-				F2B2B0491204BD6300125110 /* Icon~ipad.png in Resources */,
-				F2D2E6E51204D894008B13F1 /* fooDefaultiPad-Landscape.png in Resources */,
 				F20E53B322D9BEBC001794E9 /* WaveOptics.xcassets in Resources */,
+				F29AEB4D22EB052700EB4E26 /* solver.json in Resources */,
 				F20E53B122D9BD04001794E9 /* LinearOptics.xcassets in Resources */,
 				F20E53A522D9B6D4001794E9 /* Constants.xcassets in Resources */,
 				F20E53BB22D9C0D8001794E9 /* Mathematics.xcassets in Resources */,
-				F22D769D123C19DE00F6B84D /* tabbaritem1@2x.png in Resources */,
-				F22D76CF123C1AE500F6B84D /* tabbaritem0@2x.png in Resources */,
-				F22D76DD123C1E1200F6B84D /* tabbaritem2@2x.png in Resources */,
-				F22D76E6123C1E8200F6B84D /* tabbaritem3@2x.png in Resources */,
-				F22D76E8123C1EDA00F6B84D /* tabbaritem4@2x.png in Resources */,
-				F22D7700123C216A00F6B84D /* Icon@2x.png in Resources */,
 				F20E53A722D9B914001794E9 /* Relativity.xcassets in Resources */,
+				F2372E4922F5687B003C0605 /* ReleaseNotes.txt in Resources */,
 				F20E53BD22D9C121001794E9 /* Units.xcassets in Resources */,
 				F20E53AB22D9B99A001794E9 /* Lagrange.xcassets in Resources */,
-				F2D6A1B0137882CC00766751 /* background2.png in Resources */,
-				F24082F214CB3CA000292D9E /* icon57.png in Resources */,
-				F24082F314CB3CA000292D9E /* icon72.png in Resources */,
-				F24082F414CB3CA000292D9E /* icon114.png in Resources */,
-				F20F3D8414D42A10007388C0 /* fooDefault@2x.png in Resources */,
-				F2115481160A62D00065A1D4 /* fooDefault-568h@2x.png in Resources */,
+				F29AEAFE22EA466900EB4E26 /* Smoke.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,42 +626,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */,
+				F29AEB3022EB02FE00EB4E26 /* ElementsDetailViewController.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				F29AEB1222EB024800EB4E26 /* drawTest.m in Sources */,
 				1D3623260D0F684500981E51 /* PhysFormAppDelegate.m in Sources */,
-				F2F76E5322DF52FE00834CA2 /* DDHBaseTableViewCell.m in Sources */,
+				F29AEB1322EB024800EB4E26 /* DDHBaseTableViewCell.m in Sources */,
+				F29AEB0A22EB01EE00EB4E26 /* SolverTableViewController.swift in Sources */,
+				F29AEB4B22EB034E00EB4E26 /* ConstantCell.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* PhysFormViewController.m in Sources */,
 				F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */,
-				F222169E0FE3EF1400967918 /* drawTest.m in Sources */,
-				F239BAC320F75A6B00612965 /* DHSmartTableViewCell.m in Sources */,
+				F29AEB4422EB034E00EB4E26 /* Calculator.m in Sources */,
+				F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */,
 				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
-				F23699BB0FE8332100C2890F /* GeneralCalculatorViewController.m in Sources */,
-				F2D4ED8910662A8400AD1905 /* ElementsDetailViewController.m in Sources */,
-				F2EB614C113176F900D3A010 /* ConverterViewController.m in Sources */,
-				F2EB61531131787300D3A010 /* ConverterView.m in Sources */,
-				F2EB61CF1131802700D3A010 /* ConverterModel.m in Sources */,
-				F2D84C7622D68B7C00B9DA2A /* ConstantsTableViewController.m in Sources */,
+				F29AEB5D22EB54DC00EB4E26 /* SolverDetailView.swift in Sources */,
+				F29AEB5522EB2E1F00EB4E26 /* SolverCell.swift in Sources */,
+				F29AEB1A22EB028300EB4E26 /* ReferenzViewController.m in Sources */,
+				F29AEB5322EB2DB900EB4E26 /* SolverTool.swift in Sources */,
+				F29AEB2322EB02B600EB4E26 /* ConverterModel.m in Sources */,
+				F29AEB2422EB02B600EB4E26 /* ConverterView.m in Sources */,
+				F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */,
+				F29AEB2522EB02B600EB4E26 /* ConverterViewController.m in Sources */,
+				F29AEB2F22EB02FE00EB4E26 /* ChemieTableViewController.m in Sources */,
+				F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */,
 				F2959E111141A1120014525F /* FavoritesViewController.m in Sources */,
 				F2959F2711424D200014525F /* DetailFormula.m in Sources */,
 				F294101222E7AD1B00379868 /* ImpressViewController.swift in Sources */,
+				F29AEB4622EB034E00EB4E26 /* GeneralCalculatorView.m in Sources */,
+				F29AEB5B22EB545E00EB4E26 /* SolverDetailViewController.swift in Sources */,
+				F29AEB4822EB034E00EB4E26 /* HistoryTableViewController.m in Sources */,
 				F294101322E7AD1B00379868 /* ImpressView.swift in Sources */,
-				F207F31D1144FB8700256864 /* ReferenzView.m in Sources */,
-				F207F31E1144FB8700256864 /* ReferenzViewController.m in Sources */,
-				F29CAD5212AC3E1800139C35 /* Calculator.m in Sources */,
-				F2A120A2149D0D1500AD3215 /* HistoryTableViewController.m in Sources */,
+				F29AEB3222EB02FE00EB4E26 /* CollectionOfElementsViewController.m in Sources */,
+				F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */,
+				F29AEB4922EB034E00EB4E26 /* HistoryTableViewCell.m in Sources */,
 				F24E12A022DF4F4300F4038F /* PhyFormulaSection.m in Sources */,
-				F2A120AA149D351700AD3215 /* HistoryTableViewCell.m in Sources */,
 				F2F76E5022DF519400834CA2 /* PhyMainSection.m in Sources */,
-				F2D84C7922D68BA200B9DA2A /* ConstantCell.m in Sources */,
 				F24E129C22DF4D8000F4038F /* PhyFormula.m in Sources */,
 				F24E129D22DF4D8000F4038F /* PhyCollectionTableViewController.m in Sources */,
+				F29AEB4722EB034E00EB4E26 /* CalculatorConstant.m in Sources */,
+				F29AEB3122EB02FE00EB4E26 /* CollectionOfElementsView.m in Sources */,
 				F294101422E7AD1B00379868 /* CaveScene.swift in Sources */,
-				F2A120BE149E793100AD3215 /* ChemieTableViewController.m in Sources */,
 				F2F76E5622DF53E900834CA2 /* PhyMainSectionCell.m in Sources */,
-				F205EA8614ACB9DC001F8AF6 /* CollectionOfElementsView.m in Sources */,
-				F2D84C7C22D68C0600B9DA2A /* CalculatorConstant.m in Sources */,
-				F205EA8914ACBF2E001F8AF6 /* CollectionOfElementsViewController.m in Sources */,
 				F2F76E4D22DF504900834CA2 /* PhyDiscipline.m in Sources */,
-				F29558B620615546001D776D /* GeneralCalculatorView.m in Sources */,
+				F29AEB5722EB2EEA00EB4E26 /* SolverInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
