@@ -37,7 +37,7 @@ class SolverDetailViewController: UIViewController, CalculateProtocol {
     
     let inputs = contentView.inputs
     
-    guard inputs.count == tool.input.count else { fatalError() }
+    guard inputs.count == tool.inputs.count else { fatalError() }
     
     var results: [String] = []
     
@@ -45,7 +45,7 @@ class SolverDetailViewController: UIViewController, CalculateProtocol {
       
       var formulaString = result.formula
       
-      for (idx, input) in tool.input.enumerated() {
+      for (idx, input) in tool.inputs.enumerated() {
         let userInput = inputs[idx]
         formulaString = formulaString.replacingOccurrences(of: "#\(input.id)", with: userInput)
       }

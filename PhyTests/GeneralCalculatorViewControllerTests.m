@@ -348,19 +348,19 @@
 - (void)test_insertPower1 {
     NSString *calcString = [self calcStringWithInitialCalcString:@"1+1.2_2" invokingSelector:@selector(insertFunction:) fromButtonWithTag:DDHButtonTagPower];
 
-    XCTAssertEqualObjects(calcString, @"1+1.2^(2");
+    XCTAssertEqualObjects(calcString, @"1+1.2^2");
 }
 
 - (void)test_insertPower2 {
     NSString *calcString = [self calcStringWithInitialCalcString:@"1.2_2" invokingSelector:@selector(insertFunction:) fromButtonWithTag:DDHButtonTagPower];
 
-    XCTAssertEqualObjects(calcString, @"1.2^(2");
+    XCTAssertEqualObjects(calcString, @"1.2^2");
 }
 
 - (void)test_insertPower3 {
     NSString *calcString = [self calcStringWithInitialCalcString:@"2_2" invokingSelector:@selector(insertFunction:) fromButtonWithTag:DDHButtonTagPower];
     
-    XCTAssertEqualObjects(calcString, @"2^(2");
+    XCTAssertEqualObjects(calcString, @"2^2");
 }
 
 - (void)test_insertE {

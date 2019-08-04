@@ -9,9 +9,6 @@
 #import "PhysFormAppDelegate.h"
 #import "PhysFormViewController.h"
 #import "DetailFormula.h"
-#import "PhyFormula.h"
-#import "PhyFormulaSection.h"
-#import "PhyDiscipline.h"
 #import "Phy-Swift.h"
 
 @implementation PhysFormAppDelegate
@@ -162,64 +159,64 @@
     return true;
 }
 
-- (id)itemFromDict:(NSDictionary *)dict {
-    NSArray *namesOfSections = dict[@"namesOfSections"];
-    NSArray *childArray = dict[@"Child"];
-    
-    if ([childArray count] < 1) {
-        PhyFormula *formula = [[PhyFormula alloc] init];
-        formula.name = dict[@"Title"];
-        formula.imageName = dict[formula.name];
-        NSLog(@"formula: %@", formula);
-        return formula;
-    }
-    
-    if ([childArray isKindOfClass:[NSDictionary class]]) {
-        NSLog(@"***********************************************");
-        NSLog(@"* Needs implementation !!!!");
-        NSLog(@"***********************************************");
-        return nil;
-    }
-    
-    NSMutableArray *sections = [[NSMutableArray alloc] init];
-    
-    [childArray enumerateObjectsUsingBlock:^(NSArray *sectionsArray, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        NSMutableArray *items = [[NSMutableArray alloc] init];
-        
-        if ([sectionsArray isKindOfClass:[NSDictionary class]]) {
-            
-            id item = [self itemFromDict:(NSDictionary *)sectionsArray];
-            
-            [items addObject:item];
-        } else {
-            NSLog(@"=======================================");
-            NSLog(@"sectionsArray: %@", sectionsArray);
-            NSLog(@"=======================================");
-            
-            [sectionsArray enumerateObjectsUsingBlock:^(NSDictionary *sectionDict, NSUInteger idx_2, BOOL * _Nonnull stop_2) {
-                
-                id item = [self itemFromDict:sectionDict];
-                
-                [items addObject:item];
-            }];
-        }
-        
-        if ([items.firstObject isKindOfClass:[PhyFormula class]]) {
-            PhyFormulaSection *formulaSection = [[PhyFormulaSection alloc] init];
-            formulaSection.name = namesOfSections[idx];
-            formulaSection.formulas = items;
-            [sections addObject:formulaSection];
-        }
-
-    }];
-    
-    PhyDiscipline *formulaDiscripline = [[PhyDiscipline alloc] init];
-    formulaDiscripline.name = dict[@"Title"];
-    formulaDiscripline.sections = sections;
-    
-    return formulaDiscripline;
-}
+//- (id)itemFromDict:(NSDictionary *)dict {
+//    NSArray *namesOfSections = dict[@"namesOfSections"];
+//    NSArray *childArray = dict[@"Child"];
+//    
+//    if ([childArray count] < 1) {
+//        PhyFormula *formula = [[PhyFormula alloc] init];
+//        formula.name = dict[@"Title"];
+//        formula.imageName = dict[formula.name];
+//        NSLog(@"formula: %@", formula);
+//        return formula;
+//    }
+//    
+//    if ([childArray isKindOfClass:[NSDictionary class]]) {
+//        NSLog(@"***********************************************");
+//        NSLog(@"* Needs implementation !!!!");
+//        NSLog(@"***********************************************");
+//        return nil;
+//    }
+//    
+//    NSMutableArray *sections = [[NSMutableArray alloc] init];
+//    
+//    [childArray enumerateObjectsUsingBlock:^(NSArray *sectionsArray, NSUInteger idx, BOOL * _Nonnull stop) {
+//        
+//        NSMutableArray *items = [[NSMutableArray alloc] init];
+//        
+//        if ([sectionsArray isKindOfClass:[NSDictionary class]]) {
+//            
+//            id item = [self itemFromDict:(NSDictionary *)sectionsArray];
+//            
+//            [items addObject:item];
+//        } else {
+//            NSLog(@"=======================================");
+//            NSLog(@"sectionsArray: %@", sectionsArray);
+//            NSLog(@"=======================================");
+//            
+//            [sectionsArray enumerateObjectsUsingBlock:^(NSDictionary *sectionDict, NSUInteger idx_2, BOOL * _Nonnull stop_2) {
+//                
+//                id item = [self itemFromDict:sectionDict];
+//                
+//                [items addObject:item];
+//            }];
+//        }
+//        
+//        if ([items.firstObject isKindOfClass:[PhyFormula class]]) {
+//            PhyFormulaSection *formulaSection = [[PhyFormulaSection alloc] init];
+//            formulaSection.name = namesOfSections[idx];
+//            formulaSection.formulas = items;
+//            [sections addObject:formulaSection];
+//        }
+//
+//    }];
+//    
+//    PhyDiscipline *formulaDiscripline = [[PhyDiscipline alloc] init];
+//    formulaDiscripline.name = dict[@"Title"];
+//    formulaDiscripline.sections = sections;
+//    
+//    return formulaDiscripline;
+//}
 
 - (void)copyDatabaseIfNeeded {
 	NSFileManager *fileManager = [NSFileManager defaultManager];

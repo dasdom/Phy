@@ -1,9 +1,31 @@
 require 'plist'
 require 'pp'
+require 'json'
 
 def formula_from_hash(raw_hash)
     title = raw_hash['Title']
-    formula = {'title' => title, 'imageName' => raw_hash[title]}
+    formula = {:title => title, :imageName => raw_hash[title]}
+
+    child = raw_hash['Child']
+    unless child.nil?
+        detail_sections = []
+        namesOfSections = raw_hash['namesOfSections']
+        child.each_with_index { |a, index|
+            rows = []
+            a.each { |b|
+                title = b['Title']
+                row = {:imageName => b[title]}
+                if title.include? 'Abk'
+                    row[:title] = title
+                end
+                rows << row
+            }
+            detail_sections << {:title => namesOfSections[index], :detailItems => rows}
+        }
+        formula['details'] = detail_sections
+    end
+
+    return formula
 end
 
 xmlFile = ARGV[0]
@@ -51,15 +73,15 @@ mechanics_dict['Child'].first.each { |b|
 
         puts section_title
 
-        formula_sections << {'title' => section_title, 'formulas' => formulas}
+        formula_sections << {:title => section_title, :formulas => formulas}
     }
     
     if formulas_without_section.count > 0
-        formula_sections << {'title' => 'None', 'formulas' => formulas_without_section}
+        formula_sections << {:title => 'None', :formulas => formulas_without_section}
         formulas_without_section = []
     end
 
-    special_fields << {'title' => title, 'formulaSections' => formula_sections}
+    special_fields << {:title => title, :formulaSections => formula_sections}
 }
 
 puts '-------------------------------------------'
@@ -75,6 +97,10 @@ puts '-------------------------------------------'
 #}
 
 pp special_fields
+
+json = JSON.generate(special_fields)
+
+File.open('data.json', 'w') { |file| file.write(json) }
 
 special_field_sections.append(special_fields)
 #}

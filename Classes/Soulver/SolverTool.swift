@@ -9,8 +9,8 @@ struct SolverTools : Codable {
 }
 
 struct SolverTool : Codable {
-    let title: String
+    var title: String?
     let imageName: String
-    let input: [SolverInput]
-    let results: [SolverResult]
+    var inputs: [SolverInput]
+    var results: [SolverResult]
 }

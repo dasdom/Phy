@@ -45,7 +45,7 @@ class SolverDetailView: UIView, UITextFieldDelegate {
     inputStackView.axis = .vertical
     inputStackView.spacing = 5
     
-    for input in tool.input {
+    for input in tool.inputs {
       
       let rowImage = UIImage(named: input.imageName)
       let rowImageView = UIImageView(image: rowImage)

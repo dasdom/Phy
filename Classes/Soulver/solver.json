@@ -4,7 +4,7 @@
     {
       "title": "abc-Formel",
       "imageName": "abc_formula",
-      "input": [
+      "inputs": [
         {
           "id": "a",
           "imageName": "a_semicolon",
@@ -35,7 +35,7 @@
     {
       "title": "pq-Formel",
       "imageName": "pq_formula",
-      "input": [
+      "inputs": [
         {
           "id": "p",
           "imageName": "p_colon",

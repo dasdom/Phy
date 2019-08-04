@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct SolverInput : Codable {
+struct SolverInput : Codable, Equatable {
     let id: String
     let imageName: String
     let placeholder: String
