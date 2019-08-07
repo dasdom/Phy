@@ -14,7 +14,7 @@
 @implementation PhysFormAppDelegate
 
 @synthesize window;
-@synthesize viewController;
+//@synthesize viewController;
 @synthesize data;
 @synthesize formulaArray;
 
@@ -67,14 +67,15 @@
 	//*****************************************************
 	
 	// Initialize the tabBarController
-	tabBarController = [[UITabBarController alloc] init];
+	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	
 	// Initialize the view controller
 //    viewController = [[PhysFormViewController alloc] initWithStyle: UITableViewStyleGrouped];
-    viewController = [[PhysFormViewController alloc] initWithStyle: UITableViewStylePlain];
+//    viewController = [[PhysFormViewController alloc] initWithStyle: UITableViewStylePlain];
+  UIViewController *viewController = [[PhySpecialFieldsViewController alloc] initWithStyle:UITableViewStylePlain];
 
 	// Initialize the navigation controller and set the title
-	navigationController = [[UINavigationController alloc] initWithRootViewController: viewController];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: viewController];
 	navigationController.title = @"Formulas";
     navigationController.navigationBar.translucent = false;
 	
@@ -84,19 +85,19 @@
 //    }
 	
 	// Initialize the general calculator
-	generalCalculatorViewController = [[GeneralCalculatorViewController alloc] init];
+	GeneralCalculatorViewController *generalCalculatorViewController = [[GeneralCalculatorViewController alloc] init];
 	generalCalculatorViewController.title = @"Calculator";
 	[[NSNotificationCenter defaultCenter] addObserver: generalCalculatorViewController 
 											 selector: @selector(receivedFormula:) 
 												 name: @"FormulaIsSent" object: nil];
 
-	converterViewController = [[ConverterViewController alloc] init];
+	ConverterViewController *converterViewController = [[ConverterViewController alloc] init];
 	converterViewController.title = @"Converter";
 	
 //    favoritesViewController = [[FavoritesViewController alloc] init];
 //    favoritesViewController.title = @"Favorites";
 	
-	referenzViewController = [[ReferenzViewController alloc] init];
+	ReferenzViewController *referenzViewController = [[ReferenzViewController alloc] init];
 	referenzViewController.title = @"Referenz";
     
 #ifdef LITE_VERSION
@@ -251,11 +252,11 @@
 	[formulaArray removeObject: detailFormulaObj];
 }
 
-- (void)addDetailFormula: (DetailFormula *)detailFormulaObj {
-	[detailFormulaObj addDetailFormula];
-	[formulaArray addObject: detailFormulaObj];
-	[favoritesViewController.tableView reloadData];
-}
+//- (void)addDetailFormula: (DetailFormula *)detailFormulaObj {
+//  [detailFormulaObj addDetailFormula];
+//  [formulaArray addObject: detailFormulaObj];
+//  [favoritesViewController.tableView reloadData];
+//}
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	[DetailFormula finalizeStatements];

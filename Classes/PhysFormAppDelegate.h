@@ -13,29 +13,29 @@
 #import "ReferenzViewController.h"
 
 @class DetailFormula;
-@class PhysFormViewController;
+//@class PhysFormViewController;
 
 @interface PhysFormAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    PhysFormViewController *viewController;
-	UINavigationController *navigationController;
-	
-	UITabBarController *tabBarController;
-	
-	GeneralCalculatorViewController *generalCalculatorViewController;
-	ConverterViewController *converterViewController;
-	
-	FavoritesViewController *favoritesViewController;
-	
-	ReferenzViewController *referenzViewController;
-	
-	NSDictionary *data;
-	
-	NSMutableArray *formulaArray;
+//    UIWindow *window;
+//    PhysFormViewController *viewController;
+//  UINavigationController *navigationController;
+//
+//  UITabBarController *tabBarController;
+//
+//  GeneralCalculatorViewController *generalCalculatorViewController;
+//  ConverterViewController *converterViewController;
+//
+//  FavoritesViewController *favoritesViewController;
+//
+//  ReferenzViewController *referenzViewController;
+//
+//  NSDictionary *data;
+//
+//  NSMutableArray *formulaArray;
 }
 
 @property (nonatomic, strong) UIWindow *window;
-@property (nonatomic, strong) PhysFormViewController *viewController;
+//@property (nonatomic, strong) PhysFormViewController *viewController;
 @property (nonatomic, strong) NSDictionary *data;
 
 @property (nonatomic, strong) NSMutableArray *formulaArray;
