@@ -611,13 +611,12 @@
 }
 
 - (void)presentResult:(NSDecimalNumber *)result forCalcString:(NSString *)calcString {
-  
-  //    UILabel *resultLabel = [self contentView].resultLabel;
-  
+    
   NSString *resultString = [Calculator stringFromResult:result];
   NSString *calcStringWithResult = [NSString stringWithFormat: @"%@\n = %@", calcString, resultString];
   self.calcStringView.attributedText = [self attributesCalcStringFromString:calcStringWithResult];
-  //    [resultLabel setText:[NSString stringWithFormat: @" = %@", resultString]];
+  
+  [self.calcStringView setContentOffset:CGPointMake(0, 200) animated:YES];
   
   self.previousResult = result;
 }

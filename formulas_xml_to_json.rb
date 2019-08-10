@@ -4,7 +4,7 @@ require 'json'
 
 def formula_from_hash(raw_hash)
     title = raw_hash['Title']
-    formula = {:title => title, :imageName => raw_hash[title]}
+    formula = {:title => title, :imageName => raw_hash[title][0...-4]}
 
     child = raw_hash['Child']
     unless child.nil?
@@ -14,7 +14,7 @@ def formula_from_hash(raw_hash)
             rows = []
             a.each { |b|
                 title = b['Title']
-                row = {:imageName => b[title]}
+                row = {:imageName => b[title][0...-4]}
                 if title.include? 'Abk'
                     row[:title] = title
                 end

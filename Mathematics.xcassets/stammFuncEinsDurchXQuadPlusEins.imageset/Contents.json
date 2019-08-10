@@ -2,22 +2,14 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "stammFuncEinsDurchXQuadPlusEins.png",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "stammFuncEinsDurchXQuadPlusEins@2x.png",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "stammFuncEinsDurchXQuadPlusEins@3x.png",
-      "scale" : "3x"
+      "filename" : "stammFuncEinsDurchXQuadPlusEins.pdf"
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }
