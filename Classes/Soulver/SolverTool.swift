@@ -8,7 +8,7 @@ struct SolverTools : Codable {
     let tools: [SolverTool]
 }
 
-struct SolverTool : Codable {
+struct SolverTool : Codable, Equatable {
     var title: String?
     let imageName: String
     var inputs: [SolverInput]

@@ -10,19 +10,24 @@ class PhySpecialFieldDataSourceTests: XCTestCase {
   var sut: PhySpecialFieldDataSource!
   
   override func setUp() {
-    sut = PhySpecialFieldDataSource()
+    sut = PhySpecialFieldDataSource(json: "data_physics")
   }
   
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    sut = nil
   }
   
   func test_init_generatesSpecialFieldsArray_1() {
     // then
-    XCTAssertEqual(9, sut.numberOfRows)
+    XCTAssertEqual(2, sut.numberOfSections())
   }
   
   func test_init_generatesSpecialFieldsArray_2() {
+    // then
+    XCTAssertEqual(9, sut.numberOfRows(in: 0))
+  }
+  
+  func test_init_generatesSpecialFieldsArray_3() {
     // then
     let firstSpecialField = sut.specialField(for: IndexPath(row: 0, section: 0))
     XCTAssertEqual("Mechanik", firstSpecialField.title)

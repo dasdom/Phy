@@ -10,5 +10,7 @@ class PhySpecialFieldCell: DDHBaseTableViewCell<PhySpecialField> {
     textLabel?.text = item.title
     textLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
     textLabel?.adjustsFontForContentSizeCategory = true
+    
+    accessoryType = .disclosureIndicator
   }
 }

@@ -5,6 +5,6 @@
 import Foundation
 
 struct PhyFormulaSection : Codable, Equatable {
-    let title: String
-    let formulas: [PhyFormula]
+  let title: String
+  let formulas: [PhyFormula]
 }

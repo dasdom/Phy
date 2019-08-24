@@ -78,7 +78,7 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
 	// Define the contentView for the view
-	UIView *contentView = [[UIView alloc] initWithFrame: [[UIScreen mainScreen] applicationFrame]];
+	UIView *contentView = [[UIView alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
 	contentView.backgroundColor = [UIColor whiteColor];
 	self.view = contentView;
 	

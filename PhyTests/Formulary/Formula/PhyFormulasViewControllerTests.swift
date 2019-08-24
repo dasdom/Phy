@@ -73,16 +73,22 @@ class PhyFormulasViewControllerTests: XCTestCase {
     XCTAssertEqual(42, numberOfRows)
   }
   
-  func test_titleForHeaderInSection_returnsTitleFromDataSource() {
+  func test_viewForHeaderInSection_returnsTitleFromDataSource() {
     // given
     let mockDataSource = MockFormulaDataSource(title: "Foo")
     sut = PhyFormulasViewController(dataSource: mockDataSource)
     
     // when
-    let title = sut.tableView(sut.tableView, titleForHeaderInSection: 0)
+    let view = sut.tableView(sut.tableView, viewForHeaderInSection: 0)
     
     // then
-    XCTAssertEqual("Foo", title)
+    let lables = view?.subviews.filter({ view in
+      if let label = view as? UILabel {
+        return label.text == "Foo"
+      }
+      return false
+    })
+    XCTAssertEqual(1, lables?.count)
   }
   
   func test_cellForRow_callsUpdateWithFormula() {
@@ -98,6 +104,24 @@ class PhyFormulasViewControllerTests: XCTestCase {
     // then
     let mockCell = cell as! MockFormulaCell
     XCTAssertEqual(formula, mockCell.lastFormula)
+  }
+  
+  func test_didSelectCell_pushesFormulasViewController() {
+    // given
+    let formula = PhyFormula(imageName: "arbeit", title: "Arbeit", details: [
+      PhyFormulaDetail(title: "Arbeit", detailItems: [PhyFormulaDetailItem(imageName: "arbeit")])
+      ])
+    let mockDataSource = MockFormulaDataSource(formula: formula)
+    sut = PhyFormulasViewController(dataSource: mockDataSource)
+    let navController = MockNavigationController(rootViewController: sut)
+    navController.lastPushedViewController = nil
+    
+    // when
+    sut.tableView(sut.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
+    
+    // then
+    let result = navController.lastPushedViewController as! PhyFormulaDetailViewController
+    XCTAssertEqual(formula, result.formula)
   }
 }
 

@@ -28,7 +28,7 @@ class SolverDetailView: UIView, UITextFieldDelegate {
     
     self.calcButton = UIButton(type: .system)
     self.calcButton.setTitle("Calculate", for: .normal)
-    self.calcButton.addTarget(nil, action: .calculate, for: .touchUpInside)
+    self.calcButton.addTarget(nil, action: .calculateSel, for: .touchUpInside)
     self.calcButton.isEnabled = false
     
     // ************************************
@@ -175,9 +175,9 @@ class SolverDetailView: UIView, UITextFieldDelegate {
 }
 
 @objc protocol CalculateProtocol {
-  @objc func calculate(sender: UIButton)
+  @objc func calculate()
 }
 
 private extension Selector {
-  static let calculate = #selector(CalculateProtocol.calculate(sender:))
+  static let calculateSel = #selector(CalculateProtocol.calculate)
 }

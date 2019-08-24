@@ -615,9 +615,7 @@
   NSString *resultString = [Calculator stringFromResult:result];
   NSString *calcStringWithResult = [NSString stringWithFormat: @"%@\n = %@", calcString, resultString];
   self.calcStringView.attributedText = [self attributesCalcStringFromString:calcStringWithResult];
-  
-  [self.calcStringView setContentOffset:CGPointMake(0, 200) animated:YES];
-  
+    
   self.previousResult = result;
 }
 

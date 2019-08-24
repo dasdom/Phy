@@ -4,7 +4,6 @@
 #import "GeneralCalculatorView.h"
 #import "Calculator.h"
 #import "CalculatorButton.h"
-#import "UIFont+SizeLimit.h"
 
 @interface GeneralCalculatorView ()
 @property (nonatomic) UIButton *sinButton;
@@ -152,11 +151,7 @@
   button.backgroundColor = [UIColor colorWithWhite:0.90 alpha:1.0];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-//  button.titleLabel.font = [UIFont preferredFontWithTextStyle:UIFontTextStyleBody maxSize:30];
 
-//  button.titleLabel.adjustsFontForContentSizeCategory = YES;
-//  button.titleLabel.adjustsFontSizeToFitWidth = YES;
-//  button.titleLabel.numberOfLines = 2;
   [button addTarget:nil action:@selector(metaButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
   return button;
 }
@@ -166,9 +161,7 @@
   button.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-//  button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-//  button.titleLabel.adjustsFontForContentSizeCategory = YES;
-//  button.titleLabel.adjustsFontSizeToFitWidth = YES;
+
   [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
   return button;
 }
@@ -179,9 +172,7 @@
   button.tintColor = [UIColor whiteColor];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-//  button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
-//  button.titleLabel.adjustsFontForContentSizeCategory = YES;
-//  button.titleLabel.adjustsFontSizeToFitWidth = YES;
+
   [button addTarget:nil action:@selector(insertBasicCalculation:) forControlEvents:UIControlEventTouchUpInside];
   return button;
 }
@@ -192,9 +183,7 @@
   button.tintColor = [UIColor whiteColor];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-//  button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
-//  button.titleLabel.adjustsFontForContentSizeCategory = YES;
-//  button.titleLabel.adjustsFontSizeToFitWidth = YES;
+
   [button addTarget:nil action:@selector(calculatePressed:) forControlEvents:UIControlEventTouchUpInside];
   return button;
 }
@@ -204,9 +193,7 @@
   button.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-//  button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-//  button.titleLabel.adjustsFontForContentSizeCategory = YES;
-//  button.titleLabel.adjustsFontSizeToFitWidth = YES;
+
   [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
   return button;
 }
@@ -216,9 +203,7 @@
   button.backgroundColor = [UIColor colorWithWhite:0.98 alpha:1.0];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-//  button.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle3];
-//  button.titleLabel.adjustsFontForContentSizeCategory = YES;
-//  button.titleLabel.adjustsFontSizeToFitWidth = YES;
+
   [button addTarget:nil action:@selector(insertDigit:) forControlEvents: UIControlEventTouchUpInside];
   return button;
 }

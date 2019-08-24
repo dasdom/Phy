@@ -14,15 +14,6 @@
 
 @implementation CollectionOfElementsView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-    }
-    return self;
-}
-
 - (id)initWithFrame: (CGRect)frame andElementsArray: (NSArray*)pElementsArray {
     if ((self = [super initWithFrame: frame])) {
         [self setBackgroundColor: [UIColor whiteColor]];
@@ -103,7 +94,7 @@
         
         UIStackView *numbersStackView = [[UIStackView alloc] initWithArrangedSubviews:@[_nameLabel, _massLabel, _elConfigLabel, _periodeLabel, _gruppeLabel, _paulingLabel]];
         numbersStackView.axis = UILayoutConstraintAxisVertical;
-        numbersStackView.spacing = 2;
+        numbersStackView.spacing = 0;
         
         UIStackView *infoStackView = [[UIStackView alloc] initWithArrangedSubviews:@[abbStackView, numbersStackView]];
         infoStackView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -129,7 +120,7 @@
     UILabel *label = [[UILabel alloc] init];
     label.backgroundColor = [UIColor clearColor];
     label.textColor = [UIColor whiteColor];
-    label.font = [UIFont systemFontOfSize: 13.0f];
+    label.font = [UIFont systemFontOfSize: 10.0f];
     return label;
 }
 

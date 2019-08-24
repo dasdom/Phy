@@ -8,11 +8,11 @@ class PhyFormulaCell: DDHBaseTableViewCell<PhyFormula> {
   
   let nameLabel: UILabel
   let formulaImageView: UIImageView
-  var imageHeightConstraint: NSLayoutConstraint?
-  var imageWidthConstraint: NSLayoutConstraint?
-  var nameTopConstraint: NSLayoutConstraint?
-  var imageTopConstraint: NSLayoutConstraint?
-  var imageBottomConstraint: NSLayoutConstraint?
+  private var imageHeightConstraint: NSLayoutConstraint?
+  private var imageWidthConstraint: NSLayoutConstraint?
+  private var nameTopConstraint: NSLayoutConstraint?
+  private var imageTopConstraint: NSLayoutConstraint?
+  private var imageBottomConstraint: NSLayoutConstraint?
 
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
@@ -85,25 +85,14 @@ class PhyFormulaCell: DDHBaseTableViewCell<PhyFormula> {
   }
   
   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-    let fontMetric = UIFontMetrics(forTextStyle: .body)
     
-    guard let image = formulaImageView.image else { return }
-    let height = floor(fontMetric.scaledValue(for: image.size.height * 2))
-    changeImageHeight(to: height)
+    let fontMetrics = UIFontMetrics(forTextStyle: .body)
     
-    nameTopConstraint?.constant = floor(fontMetric.scaledValue(for: 12))
-    imageTopConstraint?.constant = floor(fontMetric.scaledValue(for: 6))
-    imageBottomConstraint?.constant = floor(fontMetric.scaledValue(for: -12))
+    formulaImageView.update(heightConstraint: imageHeightConstraint, fontMetrics: fontMetrics)
     
-//    print("12: \(floor(fontMetric.scaledValue(for: 12)))")
+    nameTopConstraint?.constant = floor(fontMetrics.scaledValue(for: 12))
+    imageTopConstraint?.constant = floor(fontMetrics.scaledValue(for: 6))
+    imageBottomConstraint?.constant = floor(fontMetrics.scaledValue(for: -12))
   }
 
-  func changeImageHeight(to height: CGFloat) {
-//    guard let image = formulaImageView.image else { return }
-    guard let imageHeightConstraint = imageHeightConstraint else { return }
-//    guard let imageWidthConstraint = imageWidthConstraint else { return }
-    imageHeightConstraint.constant = height
-//    let width = floor(image.size.width * height / image.size.height)
-//    imageWidthConstraint.constant = width
-  }
 }

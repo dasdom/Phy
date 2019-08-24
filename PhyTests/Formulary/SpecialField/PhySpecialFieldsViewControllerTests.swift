@@ -10,7 +10,8 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
   var sut: PhySpecialFieldsViewController!
   
   override func setUp() {
-    sut = PhySpecialFieldsViewController()
+    let mockSpecialFieldDataSource = MockSpecialFieldDataSource(numberOfSections: 23, numberOfRows: 42)
+    sut = PhySpecialFieldsViewController(style: .plain, dataSource: mockSpecialFieldDataSource)
   }
   
   override func tearDown() {
@@ -39,34 +40,25 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
   }
   
   func test_numberOfRows_returnsNumberOfDataSource() {
-    // given
-    let mockSpecialFieldDataSource = MockSpecialFieldDataSource(numberOfRows: 12)
-    sut.specialFieldDataSource = mockSpecialFieldDataSource
-    
     // when
     let numberOfRows = sut.tableView.numberOfRows(inSection: 0)
     
     // then
-    XCTAssertEqual(12, numberOfRows)
+    XCTAssertEqual(42, numberOfRows)
   }
   
   func test_cellForRow_callsSpecialFieldOfDataSource() {
-    // given
-    let mockSpecialFieldDataSource = MockSpecialFieldDataSource(numberOfRows: 0)
-    sut.specialFieldDataSource = mockSpecialFieldDataSource
-    
     // when
     let indexPath = IndexPath(row: 0, section: 0)
     _ = sut.tableView(sut.tableView, cellForRowAt: indexPath)
     
     // then
-    XCTAssertEqual(indexPath, mockSpecialFieldDataSource.lastIndexPath)
+    let mockSpecialFieldDataSource = sut.specialFieldDataSource as? MockSpecialFieldDataSource
+    XCTAssertEqual(indexPath, mockSpecialFieldDataSource?.lastIndexPath)
   }
 
   func test_cellForRow_callsUpdateOfCell() {
     // given
-    let mockSpecialFieldDataSource = MockSpecialFieldDataSource(numberOfRows: 0)
-    sut.specialFieldDataSource = mockSpecialFieldDataSource
     sut.tableView.register(MockSpecialFieldCell.self, forCellReuseIdentifier: PhySpecialFieldCell.identifier)
     
     // when
@@ -75,15 +67,14 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
     
     // then
     guard let mockCell = cell as? MockSpecialFieldCell else { fatalError() }
-    XCTAssertEqual(mockSpecialFieldDataSource.specialFieldToReturn, mockCell.lastItem)
+    let mockSpecialFieldDataSource = sut.specialFieldDataSource as? MockSpecialFieldDataSource
+    XCTAssertEqual(mockSpecialFieldDataSource?.specialFieldToReturn, mockCell.lastItem)
   }
   
   func test_didSelectCell_pushesFormulasViewController() {
     // given
-    let mockSpecialFieldDataSource = MockSpecialFieldDataSource(numberOfRows: 1)
     let sections = [PhyFormulaSection(title: "Bar", formulas: [])]
-    mockSpecialFieldDataSource.specialFieldToReturn = PhySpecialField(title: "Foobar", formulaSections: sections)
-    sut.specialFieldDataSource = mockSpecialFieldDataSource
+    (sut.specialFieldDataSource as? MockSpecialFieldDataSource)?.specialFieldToReturn = PhySpecialField(title: "Foobar", formulaSections: sections)
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
 
@@ -115,9 +106,19 @@ extension PhySpecialFieldsViewControllerTests {
     var lastIndexPath: IndexPath? = nil
     lazy var specialFieldToReturn = PhySpecialField(title: "Foo", formulaSections: [])
     let numberOfRows: Int
+    let _numberOfSections: Int
     
-    init(numberOfRows: Int) {
+    init(numberOfSections: Int = 0, numberOfRows: Int = 0) {
+      self._numberOfSections = numberOfSections
       self.numberOfRows = numberOfRows
+    }
+    
+    func numberOfSections() -> Int {
+      return _numberOfSections
+    }
+    
+    func numberOfRows(in: Int) -> Int {
+      return numberOfRows
     }
     
     func specialField(for indexPath: IndexPath) -> PhySpecialField {
@@ -134,17 +135,6 @@ extension PhySpecialFieldsViewControllerTests {
     
     override func update(with item: PhySpecialField) {
       lastItem = item
-    }
-  }
-  
-  class MockNavigationController : UINavigationController {
-    
-    var lastPushedViewController: UIViewController? = nil
-    
-    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-      lastPushedViewController = viewController
-      
-      super.pushViewController(viewController, animated: true)
     }
   }
 }

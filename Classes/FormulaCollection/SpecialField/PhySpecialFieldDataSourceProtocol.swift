@@ -5,6 +5,7 @@
 import Foundation
 
 protocol PhySpecialFieldDataSourceProtocol {
-  var numberOfRows: Int { get }
+  func numberOfSections() -> Int
+  func numberOfRows(in: Int) -> Int
   func specialField(for: IndexPath) -> PhySpecialField
 }

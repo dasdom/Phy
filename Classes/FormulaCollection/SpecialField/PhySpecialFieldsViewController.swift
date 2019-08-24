@@ -6,7 +6,15 @@ import UIKit
 
 class PhySpecialFieldsViewController: UITableViewController {
   
-  lazy var specialFieldDataSource: PhySpecialFieldDataSourceProtocol = PhySpecialFieldDataSource()
+  let specialFieldDataSource: PhySpecialFieldDataSourceProtocol
+  
+  init(style: UITableView.Style, dataSource: PhySpecialFieldDataSourceProtocol) {
+    specialFieldDataSource = dataSource
+    
+    super.init(style: style)
+  }
+  
+  required init?(coder aDecoder: NSCoder) { fatalError() }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -15,8 +23,12 @@ class PhySpecialFieldsViewController: UITableViewController {
   }
   
   // MARK: - Table view data source
+  override func numberOfSections(in tableView: UITableView) -> Int {
+    return specialFieldDataSource.numberOfSections()
+  }
+  
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return specialFieldDataSource.numberOfRows
+    return specialFieldDataSource.numberOfRows(in: section)
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

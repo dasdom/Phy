@@ -12,15 +12,26 @@ def formula_from_hash(raw_hash)
         namesOfSections = raw_hash['namesOfSections']
         child.each_with_index { |a, index|
             rows = []
-            a.each { |b|
-                title = b['Title']
-                row = {:imageName => b[title][0...-4]}
-                if title.include? 'Abk'
+            #puts "a: #{a}"
+            if a.class == Array
+                a.each { |b|
+                    #puts "b: #{b}"
+                    title = b['Title']
+                    row = {:imageName => b[title][0...-4]}
                     row[:title] = title
-                end
+                    rows << row
+                }
+            else
+                title = a['Title']
+                row = {:imageName => a[title][0...-4]}
+                row[:title] = title
                 rows << row
-            }
-            detail_sections << {:title => namesOfSections[index], :detailItems => rows}
+            end
+            if namesOfSections.nil? || namesOfSections.count < 1
+                detail_sections << {:title => 'None', :detailItems => rows}
+            else
+                detail_sections << {:title => namesOfSections[index], :detailItems => rows}
+            end
         }
         formula['details'] = detail_sections
     end
@@ -32,56 +43,77 @@ xmlFile = ARGV[0]
 
 result = Plist.parse_xml(xmlFile)
 
-mechanics_dict = result['Rows'].first.first
+topic_dict = result['Rows'][2].first
 
-puts mechanics_dict.count
+puts topic_dict.count
 
-mechanics_dict.each { |key, value| 
-    puts key
+topic_dict.each { |key, value| 
+    puts "key: #{key}"
 }
 
 special_field_sections = []
-special_fields = []
 
-mechanics_dict['Child'].first.each { |b|
-    formula_sections = []
-    title = b['Title']
-    
-    section_titles = b['namesOfSections']
-    formulas_without_section = []
-    b['Child'].each_with_index { |c, index|
+isChem = false
+
+topic_dict['Child'].each { |sfs|
+    special_fields = []
+    sfs.each { |b|
+        formula_sections = []
+        puts b
+        title = b['Title']
         
-        formula_title = ""
-        
-        formulas = []
-
-        if c.class == Array
-            c.each { |d|
-                formulas << formula_from_hash(d)
-            }
-        else
-            formulas_without_section << formula_from_hash(c)
-            next
-        end
-        section_title = ""
-        
-        if section_titles.nil? || section_titles.count < 2
-            section_title = 'None'
-        else
-            section_title = section_titles[index]
-        end
-
-        puts section_title
-
-        formula_sections << {:title => section_title, :formulas => formulas}
-    }
-    
-    if formulas_without_section.count > 0
-        formula_sections << {:title => 'None', :formulas => formulas_without_section}
+        section_titles = b['namesOfSections']
         formulas_without_section = []
-    end
 
-    special_fields << {:title => title, :formulaSections => formula_sections}
+        child = b['Child']
+
+        if child.nil?
+            special_fields << b
+            isChem = true
+        else
+            b['Child'].each_with_index { |c, index|
+                
+                formula_title = ""
+                
+                formulas = []
+
+                if c.class == Array
+                    c.each { |d|
+                        formulas << formula_from_hash(d)
+                    }
+                else
+                    formulas_without_section << formula_from_hash(c)
+                    next
+                end
+                section_title = ""
+                
+                if section_titles.nil? || section_titles.count < 2
+                    section_title = 'None'
+                else
+                    section_title = section_titles[index]
+                end
+
+                puts "section title: #{section_title}"
+
+                formula_sections << {:title => section_title, :formulas => formulas}
+            }
+        
+            if formulas_without_section.count > 0
+                formula_sections << {:title => 'None', :formulas => formulas_without_section}
+                formulas_without_section = []
+            end
+        end
+
+        if formula_sections.count > 0
+            special_fields << {:title => title, :formulaSections => formula_sections}
+        end
+    }
+
+    if isChem
+        special_field_sections = special_fields
+    else
+        special_field_sections << {:title => 'None', :specialFields => special_fields}
+    end
 }
 
 puts '-------------------------------------------'
@@ -96,12 +128,11 @@ puts '-------------------------------------------'
 #    }
 #}
 
-pp special_fields
+pp special_field_sections
 
-json = JSON.generate(special_fields)
+json = JSON.pretty_generate(special_field_sections)
 
-File.open('data.json', 'w') { |file| file.write(json) }
+File.open('data_automatic.json', 'w') { |file| file.write(json) }
 
-special_field_sections.append(special_fields)
 #}
 

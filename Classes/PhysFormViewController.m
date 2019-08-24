@@ -10,7 +10,7 @@
 
 #import "GeneralCalculatorViewController.h"
 
-#import "DetailFormula.h"
+//#import "DetailFormula.h"
 #import "Phy-Swift.h"
 
 #import <sqlite3.h>
