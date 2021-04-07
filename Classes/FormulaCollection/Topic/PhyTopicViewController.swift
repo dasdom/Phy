@@ -6,7 +6,7 @@ import UIKit
 
 class PhyTopicViewController: UITableViewController {
 
-  var topicDataSource: PhyTopicDataSourceProtocol = PhyTopicDataSource()
+  let topicDataSource: PhyTopicDataSourceProtocol = PhyTopicDataSource()
   
   override func viewDidLoad() {
     super.viewDidLoad()

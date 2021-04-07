@@ -1,2 +1,5 @@
 [
-  {"json":"data_physics","title":"Physik"},{"json":"data_math","title":"Mathematik"}]
+  {"json":"data_physics","title":"Physik"},
+  {"json":"data_math","title":"Mathematik"},
+  {"json":"data_elements","title":"Chemie"}
+]

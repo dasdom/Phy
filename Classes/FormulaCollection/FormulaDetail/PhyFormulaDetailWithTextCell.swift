@@ -59,8 +59,9 @@ class PhyFormulaDetailWithTextCell: DDHBaseTableViewCell<PhyFormulaDetailItem> {
   
   override func update(with item: PhyFormulaDetailItem) {
     
-    nameLabel.text = item.title
-
+    if let title = item.title {
+      nameLabel.text = NSLocalizedString(title, comment: "")
+    }
     guard let image = UIImage(named: item.imageName) else {
       print("image missing: \(item.imageName)")
       return

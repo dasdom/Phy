@@ -12,6 +12,12 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		F200F0EC2312B44900C38045 /* ChemElementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */; };
+		F200F0EF2312B68500C38045 /* ChemElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0EE2312B68500C38045 /* ChemElementTests.swift */; };
+		F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */; };
+		F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F2231320EA00C38045 /* ChemElementCell.swift */; };
+		F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F52313258300C38045 /* ChemElementsDataSource.swift */; };
+		F200F0F8231325C600C38045 /* ChemElementsDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F7231325C600C38045 /* ChemElementsDataSourceProtocol.swift */; };
 		F207F4FB1145B67200256864 /* Referenz.plist in Resources */ = {isa = PBXBuildFile; fileRef = F207F4FA1145B67200256864 /* Referenz.plist */; };
 		F20E53A522D9B6D4001794E9 /* Constants.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A422D9B6D4001794E9 /* Constants.xcassets */; };
 		F20E53A722D9B914001794E9 /* Relativity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A622D9B914001794E9 /* Relativity.xcassets */; };
@@ -69,6 +75,9 @@
 		F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
 		F279640E1143FAFD00B8EBDE /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
 		F27EEF771154F1F3008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
+		F2827277232D875E004E94E0 /* ChemElementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2827276232D875E004E94E0 /* ChemElementDetailViewController.swift */; };
+		F2827279232D89F5004E94E0 /* ChemElementsDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */; };
+		F282727B232E2746004E94E0 /* ChemElementCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F282727A232E2746004E94E0 /* ChemElementCellTests.swift */; };
 		F294101222E7AD1B00379868 /* ImpressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100D22E7AD1B00379868 /* ImpressViewController.swift */; };
 		F294101322E7AD1B00379868 /* ImpressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100E22E7AD1B00379868 /* ImpressView.swift */; };
 		F294101422E7AD1B00379868 /* CaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100F22E7AD1B00379868 /* CaveScene.swift */; };
@@ -130,6 +139,8 @@
 		F2DB7D6D231078800098B42A /* PhyTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D6C231078800098B42A /* PhyTopicCell.swift */; };
 		F2DB7D6F231121920098B42A /* PhyTopicDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D6E231121920098B42A /* PhyTopicDataSourceTests.swift */; };
 		F2DB7D71231125430098B42A /* PhyTopicCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D70231125430098B42A /* PhyTopicCellTests.swift */; };
+		F2DB7D7323118E590098B42A /* data_elements.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DB7D7223118E590098B42A /* data_elements.json */; };
+		F2DB7D752311D7720098B42A /* ChemElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D742311D7720098B42A /* ChemElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +165,12 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PhysForm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysForm_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsTableViewController.swift; sourceTree = "<group>"; };
+		F200F0EE2312B68500C38045 /* ChemElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemElementTests.swift; sourceTree = "<group>"; };
+		F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsTableViewControllerTests.swift; sourceTree = "<group>"; };
+		F200F0F2231320EA00C38045 /* ChemElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementCell.swift; sourceTree = "<group>"; };
+		F200F0F52313258300C38045 /* ChemElementsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSource.swift; sourceTree = "<group>"; };
+		F200F0F7231325C600C38045 /* ChemElementsDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceProtocol.swift; sourceTree = "<group>"; };
 		F207F4FA1145B67200256864 /* Referenz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Referenz.plist; sourceTree = "<group>"; };
 		F20E53A422D9B6D4001794E9 /* Constants.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Constants.xcassets; sourceTree = "<group>"; };
 		F20E53A622D9B914001794E9 /* Relativity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Relativity.xcassets; sourceTree = "<group>"; };
@@ -218,6 +235,9 @@
 		F279640D1143FAFD00B8EBDE /* favorites.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favorites.db; sourceTree = "<group>"; };
 		F27EEE671154D3A5008449FC /* InfoLite.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoLite.plist; sourceTree = "<group>"; };
 		F27EEF761154F1F3008449FC /* DataLite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataLite.plist; sourceTree = "<group>"; };
+		F2827276232D875E004E94E0 /* ChemElementDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementDetailViewController.swift; sourceTree = "<group>"; };
+		F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceTests.swift; sourceTree = "<group>"; };
+		F282727A232E2746004E94E0 /* ChemElementCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementCellTests.swift; sourceTree = "<group>"; };
 		F294100922E7ACF600379868 /* PhysForm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhysForm-Bridging-Header.h"; sourceTree = "<group>"; };
 		F294100D22E7AD1B00379868 /* ImpressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressViewController.swift; sourceTree = "<group>"; };
 		F294100E22E7AD1B00379868 /* ImpressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpressView.swift; sourceTree = "<group>"; };
@@ -299,6 +319,8 @@
 		F2DB7D6C231078800098B42A /* PhyTopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyTopicCell.swift; sourceTree = "<group>"; };
 		F2DB7D6E231121920098B42A /* PhyTopicDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyTopicDataSourceTests.swift; sourceTree = "<group>"; };
 		F2DB7D70231125430098B42A /* PhyTopicCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyTopicCellTests.swift; sourceTree = "<group>"; };
+		F2DB7D7223118E590098B42A /* data_elements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data_elements.json; sourceTree = "<group>"; };
+		F2DB7D742311D7720098B42A /* ChemElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +414,7 @@
 				F2372E1422F0E3B4003C0605 /* Data.json */,
 				F23EBE7923100CFE00E8F4E4 /* data_math.json */,
 				F23EBE7A23100CFE00E8F4E4 /* data_physics.json */,
+				F2DB7D7223118E590098B42A /* data_elements.json */,
 				F270E2041005DD7000843391 /* Localizable.strings */,
 				F29558B220586259001D776D /* Launch Screen.storyboard */,
 				F27EEE671154D3A5008449FC /* InfoLite.plist */,
@@ -428,6 +451,17 @@
 				F2AC138813659F61006465C7 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F200F0ED2312B68500C38045 /* Chemistry */ = {
+			isa = PBXGroup;
+			children = (
+				F200F0EE2312B68500C38045 /* ChemElementTests.swift */,
+				F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */,
+				F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */,
+				F282727A232E2746004E94E0 /* ChemElementCellTests.swift */,
+			);
+			path = Chemistry;
 			sourceTree = "<group>";
 		};
 		F22FF0042302C52B003F3A9B /* Solver */ = {
@@ -478,6 +512,7 @@
 			children = (
 				F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */,
 				F29F212C22E1EB4400426712 /* CalculatorTests.m */,
+				F200F0ED2312B68500C38045 /* Chemistry */,
 				F22FF0042302C52B003F3A9B /* Solver */,
 				F2372E4F22F5ABB6003C0605 /* Formulary */,
 				F2D5019422FFE96200DEF75F /* MockNavigationController.swift */,
@@ -641,6 +676,12 @@
 				F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */,
 				F29AEB2922EB02FE00EB4E26 /* ElementsDetailViewController.h */,
 				F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */,
+				F2DB7D742311D7720098B42A /* ChemElement.swift */,
+				F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */,
+				F200F0F2231320EA00C38045 /* ChemElementCell.swift */,
+				F200F0F52313258300C38045 /* ChemElementsDataSource.swift */,
+				F200F0F7231325C600C38045 /* ChemElementsDataSourceProtocol.swift */,
+				F2827276232D875E004E94E0 /* ChemElementDetailViewController.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -704,6 +745,8 @@
 			dependencies = (
 			);
 			name = PhysForm;
+			packageProductDependencies = (
+			);
 			productName = PhysForm;
 			productReference = 1D6058910D05DD3D006BFB54 /* Phy.app */;
 			productType = "com.apple.product-type.application";
@@ -761,6 +804,8 @@
 				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			packageReferences = (
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -791,6 +836,7 @@
 				F279640E1143FAFD00B8EBDE /* favorites.db in Resources */,
 				F207F4FB1145B67200256864 /* Referenz.plist in Resources */,
 				F27EEF771154F1F3008449FC /* DataLite.plist in Resources */,
+				F2DB7D7323118E590098B42A /* data_elements.json in Resources */,
 				F20E53AF22D9BB09001794E9 /* Electrodynamics.xcassets in Resources */,
 				F20E53A922D9B94C001794E9 /* Mechanics.xcassets in Resources */,
 				F20E53C122D9C6CA001794E9 /* Assets.xcassets in Resources */,
@@ -823,6 +869,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2DB7D752311D7720098B42A /* ChemElement.swift in Sources */,
+				F200F0EC2312B44900C38045 /* ChemElementsTableViewController.swift in Sources */,
 				F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */,
 				F2716A1E22F8C753007D1528 /* PhyFormulaCell.swift in Sources */,
 				F29AEB3022EB02FE00EB4E26 /* ElementsDetailViewController.m in Sources */,
@@ -842,6 +890,7 @@
 				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
 				F22FEFFD23020026003F3A9B /* SolverDetailImageCell.swift in Sources */,
 				F29AEB5D22EB54DC00EB4E26 /* SolverDetailView.swift in Sources */,
+				F2827277232D875E004E94E0 /* ChemElementDetailViewController.swift in Sources */,
 				F23152B12307DACB005A26BD /* UIImageViewExtension.swift in Sources */,
 				F29AEB5522EB2E1F00EB4E26 /* SolverCell.swift in Sources */,
 				F2716A0822F77C93007D1528 /* PhySpecialFieldsViewController.swift in Sources */,
@@ -855,6 +904,7 @@
 				F2DB7D5923101A730098B42A /* PhyFormulaDetail.swift in Sources */,
 				F2DB7D4D23101A2C0098B42A /* PhyTopic.swift in Sources */,
 				F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */,
+				F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */,
 				F2DB7D5123101A5A0098B42A /* PhySpecialFieldSection.swift in Sources */,
 				F29AEB2522EB02B600EB4E26 /* ConverterViewController.m in Sources */,
 				F29AEB2F22EB02FE00EB4E26 /* ChemieTableViewController.m in Sources */,
@@ -874,6 +924,7 @@
 				F29AEB4822EB034E00EB4E26 /* HistoryTableViewController.m in Sources */,
 				F22FF001230206E1003F3A9B /* SolverDetailButtonCell.swift in Sources */,
 				F294101322E7AD1B00379868 /* ImpressView.swift in Sources */,
+				F200F0F8231325C600C38045 /* ChemElementsDataSourceProtocol.swift in Sources */,
 				F29AEB3222EB02FE00EB4E26 /* CollectionOfElementsViewController.m in Sources */,
 				F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */,
 				F2DB7D6D231078800098B42A /* PhyTopicCell.swift in Sources */,
@@ -882,6 +933,7 @@
 				F2DB7D69231022560098B42A /* PhyTopicDataSourceProtocol.swift in Sources */,
 				F236257522FEA8850075FC2F /* PhyFormulaDetailWithTextCell.swift in Sources */,
 				F29AEB3122EB02FE00EB4E26 /* CollectionOfElementsView.m in Sources */,
+				F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */,
 				F294101422E7AD1B00379868 /* CaveScene.swift in Sources */,
 				F22FEFFF230205BE003F3A9B /* SolverDetailInputCell.swift in Sources */,
 				F29AEB5722EB2EEA00EB4E26 /* SolverInput.swift in Sources */,
@@ -895,6 +947,7 @@
 				F236257D22FEED0D0075FC2F /* PhyFormulaDetailWithTextCellTests.swift in Sources */,
 				F236257322FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift in Sources */,
 				F2DB7D6123101B450098B42A /* PhyFormulaDetailTests.swift in Sources */,
+				F200F0EF2312B68500C38045 /* ChemElementTests.swift in Sources */,
 				F2DB7D6623101B790098B42A /* PhyTopicViewControllerTests.swift in Sources */,
 				F2DB7D5D23101B3A0098B42A /* PhyFormulaTests.swift in Sources */,
 				F2DB7D71231125430098B42A /* PhyTopicCellTests.swift in Sources */,
@@ -910,6 +963,9 @@
 				F2716A1422F8766C007D1528 /* PhySpecialFieldCellTests.swift in Sources */,
 				F236257022FE9FEF0075FC2F /* PhyFormulaCellTests.swift in Sources */,
 				F2DB7D6023101B450098B42A /* PhyFormulaDetailItemTests.swift in Sources */,
+				F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */,
+				F2827279232D89F5004E94E0 /* ChemElementsDataSourceTests.swift in Sources */,
+				F282727B232E2746004E94E0 /* ChemElementCellTests.swift in Sources */,
 				F22FEFFB2301AC58003F3A9B /* SolverDetailViewControllerTests.swift in Sources */,
 				F23EBE74230DDF0200E8F4E4 /* PhySpecialFieldSectionTests.swift in Sources */,
 				F29F212D22E1EB4400426712 /* CalculatorTests.m in Sources */,
@@ -959,7 +1015,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
@@ -989,7 +1045,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
@@ -1132,7 +1188,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
