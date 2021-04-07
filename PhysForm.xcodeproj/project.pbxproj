@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* PhysFormAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PhysFormAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		F200F0EC2312B44900C38045 /* ChemElementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */; };
 		F200F0EF2312B68500C38045 /* ChemElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0EE2312B68500C38045 /* ChemElementTests.swift */; };
 		F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */; };
@@ -84,7 +81,6 @@
 		F294101522E7AD1B00379868 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = F294101022E7AD1B00379868 /* Spark.sks */; };
 		F294101622E7AD1B00379868 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294101122E7AD1B00379868 /* StartScene.swift */; };
 		F29558B320586259001D776D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29558B220586259001D776D /* Launch Screen.storyboard */; };
-		F2959F0E114249E30014525F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2959F0D114249E30014525F /* libsqlite3.dylib */; };
 		F29AEAFE22EA466900EB4E26 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F29AEAFC22EA466900EB4E26 /* Smoke.sks */; };
 		F29AEAFF22EA466900EB4E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29AEAFD22EA466900EB4E26 /* Assets.xcassets */; };
 		F29AEB0A22EB01EE00EB4E26 /* SolverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB0922EB01ED00EB4E26 /* SolverTableViewController.swift */; };
@@ -116,9 +112,6 @@
 		F29AEB5B22EB545E00EB4E26 /* SolverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5A22EB545E00EB4E26 /* SolverDetailViewController.swift */; };
 		F29AEB5D22EB54DC00EB4E26 /* SolverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5C22EB54DC00EB4E26 /* SolverDetailView.swift */; };
 		F29F212D22E1EB4400426712 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* CalculatorTests.m */; };
-		F2A120BB149E527100AD3215 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A120BA149E527100AD3215 /* MessageUI.framework */; };
-		F2A120C614A141CF00AD3215 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A120C514A141CF00AD3215 /* CoreText.framework */; };
-		F2AC138913659F62006465C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AC138813659F61006465C7 /* QuartzCore.framework */; };
 		F2D5019522FFE96200DEF75F /* MockNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D5019422FFE96200DEF75F /* MockNavigationController.swift */; };
 		F2DB7D4B23101A010098B42A /* PhyTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4A23101A010098B42A /* PhyTopicViewController.swift */; };
 		F2DB7D4D23101A2C0098B42A /* PhyTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4C23101A2C0098B42A /* PhyTopic.swift */; };
@@ -328,13 +321,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A120C614A141CF00AD3215 /* CoreText.framework in Frameworks */,
-				F2A120BB149E527100AD3215 /* MessageUI.framework in Frameworks */,
-				F2AC138913659F62006465C7 /* QuartzCore.framework in Frameworks */,
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				F2959F0E114249E30014525F /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
