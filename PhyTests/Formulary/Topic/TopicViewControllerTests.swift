@@ -5,12 +5,17 @@
 import XCTest
 @testable import Phy
 
-class PhyTopicViewControllerTests: XCTestCase {
+class TopicViewControllerTests: XCTestCase {
 
-  var sut: PhyTopicViewController!
+  var sut: TopicViewController!
+  var mockDataSource: MockTopicDataSource!
+  private let mockNumberOfSections = 23
+  private let mockNumberOfRows = 42
+  private let topic = Topic(title: "Foo", json: "foo")
   
   override func setUp() {
-    sut = PhyTopicViewController()
+    mockDataSource = MockTopicDataSource(numberOfSections: mockNumberOfSections, numberOfRows: mockNumberOfRows, topicToReturn: topic)
+    sut = TopicViewController(dataSource: mockDataSource)
   }
   
   override func tearDown() {
@@ -22,35 +27,27 @@ class PhyTopicViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
     
     // then
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: PhyTopicCell.identifier, for: IndexPath(row: 0, section: 0))
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: TopicCell.identifier, for: IndexPath(row: 0, section: 0))
     XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is PhyTopicCell)
+    XCTAssertTrue(cell is TopicCell)
   }
   
   func test_numberOfSections() {
-    // given
-    let mockNumberOfSections = 23
-    let mockDataSource = MockTopicDataSource(numberOfSections: mockNumberOfSections)
-    sut.topicDataSource = mockDataSource
     
     // when
     let result = sut.tableView.numberOfSections
     
     // then
-    XCTAssertEqual(mockNumberOfSections, result)
+    XCTAssertEqual(result, mockNumberOfSections)
   }
   
   func test_numberOfRows() {
-    // given
-    let mockNumberOfRows = 42
-    let mockDataSource = MockTopicDataSource(numberOfRows: mockNumberOfRows)
-    sut.topicDataSource = mockDataSource
-    
+   
     // when
     let result = sut.tableView.numberOfRows(inSection: 0)
     
     // then
-    XCTAssertEqual(mockNumberOfRows, result)
+    XCTAssertEqual(result, mockNumberOfRows)
   }
   
   func test_cellForRow_dequeuesCell() {
@@ -66,25 +63,18 @@ class PhyTopicViewControllerTests: XCTestCase {
   }
   
   func test_cellForRow_callsTopicOfDataSource() {
-    // given
-    let topic = PhyTopic(title: "Foo", json: "foo")
-    let mockDataSource = MockTopicDataSource(topicToReturn: topic)
-    sut.topicDataSource = mockDataSource
     
     // when
     let indexPath = IndexPath(row: 0, section: 0)
     _ = sut.tableView(sut.tableView, cellForRowAt: indexPath)
     
     // then
-    XCTAssertEqual(indexPath, mockDataSource.lastIndexPath)
+    XCTAssertEqual(mockDataSource.lastIndexPath, indexPath)
   }
   
   func test_cellForRow_callsUpdateOfCell() {
     // given
-    let topic = PhyTopic(title: "Foo", json: "foo")
-    let mockDataSource = MockTopicDataSource(topicToReturn: topic)
-    sut.topicDataSource = mockDataSource
-    sut.tableView.register(MockTopicCell.self, forCellReuseIdentifier: PhyTopicCell.identifier)
+    sut.tableView.register(MockTopicCell.self, forCellReuseIdentifier: TopicCell.identifier)
 
     // when
     let indexPath = IndexPath(row: 0, section: 0)
@@ -92,14 +82,15 @@ class PhyTopicViewControllerTests: XCTestCase {
     
     // then
     guard let mockCell = cell as? MockTopicCell else { fatalError() }
-    XCTAssertEqual(topic, mockCell.lastItem)
+    XCTAssertEqual(mockCell.lastItem, topic)
   }
   
   func test_didSelectCell_pushesSpecialFieldViewController() {
     // given
-    let topic = PhyTopic(title: "Foo", json: "data_physics")
+    let topic = Topic(title: "Foo", json: "data_physics")
     let mockDataSource = MockTopicDataSource(topicToReturn: topic)
-    sut.topicDataSource = mockDataSource
+    sut = TopicViewController(dataSource: mockDataSource)
+
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
     
@@ -107,12 +98,12 @@ class PhyTopicViewControllerTests: XCTestCase {
     sut.tableView(sut.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
     
     // then
-    let result = navController.lastPushedViewController as! PhySpecialFieldsViewController
+    let result = navController.lastPushedViewController as! SpecialFieldsViewController
     XCTAssertEqual(2, result.specialFieldDataSource.numberOfSections())
   }
 }
 
-extension PhyTopicViewControllerTests {
+extension TopicViewControllerTests {
   
   class TableViewMock : UITableView {
     
@@ -122,18 +113,18 @@ extension PhyTopicViewControllerTests {
       
       dequeueReusableCellCalls += 1
       
-      return PhyTopicCell()
+      return TopicCell()
     }
   }
   
-  class MockTopicDataSource : PhyTopicDataSourceProtocol {
+  class MockTopicDataSource : TopicDataSourceProtocol {
     
     let _numberOfSections: Int
     let _numberOfRows: Int
-    let _topicToReturn: PhyTopic
+    let _topicToReturn: Topic
     var lastIndexPath: IndexPath? = nil
     
-    init(numberOfSections: Int = 1, numberOfRows: Int = 0, topicToReturn: PhyTopic = PhyTopic(title: "Foo", json: "foo")) {
+    init(numberOfSections: Int = 1, numberOfRows: Int = 0, topicToReturn: Topic = Topic(title: "Foo", json: "foo")) {
       self._numberOfSections = numberOfSections
       self._numberOfRows = numberOfRows
       self._topicToReturn = topicToReturn
@@ -147,7 +138,7 @@ extension PhyTopicViewControllerTests {
       return _numberOfRows
     }
     
-    func topic(for indexPath: IndexPath) -> PhyTopic {
+    func topic(for indexPath: IndexPath) -> Topic {
       
       lastIndexPath = indexPath
       
@@ -155,11 +146,11 @@ extension PhyTopicViewControllerTests {
     }
   }
   
-  class MockTopicCell : PhyTopicCell {
+  class MockTopicCell : TopicCell {
     
-    var lastItem: PhyTopic?
+    var lastItem: Topic?
     
-    override func update(with item: PhyTopic) {
+    override func update(with item: Topic) {
       lastItem = item
     }
   }

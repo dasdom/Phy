@@ -4,9 +4,9 @@
 
 import UIKit
 
-class PhySpecialFieldCell: DDHBaseTableViewCell<PhySpecialField> {
+class SpecialFieldCell: DDHBaseTableViewCell<SpecialField> {
   
-  override func update(with item: PhySpecialField) {
+  override func update(with item: SpecialField) {
     textLabel?.text = item.title
     textLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
     textLabel?.adjustsFontForContentSizeCategory = true

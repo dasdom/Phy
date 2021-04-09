@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct PhySpecialField : Codable, Equatable {
+struct SpecialField : Codable, Equatable {
     let title: String
     let formulaSections: [PhyFormulaSection]
 }

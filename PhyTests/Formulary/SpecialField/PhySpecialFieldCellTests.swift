@@ -9,8 +9,8 @@ class PhySpecialFieldCellTests: XCTestCase {
   
   func test_update_setsText() {
     // given
-    let sut = PhySpecialFieldCell()
-    let specialField = PhySpecialField(title: "Foo", formulaSections: [])
+    let sut = SpecialFieldCell()
+    let specialField = SpecialField(title: "Foo", formulaSections: [])
     
     // when
     sut.update(with: specialField)

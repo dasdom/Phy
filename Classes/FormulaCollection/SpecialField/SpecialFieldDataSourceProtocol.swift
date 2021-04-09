@@ -4,8 +4,8 @@
 
 import Foundation
 
-protocol PhySpecialFieldDataSourceProtocol {
+protocol SpecialFieldDataSourceProtocol {
   func numberOfSections() -> Int
   func numberOfRows(in: Int) -> Int
-  func specialField(for: IndexPath) -> PhySpecialField
+  func specialField(for: IndexPath) -> SpecialField
 }

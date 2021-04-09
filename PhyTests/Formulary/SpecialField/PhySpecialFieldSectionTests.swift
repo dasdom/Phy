@@ -14,12 +14,12 @@ class PhySpecialFieldSectionTests: XCTestCase {
     let specialFieldSectionDict = ["title":"Bla","specialFields":[specialFieldDict]] as [String : Any]
     let data = try! JSONSerialization.data(withJSONObject: specialFieldSectionDict, options: [])
     
-    let result = try! JSONDecoder().decode(PhySpecialFieldSection.self, from: data)
+    let result = try! JSONDecoder().decode(SpecialFieldSection.self, from: data)
     
     let formula = PhyFormula(imageName: "baz.png", title: "Baz")
     let formulaSection = PhyFormulaSection(title: "Bar", formulas: [formula])
-    let specialField = PhySpecialField(title: "Foo", formulaSections: [formulaSection])
-    let expected = PhySpecialFieldSection(title: "Bla", specialFields: [specialField])
+    let specialField = SpecialField(title: "Foo", formulaSections: [formulaSection])
+    let expected = SpecialFieldSection(title: "Bla", specialFields: [specialField])
     XCTAssertEqual(expected, result)
   }
 }

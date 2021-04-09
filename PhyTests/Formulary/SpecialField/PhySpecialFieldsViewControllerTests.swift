@@ -7,11 +7,11 @@ import XCTest
 
 class PhySpecialFieldsViewControllerTests: XCTestCase {
   
-  var sut: PhySpecialFieldsViewController!
+  var sut: SpecialFieldsViewController!
   
   override func setUp() {
     let mockSpecialFieldDataSource = MockSpecialFieldDataSource(numberOfSections: 23, numberOfRows: 42)
-    sut = PhySpecialFieldsViewController(style: .plain, dataSource: mockSpecialFieldDataSource)
+    sut = SpecialFieldsViewController(style: .plain, dataSource: mockSpecialFieldDataSource)
   }
   
   override func tearDown() {
@@ -23,9 +23,9 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
     
     // Assert
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: PhySpecialFieldCell.identifier, for: IndexPath(row: 0, section: 0))
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: SpecialFieldCell.identifier, for: IndexPath(row: 0, section: 0))
     XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is PhySpecialFieldCell)
+    XCTAssertTrue(cell is SpecialFieldCell)
   }
   
   func test_cellForRow_dequeuesCell() {
@@ -59,7 +59,7 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
 
   func test_cellForRow_callsUpdateOfCell() {
     // given
-    sut.tableView.register(MockSpecialFieldCell.self, forCellReuseIdentifier: PhySpecialFieldCell.identifier)
+    sut.tableView.register(MockSpecialFieldCell.self, forCellReuseIdentifier: SpecialFieldCell.identifier)
     
     // when
     let indexPath = IndexPath(row: 0, section: 0)
@@ -74,7 +74,7 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
   func test_didSelectCell_pushesFormulasViewController() {
     // given
     let sections = [PhyFormulaSection(title: "Bar", formulas: [])]
-    (sut.specialFieldDataSource as? MockSpecialFieldDataSource)?.specialFieldToReturn = PhySpecialField(title: "Foobar", formulaSections: sections)
+    (sut.specialFieldDataSource as? MockSpecialFieldDataSource)?.specialFieldToReturn = SpecialField(title: "Foobar", formulaSections: sections)
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
 
@@ -97,14 +97,14 @@ extension PhySpecialFieldsViewControllerTests {
       
       dequeueReusableCellCalls += 1
       
-      return PhySpecialFieldCell()
+      return SpecialFieldCell()
     }
   }
   
-  class MockSpecialFieldDataSource : PhySpecialFieldDataSourceProtocol {
+  class MockSpecialFieldDataSource : SpecialFieldDataSourceProtocol {
     
     var lastIndexPath: IndexPath? = nil
-    lazy var specialFieldToReturn = PhySpecialField(title: "Foo", formulaSections: [])
+    lazy var specialFieldToReturn = SpecialField(title: "Foo", formulaSections: [])
     let numberOfRows: Int
     let _numberOfSections: Int
     
@@ -121,7 +121,7 @@ extension PhySpecialFieldsViewControllerTests {
       return numberOfRows
     }
     
-    func specialField(for indexPath: IndexPath) -> PhySpecialField {
+    func specialField(for indexPath: IndexPath) -> SpecialField {
       
       lastIndexPath = indexPath
       
@@ -129,11 +129,11 @@ extension PhySpecialFieldsViewControllerTests {
     }
   }
   
-  class MockSpecialFieldCell : PhySpecialFieldCell {
+  class MockSpecialFieldCell : SpecialFieldCell {
     
-    var lastItem: PhySpecialField?
+    var lastItem: SpecialField?
     
-    override func update(with item: PhySpecialField) {
+    override func update(with item: SpecialField) {
       lastItem = item
     }
   }

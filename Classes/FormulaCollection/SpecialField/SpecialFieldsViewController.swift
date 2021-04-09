@@ -4,11 +4,11 @@
 
 import UIKit
 
-class PhySpecialFieldsViewController: UITableViewController {
+class SpecialFieldsViewController: UITableViewController {
   
-  let specialFieldDataSource: PhySpecialFieldDataSourceProtocol
+  let specialFieldDataSource: SpecialFieldDataSourceProtocol
   
-  init(style: UITableView.Style, dataSource: PhySpecialFieldDataSourceProtocol) {
+  init(style: UITableView.Style, dataSource: SpecialFieldDataSourceProtocol) {
     specialFieldDataSource = dataSource
     
     super.init(style: style)
@@ -19,7 +19,7 @@ class PhySpecialFieldsViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.tableView.register(PhySpecialFieldCell.self, forCellReuseIdentifier: PhySpecialFieldCell.identifier)
+    self.tableView.register(SpecialFieldCell.self, forCellReuseIdentifier: SpecialFieldCell.identifier)
   }
   
   // MARK: - Table view data source
@@ -33,7 +33,7 @@ class PhySpecialFieldsViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: PhySpecialFieldCell.identifier, for: indexPath) as! PhySpecialFieldCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: SpecialFieldCell.identifier, for: indexPath) as! SpecialFieldCell
     
     let specialField = specialFieldDataSource.specialField(for: indexPath)
     cell.update(with: specialField)

@@ -4,9 +4,9 @@
 
 import Foundation
 
-struct PhySpecialFieldDataSource : PhySpecialFieldDataSourceProtocol {
+struct SpecialFieldDataSource : SpecialFieldDataSourceProtocol {
   
-  private let items: [PhySpecialFieldSection]
+  private let items: [SpecialFieldSection]
   
   init(json: String) {
     guard let url = Bundle.main.url(forResource: json, withExtension: "json") else { fatalError() }
@@ -14,7 +14,7 @@ struct PhySpecialFieldDataSource : PhySpecialFieldDataSourceProtocol {
     let data: Data
     do {
       data = try Data(contentsOf: url)
-      self.items = try JSONDecoder().decode([PhySpecialFieldSection].self, from: data)
+      self.items = try JSONDecoder().decode([SpecialFieldSection].self, from: data)
     } catch {
       print(error)
       self.items = []
@@ -29,7 +29,7 @@ struct PhySpecialFieldDataSource : PhySpecialFieldDataSourceProtocol {
     return items[section].specialFields.count
   }
   
-  func specialField(for indexPath: IndexPath) -> PhySpecialField {
+  func specialField(for indexPath: IndexPath) -> SpecialField {
     return items[indexPath.section].specialFields[indexPath.row]
   }
 }

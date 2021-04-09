@@ -5,12 +5,12 @@
 import XCTest
 @testable import Phy
 
-class PhyTopicDataSourceTests: XCTestCase {
+class TopicDataSourceTests: XCTestCase {
 
-  var sut: PhyTopicDataSource!
+  var sut: TopicDataSource!
   
   override func setUp() {
-    sut = PhyTopicDataSource()
+    sut = TopicDataSource()
   }
   
   override func tearDown() {
@@ -24,7 +24,7 @@ class PhyTopicDataSourceTests: XCTestCase {
   
   func test_init_resultsInCorrectNumberOfRows() {
     // then
-    XCTAssertEqual(2, sut.numberOfRows(in: 0))
+    XCTAssertEqual(3, sut.numberOfRows(in: 0))
   }
   
   func test_init_resultsInCorrectFirstItem() {

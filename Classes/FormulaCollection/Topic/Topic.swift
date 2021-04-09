@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct PhyTopic : Codable, Equatable {
+struct Topic : Codable, Equatable {
   let title: String
   let json: String
 }

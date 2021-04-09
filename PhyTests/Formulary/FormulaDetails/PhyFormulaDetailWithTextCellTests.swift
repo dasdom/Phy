@@ -10,7 +10,7 @@ class PhyFormulaDetailWithTextCellTests: XCTestCase {
   func test_update_setsImageAndTitle() {
     // given
     let sut = PhyFormulaDetailWithTextCell()
-    let detailItem = PhyFormulaDetailItem(imageName: "arbeit", title: "Arbeit")
+    let detailItem = PhyFormulaDetailItem(imageName: "arbeit", title: "Foobar")
     
     // when
     sut.update(with: detailItem)

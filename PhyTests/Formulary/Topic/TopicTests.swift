@@ -5,15 +5,15 @@
 import XCTest
 @testable import Phy
 
-class PhyTopicTests: XCTestCase {
+class TopicTests: XCTestCase {
 
   func test_decode() {
     let topicDict = ["title": "Foo", "json": "json"]
     let data = try! JSONSerialization.data(withJSONObject: topicDict, options: [])
     
-    let result = try! JSONDecoder().decode(PhyTopic.self, from: data)
+    let result = try! JSONDecoder().decode(Topic.self, from: data)
     
-    let expected = PhyTopic(title: "Foo", json: "json")
+    let expected = Topic(title: "Foo", json: "json")
     XCTAssertEqual(expected, result)
   }
 

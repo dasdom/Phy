@@ -7,10 +7,10 @@ import XCTest
 
 class PhySpecialFieldDataSourceTests: XCTestCase {
   
-  var sut: PhySpecialFieldDataSource!
+  var sut: SpecialFieldDataSource!
   
   override func setUp() {
-    sut = PhySpecialFieldDataSource(json: "data_physics")
+    sut = SpecialFieldDataSource(json: "data_physics")
   }
   
   override func tearDown() {

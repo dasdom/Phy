@@ -4,9 +4,9 @@
 
 import UIKit
 
-class PhyTopicCell: DDHBaseTableViewCell<PhyTopic> {
+class TopicCell: DDHBaseTableViewCell<Topic> {
   
-  override func update(with item: PhyTopic) {
+  override func update(with item: Topic) {
     textLabel?.text = item.title
     textLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
     textLabel?.adjustsFontForContentSizeCategory = true

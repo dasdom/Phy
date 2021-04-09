@@ -6,18 +6,16 @@ import UIKit
 
 class ChemElementsTableViewController: UITableViewController {
 
-  let elementsDataSource: ChemElementsDataSourceProtocol = ChemElementsDataSource(json: "data_elements")
+  let elementsDataSource: ChemElementsDataSourceProtocol // = ChemElementsDataSource(json: "data_elements")
   
-//  init(style: UITableView.Style, dataSource: ChemElementsDataSourceProtocol) {
-//
-//    elementsDataSource = dataSource
-//
-//    super.init(style: style)
-//  }
-//
-//  required init?(coder aDecoder: NSCoder) {
-//    fatalError()
-//  }
+  init(style: UITableView.Style, dataSource: ChemElementsDataSourceProtocol) {
+
+    elementsDataSource = dataSource
+
+    super.init(style: style)
+  }
+
+  required init?(coder aDecoder: NSCoder) { fatalError() }
   
   override func viewDidLoad() {
     super.viewDidLoad()

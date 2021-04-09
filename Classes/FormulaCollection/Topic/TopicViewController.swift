@@ -4,14 +4,27 @@
 
 import UIKit
 
-class PhyTopicViewController: UITableViewController {
+protocol TopicViewControllerProtocol {
+  func viewController(_ viewController: UIViewController, topicSelected: Topic)
+}
 
-  let topicDataSource: PhyTopicDataSourceProtocol = PhyTopicDataSource()
+class TopicViewController: UITableViewController {
+
+  let topicDataSource: TopicDataSourceProtocol
+  var delegate: TopicViewControllerProtocol?
+  
+  init(dataSource: TopicDataSourceProtocol) {
+    topicDataSource = dataSource
+    
+    super.init(nibName: nil, bundle: nil)
+  }
+  
+  required init?(coder: NSCoder) { fatalError() }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.register(PhyTopicCell.self, forCellReuseIdentifier: PhyTopicCell.identifier)
+    tableView.register(TopicCell.self, forCellReuseIdentifier: TopicCell.identifier)
     
     navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Impressum", comment: ""), style: .plain, target: self, action: #selector(showImpress(sender:)))
   }
@@ -27,7 +40,7 @@ class PhyTopicViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: PhyTopicCell.identifier, for: indexPath) as? PhyTopicCell else { return UITableViewCell() }
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: TopicCell.identifier, for: indexPath) as? TopicCell else { return UITableViewCell() }
     
     let topic = topicDataSource.topic(for: indexPath)
     cell.update(with: topic)
@@ -39,9 +52,7 @@ class PhyTopicViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
     let topic = topicDataSource.topic(for: indexPath)
-    let specialFieldDataSource = PhySpecialFieldDataSource(json: topic.json)
-    let next = PhySpecialFieldsViewController(style: .grouped, dataSource: specialFieldDataSource)
-    navigationController?.pushViewController(next, animated: true)
+    delegate?.viewController(self, topicSelected: topic)
   }
   
   @objc func showImpress(sender: UIBarButtonItem) {
