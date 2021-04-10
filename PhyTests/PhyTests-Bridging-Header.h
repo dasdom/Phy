@@ -3,3 +3,5 @@
 //
 
 #import "GeneralCalculatorViewController.h"
+#import "ConverterViewController.h"
+#import "ReferenzViewController.h"

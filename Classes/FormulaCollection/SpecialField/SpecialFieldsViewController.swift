@@ -5,12 +5,13 @@
 import UIKit
 
 protocol SpecialFieldsViewControllerProtocol {
-  
+  func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField)
 }
 
 class SpecialFieldsViewController: UITableViewController {
   
   let specialFieldDataSource: SpecialFieldDataSourceProtocol
+  var delegate: SpecialFieldsViewControllerProtocol?
   
   init(style: UITableView.Style, dataSource: SpecialFieldDataSourceProtocol) {
     specialFieldDataSource = dataSource
@@ -48,10 +49,9 @@ class SpecialFieldsViewController: UITableViewController {
   // MARK: - Table view delegate
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let specialField = specialFieldDataSource.specialField(for: indexPath)
-    let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
-    let next = FormulasViewController(dataSource: formulasDataSource)
+    precondition(delegate != nil)
     
-    navigationController?.pushViewController(next, animated: true)
+    let specialField = specialFieldDataSource.specialField(for: indexPath)
+    delegate?.specialFieldSelected(self, specialField: specialField)
   }
 }

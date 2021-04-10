@@ -16,7 +16,7 @@ class AppCoordinator: Coordinator {
   }
   
   func start() {
-    tabBarController.viewControllers = [formulas, calculator]
+    tabBarController.viewControllers = [formulas, calculator, converter, reference, solver]
     
     window.rootViewController = tabBarController
     window.makeKeyAndVisible()
@@ -33,8 +33,26 @@ class AppCoordinator: Coordinator {
   }
   
   private var calculator: UIViewController {
-    let calculator = GeneralCalculatorViewController()
-    calculator.tabBarItem = UITabBarItem(title: NSLocalizedString("Rechner", comment: ""), image: UIImage(systemName: "plusminus"), tag: 1)
-    return calculator
+    let viewController = GeneralCalculatorViewController()
+    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Rechner", comment: ""), image: UIImage(systemName: "plusminus"), tag: 1)
+    return viewController
+  }
+  
+  private var converter: UIViewController {
+    let viewController = ConverterViewController()
+    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Konverter", comment: ""), image: UIImage(systemName: "arrow.left.arrow.right"), tag: 2)
+    return viewController
+  }
+  
+  private var reference: UIViewController {
+    let viewController = ReferenzViewController()
+    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Referenz", comment: ""), image: UIImage(systemName: "doc.text.magnifyingglass"), tag: 3)
+    return viewController
+  }
+  
+  private var solver: UIViewController {
+    let viewController = SolverTableViewController()
+    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Werkzeuge", comment: ""), image: UIImage(systemName: "wrench.and.screwdriver"), tag: 4)
+    return UINavigationController(rootViewController: viewController)
   }
 }

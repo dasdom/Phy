@@ -24,6 +24,8 @@ class FormulaCell: DDHBaseTableViewCell<Formula> {
     
     formulaImageView = UIImageView()
     formulaImageView.translatesAutoresizingMaskIntoConstraints = false
+//    formulaImageView.setContentHuggingPriority(.required, for: .vertical)
+//    formulaImageView.setContentHuggingPriority(.required, for: .horizontal)
     
 //    let button = UIButton(type: .system)
 //    button.titleLabel?.font = .preferredFont(forTextStyle: .body)

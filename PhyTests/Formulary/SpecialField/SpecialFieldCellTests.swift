@@ -5,7 +5,7 @@
 import XCTest
 @testable import Phy
 
-class PhySpecialFieldCellTests: XCTestCase {
+class SpecialFieldCellTests: XCTestCase {
   
   func test_update_setsText() {
     // given

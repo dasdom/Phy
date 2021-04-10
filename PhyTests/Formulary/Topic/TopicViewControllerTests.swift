@@ -85,7 +85,7 @@ class TopicViewControllerTests: XCTestCase {
     XCTAssertEqual(mockCell.lastItem, topic)
   }
   
-  func test_didSelectCell_pushesSpecialFieldViewController() throws {
+  func test_didSelectCell_callsDelegateWithTopic() throws {
     // given
     let topicViewControllerProtocolStub = TopicViewControllerProtocolStub()
     sut.delegate = topicViewControllerProtocolStub

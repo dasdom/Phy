@@ -26,6 +26,7 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
   func topicSelected(_ viewController: UIViewController, topic: Topic) {
     let dataSource = SpecialFieldDataSource(json: topic.json)
     let next = SpecialFieldsViewController(style: .grouped, dataSource: dataSource)
+    next.delegate = self
     presenter.pushViewController(next, animated: true)
   }
 
@@ -34,5 +35,13 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
     let nextNavigationController = UINavigationController(rootViewController: next)
     nextNavigationController.modalPresentationStyle = .formSheet
     viewController.present(nextNavigationController, animated: true, completion: nil)
+  }
+}
+
+extension FormulasCoordinator: SpecialFieldsViewControllerProtocol {
+  func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField) {
+    let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
+    let next = FormulasViewController(dataSource: formulasDataSource)
+    presenter.pushViewController(next, animated: true)
   }
 }

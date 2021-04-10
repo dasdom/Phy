@@ -5,7 +5,7 @@
 import XCTest
 @testable import Phy
 
-class PhySpecialFieldDataSourceTests: XCTestCase {
+class SpecialFieldDataSourceTests: XCTestCase {
   
   var sut: SpecialFieldDataSource!
   

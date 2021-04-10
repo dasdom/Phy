@@ -5,7 +5,7 @@
 import XCTest
 @testable import Phy
 
-class PhySpecialFieldSectionTests: XCTestCase {
+class SpecialFieldSectionTests: XCTestCase {
 
   func test_decode_whenTitleAndSpecialFields() {
     let formulaDict = ["imageName":"baz.png","title":"Baz"]

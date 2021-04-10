@@ -13,7 +13,10 @@ class SolverDetailImageCell: DDHBaseTableViewCell<SolverTool> {
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     formulaImageView = UIImageView()
-    
+    formulaImageView.translatesAutoresizingMaskIntoConstraints = false
+    formulaImageView.setContentHuggingPriority(.required, for: .vertical)
+    formulaImageView.setContentHuggingPriority(.required, for: .horizontal)
+
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     contentView.addSubview(formulaImageView)
@@ -26,9 +29,7 @@ class SolverDetailImageCell: DDHBaseTableViewCell<SolverTool> {
     
     imageHeightConstraint.priority = UILayoutPriority(rawValue: 999)
     imageWidthConstraint.priority = UILayoutPriority(rawValue: 999)
-    
-    formulaImageView.translatesAutoresizingMaskIntoConstraints = false
-    
+        
     NSLayoutConstraint.activate([
       formulaImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
       formulaImageView.leadingAnchor.constraint(greaterThanOrEqualTo: contentView.leadingAnchor, constant: 8),
@@ -51,7 +52,7 @@ class SolverDetailImageCell: DDHBaseTableViewCell<SolverTool> {
     formulaImageView.image = image
     
     imageWidthConstraint?.isActive = false
-    
+
     let size = image.size
     imageWidthConstraint = formulaImageView.widthAnchor.constraint(equalTo: formulaImageView.heightAnchor, multiplier: size.width/size.height)
     imageWidthConstraint?.isActive = true

@@ -43,7 +43,8 @@ class FormulasCoordinatorTests: XCTestCase {
     
     sut.topicSelected(topicViewController, topic: topic)
     
-    XCTAssertTrue(navigationController.lastPushedViewController is SpecialFieldsViewController)
+    let specialField = try XCTUnwrap(navigationController.lastPushedViewController as? SpecialFieldsViewController)
+    XCTAssertNotNil(specialField.delegate)
   }
   
   func test_showImprint_showsImprint() throws {
@@ -55,6 +56,16 @@ class FormulasCoordinatorTests: XCTestCase {
     let navigationController = try XCTUnwrap(viewControllerStub.lastPresentedViewController as? UINavigationController)
     let topViewController = try XCTUnwrap(navigationController.topViewController)
     XCTAssertTrue(topViewController is ImprintViewController)
+  }
+  
+  func test_topicSelected_pushesFormulas() throws {
+    sut.start()
+    let viewController = UIViewController()
+    let specialField = SpecialField(title: "Foo", formulaSections: [])
+    
+    sut.specialFieldSelected(viewController, specialField: specialField)
+    
+    XCTAssertTrue(navigationController.lastPushedViewController is FormulasViewController)
   }
 }
 

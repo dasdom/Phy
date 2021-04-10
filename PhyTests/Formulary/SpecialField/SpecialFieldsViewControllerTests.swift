@@ -5,13 +5,14 @@
 import XCTest
 @testable import Phy
 
-class PhySpecialFieldsViewControllerTests: XCTestCase {
+class SpecialFieldsViewControllerTests: XCTestCase {
   
   var sut: SpecialFieldsViewController!
+  var dataSourceMock: MockSpecialFieldDataSource!
   
   override func setUp() {
-    let mockSpecialFieldDataSource = MockSpecialFieldDataSource(numberOfSections: 23, numberOfRows: 42)
-    sut = SpecialFieldsViewController(style: .plain, dataSource: mockSpecialFieldDataSource)
+    dataSourceMock = MockSpecialFieldDataSource(numberOfSections: 23, numberOfRows: 42)
+    sut = SpecialFieldsViewController(style: .plain, dataSource: dataSourceMock)
   }
   
   override func tearDown() {
@@ -71,24 +72,22 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
     XCTAssertEqual(mockSpecialFieldDataSource?.specialFieldToReturn, mockCell.lastItem)
   }
   
-  func test_didSelectCell_pushesFormulasViewController() {
+  func test_didSelectCell_callsDelegateWithSpecialField() {
     // given
-    let sections = [FormulaSection(title: "Bar", formulas: [])]
-    (sut.specialFieldDataSource as? MockSpecialFieldDataSource)?.specialFieldToReturn = SpecialField(title: "Foobar", formulaSections: sections)
-    let navController = MockNavigationController(rootViewController: sut)
-    navController.lastPushedViewController = nil
-
+    let stub = SpecialFieldsViewControllerProtocolStub()
+    sut.delegate = stub
+    
     // when
     sut.tableView(sut.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
     
     // then
-    let result = navController.lastPushedViewController as! FormulasViewController
-    XCTAssertEqual(sections.count, result.dataSource.numberOfSections())
+    let specialFieldMock = dataSourceMock.specialFieldToReturn
+    XCTAssertEqual(stub.lastSelectedSpecialField, specialFieldMock)
   }
 }
 
 // MARK: - Mocks
-extension PhySpecialFieldsViewControllerTests {
+extension SpecialFieldsViewControllerTests {
   class TableViewMock : UITableView {
     
     var dequeueReusableCellCalls = 0

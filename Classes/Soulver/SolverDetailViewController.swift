@@ -10,6 +10,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   var results: [String] = []
   var inputs: [String]
   var buttonEnabled = false
+  var currentTextField: UITextField?
   
   init(tool: SolverTool) {
     
@@ -35,7 +36,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   
   // MARK: UITableViewDataSource
   override func numberOfSections(in tableView: UITableView) -> Int {
-    return 4;
+    return 4
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -120,6 +121,8 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   // MARK: - UITextFieldDelegate
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
+    currentTextField = textField
+    
     if let text = textField.text {
       let newString = (text as NSString).replacingCharacters(in: range, with: string)
       
@@ -158,7 +161,9 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   
   // MARK: -
   @objc func calculate() {
-
+    
+    currentTextField?.resignFirstResponder()
+    
     let calculatable = inputs.reduce(true, { result, input -> Bool in
       return result && (input.count > 0)
     })

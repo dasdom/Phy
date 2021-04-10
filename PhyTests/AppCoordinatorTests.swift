@@ -38,4 +38,32 @@ class AppCoordinatorTests: XCTestCase {
     
     XCTAssertTrue(result is GeneralCalculatorViewController)
   }
+  
+  func test_start_setsConverterToTabBarController() throws {
+    sut.start()
+    
+    let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
+    let result = try XCTUnwrap(tabBarController.viewControllers?[2])
+    
+    XCTAssertTrue(result is ConverterViewController)
+  }
+  
+  func test_start_setsReferenceToTabBarController() throws {
+    sut.start()
+    
+    let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
+    let result = try XCTUnwrap(tabBarController.viewControllers?[3])
+    
+    XCTAssertTrue(result is ReferenzViewController)
+  }
+  
+  func test_start_setsSolverToTabBarController() throws {
+    sut.start()
+    
+    let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
+    let navigationController = try XCTUnwrap(tabBarController.viewControllers?[4] as? UINavigationController)
+    let result = navigationController.topViewController
+
+    XCTAssertTrue(result is SolverTableViewController)
+  }
 }

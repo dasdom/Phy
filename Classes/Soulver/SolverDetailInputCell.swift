@@ -14,6 +14,8 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     abbreviationImageView = UIImageView()
+    abbreviationImageView.setContentHuggingPriority(.required, for: .vertical)
+    abbreviationImageView.setContentHuggingPriority(.required, for: .horizontal)
     
     textField = UITextField()
     textField.font = .preferredFont(forTextStyle: .body)
@@ -22,12 +24,11 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     let stackView = UIStackView(arrangedSubviews: [abbreviationImageView, textField])
+    stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.spacing = 5
     stackView.alignment = .center
     
     contentView.addSubview(stackView)
-    
-    stackView.translatesAutoresizingMaskIntoConstraints = false
     
     imageHeightConstraint = abbreviationImageView.heightAnchor.constraint(equalToConstant: 20)
     imageWidthConstraint = abbreviationImageView.widthAnchor.constraint(equalToConstant: 20)
