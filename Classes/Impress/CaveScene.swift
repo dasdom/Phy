@@ -13,7 +13,7 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
   var scrollSpeed: CGFloat = 0
   var sparkEmitter: SKEmitterNode?
   var smokeEmitter: SKEmitterNode?
-  weak var impressView: ImpressView?
+  weak var imprintView: ImprintView?
 
   override func didMove(to view: SKView) {
     
@@ -111,7 +111,7 @@ class CaveScene: SKScene, SKPhysicsContactDelegate {
       
       emitterCopy.particleBirthRate = 0;
       SKAction.wait(forDuration: 1)
-      self.impressView?.didFinish()
+      self.imprintView?.didFinish()
       SKAction.run {
         emitterCopy.removeFromParent()
       }

@@ -5,7 +5,8 @@
 import UIKit
 
 protocol TopicViewControllerProtocol {
-  func viewController(_ viewController: UIViewController, topicSelected: Topic)
+  func topicSelected(_ viewController: UIViewController, topic: Topic)
+  func showImprint(_ viewController: UIViewController)
 }
 
 class TopicViewController: UITableViewController {
@@ -26,7 +27,7 @@ class TopicViewController: UITableViewController {
     
     tableView.register(TopicCell.self, forCellReuseIdentifier: TopicCell.identifier)
     
-    navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Impressum", comment: ""), style: .plain, target: self, action: #selector(showImpress(sender:)))
+    navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Impressum", comment: ""), style: .plain, target: self, action: #selector(showImprint(sender:)))
   }
   
   // MARK: - UITableViewDataSource
@@ -50,15 +51,17 @@ class TopicViewController: UITableViewController {
   
   // MARK: - UITableViewDelegate
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    precondition(delegate != nil)
     
     let topic = topicDataSource.topic(for: indexPath)
-    delegate?.viewController(self, topicSelected: topic)
+    delegate?.topicSelected(self, topic: topic)
   }
   
-  @objc func showImpress(sender: UIBarButtonItem) {
-    let next = ImpressViewController()
-    let nextNavigationController = UINavigationController(rootViewController: next)
-    nextNavigationController.modalPresentationStyle = .formSheet
-    present(nextNavigationController, animated: true, completion: nil)
+  @objc func showImprint(sender: UIBarButtonItem) {
+    
+    precondition(delegate != nil)
+
+    delegate?.showImprint(self)
   }
 }

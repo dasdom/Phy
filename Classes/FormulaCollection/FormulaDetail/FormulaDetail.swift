@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct SpecialField : Codable, Equatable {
+struct FormulaDetail : Codable, Equatable {
     let title: String
-    let formulaSections: [FormulaSection]
+    let detailItems: [FormulaDetailItem]
 }

@@ -4,11 +4,11 @@
 
 import UIKit
 
-class PhyFormulasViewController: UITableViewController {
+class FormulasViewController: UITableViewController {
   
-  let dataSource: PhyFormulasDataSourceProtocol
+  let dataSource: FormulasDataSourceProtocol
   
-  init(dataSource: PhyFormulasDataSourceProtocol) {
+  init(dataSource: FormulasDataSourceProtocol) {
     self.dataSource = dataSource
     
     super.init(style: .plain)
@@ -19,7 +19,7 @@ class PhyFormulasViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.register(PhyFormulaCell.self, forCellReuseIdentifier: PhyFormulaCell.identifier)
+    tableView.register(FormulaCell.self, forCellReuseIdentifier: FormulaCell.identifier)
   }
   
   // MARK: - Table view data source
@@ -33,7 +33,7 @@ class PhyFormulasViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
    
-    let cell = tableView.dequeueReusableCell(withIdentifier: PhyFormulaCell.identifier, for: indexPath) as! PhyFormulaCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: FormulaCell.identifier, for: indexPath) as! FormulaCell
     
     let formula = dataSource.formula(for: indexPath)
     cell.update(with: formula)
@@ -76,7 +76,7 @@ class PhyFormulasViewController: UITableViewController {
     let formula = dataSource.formula(for: indexPath)
 
     if let details = formula.details, details.count > 0 {
-      let detail = PhyFormulaDetailViewController(formula: formula)
+      let detail = FormulaDetailViewController(formula: formula)
       
       navigationController?.pushViewController(detail, animated: true)
     }

@@ -4,12 +4,12 @@
 
 import Foundation
 
-struct PhyFormula : Codable, Equatable {
+struct Formula : Codable, Equatable {
     let imageName: String
     let title: String
-    let details: [PhyFormulaDetail]?
+    let details: [FormulaDetail]?
     
-    init(imageName: String, title: String, details: [PhyFormulaDetail]? = nil) {
+    init(imageName: String, title: String, details: [FormulaDetail]? = nil) {
         self.imageName = imageName
         self.title = title
         self.details = details

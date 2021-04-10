@@ -4,7 +4,7 @@
 
 import UIKit
 
-class PhyFormulaDetailCell: DDHBaseTableViewCell<PhyFormulaDetailItem> {
+class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
 
   let detailImageView: UIImageView
   var imageHeightConstraint: NSLayoutConstraint?
@@ -41,7 +41,7 @@ class PhyFormulaDetailCell: DDHBaseTableViewCell<PhyFormulaDetailItem> {
   
   required init?(coder aDecoder: NSCoder) { fatalError() }
   
-  override func update(with item: PhyFormulaDetailItem) {
+  override func update(with item: FormulaDetailItem) {
     
     guard let image = UIImage(named: item.imageName) else {
       print("image missing: \(item.imageName)")

@@ -5,7 +5,7 @@
 import UIKit
 import SpriteKit
 
-class ImpressView: UIView, UITextViewDelegate {
+class ImprintView: UIView, UITextViewDelegate {
   
   let caveScene: CaveScene
   let gameView: SKView
@@ -36,7 +36,7 @@ class ImpressView: UIView, UITextViewDelegate {
     
     textView.delegate = self
 
-    caveScene.impressView = self
+    caveScene.imprintView = self
     gameView.presentScene(startScene)
     
     let stackView = UIStackView(arrangedSubviews: [gameView, textView])
@@ -85,7 +85,7 @@ class ImpressView: UIView, UITextViewDelegate {
   
   func didFinish() {
     startScene.title = "Game Over"
-    startScene.subTitle = "Have fun with the impress!"
+    startScene.subTitle = "Have fun with the imprint!"
     gameView.presentScene(startScene, transition: .doorsCloseHorizontal(withDuration: 0.5))
   }
 }

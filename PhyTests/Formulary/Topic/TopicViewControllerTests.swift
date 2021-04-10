@@ -85,21 +85,29 @@ class TopicViewControllerTests: XCTestCase {
     XCTAssertEqual(mockCell.lastItem, topic)
   }
   
-  func test_didSelectCell_pushesSpecialFieldViewController() {
+  func test_didSelectCell_pushesSpecialFieldViewController() throws {
     // given
-    let topic = Topic(title: "Foo", json: "data_physics")
-    let mockDataSource = MockTopicDataSource(topicToReturn: topic)
-    sut = TopicViewController(dataSource: mockDataSource)
-
-    let navController = MockNavigationController(rootViewController: sut)
-    navController.lastPushedViewController = nil
+    let topicViewControllerProtocolStub = TopicViewControllerProtocolStub()
+    sut.delegate = topicViewControllerProtocolStub
     
     // when
     sut.tableView(sut.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
     
     // then
-    let result = navController.lastPushedViewController as! SpecialFieldsViewController
-    XCTAssertEqual(2, result.specialFieldDataSource.numberOfSections())
+    XCTAssertEqual(topicViewControllerProtocolStub.lastSelectedTopic, topic)
+  }
+  
+  func test_imprintButton_callsShowImprint() throws {
+    let topicViewControllerProtocolStub = TopicViewControllerProtocolStub()
+    sut.delegate = topicViewControllerProtocolStub
+    sut.loadViewIfNeeded()
+    
+    let barButton = try XCTUnwrap(sut.navigationItem.leftBarButtonItem)
+    let selector = try XCTUnwrap(barButton.action)
+    let target = try XCTUnwrap(barButton.target)
+    _ = target.perform(selector, with: barButton)
+    
+    XCTAssertEqual(topicViewControllerProtocolStub.showImprintCallCount, 1)
   }
 }
 

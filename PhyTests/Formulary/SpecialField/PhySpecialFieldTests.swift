@@ -15,8 +15,8 @@ class PhySpecialFieldTests: XCTestCase {
 
         let result = try! JSONDecoder().decode(SpecialField.self, from: data)
 
-        let formula = PhyFormula(imageName: "baz.png", title: "Baz")
-        let formulaSection = PhyFormulaSection(title: "Bar", formulas: [formula])
+        let formula = Formula(imageName: "baz.png", title: "Baz")
+        let formulaSection = FormulaSection(title: "Bar", formulas: [formula])
         let expected = SpecialField(title: "Foo", formulaSections: [formulaSection])
         XCTAssertEqual(expected, result)
     }

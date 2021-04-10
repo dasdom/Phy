@@ -7,10 +7,10 @@ import XCTest
 
 class PhyFormulaDetailViewControllerTests: XCTestCase {
   
-  var sut: PhyFormulaDetailViewController!
+  var sut: FormulaDetailViewController!
   
   override func setUp() {
-    sut = PhyFormulaDetailViewController(formula: formula())
+    sut = FormulaDetailViewController(formula: formula())
   }
   
   override func tearDown() {
@@ -22,9 +22,9 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
     
     // then
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: PhyFormulaDetailCell.identifier, for: IndexPath(row: 0, section: 0))
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: FormulaDetailCell.identifier, for: IndexPath(row: 0, section: 0))
     XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is PhyFormulaDetailCell)
+    XCTAssertTrue(cell is FormulaDetailCell)
   }
   
   func test_loadingView_registersDetailWithTextCell() {
@@ -32,9 +32,9 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
     
     // then
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: PhyFormulaDetailWithTextCell.identifier, for: IndexPath(row: 0, section: 0))
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: FormulaDetailWithTextCell.identifier, for: IndexPath(row: 0, section: 0))
     XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is PhyFormulaDetailWithTextCell)
+    XCTAssertTrue(cell is FormulaDetailWithTextCell)
   }
   
   func test_numberOfSections() {
@@ -55,7 +55,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   func test_cellForRow_whenFormula_dequeuesCell() {
     // given
-    let mockTableView = TableViewMock<PhyFormulaDetailCell>()
+    let mockTableView = TableViewMock<FormulaDetailCell>()
     
     // when
     let indexPath = IndexPath(row: 0, section: 0)
@@ -67,7 +67,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   func test_cellForRow_whenAbbreviation_dequeuesCell() {
     // given
-    let mockTableView = TableViewMock<PhyFormulaDetailWithTextCell>()
+    let mockTableView = TableViewMock<FormulaDetailWithTextCell>()
     
     // when
     let indexPath = IndexPath(row: 0, section: 1)
@@ -95,7 +95,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   func test_cellForRow_callsUpdateWithFormulaDetail() {
     // given
-    sut.tableView.register(MockFormulaDetailCell.self, forCellReuseIdentifier: PhyFormulaDetailCell.identifier)
+    sut.tableView.register(MockFormulaDetailCell.self, forCellReuseIdentifier: FormulaDetailCell.identifier)
     
     // when
     let cell = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
@@ -107,7 +107,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   func test_cellForRow_callsUpdateWithFormulaDetailWithText() {
     // given
-    sut.tableView.register(MockFormulaDetailWithTextCell.self, forCellReuseIdentifier: PhyFormulaDetailWithTextCell.identifier)
+    sut.tableView.register(MockFormulaDetailWithTextCell.self, forCellReuseIdentifier: FormulaDetailWithTextCell.identifier)
     
     // when
     let cell = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 1))
@@ -119,10 +119,10 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   func test_didSelectRow_whenPossible_showsSolver() {
     // given
-    let detailItem = PhyFormulaDetailItem(imageName: "arbeit", title: "Arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a")], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
-    let detail = PhyFormulaDetail(title: "Foo", detailItems: [detailItem])
-    let formula = PhyFormula(imageName: "arbeit", title: "Arbeit", details: [detail])
-    sut = PhyFormulaDetailViewController(formula: formula)
+    let detailItem = FormulaDetailItem(imageName: "arbeit", title: "Arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a")], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
+    let detail = FormulaDetail(title: "Foo", detailItems: [detailItem])
+    let formula = Formula(imageName: "arbeit", title: "Arbeit", details: [detail])
+    sut = FormulaDetailViewController(formula: formula)
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
     
@@ -139,12 +139,12 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
 // MARK: - Helper
 extension PhyFormulaDetailViewControllerTests {
   
-  func formula() -> PhyFormula {
+  func formula() -> Formula {
     
-    let formulasDetail = PhyFormulaDetail(title: "Foo", detailItems: [PhyFormulaDetailItem(imageName: "bar")])
-    let abbreveationDetail = PhyFormulaDetail(title: "Abbreveation", detailItems: [PhyFormulaDetailItem(imageName: "bar_abk", title: "BarAbk"),PhyFormulaDetailItem(imageName: "baz_abk", title: "BazAbk")])
+    let formulasDetail = FormulaDetail(title: "Foo", detailItems: [FormulaDetailItem(imageName: "bar")])
+    let abbreveationDetail = FormulaDetail(title: "Abbreveation", detailItems: [FormulaDetailItem(imageName: "bar_abk", title: "BarAbk"),FormulaDetailItem(imageName: "baz_abk", title: "BazAbk")])
     
-    return PhyFormula(imageName: "foo", title: "Foo", details: [formulasDetail, abbreveationDetail])
+    return Formula(imageName: "foo", title: "Foo", details: [formulasDetail, abbreveationDetail])
   }
   
   class TableViewMock<T> : UITableView where T: UITableViewCell {
@@ -159,20 +159,20 @@ extension PhyFormulaDetailViewControllerTests {
     }
   }
   
-  class MockFormulaDetailCell : PhyFormulaDetailCell {
+  class MockFormulaDetailCell : FormulaDetailCell {
     
-    var lastItem: PhyFormulaDetailItem? = nil
+    var lastItem: FormulaDetailItem? = nil
     
-    override func update(with item: PhyFormulaDetailItem) {
+    override func update(with item: FormulaDetailItem) {
       lastItem = item
     }
   }
   
-  class MockFormulaDetailWithTextCell : PhyFormulaDetailWithTextCell {
+  class MockFormulaDetailWithTextCell : FormulaDetailWithTextCell {
     
-    var lastItem: PhyFormulaDetailItem? = nil
+    var lastItem: FormulaDetailItem? = nil
     
-    override func update(with item: PhyFormulaDetailItem) {
+    override func update(with item: FormulaDetailItem) {
       lastItem = item
     }
   }

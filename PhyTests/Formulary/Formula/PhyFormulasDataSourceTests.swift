@@ -10,7 +10,7 @@ class PhyFormulasDataSourceTests: XCTestCase {
   func test_numberOfSections_1() {
     // given
     let sections = self.sections_1()
-    let sut = PhyFormulasDataSource(sections: sections)
+    let sut = FormulasDataSource(sections: sections)
     
     // when
     let numberOfSections = sut.numberOfSections()
@@ -22,7 +22,7 @@ class PhyFormulasDataSourceTests: XCTestCase {
   func test_numberOfSections_2() {
     // given
     let sections = self.sections_2()
-    let sut = PhyFormulasDataSource(sections: sections)
+    let sut = FormulasDataSource(sections: sections)
     
     // when
     let numberOfSections = sut.numberOfSections()
@@ -34,7 +34,7 @@ class PhyFormulasDataSourceTests: XCTestCase {
   func test_numberOfRows_1() {
     // given
     let sections = self.sections_2()
-    let sut = PhyFormulasDataSource(sections: sections)
+    let sut = FormulasDataSource(sections: sections)
     
     // when
     let numberOfRows = sut.numberOfRows(in: 0)
@@ -46,7 +46,7 @@ class PhyFormulasDataSourceTests: XCTestCase {
   func test_numberOfRows_2() {
     // given
     let sections = self.sections_2()
-    let sut = PhyFormulasDataSource(sections: sections)
+    let sut = FormulasDataSource(sections: sections)
     
     // when
     let numberOfRows = sut.numberOfRows(in: 1)
@@ -58,7 +58,7 @@ class PhyFormulasDataSourceTests: XCTestCase {
   func test_title() {
     // given
     let sections = self.sections_2()
-    let sut = PhyFormulasDataSource(sections: sections)
+    let sut = FormulasDataSource(sections: sections)
     
     // when
     let result = sut.titleFor(section: 1)
@@ -70,7 +70,7 @@ class PhyFormulasDataSourceTests: XCTestCase {
   func test_formula() {
     // given
     let sections = self.sections_2()
-    let sut = PhyFormulasDataSource(sections: sections)
+    let sut = FormulasDataSource(sections: sections)
     
     // when
     let result = sut.formula(for: IndexPath(row: 0, section: 1))
@@ -81,20 +81,20 @@ class PhyFormulasDataSourceTests: XCTestCase {
 }
 
 extension PhyFormulasDataSourceTests {
-  func sections_1() -> [PhyFormulaSection] {
+  func sections_1() -> [FormulaSection] {
     return [
-      PhyFormulaSection(title: "Foo", formulas: [])
+      FormulaSection(title: "Foo", formulas: [])
     ]
   }
   
-  func sections_2() -> [PhyFormulaSection] {
+  func sections_2() -> [FormulaSection] {
     return [
-      PhyFormulaSection(title: "Foo", formulas: [
-        PhyFormula(imageName: "bla", title: "Bla"),
-        PhyFormula(imageName: "blubb", title: "Blubb")
+      FormulaSection(title: "Foo", formulas: [
+        Formula(imageName: "bla", title: "Bla"),
+        Formula(imageName: "blubb", title: "Blubb")
         ]),
-      PhyFormulaSection(title: "Bar", formulas: [
-        PhyFormula(imageName: "blubb", title: "Blubb")
+      FormulaSection(title: "Bar", formulas: [
+        Formula(imageName: "blubb", title: "Blubb")
         ])
     ]
   }

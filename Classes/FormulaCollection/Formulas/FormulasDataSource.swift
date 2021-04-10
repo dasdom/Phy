@@ -4,9 +4,16 @@
 
 import Foundation
 
-struct PhyFormulasDataSource : PhyFormulasDataSourceProtocol {
+protocol FormulasDataSourceProtocol {
+  func numberOfSections() -> Int
+  func numberOfRows(in: Int) -> Int
+  func titleFor(section: Int) -> String
+  func formula(for: IndexPath) -> Formula
+}
+
+struct FormulasDataSource : FormulasDataSourceProtocol {
   
-  let sections: [PhyFormulaSection]
+  let sections: [FormulaSection]
   
   func numberOfSections() -> Int {
     return sections.count
@@ -20,7 +27,7 @@ struct PhyFormulasDataSource : PhyFormulasDataSourceProtocol {
     return sections[section].title
   }
   
-  func formula(for indexPath: IndexPath) -> PhyFormula {
+  func formula(for indexPath: IndexPath) -> Formula {
     return sections[indexPath.section].formulas[indexPath.row]
   }
   

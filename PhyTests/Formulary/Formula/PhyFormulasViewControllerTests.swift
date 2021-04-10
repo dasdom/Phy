@@ -7,12 +7,12 @@ import XCTest
 
 class PhyFormulasViewControllerTests: XCTestCase {
   
-  var dataSource: PhyFormulasDataSource!
-  var sut: PhyFormulasViewController!
+  var dataSource: FormulasDataSource!
+  var sut: FormulasViewController!
   
   override func setUp() {
-    dataSource = PhyFormulasDataSource(sections: [PhyFormulaSection(title: "Foo", formulas: [PhyFormula(imageName: "bar", title: "Bar")])])
-    sut = PhyFormulasViewController(dataSource: dataSource)
+    dataSource = FormulasDataSource(sections: [FormulaSection(title: "Foo", formulas: [Formula(imageName: "bar", title: "Bar")])])
+    sut = FormulasViewController(dataSource: dataSource)
   }
   
   override func tearDown() {
@@ -21,10 +21,10 @@ class PhyFormulasViewControllerTests: XCTestCase {
   
   func test_init_takesFormulasDataSource() {
     // given
-    let formulasDataSource = PhyFormulasDataSource(sections: [])
+    let formulasDataSource = FormulasDataSource(sections: [])
     
     // when
-    _ = PhyFormulasViewController(dataSource: formulasDataSource)
+    _ = FormulasViewController(dataSource: formulasDataSource)
   }
   
   func test_loadingView_registersCell() {
@@ -32,9 +32,9 @@ class PhyFormulasViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
     
     // Assert
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: PhyFormulaCell.identifier, for: IndexPath(row: 0, section: 0))
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: FormulaCell.identifier, for: IndexPath(row: 0, section: 0))
     XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is PhyFormulaCell)
+    XCTAssertTrue(cell is FormulaCell)
   }
   
   func test_cellForRow_dequeuesCell() {
@@ -52,7 +52,7 @@ class PhyFormulasViewControllerTests: XCTestCase {
   func test_numberOfSections_returnsValueFromDataSource() {
     // given
     let mockDataSource = MockFormulaDataSource(numberOfSections: 23)
-    sut = PhyFormulasViewController(dataSource: mockDataSource)
+    sut = FormulasViewController(dataSource: mockDataSource)
     
     // when
     let numberOfSections = sut.numberOfSections(in: sut.tableView)
@@ -64,7 +64,7 @@ class PhyFormulasViewControllerTests: XCTestCase {
   func test_numberOfRows_returnsValueFromDataSource() {
     // given
     let mockDataSource = MockFormulaDataSource(numberOfRows: 42)
-    sut = PhyFormulasViewController(dataSource: mockDataSource)
+    sut = FormulasViewController(dataSource: mockDataSource)
     
     // when
     let numberOfRows = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
@@ -76,7 +76,7 @@ class PhyFormulasViewControllerTests: XCTestCase {
   func test_viewForHeaderInSection_returnsTitleFromDataSource() {
     // given
     let mockDataSource = MockFormulaDataSource(title: "Foo")
-    sut = PhyFormulasViewController(dataSource: mockDataSource)
+    sut = FormulasViewController(dataSource: mockDataSource)
     
     // when
     let view = sut.tableView(sut.tableView, viewForHeaderInSection: 0)
@@ -93,10 +93,10 @@ class PhyFormulasViewControllerTests: XCTestCase {
   
   func test_cellForRow_callsUpdateWithFormula() {
     // given
-    let formula = PhyFormula(imageName: "bar", title: "Bar")
+    let formula = Formula(imageName: "bar", title: "Bar")
     let mockDataSource = MockFormulaDataSource(formula: formula)
-    sut = PhyFormulasViewController(dataSource: mockDataSource)
-    sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: PhyFormulaCell.identifier)
+    sut = FormulasViewController(dataSource: mockDataSource)
+    sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: FormulaCell.identifier)
     
     // when
     let cell = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
@@ -108,11 +108,11 @@ class PhyFormulasViewControllerTests: XCTestCase {
   
   func test_didSelectCell_pushesFormulasViewController() {
     // given
-    let formula = PhyFormula(imageName: "arbeit", title: "Arbeit", details: [
-      PhyFormulaDetail(title: "Arbeit", detailItems: [PhyFormulaDetailItem(imageName: "arbeit")])
+    let formula = Formula(imageName: "arbeit", title: "Arbeit", details: [
+      FormulaDetail(title: "Arbeit", detailItems: [FormulaDetailItem(imageName: "arbeit")])
       ])
     let mockDataSource = MockFormulaDataSource(formula: formula)
-    sut = PhyFormulasViewController(dataSource: mockDataSource)
+    sut = FormulasViewController(dataSource: mockDataSource)
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
     
@@ -120,7 +120,7 @@ class PhyFormulasViewControllerTests: XCTestCase {
     sut.tableView(sut.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
     
     // then
-    let result = navController.lastPushedViewController as! PhyFormulaDetailViewController
+    let result = navController.lastPushedViewController as! FormulaDetailViewController
     XCTAssertEqual(formula, result.formula)
   }
 }
@@ -135,18 +135,18 @@ extension PhyFormulasViewControllerTests {
       
       dequeueReusableCellCalls += 1
       
-      return PhyFormulaCell()
+      return FormulaCell()
     }
   }
   
-  struct MockFormulaDataSource : PhyFormulasDataSourceProtocol {
+  struct MockFormulaDataSource : FormulasDataSourceProtocol {
     
     let _numberOfSections: Int
     let _numberOfRows: Int
     let _title: String
-    let _formula: PhyFormula
+    let _formula: Formula
     
-    init(numberOfSections: Int = -1, numberOfRows: Int = -1, title: String = "", formula: PhyFormula = PhyFormula(imageName: "nöpe", title: "Nöpe")) {
+    init(numberOfSections: Int = -1, numberOfRows: Int = -1, title: String = "", formula: Formula = Formula(imageName: "nöpe", title: "Nöpe")) {
       
       _numberOfSections = numberOfSections
       _numberOfRows = numberOfRows
@@ -166,16 +166,16 @@ extension PhyFormulasViewControllerTests {
       return _title
     }
     
-    func formula(for: IndexPath) -> PhyFormula {
+    func formula(for: IndexPath) -> Formula {
       return _formula
     }
   }
   
-  class MockFormulaCell : PhyFormulaCell {
+  class MockFormulaCell : FormulaCell {
     
-    var lastFormula: PhyFormula? = nil
+    var lastFormula: Formula? = nil
     
-    override func update(with item: PhyFormula) {
+    override func update(with item: Formula) {
       self.lastFormula = item
     }
   }

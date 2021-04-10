@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct PhyFormulaDetailItem: Codable, Equatable {
+struct FormulaDetailItem: Codable, Equatable {
     let title: String?
     let imageName: String
     let inputs: [SolverInput]?

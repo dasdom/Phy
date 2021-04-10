@@ -39,11 +39,22 @@ class FormulasCoordinatorTests: XCTestCase {
   func test_topicSelected_pushesSpecialFields() throws {
     sut.start()
     let topicViewController = try XCTUnwrap(navigationController.topViewController as? TopicViewController)
-    let topic = Topic(title: "Foo", json: "foo")
+    let topic = Topic(title: "Foo", json: "data_math")
     
-    sut.viewController(topicViewController, topicSelected: topic)
+    sut.topicSelected(topicViewController, topic: topic)
     
     XCTAssertTrue(navigationController.lastPushedViewController is SpecialFieldsViewController)
+  }
+  
+  func test_showImprint_showsImprint() throws {
+    sut.start()
+    let viewControllerStub = ViewControllerStub()
+    
+    sut.showImprint(viewControllerStub)
+    
+    let navigationController = try XCTUnwrap(viewControllerStub.lastPresentedViewController as? UINavigationController)
+    let topViewController = try XCTUnwrap(navigationController.topViewController)
+    XCTAssertTrue(topViewController is ImprintViewController)
   }
 }
 

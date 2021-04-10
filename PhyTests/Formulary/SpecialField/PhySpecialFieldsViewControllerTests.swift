@@ -73,7 +73,7 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
   
   func test_didSelectCell_pushesFormulasViewController() {
     // given
-    let sections = [PhyFormulaSection(title: "Bar", formulas: [])]
+    let sections = [FormulaSection(title: "Bar", formulas: [])]
     (sut.specialFieldDataSource as? MockSpecialFieldDataSource)?.specialFieldToReturn = SpecialField(title: "Foobar", formulaSections: sections)
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
@@ -82,7 +82,7 @@ class PhySpecialFieldsViewControllerTests: XCTestCase {
     sut.tableView(sut.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
     
     // then
-    let result = navController.lastPushedViewController as! PhyFormulasViewController
+    let result = navController.lastPushedViewController as! FormulasViewController
     XCTAssertEqual(sections.count, result.dataSource.numberOfSections())
   }
 }

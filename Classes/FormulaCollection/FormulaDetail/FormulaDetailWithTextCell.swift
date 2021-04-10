@@ -4,7 +4,7 @@
 
 import UIKit
 
-class PhyFormulaDetailWithTextCell: DDHBaseTableViewCell<PhyFormulaDetailItem> {
+class FormulaDetailWithTextCell: DDHBaseTableViewCell<FormulaDetailItem> {
 
   let detailImageView: UIImageView
   let nameLabel: UILabel
@@ -57,7 +57,7 @@ class PhyFormulaDetailWithTextCell: DDHBaseTableViewCell<PhyFormulaDetailItem> {
   
   required init?(coder aDecoder: NSCoder) { fatalError() }
   
-  override func update(with item: PhyFormulaDetailItem) {
+  override func update(with item: FormulaDetailItem) {
     
     if let title = item.title {
       nameLabel.text = NSLocalizedString(title, comment: "")

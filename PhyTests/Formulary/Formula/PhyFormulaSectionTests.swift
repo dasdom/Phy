@@ -11,10 +11,10 @@ class PhyFormulaSectionTests: XCTestCase {
         let formulaDict = ["imageName":"bar.png","title":"Bar"]
         let data = try! JSONSerialization.data(withJSONObject: ["title":"Foo","formulas":[formulaDict]], options: [])
         
-        let result = try! JSONDecoder().decode(PhyFormulaSection.self, from: data)
+        let result = try! JSONDecoder().decode(FormulaSection.self, from: data)
         
-        let formula = PhyFormula(imageName: "bar.png", title: "Bar")
-        let expected = PhyFormulaSection(title: "Foo", formulas: [formula])
+        let formula = Formula(imageName: "bar.png", title: "Bar")
+        let expected = FormulaSection(title: "Foo", formulas: [formula])
         XCTAssertEqual(expected, result)
     }
 

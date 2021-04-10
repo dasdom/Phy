@@ -4,6 +4,12 @@
 
 import Foundation
 
+protocol SpecialFieldDataSourceProtocol {
+  func numberOfSections() -> Int
+  func numberOfRows(in: Int) -> Int
+  func specialField(for: IndexPath) -> SpecialField
+}
+
 struct SpecialFieldDataSource : SpecialFieldDataSourceProtocol {
   
   private let items: [SpecialFieldSection]

@@ -4,7 +4,7 @@
 
 import UIKit
 
-class PhyFormulaCell: DDHBaseTableViewCell<PhyFormula> {
+class FormulaCell: DDHBaseTableViewCell<Formula> {
   
   let nameLabel: UILabel
   let formulaImageView: UIImageView
@@ -66,7 +66,7 @@ class PhyFormulaCell: DDHBaseTableViewCell<PhyFormula> {
   
   required init?(coder aDecoder: NSCoder) { fatalError() }
   
-  override func update(with item: PhyFormula) {
+  override func update(with item: Formula) {
     nameLabel.text = item.title
     
     guard let image = UIImage(named: item.imageName) else {

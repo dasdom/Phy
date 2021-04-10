@@ -9,8 +9,8 @@ class PhyFormulaCellTests: XCTestCase {
   
   func test_update_setsText() {
     // given
-    let sut = PhyFormulaCell()
-    let formula = PhyFormula(imageName: "arbeit", title: "Bar")
+    let sut = FormulaCell()
+    let formula = Formula(imageName: "arbeit", title: "Bar")
     
     // when
     sut.update(with: formula)

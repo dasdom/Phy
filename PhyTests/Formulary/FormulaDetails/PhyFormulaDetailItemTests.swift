@@ -10,18 +10,18 @@ class PhyFormulaDetailItemTests: XCTestCase {
     func test_decode_whenImageNameAndTitleIsSet_decodes() {
         let data = try! JSONSerialization.data(withJSONObject: ["imageName":"foo.png","title":"Foo"], options: [])
         
-        let result = try! JSONDecoder().decode(PhyFormulaDetailItem.self, from: data)
+        let result = try! JSONDecoder().decode(FormulaDetailItem.self, from: data)
         
-        let expected = PhyFormulaDetailItem(imageName: "foo.png", title: "Foo")
+        let expected = FormulaDetailItem(imageName: "foo.png", title: "Foo")
         XCTAssertEqual(expected, result)
     }
     
     func test_decode_whenOnlyImageNameIsSet_decodes() {
         let data = try! JSONSerialization.data(withJSONObject: ["imageName":"foo.png"], options: [])
         
-        let result = try! JSONDecoder().decode(PhyFormulaDetailItem.self, from: data)
+        let result = try! JSONDecoder().decode(FormulaDetailItem.self, from: data)
         
-        let expected = PhyFormulaDetailItem(imageName: "foo.png")
+        let expected = FormulaDetailItem(imageName: "foo.png")
         XCTAssertEqual(expected, result)
     }
     
@@ -30,11 +30,11 @@ class PhyFormulaDetailItemTests: XCTestCase {
         let resultsDict = [["formula": "#s÷#t","imageName": "v_equals"]]
         let data = try! JSONSerialization.data(withJSONObject: ["imageName":"foo.png","inputs":inputsDict,"results":resultsDict], options: [])
         
-        let result = try! JSONDecoder().decode(PhyFormulaDetailItem.self, from: data)
+        let result = try! JSONDecoder().decode(FormulaDetailItem.self, from: data)
         
         let input = SolverInput(id: "s", imageName: "s_colon", placeholder: "s")
         let soverResult = SolverResult(formula: "#s÷#t", imageName: "v_equals", imageNameShort: nil)
-        let expected = PhyFormulaDetailItem(imageName: "foo.png", inputs: [input], results: [soverResult])
+        let expected = FormulaDetailItem(imageName: "foo.png", inputs: [input], results: [soverResult])
         XCTAssertEqual(expected, result)
     }
 }

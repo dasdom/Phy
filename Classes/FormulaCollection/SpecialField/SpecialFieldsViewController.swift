@@ -4,6 +4,10 @@
 
 import UIKit
 
+protocol SpecialFieldsViewControllerProtocol {
+  
+}
+
 class SpecialFieldsViewController: UITableViewController {
   
   let specialFieldDataSource: SpecialFieldDataSourceProtocol
@@ -45,8 +49,8 @@ class SpecialFieldsViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
     let specialField = specialFieldDataSource.specialField(for: indexPath)
-    let formulasDataSource = PhyFormulasDataSource(sections: specialField.formulaSections)
-    let next = PhyFormulasViewController(dataSource: formulasDataSource)
+    let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
+    let next = FormulasViewController(dataSource: formulasDataSource)
     
     navigationController?.pushViewController(next, animated: true)
   }

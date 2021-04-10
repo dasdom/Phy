@@ -22,10 +22,17 @@ class FormulasCoordinator: Coordinator {
 }
 
 extension FormulasCoordinator: TopicViewControllerProtocol {
-  func viewController(_ viewController: UIViewController, topicSelected topic: Topic) {
-    
+  
+  func topicSelected(_ viewController: UIViewController, topic: Topic) {
     let dataSource = SpecialFieldDataSource(json: topic.json)
     let next = SpecialFieldsViewController(style: .grouped, dataSource: dataSource)
     presenter.pushViewController(next, animated: true)
+  }
+
+  func showImprint(_ viewController: UIViewController) {
+    let next = ImprintViewController()
+    let nextNavigationController = UINavigationController(rootViewController: next)
+    nextNavigationController.modalPresentationStyle = .formSheet
+    viewController.present(nextNavigationController, animated: true, completion: nil)
   }
 }

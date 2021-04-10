@@ -4,11 +4,11 @@
 
 import UIKit
 
-class PhyFormulaDetailViewController: UITableViewController {
+class FormulaDetailViewController: UITableViewController {
   
-  let formula: PhyFormula
+  let formula: Formula
   
-  init(formula: PhyFormula) {
+  init(formula: Formula) {
     
     self.formula = formula
     
@@ -20,8 +20,8 @@ class PhyFormulaDetailViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.register(PhyFormulaDetailCell.self, forCellReuseIdentifier: PhyFormulaDetailCell.identifier)
-    tableView.register(PhyFormulaDetailWithTextCell.self, forCellReuseIdentifier: PhyFormulaDetailWithTextCell.identifier)
+    tableView.register(FormulaDetailCell.self, forCellReuseIdentifier: FormulaDetailCell.identifier)
+    tableView.register(FormulaDetailWithTextCell.self, forCellReuseIdentifier: FormulaDetailWithTextCell.identifier)
   }
   
   // MARK: - Table view data source
@@ -45,11 +45,11 @@ class PhyFormulaDetailViewController: UITableViewController {
       return UITableViewCell()
     }
     
-    let cell: DDHBaseTableViewCell<PhyFormulaDetailItem>?
+    let cell: DDHBaseTableViewCell<FormulaDetailItem>?
     if detailItem.title?.contains("Abk") ?? false {
-      cell = tableView.dequeueReusableCell(withIdentifier: PhyFormulaDetailWithTextCell.identifier, for: indexPath) as? DDHBaseTableViewCell<PhyFormulaDetailItem>
+      cell = tableView.dequeueReusableCell(withIdentifier: FormulaDetailWithTextCell.identifier, for: indexPath) as? DDHBaseTableViewCell<FormulaDetailItem>
     } else {
-      cell = tableView.dequeueReusableCell(withIdentifier: PhyFormulaDetailCell.identifier, for: indexPath) as? DDHBaseTableViewCell<PhyFormulaDetailItem>
+      cell = tableView.dequeueReusableCell(withIdentifier: FormulaDetailCell.identifier, for: indexPath) as? DDHBaseTableViewCell<FormulaDetailItem>
     }
     
     cell?.update(with: detailItem)

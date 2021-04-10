@@ -4,12 +4,12 @@
 
 import UIKit
 
-class ImpressViewController: UIViewController {
+class ImprintViewController: UIViewController {
 
   override func loadView() {
     
-    let impressView = ImpressView(frame: UIScreen.main.bounds)
-    impressView.textView.text = """
+    let imprintView = ImprintView(frame: UIScreen.main.bounds)
+    imprintView.textView.text = """
     Impressum
     Angaben gemäß § 5 TMG
     
@@ -40,11 +40,11 @@ class ImpressViewController: UIViewController {
     Impressum vom Impressum Generator der Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht
     """
 
-    view = impressView
+    view = imprintView
   }
   
-  var contentView: ImpressView {
-    return view as! ImpressView
+  var contentView: ImprintView {
+    return view as! ImprintView
   }
   
   override func viewDidLoad() {
