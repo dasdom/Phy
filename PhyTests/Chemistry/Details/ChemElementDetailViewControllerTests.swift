@@ -3,27 +3,57 @@
 //
 
 import XCTest
+@testable import Phy
 
 class ChemElementDetailViewControllerTests: XCTestCase {
+  
+  var sut: ChemElementDetailViewController!
+  
+  override func setUpWithError() throws {
+    sut = ChemElementDetailViewController(element: element)
+  }
+  
+  override func tearDownWithError() throws {
+    sut = nil
+  }
+  
+  func test_numberOfRows() {
+    
+    let result = sut.tableView.numberOfRows(inSection: 0)
+    
+    let expected = ChemElementDetailViewController.Row.allCases.count
+    XCTAssertEqual(result, expected)
+  }
+  
+  func test_ordinalCell_isSetup() {
+    let ordinal = ChemElementDetailViewController.Row.ordinal
+    let row = ordinal.rawValue
+    
+    let indexPath = IndexPath(row: row, section: 0)
+    let cell = sut.tableView.dataSource?.tableView(sut.tableView, cellForRowAt: indexPath)
+    
+    XCTAssertEqual(cell?.textLabel?.text, ordinal.name)
+    XCTAssertEqual(cell?.detailTextLabel?.text, "\(element.ordinal)")
+  }
+}
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+extension ChemElementDetailViewControllerTests {
+  var element: ChemElement {
+    return ChemElement(abbreviation: "a",
+                       atomMass: 1,
+                       chemieBool: true,
+                       electronConfiguration: "b",
+                       group: "c",
+                       name: "d",
+                       ordinal: 2,
+                       period: 3,
+                       yPos: 4,
+                       title: "Foo",
+                       pauling: "f",
+                       mostImportantRadioactiveIsotope: 5,
+                       decayType: "g",
+                       lifetime: "h",
+                       phaseNorm: "i",
+                       crystalStructure: "j")
+  }
 }

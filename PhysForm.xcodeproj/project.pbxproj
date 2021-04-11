@@ -12,12 +12,14 @@
 		F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */; };
 		F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F2231320EA00C38045 /* ChemElementCell.swift */; };
 		F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F52313258300C38045 /* ChemElementsDataSource.swift */; };
-		F200F0F8231325C600C38045 /* ChemElementsDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F7231325C600C38045 /* ChemElementsDataSourceProtocol.swift */; };
 		F2078E322620E0170094D74D /* FormulasCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E312620E0170094D74D /* FormulasCoordinatorTests.swift */; };
 		F2078E5426218F900094D74D /* MockNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E5326218F900094D74D /* MockNavigationController.swift */; };
 		F2078E5A262190380094D74D /* TopicViewControllerProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E59262190380094D74D /* TopicViewControllerProtocolStub.swift */; };
 		F2078E642621946F0094D74D /* ViewControllerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E632621946F0094D74D /* ViewControllerStub.swift */; };
 		F2078E802621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E7F2621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift */; };
+		F2078EA22622ED170094D74D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E972622EC140094D74D /* StringExtension.swift */; };
+		F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078EAA2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift */; };
+		F2078EB22622F3D40094D74D /* ChemElementDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078EB12622F3D40094D74D /* ChemElementDetailCell.swift */; };
 		F207F4FB1145B67200256864 /* Referenz.plist in Resources */ = {isa = PBXBuildFile; fileRef = F207F4FA1145B67200256864 /* Referenz.plist */; };
 		F20E53A522D9B6D4001794E9 /* Constants.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A422D9B6D4001794E9 /* Constants.xcassets */; };
 		F20E53A722D9B914001794E9 /* Relativity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A622D9B914001794E9 /* Relativity.xcassets */; };
@@ -167,12 +169,14 @@
 		F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsTableViewControllerTests.swift; sourceTree = "<group>"; };
 		F200F0F2231320EA00C38045 /* ChemElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementCell.swift; sourceTree = "<group>"; };
 		F200F0F52313258300C38045 /* ChemElementsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSource.swift; sourceTree = "<group>"; };
-		F200F0F7231325C600C38045 /* ChemElementsDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceProtocol.swift; sourceTree = "<group>"; };
 		F2078E312620E0170094D74D /* FormulasCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulasCoordinatorTests.swift; sourceTree = "<group>"; };
 		F2078E5326218F900094D74D /* MockNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNavigationController.swift; sourceTree = "<group>"; };
 		F2078E59262190380094D74D /* TopicViewControllerProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewControllerProtocolStub.swift; sourceTree = "<group>"; };
 		F2078E632621946F0094D74D /* ViewControllerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStub.swift; sourceTree = "<group>"; };
 		F2078E7F2621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialFieldsViewControllerProtocolStub.swift; sourceTree = "<group>"; };
+		F2078E972622EC140094D74D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F2078EAA2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		F2078EB12622F3D40094D74D /* ChemElementDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementDetailCell.swift; sourceTree = "<group>"; };
 		F207F4FA1145B67200256864 /* Referenz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Referenz.plist; sourceTree = "<group>"; };
 		F20E53A422D9B6D4001794E9 /* Constants.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Constants.xcassets; sourceTree = "<group>"; };
 		F20E53A622D9B914001794E9 /* Relativity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Relativity.xcassets; sourceTree = "<group>"; };
@@ -456,9 +460,8 @@
 			isa = PBXGroup;
 			children = (
 				F200F0EE2312B68500C38045 /* ChemElementTests.swift */,
-				F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */,
-				F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */,
-				F282727A232E2746004E94E0 /* ChemElementCellTests.swift */,
+				F2078EA52622EEBD0094D74D /* List */,
+				F2078EAE2622EED00094D74D /* Details */,
 			);
 			path = Chemistry;
 			sourceTree = "<group>";
@@ -472,6 +475,43 @@
 				F2078E632621946F0094D74D /* ViewControllerStub.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F2078E912622EA610094D74D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */,
+				F200F0F2231320EA00C38045 /* ChemElementCell.swift */,
+				F200F0F52313258300C38045 /* ChemElementsDataSource.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F2078E942622EA6B0094D74D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F2827276232D875E004E94E0 /* ChemElementDetailViewController.swift */,
+				F2078EB12622F3D40094D74D /* ChemElementDetailCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F2078EA52622EEBD0094D74D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */,
+				F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */,
+				F282727A232E2746004E94E0 /* ChemElementCellTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F2078EAE2622EED00094D74D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				F2078EAA2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		F22FF0042302C52B003F3A9B /* Solver */ = {
@@ -647,6 +687,7 @@
 				F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */,
 				F2716A0F22F8635F007D1528 /* DDHBaseTableViewCell.swift */,
 				F23152B02307DACB005A26BD /* UIImageViewExtension.swift */,
+				F2078E972622EC140094D74D /* StringExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -687,11 +728,8 @@
 				F29AEB2922EB02FE00EB4E26 /* ElementsDetailViewController.h */,
 				F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */,
 				F2DB7D742311D7720098B42A /* ChemElement.swift */,
-				F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */,
-				F200F0F2231320EA00C38045 /* ChemElementCell.swift */,
-				F200F0F52313258300C38045 /* ChemElementsDataSource.swift */,
-				F200F0F7231325C600C38045 /* ChemElementsDataSourceProtocol.swift */,
-				F2827276232D875E004E94E0 /* ChemElementDetailViewController.swift */,
+				F2078E912622EA610094D74D /* List */,
+				F2078E942622EA6B0094D74D /* Detail */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -884,6 +922,7 @@
 				F200F0EC2312B44900C38045 /* ChemElementsTableViewController.swift in Sources */,
 				F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */,
 				F2716A1E22F8C753007D1528 /* FormulaCell.swift in Sources */,
+				F2078EB22622F3D40094D74D /* ChemElementDetailCell.swift in Sources */,
 				F29AEB3022EB02FE00EB4E26 /* ElementsDetailViewController.m in Sources */,
 				F236257722FEA8A80075FC2F /* FormulaDetailViewController.swift in Sources */,
 				F29AEB1222EB024800EB4E26 /* drawTest.m in Sources */,
@@ -918,6 +957,7 @@
 				F2DB7D5123101A5A0098B42A /* SpecialFieldSection.swift in Sources */,
 				F29AEB2522EB02B600EB4E26 /* ConverterViewController.m in Sources */,
 				F29AEB2F22EB02FE00EB4E26 /* ChemieTableViewController.m in Sources */,
+				F2078EA22622ED170094D74D /* StringExtension.swift in Sources */,
 				F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */,
 				F22FF003230207B3003F3A9B /* SolverDetailResultCell.swift in Sources */,
 				F236F4A52620493D00796E3D /* AppDelegate.swift in Sources */,
@@ -933,7 +973,6 @@
 				F29AEB4822EB034E00EB4E26 /* HistoryTableViewController.m in Sources */,
 				F22FF001230206E1003F3A9B /* SolverDetailButtonCell.swift in Sources */,
 				F294101322E7AD1B00379868 /* ImprintView.swift in Sources */,
-				F200F0F8231325C600C38045 /* ChemElementsDataSourceProtocol.swift in Sources */,
 				F29AEB3222EB02FE00EB4E26 /* CollectionOfElementsViewController.m in Sources */,
 				F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */,
 				F2DB7D6D231078800098B42A /* TopicCell.swift in Sources */,
@@ -975,6 +1014,7 @@
 				F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */,
 				F2DB7D6F231121920098B42A /* TopicDataSourceTests.swift in Sources */,
 				F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */,
+				F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */,
 				F236257022FE9FEF0075FC2F /* PhyFormulaCellTests.swift in Sources */,
 				F2DB7D6023101B450098B42A /* PhyFormulaDetailItemTests.swift in Sources */,
 				F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */,
