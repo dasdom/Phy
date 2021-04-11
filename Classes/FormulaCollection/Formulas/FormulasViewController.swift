@@ -53,7 +53,7 @@ class FormulasViewController: UITableViewController {
     label.translatesAutoresizingMaskIntoConstraints = false
     label.font = .preferredFont(forTextStyle: .callout)
     label.numberOfLines = 2
-    label.text = dataSource.titleFor(section: section)
+    label.text = NSLocalizedString(dataSource.titleFor(section: section), comment: "")
 
     headerView.addSubview(label)
     headerView.backgroundColor = UIColor(white: 0.9, alpha: 1.0)

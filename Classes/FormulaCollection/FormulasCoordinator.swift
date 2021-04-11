@@ -24,10 +24,17 @@ class FormulasCoordinator: Coordinator {
 extension FormulasCoordinator: TopicViewControllerProtocol {
   
   func topicSelected(_ viewController: UIViewController, topic: Topic) {
-    let dataSource = SpecialFieldDataSource(json: topic.json)
-    let next = SpecialFieldsViewController(style: .grouped, dataSource: dataSource)
-    next.delegate = self
-    presenter.pushViewController(next, animated: true)
+    switch topic.type {
+    case .formulas:
+      let dataSource = SpecialFieldDataSource(json: topic.json)
+      let next = SpecialFieldsViewController(style: .grouped, dataSource: dataSource)
+      next.delegate = self
+      presenter.pushViewController(next, animated: true)
+    case .elements:
+      let dataSource = ChemElementsDataSource(json: topic.json)
+      let next = ChemElementsTableViewController(style: .grouped, dataSource: dataSource)
+      presenter.pushViewController(next, animated: true)
+    }
   }
 
   func showImprint(_ viewController: UIViewController) {

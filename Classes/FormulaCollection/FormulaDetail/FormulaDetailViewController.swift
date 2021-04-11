@@ -36,7 +36,10 @@ class FormulaDetailViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     
-    return formula.details?[section].title
+    guard let title = formula.details?[section].title else {
+      return nil
+    }
+    return NSLocalizedString(title, comment: "")
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

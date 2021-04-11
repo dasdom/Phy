@@ -7,7 +7,7 @@ import UIKit
 class SpecialFieldCell: DDHBaseTableViewCell<SpecialField> {
   
   override func update(with item: SpecialField) {
-    textLabel?.text = item.title
+    textLabel?.text = NSLocalizedString(item.title, comment: "")
     textLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
     textLabel?.adjustsFontForContentSizeCategory = true
     

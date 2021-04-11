@@ -1,5 +1,17 @@
 [
-  {"json":"data_physics","title":"Physik"},
-  {"json":"data_math","title":"Mathematik"},
-  {"json":"data_elements","title":"Chemie"}
+  {
+    "json": "data_physics",
+    "title": "Physik Formeln",
+    "type": "formulas"
+  },
+  {
+    "json": "data_math",
+    "title": "Mathe Formeln",
+    "type": "formulas"
+  },
+  {
+    "json": "data_elements",
+    "title": "Chemische Elemente",
+    "type": "elements"
+  }
 ]
