@@ -11,7 +11,7 @@ class TopicViewControllerTests: XCTestCase {
   var mockDataSource: MockTopicDataSource!
   private let mockNumberOfSections = 23
   private let mockNumberOfRows = 42
-  private let topic = Topic(title: "Foo", json: "foo")
+  private let topic = Topic(title: "Foo", json: "foo", type: .formulas)
   
   override func setUp() {
     mockDataSource = MockTopicDataSource(numberOfSections: mockNumberOfSections, numberOfRows: mockNumberOfRows, topicToReturn: topic)
@@ -132,7 +132,7 @@ extension TopicViewControllerTests {
     let _topicToReturn: Topic
     var lastIndexPath: IndexPath? = nil
     
-    init(numberOfSections: Int = 1, numberOfRows: Int = 0, topicToReturn: Topic = Topic(title: "Foo", json: "foo")) {
+    init(numberOfSections: Int = 1, numberOfRows: Int = 0, topicToReturn: Topic = Topic(title: "Foo", json: "foo", type: .formulas)) {
       self._numberOfSections = numberOfSections
       self._numberOfRows = numberOfRows
       self._topicToReturn = topicToReturn

@@ -6,11 +6,11 @@ import UIKit
 
 class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
 
-  private let abbreviationLabel: UILabel
-  private let ordinalLabel: UILabel
-  private let nameLabel: UILabel
-  private let massLabel: UILabel
-  private let electronConfigurationLabel: UILabel
+  let abbreviationLabel: UILabel
+  let ordinalLabel: UILabel
+  let nameLabel: UILabel
+  let massLabel: UILabel
+  let electronConfigurationLabel: UILabel
   private let detailStackView: UIStackView
   private let stackView: UIStackView
   private let abbreviationStackView: UIStackView

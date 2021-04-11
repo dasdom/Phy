@@ -39,7 +39,7 @@ class FormulasCoordinatorTests: XCTestCase {
   func test_topicSelected_pushesSpecialFields() throws {
     sut.start()
     let topicViewController = try XCTUnwrap(navigationController.topViewController as? TopicViewController)
-    let topic = Topic(title: "Foo", json: "data_math")
+    let topic = Topic(title: "Foo", json: "data_math", type: .formulas)
     
     sut.topicSelected(topicViewController, topic: topic)
     

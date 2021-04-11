@@ -30,6 +30,6 @@ class TopicDataSourceTests: XCTestCase {
   func test_init_resultsInCorrectFirstItem() {
     // then
     let firstTopic = sut.topic(for: IndexPath(row: 0, section: 0))
-    XCTAssertEqual("Physik", firstTopic.title)
+    XCTAssertEqual("Physik Formeln", firstTopic.title)
   }
 }

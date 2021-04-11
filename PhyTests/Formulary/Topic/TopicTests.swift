@@ -8,12 +8,12 @@ import XCTest
 class TopicTests: XCTestCase {
 
   func test_decode() {
-    let topicDict = ["title": "Foo", "json": "json"]
+    let topicDict = ["title": "Foo", "json": "json", "type": "formulas"]
     let data = try! JSONSerialization.data(withJSONObject: topicDict, options: [])
     
     let result = try! JSONDecoder().decode(Topic.self, from: data)
     
-    let expected = Topic(title: "Foo", json: "json")
+    let expected = Topic(title: "Foo", json: "json", type: .formulas)
     XCTAssertEqual(expected, result)
   }
 
