@@ -4,6 +4,12 @@
 
 import Foundation
 
+protocol ChemElementsDataSourceProtocol {
+  func numberOfSections() -> Int
+  func numberOfRows(in: Int) -> Int
+  func element(for: IndexPath) -> ChemElement
+}
+
 struct ChemElementsDataSource : ChemElementsDataSourceProtocol {
   
   private let items: [ChemElement]
