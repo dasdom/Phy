@@ -59,9 +59,9 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     
     NSLayoutConstraint.activate([
       stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-      stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
+      stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
       stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-      stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
+      stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
       
       abbreviationStackView.widthAnchor.constraint(greaterThanOrEqualToConstant: 60),
       ])
@@ -73,7 +73,7 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     abbreviationLabel.text = item.abbreviation
     ordinalLabel.text = "\(item.ordinal)"
     
-    nameLabel.text = item.name
+    nameLabel.text = item.name.localized
     
     massLabel.text = "\(item.atomMass)"
     electronConfigurationLabel.text = item.electronConfiguration

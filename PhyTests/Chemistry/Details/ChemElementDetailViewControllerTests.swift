@@ -25,15 +25,15 @@ class ChemElementDetailViewControllerTests: XCTestCase {
     XCTAssertEqual(result, expected)
   }
   
-  func test_ordinalCell_isSetup() {
-    let ordinal = ChemElementDetailViewController.Row.ordinal
-    let row = ordinal.rawValue
+  func test_ordinalCell_isSetup() throws {
+    let atomMass = ChemElementDetailViewController.Row.atomMass
+    let row = atomMass.rawValue
     
     let indexPath = IndexPath(row: row, section: 0)
-    let cell = sut.tableView.dataSource?.tableView(sut.tableView, cellForRowAt: indexPath)
+    let cell = try XCTUnwrap(sut.tableView.dataSource?.tableView(sut.tableView, cellForRowAt: indexPath) as? ChemElementDetailCell)
     
-    XCTAssertEqual(cell?.textLabel?.text, ordinal.name)
-    XCTAssertEqual(cell?.detailTextLabel?.text, "\(element.ordinal)")
+    XCTAssertEqual(cell.name, atomMass.name)
+    XCTAssertEqual(cell.value, "\(element.atomMass)")
   }
 }
 
