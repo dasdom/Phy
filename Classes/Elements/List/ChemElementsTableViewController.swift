@@ -21,6 +21,14 @@ class ChemElementsTableViewController: UITableViewController {
     super.viewDidLoad()
     
     tableView.register(ChemElementCell.self, forCellReuseIdentifier: ChemElementCell.identifier)
+    
+    tableView.tableHeaderView = headerView()
+  }
+  
+  private func headerView() -> UIView {
+    let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 0, height: 50))
+    searchBar.delegate = self
+    return searchBar
   }
   
   // MARK: - UITableViewDataSource
@@ -48,5 +56,12 @@ class ChemElementsTableViewController: UITableViewController {
     let element = elementsDataSource.element(for: indexPath)
     let next = ChemElementDetailViewController(element: element)
     navigationController?.pushViewController(next, animated: true)
+  }
+}
+
+extension ChemElementsTableViewController: UISearchBarDelegate {
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    elementsDataSource.filterString = searchText
+    tableView.reloadData()
   }
 }

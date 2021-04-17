@@ -120,6 +120,7 @@
 		F29AEB5B22EB545E00EB4E26 /* SolverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5A22EB545E00EB4E26 /* SolverDetailViewController.swift */; };
 		F29AEB5D22EB54DC00EB4E26 /* SolverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5C22EB54DC00EB4E26 /* SolverDetailView.swift */; };
 		F29F212D22E1EB4400426712 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* CalculatorTests.m */; };
+		F2A529F3262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */; };
 		F2DB7D4B23101A010098B42A /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4A23101A010098B42A /* TopicViewController.swift */; };
 		F2DB7D4D23101A2C0098B42A /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4C23101A2C0098B42A /* Topic.swift */; };
 		F2DB7D5023101A5A0098B42A /* SpecialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4E23101A5A0098B42A /* SpecialField.swift */; };
@@ -307,6 +308,7 @@
 		F29F212C22E1EB4400426712 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
 		F2A120BA149E527100AD3215 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F2A120C514A141CF00AD3215 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceProtocolMock.swift; sourceTree = "<group>"; };
 		F2AC138813659F61006465C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F2DB7D4A23101A010098B42A /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		F2DB7D4C23101A2C0098B42A /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 				F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */,
 				F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */,
 				F282727A232E2746004E94E0 /* ChemElementCellTests.swift */,
+				F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -1016,6 +1019,7 @@
 				F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */,
 				F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */,
 				F236257022FE9FEF0075FC2F /* PhyFormulaCellTests.swift in Sources */,
+				F2A529F3262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift in Sources */,
 				F2DB7D6023101B450098B42A /* PhyFormulaDetailItemTests.swift in Sources */,
 				F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */,
 				F236F4B52620876A00796E3D /* AppCoordinatorTests.swift in Sources */,

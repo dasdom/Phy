@@ -1,18 +1,35 @@
 //  Created by dasdom on 25.08.19.
-//  
+//
 //
 
 import Foundation
 
-protocol ChemElementsDataSourceProtocol {
+protocol ChemElementsDataSourceProtocol: AnyObject {
+  var filterString: String? { get set }
   func numberOfSections() -> Int
   func numberOfRows(in: Int) -> Int
   func element(for: IndexPath) -> ChemElement
 }
 
-struct ChemElementsDataSource : ChemElementsDataSourceProtocol {
+class ChemElementsDataSource : ChemElementsDataSourceProtocol {
   
-  private let items: [ChemElement]
+  private let allItems: [ChemElement]
+  private var filteredItems: [ChemElement]
+  var filterString: String? {
+    didSet {
+      if let filterString = filterString, false == filterString.isEmpty {
+        filteredItems = allItems.filter({ element in
+          if element.abbreviation.contains(filterString) || element.name.localized.contains(filterString) {
+            return true
+          } else {
+            return false
+          }
+        })
+      } else {
+        filteredItems = allItems
+      }
+    }
+  }
   
   init(json: String) {
     guard let url = Bundle.main.url(forResource: json, withExtension: "json") else { fatalError() }
@@ -20,11 +37,13 @@ struct ChemElementsDataSource : ChemElementsDataSourceProtocol {
     let data: Data
     do {
       data = try Data(contentsOf: url)
-      self.items = try JSONDecoder().decode([ChemElement].self, from: data)
+      self.allItems = try JSONDecoder().decode([ChemElement].self, from: data)
     } catch {
       print(error)
-      self.items = []
+      self.allItems = []
     }
+    
+    filteredItems = allItems
   }
   
   func numberOfSections() -> Int {
@@ -32,12 +51,10 @@ struct ChemElementsDataSource : ChemElementsDataSourceProtocol {
   }
   
   func numberOfRows(in: Int) -> Int {
-    return items.count
+    return filteredItems.count
   }
   
   func element(for indexPath: IndexPath) -> ChemElement {
-    return items[indexPath.row]
+    return filteredItems[indexPath.row]
   }
-  
-  
 }

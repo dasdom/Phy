@@ -29,4 +29,10 @@ class ChemElementsDataSourceTests: XCTestCase {
     let firstElement = sut.element(for: IndexPath(row: 0, section: 0))
     XCTAssertEqual("H", firstElement.abbreviation)
   }
+  
+  func test_filterString_filtersElements() {
+    sut.filterString = "Oxygen"
+    let firstElement = sut.element(for: IndexPath(row: 0, section: 0))
+    XCTAssertEqual("O", firstElement.abbreviation)
+  }
 }
