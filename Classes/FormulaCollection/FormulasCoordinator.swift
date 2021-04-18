@@ -32,7 +32,7 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
       presenter.pushViewController(next, animated: true)
     case .elements:
       let dataSource = ChemElementsDataSource(json: topic.json)
-      let next = ChemElementsTableViewController(style: .grouped, dataSource: dataSource)
+      let next = ChemElementsTableViewController(style: .plain, dataSource: dataSource)
       presenter.pushViewController(next, animated: true)
     }
   }

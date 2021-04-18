@@ -52,9 +52,6 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
-    backgroundColor = .white
-    
-    
     contentView.addSubview(stackView)
     
     NSLayoutConstraint.activate([

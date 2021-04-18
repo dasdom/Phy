@@ -81,5 +81,7 @@ class FormulaDetailWithTextCell: DDHBaseTableViewCell<FormulaDetailItem> {
   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
     
     detailImageView.update(heightConstraint: imageHeightConstraint)
+    
+    tintColor = UIColor.label
   }
 }

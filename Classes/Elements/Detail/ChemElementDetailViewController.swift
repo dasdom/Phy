@@ -53,7 +53,7 @@ class ChemElementDetailViewController: UITableViewController {
     let nameLabel = UILabel()
     nameLabel.font = .preferredFont(forTextStyle: .headline)
     nameLabel.textAlignment = .center
-    nameLabel.text = element.name
+    nameLabel.text = element.name.localized
     
     let stackView = UIStackView(arrangedSubviews: [abbreviationLabel, ordinalLabel, nameLabel])
     stackView.translatesAutoresizingMaskIntoConstraints = false

@@ -95,6 +95,7 @@ class FormulaCell: DDHBaseTableViewCell<Formula> {
     nameTopConstraint?.constant = floor(fontMetrics.scaledValue(for: 12))
     imageTopConstraint?.constant = floor(fontMetrics.scaledValue(for: 6))
     imageBottomConstraint?.constant = floor(fontMetrics.scaledValue(for: -12))
+    
+    tintColor = UIColor.label
   }
-
 }

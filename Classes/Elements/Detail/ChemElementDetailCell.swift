@@ -20,23 +20,22 @@ class ChemElementDetailCell: UITableViewCell {
     nameLabel = UILabel()
     nameLabel.font = .preferredFont(forTextStyle: .body)
     nameLabel.numberOfLines = 0
+//    nameLabel.textAlignment = .right
     
     valueLabel = UILabel()
     valueLabel.font = .preferredFont(forTextStyle: .headline)
     valueLabel.numberOfLines = 0
-//    valueLabel.textAlignment = .right
+    valueLabel.textAlignment = .right
     
     let stackView = UIStackView(arrangedSubviews: [nameLabel, valueLabel])
     stackView.translatesAutoresizingMaskIntoConstraints = false
-    stackView.spacing = 8
+    stackView.spacing = 20
     stackView.distribution = .fillEqually
     stackView.alignment = .firstBaseline
 //    stackView.axis = .vertical
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-    
-    backgroundColor = .white
-    
+        
     contentView.addSubview(stackView)
     
     NSLayoutConstraint.activate([
