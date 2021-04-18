@@ -365,7 +365,7 @@
 				F29AEB2622EB02FE00EB4E26 /* Elements */,
 				F29AEB1C22EB02B600EB4E26 /* Converter */,
 				F29AEB1522EB028300EB4E26 /* Reference */,
-				F294100C22E7AD1B00379868 /* Impress */,
+				F294100C22E7AD1B00379868 /* Imprint */,
 				F29AEB0B22EB024800EB4E26 /* Helper */,
 				F29AEB0822EB01ED00EB4E26 /* Soulver */,
 				F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */,
@@ -648,7 +648,7 @@
 			path = SpecialField;
 			sourceTree = "<group>";
 		};
-		F294100C22E7AD1B00379868 /* Impress */ = {
+		F294100C22E7AD1B00379868 /* Imprint */ = {
 			isa = PBXGroup;
 			children = (
 				F294100D22E7AD1B00379868 /* ImprintViewController.swift */,
@@ -659,7 +659,7 @@
 				F29AEAFD22EA466900EB4E26 /* Assets.xcassets */,
 				F294101122E7AD1B00379868 /* StartScene.swift */,
 			);
-			path = Impress;
+			path = Imprint;
 			sourceTree = "<group>";
 		};
 		F29AEB0822EB01ED00EB4E26 /* Soulver */ = {

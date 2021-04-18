@@ -79,16 +79,10 @@ class PhyFormulasViewControllerTests: XCTestCase {
     sut = FormulasViewController(dataSource: mockDataSource)
     
     // when
-    let view = sut.tableView(sut.tableView, viewForHeaderInSection: 0)
+    let title = sut.tableView(sut.tableView, titleForHeaderInSection: 0)
     
     // then
-    let lables = view?.subviews.filter({ view in
-      if let label = view as? UILabel {
-        return label.text == "Foo"
-      }
-      return false
-    })
-    XCTAssertEqual(1, lables?.count)
+    XCTAssertEqual(title, "Foo")
   }
   
   func test_cellForRow_callsUpdateWithFormula() {
