@@ -27,7 +27,7 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
     switch topic.type {
     case .formulas:
       let dataSource = SpecialFieldDataSource(json: topic.json)
-      let next = SpecialFieldsViewController(style: .grouped, dataSource: dataSource)
+      let next = SpecialFieldsViewController(style: .insetGrouped, dataSource: dataSource)
       next.delegate = self
       presenter.pushViewController(next, animated: true)
     case .elements:
@@ -50,5 +50,14 @@ extension FormulasCoordinator: SpecialFieldsViewControllerProtocol {
     let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
     let next = FormulasViewController(dataSource: formulasDataSource)
     presenter.pushViewController(next, animated: true)
+  }
+}
+
+extension FormulasCoordinator: FormulasViewControllerProtocol {
+  func formulaSelected(_ viewController: UIViewController, formula: Formula) {
+    if let details = formula.details, details.count > 0 {
+      let detail = FormulaDetailViewController(formula: formula)
+      presenter.pushViewController(detail, animated: true)
+    }
   }
 }

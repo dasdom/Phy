@@ -1,12 +1,17 @@
 //  Created by dasdom on 05.08.19.
-//  
+//
 //
 
 import UIKit
 
+protocol FormulasViewControllerProtocol {
+  func formulaSelected(_ viewController: UIViewController, formula: Formula)
+}
+
 class FormulasViewController: UITableViewController {
   
   let dataSource: FormulasDataSourceProtocol
+  var delegate: FormulasViewControllerProtocol?
   
   init(dataSource: FormulasDataSourceProtocol) {
     self.dataSource = dataSource
@@ -45,29 +50,6 @@ class FormulasViewController: UITableViewController {
     return cell
   }
   
-//  override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//
-//    let headerView = UIView()
-//
-//    let label = UILabel()
-//    label.translatesAutoresizingMaskIntoConstraints = false
-//    label.font = .preferredFont(forTextStyle: .callout)
-//    label.numberOfLines = 2
-//    label.text = NSLocalizedString(dataSource.titleFor(section: section), comment: "")
-//
-//    headerView.addSubview(label)
-//    headerView.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
-//
-//    NSLayoutConstraint.activate([
-//      label.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 3),
-//      label.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 8),
-//      label.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -3),
-//      label.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -8)
-//      ])
-//
-//    return headerView
-//  }
-  
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return NSLocalizedString(dataSource.titleFor(section: section), comment: "")
   }
@@ -78,11 +60,6 @@ class FormulasViewController: UITableViewController {
     tableView.deselectRow(at: indexPath, animated: true)
     
     let formula = dataSource.formula(for: indexPath)
-
-    if let details = formula.details, details.count > 0 {
-      let detail = FormulaDetailViewController(formula: formula)
-      
-      navigationController?.pushViewController(detail, animated: true)
-    }
+    delegate?.formulaSelected(self, formula: formula)
   }
 }

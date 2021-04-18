@@ -67,6 +67,18 @@ class FormulasCoordinatorTests: XCTestCase {
     
     XCTAssertTrue(navigationController.lastPushedViewController is FormulasViewController)
   }
+  
+  func test_formulaSelected_pushesFormulaDetails() throws {
+    sut.start()
+    let viewController = UIViewController()
+    let formula = Formula(imageName: "foo", title: "Foobar", details: [
+      FormulaDetail(title: "Bar", detailItems: [FormulaDetailItem(imageName: "bla")])
+    ])
+    
+    sut.formulaSelected(viewController, formula: formula)
+    
+    XCTAssertTrue(navigationController.lastPushedViewController is FormulaDetailViewController)
+  }
 }
 
 extension FormulasCoordinator: Equatable {

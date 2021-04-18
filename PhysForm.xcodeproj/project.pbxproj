@@ -43,9 +43,9 @@
 		F22FF001230206E1003F3A9B /* SolverDetailButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FF000230206E1003F3A9B /* SolverDetailButtonCell.swift */; };
 		F22FF003230207B3003F3A9B /* SolverDetailResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FF002230207B3003F3A9B /* SolverDetailResultCell.swift */; };
 		F23152B12307DACB005A26BD /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23152B02307DACB005A26BD /* UIImageViewExtension.swift */; };
-		F236256E22FE9FEF0075FC2F /* PhyFormulasViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256B22FE9FEF0075FC2F /* PhyFormulasViewControllerTests.swift */; };
-		F236256F22FE9FEF0075FC2F /* PhyFormulasDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256C22FE9FEF0075FC2F /* PhyFormulasDataSourceTests.swift */; };
-		F236257022FE9FEF0075FC2F /* PhyFormulaCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256D22FE9FEF0075FC2F /* PhyFormulaCellTests.swift */; };
+		F236256E22FE9FEF0075FC2F /* FormulasViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256B22FE9FEF0075FC2F /* FormulasViewControllerTests.swift */; };
+		F236256F22FE9FEF0075FC2F /* FormulasDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256C22FE9FEF0075FC2F /* FormulasDataSourceTests.swift */; };
+		F236257022FE9FEF0075FC2F /* FormulaCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256D22FE9FEF0075FC2F /* FormulaCellTests.swift */; };
 		F236257322FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236257222FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift */; };
 		F236257522FEA8850075FC2F /* FormulaDetailWithTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236257422FEA8840075FC2F /* FormulaDetailWithTextCell.swift */; };
 		F236257722FEA8A80075FC2F /* FormulaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236257622FEA8A80075FC2F /* FormulaDetailViewController.swift */; };
@@ -129,8 +129,8 @@
 		F2DB7D5523101A650098B42A /* FormulaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5323101A650098B42A /* FormulaSection.swift */; };
 		F2DB7D5823101A730098B42A /* FormulaDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5623101A730098B42A /* FormulaDetailItem.swift */; };
 		F2DB7D5923101A730098B42A /* FormulaDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5723101A730098B42A /* FormulaDetail.swift */; };
-		F2DB7D5C23101B3A0098B42A /* PhyFormulaSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5A23101B3A0098B42A /* PhyFormulaSectionTests.swift */; };
-		F2DB7D5D23101B3A0098B42A /* PhyFormulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5B23101B3A0098B42A /* PhyFormulaTests.swift */; };
+		F2DB7D5C23101B3A0098B42A /* FormulaSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5A23101B3A0098B42A /* FormulaSectionTests.swift */; };
+		F2DB7D5D23101B3A0098B42A /* FormulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5B23101B3A0098B42A /* FormulaTests.swift */; };
 		F2DB7D6023101B450098B42A /* PhyFormulaDetailItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5E23101B450098B42A /* PhyFormulaDetailItemTests.swift */; };
 		F2DB7D6123101B450098B42A /* PhyFormulaDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D5F23101B450098B42A /* PhyFormulaDetailTests.swift */; };
 		F2DB7D6423101B510098B42A /* TopicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D6323101B510098B42A /* TopicTests.swift */; };
@@ -141,6 +141,8 @@
 		F2DB7D71231125430098B42A /* TopicCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D70231125430098B42A /* TopicCellTests.swift */; };
 		F2DB7D7323118E590098B42A /* data_elements.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DB7D7223118E590098B42A /* data_elements.json */; };
 		F2DB7D752311D7720098B42A /* ChemElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D742311D7720098B42A /* ChemElement.swift */; };
+		F2DBAEE6262C1FD8004DA5F9 /* FormulasViewControllerProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBAEE5262C1FD8004DA5F9 /* FormulasViewControllerProtocolMock.swift */; };
+		F2DBAEF8262C21E8004DA5F9 /* FormulasDataSourceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBAEF7262C21E8004DA5F9 /* FormulasDataSourceProtocolMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,9 +204,9 @@
 		F22FF000230206E1003F3A9B /* SolverDetailButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverDetailButtonCell.swift; sourceTree = "<group>"; };
 		F22FF002230207B3003F3A9B /* SolverDetailResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverDetailResultCell.swift; sourceTree = "<group>"; };
 		F23152B02307DACB005A26BD /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
-		F236256B22FE9FEF0075FC2F /* PhyFormulasViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulasViewControllerTests.swift; sourceTree = "<group>"; };
-		F236256C22FE9FEF0075FC2F /* PhyFormulasDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulasDataSourceTests.swift; sourceTree = "<group>"; };
-		F236256D22FE9FEF0075FC2F /* PhyFormulaCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulaCellTests.swift; sourceTree = "<group>"; };
+		F236256B22FE9FEF0075FC2F /* FormulasViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasViewControllerTests.swift; sourceTree = "<group>"; };
+		F236256C22FE9FEF0075FC2F /* FormulasDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasDataSourceTests.swift; sourceTree = "<group>"; };
+		F236256D22FE9FEF0075FC2F /* FormulaCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaCellTests.swift; sourceTree = "<group>"; };
 		F236257222FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulaDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		F236257422FEA8840075FC2F /* FormulaDetailWithTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaDetailWithTextCell.swift; sourceTree = "<group>"; };
 		F236257622FEA8A80075FC2F /* FormulaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaDetailViewController.swift; sourceTree = "<group>"; };
@@ -318,8 +320,8 @@
 		F2DB7D5323101A650098B42A /* FormulaSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaSection.swift; sourceTree = "<group>"; };
 		F2DB7D5623101A730098B42A /* FormulaDetailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaDetailItem.swift; sourceTree = "<group>"; };
 		F2DB7D5723101A730098B42A /* FormulaDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaDetail.swift; sourceTree = "<group>"; };
-		F2DB7D5A23101B3A0098B42A /* PhyFormulaSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulaSectionTests.swift; sourceTree = "<group>"; };
-		F2DB7D5B23101B3A0098B42A /* PhyFormulaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulaTests.swift; sourceTree = "<group>"; };
+		F2DB7D5A23101B3A0098B42A /* FormulaSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaSectionTests.swift; sourceTree = "<group>"; };
+		F2DB7D5B23101B3A0098B42A /* FormulaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaTests.swift; sourceTree = "<group>"; };
 		F2DB7D5E23101B450098B42A /* PhyFormulaDetailItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulaDetailItemTests.swift; sourceTree = "<group>"; };
 		F2DB7D5F23101B450098B42A /* PhyFormulaDetailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhyFormulaDetailTests.swift; sourceTree = "<group>"; };
 		F2DB7D6323101B510098B42A /* TopicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTests.swift; sourceTree = "<group>"; };
@@ -330,6 +332,8 @@
 		F2DB7D70231125430098B42A /* TopicCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCellTests.swift; sourceTree = "<group>"; };
 		F2DB7D7223118E590098B42A /* data_elements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data_elements.json; sourceTree = "<group>"; };
 		F2DB7D742311D7720098B42A /* ChemElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElement.swift; sourceTree = "<group>"; };
+		F2DBAEE5262C1FD8004DA5F9 /* FormulasViewControllerProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulasViewControllerProtocolMock.swift; sourceTree = "<group>"; };
+		F2DBAEF7262C21E8004DA5F9 /* FormulasDataSourceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulasDataSourceProtocolMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,11 +532,13 @@
 		F236256A22FE9FEF0075FC2F /* Formula */ = {
 			isa = PBXGroup;
 			children = (
-				F2DB7D5A23101B3A0098B42A /* PhyFormulaSectionTests.swift */,
-				F2DB7D5B23101B3A0098B42A /* PhyFormulaTests.swift */,
-				F236256B22FE9FEF0075FC2F /* PhyFormulasViewControllerTests.swift */,
-				F236256C22FE9FEF0075FC2F /* PhyFormulasDataSourceTests.swift */,
-				F236256D22FE9FEF0075FC2F /* PhyFormulaCellTests.swift */,
+				F236256B22FE9FEF0075FC2F /* FormulasViewControllerTests.swift */,
+				F2DB7D5A23101B3A0098B42A /* FormulaSectionTests.swift */,
+				F2DB7D5B23101B3A0098B42A /* FormulaTests.swift */,
+				F236256C22FE9FEF0075FC2F /* FormulasDataSourceTests.swift */,
+				F236256D22FE9FEF0075FC2F /* FormulaCellTests.swift */,
+				F2DBAEE5262C1FD8004DA5F9 /* FormulasViewControllerProtocolMock.swift */,
+				F2DBAEF7262C21E8004DA5F9 /* FormulasDataSourceProtocolMock.swift */,
 			);
 			path = Formula;
 			sourceTree = "<group>";
@@ -591,11 +597,11 @@
 		F24B0E6F22FC4CA70016ACCF /* FormulaDetail */ = {
 			isa = PBXGroup;
 			children = (
-				F2DB7D5623101A730098B42A /* FormulaDetailItem.swift */,
 				F236257622FEA8A80075FC2F /* FormulaDetailViewController.swift */,
 				F236257422FEA8840075FC2F /* FormulaDetailWithTextCell.swift */,
 				F236257822FEDA970075FC2F /* FormulaDetailCell.swift */,
 				F2DB7D5723101A730098B42A /* FormulaDetail.swift */,
+				F2DB7D5623101A730098B42A /* FormulaDetailItem.swift */,
 			);
 			path = FormulaDetail;
 			sourceTree = "<group>";
@@ -1002,28 +1008,30 @@
 				F2DB7D6123101B450098B42A /* PhyFormulaDetailTests.swift in Sources */,
 				F200F0EF2312B68500C38045 /* ChemElementTests.swift in Sources */,
 				F2DB7D6623101B790098B42A /* TopicViewControllerTests.swift in Sources */,
-				F2DB7D5D23101B3A0098B42A /* PhyFormulaTests.swift in Sources */,
+				F2DB7D5D23101B3A0098B42A /* FormulaTests.swift in Sources */,
 				F2078E5426218F900094D74D /* MockNavigationController.swift in Sources */,
 				F2DB7D71231125430098B42A /* TopicCellTests.swift in Sources */,
 				F27169FC22F6AFDF007D1528 /* SpecialFieldTests.swift in Sources */,
 				F2078E322620E0170094D74D /* FormulasCoordinatorTests.swift in Sources */,
 				F2DB7D6423101B510098B42A /* TopicTests.swift in Sources */,
-				F236256E22FE9FEF0075FC2F /* PhyFormulasViewControllerTests.swift in Sources */,
+				F236256E22FE9FEF0075FC2F /* FormulasViewControllerTests.swift in Sources */,
 				F236257B22FEEB940075FC2F /* PhyFormulaDetailCellTests.swift in Sources */,
-				F236256F22FE9FEF0075FC2F /* PhyFormulasDataSourceTests.swift in Sources */,
+				F236256F22FE9FEF0075FC2F /* FormulasDataSourceTests.swift in Sources */,
 				F2078E802621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift in Sources */,
 				F2078E5A262190380094D74D /* TopicViewControllerProtocolStub.swift in Sources */,
-				F2DB7D5C23101B3A0098B42A /* PhyFormulaSectionTests.swift in Sources */,
+				F2DB7D5C23101B3A0098B42A /* FormulaSectionTests.swift in Sources */,
 				F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */,
 				F2DB7D6F231121920098B42A /* TopicDataSourceTests.swift in Sources */,
 				F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */,
 				F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */,
-				F236257022FE9FEF0075FC2F /* PhyFormulaCellTests.swift in Sources */,
+				F236257022FE9FEF0075FC2F /* FormulaCellTests.swift in Sources */,
 				F2A529F3262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift in Sources */,
 				F2DB7D6023101B450098B42A /* PhyFormulaDetailItemTests.swift in Sources */,
 				F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */,
 				F236F4B52620876A00796E3D /* AppCoordinatorTests.swift in Sources */,
+				F2DBAEF8262C21E8004DA5F9 /* FormulasDataSourceProtocolMock.swift in Sources */,
 				F2827279232D89F5004E94E0 /* ChemElementsDataSourceTests.swift in Sources */,
+				F2DBAEE6262C1FD8004DA5F9 /* FormulasViewControllerProtocolMock.swift in Sources */,
 				F282727B232E2746004E94E0 /* ChemElementCellTests.swift in Sources */,
 				F22FEFFB2301AC58003F3A9B /* SolverDetailViewControllerTests.swift in Sources */,
 				F23EBE74230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift in Sources */,

@@ -5,7 +5,7 @@
 import XCTest
 @testable import Phy
 
-class PhyFormulasDataSourceTests: XCTestCase {
+class FormulasDataSourceTests: XCTestCase {
 
   func test_numberOfSections_1() {
     // given
@@ -80,7 +80,7 @@ class PhyFormulasDataSourceTests: XCTestCase {
   }
 }
 
-extension PhyFormulasDataSourceTests {
+extension FormulasDataSourceTests {
   func sections_1() -> [FormulaSection] {
     return [
       FormulaSection(title: "Foo", formulas: [])

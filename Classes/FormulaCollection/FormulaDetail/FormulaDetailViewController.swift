@@ -12,7 +12,7 @@ class FormulaDetailViewController: UITableViewController {
     
     self.formula = formula
     
-    super.init(style: .grouped)
+    super.init(style: .insetGrouped)
   }
   
   required init?(coder aDecoder: NSCoder) { fatalError() }

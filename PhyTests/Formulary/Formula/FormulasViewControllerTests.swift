@@ -5,18 +5,23 @@
 import XCTest
 @testable import Phy
 
-class PhyFormulasViewControllerTests: XCTestCase {
+class FormulasViewControllerTests: XCTestCase {
   
-  var dataSource: FormulasDataSource!
   var sut: FormulasViewController!
+  var dataSourceMock: FormulasDataSourceProtocolMock!
+  var delegateMock: FormulasViewControllerProtocolMock!
   
   override func setUp() {
-    dataSource = FormulasDataSource(sections: [FormulaSection(title: "Foo", formulas: [Formula(imageName: "bar", title: "Bar")])])
-    sut = FormulasViewController(dataSource: dataSource)
+    dataSourceMock = FormulasDataSourceProtocolMock()
+    sut = FormulasViewController(dataSource: dataSourceMock)
+    delegateMock = FormulasViewControllerProtocolMock()
+    sut.delegate = delegateMock
   }
   
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    sut = nil
+    dataSourceMock = nil
+    delegateMock = nil
   }
   
   func test_init_takesFormulasDataSource() {
@@ -40,6 +45,7 @@ class PhyFormulasViewControllerTests: XCTestCase {
   func test_cellForRow_dequeuesCell() {
     // given
     let mockTableView = TableViewMock()
+    dataSourceMock.formulaForReturnValue = Formula(imageName: "bar", title: "Bar")
     
     // when
     let indexPath = IndexPath(row: 0, section: 0)
@@ -51,32 +57,29 @@ class PhyFormulasViewControllerTests: XCTestCase {
   
   func test_numberOfSections_returnsValueFromDataSource() {
     // given
-    let mockDataSource = MockFormulaDataSource(numberOfSections: 23)
-    sut = FormulasViewController(dataSource: mockDataSource)
+    dataSourceMock.numberOfSectionsReturnValue = 23
     
     // when
     let numberOfSections = sut.numberOfSections(in: sut.tableView)
     
     // then
-    XCTAssertEqual(23, numberOfSections)
+    XCTAssertEqual(numberOfSections, 23)
   }
   
   func test_numberOfRows_returnsValueFromDataSource() {
     // given
-    let mockDataSource = MockFormulaDataSource(numberOfRows: 42)
-    sut = FormulasViewController(dataSource: mockDataSource)
+    dataSourceMock.numberOfRowsInReturnValue = 42
     
     // when
     let numberOfRows = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
     
     // then
-    XCTAssertEqual(42, numberOfRows)
+    XCTAssertEqual(numberOfRows, 42)
   }
   
   func test_viewForHeaderInSection_returnsTitleFromDataSource() {
     // given
-    let mockDataSource = MockFormulaDataSource(title: "Foo")
-    sut = FormulasViewController(dataSource: mockDataSource)
+    dataSourceMock.titleForSectionReturnValue = "Foo"
     
     // when
     let title = sut.tableView(sut.tableView, titleForHeaderInSection: 0)
@@ -85,42 +88,37 @@ class PhyFormulasViewControllerTests: XCTestCase {
     XCTAssertEqual(title, "Foo")
   }
   
-  func test_cellForRow_callsUpdateWithFormula() {
+  func test_cellForRow_callsUpdateWithFormula() throws {
     // given
     let formula = Formula(imageName: "bar", title: "Bar")
-    let mockDataSource = MockFormulaDataSource(formula: formula)
-    sut = FormulasViewController(dataSource: mockDataSource)
+    dataSourceMock.formulaForReturnValue = formula
     sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: FormulaCell.identifier)
     
     // when
     let cell = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
     
     // then
-    let mockCell = cell as! MockFormulaCell
-    XCTAssertEqual(formula, mockCell.lastFormula)
+    let mockCell = try XCTUnwrap(cell as? MockFormulaCell)
+    XCTAssertEqual(mockCell.lastFormula, formula)
   }
   
-  func test_didSelectCell_pushesFormulasViewController() {
+  func test_didSelectCell_callDelegate() throws {
     // given
     let formula = Formula(imageName: "arbeit", title: "Arbeit", details: [
       FormulaDetail(title: "Arbeit", detailItems: [FormulaDetailItem(imageName: "arbeit")])
-      ])
-    let mockDataSource = MockFormulaDataSource(formula: formula)
-    sut = FormulasViewController(dataSource: mockDataSource)
-    let navController = MockNavigationController(rootViewController: sut)
-    navController.lastPushedViewController = nil
+    ])
+    dataSourceMock.formulaForReturnValue = formula
     
     // when
     sut.tableView(sut.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
     
     // then
-    let result = navController.lastPushedViewController as! FormulaDetailViewController
-    XCTAssertEqual(formula, result.formula)
+    XCTAssertEqual(delegateMock.formulaSelectedFormulaReceivedArguments?.1, formula)
   }
 }
 
 // MARK: - Mocks
-extension PhyFormulasViewControllerTests {
+extension FormulasViewControllerTests {
   class TableViewMock : UITableView {
     
     var dequeueReusableCellCalls = 0
@@ -130,38 +128,6 @@ extension PhyFormulasViewControllerTests {
       dequeueReusableCellCalls += 1
       
       return FormulaCell()
-    }
-  }
-  
-  struct MockFormulaDataSource : FormulasDataSourceProtocol {
-    
-    let _numberOfSections: Int
-    let _numberOfRows: Int
-    let _title: String
-    let _formula: Formula
-    
-    init(numberOfSections: Int = -1, numberOfRows: Int = -1, title: String = "", formula: Formula = Formula(imageName: "nöpe", title: "Nöpe")) {
-      
-      _numberOfSections = numberOfSections
-      _numberOfRows = numberOfRows
-      _title = title
-      _formula = formula
-    }
-    
-    func numberOfSections() -> Int {
-      return _numberOfSections
-    }
-    
-    func numberOfRows(in: Int) -> Int {
-      return _numberOfRows
-    }
-    
-    func titleFor(section: Int) -> String {
-      return _title
-    }
-    
-    func formula(for: IndexPath) -> Formula {
-      return _formula
     }
   }
   

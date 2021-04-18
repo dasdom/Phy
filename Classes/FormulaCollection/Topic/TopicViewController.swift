@@ -17,7 +17,7 @@ class TopicViewController: UITableViewController {
   init(dataSource: TopicDataSourceProtocol) {
     topicDataSource = dataSource
     
-    super.init(nibName: nil, bundle: nil)
+    super.init(style: .insetGrouped)
   }
   
   required init?(coder: NSCoder) { fatalError() }

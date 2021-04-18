@@ -1,5 +1,5 @@
 //  Created by dasdom on 05.08.19.
-//  
+//
 //
 
 import Foundation
