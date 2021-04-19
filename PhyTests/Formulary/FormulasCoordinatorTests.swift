@@ -65,7 +65,8 @@ class FormulasCoordinatorTests: XCTestCase {
     
     sut.specialFieldSelected(viewController, specialField: specialField)
     
-    XCTAssertTrue(navigationController.lastPushedViewController is FormulasViewController)
+    let formulas = try XCTUnwrap(navigationController.lastPushedViewController as? FormulasViewController)
+    XCTAssertNotNil(formulas.delegate)
   }
   
   func test_formulaSelected_pushesFormulaDetails() throws {

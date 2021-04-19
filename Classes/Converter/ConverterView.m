@@ -12,7 +12,6 @@
         self.backgroundColor = [UIColor whiteColor];
         
         _pickerView = [[UIPickerView alloc] initWithFrame: CGRectZero];
-        [_pickerView setShowsSelectionIndicator: YES];
         
         _inputValue = [UITextField new];
         _inputValue.placeholder = NSLocalizedString(@"Eingabe", @"");

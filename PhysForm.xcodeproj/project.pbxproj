@@ -99,10 +99,6 @@
 		F29AEB2322EB02B600EB4E26 /* ConverterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1D22EB02B600EB4E26 /* ConverterModel.m */; };
 		F29AEB2422EB02B600EB4E26 /* ConverterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1E22EB02B600EB4E26 /* ConverterView.m */; };
 		F29AEB2522EB02B600EB4E26 /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1F22EB02B600EB4E26 /* ConverterViewController.m */; };
-		F29AEB2F22EB02FE00EB4E26 /* ChemieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2A22EB02FE00EB4E26 /* ChemieTableViewController.m */; };
-		F29AEB3022EB02FE00EB4E26 /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */; };
-		F29AEB3122EB02FE00EB4E26 /* CollectionOfElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2C22EB02FE00EB4E26 /* CollectionOfElementsView.m */; };
-		F29AEB3222EB02FE00EB4E26 /* CollectionOfElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */; };
 		F29AEB4422EB034E00EB4E26 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3422EB034E00EB4E26 /* Calculator.m */; };
 		F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */; };
 		F29AEB4622EB034E00EB4E26 /* GeneralCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */; };
@@ -162,8 +158,6 @@
 		1D6058910D05DD3D006BFB54 /* Phy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28D7ACF60DDB3853001CB0EB /* PhysFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysFormViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* PhysFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysFormViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PhysForm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysForm_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -276,13 +270,7 @@
 		F29AEB2122EB02B600EB4E26 /* ConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterViewController.h; sourceTree = "<group>"; };
 		F29AEB2222EB02B600EB4E26 /* ConverterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterView.h; sourceTree = "<group>"; };
 		F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsViewController.h; sourceTree = "<group>"; };
-		F29AEB2822EB02FE00EB4E26 /* CollectionOfElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsView.h; sourceTree = "<group>"; };
-		F29AEB2922EB02FE00EB4E26 /* ElementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsDetailViewController.h; sourceTree = "<group>"; };
-		F29AEB2A22EB02FE00EB4E26 /* ChemieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChemieTableViewController.m; sourceTree = "<group>"; };
-		F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsDetailViewController.m; sourceTree = "<group>"; };
-		F29AEB2C22EB02FE00EB4E26 /* CollectionOfElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsView.m; sourceTree = "<group>"; };
 		F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsViewController.m; sourceTree = "<group>"; };
-		F29AEB2E22EB02FE00EB4E26 /* ChemieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChemieTableViewController.h; sourceTree = "<group>"; };
 		F29AEB3422EB034E00EB4E26 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantsTableViewController.m; sourceTree = "<group>"; };
 		F29AEB3622EB034E00EB4E26 /* ConstantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantCell.h; sourceTree = "<group>"; };
@@ -361,12 +349,9 @@
 				1D3623250D0F684500981E51 /* PhysFormAppDelegate.m */,
 				F236F4A42620493D00796E3D /* AppDelegate.swift */,
 				F236F4AC262049F000796E3D /* AppCoordinator.swift */,
-				28D7ACF60DDB3853001CB0EB /* PhysFormViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* PhysFormViewController.m */,
 				F236F497262043C200796E3D /* Coordinator.swift */,
 				F24E129722DF4D8000F4038F /* FormulaCollection */,
 				F29AEB3322EB034E00EB4E26 /* Calculator */,
-				F29AEB2622EB02FE00EB4E26 /* Elements */,
 				F29AEB1C22EB02B600EB4E26 /* Converter */,
 				F29AEB1522EB028300EB4E26 /* Reference */,
 				F294100C22E7AD1B00379868 /* Imprint */,
@@ -614,6 +599,7 @@
 				F2716A1B22F87AC7007D1528 /* SpecialField */,
 				F2716A1C22F87ADF007D1528 /* Formulas */,
 				F24B0E6F22FC4CA70016ACCF /* FormulaDetail */,
+				F29AEB2622EB02FE00EB4E26 /* Elements */,
 			);
 			path = FormulaCollection;
 			sourceTree = "<group>";
@@ -715,12 +701,12 @@
 		F29AEB1C22EB02B600EB4E26 /* Converter */ = {
 			isa = PBXGroup;
 			children = (
-				F29AEB2022EB02B600EB4E26 /* ConverterModel.h */,
-				F29AEB1D22EB02B600EB4E26 /* ConverterModel.m */,
 				F29AEB2122EB02B600EB4E26 /* ConverterViewController.h */,
 				F29AEB1F22EB02B600EB4E26 /* ConverterViewController.m */,
 				F29AEB2222EB02B600EB4E26 /* ConverterView.h */,
 				F29AEB1E22EB02B600EB4E26 /* ConverterView.m */,
+				F29AEB2022EB02B600EB4E26 /* ConverterModel.h */,
+				F29AEB1D22EB02B600EB4E26 /* ConverterModel.m */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -728,14 +714,8 @@
 		F29AEB2622EB02FE00EB4E26 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				F29AEB2E22EB02FE00EB4E26 /* ChemieTableViewController.h */,
-				F29AEB2A22EB02FE00EB4E26 /* ChemieTableViewController.m */,
-				F29AEB2822EB02FE00EB4E26 /* CollectionOfElementsView.h */,
-				F29AEB2C22EB02FE00EB4E26 /* CollectionOfElementsView.m */,
 				F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */,
 				F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */,
-				F29AEB2922EB02FE00EB4E26 /* ElementsDetailViewController.h */,
-				F29AEB2B22EB02FE00EB4E26 /* ElementsDetailViewController.m */,
 				F2DB7D742311D7720098B42A /* ChemElement.swift */,
 				F2078E912622EA610094D74D /* List */,
 				F2078E942622EA6B0094D74D /* Detail */,
@@ -932,7 +912,6 @@
 				F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */,
 				F2716A1E22F8C753007D1528 /* FormulaCell.swift in Sources */,
 				F2078EB22622F3D40094D74D /* ChemElementDetailCell.swift in Sources */,
-				F29AEB3022EB02FE00EB4E26 /* ElementsDetailViewController.m in Sources */,
 				F236257722FEA8A80075FC2F /* FormulaDetailViewController.swift in Sources */,
 				F29AEB1222EB024800EB4E26 /* drawTest.m in Sources */,
 				F236257922FEDA970075FC2F /* FormulaDetailCell.swift in Sources */,
@@ -965,7 +944,6 @@
 				F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */,
 				F2DB7D5123101A5A0098B42A /* SpecialFieldSection.swift in Sources */,
 				F29AEB2522EB02B600EB4E26 /* ConverterViewController.m in Sources */,
-				F29AEB2F22EB02FE00EB4E26 /* ChemieTableViewController.m in Sources */,
 				F2078EA22622ED170094D74D /* StringExtension.swift in Sources */,
 				F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */,
 				F22FF003230207B3003F3A9B /* SolverDetailResultCell.swift in Sources */,
@@ -982,7 +960,6 @@
 				F29AEB4822EB034E00EB4E26 /* HistoryTableViewController.m in Sources */,
 				F22FF001230206E1003F3A9B /* SolverDetailButtonCell.swift in Sources */,
 				F294101322E7AD1B00379868 /* ImprintView.swift in Sources */,
-				F29AEB3222EB02FE00EB4E26 /* CollectionOfElementsViewController.m in Sources */,
 				F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */,
 				F2DB7D6D231078800098B42A /* TopicCell.swift in Sources */,
 				F29AEB4922EB034E00EB4E26 /* HistoryTableViewCell.m in Sources */,
@@ -990,7 +967,6 @@
 				F236F49C2620450000796E3D /* Coordinator.swift in Sources */,
 				F236F4AD262049F000796E3D /* AppCoordinator.swift in Sources */,
 				F236257522FEA8850075FC2F /* FormulaDetailWithTextCell.swift in Sources */,
-				F29AEB3122EB02FE00EB4E26 /* CollectionOfElementsView.m in Sources */,
 				F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */,
 				F294101422E7AD1B00379868 /* CaveScene.swift in Sources */,
 				F22FEFFF230205BE003F3A9B /* SolverDetailInputCell.swift in Sources */,

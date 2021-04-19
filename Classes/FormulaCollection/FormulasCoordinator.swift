@@ -49,6 +49,7 @@ extension FormulasCoordinator: SpecialFieldsViewControllerProtocol {
   func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField) {
     let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
     let next = FormulasViewController(dataSource: formulasDataSource)
+    next.delegate = self
     presenter.pushViewController(next, animated: true)
   }
 }
