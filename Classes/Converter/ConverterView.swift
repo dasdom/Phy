@@ -6,7 +6,6 @@ import SwiftUI
 
 struct ConverterView: View {
 
-  @State var output: String = ""
   @ObservedObject var converter: Converter
   
   var units: [String] {
@@ -18,25 +17,9 @@ struct ConverterView: View {
       GeometryReader { geometry in
         VStack(spacing: 0) {
           
+          ValueUnit(input: $converter.input, selectedIndex: $converter.selectedInputIndex, geometry: geometry, units: units)
           
-          HStack(spacing: 0) {
-            Text(converter.input)
-              .frame(width: geometry.size.width * 3 / 4,
-                     height: geometry.size.height / 2)
-            Picker("Unit", selection: $converter.selectedInputIndex, content: {
-              ForEach(units, id: \.self, content: { unit in
-                Text(unit).tag(unit)
-              })
-            })
-            .frame(width: geometry.size.width / 4,
-                   height: geometry.size.height / 2)
-            .clipped()
-            
-          }
-          
-//          ValueUnit(input: $converter.input, selectedIndex: $converter.selectedInputIndex, geometry: geometry, units: units)
-          
-          ValueUnit(input: $output, selectedIndex: $converter.selectedOutputIndex, geometry: geometry, units: units)
+          ValueUnit(input: $converter.output, selectedIndex: $converter.selectedOutputIndex, geometry: geometry, units: units)
           
         }
       }
@@ -49,12 +32,18 @@ struct ConverterView: View {
           
           HStack {
             VStack {
-              ForEach([[7,8,9],[4,5,6],[1,2,3],[0]], id: \.self) { row in
+              ForEach([[7,8,9],[4,5,6],[1,2,3]], id: \.self) { row in
                 HStack {
                   ForEach(row, id: \.self) { num in
                     CalcButton(value: "\(num)", input: $converter.input)
                   }
                 }
+              }
+              
+              HStack {
+                Button("0", action: applyZero)
+                  .frame(width: geometry.size.width * 2 / 4)
+                Button(".", action: applyDot)
               }
             }
             .frame(width: geometry.size.width * 3 / 4 ,
@@ -71,7 +60,7 @@ struct ConverterView: View {
               
               Button("e", action: applyExponent)
               
-              Button(".", action: applyDot)
+              Button("-", action: applyMinus)
             }
             .frame(width: geometry.size.width / 4 ,
                    height: geometry.size.height * 4 / 5)
@@ -102,6 +91,20 @@ struct ConverterView: View {
       converter.input.append(".")
     }
   }
+  
+  func applyZero() {
+    if "0" != converter.input {
+      converter.input.append("0")
+    }
+  }
+  
+  func applyMinus() {
+    if converter.input.contains("e-") {
+      converter.input = converter.input.replacingOccurrences(of: "e-", with: "e")
+    } else if converter.input.contains("e") {
+      converter.input = converter.input.replacingOccurrences(of: "e", with: "e-")
+    }
+  }
 }
 
 struct CalcButton: View {
@@ -127,8 +130,8 @@ struct ValueUnit: View {
         .frame(width: geometry.size.width * 3 / 4,
                height: geometry.size.height / 2)
       Picker("Favorite Color", selection: $selectedIndex, content: {
-        ForEach(units, id: \.self, content: { unit in // <1>
-          Text(unit)
+        ForEach(units.indices, content: { index in
+          Text(units[index]).tag(index)
         })
       })
       .frame(width: geometry.size.width / 4,

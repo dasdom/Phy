@@ -8,29 +8,38 @@ import Combine
 class Converter: ObservableObject {
   
   let convertInfo: ConvertInfo
-  @Published var input: String = ""
-  @Published var selectedInputIndex = 0 {
+  @Published var input: String = "" {
     didSet {
-      print("inputIndex: \(selectedInputIndex)")
+      updateOutput()
     }
   }
-  @Published var selectedOutputIndex = 0
+  @Published var output: String = ""
+  @Published var selectedInputIndex = 0 {
+    didSet {
+      updateOutput()
+    }
+  }
+  @Published var selectedOutputIndex = 0 {
+    didSet {
+      updateOutput()
+    }
+  }
   var tokens: Set<AnyCancellable> = []
   
   init(convertInfo: ConvertInfo) {
     self.convertInfo = convertInfo
-    
-    $input.sink { [weak self] input in
-      
-      guard let self = self else {
-        return
-      }
-      
-      print("input: \(input)")
-      let calcString = String(format: "%@%@%@%@%@", input, DDHTimes, convertInfo.units[self.selectedInputIndex].value, DDHDivide, convertInfo.units[self.selectedOutputIndex].value)
+  }
+  
+  func updateOutput() {
+    if input.count > 0 {
+      let calcString = String(format: "%@%@%@%@%@", input, DDHTimes, convertInfo.units[selectedInputIndex].value, DDHDivide, convertInfo.units[selectedOutputIndex].value)
       
       print("calcString: \(calcString)")
-    }.store(in: &tokens)
-
+      
+      let calculator = Calculator(deg: true)
+      let result = calculator?.calculate(calcString)
+      
+      output = Calculator.string(fromResult: result)
+    }
   }
 }
