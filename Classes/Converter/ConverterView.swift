@@ -129,7 +129,7 @@ struct ValueUnit: View {
       Text(input)
         .frame(width: geometry.size.width * 3 / 4,
                height: geometry.size.height / 2)
-      Picker("Favorite Color", selection: $selectedIndex, content: {
+      Picker("Unit", selection: $selectedIndex, content: {
         ForEach(units.indices, content: { index in
           Text(units[index]).tag(index)
         })
