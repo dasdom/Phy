@@ -5,7 +5,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ConverterModel : NSObject {
+@interface Legacy_ConverterModel : NSObject {
 //  NSArray *pickerArray0;
 //  NSArray *energieStringArray;
 //  NSArray *energieFaktorArray;

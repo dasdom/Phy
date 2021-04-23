@@ -5,7 +5,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ConverterView : UIView
+@interface Legacy_ConverterView : UIView
 
 @property (nonatomic, strong) NSArray *pickerArray0;
 @property (nonatomic, strong) UIPickerView *pickerView;

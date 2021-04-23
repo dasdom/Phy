@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "fieldName": "Energie",
+    "units": [
+      {
+        "unit": "J",
+        "value": "1.0"
+      },
+      {
+        "unit": "MeV",
+        "value": "1.602e-13"
+      },
+      {
+        "unit": "kWh",
+        "value": "3.6e6"
+      },
+      {
+        "unit": "kpm",
+        "value": "9.80665"
+      },
+      {
+        "unit": "kcal",
+        "value": "4186.8"
+      },
+      {
+        "unit": "erg",
+        "value": "1.0e-7"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "fieldName": "Länge",
+    "units": [
+      {
+        "unit": "m",
+        "value": "1.0"
+      },
+      {
+        "unit": "Ly",
+        "value": "9.460730e15"
+      },
+      {
+        "unit": "pc",
+        "value": "30.856776e15"
+      },
+      {
+        "unit": "in",
+        "value": "0.0254"
+      },
+      {
+        "unit": "ft",
+        "value": "0.3048"
+      },
+      {
+        "unit": "yd",
+        "value": "0.9144"
+      },
+      {
+        "unit": "mile",
+        "value": "1609"
+      },
+      {
+        "unit": "Å",
+        "value": "1.0e-10"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "fieldName": "Druck",
+    "units": [
+      {
+        "unit": "Pa",
+        "value": "1.0"
+      },
+      {
+        "unit": "MPa",
+        "value": "1e6"
+      },
+      {
+        "unit": "bar",
+        "value": "1e5"
+      },
+      {
+        "unit": "mbar",
+        "value": "100.0"
+      },
+      {
+        "unit": "at",
+        "value": "98066.5"
+      },
+      {
+        "unit": "atm",
+        "value": "101325.0"
+      },
+      {
+        "unit": "Torr",
+        "value": "133.0"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "fieldName": "Zeit",
+    "units": [
+      {
+        "unit": "s",
+        "value": "1.0"
+      },
+      {
+        "unit": "min",
+        "value": "60.0"
+      },
+      {
+        "unit": "h",
+        "value": "3600.0"
+      },
+      {
+        "unit": "d",
+        "value": "86400.0"
+      },
+      {
+        "unit": "a",
+        "value": "3.1536e7"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "fieldName": "Leistung",
+    "units": [
+      {
+        "unit": "W",
+        "value": "1.0"
+      },
+      {
+        "unit": "kW",
+        "value": "1000.0"
+      },
+      {
+        "unit": "kpm/s",
+        "value": "9.80665"
+      },
+      {
+        "unit": "PS",
+        "value": "736.0"
+      },
+      {
+        "unit": "kcal/h",
+        "value": "1.16"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "fieldName": "Dichte",
+    "units": [
+      {
+        "unit": "kg/m³",
+        "value": "1.0"
+      },
+      {
+        "unit": "g/cm³",
+        "value": "1e3"
+      }
+    ]
+  }
+]

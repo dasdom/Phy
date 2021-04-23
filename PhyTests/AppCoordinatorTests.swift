@@ -45,7 +45,7 @@ class AppCoordinatorTests: XCTestCase {
     let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
     let result = try XCTUnwrap(tabBarController.viewControllers?[2])
     
-    XCTAssertTrue(result is ConverterViewController)
+    XCTAssertTrue(result is Legacy_ConverterViewController)
   }
   
   func test_start_setsReferenceToTabBarController() throws {

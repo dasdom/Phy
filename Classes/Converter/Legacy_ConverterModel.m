@@ -2,10 +2,10 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "ConverterModel.h"
+#import "Legacy_ConverterModel.h"
 #import "Calculator.h"
 
-@implementation ConverterModel
+@implementation Legacy_ConverterModel
 
 //@synthesize pickerArray0; 
 //@synthesize energieStringArray, energieFaktorArray;

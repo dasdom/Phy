@@ -2,9 +2,9 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "ConverterView.h"
+#import "Legacy_ConverterView.h"
 
-@implementation ConverterView
+@implementation Legacy_ConverterView
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {

@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class AppCoordinator: Coordinator {
   
@@ -39,7 +40,7 @@ class AppCoordinator: Coordinator {
   }
   
   private var converter: UIViewController {
-    let viewController = ConverterViewController()
+    let viewController = UIHostingController(rootView: ConverterList())
     viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Konverter", comment: ""), image: UIImage(systemName: "arrow.left.arrow.right"), tag: 2)
     return viewController
   }

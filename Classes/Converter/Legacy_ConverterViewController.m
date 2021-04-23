@@ -2,15 +2,15 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "ConverterViewController.h"
+#import "Legacy_ConverterViewController.h"
 
 
-@implementation ConverterViewController
+@implementation Legacy_ConverterViewController
 
 - (void)loadView {
 	
-	converterView = [[ConverterView alloc] init];
-	converterModel = [[ConverterModel alloc] init];
+	converterView = [[Legacy_ConverterView alloc] init];
+	converterModel = [[Legacy_ConverterModel alloc] init];
 	
 	converterView.pickerArray0 = converterModel.pickerArray0;
 	
@@ -21,8 +21,8 @@
 	self.view = converterView;
 }
 
-- (ConverterView *)contentView {
-    return (ConverterView *)self.view;
+- (Legacy_ConverterView *)contentView {
+    return (Legacy_ConverterView *)self.view;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
