@@ -19,7 +19,7 @@ class Converter: ObservableObject {
       updateOutput()
     }
   }
-  @Published var selectedOutputIndex = 0 {
+  @Published var selectedOutputIndex = 1 {
     didSet {
       updateOutput()
     }
@@ -40,6 +40,8 @@ class Converter: ObservableObject {
       let result = calculator?.calculate(calcString)
       
       output = Calculator.string(fromResult: result)
+    } else {
+      output = ""
     }
   }
 }

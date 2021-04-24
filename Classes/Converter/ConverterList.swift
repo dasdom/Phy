@@ -30,6 +30,8 @@ struct ConverterList: View {
           Text(convertInfo.fieldName)
         }
       }
+      .listStyle(GroupedListStyle())
+      .navigationBarTitle(Text("Konverter"))
     }
   }
 }

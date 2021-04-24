@@ -17,13 +17,12 @@ struct ConverterView: View {
       GeometryReader { geometry in
         VStack(spacing: 0) {
           
-          ValueUnit(input: $converter.input, selectedIndex: $converter.selectedInputIndex, geometry: geometry, units: units)
+          ValueUnitView(name: "Eingabe", input: $converter.input, selectedIndex: $converter.selectedInputIndex, geometry: geometry, units: units)
           
-          ValueUnit(input: $converter.output, selectedIndex: $converter.selectedOutputIndex, geometry: geometry, units: units)
+          ValueUnitView(name: "Ausgabe", input: $converter.output, selectedIndex: $converter.selectedOutputIndex, geometry: geometry, units: units)
           
         }
       }
-      .padding()
       
       GeometryReader { geometry in
         VStack {
@@ -70,6 +69,7 @@ struct ConverterView: View {
       }
       .buttonStyle(CalcButtonStyle())
     }
+    .navigationBarTitle(Text(converter.convertInfo.fieldName))
   }
   
   func applyPlusMinus() {
@@ -117,8 +117,9 @@ struct CalcButton: View {
   }
 }
 
-struct ValueUnit: View {
-  
+struct ValueUnitView: View {
+
+  let name: String
   @Binding var input: String
   @Binding var selectedIndex: Int
   let geometry: GeometryProxy
@@ -126,18 +127,21 @@ struct ValueUnit: View {
   
   var body: some View {
     HStack(spacing: 0) {
+      Text(name + ":")
+        .frame(width: geometry.size.width * 1 / 4)
       Text(input)
-        .frame(width: geometry.size.width * 3 / 4,
-               height: geometry.size.height / 2)
+        .frame(width: geometry.size.width * 2 / 4)
       Picker("Favorite Color", selection: $selectedIndex, content: {
         ForEach(units.indices, content: { index in
           Text(units[index]).tag(index)
         })
       })
       .frame(width: geometry.size.width / 4,
-             height: geometry.size.height / 2)
+             height: geometry.size.height / 2 - 20)
       .clipped()
     }
+    .padding([.top, .bottom], /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+    .frame(height: geometry.size.height / 2)
   }
 }
 
@@ -176,7 +180,7 @@ struct CalcButtonStyle: ButtonStyle {
       Spacer()
     }
     .border(Color.gray, width: 0.5)
-    .background(Color(white: 0.96))
+    .background(Color("converter_button_color"))
     .scaleEffect(configuration.isPressed ? 0.95 : 1)
   }
 }
