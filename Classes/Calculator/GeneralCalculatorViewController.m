@@ -105,12 +105,12 @@
     if ([@[DDHPlus, DDHMinus, DDHTimes, DDHDivide] containsObject:substring] &&
         false == [lastSubstring isEqualToString:@"e"]) {
       
-      [attributedString setAttributes:@{NSForegroundColorAttributeName: [UIColor redColor]} range:substringRange];
+      [attributedString setAttributes:@{NSForegroundColorAttributeName: [UIColor colorNamed:@"calc_sign_color"]} range:substringRange];
     }
     
     if ([lastSubstring isEqualToString:@"e"] && NO == [substring isEqualToString:@"x"]) {
       NSRange lastSubstringRange = NSMakeRange(substringRange.location - 1, 1);
-      [attributedString setAttributes:@{NSForegroundColorAttributeName: [UIColor brownColor]} range:lastSubstringRange];
+      [attributedString setAttributes:@{NSForegroundColorAttributeName: [UIColor colorNamed:@"e_color"]} range:lastSubstringRange];
     }
     
     if ([substring isEqualToString:@"("]) {
@@ -145,7 +145,7 @@
     [UIColor colorWithRed:0.502 green:0.502 blue:0.000 alpha:1.000],
     [UIColor colorWithRed:0.000 green:0.502 blue:0.000 alpha:1.000],
     [UIColor colorWithRed:0.000 green:0.502 blue:0.502 alpha:1.000],
-    [UIColor colorWithRed:0.000 green:0.000 blue:0.502 alpha:1.000],
+    [UIColor colorWithRed:0.200 green:0.200 blue:0.802 alpha:1.000],
     [UIColor colorWithRed:0.502 green:0.000 blue:0.502 alpha:1.000],
     [UIColor colorWithRed:0.502 green:0.000 blue:0.251 alpha:1.000]];
   

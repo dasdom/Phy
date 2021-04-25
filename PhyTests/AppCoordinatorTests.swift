@@ -3,6 +3,7 @@
 //
 
 import XCTest
+import SwiftUI
 @testable import Phy
 
 class AppCoordinatorTests: XCTestCase {
@@ -37,15 +38,6 @@ class AppCoordinatorTests: XCTestCase {
     let result = try XCTUnwrap(tabBarController.viewControllers?[1])
     
     XCTAssertTrue(result is GeneralCalculatorViewController)
-  }
-  
-  func test_start_setsConverterToTabBarController() throws {
-    sut.start()
-    
-    let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
-    let result = try XCTUnwrap(tabBarController.viewControllers?[2])
-    
-    XCTAssertTrue(result is Legacy_ConverterViewController)
   }
   
   func test_start_setsReferenceToTabBarController() throws {

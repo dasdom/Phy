@@ -124,7 +124,8 @@
     _stackView.axis = UILayoutConstraintAxisVertical;
     _stackView.spacing = 1;
     
-    self.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
+    self.backgroundColor = [UIColor colorNamed:@"calc_view_background_color"];
+    self.tintColor = [UIColor labelColor];
     
     [self addSubview:_stackView];
     

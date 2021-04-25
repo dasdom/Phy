@@ -3,5 +3,4 @@
 //
 
 #import "GeneralCalculatorViewController.h"
-#import "Legacy_ConverterViewController.h"
 #import "ReferenzViewController.h"

@@ -45,6 +45,7 @@ struct ConverterView: View {
                 Button(".", action: applyDot)
               }
             }
+            .buttonStyle(CalcButtonStyle(color: Color("converter_button_num_color")))
             .frame(width: geometry.size.width * 3 / 4 ,
                    height: geometry.size.height * 4 / 5)
             
@@ -61,13 +62,14 @@ struct ConverterView: View {
               
               Button("-", action: applyMinus)
             }
+            .buttonStyle(CalcButtonStyle(color: Color("converter_button_color")))
+
             .frame(width: geometry.size.width / 4 ,
                    height: geometry.size.height * 4 / 5)
           }
         }
         
       }
-      .buttonStyle(CalcButtonStyle())
     }
     .navigationBarTitle(Text(converter.convertInfo.fieldName.localized))
   }
@@ -158,6 +160,8 @@ struct UtilitiesRow: View {
         .frame(maxWidth: .infinity,
                maxHeight: .infinity)
     }
+    .buttonStyle(CalcButtonStyle(color: Color("converter_button_color")))
+
   }
 }
 
@@ -169,6 +173,9 @@ struct ConverterView_Previews: PreviewProvider {
 
 // https://www.fivestars.blog/articles/button-styles/
 struct CalcButtonStyle: ButtonStyle {
+  
+  let color: Color
+  
   func makeBody(configuration: Configuration) -> some View {
     VStack {
       Spacer()
@@ -180,7 +187,7 @@ struct CalcButtonStyle: ButtonStyle {
       Spacer()
     }
     .border(Color.gray, width: 0.5)
-    .background(Color("converter_button_color"))
+    .background(color)
     .scaleEffect(configuration.isPressed ? 0.95 : 1)
   }
 }
