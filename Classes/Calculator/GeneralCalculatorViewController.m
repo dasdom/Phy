@@ -95,11 +95,12 @@
 
 #pragma mark -
 - (NSAttributedString *)attributesCalcStringFromString:(NSString *)calcString {
-  NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:calcString];
+  NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:calcString attributes:@{NSForegroundColorAttributeName: [UIColor labelColor]}];
   
   __block NSMutableArray *openArray = [[NSMutableArray alloc] init];
   __block NSMutableArray *parenthesesPairsArray = [[NSMutableArray alloc] init];
   __block NSString *lastSubstring = nil;
+  
   [calcString enumerateSubstringsInRange:NSMakeRange(0, calcString.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
     if ([@[DDHPlus, DDHMinus, DDHTimes, DDHDivide] containsObject:substring] &&
         false == [lastSubstring isEqualToString:@"e"]) {

@@ -6,11 +6,33 @@
 
 @implementation CalculatorButton
 
-+ (instancetype)buttonWithType:(UIButtonType)buttonType {
-  CalculatorButton *button = [super buttonWithType:buttonType];
++ (instancetype)buttonWithStyle:(CalcButtonStyle)buttonStyle {
+  CalculatorButton *button = [super buttonWithType:UIButtonTypeSystem];
   button.titleLabel.adjustsFontForContentSizeCategory = YES;
 //  button.titleLabel.adjustsFontSizeToFitWidth = YES;
   button.titleLabel.numberOfLines = 2;
+  button.buttonStyle = buttonStyle;
+  
+  switch (buttonStyle) {
+    case CalcButtonStyleMeta:
+    case CalcButtonStyleParentheses:
+      button.backgroundColor = [UIColor colorNamed:@"meta_button_color"];
+      break;
+    case CalcButtonStyleFunction:
+      button.backgroundColor = [UIColor colorNamed:@"func_button_color"];
+      break;
+    case CalcButtonStyleBasic:
+    case CalcButtonStyleEqual:
+      button.backgroundColor = [UIColor colorNamed:@"basic_button_color"];
+      button.tintColor = [UIColor whiteColor];
+      break;
+    case CalcButtonStyleNumbers:
+      button.backgroundColor = [UIColor colorNamed:@"num_button_color"];
+      break;
+    default:
+      break;
+  }
+  
   return button;
 }
 

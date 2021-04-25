@@ -1204,6 +1204,7 @@
 /* Allgemein */
 	"(erlaubte Zeichen: -123456789.e)" = "(allowed digits: -123456789.e)"; 
   "Eingabe"  = "Input";
+  "Ausgabe"  = "Output";
   "Energie"  = "Energy";
   "Länge"    = "Length";
   "Zeit"     = "Time";

@@ -17,9 +17,9 @@ struct ConverterView: View {
       GeometryReader { geometry in
         VStack(spacing: 0) {
           
-          ValueUnitView(name: "Eingabe", input: $converter.input, selectedIndex: $converter.selectedInputIndex, geometry: geometry, units: units)
+          ValueUnitView(name: "Eingabe".localized, input: $converter.input, selectedIndex: $converter.selectedInputIndex, geometry: geometry, units: units)
           
-          ValueUnitView(name: "Ausgabe", input: $converter.output, selectedIndex: $converter.selectedOutputIndex, geometry: geometry, units: units)
+          ValueUnitView(name: "Ausgabe".localized, input: $converter.output, selectedIndex: $converter.selectedOutputIndex, geometry: geometry, units: units)
           
         }
       }
@@ -69,7 +69,7 @@ struct ConverterView: View {
       }
       .buttonStyle(CalcButtonStyle())
     }
-    .navigationBarTitle(Text(converter.convertInfo.fieldName))
+    .navigationBarTitle(Text(converter.convertInfo.fieldName.localized))
   }
   
   func applyPlusMinus() {
@@ -131,7 +131,7 @@ struct ValueUnitView: View {
         .frame(width: geometry.size.width * 1 / 4)
       Text(input)
         .frame(width: geometry.size.width * 2 / 4)
-      Picker("Favorite Color", selection: $selectedIndex, content: {
+      Picker("Unit", selection: $selectedIndex, content: {
         ForEach(units.indices, content: { index in
           Text(units[index]).tag(index)
         })

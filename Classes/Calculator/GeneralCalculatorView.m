@@ -147,8 +147,7 @@
 
 #pragma mark - Button creation helpers
 - (UIButton *)metaButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
-  CalculatorButton *button = [CalculatorButton buttonWithType:UIButtonTypeSystem];
-  button.backgroundColor = [UIColor colorWithWhite:0.90 alpha:1.0];
+  CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleMeta];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
@@ -157,8 +156,7 @@
 }
 
 - (UIButton *)functionButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
-  CalculatorButton *button = [CalculatorButton buttonWithType:UIButtonTypeSystem];
-  button.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
+  CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleFunction];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
@@ -167,9 +165,7 @@
 }
 
 - (UIButton *)basicCalculationButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
-  CalculatorButton *button = [CalculatorButton buttonWithType:UIButtonTypeSystem];
-  button.backgroundColor = [UIColor blueColor];
-  button.tintColor = [UIColor whiteColor];
+  CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleBasic];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
@@ -178,9 +174,7 @@
 }
 
 - (UIButton *)equalButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
-  CalculatorButton *button = [CalculatorButton buttonWithType:UIButtonTypeSystem];
-  button.backgroundColor = [UIColor blueColor];
-  button.tintColor = [UIColor whiteColor];
+  CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleEqual];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
@@ -189,8 +183,7 @@
 }
 
 - (UIButton *)paranthesesButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
-  CalculatorButton *button = [CalculatorButton buttonWithType:UIButtonTypeSystem];
-  button.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+  CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleParentheses];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
@@ -199,8 +192,7 @@
 }
 
 - (UIButton *)numberButtonWithTitle:(NSString *)title tag:(NSInteger)tag {
-  CalculatorButton *button = [CalculatorButton buttonWithType:UIButtonTypeSystem];
-  button.backgroundColor = [UIColor colorWithWhite:0.98 alpha:1.0];
+  CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleNumbers];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 

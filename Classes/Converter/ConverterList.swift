@@ -27,7 +27,7 @@ struct ConverterList: View {
         let converter = Converter(convertInfo: convertInfo)
         self.converter = converter
         return NavigationLink(destination: ConverterView(converter: converter)) {
-          Text(convertInfo.fieldName)
+          Text(convertInfo.fieldName.localized)
         }
       }
       .listStyle(GroupedListStyle())

@@ -101,9 +101,6 @@
 		F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */; };
 		F29AEB1A22EB028300EB4E26 /* ReferenzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1622EB028300EB4E26 /* ReferenzViewController.m */; };
 		F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1922EB028300EB4E26 /* ReferenzView.m */; };
-		F29AEB2322EB02B600EB4E26 /* Legacy_ConverterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1D22EB02B600EB4E26 /* Legacy_ConverterModel.m */; };
-		F29AEB2422EB02B600EB4E26 /* Legacy_ConverterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1E22EB02B600EB4E26 /* Legacy_ConverterView.m */; };
-		F29AEB2522EB02B600EB4E26 /* Legacy_ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1F22EB02B600EB4E26 /* Legacy_ConverterViewController.m */; };
 		F29AEB4422EB034E00EB4E26 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3422EB034E00EB4E26 /* Calculator.m */; };
 		F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */; };
 		F29AEB4622EB034E00EB4E26 /* GeneralCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */; };
@@ -273,12 +270,6 @@
 		F29AEB1722EB028300EB4E26 /* ReferenzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzView.h; sourceTree = "<group>"; };
 		F29AEB1822EB028300EB4E26 /* ReferenzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzViewController.h; sourceTree = "<group>"; };
 		F29AEB1922EB028300EB4E26 /* ReferenzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenzView.m; sourceTree = "<group>"; };
-		F29AEB1D22EB02B600EB4E26 /* Legacy_ConverterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Legacy_ConverterModel.m; sourceTree = "<group>"; };
-		F29AEB1E22EB02B600EB4E26 /* Legacy_ConverterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Legacy_ConverterView.m; sourceTree = "<group>"; };
-		F29AEB1F22EB02B600EB4E26 /* Legacy_ConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Legacy_ConverterViewController.m; sourceTree = "<group>"; };
-		F29AEB2022EB02B600EB4E26 /* Legacy_ConverterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Legacy_ConverterModel.h; sourceTree = "<group>"; };
-		F29AEB2122EB02B600EB4E26 /* Legacy_ConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Legacy_ConverterViewController.h; sourceTree = "<group>"; };
-		F29AEB2222EB02B600EB4E26 /* Legacy_ConverterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Legacy_ConverterView.h; sourceTree = "<group>"; };
 		F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsViewController.h; sourceTree = "<group>"; };
 		F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsViewController.m; sourceTree = "<group>"; };
 		F29AEB3422EB034E00EB4E26 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
@@ -711,12 +702,6 @@
 		F29AEB1C22EB02B600EB4E26 /* Converter */ = {
 			isa = PBXGroup;
 			children = (
-				F29AEB2122EB02B600EB4E26 /* Legacy_ConverterViewController.h */,
-				F29AEB1F22EB02B600EB4E26 /* Legacy_ConverterViewController.m */,
-				F29AEB2222EB02B600EB4E26 /* Legacy_ConverterView.h */,
-				F29AEB1E22EB02B600EB4E26 /* Legacy_ConverterView.m */,
-				F29AEB2022EB02B600EB4E26 /* Legacy_ConverterModel.h */,
-				F29AEB1D22EB02B600EB4E26 /* Legacy_ConverterModel.m */,
 				F2164FE526321A88009FCC64 /* ConverterList.swift */,
 				F26C9AD82630B2C700A1B161 /* ConverterView.swift */,
 				F26C9AE02631E4BF00A1B161 /* ConvertInfo.swift */,
@@ -953,14 +938,11 @@
 				F29AEB1A22EB028300EB4E26 /* ReferenzViewController.m in Sources */,
 				F29AEB5322EB2DB900EB4E26 /* SolverTool.swift in Sources */,
 				F2DB7D4B23101A010098B42A /* TopicViewController.swift in Sources */,
-				F29AEB2322EB02B600EB4E26 /* Legacy_ConverterModel.m in Sources */,
-				F29AEB2422EB02B600EB4E26 /* Legacy_ConverterView.m in Sources */,
 				F2DB7D5923101A730098B42A /* FormulaDetail.swift in Sources */,
 				F2DB7D4D23101A2C0098B42A /* Topic.swift in Sources */,
 				F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */,
 				F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */,
 				F2DB7D5123101A5A0098B42A /* SpecialFieldSection.swift in Sources */,
-				F29AEB2522EB02B600EB4E26 /* Legacy_ConverterViewController.m in Sources */,
 				F2078EA22622ED170094D74D /* StringExtension.swift in Sources */,
 				F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */,
 				F2164FE626321A88009FCC64 /* ConverterList.swift in Sources */,
