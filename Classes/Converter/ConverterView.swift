@@ -26,8 +26,18 @@ struct ConverterView: View {
       
       GeometryReader { geometry in
         VStack {
-          
-          UtilitiesRow(input: $converter.input)
+                    
+          HStack(spacing: 0) {
+            Button("to calc", action: {
+              NotificationCenter.default.post(name: NSNotification.Name("ConverterResultNotification"), object: self, userInfo: ["result": self.converter.output])
+            })
+            .frame(maxWidth: .infinity,
+                   maxHeight: .infinity)
+            Button("clear", action: { converter.input = "" })
+              .frame(maxWidth: .infinity,
+                     maxHeight: .infinity)
+          }
+          .buttonStyle(CalcButtonStyle(color: Color("converter_button_color")))
           
           HStack {
             VStack {
@@ -147,23 +157,25 @@ struct ValueUnitView: View {
   }
 }
 
-struct UtilitiesRow: View {
-  
-  @Binding var input: String
-
-  var body: some View {
-    HStack(spacing: 0) {
-      Button("to calc", action: {  })
-        .frame(maxWidth: .infinity,
-               maxHeight: .infinity)
-      Button("clear", action: { input = "" })
-        .frame(maxWidth: .infinity,
-               maxHeight: .infinity)
-    }
-    .buttonStyle(CalcButtonStyle(color: Color("converter_button_color")))
-
-  }
-}
+//struct UtilitiesRow: View {
+//  
+//  @Binding var input: String
+//
+//  var body: some View {
+//    HStack(spacing: 0) {
+//      Button("to calc", action: {
+//        NotificationCenter.default.post(name: NSNotification.Name("ConverterResultNotification"), object: self, userInfo: ["result": self.converter.ouput])
+//      })
+//        .frame(maxWidth: .infinity,
+//               maxHeight: .infinity)
+//      Button("clear", action: { input = "" })
+//        .frame(maxWidth: .infinity,
+//               maxHeight: .infinity)
+//    }
+//    .buttonStyle(CalcButtonStyle(color: Color("converter_button_color")))
+//
+//  }
+//}
 
 struct ConverterView_Previews: PreviewProvider {
   static var previews: some View {

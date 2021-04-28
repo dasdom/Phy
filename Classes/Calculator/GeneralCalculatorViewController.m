@@ -47,6 +47,8 @@
   [super viewDidLoad];
   
   [self.calcStringView becomeFirstResponder];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(insertConverterResult:) name:@"ConverterResultNotification" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -91,6 +93,15 @@
   }
   [self.calcString setString: [userInfo objectForKey: @"Formula"]];
   [self.calcString appendFormat: @"_"];
+}
+
+- (void)insertConverterResult: (NSNotification *)note {
+  NSDictionary *userInfo = [note userInfo];
+  for (NSString *key in userInfo) {
+    NSLog(@"%@ = %@", key, [userInfo objectForKey: key]);
+  }
+  NSString *converterResult = [userInfo objectForKey: @"result"];
+  [self insertString:converterResult];
 }
 
 #pragma mark -

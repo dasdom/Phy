@@ -180,9 +180,9 @@
 	NSRange funcRange = NSMakeRange(range.location + [function length], range.length - [function length] - 1);
 	NSString *funcString = [calculationString substringWithRange: funcRange];
 	NSMutableString *dummyString = [[NSMutableString alloc] initWithString: funcString];
-	if ([dummyString rangeOfString: @"^("].location != NSNotFound) {
-		[dummyString setString: [self calcPow: dummyString]];
-	}
+//	if ([dummyString rangeOfString: @"^("].location != NSNotFound) {
+//		[dummyString setString: [self calcPow: dummyString]];
+//	}
 	if ([dummyString rangeOfString: @"exp("].location != NSNotFound) {
 		[dummyString setString: [self calcExp: dummyString]];
 	}
@@ -222,6 +222,9 @@
 	if ([dummyString rangeOfString: @"("].location != NSNotFound) {
 		[dummyString setString: [self calcKlammers: dummyString]];
 	}
+  if ([dummyString rangeOfString: @"^("].location != NSNotFound) {
+    [dummyString setString: [self calcPow: dummyString]];
+  }
 	
 	return dummyString;
 }

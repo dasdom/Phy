@@ -23,7 +23,8 @@ class SolverDetailResultCell: DDHBaseTableViewCell<SolverResult> {
     
     let stackView = UIStackView(arrangedSubviews: [resultImageView, resultLabel])
     stackView.translatesAutoresizingMaskIntoConstraints = false
-    stackView.spacing = 5
+    stackView.spacing = 10
+    stackView.axis = .vertical
     stackView.alignment = .center
 
     contentView.addSubview(stackView)

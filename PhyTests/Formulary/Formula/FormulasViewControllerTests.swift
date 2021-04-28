@@ -138,5 +138,9 @@ extension FormulasViewControllerTests {
     func update(with item: Formula) {
       self.lastFormula = item
     }
+    
+    override func update(with item: FormulaCellProtocol) {
+      self.lastFormula = item as? Formula
+    }
   }
 }

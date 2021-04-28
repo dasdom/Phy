@@ -5,12 +5,12 @@
 #import <XCTest/XCTest.h>
 #import "Legacy_Calculator.h"
 
-@interface CalculatorTests : XCTestCase {
+@interface Legacy_CalculatorTests : XCTestCase {
     Legacy_Calculator *calculator;
 }
 @end
 
-@implementation CalculatorTests
+@implementation Legacy_CalculatorTests
 
 - (void)setUp {
     [super setUp];
