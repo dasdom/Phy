@@ -16,12 +16,11 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-    
-        self.backgroundColor = [UIColor whiteColor];
         
-		_pickerView = [UIPickerView new];
-        _pickerView.showsSelectionIndicator = true;
-		
+        self.backgroundColor = [UIColor systemBackgroundColor];
+        
+        _pickerView = [UIPickerView new];
+        
         _material = [UILabel new];
         _material.textAlignment = NSTextAlignmentCenter;
         _material.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
@@ -33,7 +32,7 @@
         _outputValue = [UILabel new];
         _outputValue.textAlignment = NSTextAlignmentCenter;
         _outputValue.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
-        
+
         _bedingung = [UILabel new];
         _bedingung.textAlignment = NSTextAlignmentCenter;
         _bedingung.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
@@ -43,10 +42,10 @@
         _quelle.textAlignment = NSTextAlignmentCenter;
         _quelle.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];
         _quelle.text = NSLocalizedString(@"Quelle: Wikipedia, 03.2010",@"");
-		
-		NSArray *segmentArray = @[NSLocalizedString(@"gasförmig",@""),
-								 NSLocalizedString(@"flüssig",@""), NSLocalizedString(@"fest",@"")];
-		_segmentedControl = [[UISegmentedControl alloc] initWithItems: segmentArray];
+        
+        NSArray *segmentArray = @[NSLocalizedString(@"gasförmig",@""),
+                                  NSLocalizedString(@"flüssig",@""), NSLocalizedString(@"fest",@"")];
+        _segmentedControl = [[UISegmentedControl alloc] initWithItems: segmentArray];
         _segmentedControl.translatesAutoresizingMaskIntoConstraints = false;
         
         UIView *segmentedControlHostView = [UIView new];

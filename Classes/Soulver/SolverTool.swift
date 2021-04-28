@@ -4,12 +4,12 @@
 
 import Foundation
 
-struct SolverTools : Codable {
-    let tools: [SolverTool]
-}
+//struct SolverTools : Codable {
+//    let tools: [SolverTool]
+//}
 
-struct SolverTool : Codable, Equatable {
-    var title: String?
+struct SolverTool: FormulaCellProtocol, Codable, Equatable {
+    var title: String
     let imageName: String
     var inputs: [SolverInput]
     var results: [SolverResult]

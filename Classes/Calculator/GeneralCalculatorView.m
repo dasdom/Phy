@@ -2,7 +2,7 @@
 //
 
 #import "GeneralCalculatorView.h"
-#import "Calculator.h"
+#import "Legacy_Calculator.h"
 #import "CalculatorButton.h"
 
 @interface GeneralCalculatorView ()

@@ -14,8 +14,6 @@ class SolverDetailResultCell: DDHBaseTableViewCell<SolverResult> {
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     resultImageView = UIImageView()
-    resultImageView.setContentHuggingPriority(.required, for: .vertical)
-    resultImageView.setContentHuggingPriority(.required, for: .horizontal)
     
     resultLabel = UILabel()
     resultLabel.font = .preferredFont(forTextStyle: .body)
@@ -74,5 +72,7 @@ class SolverDetailResultCell: DDHBaseTableViewCell<SolverResult> {
   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
     
     resultImageView.update(heightConstraint: imageHeightConstraint)
+    
+    tintColor = UIColor.label
   }
 }

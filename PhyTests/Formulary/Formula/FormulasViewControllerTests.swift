@@ -135,7 +135,7 @@ extension FormulasViewControllerTests {
     
     var lastFormula: Formula? = nil
     
-    override func update(with item: Formula) {
+    func update(with item: Formula) {
       self.lastFormula = item
     }
   }

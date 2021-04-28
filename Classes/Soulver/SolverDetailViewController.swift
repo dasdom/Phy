@@ -183,8 +183,8 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
       }
 
       print("formulaString: \(formulaString)")
-      let result = Calculator().calculate(formulaString)
-      results.append(Calculator.string(fromResult: result))
+      let result = Legacy_Calculator().calculate(formulaString)
+      results.append(Legacy_Calculator.string(fromResult: result))
     }
     
     tableView.reloadSections([3], with: .left)

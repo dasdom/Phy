@@ -36,10 +36,10 @@ class Converter: ObservableObject {
       
       print("calcString: \(calcString)")
       
-      let calculator = Calculator(deg: true)
+      let calculator = Legacy_Calculator(deg: true)
       let result = calculator?.calculate(calcString)
       
-      output = Calculator.string(fromResult: result)
+      output = Legacy_Calculator.string(fromResult: result)
     } else {
       output = ""
     }

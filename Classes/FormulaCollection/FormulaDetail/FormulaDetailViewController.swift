@@ -73,8 +73,9 @@ class FormulaDetailViewController: UITableViewController {
     
     guard let inputs = detailItem.inputs else { return }
     guard let results = detailItem.results else { return }
+    guard let title = detailItem.title else { return }
     
-    let solver = SolverTool(title: detailItem.title, imageName: detailItem.imageName, inputs: inputs, results: results)
+    let solver = SolverTool(title: title, imageName: detailItem.imageName, inputs: inputs, results: results)
     let next = SolverDetailViewController(tool: solver)
     
     navigationController?.pushViewController(next, animated: true)

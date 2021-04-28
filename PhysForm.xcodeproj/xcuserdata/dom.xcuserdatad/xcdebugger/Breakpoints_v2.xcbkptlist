@@ -46,5 +46,109 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45C9AAB7-8A8E-437D-9DE8-056D37A82ECA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "Classes/Calculator/GeneralCalculatorViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-attributesCalcStringFromString:"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po parenthesesPairsArray">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "45C9AAB7-8A8E-437D-9DE8-056D37A82ECA - 5ee8a7ec00fb775"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GeneralCalculatorViewController attributesCalcStringFromString:]"
+                  moduleName = "Phy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dom/dev/ios/PhysForm/Classes/Calculator/GeneralCalculatorViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "2200">
+               </Location>
+               <Location
+                  uuid = "45C9AAB7-8A8E-437D-9DE8-056D37A82ECA - 1dd3ed7857d2a481"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__66-[GeneralCalculatorViewController attributesCalcStringFromString:]_block_invoke.154"
+                  moduleName = "Phy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dom/dev/ios/PhysForm/Classes/Calculator/GeneralCalculatorViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87313919-2FA3-4DA4-B404-91C3020B7350"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Classes/Calculator/GeneralCalculatorViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "-attributesCalcStringFromString:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87313919-2FA3-4DA4-B404-91C3020B7350 - 5ee8a7ec00fbc3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GeneralCalculatorViewController attributesCalcStringFromString:]"
+                  moduleName = "Phy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dom/dev/ios/PhysForm/Classes/Calculator/GeneralCalculatorViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "87313919-2FA3-4DA4-B404-91C3020B7350 - 1ec9861c15cd59bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__66-[GeneralCalculatorViewController attributesCalcStringFromString:]_block_invoke"
+                  moduleName = "Phy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dom/dev/ios/PhysForm/Classes/Calculator/GeneralCalculatorViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

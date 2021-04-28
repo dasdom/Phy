@@ -13,7 +13,7 @@ static NSString * const DDHMinus = @"-";
 static NSString * const DDHTimes = @"×";
 static NSString * const DDHDivide = @"÷";
 
-@interface Calculator : NSObject {
+@interface Legacy_Calculator : NSObject {
 	BOOL deg;
 }
 

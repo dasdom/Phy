@@ -4,7 +4,7 @@
 
 import UIKit
 
-class FormulaCell: DDHBaseTableViewCell<Formula> {
+class FormulaCell: DDHBaseTableViewCell<FormulaCellProtocol> {
   
   let nameLabel: UILabel
   let formulaImageView: UIImageView
@@ -68,7 +68,7 @@ class FormulaCell: DDHBaseTableViewCell<Formula> {
   
   required init?(coder aDecoder: NSCoder) { fatalError() }
   
-  override func update(with item: Formula) {
+  override func update(with item: FormulaCellProtocol) {
     nameLabel.text = NSLocalizedString(item.title, comment: "")
     
     guard let image = UIImage(named: item.imageName) else {

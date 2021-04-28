@@ -14,8 +14,6 @@ class SolverDetailImageCell: DDHBaseTableViewCell<SolverTool> {
     
     formulaImageView = UIImageView()
     formulaImageView.translatesAutoresizingMaskIntoConstraints = false
-    formulaImageView.setContentHuggingPriority(.required, for: .vertical)
-    formulaImageView.setContentHuggingPriority(.required, for: .horizontal)
 
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
@@ -63,5 +61,7 @@ class SolverDetailImageCell: DDHBaseTableViewCell<SolverTool> {
   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
     
     formulaImageView.update(heightConstraint: imageHeightConstraint)
+    
+    tintColor = UIColor.label
   }
 }

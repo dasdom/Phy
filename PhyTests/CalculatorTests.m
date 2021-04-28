@@ -3,10 +3,10 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Calculator.h"
+#import "Legacy_Calculator.h"
 
 @interface CalculatorTests : XCTestCase {
-    Calculator *calculator;
+    Legacy_Calculator *calculator;
 }
 @end
 
@@ -15,7 +15,7 @@
 - (void)setUp {
     [super setUp];
     
-    calculator = [[Calculator alloc] initWithDeg:YES];
+    calculator = [[Legacy_Calculator alloc] initWithDeg:YES];
 }
 
 - (void)test_calcPower_1 {

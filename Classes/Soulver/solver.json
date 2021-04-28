@@ -1,64 +1,61 @@
-{
-  "tools":
-  [
-    {
-      "title": "abc-Formel",
-      "imageName": "abc_formula",
-      "inputs": [
-        {
-          "id": "a",
-          "imageName": "a_semicolon",
-          "placeholder": "a"
-        },
-        {
-          "id": "b",
-          "imageName": "b_semicolon",
-          "placeholder": "b"
-        },
-        {
-          "id": "c",
-          "imageName": "c_semicolon",
-          "placeholder": "c"
-        }
-      ],
-      "results": [
-        {
-          "formula": "(-#b+sqrt(#b^(2)-4×#a×#c))÷(2×#a)",
-          "imageName": "abc_solution_x1"
-        },
-        {
-          "formula": "(-#b-sqrt(#b^(2)-4×#a×#c))÷(2×#a)",
-          "imageName": "abc_solution_x2"
-        }
-      ]
-    },
-    {
-      "title": "pq-Formel",
-      "imageName": "pq_formula",
-      "inputs": [
-        {
-          "id": "p",
-          "imageName": "p_colon",
-          "placeholder": "p"
-        },
-        {
-          "id": "q",
-          "imageName": "q_colon",
-          "placeholder": "q"
-        }
-      ],
-      "results": [
-        {
-          "formula": "-#p÷2+sqrt((#p÷2)^(2)-#q)",
-          "imageName": "pq_solution_x1",
-          "imageNameShort": "x1_equal"
-        },
-        {
-          "formula": "-#p÷2-sqrt((#p÷2)^(2)-#q)",
-          "imageName": "pq_solution_x2",
-          "imageNameShort": "x2_equal"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "title": "abc-Formel",
+    "imageName": "abc_formula",
+    "inputs": [
+      {
+        "id": "a",
+        "imageName": "a_semicolon",
+        "placeholder": "a"
+      },
+      {
+        "id": "b",
+        "imageName": "b_semicolon",
+        "placeholder": "b"
+      },
+      {
+        "id": "c",
+        "imageName": "c_semicolon",
+        "placeholder": "c"
+      }
+    ],
+    "results": [
+      {
+        "formula": "(-#b+sqrt(#b^(2)-4×#a×#c))÷(2×#a)",
+        "imageName": "abc_solution_x1"
+      },
+      {
+        "formula": "(-#b-sqrt(#b^(2)-4×#a×#c))÷(2×#a)",
+        "imageName": "abc_solution_x2"
+      }
+    ]
+  },
+  {
+    "title": "pq-Formel",
+    "imageName": "pq_formula",
+    "inputs": [
+      {
+        "id": "p",
+        "imageName": "p_colon",
+        "placeholder": "p"
+      },
+      {
+        "id": "q",
+        "imageName": "q_colon",
+        "placeholder": "q"
+      }
+    ],
+    "results": [
+      {
+        "formula": "-#p÷2+sqrt((#p÷2)^(2)-#q)",
+        "imageName": "pq_solution_x1",
+        "imageNameShort": "x1_equal"
+      },
+      {
+        "formula": "-#p÷2-sqrt((#p÷2)^(2)-#q)",
+        "imageName": "pq_solution_x2",
+        "imageNameShort": "x2_equal"
+      }
+    ]
+  }
+]

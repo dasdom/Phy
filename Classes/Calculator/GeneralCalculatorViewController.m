@@ -3,7 +3,7 @@
 //
 
 #import "GeneralCalculatorViewController.h"
-#import "Calculator.h"
+#import "Legacy_Calculator.h"
 #import "HistoryTableViewController.h"
 #import "GeneralCalculatorView.h"
 #import "ConstantsTableViewController.h"
@@ -579,7 +579,7 @@
     return;
   }
   if ([self.calcString rangeOfString: @"("].location != NSNotFound) {
-    Calculator *calculator = [[Calculator alloc] initWithDeg:YES];
+    Legacy_Calculator *calculator = [[Legacy_Calculator alloc] initWithDeg:YES];
     NSRange range = [calculator getRangeOfSubstringFromString: self.calcString bySearchingFor: @"("];
     indexForSubstring = range.location + range.length;
   }
@@ -592,7 +592,7 @@
     [self.calcString appendFormat: @"_"];
   } else {
     [self calculateString: self.calcString];
-    NSDictionary *historyDict = @{@"calcString": [self.calcString copy], @"solution": [Calculator stringFromResult:self.previousResult]};
+    NSDictionary *historyDict = @{@"calcString": [self.calcString copy], @"solution": [Legacy_Calculator stringFromResult:self.previousResult]};
     [self.historyCalcStrings insertObject: historyDict atIndex: 0];
     if ([[self historyCalcStrings] count] > 50) {
       [[self historyCalcStrings] removeLastObject];
@@ -605,7 +605,7 @@
 
 - (void)calculateString:(NSString *)cString {
   
-  Calculator *calculator = [[Calculator alloc] initWithDeg:deg];
+  Legacy_Calculator *calculator = [[Legacy_Calculator alloc] initWithDeg:deg];
   NSDecimalNumber *result = [calculator calculateString: cString];
   
   [self presentResult:result forCalcString:cString];
@@ -613,7 +613,7 @@
 
 - (void)presentResult:(NSDecimalNumber *)result forCalcString:(NSString *)calcString {
     
-  NSString *resultString = [Calculator stringFromResult:result];
+  NSString *resultString = [Legacy_Calculator stringFromResult:result];
   NSString *calcStringWithResult = [NSString stringWithFormat: @"%@\n = %@", calcString, resultString];
   self.calcStringView.attributedText = [self attributesCalcStringFromString:calcStringWithResult];
     

@@ -6,11 +6,11 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "Calculator.h"
+#import "Legacy_Calculator.h"
 
 #define kFastNull pow(10, -15)
 
-@implementation Calculator
+@implementation Legacy_Calculator
 
 @synthesize deg;
 
@@ -559,6 +559,7 @@
 #pragma mark -
 
 - (NSDecimalNumber *)addFromString: (NSString *)addString {
+  
 	NSArray *plusStrings = [addString componentsSeparatedByString: DDHPlus];
 	
 	NSDecimalNumber *decimalNumber1 = (NSDecimalNumber *)[NSDecimalNumber numberWithDouble: 0.0];

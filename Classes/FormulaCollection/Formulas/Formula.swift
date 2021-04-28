@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct Formula : Codable, Equatable {
+struct Formula: FormulaCellProtocol, Codable, Equatable {
     let imageName: String
     let title: String
     let details: [FormulaDetail]?
