@@ -6,7 +6,7 @@ import Foundation
 
 struct Formula: FormulaCellProtocol, Codable, Equatable {
     let imageName: String
-    let title: String
+    let title: String?
     let details: [FormulaDetail]?
     
     init(imageName: String, title: String, details: [FormulaDetail]? = nil) {

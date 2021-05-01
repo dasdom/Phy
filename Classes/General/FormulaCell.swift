@@ -69,7 +69,9 @@ class FormulaCell: DDHBaseTableViewCell<FormulaCellProtocol> {
   required init?(coder aDecoder: NSCoder) { fatalError() }
   
   override func update(with item: FormulaCellProtocol) {
-    nameLabel.text = NSLocalizedString(item.title, comment: "")
+    if let title = item.title {
+      nameLabel.text = NSLocalizedString(title, comment: "")
+    }
     
     guard let image = UIImage(named: item.imageName) else {
       print("image missing: \(item.imageName)")

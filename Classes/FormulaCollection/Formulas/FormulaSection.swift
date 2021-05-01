@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct FormulaSection : Codable, Equatable {
+struct FormulaSection: Codable, Equatable {
   let title: String
   let formulas: [Formula]
 }

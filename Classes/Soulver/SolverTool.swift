@@ -9,7 +9,7 @@ import Foundation
 //}
 
 struct SolverTool: FormulaCellProtocol, Codable, Equatable {
-    var title: String
+    var title: String?
     let imageName: String
     var inputs: [SolverInput]
     var results: [SolverResult]

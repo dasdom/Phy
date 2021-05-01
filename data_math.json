@@ -9,7 +9,6 @@
             "title": "allgemein",
             "formulas": [
               {
-                "title": "KegelschnitteAllgemein",
                 "imageName": "kegelschnitteAllgemein"
               }
             ]
@@ -18,7 +17,6 @@
             "title": "Kreis",
             "formulas": [
               {
-                "title": "KegelschnitteKreis",
                 "imageName": "kegelschnitteKreis"
               }
             ]
@@ -27,7 +25,6 @@
             "title": "Ellipse",
             "formulas": [
               {
-                "title": "KegelschnitteEllipse",
                 "imageName": "kegelschnitteEllipse"
               }
             ]
@@ -36,7 +33,6 @@
             "title": "Hyperbel",
             "formulas": [
               {
-                "title": "KegelschnitteHyperbel",
                 "imageName": "kegelschnitteHyperbel"
               }
             ]
@@ -45,11 +41,9 @@
             "title": "Parabel",
             "formulas": [
               {
-                "title": "KegelschnitteParabelY",
                 "imageName": "kegelschnitteParabelY"
               },
               {
-                "title": "KegelschnitteParabelX",
                 "imageName": "kegelschnitteParabelX"
               }
             ]
@@ -63,27 +57,21 @@
             "title": "allgemein",
             "formulas": [
               {
-                "title": "ImaginaereEinheit",
                 "imageName": "imaginaereEinheit"
               },
               {
-                "title": "KomplexeZahl",
                 "imageName": "komplexeZahl"
               },
               {
-                "title": "KomplexKonjugierteZahl",
                 "imageName": "komplexKonjugierteZahl"
               },
               {
-                "title": "MultiKomplexeZahl",
                 "imageName": "multiKomplexeZahl"
               },
               {
-                "title": "BetragKomplexeZahl",
                 "imageName": "betragKomplexeZahl"
               },
               {
-                "title": "QuotientKomplexeZahl",
                 "imageName": "quotientKomplexeZahl"
               }
             ]
@@ -92,15 +80,12 @@
             "title": "exponentielle Darstellung",
             "formulas": [
               {
-                "title": "komplexeZahlExpDarstellung",
                 "imageName": "komplexeZahlExpDarstellung"
               },
               {
-                "title": "komplexeZahlR",
                 "imageName": "komplexeZahlR"
               },
               {
-                "title": "komplexeZahlPhi",
                 "imageName": "komplexeZahlPhi"
               }
             ]
@@ -109,7 +94,6 @@
             "title": "Eulergleichung",
             "formulas": [
               {
-                "title": "komplexeZahlEulerGl",
                 "imageName": "komplexeZahlEulerGl"
               }
             ]
@@ -118,7 +102,6 @@
             "title": "Beweis für die Existenz Gottes",
             "formulas": [
               {
-                "title": "komplexeZahlGottesbeweis",
                 "imageName": "komplexeZahlGottesbeweis"
               }
             ]
@@ -132,27 +115,21 @@
             "title": "kartesische Koordinaten",
             "formulas": [
               {
-                "title": "kartesischLinienelement",
                 "imageName": "kartesischLinienemement"
               },
               {
-                "title": "kartesischFlaechenelement",
                 "imageName": "kartesischFlaechenelement"
               },
               {
-                "title": "kartesischVolumenelement",
                 "imageName": "kartesischVolumenelement"
               },
               {
-                "title": "kartesischOrtsvektor",
                 "imageName": "kartesischOrtsvektor"
               },
               {
-                "title": "kartesischGeschwindigkeit",
                 "imageName": "kartesischGeschwindigkeit"
               },
               {
-                "title": "kartesischBeschleunigung",
                 "imageName": "kartesischBeschleunigung"
               }
             ]
@@ -161,43 +138,33 @@
             "title": "Kugelkoordinaten",
             "formulas": [
               {
-                "title": "kugelkooLinienelement",
                 "imageName": "kuglekooLinienelement"
               },
               {
-                "title": "kugelkooVolumenelement",
                 "imageName": "kuglekooVolumenelement"
               },
               {
-                "title": "kugelkooOrtsvektor",
                 "imageName": "kugelkooOrtsvektor"
               },
               {
-                "title": "kugelkooDotE_r",
                 "imageName": "kugelkooDotE_r"
               },
               {
-                "title": "kugelkooDotE_theta",
                 "imageName": "kugelkooDotE_theta"
               },
               {
-                "title": "kugelkooDotE_phi",
                 "imageName": "kugelkooDotE_phi"
               },
               {
-                "title": "kugelkooGeschwindigkeit",
                 "imageName": "kugelkooGeschwindigkeit"
               },
               {
-                "title": "kugelkooBeschleunigung_r",
                 "imageName": "kugelkooBeschleunigung_r"
               },
               {
-                "title": "kugelkooBeschleunigung_theta",
                 "imageName": "kugelkooBeschleunigung_theta"
               },
               {
-                "title": "kugelkooBeschleunigung_phi",
                 "imageName": "kugelkooBeschleunigung_phi"
               }
             ]
@@ -206,35 +173,27 @@
             "title": "Zylinderkoordinaten",
             "formulas": [
               {
-                "title": "zylinderkooLinienelement",
                 "imageName": "zylinderkooLinienelement"
               },
               {
-                "title": "zylinderkooVolumenelement",
                 "imageName": "zylinderkooVolumenelement"
               },
               {
-                "title": "zylinderkooOrtsvektor",
                 "imageName": "zylinderkooOrtsvektor"
               },
               {
-                "title": "zylinderkooDotE_rho",
                 "imageName": "zylinderkooDotE_rho"
               },
               {
-                "title": "zylinderkooDotE_phi",
                 "imageName": "zylinderkooDotE_phi"
               },
               {
-                "title": "zylinderkooDotE_z",
                 "imageName": "zylinderkooDotE_z"
               },
               {
-                "title": "zylinderkooGeschwindigkeit",
                 "imageName": "zylinderkooGeschwindigkeit"
               },
               {
-                "title": "zylinderkooBeschleunigung",
                 "imageName": "zylinderkooBeschleunigung"
               }
             ]
@@ -248,19 +207,15 @@
             "title": "Potenzfunktionen",
             "formulas": [
               {
-                "title": "Null",
                 "imageName": "stammFunc0"
               },
               {
-                "title": "Const",
                 "imageName": "stammFuncA"
               },
               {
-                "title": "XHochN",
                 "imageName": "stammFuncXHochN"
               },
               {
-                "title": "EinsDurchX",
                 "imageName": "stammFuncEinsDurchX"
               }
             ]
@@ -269,15 +224,12 @@
             "title": "Exponentialfuntionen",
             "formulas": [
               {
-                "title": "Exp",
                 "imageName": "stammFuncExp"
               },
               {
-                "title": "AHochX",
                 "imageName": "stammFuncAHochX"
               },
               {
-                "title": "UStrichVonXLnUVonX",
                 "imageName": "stammFuncUStrichVonXLnUVonX"
               }
             ]
@@ -286,31 +238,24 @@
             "title": "trigonometrische Funktionen",
             "formulas": [
               {
-                "title": "Sin",
                 "imageName": "stammFuncSin"
               },
               {
-                "title": "Cos",
                 "imageName": "stammFuncCos"
               },
               {
-                "title": "Tan",
                 "imageName": "stammFuncTan"
               },
               {
-                "title": "Cot",
                 "imageName": "stammFuncCot"
               },
               {
-                "title": "EinsDurchCosQuad",
                 "imageName": "stammFuncEinsDurchCosQuad"
               },
               {
-                "title": "EinsDurchWurzel",
                 "imageName": "stammFuncEinsDurchWurzel"
               },
               {
-                "title": "EinsDurchQuadXPlusEins",
                 "imageName": "stammFuncEinsDurchXQuadPlusEins"
               }
             ]
@@ -616,7 +561,6 @@
             "title": "allgemein",
             "formulas": [
               {
-                "title": "Taylorreihe allgemein",
                 "imageName": "taylorreihe_allgemein"
               }
             ]
@@ -625,43 +569,33 @@
             "title": "oft auftretende Reihen",
             "formulas": [
               {
-                "title": "TaylorExp",
                 "imageName": "taylorreihe_exp"
               },
               {
-                "title": "TaylorSin",
                 "imageName": "taylorreihe_sin"
               },
               {
-                "title": "TaylorCos",
                 "imageName": "taylorreihe_cos"
               },
               {
-                "title": "TaylorSinQuadrat",
                 "imageName": "taylorreihe_sin_quadrat"
               },
               {
-                "title": "TaylorCosQuadrat",
                 "imageName": "taylorreihe_cos_quadrat"
               },
               {
-                "title": "TaylorTan",
                 "imageName": "taylorreihe_tan"
               },
               {
-                "title": "TaylorCot",
                 "imageName": "taylorreihe_cot"
               },
               {
-                "title": "TaylorArcsin",
                 "imageName": "taylorreihe_arcsin"
               },
               {
-                "title": "TaylorArctan",
                 "imageName": "taylorreihe_arctan"
               },
               {
-                "title": "TaylorLnEinsPlusX",
                 "imageName": "taylorreihe_ln_einsplusx"
               }
             ]
@@ -675,39 +609,30 @@
             "title": "Sinus",
             "formulas": [
               {
-                "title": "SinusTaylor",
                 "imageName": "sin_taylor"
               },
               {
-                "title": "SinusXPuls2Pi",
                 "imageName": "sin_x_2pi"
               },
               {
-                "title": "SinusMinusX",
                 "imageName": "sin_minusX"
               },
               {
-                "title": "SinusAdditionstheorem",
                 "imageName": "additionstheorem_sin"
               },
               {
-                "title": "SinXPlusSinY",
                 "imageName": "sin_x_plus_sin_y"
               },
               {
-                "title": "SinXMinusSinY",
                 "imageName": "sin_x_minus_sin_y"
               },
               {
-                "title": "Sin2X",
                 "imageName": "sin_2x"
               },
               {
-                "title": "Sin3X",
                 "imageName": "sin_3x"
               },
               {
-                "title": "SinQuadratX",
                 "imageName": "sin_quadrat_x"
               }
             ]
@@ -716,35 +641,27 @@
             "title": "Cosinus",
             "formulas": [
               {
-                "title": "CosinusTaylor",
                 "imageName": "cos_taylor"
               },
               {
-                "title": "CosinusMinusX",
                 "imageName": "cos_minusX"
               },
               {
-                "title": "CosinusAdditionstheorem",
                 "imageName": "additionstheorem_cos"
               },
               {
-                "title": "CosXPlusCosY",
                 "imageName": "cos_x_plus_cos_y"
               },
               {
-                "title": "CosXMinusCosY",
                 "imageName": "cos_x_minus_cos_y"
               },
               {
-                "title": "Cos2X",
                 "imageName": "cos_2x"
               },
               {
-                "title": "Cos3X",
                 "imageName": "cos_3x"
               },
               {
-                "title": "CosQuadratX",
                 "imageName": "cos_quadrat_x"
               }
             ]
@@ -753,15 +670,12 @@
             "title": "Tangens",
             "formulas": [
               {
-                "title": "TanAdditionstheorem",
                 "imageName": "additionstheorem_tan"
               },
               {
-                "title": "TanXPmTanY",
                 "imageName": "tan_x_pm_tan_y"
               },
               {
-                "title": "Tan2X",
                 "imageName": "tan_2x"
               }
             ]
@@ -770,11 +684,9 @@
             "title": "Cotangens",
             "formulas": [
               {
-                "title": "CotAdditionstheorem",
                 "imageName": "additionstheorem_cot"
               },
               {
-                "title": "Cot2X",
                 "imageName": "cot_2x"
               }
             ]
@@ -788,7 +700,6 @@
             "title": "Komponenten",
             "formulas": [
               {
-                "title": "VektorKomponenten",
                 "imageName": "vektor_komponenten"
               }
             ]
@@ -797,7 +708,6 @@
             "title": "Betrag",
             "formulas": [
               {
-                "title": "VektorBetrag",
                 "imageName": "vektor_betrag"
               }
             ]
@@ -806,7 +716,6 @@
             "title": "Richtung",
             "formulas": [
               {
-                "title": "VektorRichtung",
                 "imageName": "vektor_richtung"
               }
             ]
@@ -815,15 +724,12 @@
             "title": "Skalarprodukt",
             "formulas": [
               {
-                "title": "VektorSkalarprodukt01",
                 "imageName": "vektor_skalarprodukt01"
               },
               {
-                "title": "VektorSkalarprodukt02",
                 "imageName": "vektor_skalarprodukt02"
               },
               {
-                "title": "VektorSkalarproduktKommutativ",
                 "imageName": "vektor_skalarprodukt_kommutativ"
               }
             ]
@@ -832,23 +738,18 @@
             "title": "Kreuzprodukt",
             "formulas": [
               {
-                "title": "VektorKreuzprodukt",
                 "imageName": "vektor_kreuzprodukt"
               },
               {
-                "title": "VektorKreuzproduktBetrag",
                 "imageName": "vektor_kreuzprodukt_betrag"
               },
               {
-                "title": "VektorKreuzproduktKommutativ",
                 "imageName": "vektor_kreuzprodukt_antikommutativ"
               },
               {
-                "title": "VektorKreuzproduktAssoziativ",
                 "imageName": "vektor_kreuzprodukt_assoziativ"
               },
               {
-                "title": "VektorKreuzproduktDistributiv",
                 "imageName": "vektor_kreuzprodukt_distributiv"
               }
             ]
@@ -857,7 +758,6 @@
             "title": "Spatprodukt",
             "formulas": [
               {
-                "title": "Spatprodukt",
                 "imageName": "spatprodukt"
               }
             ]
@@ -866,7 +766,6 @@
             "title": "Langrange-Identität",
             "formulas": [
               {
-                "title": "KreuzproduktLagrange",
                 "imageName": "vektor_kreuzprodukt_lagrange"
               }
             ]
@@ -875,7 +774,6 @@
             "title": "Entwicklungssatz",
             "formulas": [
               {
-                "title": "Entwicklungssatz",
                 "imageName": "entwicklungssatz"
               }
             ]

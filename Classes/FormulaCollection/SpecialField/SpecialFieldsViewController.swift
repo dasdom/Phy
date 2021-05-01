@@ -24,7 +24,10 @@ class SpecialFieldsViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.tableView.register(SpecialFieldCell.self, forCellReuseIdentifier: SpecialFieldCell.identifier)
+    tableView.register(SpecialFieldCell.self, forCellReuseIdentifier: SpecialFieldCell.identifier)
+    
+    let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(search))
+    navigationItem.rightBarButtonItem = searchButton
   }
   
   // MARK: - Table view data source
@@ -53,5 +56,12 @@ class SpecialFieldsViewController: UITableViewController {
     
     let specialField = specialFieldDataSource.specialField(for: indexPath)
     delegate?.specialFieldSelected(self, specialField: specialField)
+  }
+}
+
+// MARK: - Actions
+extension SpecialFieldsViewController {
+  @objc func search() {
+    
   }
 }

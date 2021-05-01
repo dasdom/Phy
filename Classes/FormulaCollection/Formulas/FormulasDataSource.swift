@@ -11,9 +11,13 @@ protocol FormulasDataSourceProtocol {
   func formula(for: IndexPath) -> Formula
 }
 
-struct FormulasDataSource : FormulasDataSourceProtocol {
+class FormulasDataSource: FormulasDataSourceProtocol {
   
-  let sections: [FormulaSection]
+  var sections: [FormulaSection]
+  
+  internal init(sections: [FormulaSection]) {
+    self.sections = sections
+  }
   
   func numberOfSections() -> Int {
     return sections.count
@@ -30,6 +34,4 @@ struct FormulasDataSource : FormulasDataSourceProtocol {
   func formula(for indexPath: IndexPath) -> Formula {
     return sections[indexPath.section].formulas[indexPath.row]
   }
-  
-  
 }

@@ -6,5 +6,5 @@ import Foundation
 
 protocol FormulaCellProtocol {
   var imageName: String { get }
-  var title: String { get }
+  var title: String? { get }
 }
