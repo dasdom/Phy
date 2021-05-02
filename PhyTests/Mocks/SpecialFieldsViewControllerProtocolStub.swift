@@ -12,4 +12,8 @@ class SpecialFieldsViewControllerProtocolStub: SpecialFieldsViewControllerProtoc
   func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField) {
     lastSelectedSpecialField = specialField
   }
+  
+  func showSearch(_ viewController: UIViewController, specialFieldSections: [SpecialFieldSection]) {
+    
+  }
 }

@@ -126,6 +126,10 @@ extension SpecialFieldsViewControllerTests {
       
       return self.specialFieldToReturn
     }
+    
+    func allSections() -> [SpecialFieldSection] {
+      return []
+    }
   }
   
   class MockSpecialFieldCell : SpecialFieldCell {
