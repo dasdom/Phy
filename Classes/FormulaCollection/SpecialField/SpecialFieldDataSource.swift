@@ -8,11 +8,12 @@ protocol SpecialFieldDataSourceProtocol {
   func numberOfSections() -> Int
   func numberOfRows(in: Int) -> Int
   func specialField(for: IndexPath) -> SpecialField
+  func allSections() -> [SpecialFieldSection]
 }
 
 struct SpecialFieldDataSource : SpecialFieldDataSourceProtocol {
   
-  private let items: [SpecialFieldSection]
+  private let specialFieldSections: [SpecialFieldSection]
   
   init(json: String) {
     guard let url = Bundle.main.url(forResource: json, withExtension: "json") else { fatalError() }
@@ -20,22 +21,26 @@ struct SpecialFieldDataSource : SpecialFieldDataSourceProtocol {
     let data: Data
     do {
       data = try Data(contentsOf: url)
-      self.items = try JSONDecoder().decode([SpecialFieldSection].self, from: data)
+      self.specialFieldSections = try JSONDecoder().decode([SpecialFieldSection].self, from: data)
     } catch {
       print(error)
-      self.items = []
+      self.specialFieldSections = []
     }
   }
 
   func numberOfSections() -> Int {
-    return items.count
+    return specialFieldSections.count
   }
   
   func numberOfRows(in section: Int) -> Int {
-    return items[section].specialFields.count
+    return specialFieldSections[section].specialFields.count
   }
   
   func specialField(for indexPath: IndexPath) -> SpecialField {
-    return items[indexPath.section].specialFields[indexPath.row]
+    return specialFieldSections[indexPath.section].specialFields[indexPath.row]
+  }
+  
+  func allSections() -> [SpecialFieldSection] {
+    return specialFieldSections
   }
 }

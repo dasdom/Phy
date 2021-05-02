@@ -6,6 +6,7 @@ import UIKit
 
 protocol SpecialFieldsViewControllerProtocol {
   func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField)
+  func showSearch(_ viewController: UIViewController, specialFieldSections: [SpecialFieldSection])
 }
 
 class SpecialFieldsViewController: UITableViewController {
@@ -62,6 +63,6 @@ class SpecialFieldsViewController: UITableViewController {
 // MARK: - Actions
 extension SpecialFieldsViewController {
   @objc func search() {
-    
+    delegate?.showSearch(self, specialFieldSections: specialFieldDataSource.allSections())
   }
 }

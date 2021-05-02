@@ -627,8 +627,8 @@
 			isa = PBXGroup;
 			children = (
 				F2716A0622F77862007D1528 /* SpecialFieldsViewController.swift */,
-				F2716A0922F77D21007D1528 /* SpecialFieldCell.swift */,
 				F2716A0D22F85C8A007D1528 /* SpecialFieldDataSource.swift */,
+				F2716A0922F77D21007D1528 /* SpecialFieldCell.swift */,
 				F2DB7D4F23101A5A0098B42A /* SpecialFieldSection.swift */,
 				F2DB7D4E23101A5A0098B42A /* SpecialField.swift */,
 			);
