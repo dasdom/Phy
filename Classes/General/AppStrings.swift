@@ -8,6 +8,8 @@ enum AppStrings: String {
   case asking_for_feedback
   case feedback_call_for_action
   case asing_for_feedback_button
+  case feedback_mail_subject
+  case feedback_mail_body
   
   var localized: String {
     return rawValue.localized

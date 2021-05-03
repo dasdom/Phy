@@ -84,11 +84,17 @@ extension FormulasCoordinator: FeedbackViewDelegate {
     if MFMailComposeViewController.canSendMail() {
       let compose = MFMailComposeViewController()
       compose.mailComposeDelegate = self
+      compose.setToRecipients(["dominik.hauser@dasdom.de"])
+      compose.setSubject(AppStrings.feedback_mail_subject.localized)
+      compose.setMessageBody(AppStrings.feedback_mail_body.localized, isHTML: false)
+
       presenter.present(compose, animated: true)
     }
   }
 }
 
 extension FormulasCoordinator: MFMailComposeViewControllerDelegate {
-  
+  func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    controller.dismiss(animated: true)
+  }
 }

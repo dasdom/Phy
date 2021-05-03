@@ -1234,3 +1234,5 @@
 "asking_for_feedback" = "Do you have a feature requests? Are you missing a fomula?";
 "feedback_call_for_action" = "Send me an email and I'll have a look. Your email address will only be used to ask for clarification if needed.";
 "asing_for_feedback_button" = "Compose email";
+"feedback_mail_subject" = "Feedback for Phy";
+"feedback_mail_body" = "Hi Dominik,\n\nI have feedback for Phy.";
