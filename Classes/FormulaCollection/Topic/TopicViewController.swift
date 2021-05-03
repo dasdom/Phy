@@ -25,9 +25,11 @@ class TopicViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    title = "Formeln".localized
+    
     tableView.register(TopicCell.self, forCellReuseIdentifier: TopicCell.identifier)
     
-    navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Impressum", comment: ""), style: .plain, target: self, action: #selector(showImprint(sender:)))
+    navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Impressum".localized, style: .plain, target: self, action: #selector(showImprint(_:)))
   }
   
   // MARK: - UITableViewDataSource
@@ -57,11 +59,12 @@ class TopicViewController: UITableViewController {
     let topic = topicDataSource.topic(for: indexPath)
     delegate?.topicSelected(self, topic: topic)
   }
-  
-  @objc func showImprint(sender: UIBarButtonItem) {
-    
-    precondition(delegate != nil)
+}
 
+// MARK: - Actions
+extension TopicViewController {
+  @objc func showImprint(_ sender: UIBarButtonItem) {
+    precondition(delegate != nil)
     delegate?.showImprint(self)
   }
 }

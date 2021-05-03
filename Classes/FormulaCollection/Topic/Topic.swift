@@ -7,6 +7,7 @@ import Foundation
 enum TopicType: String, Codable {
   case formulas
   case elements
+  case feedback
 }
 
 struct Topic : Codable, Equatable {

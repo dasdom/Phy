@@ -95,7 +95,25 @@
                     "detailItems" : [
                       {
                         "imageName" : "impuls",
-                        "title" : "Impuls"
+                        "title" : "Impuls",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "in kg"
+                          },
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "in m/s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m÷#v",
+                            "imageName": "impuls"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Impuls"
@@ -181,7 +199,25 @@
                       },
                       {
                         "imageName" : "kraft02",
-                        "title" : "Kraft02"
+                        "title" : "Kraft02",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "in kg"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "in m/s^2"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m÷#a",
+                            "imageName": "kraft02"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Kraft"
@@ -246,7 +282,25 @@
                     "detailItems" : [
                       {
                         "imageName" : "kraft02",
-                        "title" : "Kraft02"
+                        "title" : "Kraft02",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "in kg"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "in m/s^2"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m÷#a",
+                            "imageName": "kraft02"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "kraft01",

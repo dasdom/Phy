@@ -13,5 +13,10 @@
     "json": "data_elements",
     "title": "Chemische Elemente",
     "type": "elements"
+  },
+  {
+    "json": "",
+    "title": "Feedback",
+    "type": "feedback"
   }
 ]

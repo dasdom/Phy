@@ -3,8 +3,10 @@
 //
 
 import UIKit
+import SwiftUI
+import MessageUI
 
-class FormulasCoordinator: Coordinator {
+class FormulasCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
   
   private let presenter: UINavigationController
   private let viewController: TopicViewController
@@ -25,17 +27,20 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
   
   func topicSelected(_ viewController: UIViewController, topic: Topic) {
     switch topic.type {
-    case .formulas:
-      let dataSource = SpecialFieldDataSource(json: topic.json)
-      let next = SpecialFieldsViewController(style: .insetGrouped, dataSource: dataSource)
-      next.title = topic.title.localized
-      next.delegate = self
-      presenter.pushViewController(next, animated: true)
-    case .elements:
-      let dataSource = ChemElementsDataSource(json: topic.json)
-      let next = ChemElementsTableViewController(style: .plain, dataSource: dataSource)
-      next.title = topic.title.localized
-      presenter.pushViewController(next, animated: true)
+      case .formulas:
+        let dataSource = SpecialFieldDataSource(json: topic.json)
+        let next = SpecialFieldsViewController(style: .insetGrouped, dataSource: dataSource)
+        next.title = topic.title.localized
+        next.delegate = self
+        presenter.pushViewController(next, animated: true)
+      case .elements:
+        let dataSource = ChemElementsDataSource(json: topic.json)
+        let next = ChemElementsTableViewController(style: .plain, dataSource: dataSource)
+        next.title = topic.title.localized
+        presenter.pushViewController(next, animated: true)
+      case .feedback:
+        let next = UIHostingController(rootView: FeedbackView(delegate: self))
+        presenter.pushViewController(next, animated: true)
     }
   }
 
@@ -72,4 +77,18 @@ extension FormulasCoordinator: FormulasViewControllerProtocol {
       presenter.pushViewController(detail, animated: true)
     }
   }
+}
+
+extension FormulasCoordinator: FeedbackViewDelegate {
+  func composeMail() {
+    if MFMailComposeViewController.canSendMail() {
+      let compose = MFMailComposeViewController()
+      compose.mailComposeDelegate = self
+      presenter.present(compose, animated: true)
+    }
+  }
+}
+
+extension FormulasCoordinator: MFMailComposeViewControllerDelegate {
+  
 }

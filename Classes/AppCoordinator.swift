@@ -25,6 +25,7 @@ class AppCoordinator: Coordinator {
   
   private var formulas: UIViewController {
     let formulasNavigationController = UINavigationController()
+    formulasNavigationController.navigationBar.prefersLargeTitles = true
     let phyTopicCoordinator = FormulasCoordinator(presenter: formulasNavigationController)
     phyTopicCoordinator.start()
     childCoordinators.append(phyTopicCoordinator)
