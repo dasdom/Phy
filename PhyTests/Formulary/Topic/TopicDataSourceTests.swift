@@ -24,7 +24,7 @@ class TopicDataSourceTests: XCTestCase {
   
   func test_init_resultsInCorrectNumberOfRows() {
     // then
-    XCTAssertEqual(3, sut.numberOfRows(in: 0))
+    XCTAssertEqual(4, sut.numberOfRows(in: 0))
   }
   
   func test_init_resultsInCorrectFirstItem() {
