@@ -1,11 +1,11 @@
-/* Ebene 0: Begruessungsbildschirm */
+// MARK: - Ebene 0: Begruessungsbildschirm
   "Physik Formeln"         = "Physics Formulas";
   "Mathe Formeln"          = "Math Formulas";
   "Chemische Elemente"     = "Table of Elements";
   "Formeln üben (Werbung)" = "Practice Formulas (Ad)";
 
-/* Ebene 1: */
-	/* Physik Formeln: */
+// MARK: - Ebene 1
+// MARK: Physik Formeln
     "Mechanik"                 = "Mechanics";
     "Fluidmechanik"            = "Fluidmechanics";
     "Relativitätstheorie"      = "Relativity";
@@ -21,7 +21,7 @@
     "Einheiten"                = "Units";
     "Dummy-Rechner"            = "Dummy Calculator";
 
-	/* Mathe Formeln */
+	// MARK: Mathe Formeln
     "Kegelschnitte"      = "Conic Sections";
     "Koordinatensysteme" = "Coordinate Systems";
     "Statistik"          = "Statistics";
@@ -30,7 +30,7 @@
     "Taylorreihen"       = "Taylor Series";
     "Stammfunktionen"    = "Integrals";
 
-	/* Chemische Elemente */
+	// MARK:  Chemische Elemente
     "1   Wasserstoff"     = "1   Hydrogen";
     "2   Helium"          = "2   Helium";
     "3   Lithium"         = "3   Lithium";
@@ -144,8 +144,8 @@
     "Gruppe: %@"          = "Group: %@";
     "Pauling-El.neg.: %@" = "Pauling El.Neg.: %@";
 
-/* Ebene 2 */
-	/* Namen der Elemente */
+// MARK: - Ebene 2
+	// MARK: Namen der Elemente
     "Wasserstoff"  = "Hydrogen";
     "Helium"       = "Helium";
     "Lithium"      = "Lithium";
@@ -306,9 +306,9 @@
     "Phase (Normbed.)"       = "Phase (norm.)";
     "Pauling-Skala"          = "Pauling";
 
-/* Ebene 2: */
-	/* Mechanik: */
-		//Newtonsche Gesetze
+// MARK: - Ebene 2
+	// MARK: Mechanik
+		// MARK: Newtonsche Gesetze
 		"Newtonsche Gesetze"    = "Newtons Laws"; // Sektion Titel
 		"1. Newtonsches Gesetz" = "1st Newton Law";
 		"2. Newtonsches Gesetz" = "2nd Newton Law";
@@ -318,7 +318,7 @@
 		"2. Keplersches Gesetz" = "2nd Kepler Law";
 		"3. Keplersches Gesetz" = "3rd Kepler Law";
 		
-		//unbeschleunigte Bewegung
+		// MARK: unbeschleunigte Bewegung
 		"unbeschleunigte Bewegung"  = "Non-Accelerated Movement";  //Sektion Titel
 		"Geschwindigkeit"           = "Velocity";
 		"Impuls"                    = "Momentum";
@@ -337,7 +337,7 @@
 		"kinetische Energie"        = "Kinetic Energy";
         "potentielle Energie"       = "Potential Energy";
 		
-		//konstante Beschleunigung
+		// MARK: konstante Beschleunigung
 		"konstante Beschleunigung"  = "Constant Acceleration";  //Sektion Titel
 		"Beschleunigung"            = "Acceleration";
 		"moment. Geschwindigkeit"   = "Actual Velocity";
@@ -346,11 +346,11 @@
 		"Bremsweg"                  = "Deceleration Distance";
 		"Bremsdauer"                = "Deceleration Time";
 		
-		//raeumliche Bewegung
+		// MARK: raeumliche Bewegung
 		"räumliche Bewegung"    = "Movement in 3D"; //Sekton Titel
 		"Beschleunigung"       = "Acceleration";
 		
-		//Bewegung im Gravitationsfeld
+		// MARK: Bewegung im Gravitationsfeld
 		"Bewegung im Gravitationsfeld"  = "Movement in Gravitational Field";  //Sektion Titel
 		"Gewichtskraft"                 = "Weight";
 		"Gravitationskraft"             = "Gravitational Force";
@@ -360,7 +360,7 @@
 		"freier Fall"                   = "Free Fall";
 		"Freier Fall"                   = "Free Fall";
 		
-		//schiefer Wurf
+		// MARK: schiefer Wurf
 		"schiefer Wurf"                     = "Oblique Throw"; //Sektion Titel
 		"Beschleunigung (schiefer Wurf)"    = "Acceleration (Oblique Throw)";
 		"x(t) (schiefer Wurf)"              = "x(t) (Oblique Throw)";
@@ -381,7 +381,7 @@
 		"Steigzeit (schiefer Wurf)"         = "Rise Time (Oblique Throw)";
 		"Wurfdauer (schiefer Wurf)"         = "Throw Time (Oblique Throw)";
 		
-		//Drehbewegung
+		// MARK: Drehbewegung
 		"Drehbewegung"              = "Circular Movement";  //Sektion Titel
 		"Drehimpuls"                = "Circular Momentum";
 		"Drehimpulserhaltungssatz"  = "Conservation of Circular Momentum";
@@ -393,7 +393,7 @@
 		"Zentripetalkraft"          = "Centripetal Force";
 		"Kreisgeschwindigkeit"      = "Velocity In Circular Motion";
 
-		//harmonischer Oszillator
+		// MARK: harmonischer Oszillator
 		"harmonischer Oszillator"                       = "Harmonic Oscillator";  //Sektion Titel
 		"Differentialgleichung (harmonischer Oszillator)" = "Differential Equation (Harmonic Oscillator";
 		"Bewegungsgleichung (harmonischer Oszillator)"  = "Equation of Motion (Harmonic Oscillator";
@@ -405,7 +405,7 @@
 		"potentielle Energie eines Oszillators"         = "Potential Energy of a Oscillator";
 		"Federkraft"                                    = "Hooks Law";
 
-        //Lagrange Formalismus
+        // MARK: Lagrange Formalismus
         "Lagrange Formalismus"          = "Lagrange formalism";
         "Prinzip der kleinsten Wirkung" = "Principal of Least Action";
         "Lagrangefunktion"              = "Lagrange Function";
@@ -413,7 +413,7 @@
         "Euler-Lagrange-Gleichungen"    = "Euler-Lagrange-Equations";
         "Euler-Lagrange-Gleichungen (nicht-konservatives System)" = "Euler-Lagrange-Equations (Not-Conservative System)";
 
-	/* Relativitaetstheorie */
+	// MARK: Relativitaetstheorie
 		"Lorentz-Transformation"    = "Lorentz Transformation";
 		"Massenzunahme"             = "Mass Increase";
 		"Zeitdilatation"            = "Time Dilatation";
@@ -423,20 +423,20 @@
 		"Relativistischer Impuls"   = "Relativistic Momentum";
 		"Energie-Impuls-Beziehung"  = "Energy Momentum Relation";
 	
-	/* Fluidmechanik: */
-		//Statik
+	// MARK:  Fluidmechanik
+		// MARK: Statik
 		"Statik"                        = "Statics"; // Sektion Titel
 		"Dichte"                        = "Density";
 		"Druck"                         = "Pressure";
 		"Druck einer Flüssigkeitsäule"  = "Pressure of a Liquid Column";
 		"Auftriebskraft"                = "Lifting Force";
 		
-		//Dynamik
+		// MARK: Dynamik
 		"Dynamik"               = "Dynamics"; // Sektion Titel
 		"Stokesreibung"         = "Stokes Friction";
 		"Bernouilli-Gleichung"  = "Bernouilli Equation";
 			
-	/* Thermodynamik: */
+	// MARK: Thermodynamik
 		"Temperatur"    = "Temperature";  //Sektion Titel
 		"Celsius-Skala" = "Celsius Scale";
 		"Kelvin-Skala"  = "Kelvin Scale";
@@ -481,7 +481,7 @@
 		"molare Wärmekapazität bei konstantem Druck" = "Molar Thermal Capacity at Constant Pressure";
 		"Mischungstemperatur"           = "Mixture Temperature";
 		
-	/* Elektrodynamik */
+	// MARK: Elektrodynamik
 		"Gleichstrom"                       = "DC";  //Sektion Titel
 		"Stromstärke"                       = "Current";
 		"elektrische Arbeit"                = "Electric Work";
@@ -551,7 +551,7 @@
         "Induktionsgesetz" = "Induction Law";
         "Durchflutungsgesetz" = "La Pace Law";
 		
-	// Strahlenoptik
+	// MARK: Strahlenoptik
 		"Reflexion und Brechung" = "Reflexion and Refraction"; //Ueberschrift
 		"Reflexion" = "Reflexion";
 		"Brechungsgesetz" = "Refraction Law";
@@ -567,7 +567,7 @@
 		"Optische Instrumente" = "Optical Instruments"; //Ueberschrift
 		"Vergrößerung" = "Amplification";
 		
-	// Wellenoptik
+	// MARK: Wellenoptik
 		"Allgemein" = "General"; //Ueberschrift
 		"Lichtgeschwindigkeit" = "Speed of Light";
 		"Frequenz an Grenzflaechen" = "Frequency at Boundary Layer";
@@ -592,7 +592,7 @@
 		"Beugung am Gitter" = "Diffraction at Lattice";
 		"Interferenzmaximum Gitter" = "Interference Max Lattice";
 		
-	//Quantenmechanik
+	// MARK: Quantenmechanik
 		"Kommutator" = "Commutator";
 		"Kommutator [xi, xj]" = "Commutator [xi, xj]";
         "Ortskommutator" = "Spatial Commutator";
@@ -633,7 +633,7 @@
 		"Eigenwertgleichung 2" = "Eigen Value Equation 2";
 		"Eigenwertgleichung" = "Eigen Value Equation";
 		
-	//Atomphysik
+	// MARK: Atomphysik
 		"1. Bohrsches Postulat" = "1st Bohr Postulate";
 		"2. Bohrsches Postulat" = "2nd Bohr Postulate";
 		"Wellenzahl" = "Wave Number";
@@ -643,7 +643,7 @@
 		"Bohrscher Radius" = "Bohr Radius";
 		"Bindungsenergie" = "Binding Energy";
 	
-		/* Physikalische Konstanten */
+		// MARK: Physikalische Konstanten
 		"Gravitationsbeschleunigung" = "Local gravity";
 		"Gravitationskonstante" = "Gravitation constant";
 		"allgemeine Gaskonstante" = "General gas constant";
@@ -669,19 +669,19 @@
         "Rydberg-Konstante" = "Rydberg constant";
         "Comptonwellenlänge" = "Compton wavelength";
 
-	/* Mathe Formeln */
-		// Kegelschnitte
+	// MARK: Mathe Formeln
+		// MARK: Kegelschnitte
 		"Kreis" = "Circle";
 		"Ellipse" = "Ellipse";
 		"Hyperbel" = "Hyperbola";
 		"Parabel" = "Parabola";
 	
-		// Koordinatensysteme
+		// MARK: Koordinatensysteme
 		"kartesische Koordinaten" = "Cartesian coordinates";
 		"Kugelkoordinaten" = "Spherical coordinates";
 		"Zylinderkoordinaten" = "Cylindrical coordinates";
 		
-		// Statistik
+		// MARK: Statistik
 		"Mittelwert" = "Mean value";
 		"Varianz" = "Variance";
 		"diskrete Verteilung; allg." = "Discrete distribution; general";
@@ -705,7 +705,7 @@
 		"Cauchyverteilung" = "Cauchy distribution";
 		"t-verteilung" = "t distribution";
 	
-		// Vektoren
+		// MARK: Vektoren
 		"Komponenten" = "Components";
 		"Betrag" = "Norm";
 		"Richtung" = "Direction";
@@ -715,26 +715,26 @@
 		"Langrange-Identität" = "Lagrange identity";
 		"Entwicklungssatz" = "Expansion theorem";
 		
-		// Komplexe Zahlen
+		// MARK: Komplexe Zahlen
 		"allgemein" = "General";
 		"exponentielle Darstellung" = "Exponential description";
 		"Eulergleichung" = "Euler equation";
 		"Beweis für die Existenz Gottes" = "Prove of the existence of god";
 		
-		// Stammfunktionen
+		// MARK: Stammfunktionen
 		"Potenzfunktionen" = "Power functions";
 		"Exponentialfuntionen" = "Exponential functions";
 		"trigonometrische Funktionen" = "Trigonometric functions";
 		
-		// trigonometrische Funktionen
+		// MARK: trigonometrische Funktionen
 		"Cotangens" = "Cotangent";
 		
 		// Taylorreihen
 		"oft auftretende Reihen" = "Often used series";
 
 
-/* Ebene 3: */
-	/* Ueberschriften bei den Konstanten */
+// MARK: - Ebene 3
+	// MARK: Ueberschriften bei den Konstanten
 		"Symbol" = "Symbol";
 		"Zahlenwert und Einheit" = "Number and unit";
 		"relative Unsicherheit" = "Relative uncertainty";
@@ -742,11 +742,11 @@
 		
 		
 		
-	/* Abkuerzungen */
+	// MARK: Abkuerzungen
 		"(konstante) Geschwindigkeit" = "(constant) Velocity";  //Sektion Titel
 		"Abkürzung" = "Abbreviation";
 		
-		//Mechanik
+		// MARK: Mechanik
 		"GeschwindigkeitAbk"            = "Velocity";
 		"WegAbk"                        = "Distance";
 		"ZeitAbk"                       = "Time";
@@ -813,7 +813,7 @@
         "generalisierteGeschwindigkeitenAbk" = "Generalized velocity";
 		"generalisierteKraefteAbk"      = "Generalized forces";
 		
-		//Relativitaet
+		// MARK: Relativitaet
 		"XYZCTStrichAbk"                = "Coordinates in S΄";
 		"XYZCTAbk"                      = "Coordinates in S";
 		"GeschwindigkeitVonSStrichAbk"  = "Velocity of Sʹ w. respect to S";
@@ -826,7 +826,7 @@
 		"GeschwindigkeitInSStrichAbk"   = "Velocity in S΄";
 		"EnergieAbk"                    = "Energy";
 			
-		//Fluidmechanik
+		// MARK: Fluidmechanik
 		"Hoehe"                     = "Height of the fluid";
 		"EingetauchtesVolumenAbk"   = "Dipped volume";
 		"ViskositaetAbk"            = "Viscosity";
@@ -835,7 +835,7 @@
 		"FlaecheAbk"                = "Area";
 		"HoeheDerFluessigkeitAbk"   = "Height of the liquid";
 				
-		//Thermodynamik
+		// MARK: Thermodynamik
 		"CelsiusAbk"                = "Temp. in Celsius";
 		"KelvinAbk"                 = "Temp. in Kelvin";
 		"VolumenBeiThetaAbk"        = "Volume at ϑ";
@@ -873,7 +873,7 @@
 		"molareWaermekapazitaet_pAbk" = "Mol. heat cap. at const. p";
 		"molareWaermekapazitaet_VAbk" = "Mol. heat cap. at const. V";
 		
-		//Elektrodynamik
+		// MARK: Elektrodynamik
 		"StromstaerkeAbk"           = "Current";
 		"Ladung01Abk"               = "Flowed charge";
 		"ElektrischeArbeitAbk"      = "Electric work";
@@ -925,7 +925,7 @@
         "StromdichteAbk"            = "Current density";
         "LadungsdichteAbk"          = "Chanrge density";
 
-		//Strahlenoptik
+		// MARK: Strahlenoptik
 		"EinfallswinkelAbk"         = "Incident angle";
 		"AusfallswinkelAbk"         = "Angle of reflexion";
 		"Brechungsindex1Abk"        = "Refrection index material 1";
@@ -945,7 +945,7 @@
 		"SehwinkelMitAbk"           = "Angle of sight with";
 		"SehwinkelOhneAbk"          = "Angle of sight without";
 
-		//Wellenoptik
+		// MARK: Wellenoptik
 		"WellenlaengeAbk"           = "Wave length";
 		"FrequenzImMaterial1Abk"    = "Frequency in material 1";
 		"FrequenzImMaterial2Abk"    = "Frequency in material 2";
@@ -959,7 +959,7 @@
 		"AbstandDerSpaltmittenAbk"  = "Distance of the slits";
 		"GitterkonstanteAbk"        = "Lattice constant";
 	
-		//Quantenmechanik
+		// MARK: Quantenmechanik
 		"AOpAbk"                    = "Arbitrary operator";
 		"BOpAbk"                    = "Arbitrary Operator";
 		"XiXjAbk"                   = "Spatial component";
@@ -983,7 +983,7 @@
 		"DrehimpulsQZAbk"           = "Angular momentum quantum number";
 		"DrehimpulsQZ2Abk"          = "Magnetic quantum number";
 
-	//Atomphysik
+	// MARK: Atomphysik
 		"RuhemasseElektronAbk"      = "Rest mass electron";
 		"RadiusNteBahnAbk"          = "Radius n-th path";
 		"BahngeschwindigkeitAbk"    = "Path velocity";
@@ -997,8 +997,8 @@
 		"BohrscherRadiusAbk"        = "Bohr radius";
 		"BindungsenergieAbk"        = "Binding energy";
 
-/* Ebene 4: */
-	/* Erklaerungen: */
+// MARK: - Ebene 4
+	// MARK: Erklaerungen
 		"ErklaerNewton01" = "If there is no force in a inertial frame every object moves on a straight line or stays without movement.";
 		"ErklaerNewton02" = "The change of the momentum in time is equal to the force.";
 		"ErklaerNewton03" = "Action is equal to reaction.";
@@ -1079,7 +1079,7 @@
 		"ErklaerTverteilung01" = "";
 		
 		
-// Taschenrechner
+// MARK: - Taschenrechner
 	"Eingabe der Ziffer 0"  = "Digit 0";
 	"Eingabe der Ziffer 1"  = "Digit 1";
 	"Eingabe der Ziffer 2"  = "Digit 2";
@@ -1130,8 +1130,11 @@
 "Liste der lezten Ergebnisse anzeigen" = "Show lists with last results";
 "Liste oft benutzter Konstanten anzeigen" = "Show list with common physics constants";
 "Antwort auf die Frage aller Fragen" = "Answer to the ultimate question";
+"Letzte Berechnungen" = "Last calculations";
+"Wähle die Rechnung aus, die in den Rechner eingefügt werden soll." = "Select the calculation that should be put into the calculator";
+"Wähle das Ergebnis aus, das in den Rechner eingefügt werden soll." = "Select the result that should be put into the calculator";
 
-/* Referenz */
+// MARK: Referenz
 	"gasförmig"                     = "aerially";
 	"flüssig"                       = "fluid";
 	"fest"                          = "solid";
@@ -1198,10 +1201,17 @@
 	"Phosphor (weiss)"              = "Phosphor (white)";
 	"Quarzglas"                     = "Quartz Glass";
 
-/* Solver */
+// MARK: - Converter
+"Zum Rechner" = "To calcuator";
+"Löschen" = "Clear";
+
+// MARK: - Solver
 "Werkzeuge" = "Tools";
-	
-/* Allgemein */
+"Formel"    = "Formla";
+"Ergebnis"  = "Result";
+"Berechnen" = "Calculate";
+
+// MARK: - Allgemein
 	"(erlaubte Zeichen: -123456789.e)" = "(allowed digits: -123456789.e)"; 
   "Eingabe"  = "Input";
   "Ausgabe"  = "Output";

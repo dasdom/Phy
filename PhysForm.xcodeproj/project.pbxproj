@@ -85,6 +85,7 @@
 		F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
 		F279640E1143FAFD00B8EBDE /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
 		F27EEF771154F1F3008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
+		F28175F8263EA5FD00097228 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28175F7263EA5FD00097228 /* FileManagerExtension.swift */; };
 		F2827277232D875E004E94E0 /* ChemElementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2827276232D875E004E94E0 /* ChemElementDetailViewController.swift */; };
 		F2827279232D89F5004E94E0 /* ChemElementsDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */; };
 		F282727B232E2746004E94E0 /* ChemElementCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F282727A232E2746004E94E0 /* ChemElementCellTests.swift */; };
@@ -255,6 +256,7 @@
 		F279640D1143FAFD00B8EBDE /* favorites.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favorites.db; sourceTree = "<group>"; };
 		F27EEE671154D3A5008449FC /* InfoLite.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoLite.plist; sourceTree = "<group>"; };
 		F27EEF761154F1F3008449FC /* DataLite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataLite.plist; sourceTree = "<group>"; };
+		F28175F7263EA5FD00097228 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 		F2827276232D875E004E94E0 /* ChemElementDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementDetailViewController.swift; sourceTree = "<group>"; };
 		F2827278232D89F5004E94E0 /* ChemElementsDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceTests.swift; sourceTree = "<group>"; };
 		F282727A232E2746004E94E0 /* ChemElementCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementCellTests.swift; sourceTree = "<group>"; };
@@ -672,6 +674,7 @@
 			isa = PBXGroup;
 			children = (
 				F2716A1D22F8C753007D1528 /* FormulaCell.swift */,
+				F28175F7263EA5FD00097228 /* FileManagerExtension.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -849,7 +852,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = dasdom;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
@@ -978,6 +981,7 @@
 				F29AEB5322EB2DB900EB4E26 /* SolverTool.swift in Sources */,
 				F2DB7D4B23101A010098B42A /* TopicViewController.swift in Sources */,
 				F2DB7D5923101A730098B42A /* FormulaDetail.swift in Sources */,
+				F28175F8263EA5FD00097228 /* FileManagerExtension.swift in Sources */,
 				F2DB7D4D23101A2C0098B42A /* Topic.swift in Sources */,
 				F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */,
 				F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */,
@@ -1163,6 +1167,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1203,6 +1208,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1220,6 +1226,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2CB9CE06-C2B9-4F35-B1CE-DC9AA7474CB2";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -1239,6 +1246,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -28,7 +28,25 @@
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit01",
-                        "title" : "Geschwindigkeit"
+                        "title" : "Geschwindigkeit",
+                        "inputs": [
+                          {
+                            "id": "s",
+                            "imageName": "zurueckgelegter_weg_abk",
+                            "placeholder": "in m"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "in s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#s÷#t",
+                            "imageName": "geschwindigkeit01"
+                          }
+                        ]
                       }
                     ],
                     "title" : "(konstante) Geschwindigkeit"

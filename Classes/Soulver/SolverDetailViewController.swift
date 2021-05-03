@@ -26,7 +26,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = tool.title
+    title = tool.title?.localized
     
     tableView.register(SolverDetailImageCell.self, forCellReuseIdentifier: SolverDetailImageCell.identifier)
     tableView.register(SolverDetailInputCell.self, forCellReuseIdentifier: SolverDetailInputCell.identifier)
@@ -91,7 +91,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
       resultCell.update(with: tool.results[indexPath.row])
       
       if indexPath.row < results.count {
-        resultCell.resultLabel.text = results[indexPath.row]
+        resultCell.resultLabel.text = "= " + results[indexPath.row]
       }
       
       cell = resultCell
@@ -107,11 +107,11 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
     let title: String?
     switch section {
     case 0:
-      title = NSLocalizedString("Formel", comment: "")
+      title = "Formel".localized
     case 1:
-      title = NSLocalizedString("Eingabe", comment: "")
+      title = "Eingabe".localized
     case 3:
-      title = NSLocalizedString("Ergebnis", comment: "")
+      title = "Ergebnis".localized
     default:
       title = nil
     }
@@ -119,6 +119,13 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   }
   
   // MARK: - UITextFieldDelegate
+  func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+    
+    currentTextField = textField
+
+    return true
+  }
+  
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
     currentTextField = textField
@@ -188,5 +195,47 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
     }
     
     tableView.reloadSections([3], with: .left)
+  }
+}
+
+extension SolverDetailViewController: SolverInputAccessoryViewProtocol {
+  func addE() {
+    addStringIfPossible("e")
+  }
+  
+  func togglePlusMinus() {
+    if let textField = currentTextField, let text = textField.text {
+      if text.first == "-" {
+        textField.text = String(text.dropFirst())
+      } else {
+        textField.text = "-" + text
+      }
+    }
+  }
+  
+  func next() {
+    let numberOfRowsInInputSection = tableView.numberOfRows(inSection: 1)
+    var textFieldFound = false
+    for i in 0..<numberOfRowsInInputSection {
+      guard let cell = tableView.cellForRow(at: IndexPath(row: i, section: 1)) as? SolverDetailInputCell else { return }
+      
+      if true == textFieldFound {
+        cell.textField.becomeFirstResponder()
+        return
+      } else if cell.textField == currentTextField {
+        textFieldFound = true
+      }
+    }
+    
+    if true == textFieldFound {
+      currentTextField?.resignFirstResponder()
+      calculate()
+    }
+  }
+  
+  private func addStringIfPossible(_ string: String) {
+    if let textField = currentTextField, let text = textField.text {
+      textField.text = text + string
+    }
   }
 }

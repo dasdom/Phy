@@ -4,6 +4,12 @@
 
 import UIKit
 
+@objc protocol SolverInputAccessoryViewProtocol {
+  @objc func addE()
+  @objc func togglePlusMinus()
+  @objc func next()
+}
+
 class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
 
   let textField: UITextField
@@ -18,6 +24,7 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     textField = UITextField()
     textField.font = .preferredFont(forTextStyle: .body)
     textField.adjustsFontForContentSizeCategory = true
+    textField.keyboardType = .decimalPad
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
@@ -47,6 +54,16 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
       imageWidthConstraint,
       imageHeightConstraint,
       ])
+    
+    let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
+    toolbar.items = [
+      UIBarButtonItem(title: "e", style: .plain, target: nil, action: .addE),
+      UIBarButtonItem(image: UIImage(systemName: "plus.slash.minus"), style: .plain, target: nil, action: .togglePlusMinus),
+      UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
+      UIBarButtonItem(title: "next", style: .plain, target: nil, action: .next)
+    ]
+    
+    textField.inputAccessoryView = toolbar
   }
   
   required init?(coder aDecoder: NSCoder) {fatalError()}
@@ -74,4 +91,10 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     
     tintColor = UIColor.label
   }
+}
+
+private extension Selector {
+  static let addE = #selector(SolverInputAccessoryViewProtocol.addE)
+  static let togglePlusMinus = #selector(SolverInputAccessoryViewProtocol.togglePlusMinus)
+  static let next = #selector(SolverInputAccessoryViewProtocol.next)
 }

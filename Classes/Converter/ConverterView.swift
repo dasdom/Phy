@@ -28,12 +28,16 @@ struct ConverterView: View {
         VStack {
                     
           HStack(spacing: 0) {
-            Button("to calc", action: {
+            Button(action: {
               NotificationCenter.default.post(name: NSNotification.Name("ConverterResultNotification"), object: self, userInfo: ["result": self.converter.output])
+            }, label: {
+              Text("Zum Rechner")
+                .lineLimit(nil)
+                .multilineTextAlignment(.center)
             })
             .frame(maxWidth: .infinity,
                    maxHeight: .infinity)
-            Button("clear", action: { converter.input = "" })
+            Button("Löschen".localized, action: { converter.input = "" })
               .frame(maxWidth: .infinity,
                      maxHeight: .infinity)
           }

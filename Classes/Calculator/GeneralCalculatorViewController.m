@@ -8,6 +8,7 @@
 #import "GeneralCalculatorView.h"
 #import "ConstantsTableViewController.h"
 #import <StoreKit/StoreKit.h>
+#import "Phy-Swift.h"
 
 @interface GeneralCalculatorViewController ()
 @property BOOL deg;
@@ -24,7 +25,10 @@
   self = [super init];
   if (self) {
     self.calcString = [[NSMutableString alloc] initWithString: @""];
-    self.historyCalcStrings = [[NSMutableArray alloc] init];
+    
+    NSArray *historyArray = [self loadHistory];
+    self.historyCalcStrings = [historyArray mutableCopy];
+    
     self.lastSelectedRange = NSMakeRange(0, 0);
     self.deg = YES;
   }
@@ -572,14 +576,12 @@
 }
 
 - (void)calculatePressed:(UIButton *)sender {
-  [[sender layer] setBorderColor: [[UIColor lightGrayColor] CGColor]];
   if (YES == self.help) {
     self.calcStringView.text = NSLocalizedString(@"Durchführung der Berechnung", @"");
     return;
   }
   
   [self.calcStringView resignFirstResponder];
-  NSInteger indexForSubstring = 0;
   NSString *lastCharString;
   if (![self.calcString isEqualToString:@""]) {
     lastCharString = [self.calcString substringFromIndex: self.calcString.length-1];
@@ -589,6 +591,7 @@
     [self calcSignAtTheEnd];
     return;
   }
+  NSInteger indexForSubstring = 0;
   if ([self.calcString rangeOfString: @"("].location != NSNotFound) {
     Legacy_Calculator *calculator = [[Legacy_Calculator alloc] initWithDeg:YES];
     NSRange range = [calculator getRangeOfSubstringFromString: self.calcString bySearchingFor: @"("];
@@ -609,9 +612,10 @@
       [[self historyCalcStrings] removeLastObject];
     }
     
+    [self writeHistory:[self.historyCalcStrings copy]];
+    
     [self.calcString setString:@""];
   }
-  
 } 
 
 - (void)calculateString:(NSString *)cString {
@@ -720,6 +724,33 @@
     range = [regex rangeOfFirstMatchInString:inputString options:0 range:NSMakeRange(0, inputString.length)];
   }
   return range;
+}
+
+#pragma mark - Helper
+- (NSArray *)loadHistory {
+  NSURL *historyURL = [NSFileManager.defaultManager historyPath];
+  NSData *data = [NSData dataWithContentsOfURL:historyURL];
+  
+  if (nil != data) {
+    NSError *error = nil;
+    NSArray *historyArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if ([historyArray isKindOfClass:[NSArray class]]) {
+      return historyArray;
+    } else {
+      return [NSArray array];
+    }
+  } else {
+    return [NSArray array];
+  }
+}
+
+- (void)writeHistory:(NSArray *)historyArray {
+  NSURL *historyURL = [NSFileManager.defaultManager historyPath];
+  
+  NSError *error = nil;
+  NSData *data = [NSJSONSerialization dataWithJSONObject:historyArray options:kNilOptions error:&error];
+  
+  [data writeToURL:historyURL atomically:true];
 }
 
 #pragma mark - Help

@@ -15,7 +15,7 @@ class SolverDetailButtonCell: UITableViewCell {
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     button = UIButton(type: .system)
-    button.setTitle(NSLocalizedString("Berechnen", comment: ""), for: .normal)
+    button.setTitle("Berechnen".localized, for: .normal)
     button.titleLabel?.font = .preferredFont(forTextStyle: .body)
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)

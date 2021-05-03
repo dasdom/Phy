@@ -31,10 +31,10 @@
     
     NSString *headerText = @"";
     if ([self isCalcHistory]) {
-        [self setTitle: NSLocalizedString(@"letzte Berechnungen", nil)];
+        [self setTitle: NSLocalizedString(@"Letzte Berechnungen", nil)];
         headerText = NSLocalizedString(@"Wähle die Rechnung aus, die in den Rechner eingefügt werden soll.", nil);
     } else {
-        [self setTitle: NSLocalizedString(@"letzte Ergebnisse", nil)];
+        [self setTitle: NSLocalizedString(@"Letzte Ergebnisse", nil)];
         headerText = NSLocalizedString(@"Wähle das Ergebnis aus, das in den Rechner eingefügt werden soll.", nil);
     }
     
