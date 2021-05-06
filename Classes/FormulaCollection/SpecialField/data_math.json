@@ -47,7 +47,7 @@
               },
               {
                 "title": "Umfang",
-                "imageName": "geometry_triangle_perimeter",
+                "imageName": "geometry_triangle_circumference",
                 "details": [
                   {
                     "detailItems": [
@@ -60,7 +60,15 @@
                   {
                     "detailItems": [
                       {
-                        "imageName": "geometry_triangle_perimeter"
+                        "imageName": "geometry_triangle_circumference"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "UmfangAbk",
+                        "imageName": "capital_c_abbr"
                       }
                     ]
                   }
@@ -82,6 +90,142 @@
                     "detailItems": [
                       {
                         "imageName": "geometry_triangle_angle_sum"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Sinussatz",
+                "imageName": "geometry_triangle_sine_theorem",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_angles_and_sides_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_triangle_sine_theorem"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "FlaecheAbk",
+                        "imageName": "capital_a_abbr"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Kosinussatz",
+                "imageName": "geometry_triangle_cosine_theorem_c_squared",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_angles_and_sides_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_triangle_cosine_theorem_c_squared"
+                      },
+                      {
+                        "imageName": "geometry_triangle_cosine_theorem_a_squared"
+                      },
+                      {
+                        "imageName": "geometry_triangle_cosine_theorem_b_squared"
+                      },
+                      {
+                        "imageName": "geometry_triangle_cosine_theorem_a"
+                      },
+                      {
+                        "imageName": "geometry_triangle_cosine_theorem_b"
+                      },
+                      {
+                        "imageName": "geometry_triangle_cosine_theorem_c"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Kreis",
+            "formulas": [
+              {
+                "title": "Fläche",
+                "imageName": "geometry_circle_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_circle_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_circle_area"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "FlaecheAbk",
+                        "imageName": "capital_a_abbr"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_abbr"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Umfang",
+                "imageName": "geometry_circle_circumference",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_circle_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_circle_circumference"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "UmfangAbk",
+                        "imageName": "capital_c_abbr"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_abbr"
                       }
                     ]
                   }

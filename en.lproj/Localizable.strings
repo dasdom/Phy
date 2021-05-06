@@ -677,6 +677,8 @@
     "Fläche" = "Area";
     "Winkelsumme" = "Angular Sum";
     "Umfang" = "Perimeter";
+    "Sinussatz" = "Sine Theorem";
+    "Kosinussatz" = "Cosine Theorem";
 
     // MARK: Potency Laws
     "Potenzgesetze" = "Potency Laws";
