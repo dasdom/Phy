@@ -40,6 +40,7 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
         presenter.pushViewController(next, animated: true)
       case .feedback:
         let next = UIHostingController(rootView: FeedbackView(delegate: self))
+        next.title = AppStrings.feedback_title.localized
         presenter.pushViewController(next, animated: true)
     }
   }

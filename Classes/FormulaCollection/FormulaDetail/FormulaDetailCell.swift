@@ -20,6 +20,10 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
     
     detailImageView.translatesAutoresizingMaskIntoConstraints = false
     
+    setupConstraints()
+  }
+  
+  func setupConstraints() {
     imageHeightConstraint = detailImageView.heightAnchor.constraint(equalToConstant: 20)
     imageWidthConstraint = detailImageView.widthAnchor.constraint(equalToConstant: 20)
     
@@ -53,6 +57,7 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
     
     let size = image.size
     imageWidthConstraint = detailImageView.widthAnchor.constraint(equalTo: detailImageView.heightAnchor, multiplier: size.width/size.height)
+    imageWidthConstraint?.priority = UILayoutPriority(999)
     imageWidthConstraint?.isActive = true
     
     traitCollectionDidChange(nil)

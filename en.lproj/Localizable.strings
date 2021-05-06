@@ -669,8 +669,19 @@
         "Rydberg-Konstante" = "Rydberg constant";
         "Comptonwellenlänge" = "Compton wavelength";
 
-	// MARK: Mathe Formeln
-		// MARK: Kegelschnitte
+	// MARK: - Mathe Formeln
+    // MARK: Geometry
+    "Geometrie" = "Geometry";
+    "Dreieck" = "Triangle";
+    "GrundseiteAbk" = "Base";
+    "Fläche" = "Area";
+    "Winkelsumme" = "Angular Sum";
+    "Umfang" = "Perimeter";
+
+    // MARK: Potency Laws
+    "Potenzgesetze" = "Potency Laws";
+
+    // MARK: Kegelschnitte
 		"Kreis" = "Circle";
 		"Ellipse" = "Ellipse";
 		"Hyperbel" = "Hyperbola";
@@ -997,6 +1008,9 @@
 		"BohrscherRadiusAbk"        = "Bohr radius";
 		"BindungsenergieAbk"        = "Binding energy";
 
+    "GegenkatheteAbk" = "Opposite";
+    "HypotenuseAbk" = "Hypotenuse";
+
 // MARK: - Ebene 4
 	// MARK: Erklaerungen
 		"ErklaerNewton01" = "If there is no force in a inertial frame every object moves on a straight line or stays without movement.";
@@ -1231,6 +1245,7 @@
 "Werkzeuge" = "Tools";
 
 // MARK: - Feedback
+"feedback_title" = "Feedback";
 "asking_for_feedback" = "Do you have a feature requests? Are you missing a fomula?";
 "feedback_call_for_action" = "Send me an email and I'll have a look. Your email address will only be used to ask for clarification if needed.";
 "asing_for_feedback_button" = "Compose email";

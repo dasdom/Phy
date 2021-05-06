@@ -10,6 +10,7 @@ enum AppStrings: String {
   case asing_for_feedback_button
   case feedback_mail_subject
   case feedback_mail_body
+  case feedback_title
   
   var localized: String {
     return rawValue.localized

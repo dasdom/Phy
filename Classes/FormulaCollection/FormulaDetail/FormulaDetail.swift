@@ -5,6 +5,6 @@
 import Foundation
 
 struct FormulaDetail : Codable, Equatable {
-    let title: String
+    let title: String?
     let detailItems: [FormulaDetailItem]
 }

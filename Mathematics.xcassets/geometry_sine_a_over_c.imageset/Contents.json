@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "geometry_sine_a_over_c.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "template"
+  }
+}

@@ -123,6 +123,8 @@
 		F29AEB5D22EB54DC00EB4E26 /* SolverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5C22EB54DC00EB4E26 /* SolverDetailView.swift */; };
 		F29F212D22E1EB4400426712 /* Legacy_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* Legacy_CalculatorTests.m */; };
 		F2A529F3262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */; };
+		F2D04DD82642B6BD00938EFC /* Abbreviations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */; };
+		F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */; };
 		F2DB7D4B23101A010098B42A /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4A23101A010098B42A /* TopicViewController.swift */; };
 		F2DB7D4D23101A2C0098B42A /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4C23101A2C0098B42A /* Topic.swift */; };
 		F2DB7D5023101A5A0098B42A /* SpecialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4E23101A5A0098B42A /* SpecialField.swift */; };
@@ -315,6 +317,8 @@
 		F2A120C514A141CF00AD3215 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceProtocolMock.swift; sourceTree = "<group>"; };
 		F2AC138813659F61006465C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Abbreviations.xcassets; sourceTree = "<group>"; };
+		F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaDetailImageCell.swift; sourceTree = "<group>"; };
 		F2DB7D4A23101A010098B42A /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		F2DB7D4C23101A2C0098B42A /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		F2DB7D4E23101A5A0098B42A /* SpecialField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialField.swift; sourceTree = "<group>"; };
@@ -428,11 +432,11 @@
 				F2569B340F9E2B0100968581 /* Data.plist */,
 				F27EEF761154F1F3008449FC /* DataLite.plist */,
 				F207F4FA1145B67200256864 /* Referenz.plist */,
-				F23EBE7923100CFE00E8F4E4 /* data_math.json */,
 				F2DB7D7223118E590098B42A /* data_elements.json */,
 				F270E2041005DD7000843391 /* Localizable.strings */,
 				F29558B220586259001D776D /* Launch Screen.storyboard */,
 				F27EEE671154D3A5008449FC /* InfoLite.plist */,
+				F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */,
 				F20E53C022D9C6CA001794E9 /* Assets.xcassets */,
 				F20E53A822D9B94C001794E9 /* Mechanics.xcassets */,
 				F20E53A622D9B914001794E9 /* Relativity.xcassets */,
@@ -609,6 +613,7 @@
 				F236257622FEA8A80075FC2F /* FormulaDetailViewController.swift */,
 				F236257422FEA8840075FC2F /* FormulaDetailWithTextCell.swift */,
 				F236257822FEDA970075FC2F /* FormulaDetailCell.swift */,
+				F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */,
 				F2DB7D5723101A730098B42A /* FormulaDetail.swift */,
 				F2DB7D5623101A730098B42A /* FormulaDetailItem.swift */,
 			);
@@ -638,6 +643,7 @@
 				F2DB7D4F23101A5A0098B42A /* SpecialFieldSection.swift */,
 				F2DB7D4E23101A5A0098B42A /* SpecialField.swift */,
 				F23EBE7A23100CFE00E8F4E4 /* data_physics.json */,
+				F23EBE7923100CFE00E8F4E4 /* data_math.json */,
 			);
 			path = SpecialField;
 			sourceTree = "<group>";
@@ -933,6 +939,7 @@
 				F26C9ADD2631E16E00A1B161 /* converter.json in Resources */,
 				F20E53A922D9B94C001794E9 /* Mechanics.xcassets in Resources */,
 				F20E53C122D9C6CA001794E9 /* Assets.xcassets in Resources */,
+				F2D04DD82642B6BD00938EFC /* Abbreviations.xcassets in Resources */,
 				F20E53B522D9BF18001794E9 /* QuantumPhysics.xcassets in Resources */,
 				F20E53B322D9BEBC001794E9 /* WaveOptics.xcassets in Resources */,
 				F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */,
@@ -983,6 +990,7 @@
 				F2DB7D5823101A730098B42A /* FormulaDetailItem.swift in Sources */,
 				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
 				F22FEFFD23020026003F3A9B /* SolverDetailImageCell.swift in Sources */,
+				F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */,
 				F29AEB5D22EB54DC00EB4E26 /* SolverDetailView.swift in Sources */,
 				F2E61771263BEC5E008EB858 /* SearchFormulasDataSource.swift in Sources */,
 				F2827277232D875E004E94E0 /* ChemElementDetailViewController.swift in Sources */,

@@ -3,6 +3,129 @@
     "title": "None",
     "specialFields": [
       {
+        "title": "Geometrie",
+        "formulaSections": [
+          {
+            "title": "Dreieck",
+            "formulas": [
+              {
+                "title": "Fläche",
+                "imageName": "geometry_triangle_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_triangle_area_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_triangle_area"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "FlaecheAbk",
+                        "imageName": "capital_a_abbr"
+                      },
+                      {
+                        "title": "GrundseiteAbk",
+                        "imageName": "a_abbr"
+                      },
+                      {
+                        "title": "HoeheAbk",
+                        "imageName": "h_abbr"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Umfang",
+                "imageName": "geometry_triangle_perimeter",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_angles_and_sides_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_triangle_perimeter"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Winkelsumme",
+                "imageName": "geometry_triangle_angle_sum",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_angles_and_sides_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_triangle_angle_sum"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Potenzgesetze",
+        "formulaSections": [
+          {
+            "title": "",
+            "formulas": [
+              {
+                "imageName": "a_pow_n"
+              },
+              {
+                "imageName": "a_pow_0"
+              },
+              {
+                "imageName": "a_pow_1"
+              },
+              {
+                "imageName": "a_pow_m_times_a_pow_n"
+              },
+              {
+                "imageName": "a_pow_m_times_b_pow_m"
+              },
+              {
+                "imageName": "a_pow_m_pow_n"
+              },
+              {
+                "imageName": "a_pow_minus_n"
+              },
+              {
+                "imageName": "a_pow_m_minus_n"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "title": "Kegelschnitte",
         "formulaSections": [
           {
@@ -608,6 +731,38 @@
           {
             "title": "Sinus",
             "formulas": [
+              {
+                "imageName": "geometry_sine_a_over_c",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_rectangular_triangle"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "geometry_sine_a_over_c"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "GegenkatheteAbk",
+                        "imageName": "a_abbr"
+                      },
+                      {
+                        "title": "HypotenuseAbk",
+                        "imageName": "c_abbr"
+                      }
+                    ]
+                  }
+                ]
+              },
               {
                 "imageName": "sin_taylor"
               },

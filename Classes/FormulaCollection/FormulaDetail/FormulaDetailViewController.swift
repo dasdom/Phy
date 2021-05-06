@@ -22,6 +22,7 @@ class FormulaDetailViewController: UITableViewController {
     
     tableView.register(FormulaDetailCell.self, forCellReuseIdentifier: FormulaDetailCell.identifier)
     tableView.register(FormulaDetailWithTextCell.self, forCellReuseIdentifier: FormulaDetailWithTextCell.identifier)
+    tableView.register(FormulaDetailImageCell.self, forCellReuseIdentifier: FormulaDetailImageCell.identifier)
   }
   
   // MARK: - Table view data source
@@ -48,20 +49,26 @@ class FormulaDetailViewController: UITableViewController {
       return UITableViewCell()
     }
     
-    let cell: DDHBaseTableViewCell<FormulaDetailItem>?
-    if detailItem.title?.contains("Abk") ?? false {
-      cell = tableView.dequeueReusableCell(withIdentifier: FormulaDetailWithTextCell.identifier, for: indexPath) as? DDHBaseTableViewCell<FormulaDetailItem>
-    } else {
-      cell = tableView.dequeueReusableCell(withIdentifier: FormulaDetailCell.identifier, for: indexPath) as? DDHBaseTableViewCell<FormulaDetailItem>
+    let cell: DDHBaseTableViewCell<FormulaDetailItem>
+    let detailItemType = detailItem.type ?? .none
+    switch detailItemType {
+      case .image:
+        cell = tableView.dequeueReusableCell(withIdentifier: FormulaDetailImageCell.identifier, for: indexPath) as! DDHBaseTableViewCell<FormulaDetailItem>
+      case .none:
+        if detailItem.title?.contains("Abk") ?? false {
+          cell = tableView.dequeueReusableCell(withIdentifier: FormulaDetailWithTextCell.identifier, for: indexPath) as! DDHBaseTableViewCell<FormulaDetailItem>
+        } else {
+          cell = tableView.dequeueReusableCell(withIdentifier: FormulaDetailCell.identifier, for: indexPath) as! DDHBaseTableViewCell<FormulaDetailItem>
+        } 
     }
     
-    cell?.update(with: detailItem)
+    cell.update(with: detailItem)
     
     if let inputs = detailItem.inputs, let results = detailItem.results, inputs.count > 0, results.count > 0 {
-      cell?.accessoryType = .disclosureIndicator
+      cell.accessoryType = .disclosureIndicator
     }
     
-    return cell ?? UITableViewCell()
+    return cell
   }
   
   // MARK: - UITableViewDelegate
