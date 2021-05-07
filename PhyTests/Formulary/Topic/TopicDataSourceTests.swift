@@ -19,12 +19,12 @@ class TopicDataSourceTests: XCTestCase {
   
   func test_init_resultsInCorrectNumberOfSections() {
     // then
-    XCTAssertEqual(1, sut.numberOfSections())
+    XCTAssertEqual(2, sut.numberOfSections())
   }
   
   func test_init_resultsInCorrectNumberOfRows() {
     // then
-    XCTAssertEqual(4, sut.numberOfRows(in: 0))
+    XCTAssertEqual(3, sut.numberOfRows(in: 0))
   }
   
   func test_init_resultsInCorrectFirstItem() {
