@@ -24,6 +24,10 @@ class SearchFormulasDataSource: FormulasDataSource, SearchFormulasDataSourceProt
     var sections: [FormulaSection] = []
     
     for formulaSection in allFormulaSections {
+      if formulaSection.title.contains(string) {
+        sections.append(formulaSection)
+        continue
+      }
       let formulas = formulaSection.formulas.filter { formula -> Bool in
         return (formula.title?.contains(string) ?? false)
       }

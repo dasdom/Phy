@@ -7,7 +7,56 @@
             "formulas" : [
               {
                 "imageName" : "ersterNewton",
-                "title" : "1. Newtonsches Gesetz"
+                "title" : "1. Newtonsches Gesetz",
+                "details" : [
+                  {
+                    "detailItems" : [
+                      {
+                        "type": "image",
+                        "imageName": "mechanics_newton_one_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "ersterNewton"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "kraft_abk",
+                        "title" : "KraftAbk"
+                      },
+                      {
+                        "imageName" : "geschwindigkeit_abk",
+                        "title" : "GeschwindigkeitAbk"
+                      },
+                      {
+                        "imageName" : "zeit_abk",
+                        "title" : "ZeitAbk"
+                      }
+                    ],
+                    "title" : "Abkürzung"
+                  },
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "kraft_einh"
+                      },
+                      {
+                        "imageName" : "geschwindigkeit_einh"
+                      },
+                      {
+                        "imageName" : "zeit_einh"
+                      }
+                    ],
+                    "title" : "Einheiten"
+                  }
+                ],
+
               },
               {
                 "imageName" : "zweiterNewton",

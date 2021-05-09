@@ -65,6 +65,7 @@
 		F23EBE74230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EBE73230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift */; };
 		F23EBE7B23100CFE00E8F4E4 /* data_math.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7923100CFE00E8F4E4 /* data_math.json */; };
 		F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
+		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
 		F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */; };
 		F2569B350F9E2B0100968581 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2569B340F9E2B0100968581 /* Data.plist */; };
 		F26C9AD92630B2C700A1B161 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C9AD82630B2C700A1B161 /* ConverterView.swift */; };
@@ -163,6 +164,13 @@
 			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
 			remoteInfo = PhysForm;
 		};
+		F24201F62645DEA700E0CA97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = PhysForm;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -237,6 +245,9 @@
 		F23EBE73230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialFieldSectionTests.swift; sourceTree = "<group>"; };
 		F23EBE7923100CFE00E8F4E4 /* data_math.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data_math.json; sourceTree = "<group>"; };
 		F23EBE7A23100CFE00E8F4E4 /* data_physics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data_physics.json; sourceTree = "<group>"; };
+		F24201F12645DEA700E0CA97 /* PhyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24201F32645DEA700E0CA97 /* PhyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyUITests.swift; sourceTree = "<group>"; };
+		F24201F52645DEA700E0CA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestignatedCalculaterViewController.h; sourceTree = "<group>"; };
 		F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DestignatedCalculaterViewController.m; sourceTree = "<group>"; };
 		F2569B340F9E2B0100968581 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
@@ -364,6 +375,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F24201EE2645DEA700E0CA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -396,6 +414,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* Phy.app */,
 				F239BAC820F8C0CD00612965 /* PhyTests.xctest */,
+				F24201F12645DEA700E0CA97 /* PhyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,6 +427,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				F2D8687B11C6CE27000DC559 /* Resources-iPad */,
 				F239BAC920F8C0CE00612965 /* PhyTests */,
+				F24201F22645DEA700E0CA97 /* PhyUITests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -605,6 +625,15 @@
 				F2372E1422F0E3B4003C0605 /* Data.json */,
 			);
 			path = Topic;
+			sourceTree = "<group>";
+		};
+		F24201F22645DEA700E0CA97 /* PhyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F24201F32645DEA700E0CA97 /* PhyUITests.swift */,
+				F24201F52645DEA700E0CA97 /* Info.plist */,
+			);
+			path = PhyUITests;
 			sourceTree = "<group>";
 		};
 		F24B0E6F22FC4CA70016ACCF /* FormulaDetail */ = {
@@ -866,12 +895,31 @@
 			productReference = F239BAC820F8C0CD00612965 /* PhyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F24201F02645DEA700E0CA97 /* PhyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24201FB2645DEA700E0CA97 /* Build configuration list for PBXNativeTarget "PhyUITests" */;
+			buildPhases = (
+				F24201ED2645DEA700E0CA97 /* Sources */,
+				F24201EE2645DEA700E0CA97 /* Frameworks */,
+				F24201EF2645DEA700E0CA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F24201F72645DEA700E0CA97 /* PBXTargetDependency */,
+			);
+			name = PhyUITests;
+			productName = PhyUITests;
+			productReference = F24201F12645DEA700E0CA97 /* PhyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = dasdom;
 				TargetAttributes = {
@@ -884,6 +932,12 @@
 						CreatedOnToolsVersion = 9.1;
 						DevelopmentTeam = Q6PD97MRX4;
 						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D6058900D05DD3D006BFB54;
+					};
+					F24201F02645DEA700E0CA97 = {
+						CreatedOnToolsVersion = 12.5;
+						DevelopmentTeam = Q6PD97MRX4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D6058900D05DD3D006BFB54;
 					};
@@ -909,6 +963,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* PhysForm */,
 				F239BAC720F8C0CD00612965 /* PhyTests */,
+				F24201F02645DEA700E0CA97 /* PhyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -956,6 +1011,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F239BAC620F8C0CD00612965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24201EF2645DEA700E0CA97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1091,6 +1153,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F24201ED2645DEA700E0CA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1098,6 +1168,11 @@
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* PhysForm */;
 			targetProxy = F239BACD20F8C0CE00612965 /* PBXContainerItemProxy */;
+		};
+		F24201F72645DEA700E0CA97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* PhysForm */;
+			targetProxy = F24201F62645DEA700E0CA97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1446,6 +1521,125 @@
 			};
 			name = Distribution;
 		};
+		F24201F82645DEA700E0CA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhysForm;
+			};
+			name = Debug;
+		};
+		F24201F92645DEA700E0CA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhysForm;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F24201FA2645DEA700E0CA97 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhysForm;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1475,6 +1669,16 @@
 				F239BAD020F8C0CE00612965 /* Debug */,
 				F239BAD120F8C0CE00612965 /* Release */,
 				F239BAD220F8C0CE00612965 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24201FB2645DEA700E0CA97 /* Build configuration list for PBXNativeTarget "PhyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24201F82645DEA700E0CA97 /* Debug */,
+				F24201F92645DEA700E0CA97 /* Release */,
+				F24201FA2645DEA700E0CA97 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
