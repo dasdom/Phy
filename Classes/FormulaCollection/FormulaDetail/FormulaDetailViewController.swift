@@ -66,6 +66,9 @@ class FormulaDetailViewController: UITableViewController {
     
     if let inputs = detailItem.inputs, let results = detailItem.results, inputs.count > 0, results.count > 0 {
       cell.accessoryType = .disclosureIndicator
+      cell.selectionStyle = .default
+    } else {
+      cell.selectionStyle = .none
     }
     
     return cell
@@ -73,6 +76,8 @@ class FormulaDetailViewController: UITableViewController {
   
   // MARK: - UITableViewDelegate
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    tableView.deselectRow(at: indexPath, animated: true)
     
     guard let detailItem = formula.details?[indexPath.section].detailItems[indexPath.row] else {
       return
