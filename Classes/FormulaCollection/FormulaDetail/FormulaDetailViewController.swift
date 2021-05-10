@@ -66,6 +66,9 @@ class FormulaDetailViewController: UITableViewController {
     
     if let inputs = detailItem.inputs, let results = detailItem.results, inputs.count > 0, results.count > 0 {
       cell.accessoryType = .disclosureIndicator
+      cell.selectionStyle = .default
+    } else {
+      cell.selectionStyle = .none
     }
     
     return cell

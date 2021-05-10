@@ -45,6 +45,9 @@ class FormulasViewController: UITableViewController {
     
     if let details = formula.details, details.count > 0 {
       cell.accessoryType = .disclosureIndicator
+      cell.selectionStyle = .default
+    } else {
+      cell.selectionStyle = .none
     }
     
     return cell
