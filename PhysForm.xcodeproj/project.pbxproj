@@ -1231,7 +1231,7 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1263,7 +1263,7 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1412,7 +1412,7 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";
