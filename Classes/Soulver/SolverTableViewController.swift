@@ -10,7 +10,7 @@ class SolverTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+        
     tableView.register(FormulaCell.self, forCellReuseIdentifier: FormulaCell.identifier)
     
     guard let path = Bundle.main.path(forResource: "solver", ofType: "json") else { fatalError() }

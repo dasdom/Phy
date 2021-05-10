@@ -30,31 +30,34 @@ class AppCoordinator: Coordinator {
     phyTopicCoordinator.start()
     childCoordinators.append(phyTopicCoordinator)
     
-    formulasNavigationController.tabBarItem = UITabBarItem(title: NSLocalizedString("Formeln", comment: ""), image: UIImage(systemName: "function"), tag: 0)
+    formulasNavigationController.tabBarItem = UITabBarItem(title: "Formeln".localized, image: UIImage(systemName: "function"), tag: 0)
     return formulasNavigationController
   }
   
   private var calculator: UIViewController {
     let viewController = GeneralCalculatorViewController()
-    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Rechner", comment: ""), image: UIImage(systemName: "plusminus"), tag: 1)
+    viewController.tabBarItem = UITabBarItem(title: "Rechner".localized, image: UIImage(systemName: "plusminus"), tag: 1)
     return viewController
   }
   
   private var converter: UIViewController {
     let viewController = UIHostingController(rootView: ConverterList())
-    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Konverter", comment: ""), image: UIImage(systemName: "arrow.left.arrow.right"), tag: 2)
+    viewController.tabBarItem = UITabBarItem(title: "Konverter".localized, image: UIImage(systemName: "arrow.left.arrow.right"), tag: 2)
     return viewController
   }
   
   private var reference: UIViewController {
     let viewController = ReferenzViewController()
-    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Referenz", comment: ""), image: UIImage(systemName: "doc.text.magnifyingglass"), tag: 3)
+    viewController.tabBarItem = UITabBarItem(title: "Referenz".localized, image: UIImage(systemName: "doc.text.magnifyingglass"), tag: 3)
     return viewController
   }
   
   private var solver: UIViewController {
     let viewController = SolverTableViewController()
-    viewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Werkzeuge", comment: ""), image: UIImage(systemName: "wrench.and.screwdriver"), tag: 4)
-    return UINavigationController(rootViewController: viewController)
+    viewController.tabBarItem = UITabBarItem(title: "Werkzeuge".localized, image: UIImage(systemName: "wrench.and.screwdriver"), tag: 4)
+    viewController.title = "Werkzeuge".localized
+    let navigationController = UINavigationController(rootViewController: viewController)
+    navigationController.navigationBar.prefersLargeTitles = true
+    return navigationController
   }
 }

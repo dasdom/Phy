@@ -60,7 +60,7 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
       UIBarButtonItem(title: "e", style: .plain, target: nil, action: .addE),
       UIBarButtonItem(image: UIImage(systemName: "plus.slash.minus"), style: .plain, target: nil, action: .togglePlusMinus),
       UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
-      UIBarButtonItem(title: "next", style: .plain, target: nil, action: .next)
+      UIBarButtonItem(title: "weiter".localized, style: .plain, target: nil, action: .next)
     ]
     
     textField.inputAccessoryView = toolbar

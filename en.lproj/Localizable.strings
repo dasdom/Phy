@@ -1226,6 +1226,7 @@
 "Formel"    = "Formla";
 "Ergebnis"  = "Result";
 "Berechnen" = "Calculate";
+"weiter" = "next";
 
 // MARK: - Allgemein
 	"(erlaubte Zeichen: -123456789.e)" = "(allowed digits: -123456789.e)"; 

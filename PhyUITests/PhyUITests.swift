@@ -20,6 +20,14 @@ class PhyUITests: XCTestCase {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
   }
   
+  func test_demo() {
+    let app = XCUIApplication()
+    
+    app.launch()
+    
+    print("debug: \(app.debugDescription)")
+  }
+  
   func test_screenshots() {
     let app = XCUIApplication()
     
