@@ -66,6 +66,7 @@
 		F23EBE7B23100CFE00E8F4E4 /* data_math.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7923100CFE00E8F4E4 /* data_math.json */; };
 		F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
+		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
 		F2569B350F9E2B0100968581 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2569B340F9E2B0100968581 /* Data.plist */; };
 		F26C9AD92630B2C700A1B161 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C9AD82630B2C700A1B161 /* ConverterView.swift */; };
 		F26C9ADD2631E16E00A1B161 /* converter.json in Resources */ = {isa = PBXBuildFile; fileRef = F26C9ADC2631E16E00A1B161 /* converter.json */; };
@@ -247,6 +248,7 @@
 		F24201F12645DEA700E0CA97 /* PhyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24201F32645DEA700E0CA97 /* PhyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyUITests.swift; sourceTree = "<group>"; };
 		F24201F52645DEA700E0CA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F2569B340F9E2B0100968581 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F26C9AD82630B2C700A1B161 /* ConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		F26C9ADC2631E16E00A1B161 /* converter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = converter.json; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 				1D3623240D0F684500981E51 /* PhysFormAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PhysFormAppDelegate.m */,
 				F236F4A42620493D00796E3D /* AppDelegate.swift */,
+				F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */,
 				F236F4AC262049F000796E3D /* AppCoordinator.swift */,
 				F236F497262043C200796E3D /* Coordinator.swift */,
 				F28B6FC62639206B008C8F71 /* General */,
@@ -1108,6 +1111,7 @@
 				F22FF001230206E1003F3A9B /* SolverDetailButtonCell.swift in Sources */,
 				F294101322E7AD1B00379868 /* ImprintView.swift in Sources */,
 				F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */,
+				F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */,
 				F2DB7D6D231078800098B42A /* TopicCell.swift in Sources */,
 				F29AEB4922EB034E00EB4E26 /* HistoryTableViewCell.m in Sources */,
 				F29AEB4722EB034E00EB4E26 /* CalculatorConstant.m in Sources */,
