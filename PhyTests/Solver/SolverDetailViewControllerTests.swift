@@ -200,10 +200,10 @@ class SolverDetailViewControllerTests: XCTestCase {
     
     // then
     let resultCell0 = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 3)) as! SolverDetailResultCell
-    XCTAssertEqual("= 65", resultCell0.resultLabel.text)
+    XCTAssertEqual("= 42+23\n= 65", resultCell0.resultLabel.text)
     
     let resultCell1 = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 1, section: 3)) as! SolverDetailResultCell
-    XCTAssertEqual("= 19", resultCell1.resultLabel.text)
+    XCTAssertEqual("= 42-23\n= 19", resultCell1.resultLabel.text)
   }
   
   func test_settingOnlyFirstInput_doesNotEnabledButton() {

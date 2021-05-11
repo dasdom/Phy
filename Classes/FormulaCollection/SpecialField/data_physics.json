@@ -1715,7 +1715,30 @@
                     "detailItems" : [
                       {
                         "imageName" : "zurueckgelegter_weg",
-                        "title" : "zurueckgelegterWeg"
+                        "title" : "zurueckgelegterWeg",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0×#t+0.5×#a×#t^2",
+                            "imageName": "zurueckgelegter_weg"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beschleunigung_const",
@@ -1776,7 +1799,25 @@
                     "detailItems" : [
                       {
                         "imageName" : "bremsweg",
-                        "title" : "Bremsweg"
+                        "title" : "Bremsweg",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0^2÷(2×#a)",
+                            "imageName": "bremsweg"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beschleunigung_const",
