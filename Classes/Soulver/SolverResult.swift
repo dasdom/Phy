@@ -5,7 +5,7 @@
 import Foundation
 
 struct SolverResult : Codable, Equatable {
-    let formula: String
-    let imageName: String
-    var imageNameShort: String?
+  let formula: String
+  let imageName: String
+  var imageNameShort: String?
 }

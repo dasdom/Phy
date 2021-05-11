@@ -507,8 +507,33 @@
                   {
                     "detailItems" : [
                       {
+                        "imageName" : "mechanics_friction_force"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
                         "imageName" : "reibungskraft",
-                        "title" : "Reibungskraft"
+                        "title" : "Reibungskraft",
+                        "inputs": [
+                          {
+                            "id": "fr",
+                            "imageName": "reibungskoeff_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "Fn",
+                            "imageName": "normalkraft_abk",
+                            "placeholder": "in N"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#fr×#Fn",
+                            "imageName": "reibungskraft"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Reibungskraft"
@@ -556,8 +581,33 @@
                   {
                     "detailItems" : [
                       {
+                        "imageName" : "mechanics_downhill_slope_force"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
                         "imageName" : "hangabtriebskraft",
-                        "title" : "Hangabtriebskraft"
+                        "title" : "Hangabtriebskraft",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": "rad"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m×9.80665×sin(#alpha)",
+                            "imageName": "hangabtriebskraft"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Hangabtriebskraft"
@@ -615,6 +665,13 @@
               },
               {
                 "details" : [
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "mechanics_normal_force"
+                      }
+                    ]
+                  },
                   {
                     "detailItems" : [
                       {
@@ -783,7 +840,25 @@
                     "detailItems" : [
                       {
                         "imageName" : "leistung01",
-                        "title" : "Leistung01"
+                        "title" : "Leistung01",
+                        "inputs": [
+                          {
+                            "id": "W",
+                            "imageName": "arbeit_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#W÷#t",
+                            "imageName": "leistung01"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "leistung02",
@@ -856,7 +931,25 @@
                       },
                       {
                         "imageName" : "leistung01",
-                        "title" : "Leistung01"
+                        "title" : "Leistung01",
+                        "inputs": [
+                          {
+                            "id": "W",
+                            "imageName": "arbeit_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#W÷#t",
+                            "imageName": "leistung01"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Leistung"
@@ -921,11 +1014,47 @@
                     "detailItems" : [
                       {
                         "imageName" : "e_kin01",
-                        "title" : "EKin"
+                        "title" : "EKin",
+                        "inputs": [
+                          {
+                            "id": "p",
+                            "imageName": "impuls_abk",
+                            "placeholder": "kg m / s"
+                          },
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#p^2÷(2×#m)",
+                            "imageName": "e_kin01"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "e_kin02",
-                        "title" : "EKin"
+                        "title" : "EKin",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "0.5×#m×#v^2",
+                            "imageName": "e_kin02"
+                          }
+                        ]
                       }
                     ],
                     "title" : "kinetische Energie"
@@ -982,11 +1111,47 @@
                     "detailItems" : [
                       {
                         "imageName" : "e_kin02",
-                        "title" : "EKin"
+                        "title" : "EKin",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "0.5×#m×#v^2",
+                            "imageName": "e_kin02"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "e_kin01",
-                        "title" : "EKin"
+                        "title" : "EKin",
+                        "inputs": [
+                          {
+                            "id": "p",
+                            "imageName": "impuls_abk",
+                            "placeholder": "kg m / s"
+                          },
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#p^2÷(2×#m)",
+                            "imageName": "e_kin01"
+                          }
+                        ]
                       }
                     ],
                     "title" : "kinetische Energie"
@@ -1043,7 +1208,25 @@
                     "detailItems" : [
                       {
                         "imageName" : "potentielle_energie01",
-                        "title" : "EPot"
+                        "title" : "EPot",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "hoehe_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m×9.80665×#h",
+                            "imageName": "potentielle_energie01"
+                          }
+                        ]
                       }
                     ],
                     "title" : "potentielle Energie in Bodennähe"
@@ -1167,11 +1350,57 @@
                       },
                       {
                         "imageName" : "geschwindigkeit03",
-                        "title" : "geschwindigkeit03"
+                        "title" : "geschwindigkeit03",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0+#a×#t",
+                            "imageName": "geschwindigkeit03"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "geschwindigkeit04",
-                        "title" : "Geschwindigkeit04"
+                        "title" : "Geschwindigkeit04",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          },
+                          {
+                            "id": "s",
+                            "imageName": "zurueckgelegter_weg_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(#v0^2+2×#a×#s)",
+                            "imageName": "geschwindigkeit04"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beschleunigung_const",
@@ -1240,7 +1469,30 @@
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit03",
-                        "title" : "geschwindigkeit03"
+                        "title" : "geschwindigkeit03",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0+#a×#t",
+                            "imageName": "geschwindigkeit03"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "geschwindigkeit02",
@@ -1248,7 +1500,30 @@
                       },
                       {
                         "imageName" : "geschwindigkeit04",
-                        "title" : "Geschwindigkeit04"
+                        "title" : "Geschwindigkeit04",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          },
+                          {
+                            "id": "s",
+                            "imageName": "zurueckgelegter_weg_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(#v0^2+2×#a×#s)",
+                            "imageName": "geschwindigkeit04"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beschleunigung_const",
@@ -1317,7 +1592,30 @@
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit04",
-                        "title" : "Geschwindigkeit04"
+                        "title" : "Geschwindigkeit04",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          },
+                          {
+                            "id": "s",
+                            "imageName": "zurueckgelegter_weg_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(#v0^2+2×#a×#s)",
+                            "imageName": "geschwindigkeit04"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "geschwindigkeit02",
@@ -1325,7 +1623,30 @@
                       },
                       {
                         "imageName" : "geschwindigkeit03",
-                        "title" : "geschwindigkeit03"
+                        "title" : "geschwindigkeit03",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0+#a×#t",
+                            "imageName": "geschwindigkeit03"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beschleunigung_const",

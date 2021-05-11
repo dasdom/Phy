@@ -9,8 +9,8 @@ import Foundation
 //}
 
 struct SolverTool: FormulaCellProtocol, Codable, Equatable {
-    var title: String?
-    let imageName: String
-    var inputs: [SolverInput]
-    var results: [SolverResult]
+  var title: String?
+  let imageName: String
+  var inputs: [SolverInput]
+  var results: [SolverResult]
 }

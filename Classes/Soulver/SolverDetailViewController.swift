@@ -91,7 +91,14 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
       resultCell.update(with: tool.results[indexPath.row])
       
       if indexPath.row < results.count {
-        resultCell.resultLabel.text = "= " + results[indexPath.row]
+        let toolResult = tool.results[indexPath.row]
+        var formulaString = toolResult.formula
+        
+        for (idx, input) in tool.inputs.enumerated() {
+          let userInput = inputs[idx]
+          formulaString = formulaString.replacingOccurrences(of: "#\(input.id)", with: userInput)
+        }
+        resultCell.resultLabel.text = "= \(formulaString)\n= " + results[indexPath.row]
       }
       
       cell = resultCell
@@ -194,7 +201,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
       results.append(Legacy_Calculator.string(fromResult: result))
     }
     
-    tableView.reloadSections([3], with: .left)
+    tableView.reloadSections([3], with: .fade)
   }
 }
 

@@ -18,6 +18,7 @@ class SolverDetailResultCell: DDHBaseTableViewCell<SolverResult> {
     resultLabel = UILabel()
     resultLabel.font = .preferredFont(forTextStyle: .body)
     resultLabel.adjustsFontForContentSizeCategory = true
+    resultLabel.numberOfLines = 0
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
