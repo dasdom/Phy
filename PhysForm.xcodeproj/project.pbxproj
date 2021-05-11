@@ -395,7 +395,7 @@
 				F236F497262043C200796E3D /* Coordinator.swift */,
 				F28B6FC62639206B008C8F71 /* General */,
 				F28B6FC326392008008C8F71 /* Model */,
-				F24E129722DF4D8000F4038F /* FormulaCollection */,
+				F24E129722DF4D8000F4038F /* Formulas */,
 				F29AEB3322EB034E00EB4E26 /* Calculator */,
 				F29AEB1C22EB02B600EB4E26 /* Converter */,
 				F29AEB1522EB028300EB4E26 /* Reference */,
@@ -647,7 +647,7 @@
 			path = FormulaDetail;
 			sourceTree = "<group>";
 		};
-		F24E129722DF4D8000F4038F /* FormulaCollection */ = {
+		F24E129722DF4D8000F4038F /* Formulas */ = {
 			isa = PBXGroup;
 			children = (
 				F236F4982620441400796E3D /* FormulasCoordinator.swift */,
@@ -658,7 +658,7 @@
 				F281760C263FE61900097228 /* Feedback */,
 				F29AEB2622EB02FE00EB4E26 /* Elements */,
 			);
-			path = FormulaCollection;
+			path = Formulas;
 			sourceTree = "<group>";
 		};
 		F2716A1B22F87AC7007D1528 /* SpecialField */ = {
