@@ -151,8 +151,12 @@
   CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleMeta];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-
+  
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
   [button addTarget:nil action:@selector(metaButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+#pragma clang diagnostic pop
+  
   return button;
 }
 
@@ -161,7 +165,10 @@
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
   [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
+#pragma clang diagnostic pop
   return button;
 }
 
@@ -169,8 +176,11 @@
   CalculatorButton *button = [CalculatorButton buttonWithStyle:CalcButtonStyleBasic];
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
-
+  
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
   [button addTarget:nil action:@selector(insertBasicCalculation:) forControlEvents:UIControlEventTouchUpInside];
+#pragma clang diagnostic pop
   return button;
 }
 
@@ -179,7 +189,10 @@
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
   [button addTarget:nil action:@selector(calculatePressed:) forControlEvents:UIControlEventTouchUpInside];
+#pragma clang diagnostic pop
   return button;
 }
 
@@ -188,7 +201,10 @@
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
   [button addTarget:nil action:@selector(insertFunction:) forControlEvents:UIControlEventTouchUpInside];
+#pragma clang diagnostic pop
   return button;
 }
 
@@ -197,7 +213,10 @@
   button.tag = tag;
   [button setTitle:title forState:UIControlStateNormal];
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
   [button addTarget:nil action:@selector(insertDigit:) forControlEvents: UIControlEventTouchUpInside];
+#pragma clang diagnostic pop
   return button;
 }
 

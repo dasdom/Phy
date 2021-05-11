@@ -66,7 +66,6 @@
 		F23EBE7B23100CFE00E8F4E4 /* data_math.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7923100CFE00E8F4E4 /* data_math.json */; };
 		F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
-		F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */; };
 		F2569B350F9E2B0100968581 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2569B340F9E2B0100968581 /* Data.plist */; };
 		F26C9AD92630B2C700A1B161 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C9AD82630B2C700A1B161 /* ConverterView.swift */; };
 		F26C9ADD2631E16E00A1B161 /* converter.json in Resources */ = {isa = PBXBuildFile; fileRef = F26C9ADC2631E16E00A1B161 /* converter.json */; };
@@ -248,8 +247,6 @@
 		F24201F12645DEA700E0CA97 /* PhyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24201F32645DEA700E0CA97 /* PhyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyUITests.swift; sourceTree = "<group>"; };
 		F24201F52645DEA700E0CA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestignatedCalculaterViewController.h; sourceTree = "<group>"; };
-		F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DestignatedCalculaterViewController.m; sourceTree = "<group>"; };
 		F2569B340F9E2B0100968581 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F26C9AD82630B2C700A1B161 /* ConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		F26C9ADC2631E16E00A1B161 /* converter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = converter.json; sourceTree = "<group>"; };
@@ -402,8 +399,6 @@
 				F294100C22E7AD1B00379868 /* Imprint */,
 				F29AEB0B22EB024800EB4E26 /* Helper */,
 				F29AEB0822EB01ED00EB4E26 /* Soulver */,
-				F2554B700FAA02BD00004561 /* DestignatedCalculaterViewController.h */,
-				F2554B710FAA02BD00004561 /* DestignatedCalculaterViewController.m */,
 				F294100922E7ACF600379868 /* PhysForm-Bridging-Header.h */,
 			);
 			path = Classes;
@@ -1066,7 +1061,6 @@
 				F29AEB4B22EB034E00EB4E26 /* ConstantCell.m in Sources */,
 				F2817609263FE5BF00097228 /* AppStrings.swift in Sources */,
 				F2DB7D5423101A650098B42A /* Formula.swift in Sources */,
-				F2554B720FAA02BD00004561 /* DestignatedCalculaterViewController.m in Sources */,
 				F29AEB4422EB034E00EB4E26 /* Legacy_Calculator.m in Sources */,
 				F2DB7D6B231076250098B42A /* TopicDataSource.swift in Sources */,
 				F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */,

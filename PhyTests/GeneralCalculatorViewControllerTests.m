@@ -373,25 +373,34 @@
 - (void)test_sharing_whenHistoryArrayIsEmpty_presentsAlert {
     self.sut.historyCalcStrings = [[NSMutableArray alloc] init];
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(shareButtonPressed:) withObject:nil];
-    
+#pragma clang diagnostic pop
+  
     XCTAssertEqual([self.sut.presentedViewController class], [UIAlertController class]);
 }
 
 - (void)doesnt_work_test_sharing_presentsActivityViewController {
     self.sut.historyCalcStrings = [[NSMutableArray alloc] init];
     [self.sut.historyCalcStrings addObject:@{@"calcString": @"foo", @"solution": @(2)}];
-    
+ 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(shareButtonPressed:) withObject:nil];
-    
+#pragma clang diagnostic pop
+  
     XCTAssertEqual([self.sut.presentedViewController class], [UIActivityViewController class]);
 }
 
 - (void)test_history_whenHistoryIsEmpty_showsHistory {
     self.sut.historyCalcStrings = [[NSMutableArray alloc] init];
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(historyButtonPressed:) withObject:nil];
-    
+#pragma clang diagnostic pop
+  
     XCTAssertEqual([self.sut.presentedViewController class], [UINavigationController class]);
 }
 
@@ -400,8 +409,11 @@
     NSDictionary *historyEntry = @{@"calcString": @"foo", @"solution": @(2)};
     [self.sut.historyCalcStrings addObject:historyEntry];
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(historyButtonPressed:) withObject:nil];
-    
+#pragma clang diagnostic pop
+  
     XCTAssertEqual([self.sut.presentedViewController class], [UINavigationController class]);
     UINavigationController *navController = (UINavigationController *)self.sut.presentedViewController;
     HistoryTableViewController *historyController = navController.viewControllers.firstObject;
@@ -416,8 +428,11 @@
     NSDictionary *historyEntry = @{@"calcString": @"foo", @"solution": @(2)};
     [self.sut.historyCalcStrings addObject:historyEntry];
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(ansButtonPressed:) withObject:nil];
-    
+#pragma clang diagnostic pop
+  
     XCTAssertEqual([self.sut.presentedViewController class], [UINavigationController class]);
     UINavigationController *navController = (UINavigationController *)self.sut.presentedViewController;
     HistoryTableViewController *historyController = navController.viewControllers.firstObject;
@@ -450,7 +465,7 @@
     if (underScoreRange.location != NSNotFound) {
         self.sut.calcStringView.selectedRange = underScoreRange;
     }
-    
+  
   [self.sut performSelector:selector withObject:button];
   
   return [self.sut valueForKey:@"calcString"];

@@ -81,9 +81,3 @@ class FormulasCoordinatorTests: XCTestCase {
     XCTAssertTrue(navigationController.lastPushedViewController is FormulaDetailViewController)
   }
 }
-
-extension FormulasCoordinator: Equatable {
-  public static func == (lhs: FormulasCoordinator, rhs: FormulasCoordinator) -> Bool {
-    return lhs === rhs
-  }
-}

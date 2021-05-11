@@ -527,9 +527,7 @@
   historyTableViewController.isCalcHistory = YES;
   
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: historyTableViewController];
-  if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-    [navigationController setModalPresentationStyle: UIModalPresentationPageSheet];
-  }
+  [navigationController setModalPresentationStyle: UIModalPresentationPageSheet];
   [self presentViewController:navigationController animated:YES completion:nil];
 }
 
@@ -545,9 +543,7 @@
   historyTableViewController.delegate = self;
   
   UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: historyTableViewController];
-  if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-    [navigationController setModalPresentationStyle: UIModalPresentationPageSheet];
-  }
+  [navigationController setModalPresentationStyle: UIModalPresentationPageSheet];
   [self presentViewController:navigationController animated:YES completion:nil];
 }
 
