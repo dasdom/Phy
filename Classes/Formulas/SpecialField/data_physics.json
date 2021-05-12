@@ -1870,7 +1870,25 @@
                     "detailItems" : [
                       {
                         "imageName" : "bremsdauer",
-                        "title" : "Bremsdauer"
+                        "title" : "Bremsdauer",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "anfangsgeschwindigkeit_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "beschleunigung_abk",
+                            "placeholder": "m / s^2"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0÷#a",
+                            "imageName": "bremsdauer"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beschleunigung_const",
@@ -2096,7 +2114,20 @@
                     "detailItems" : [
                       {
                         "imageName" : "gewichtskraft",
-                        "title" : "Gewichtskraft"
+                        "title" : "Gewichtskraft",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m×9.80665",
+                            "imageName": "gewichtskraft"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Gewichtskraft"
@@ -2151,10 +2182,41 @@
               {
                 "details" : [
                   {
+                    "detailItems": [
+                      {
+                        "imageName": "mechanics_gravitational_force_image",
+                        "type": "image"
+                      }
+                    ]
+                  },
+                  {
                     "detailItems" : [
                       {
-                        "imageName" : "gravitationskraft",
-                        "title" : "Gravitationskraft"
+                        "imageName" : "mechanics_gravitational_force",
+                        "title" : "Gravitationskraft",
+                        "inputs": [
+                          {
+                            "id": "m1",
+                            "imageName": "masse1_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "m2",
+                            "imageName": "masse2_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "abstand_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "6.6726e-11×#m1×#m2÷#r^2",
+                            "imageName": "mechanics_gravitational_force"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Gravitationskraft"
@@ -2215,7 +2277,7 @@
                     "title" : "Konstanten"
                   }
                 ],
-                "imageName" : "gravitationskraft",
+                "imageName" : "mechanics_gravitational_force",
                 "title" : "Gravitationskraft"
               },
               {
