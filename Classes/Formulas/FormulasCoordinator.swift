@@ -48,7 +48,11 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
   func showImprint(_ viewController: UIViewController) {
     let next = ImprintViewController()
     let nextNavigationController = UINavigationController(rootViewController: next)
-    nextNavigationController.modalPresentationStyle = .formSheet
+    if UIDevice.current.userInterfaceIdiom == .pad {
+      nextNavigationController.modalPresentationStyle = .formSheet
+    } else {
+      nextNavigationController.modalPresentationStyle = .fullScreen
+    }
     viewController.present(nextNavigationController, animated: true, completion: nil)
   }
 }

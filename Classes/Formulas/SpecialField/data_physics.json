@@ -2283,6 +2283,14 @@
               {
                 "details" : [
                   {
+                    "detailItems": [
+                      {
+                        "imageName": "mechanics_gravitational_potential_image",
+                        "type": "image"
+                      }
+                    ]
+                  },
+                  {
                     "detailItems" : [
                       {
                         "imageName" : "gravitationspotential",
