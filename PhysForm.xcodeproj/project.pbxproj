@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,11 +23,14 @@
 		F207F4FB1145B67200256864 /* Referenz.plist in Resources */ = {isa = PBXBuildFile; fileRef = F207F4FA1145B67200256864 /* Referenz.plist */; };
 		F20C82712658F82100A8F3FC /* ValueUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82702658F82100A8F3FC /* ValueUnitView.swift */; };
 		F20C82732658F93F00A8F3FC /* CalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82722658F93F00A8F3FC /* CalcButton.swift */; };
-		F20C8276265912D500A8F3FC /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8275265912D500A8F3FC /* ActionRow.swift */; };
-		F20C82782659145F00A8F3FC /* NumberButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82772659145F00A8F3FC /* NumberButtons.swift */; };
-		F20C827A2659273200A8F3FC /* ModifierButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82792659273200A8F3FC /* ModifierButtons.swift */; };
+		F20C8276265912D500A8F3FC /* ActionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8275265912D500A8F3FC /* ActionRowView.swift */; };
+		F20C82782659145F00A8F3FC /* NumberButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82772659145F00A8F3FC /* NumberButtonsView.swift */; };
+		F20C827A2659273200A8F3FC /* ModifierButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82792659273200A8F3FC /* ModifierButtonsView.swift */; };
 		F20C827C265927D900A8F3FC /* CalcButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C827B265927D900A8F3FC /* CalcButtonStyle.swift */; };
 		F20C827E2659293900A8F3FC /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C827D2659293900A8F3FC /* ConverterTests.swift */; };
+		F20C8281265A260500A8F3FC /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = F20C8280265A260500A8F3FC /* ViewInspector */; };
+		F20C8284265A268F00A8F3FC /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8283265A268F00A8F3FC /* XCTestCaseExtensions.swift */; };
+		F20C8287265A37F700A8F3FC /* ConverterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8286265A37F700A8F3FC /* ConverterViewTests.swift */; };
 		F20E53A522D9B6D4001794E9 /* Constants.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A422D9B6D4001794E9 /* Constants.xcassets */; };
 		F20E53A722D9B914001794E9 /* Relativity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A622D9B914001794E9 /* Relativity.xcassets */; };
 		F20E53A922D9B94C001794E9 /* Mechanics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A822D9B94C001794E9 /* Mechanics.xcassets */; };
@@ -206,11 +209,13 @@
 		F207F4FA1145B67200256864 /* Referenz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Referenz.plist; sourceTree = "<group>"; };
 		F20C82702658F82100A8F3FC /* ValueUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueUnitView.swift; sourceTree = "<group>"; };
 		F20C82722658F93F00A8F3FC /* CalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButton.swift; sourceTree = "<group>"; };
-		F20C8275265912D500A8F3FC /* ActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRow.swift; sourceTree = "<group>"; };
-		F20C82772659145F00A8F3FC /* NumberButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButtons.swift; sourceTree = "<group>"; };
-		F20C82792659273200A8F3FC /* ModifierButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierButtons.swift; sourceTree = "<group>"; };
+		F20C8275265912D500A8F3FC /* ActionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRowView.swift; sourceTree = "<group>"; };
+		F20C82772659145F00A8F3FC /* NumberButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButtonsView.swift; sourceTree = "<group>"; };
+		F20C82792659273200A8F3FC /* ModifierButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierButtonsView.swift; sourceTree = "<group>"; };
 		F20C827B265927D900A8F3FC /* CalcButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButtonStyle.swift; sourceTree = "<group>"; };
 		F20C827D2659293900A8F3FC /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
+		F20C8283265A268F00A8F3FC /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
+		F20C8286265A37F700A8F3FC /* ConverterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewTests.swift; sourceTree = "<group>"; };
 		F20E53A422D9B6D4001794E9 /* Constants.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Constants.xcassets; sourceTree = "<group>"; };
 		F20E53A622D9B914001794E9 /* Relativity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Relativity.xcassets; sourceTree = "<group>"; };
 		F20E53A822D9B94C001794E9 /* Mechanics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mechanics.xcassets; sourceTree = "<group>"; };
@@ -385,6 +390,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20C8281265A260500A8F3FC /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,11 +576,28 @@
 				F20C827B265927D900A8F3FC /* CalcButtonStyle.swift */,
 				F20C82702658F82100A8F3FC /* ValueUnitView.swift */,
 				F20C82722658F93F00A8F3FC /* CalcButton.swift */,
-				F20C8275265912D500A8F3FC /* ActionRow.swift */,
-				F20C82772659145F00A8F3FC /* NumberButtons.swift */,
-				F20C82792659273200A8F3FC /* ModifierButtons.swift */,
+				F20C8275265912D500A8F3FC /* ActionRowView.swift */,
+				F20C82772659145F00A8F3FC /* NumberButtonsView.swift */,
+				F20C82792659273200A8F3FC /* ModifierButtonsView.swift */,
 			);
 			path = ConverterView;
+			sourceTree = "<group>";
+		};
+		F20C8282265A265300A8F3FC /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				F20C827D2659293900A8F3FC /* ConverterTests.swift */,
+				F20C8286265A37F700A8F3FC /* ConverterViewTests.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		F20C8285265A26D800A8F3FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F20C8283265A268F00A8F3FC /* XCTestCaseExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F22FF0042302C52B003F3A9B /* Solver */ = {
@@ -631,11 +654,12 @@
 				F2E6176826395978008EB858 /* CalculatorTests.swift */,
 				F29F212C22E1EB4400426712 /* Legacy_CalculatorTests.m */,
 				F236F4B42620876A00796E3D /* AppCoordinatorTests.swift */,
-				F20C827D2659293900A8F3FC /* ConverterTests.swift */,
+				F20C8282265A265300A8F3FC /* Converter */,
 				F200F0ED2312B68500C38045 /* Chemistry */,
 				F22FF0042302C52B003F3A9B /* Solver */,
 				F2372E4F22F5ABB6003C0605 /* Formulary */,
 				F2078E5226218F900094D74D /* Mocks */,
+				F20C8285265A26D800A8F3FC /* Extensions */,
 				F239BACC20F8C0CE00612965 /* Info.plist */,
 				F2372E4A22F5AB66003C0605 /* PhyTests-Bridging-Header.h */,
 			);
@@ -919,6 +943,9 @@
 				F239BACE20F8C0CE00612965 /* PBXTargetDependency */,
 			);
 			name = PhyTests;
+			packageProductDependencies = (
+				F20C8280265A260500A8F3FC /* ViewInspector */,
+			);
 			productName = PhyTests;
 			productReference = F239BAC820F8C0CD00612965 /* PhyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -985,6 +1012,7 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			packageReferences = (
+				F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -1091,7 +1119,7 @@
 				F29AEB0A22EB01EE00EB4E26 /* SolverTableViewController.swift in Sources */,
 				F20C82712658F82100A8F3FC /* ValueUnitView.swift in Sources */,
 				F236F4992620441400796E3D /* FormulasCoordinator.swift in Sources */,
-				F20C82782659145F00A8F3FC /* NumberButtons.swift in Sources */,
+				F20C82782659145F00A8F3FC /* NumberButtonsView.swift in Sources */,
 				F29AEB4B22EB034E00EB4E26 /* ConstantCell.m in Sources */,
 				F2817609263FE5BF00097228 /* AppStrings.swift in Sources */,
 				F2DB7D5423101A650098B42A /* Formula.swift in Sources */,
@@ -1119,7 +1147,7 @@
 				F2DB7D4B23101A010098B42A /* TopicViewController.swift in Sources */,
 				F2DB7D5923101A730098B42A /* FormulaDetail.swift in Sources */,
 				F28175F8263EA5FD00097228 /* FileManagerExtension.swift in Sources */,
-				F20C8276265912D500A8F3FC /* ActionRow.swift in Sources */,
+				F20C8276265912D500A8F3FC /* ActionRowView.swift in Sources */,
 				F2DB7D4D23101A2C0098B42A /* Topic.swift in Sources */,
 				F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */,
 				F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */,
@@ -1146,7 +1174,7 @@
 				F294101322E7AD1B00379868 /* ImprintView.swift in Sources */,
 				F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */,
 				F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */,
-				F20C827A2659273200A8F3FC /* ModifierButtons.swift in Sources */,
+				F20C827A2659273200A8F3FC /* ModifierButtonsView.swift in Sources */,
 				F2DB7D6D231078800098B42A /* TopicCell.swift in Sources */,
 				F29AEB4922EB034E00EB4E26 /* HistoryTableViewCell.m in Sources */,
 				F29AEB4722EB034E00EB4E26 /* CalculatorConstant.m in Sources */,
@@ -1186,6 +1214,7 @@
 				F2078E802621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift in Sources */,
 				F2078E5A262190380094D74D /* TopicViewControllerProtocolStub.swift in Sources */,
 				F2DB7D5C23101B3A0098B42A /* FormulaSectionTests.swift in Sources */,
+				F20C8284265A268F00A8F3FC /* XCTestCaseExtensions.swift in Sources */,
 				F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */,
 				F2DB7D6F231121920098B42A /* TopicDataSourceTests.swift in Sources */,
 				F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */,
@@ -1205,6 +1234,7 @@
 				F29F212D22E1EB4400426712 /* Legacy_CalculatorTests.m in Sources */,
 				F2716A0522F6FDD5007D1528 /* SpecialFieldsViewControllerTests.swift in Sources */,
 				F2716A1222F87078007D1528 /* SpecialFieldDataSourceTests.swift in Sources */,
+				F20C8287265A37F700A8F3FC /* ConverterViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1264,7 +1294,10 @@
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
@@ -1296,7 +1329,10 @@
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
@@ -1445,7 +1481,10 @@
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
@@ -1492,7 +1531,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1531,7 +1574,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1570,7 +1617,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1612,7 +1663,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyUITests;
@@ -1650,7 +1705,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyUITests;
@@ -1688,7 +1747,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.PhyUITests;
@@ -1745,6 +1808,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F20C8280265A260500A8F3FC /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }

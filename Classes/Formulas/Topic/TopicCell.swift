@@ -7,7 +7,7 @@ import UIKit
 class TopicCell: DDHBaseTableViewCell<Topic> {
   
   override func update(with item: Topic) {
-    textLabel?.text = NSLocalizedString(item.title, comment: "")
+    textLabel?.text = item.title.localized
     textLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
     textLabel?.adjustsFontForContentSizeCategory = true
     

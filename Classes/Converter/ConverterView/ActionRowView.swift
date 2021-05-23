@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct ActionRow: View {
+struct ActionRowView: View {
   
   let converter: Converter
   
@@ -30,7 +30,7 @@ struct ActionRow: View {
 
 struct ActionRow_Previews: PreviewProvider {
   static var previews: some View {
-    ActionRow(converter:
+    ActionRowView(converter:
                 Converter(
                   convertInfo:
                     ConvertInfo(id: 1,

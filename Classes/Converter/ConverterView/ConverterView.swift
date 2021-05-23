@@ -36,12 +36,12 @@ struct ConverterView: View {
       GeometryReader { geometry in
         VStack {
                     
-          ActionRow(converter: converter)
+          ActionRowView(converter: converter)
           
           HStack {
-            NumberButtons(converter: converter, geometry: geometry)
+            NumberButtonsView(converter: converter, geometry: geometry)
             
-            ModifierButtons(converter: converter, geometry: geometry)
+            ModifierButtonsView(converter: converter, geometry: geometry)
           }
         }
         

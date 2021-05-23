@@ -5,7 +5,11 @@
 import Foundation
 import Combine
 
-class Converter: ObservableObject {
+class Converter: ObservableObject, Equatable {
+  static func == (lhs: Converter, rhs: Converter) -> Bool {
+    return lhs.convertInfo == rhs.convertInfo
+  }
+  
   
   let convertInfo: ConvertInfo
   @Published var input: String = "" {

@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct NumberButtons: View {
+struct NumberButtonsView: View {
   
   @ObservedObject var converter: Converter
   let geometry: GeometryProxy
@@ -46,7 +46,7 @@ struct NumberButtons: View {
 struct NumberButtons_Previews: PreviewProvider {
   static var previews: some View {
     GeometryReader { geometry in
-      NumberButtons(converter:
+      NumberButtonsView(converter:
                       Converter(
                         convertInfo:
                           ConvertInfo(id: 1,

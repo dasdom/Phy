@@ -4,12 +4,12 @@
 
 import Foundation
 
-struct Unit: Decodable {
+struct Unit: Decodable, Equatable {
   let unit: String
   let value: String
 }
 
-struct ConvertInfo: Decodable {
+struct ConvertInfo: Decodable, Equatable {
   let id: Int
   let fieldName: String
   var units: [Unit]
