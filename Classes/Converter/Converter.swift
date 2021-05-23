@@ -24,7 +24,6 @@ class Converter: ObservableObject {
       updateOutput()
     }
   }
-  var tokens: Set<AnyCancellable> = []
   
   init(convertInfo: ConvertInfo) {
     self.convertInfo = convertInfo
