@@ -28,11 +28,11 @@
         _eigenschaft = [UILabel new];
         _eigenschaft.textAlignment = NSTextAlignmentCenter;
         _eigenschaft.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-
+        
         _outputValue = [UILabel new];
         _outputValue.textAlignment = NSTextAlignmentCenter;
         _outputValue.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
-
+        
         _bedingung = [UILabel new];
         _bedingung.textAlignment = NSTextAlignmentCenter;
         _bedingung.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
