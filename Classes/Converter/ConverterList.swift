@@ -7,14 +7,14 @@ import SwiftUI
 struct ConverterList: View {
   
   @State var converter: Converter? = nil
-  let allConverterInfos: [ConvertInfo] = {
+  let allConvertInfos: [ConvertInfo] = {
     guard let url = Bundle.main.url(forResource: "converter", withExtension: "json") else {
       return []
     }
     do {
       let data = try Data(contentsOf: url)
-      let converterInfos = try JSONDecoder().decode([ConvertInfo].self, from: data)
-      return converterInfos
+      let convertInfos = try JSONDecoder().decode([ConvertInfo].self, from: data)
+      return convertInfos
     } catch {
       NSLog("error: \(error)")
       return []
@@ -23,7 +23,7 @@ struct ConverterList: View {
   
   var body: some View {
     NavigationView {
-      List(allConverterInfos, id: \.id) { convertInfo -> NavigationLink<Text, ConverterView> in
+      List(allConvertInfos, id: \.id) { convertInfo -> NavigationLink<Text, ConverterView> in
         let converter = Converter(convertInfo: convertInfo)
         self.converter = converter
         return NavigationLink(destination: ConverterView(converter: converter)) {
@@ -33,6 +33,7 @@ struct ConverterList: View {
       .listStyle(GroupedListStyle())
       .navigationBarTitle(Text("Konverter"))
     }
+    .navigationViewStyle(DoubleColumnNavigationViewStyle())
   }
 }
 

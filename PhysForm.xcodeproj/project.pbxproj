@@ -34,6 +34,8 @@
 		F20C828A265B798D00A8F3FC /* ConstantsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8289265B798D00A8F3FC /* ConstantsTableViewControllerTests.swift */; };
 		F20C828C265B96F700A8F3FC /* CalculatorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C828B265B96F700A8F3FC /* CalculatorConstant.swift */; };
 		F20C828E265B97B300A8F3FC /* calculator_constants.json in Resources */ = {isa = PBXBuildFile; fileRef = F20C828D265B97B300A8F3FC /* calculator_constants.json */; };
+		F20C8290265BFE6A00A8F3FC /* ConverterListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */; };
+		F20C8292265C434300A8F3FC /* ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8291265C434300A8F3FC /* ConverterUITests.swift */; };
 		F20E53A522D9B6D4001794E9 /* Constants.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A422D9B6D4001794E9 /* Constants.xcassets */; };
 		F20E53A722D9B914001794E9 /* Relativity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A622D9B914001794E9 /* Relativity.xcassets */; };
 		F20E53A922D9B94C001794E9 /* Mechanics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A822D9B94C001794E9 /* Mechanics.xcassets */; };
@@ -220,6 +222,8 @@
 		F20C8289265B798D00A8F3FC /* ConstantsTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTableViewControllerTests.swift; sourceTree = "<group>"; };
 		F20C828B265B96F700A8F3FC /* CalculatorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorConstant.swift; sourceTree = "<group>"; };
 		F20C828D265B97B300A8F3FC /* calculator_constants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = calculator_constants.json; sourceTree = "<group>"; };
+		F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterListTests.swift; sourceTree = "<group>"; };
+		F20C8291265C434300A8F3FC /* ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterUITests.swift; sourceTree = "<group>"; };
 		F20E53A422D9B6D4001794E9 /* Constants.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Constants.xcassets; sourceTree = "<group>"; };
 		F20E53A622D9B914001794E9 /* Relativity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Relativity.xcassets; sourceTree = "<group>"; };
 		F20E53A822D9B94C001794E9 /* Mechanics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mechanics.xcassets; sourceTree = "<group>"; };
@@ -589,6 +593,7 @@
 			children = (
 				F20C827D2659293900A8F3FC /* ConverterTests.swift */,
 				F20C8286265A37F700A8F3FC /* ConverterViewTests.swift */,
+				F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -692,6 +697,7 @@
 			isa = PBXGroup;
 			children = (
 				F24201F32645DEA700E0CA97 /* PhyUITests.swift */,
+				F20C8291265C434300A8F3FC /* ConverterUITests.swift */,
 				F24201F52645DEA700E0CA97 /* Info.plist */,
 			);
 			path = PhyUITests;
@@ -1219,6 +1225,7 @@
 				F2DB7D6423101B510098B42A /* TopicTests.swift in Sources */,
 				F236256E22FE9FEF0075FC2F /* FormulasViewControllerTests.swift in Sources */,
 				F236257B22FEEB940075FC2F /* PhyFormulaDetailCellTests.swift in Sources */,
+				F20C8290265BFE6A00A8F3FC /* ConverterListTests.swift in Sources */,
 				F236256F22FE9FEF0075FC2F /* FormulasDataSourceTests.swift in Sources */,
 				F2078E802621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift in Sources */,
 				F2078E5A262190380094D74D /* TopicViewControllerProtocolStub.swift in Sources */,
@@ -1252,6 +1259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20C8292265C434300A8F3FC /* ConverterUITests.swift in Sources */,
 				F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

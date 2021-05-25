@@ -34,7 +34,7 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F24201F02645DEA700E0CA97"
@@ -42,6 +42,11 @@
                BlueprintName = "PhyUITests"
                ReferencedContainer = "container:PhysForm.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "PhyUITests/test_screenshots()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
