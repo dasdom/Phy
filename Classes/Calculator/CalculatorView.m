@@ -1,18 +1,18 @@
 //  Created by dasdom on 20.03.18.
 //
 
-#import "GeneralCalculatorView.h"
+#import "CalculatorView.h"
 #import "Legacy_Calculator.h"
 #import "CalculatorButton.h"
 
-@interface GeneralCalculatorView ()
+@interface CalculatorView ()
 @property (nonatomic) UIButton *sinButton;
 @property (nonatomic) UIButton *cosButton;
 @property (nonatomic) UIButton *tanButton;
 @property (nonatomic) UIButton *degButton;
 @end
 
-@implementation GeneralCalculatorView
+@implementation CalculatorView
 
 - (instancetype)initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];

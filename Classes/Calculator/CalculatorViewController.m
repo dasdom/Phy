@@ -2,22 +2,23 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "GeneralCalculatorViewController.h"
+#import "CalculatorViewController.h"
 #import "Legacy_Calculator.h"
 #import "HistoryTableViewController.h"
-#import "GeneralCalculatorView.h"
+#import "CalculatorView.h"
 #import "ConstantsTableViewController.h"
+#import <SwiftUI/SwiftUI.h>
 #import <StoreKit/StoreKit.h>
 #import "Phy-Swift.h"
 
-@interface GeneralCalculatorViewController ()
+@interface CalculatorViewController () <InsertStringProtocol>
 @property BOOL deg;
 @property BOOL help;
 @property NSRange lastSelectedRange;
 @property (nonatomic) NSDecimalNumber *previousResult;
 @end
 
-@implementation GeneralCalculatorViewController
+@implementation CalculatorViewController
 
 @synthesize deg;
 
@@ -36,11 +37,11 @@
 }
 
 - (void)loadView {
-  self.view = [[GeneralCalculatorView alloc] init];
+  self.view = [[CalculatorView alloc] init];
 }
 
-- (GeneralCalculatorView *)contentView {
-  return (GeneralCalculatorView *)self.view;
+- (CalculatorView *)contentView {
+  return (CalculatorView *)self.view;
 }
 
 - (UITextView *)calcStringView {
@@ -192,9 +193,13 @@
     return;
   }
   
-  ConstantsTableViewController *constsViewController = [[ConstantsTableViewController alloc] init];
-  constsViewController.delegate = self;
-  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:constsViewController];
+//  ConstantsTableViewController *constsViewController = [[ConstantsTableViewController alloc] init];
+//  constsViewController.delegate = self;
+  
+  UIViewController *next = [ConstantsListViewCreator hostWithDelegate:self];
+  next.title = NSLocalizedString(@"Konstanten", nil);
+  
+  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:next];
   [self presentViewController:navController animated:YES completion:nil];
 }
 
@@ -823,6 +828,9 @@
 
 - (void)insertString:(NSString *)stringToInsert {
   
+  if (self.presentedViewController != nil) {
+    [self dismissViewControllerAnimated:true completion:nil];
+  }
   [self.calcStringView becomeFirstResponder];
   
   [self insertString:stringToInsert inTextView:self.calcStringView];

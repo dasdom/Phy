@@ -35,7 +35,7 @@ class AppCoordinator: Coordinator {
   }
   
   private var calculator: UIViewController {
-    let viewController = GeneralCalculatorViewController()
+    let viewController = CalculatorViewController()
     viewController.tabBarItem = UITabBarItem(title: "Rechner".localized, image: UIImage(systemName: "plusminus"), tag: 1)
     return viewController
   }

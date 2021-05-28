@@ -36,6 +36,9 @@
 		F20C828E265B97B300A8F3FC /* calculator_constants.json in Resources */ = {isa = PBXBuildFile; fileRef = F20C828D265B97B300A8F3FC /* calculator_constants.json */; };
 		F20C8290265BFE6A00A8F3FC /* ConverterListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */; };
 		F20C8292265C434300A8F3FC /* ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8291265C434300A8F3FC /* ConverterUITests.swift */; };
+		F20C8294265D416000A8F3FC /* ConstantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8293265D416000A8F3FC /* ConstantsListView.swift */; };
+		F20C8296266103DB00A8F3FC /* InsertStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8295266103DB00A8F3FC /* InsertStringProtocol.swift */; };
+		F20C829A2661090600A8F3FC /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82992661090600A8F3FC /* CalculatorUITests.swift */; };
 		F20E53A522D9B6D4001794E9 /* Constants.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A422D9B6D4001794E9 /* Constants.xcassets */; };
 		F20E53A722D9B914001794E9 /* Relativity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A622D9B914001794E9 /* Relativity.xcassets */; };
 		F20E53A922D9B94C001794E9 /* Mechanics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A822D9B94C001794E9 /* Mechanics.xcassets */; };
@@ -123,10 +126,10 @@
 		F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1922EB028300EB4E26 /* ReferenzView.m */; };
 		F29AEB4422EB034E00EB4E26 /* Legacy_Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3422EB034E00EB4E26 /* Legacy_Calculator.m */; };
 		F29AEB4522EB034E00EB4E26 /* ConstantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */; };
-		F29AEB4622EB034E00EB4E26 /* GeneralCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */; };
+		F29AEB4622EB034E00EB4E26 /* CalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3822EB034E00EB4E26 /* CalculatorView.m */; };
 		F29AEB4822EB034E00EB4E26 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3A22EB034E00EB4E26 /* HistoryTableViewController.m */; };
 		F29AEB4922EB034E00EB4E26 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3B22EB034E00EB4E26 /* HistoryTableViewCell.m */; };
-		F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3D22EB034E00EB4E26 /* GeneralCalculatorViewController.m */; };
+		F29AEB4A22EB034E00EB4E26 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3D22EB034E00EB4E26 /* CalculatorViewController.m */; };
 		F29AEB4B22EB034E00EB4E26 /* ConstantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB3E22EB034E00EB4E26 /* ConstantCell.m */; };
 		F29AEB4D22EB052700EB4E26 /* solver.json in Resources */ = {isa = PBXBuildFile; fileRef = F29AEB4C22EB052700EB4E26 /* solver.json */; };
 		F29AEB4F22EB2C5A00EB4E26 /* Soulver.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29AEB4E22EB2C5A00EB4E26 /* Soulver.xcassets */; };
@@ -224,6 +227,9 @@
 		F20C828D265B97B300A8F3FC /* calculator_constants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = calculator_constants.json; sourceTree = "<group>"; };
 		F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterListTests.swift; sourceTree = "<group>"; };
 		F20C8291265C434300A8F3FC /* ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterUITests.swift; sourceTree = "<group>"; };
+		F20C8293265D416000A8F3FC /* ConstantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsListView.swift; sourceTree = "<group>"; };
+		F20C8295266103DB00A8F3FC /* InsertStringProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertStringProtocol.swift; sourceTree = "<group>"; };
+		F20C82992661090600A8F3FC /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		F20E53A422D9B6D4001794E9 /* Constants.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Constants.xcassets; sourceTree = "<group>"; };
 		F20E53A622D9B914001794E9 /* Relativity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Relativity.xcassets; sourceTree = "<group>"; };
 		F20E53A822D9B94C001794E9 /* Mechanics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mechanics.xcassets; sourceTree = "<group>"; };
@@ -328,15 +334,15 @@
 		F29AEB3422EB034E00EB4E26 /* Legacy_Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Legacy_Calculator.m; sourceTree = "<group>"; };
 		F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantsTableViewController.m; sourceTree = "<group>"; tabWidth = 4; };
 		F29AEB3622EB034E00EB4E26 /* ConstantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantCell.h; sourceTree = "<group>"; };
-		F29AEB3722EB034E00EB4E26 /* GeneralCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorViewController.h; sourceTree = "<group>"; };
-		F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorView.m; sourceTree = "<group>"; };
+		F29AEB3722EB034E00EB4E26 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		F29AEB3822EB034E00EB4E26 /* CalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
 		F29AEB3A22EB034E00EB4E26 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
 		F29AEB3B22EB034E00EB4E26 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		F29AEB3C22EB034E00EB4E26 /* Legacy_Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Legacy_Calculator.h; sourceTree = "<group>"; };
-		F29AEB3D22EB034E00EB4E26 /* GeneralCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorViewController.m; sourceTree = "<group>"; };
+		F29AEB3D22EB034E00EB4E26 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		F29AEB3E22EB034E00EB4E26 /* ConstantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantCell.m; sourceTree = "<group>"; };
 		F29AEB3F22EB034E00EB4E26 /* ConstantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantsTableViewController.h; sourceTree = "<group>"; };
-		F29AEB4022EB034E00EB4E26 /* GeneralCalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCalculatorView.h; sourceTree = "<group>"; };
+		F29AEB4022EB034E00EB4E26 /* CalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorView.h; sourceTree = "<group>"; };
 		F29AEB4122EB034E00EB4E26 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
 		F29AEB4222EB034E00EB4E26 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
 		F29AEB4C22EB052700EB4E26 /* solver.json */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.json; path = solver.json; sourceTree = "<group>"; tabWidth = 2; };
@@ -698,6 +704,7 @@
 			children = (
 				F24201F32645DEA700E0CA97 /* PhyUITests.swift */,
 				F20C8291265C434300A8F3FC /* ConverterUITests.swift */,
+				F20C82992661090600A8F3FC /* CalculatorUITests.swift */,
 				F24201F52645DEA700E0CA97 /* Info.plist */,
 			);
 			path = PhyUITests;
@@ -889,12 +896,14 @@
 				F29AEB3E22EB034E00EB4E26 /* ConstantCell.m */,
 				F29AEB3F22EB034E00EB4E26 /* ConstantsTableViewController.h */,
 				F29AEB3522EB034E00EB4E26 /* ConstantsTableViewController.m */,
-				F29AEB4022EB034E00EB4E26 /* GeneralCalculatorView.h */,
-				F29AEB3822EB034E00EB4E26 /* GeneralCalculatorView.m */,
+				F20C8293265D416000A8F3FC /* ConstantsListView.swift */,
+				F29AEB4022EB034E00EB4E26 /* CalculatorView.h */,
+				F29AEB3822EB034E00EB4E26 /* CalculatorView.m */,
 				F22AD97922FD7BAD0080E28F /* CalculatorButton.h */,
 				F22AD97A22FD7BAD0080E28F /* CalculatorButton.m */,
-				F29AEB3722EB034E00EB4E26 /* GeneralCalculatorViewController.h */,
-				F29AEB3D22EB034E00EB4E26 /* GeneralCalculatorViewController.m */,
+				F29AEB3722EB034E00EB4E26 /* CalculatorViewController.h */,
+				F29AEB3D22EB034E00EB4E26 /* CalculatorViewController.m */,
+				F20C8295266103DB00A8F3FC /* InsertStringProtocol.swift */,
 				F29AEB4122EB034E00EB4E26 /* HistoryTableViewCell.h */,
 				F29AEB3B22EB034E00EB4E26 /* HistoryTableViewCell.m */,
 				F29AEB4222EB034E00EB4E26 /* HistoryTableViewController.h */,
@@ -1177,10 +1186,11 @@
 				F2E6176326395920008EB858 /* Calculator.swift in Sources */,
 				F294101222E7AD1B00379868 /* ImprintViewController.swift in Sources */,
 				F2716A0A22F77D21007D1528 /* SpecialFieldCell.swift in Sources */,
+				F20C8294265D416000A8F3FC /* ConstantsListView.swift in Sources */,
 				F26C9AE12631E4BF00A1B161 /* ConvertInfo.swift in Sources */,
 				F22AD97B22FD7BAD0080E28F /* CalculatorButton.m in Sources */,
 				F2DB7D5023101A5A0098B42A /* SpecialField.swift in Sources */,
-				F29AEB4622EB034E00EB4E26 /* GeneralCalculatorView.m in Sources */,
+				F29AEB4622EB034E00EB4E26 /* CalculatorView.m in Sources */,
 				F2716A1622F8789F007D1528 /* FormulasViewController.swift in Sources */,
 				F29AEB5B22EB545E00EB4E26 /* SolverDetailViewController.swift in Sources */,
 				F2716A1022F8635F007D1528 /* DDHBaseTableViewCell.swift in Sources */,
@@ -1188,12 +1198,13 @@
 				F29AEB4822EB034E00EB4E26 /* HistoryTableViewController.m in Sources */,
 				F22FF001230206E1003F3A9B /* SolverDetailButtonCell.swift in Sources */,
 				F294101322E7AD1B00379868 /* ImprintView.swift in Sources */,
-				F29AEB4A22EB034E00EB4E26 /* GeneralCalculatorViewController.m in Sources */,
+				F29AEB4A22EB034E00EB4E26 /* CalculatorViewController.m in Sources */,
 				F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */,
 				F20C827A2659273200A8F3FC /* ModifierButtonsView.swift in Sources */,
 				F2DB7D6D231078800098B42A /* TopicCell.swift in Sources */,
 				F29AEB4922EB034E00EB4E26 /* HistoryTableViewCell.m in Sources */,
 				F236F49C2620450000796E3D /* Coordinator.swift in Sources */,
+				F20C8296266103DB00A8F3FC /* InsertStringProtocol.swift in Sources */,
 				F236F4AD262049F000796E3D /* AppCoordinator.swift in Sources */,
 				F236257522FEA8850075FC2F /* FormulaDetailWithTextCell.swift in Sources */,
 				F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */,
@@ -1260,6 +1271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20C8292265C434300A8F3FC /* ConverterUITests.swift in Sources */,
+				F20C829A2661090600A8F3FC /* CalculatorUITests.swift in Sources */,
 				F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

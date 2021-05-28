@@ -37,7 +37,7 @@ class AppCoordinatorTests: XCTestCase {
     let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
     let result = try XCTUnwrap(tabBarController.viewControllers?[1])
     
-    XCTAssertTrue(result is GeneralCalculatorViewController)
+    XCTAssertTrue(result is CalculatorViewController)
   }
   
   func test_start_setsReferenceToTabBarController() throws {

@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GeneralCalculatorViewController : UIViewController
+@interface CalculatorViewController : UIViewController
 
 @property BOOL secondFunctions;
 

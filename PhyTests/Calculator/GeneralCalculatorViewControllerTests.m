@@ -3,11 +3,11 @@
 
 #import <XCTest/XCTest.h>
 
-#import "GeneralCalculatorViewController.h"
-#import "GeneralCalculatorView.h"
+#import "CalculatorViewController.h"
+#import "CalculatorView.h"
 #import "HistoryTableViewController.h"
 
-@interface GeneralCalculatorViewController ()
+@interface CalculatorViewController ()
 - (NSString *)stringByRemoveLastCalcSignIfNeeded:(NSString *)input;
 - (void)insertBasicCalculation:(UIButton *)sender;
 - (void)insertDigit:(UIButton *)sender;
@@ -16,7 +16,7 @@
 @end
 
 @interface GeneralCalculatorViewControllerTests : XCTestCase
-@property GeneralCalculatorViewController *sut;
+@property CalculatorViewController *sut;
 @property UIWindow *window;
 @end
 
@@ -25,7 +25,7 @@
 - (void)setUp {
     [super setUp];
 
-    self.sut = [GeneralCalculatorViewController new];
+    self.sut = [CalculatorViewController new];
     
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     self.window.rootViewController = self.sut;
@@ -134,7 +134,7 @@
 - (void)test_insertPlus_inTheMiddle_updatesTextInTextView {
     [self calcStringWithInitialCalcString:@"1_2" invokingSelector:@selector(insertBasicCalculation:) fromButtonWithTag:DDHButtonTagPlus];
     
-    GeneralCalculatorView *view = (GeneralCalculatorView *)self.sut.view;
+    CalculatorView *view = (CalculatorView *)self.sut.view;
     UITextView *calculationTextView = [view valueForKey:@"calculationStringTextView"];
     XCTAssertEqualObjects(calculationTextView.text, @"1+2");
 }
@@ -208,7 +208,7 @@
 - (void)test_insertDigit0_setsTextInTextView {
     [self calcStringWithInitialCalcString:@"1_2" invokingSelector:@selector(insertDigit:) fromButtonWithTag:DDHButtonTagZero];
 
-    GeneralCalculatorView *view = (GeneralCalculatorView *)self.sut.view;
+    CalculatorView *view = (CalculatorView *)self.sut.view;
     UITextView *calculationTextView = [view valueForKey:@"calculationStringTextView"];
     XCTAssertEqualObjects(calculationTextView.text, @"102");
 }

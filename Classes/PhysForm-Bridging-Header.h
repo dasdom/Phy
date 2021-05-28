@@ -3,5 +3,5 @@
 //
 
 #import "Legacy_Calculator.h"
-#import "GeneralCalculatorViewController.h"
+#import "CalculatorViewController.h"
 #import "ReferenzViewController.h"

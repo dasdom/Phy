@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, DDHButtonTags) {
     DDHButtonTagEqual,
 };
 
-@interface GeneralCalculatorView : UIView
+@interface CalculatorView : UIView
 
 @property (nonatomic, strong) UIStackView *stackView;
 @property (nonatomic, strong) UITextView *calculationStringTextView;

@@ -25,8 +25,8 @@
             filePath = "Classes/Calculator/GeneralCalculatorViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "-attributesCalcStringFromString:"
             landmarkType = "7">
             <Actions>

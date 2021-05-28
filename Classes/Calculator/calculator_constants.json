@@ -46,7 +46,7 @@
   },
   {
     "name": "magnetische Feldkonstante",
-    "value": "pi*4e-7",
+    "value": "𝜋×4e-7",
     "unit": "V s A⁻¹ m⁻¹"
   },
   {

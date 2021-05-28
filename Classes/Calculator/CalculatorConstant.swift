@@ -5,6 +5,14 @@
 import Foundation
 
 class CalculatorConstant: NSObject, Decodable {
+  
+  enum CodingKeys: String, CodingKey {
+    case name
+    case value
+    case unit
+  }
+  
+  let id = UUID()
   @objc let name: String
   @objc let value: String
   @objc let unit: String

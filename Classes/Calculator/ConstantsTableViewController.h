@@ -4,8 +4,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class GeneralCalculatorViewController;
+@class CalculatorViewController;
 
 @interface ConstantsTableViewController : UITableViewController
-@property (nonatomic, unsafe_unretained) GeneralCalculatorViewController *delegate;
+@property (nonatomic, unsafe_unretained) CalculatorViewController *delegate;
 @end

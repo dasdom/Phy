@@ -8,7 +8,7 @@
 
 #import "HistoryTableViewController.h"
 #import "HistoryTableViewCell.h"
-#import "GeneralCalculatorViewController.h"
+#import "CalculatorViewController.h"
 
 @interface HistoryTableViewController ()
 @property (nonatomic, strong) NSArray *calcDictArray;
