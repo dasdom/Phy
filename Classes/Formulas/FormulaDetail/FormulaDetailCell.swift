@@ -9,15 +9,21 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
   let detailImageView: UIImageView
   var imageHeightConstraint: NSLayoutConstraint?
   var imageWidthConstraint: NSLayoutConstraint?
+  let toolsIndicatorImageView: UIImageView
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     detailImageView = UIImageView(frame: .zero)
     
+    toolsIndicatorImageView = UIImageView(image: UIImage(systemName: "wrench.and.screwdriver"))
+    toolsIndicatorImageView.translatesAutoresizingMaskIntoConstraints = false
+    toolsIndicatorImageView.isHidden = true
+    
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     contentView.addSubview(detailImageView)
-    
+    contentView.insertSubview(toolsIndicatorImageView, belowSubview: detailImageView)
+
     detailImageView.translatesAutoresizingMaskIntoConstraints = false
     
     setupConstraints()
@@ -39,7 +45,13 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
       detailImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
       detailImageView.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -8),
       imageWidthConstraint,
-      imageHeightConstraint
+      imageHeightConstraint,
+      
+      toolsIndicatorImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+      toolsIndicatorImageView.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -5),
+      
+      toolsIndicatorImageView.widthAnchor.constraint(equalToConstant: 16),
+      toolsIndicatorImageView.heightAnchor.constraint(equalTo: toolsIndicatorImageView.widthAnchor),
     ])
   }
   
@@ -63,6 +75,12 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
     traitCollectionDidChange(nil)
     
     detailImageView.image = image
+    
+    if false == item.inputs?.isEmpty {
+      toolsIndicatorImageView.isHidden = false
+    } else {
+      toolsIndicatorImageView.isHidden = true
+    }
   }
   
   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

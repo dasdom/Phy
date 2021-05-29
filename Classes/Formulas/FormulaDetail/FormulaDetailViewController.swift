@@ -68,6 +68,7 @@ class FormulaDetailViewController: UITableViewController {
       cell.accessoryType = .disclosureIndicator
       cell.selectionStyle = .default
     } else {
+      cell.accessoryView = .none
       cell.selectionStyle = .none
     }
     

@@ -6,7 +6,6 @@
 #import "Legacy_Calculator.h"
 #import "HistoryTableViewController.h"
 #import "CalculatorView.h"
-#import "ConstantsTableViewController.h"
 #import <SwiftUI/SwiftUI.h>
 #import <StoreKit/StoreKit.h>
 #import "Phy-Swift.h"

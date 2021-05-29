@@ -37,9 +37,9 @@ class FormulasViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
     
     // Assert
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: FormulaCell.identifier, for: IndexPath(row: 0, section: 0))
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: NameAndFormulaImageCell.identifier, for: IndexPath(row: 0, section: 0))
     XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is FormulaCell)
+    XCTAssertTrue(cell is NameAndFormulaImageCell)
   }
   
   func test_cellForRow_dequeuesCell() {
@@ -92,7 +92,7 @@ class FormulasViewControllerTests: XCTestCase {
     // given
     let formula = Formula(imageName: "bar", title: "Bar")
     dataSourceMock.formulaForReturnValue = formula
-    sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: FormulaCell.identifier)
+    sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: NameAndFormulaImageCell.identifier)
     
     // when
     let cell = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
@@ -127,11 +127,11 @@ extension FormulasViewControllerTests {
       
       dequeueReusableCellCalls += 1
       
-      return FormulaCell()
+      return NameAndFormulaImageCell()
     }
   }
   
-  class MockFormulaCell : FormulaCell {
+  class MockFormulaCell : NameAndFormulaImageCell {
     
     var lastFormula: Formula? = nil
     

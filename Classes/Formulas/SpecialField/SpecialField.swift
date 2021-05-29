@@ -5,11 +5,11 @@
 import Foundation
 
 struct SpecialField : Codable, Equatable {
+  let title: String
+  let formulaSections: [FormulaSection]
+  
   internal init(title: String, formulaSections: [FormulaSection]) {
     self.title = title
     self.formulaSections = formulaSections
   }
-  
-    let title: String
-    let formulaSections: [FormulaSection]
 }

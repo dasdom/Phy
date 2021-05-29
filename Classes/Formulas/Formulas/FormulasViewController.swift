@@ -24,7 +24,7 @@ class FormulasViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.register(FormulaCell.self, forCellReuseIdentifier: FormulaCell.identifier)
+    tableView.register(FormulaListCell.self, forCellReuseIdentifier: FormulaListCell.identifier)
   }
   
   // MARK: - Table view data source
@@ -38,7 +38,7 @@ class FormulasViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
    
-    let cell = tableView.dequeueReusableCell(withIdentifier: FormulaCell.identifier, for: indexPath) as! FormulaCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: FormulaListCell.identifier, for: indexPath) as! FormulaListCell
     
     let formula = dataSource.formula(for: indexPath)
     cell.update(with: formula)

@@ -4,6 +4,7 @@
       {
         "formulaSections" : [
           {
+            "title" : "Newtonsche Gesetze",
             "formulas" : [
               {
                 "imageName" : "ersterNewton",
@@ -55,8 +56,7 @@
                     ],
                     "title" : "Einheiten"
                   }
-                ],
-
+                ]
               },
               {
                 "imageName" : "zweiterNewton",
@@ -66,10 +66,10 @@
                 "imageName" : "dritterNewton",
                 "title" : "3. Newtonsches Gesetz"
               }
-            ],
-            "title" : "Newtonsche Gesetze"
+            ]
           },
           {
+            "title" : "unbeschleunigte Bewegung",
             "formulas" : [
               {
                 "details" : [
@@ -1286,10 +1286,10 @@
                 "imageName" : "potentielle_energie01",
                 "title" : "potentielle Energie"
               }
-            ],
-            "title" : "unbeschleunigte Bewegung"
+            ]
           },
           {
+            "title" : "konstante Beschleunigung",
             "formulas" : [
               {
                 "details" : [
@@ -1935,10 +1935,10 @@
                 "imageName" : "bremsdauer",
                 "title" : "Bremsdauer"
               }
-            ],
-            "title" : "konstante Beschleunigung"
+            ]
           },
           {
+            "title" : "räumliche Bewegung",
             "formulas" : [
               {
                 "details" : [
@@ -2103,12 +2103,14 @@
                 "imageName" : "beschleunigung03",
                 "title" : "Beschleunigung"
               }
-            ],
-            "title" : "räumliche Bewegung"
+            ]
           },
           {
+            "title" : "Bewegung im Gravitationsfeld",
             "formulas" : [
               {
+                "imageName" : "gewichtskraft",
+                "title" : "Gewichtskraft",
                 "details" : [
                   {
                     "detailItems" : [
@@ -2175,11 +2177,11 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "gewichtskraft",
-                "title" : "Gewichtskraft"
+                ]
               },
               {
+                "imageName" : "mechanics_gravitational_force",
+                "title" : "Gravitationskraft",
                 "details" : [
                   {
                     "detailItems": [
@@ -2276,11 +2278,11 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "mechanics_gravitational_force",
-                "title" : "Gravitationskraft"
+                ]
               },
               {
+                "imageName" : "gravitationspotential",
+                "title" : "Gravitationspotential",
                 "details" : [
                   {
                     "detailItems": [
@@ -2294,7 +2296,30 @@
                     "detailItems" : [
                       {
                         "imageName" : "gravitationspotential",
-                        "title" : "Gravitationspotential"
+                        "title" : "Gravitationspotential",
+                        "inputs": [
+                          {
+                            "id": "m1",
+                            "imageName": "masse1_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "m2",
+                            "imageName": "masse2_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "abstand_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "6.6726e-11×#m1×#m2÷#r",
+                            "imageName": "gravitationspotential"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Gravitationspotential"
@@ -2362,11 +2387,11 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "gravitationspotential",
-                "title" : "Gravitationspotential"
+                ]
               },
               {
+                "imageName" : "freierFall01",
+                "title" : "freier Fall",
                 "details" : [
                   {
                     "detailItems" : [
@@ -2428,11 +2453,11 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "freierFall01",
-                "title" : "freier Fall"
+                ]
               },
               {
+                "imageName" : "fluchtgeschwindigkeit_allgemein",
+                "title" : "Fluchtgeschwindigkeit",
                 "details" : [
                   {
                     "detailItems" : [
@@ -2490,9 +2515,7 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "fluchtgeschwindigkeit_allgemein",
-                "title" : "Fluchtgeschwindigkeit"
+                ]
               },
               {
                 "details" : [
@@ -2548,8 +2571,7 @@
                 "imageName" : "fluchtgeschwindigkeit_erde",
                 "title" : "Fluchtgeschwindigkeit der Erde"
               }
-            ],
-            "title" : "Bewegung im Gravitationsfeld"
+            ]
           },
           {
             "formulas" : [

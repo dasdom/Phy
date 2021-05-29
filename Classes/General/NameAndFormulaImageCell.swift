@@ -1,10 +1,10 @@
 //  Created by dasdom on 05.08.19.
-//  
+//  Copyright © 2021 dasdom. All rights reserved.
 //
 
 import UIKit
 
-class FormulaCell: DDHBaseTableViewCell<FormulaCellProtocol> {
+class NameAndFormulaImageCell: DDHBaseTableViewCell<FormulaCellProtocol> {
   
   let nameLabel: UILabel
   let formulaImageView: UIImageView
@@ -57,6 +57,7 @@ class FormulaCell: DDHBaseTableViewCell<FormulaCellProtocol> {
       nameTopConstraint,
       nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
       nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
+      
       imageTopConstraint,
       formulaImageView.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
       imageBottomConstraint,

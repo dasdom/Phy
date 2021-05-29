@@ -11,7 +11,7 @@ class SolverTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
         
-    tableView.register(FormulaCell.self, forCellReuseIdentifier: FormulaCell.identifier)
+    tableView.register(NameAndFormulaImageCell.self, forCellReuseIdentifier: NameAndFormulaImageCell.identifier)
     
     guard let path = Bundle.main.path(forResource: "solver", ofType: "json") else { fatalError() }
     guard let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else { fatalError() }
@@ -31,7 +31,7 @@ class SolverTableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: FormulaCell.identifier, for: indexPath) as? FormulaCell else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: NameAndFormulaImageCell.identifier, for: indexPath) as? NameAndFormulaImageCell else {
       return UITableViewCell()
     }
     
