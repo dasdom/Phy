@@ -599,7 +599,13 @@
                           {
                             "id": "alpha",
                             "imageName": "neigungswinkel_abk",
-                            "placeholder": "rad"
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
                           }
                         ],
                         "results": [
@@ -2293,6 +2299,7 @@
                     ]
                   },
                   {
+                    "title" : "Gravitationspotential",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationspotential",
@@ -2321,10 +2328,10 @@
                           }
                         ]
                       }
-                    ],
-                    "title" : "Gravitationspotential"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationspotential_abk",
@@ -2350,10 +2357,10 @@
                         "imageName" : "abstand_abk",
                         "title" : "AbstandAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationspotential_einh",
@@ -2375,17 +2382,16 @@
                         "imageName" : "radius_einh",
                         "title" : "AbstandEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationskonstante",
                         "title" : "Gravitationskonstante"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
                 ]
               },
@@ -2394,6 +2400,15 @@
                 "title" : "freier Fall",
                 "details" : [
                   {
+                    "detailItems": [
+                      {
+                        "imageName": "free_fall_image",
+                        "type": "image"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Freier Fall",
                     "detailItems" : [
                       {
                         "imageName" : "freierFall03",
@@ -2401,16 +2416,47 @@
                       },
                       {
                         "imageName" : "freierFall02",
-                        "title" : "Geschwindigkeit"
+                        "title" : "Geschwindigkeit",
+                        "inputs": [
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "-9.80665×#t",
+                            "imageName": "freierFall02"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "freierFall01",
-                        "title" : "Ort"
+                        "title" : "Ort",
+                        "inputs": [
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "hoehe_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#h-0.5×9.80665×#t^2",
+                            "imageName": "freierFall01"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Freier Fall"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung_abk",
@@ -2424,10 +2470,10 @@
                         "imageName" : "hoehe_abk",
                         "title" : "HoeheAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung_einh",
@@ -2441,17 +2487,16 @@
                         "imageName" : "hoehe_einh",
                         "title" : "HoeheEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
                 ]
               },
@@ -2460,15 +2505,42 @@
                 "title" : "Fluchtgeschwindigkeit",
                 "details" : [
                   {
+                    "detailItems": [
+                      {
+                        "imageName": "escape_velocity_image",
+                        "type": "image"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Fluchtgeschwindigkeit",
                     "detailItems" : [
                       {
                         "imageName" : "fluchtgeschwindigkeit_allgemein",
-                        "title" : "Fluchtgeschwindigkeit allgemein"
+                        "title" : "Fluchtgeschwindigkeit allgemein",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse3_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "radiusR_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(2×6.673e-11×#m/#r)",
+                            "imageName": "fluchtgeschwindigkeit_allgemein"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Fluchtgeschwindigkeit"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationskonstante_abk",
@@ -2482,10 +2554,10 @@
                         "imageName" : "radiusR_abk",
                         "title" : "RadiusRAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_einh",
@@ -2503,32 +2575,47 @@
                         "imageName" : "radiusR_einh",
                         "title" : "RadiusREinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationskonstante",
                         "title" : "Gravitationskonstante"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
                 ]
               },
               {
+                "imageName" : "fluchtgeschwindigkeit_erde",
+                "title" : "Fluchtgeschwindigkeit der Erde",
                 "details" : [
                   {
+                    "title" : "Fluchtgeschwindigkeit der Erde",
                     "detailItems" : [
                       {
                         "imageName" : "fluchtgeschwindigkeit_erde",
-                        "title" : "Fluchtgeschwindigkeit Erde"
+                        "title" : "Fluchtgeschwindigkeit Erde",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "radiusR_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(2×9.80665×#r)",
+                            "imageName": "fluchtgeschwindigkeit_erde"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Fluchtgeschwindigkeit der Erde"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung_abk",
@@ -2538,10 +2625,10 @@
                         "imageName" : "radiusR_abk",
                         "title" : "RadiusRAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_einh",
@@ -2555,38 +2642,46 @@
                         "imageName" : "radiusR_einh",
                         "title" : "RadiusREinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
-                ],
-                "imageName" : "fluchtgeschwindigkeit_erde",
-                "title" : "Fluchtgeschwindigkeit der Erde"
+                ]
               }
             ]
           },
           {
             "formulas" : [
               {
+                "imageName" : "schieferWurf_beschleunigung",
+                "title" : "Beschleunigung (schiefer Wurf)",
                 "details" : [
                   {
+                    "detailItems" : [
+                      {
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Beschleunigung (schiefer Wurf)",
                     "detailItems" : [
                       {
                         "imageName" : "schieferWurf_beschleunigung",
                         "title" : "Beschleunigung"
                       }
-                    ],
-                    "title" : "Beschleunigung (schiefer Wurf)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "beschleunigung02_abk",
@@ -2596,10 +2691,10 @@
                         "imageName" : "gravitationsbeschleunigung_abk",
                         "title" : "GravitationsbeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "beschleunigung_einh",
@@ -2609,34 +2704,71 @@
                         "imageName" : "gravitationsbeschleunigung_einh",
                         "title" : "GravitationsbeschleunigungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
-                ],
-                "imageName" : "schieferWurf_beschleunigung",
-                "title" : "Beschleunigung (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_x",
+                "title" : "x(t) (schiefer Wurf)",
                 "details" : [
                   {
                     "detailItems" : [
                       {
-                        "imageName" : "schieferWurf_x",
-                        "title" : "x(t)"
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
                       }
-                    ],
-                    "title" : "x(t) (schiefer Wurf)"
+                    ]
                   },
                   {
+                    "title" : "x(t) (schiefer Wurf)",
+                    "detailItems" : [
+                      {
+                        "imageName" : "schieferWurf_x",
+                        "title" : "x(t)",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0×#t×cos(#alpha)",
+                            "imageName": "schieferWurf_x"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "X_abk",
@@ -2654,10 +2786,10 @@
                         "imageName" : "neigungswinkel_abk",
                         "title" : "AbwurfwinkelAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "X_einh",
@@ -2671,25 +2803,62 @@
                         "imageName" : "zeit_einh",
                         "title" : "ZeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "schieferWurf_x",
-                "title" : "x(t) (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_y",
+                "title" : "y(t) (schiefer Wurf)",
                 "details" : [
                   {
                     "detailItems" : [
                       {
-                        "imageName" : "schieferWurf_y",
-                        "title" : "y(t)"
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
                       }
-                    ],
-                    "title" : "y(t) (schiefer Wurf)"
+                    ]
                   },
                   {
+                    "title" : "y(t) (schiefer Wurf)",
+                    "detailItems" : [
+                      {
+                        "imageName" : "schieferWurf_y",
+                        "title" : "y(t)",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0×#t×sin(#alpha)-0.5×9.80665×#t^2",
+                            "imageName": "schieferWurf_y"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "Y_abk",
@@ -2711,10 +2880,10 @@
                         "imageName" : "gravitationsbeschleunigung_abk",
                         "title" : "GravitationsbeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "Y_einh",
@@ -2732,34 +2901,66 @@
                         "imageName" : "gravitationsbeschleunigung_einh",
                         "title" : "GravitationsbeschleunigungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
-                ],
-                "imageName" : "schieferWurf_y",
-                "title" : "y(t) (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_vx",
+                "title" : "horizontale Geschwindigkeit (schiefer Wurf)",
                 "details" : [
                   {
                     "detailItems" : [
                       {
-                        "imageName" : "schieferWurf_vx",
-                        "title" : "horizontaleGeschwindigkeit"
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
                       }
-                    ],
-                    "title" : "horizontale Geschwindigkeit"
+                    ]
                   },
                   {
+                    "title" : "horizontale Geschwindigkeit",
+                    "detailItems" : [
+                      {
+                        "imageName" : "schieferWurf_vx",
+                        "title" : "horizontaleGeschwindigkeit",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0×cos(#alpha)",
+                            "imageName": "schieferWurf_vx"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_abk",
@@ -2773,34 +2974,71 @@
                         "imageName" : "neigungswinkel_abk",
                         "title" : "AbwurfwinkelAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_einh",
                         "title" : "GeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "schieferWurf_vx",
-                "title" : "horizontale Geschwindigkeit (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_vy",
+                "title" : "vertikale Geschwindigkeit (schiefer Wurf)",
                 "details" : [
                   {
                     "detailItems" : [
                       {
-                        "imageName" : "schieferWurf_vy",
-                        "title" : "VertikaleGeschwindigkeit"
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
                       }
-                    ],
-                    "title" : "vertikale Geschwindigkeit"
+                    ]
                   },
                   {
+                    "title" : "vertikale Geschwindigkeit",
+                    "detailItems" : [
+                      {
+                        "imageName" : "schieferWurf_vy",
+                        "title" : "VertikaleGeschwindigkeit",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk",
+                            "placeholder": "s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0×sin(#alpha)-9.80665×#t",
+                            "imageName": "schieferWurf_vy"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_abk",
@@ -2822,10 +3060,10 @@
                         "imageName" : "gravitationsbeschleunigung_abk",
                         "title" : "GravitationsbeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_einh",
@@ -2839,24 +3077,31 @@
                         "imageName" : "gravitationsbeschleunigung_einh",
                         "title" : "GravitationsbeschleunigungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
-                ],
-                "imageName" : "schieferWurf_vy",
-                "title" : "vertikale Geschwindigkeit (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_komponentengleichung",
+                "title" : "Komponentengleichung (schiefer Wurf)",
                 "details" : [
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
                   {
                     "detailItems" : [
                       {
@@ -2921,22 +3166,55 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "schieferWurf_komponentengleichung",
-                "title" : "Komponentengleichung (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_maximalhoehe",
+                "title" : "Maximalhöhe (schiefer Wurf)",
                 "details" : [
                   {
+                    "detailItems" : [
+                      {
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Maximalhöhe (schiefer Wurf)",
                     "detailItems" : [
                       {
                         "imageName" : "schieferWurf_maximalhoehe",
-                        "title" : "Maximalhöhe"
+                        "title" : "Maximalhöhe",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0^2×(sin(#alpha))^2÷(2×9.80665)",
+                            "imageName": "schieferWurf_maximalhoehe"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Maximalhöhe (schiefer Wurf)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "neigungswinkel_abk",
@@ -2950,10 +3228,10 @@
                         "imageName" : "gravitationsbeschleunigung_abk",
                         "title" : "GravitationsbeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_einh",
@@ -2963,34 +3241,66 @@
                         "imageName" : "gravitationsbeschleunigung_einh",
                         "title" : "GravitationsbeschleunigungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
-                ],
-                "imageName" : "schieferWurf_maximalhoehe",
-                "title" : "Maximalhöhe (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_maximalweite",
+                "title" : "Maximalweite (schiefer Wurf)",
                 "details" : [
                   {
+                    "detailItems" : [
+                      {
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Maximalweite (schiefer Wurf)",
                     "detailItems" : [
                       {
                         "imageName" : "schieferWurf_maximalweite",
-                        "title" : "Maximalweite"
+                        "title" : "Maximalweite",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0^2×sin(2×#alpha)÷9.80665",
+                            "imageName": "schieferWurf_maximalweite"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Maximalweite (schiefer Wurf)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "neigungswinkel_abk",
@@ -3004,10 +3314,10 @@
                         "imageName" : "gravitationsbeschleunigung_abk",
                         "title" : "GravitationsbeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_einh",
@@ -3017,34 +3327,66 @@
                         "imageName" : "gravitationsbeschleunigung_einh",
                         "title" : "GravitationsbeschleunigungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
-                ],
-                "imageName" : "schieferWurf_maximalweite",
-                "title" : "Maximalweite (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_steigzeit",
+                "title" : "Steigzeit (schiefer Wurf)",
                 "details" : [
                   {
                     "detailItems" : [
                       {
-                        "imageName" : "schieferWurf_steigzeit",
-                        "title" : "Steigzeit"
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
                       }
-                    ],
-                    "title" : "Steigzeit (schiefer Wurf)"
+                    ]
                   },
                   {
+                    "title" : "Steigzeit (schiefer Wurf)",
+                    "detailItems" : [
+                      {
+                        "imageName" : "schieferWurf_steigzeit",
+                        "title" : "Steigzeit",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v0×sin(#alpha)÷9.80665",
+                            "imageName": "schieferWurf_steigzeit"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "zeit_abk",
@@ -3062,8 +3404,7 @@
                         "imageName" : "gravitationsbeschleunigung_abk",
                         "title" : "GravitationsbeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
                     "detailItems" : [
@@ -3091,17 +3432,49 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "schieferWurf_steigzeit",
-                "title" : "Steigzeit (schiefer Wurf)"
+                ]
               },
               {
+                "imageName" : "schieferWurf_wurfdauer",
+                "title" : "Wurfdauer (schiefer Wurf)",
                 "details" : [
                   {
                     "detailItems" : [
                       {
+                        "imageName" : "oblique_throw_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
                         "imageName" : "schieferWurf_wurfdauer",
-                        "title" : "Wurfdauer"
+                        "title" : "Wurfdauer",
+                        "inputs": [
+                          {
+                            "id": "v0",
+                            "imageName": "V0_abk",
+                            "placeholder": "m / s"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk",
+                            "placeholder": ""
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "placeholder": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2×#v0×sin(#alpha)÷9.80665",
+                            "imageName": "schieferWurf_wurfdauer"
+                          }
+                        ]
                       }
                     ],
                     "title" : "Wurfdauer (schiefer Wurf)"
@@ -3153,9 +3526,7 @@
                     ],
                     "title" : "Konstanten"
                   }
-                ],
-                "imageName" : "schieferWurf_wurfdauer",
-                "title" : "Wurfdauer (schiefer Wurf)"
+                ]
               }
             ],
             "title" : "schiefer Wurf"

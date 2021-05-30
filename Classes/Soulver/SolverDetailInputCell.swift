@@ -12,8 +12,8 @@ import UIKit
 
 class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
 
-  let textField: UITextField
   let abbreviationImageView: UIImageView
+  let textField: UITextField
   private var imageHeightConstraint: NSLayoutConstraint?
   private var imageWidthConstraint: NSLayoutConstraint?
   
@@ -27,6 +27,8 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     textField.keyboardType = .decimalPad
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+    
+    selectionStyle = .none
     
     let stackView = UIStackView(arrangedSubviews: [abbreviationImageView, textField])
     stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -81,6 +83,8 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     let size = image.size
     imageWidthConstraint = abbreviationImageView.widthAnchor.constraint(equalTo: abbreviationImageView.heightAnchor, multiplier: size.width/size.height)
     imageWidthConstraint?.isActive = true
+    
+    textField.placeholder = item.placeholder
     
     traitCollectionDidChange(nil)
   }

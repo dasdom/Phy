@@ -11,7 +11,15 @@ class SolverDetailViewControllerTests: XCTestCase {
   var window: UIWindow!
   
   override func setUp() {
-    let solver = SolverTool(title: "Arbeit", imageName: "arbeit", inputs: [SolverInput(id: "a", imageName: "a", placeholder: "a"), SolverInput(id: "b", imageName: "b", placeholder: "b")], results: [SolverResult(formula: "#a+#b", imageName: "a", imageNameShort: nil), SolverResult(formula: "#a-#b", imageName: "a", imageNameShort: nil)])
+    let solver = SolverTool(title: "Arbeit",
+                            imageName: "arbeit",
+                            inputs: [
+                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: nil),
+                              SolverInput(id: "b", imageName: "b", placeholder: "b", inputType: nil)
+                            ], results: [
+                              SolverResult(formula: "#a+#b", imageName: "a", imageNameShort: nil),
+                              SolverResult(formula: "#a-#b", imageName: "a", imageNameShort: nil)
+                            ])
     sut = SolverDetailViewController(tool: solver)
     
     window = UIWindow(frame: UIScreen.main.bounds)
@@ -164,6 +172,23 @@ class SolverDetailViewControllerTests: XCTestCase {
     XCTAssertTrue(inputCell.textField.isDescendant(of: inputCell.contentView))
     XCTAssertTrue(inputCell.abbreviationImageView.isDescendant(of: inputCell.contentView))
   }
+  
+  func test_cellForRow_returnsRadAndDegreesSelectionCell() throws {
+    let solver = SolverTool(title: "Foo",
+                            imageName: "foobar",
+                            inputs: [
+                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: .angleType)
+                            ],
+                            results: [])
+    sut = SolverDetailViewController(tool: solver)
+    
+    let cell = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 1))
+
+    let radOrDegreeCell = try XCTUnwrap(cell as? SolverDetailRadOrDegreeInputCell)
+    let segmentedControl = radOrDegreeCell.angleTypeSegmentedControl
+    XCTAssertTrue(segmentedControl.isDescendant(of: radOrDegreeCell))
+    XCTAssertEqual(segmentedControl.selectedSegmentIndex, 0)
+  }
 
   func test_cellForRow_retunsButtonCell() {
     // when
@@ -204,6 +229,50 @@ class SolverDetailViewControllerTests: XCTestCase {
     
     let resultCell1 = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 1, section: 3)) as! SolverDetailResultCell
     XCTAssertEqual("= 42-23\n= 19", resultCell1.resultLabel.text)
+  }
+  
+  func test_calculate_whenAngleIsGivenAndAngleTypeIsSetToRad_calculatesCorrectly() throws {
+    let solver = SolverTool(title: "Foobar",
+                            imageName: "foobar",
+                            inputs: [
+                              SolverInput(id: "alpha", imageName: "alpha", placeholder: "alpha", inputType: nil),
+                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: .angleType)
+                            ], results: [
+                              SolverResult(formula: "sin(#alpha)", imageName: "a", imageNameShort: nil)
+                            ])
+    sut = SolverDetailViewController(tool: solver)
+    let inputCell0 = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 1)) as! SolverDetailInputCell
+    _ = inputCell0.textField.delegate?.textField?(inputCell0.textField, shouldChangeCharactersIn: NSRange(location: 0, length: 0), replacementString: "0.5235987756")
+    
+    sut.calculate()
+    
+    let resultCell = try XCTUnwrap(sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 3)) as? SolverDetailResultCell)
+    XCTAssertEqual("= sin(0.5235987756)\n= 0.5", resultCell.resultLabel.text)
+  }
+  
+  func test_calculate_whenAngleIsGivenAndAngleTypeIsSetToDeg_calculatesCorrectly() throws {
+    let solver = SolverTool(title: "Foobar",
+                            imageName: "foobar",
+                            inputs: [
+                              SolverInput(id: "alpha", imageName: "alpha", placeholder: "alpha", inputType: nil),
+                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: .angleType)
+                            ], results: [
+                              SolverResult(formula: "sin(#alpha)", imageName: "a", imageNameShort: nil)
+                            ])
+    sut = SolverDetailViewController(tool: solver)
+    let inputCell0 = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 1)) as! SolverDetailInputCell
+    _ = inputCell0.textField.delegate?.textField?(inputCell0.textField, shouldChangeCharactersIn: NSRange(location: 0, length: 0), replacementString: "30")
+    let inputCell1 = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 1, section: 1)) as! SolverDetailRadOrDegreeInputCell
+    inputCell1.angleTypeSegmentedControl.selectedSegmentIndex = 1
+    inputCell1.angleTypeSegmentedControl.sendActions(for: .valueChanged)
+    let window = UIWindow(frame: CGRect(x: 0, y: 0, width: 320, height: 600))
+    window.rootViewController = sut
+    window.makeKeyAndVisible()
+    
+    sut.calculate()
+    
+    let resultCell = try XCTUnwrap(sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 3)) as? SolverDetailResultCell)
+    XCTAssertEqual("= sin(30)\n= 0.5", resultCell.resultLabel.text)
   }
   
   func test_settingOnlyFirstInput_doesNotEnabledButton() {

@@ -1,5 +1,5 @@
 //  Created by dasdom on 10.08.19.
-//  
+//  Copyright © 2021 dasdom. All rights reserved.
 //
 
 import UIKit
