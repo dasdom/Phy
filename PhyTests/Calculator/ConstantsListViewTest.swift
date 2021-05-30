@@ -19,7 +19,7 @@ class ConstantsListViewTest: XCTestCase {
   func test_constantsListView_snapshotTest() {
     let view = ConstantsListView()
     
-    assertSnapshot(matching: view, as: .image, record: true)
+    assertSnapshot(matching: view, as: .image)
   }
   
 }
