@@ -3535,15 +3535,66 @@
             "formulas" : [
               {
                 "imageName" : "ersterKepler",
-                "title" : "1. Keplersches Gesetz"
+                "title" : "1. Keplersches Gesetz",
+                "details" : [
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "mechanics_ellipse_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "ersterKepler"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "imageName" : "zweiterKepler",
-                "title" : "2. Keplersches Gesetz"
+                "title" : "2. Keplersches Gesetz",
+                "details" : [
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "mechanics_kepler_two_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "zweiterKepler"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "imageName" : "dritterKepler",
-                "title" : "3. Keplersches Gesetz"
+                "title" : "3. Keplersches Gesetz",
+                "details" : [
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "mechanics_kepler_three_image",
+                        "type" : "image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems" : [
+                      {
+                        "imageName" : "dritterKepler"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "title" : "Keplerschen Gesetze"
@@ -3552,6 +3603,14 @@
             "formulas" : [
               {
                 "details" : [
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "mechanics_circular_momentum_image",
+                        "type": "image"
+                      }
+                    ]
+                  },
                   {
                     "detailItems" : [
                       {
@@ -3990,17 +4049,43 @@
                 "title" : "Trägheitsmoment"
               },
               {
+                "imageName" : "satzVonSteiner",
+                "title" : "Satz von Steiner",
                 "details" : [
                   {
+                    "title" : "Satz von Steiner",
                     "detailItems" : [
                       {
                         "imageName" : "satzVonSteiner",
-                        "title" : "SatzVonSteiner"
+                        "title" : "SatzVonSteiner",
+                        "inputs": [
+                          {
+                            "id": "j0",
+                            "imageName": "traegheitsmomentHaupt_abk",
+                            "placeholder": "kg m^2"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "abstandZurDrehachse_abk",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#j0+#r^2×#m",
+                            "imageName": "satzVonSteiner"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Satz von Steiner"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "traegheitsmoment_abk",
@@ -4018,10 +4103,10 @@
                         "imageName" : "masse_abk",
                         "title" : "MasseAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "traegheitsmoment_einh",
@@ -4035,29 +4120,55 @@
                         "imageName" : "masse_einh",
                         "title" : "MasseEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "satzVonSteiner",
-                "title" : "Satz von Steiner"
+                ]
               },
               {
+                "imageName" : "rotationsarbeit",
+                "title" : "Rotationsarbeit",
                 "details" : [
                   {
+                    "detailItems": [
+                      {
+                        "imageName": "mechanics_rotation_work_image",
+                        "type": "image"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Rotationsarbeit",
                     "detailItems" : [
                       {
                         "imageName" : "rotationsarbeit",
-                        "title" : "Rotationsarbeit"
+                        "title" : "Rotationsarbeit",
+                        "inputs": [
+                          {
+                            "id": "M",
+                            "imageName": "drehmoment01_abk",
+                            "placeholder": "N m"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "winkel_abk",
+                            "placeholder": "rad"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#M×#alpha",
+                            "imageName": "rotationsarbeit"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "drehmoment_const",
                         "title" : "konstantesDrehmoment"
                       }
-                    ],
-                    "title" : "Rotationsarbeit"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "arbeit_abk",
@@ -4071,10 +4182,10 @@
                         "imageName" : "winkel_abk",
                         "title" : "WinkelAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "arbeit_einh",
@@ -4088,16 +4199,16 @@
                         "imageName" : "winkel_einh",
                         "title" : "WinkelEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "rotationsarbeit",
-                "title" : "Rotationsarbeit"
+                ]
               },
               {
+                "imageName" : "rotationsenergie01",
+                "title" : "Rotationsenergie",
                 "details" : [
                   {
+                    "title" : "Rotationsenergie",
                     "detailItems" : [
                       {
                         "imageName" : "rotationsenergie01",
@@ -4107,10 +4218,10 @@
                         "imageName" : "rotationsenergie02",
                         "title" : "Rotationsenergie02"
                       }
-                    ],
-                    "title" : "Rotationsenergie"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "rotationsenergie01_abk",
@@ -4128,10 +4239,10 @@
                         "imageName" : "drehimpuls02_abk",
                         "title" : "DrehimpulsAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "rotationsenergie01_einh",
@@ -4149,12 +4260,9 @@
                         "imageName" : "drehimpuls01_einh",
                         "title" : "DrehimpulsEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "rotationsenergie01",
-                "title" : "Rotationsenergie"
+                ]
               },
               {
                 "details" : [
