@@ -190,6 +190,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   // MARK: -
   @objc func angleTypeChanged(_ sender: UISegmentedControl) {
     angleType = AngleType(rawValue: sender.selectedSegmentIndex)
+    calculate()
   }
   
   @objc func calculate() {
@@ -247,7 +248,11 @@ extension SolverDetailViewController: SolverInputAccessoryViewProtocol {
     let numberOfRowsInInputSection = tableView.numberOfRows(inSection: 1)
     var textFieldFound = false
     for i in 0..<numberOfRowsInInputSection {
-      guard let cell = tableView.cellForRow(at: IndexPath(row: i, section: 1)) as? SolverDetailInputCell else { return }
+      guard let cell = tableView.cellForRow(at: IndexPath(row: i, section: 1)) as? SolverDetailInputCell else {
+        currentTextField?.resignFirstResponder()
+        calculate()
+        return
+      }
       
       if true == textFieldFound {
         cell.textField.becomeFirstResponder()

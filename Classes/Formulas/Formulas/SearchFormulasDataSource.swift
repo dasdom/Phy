@@ -24,12 +24,14 @@ class SearchFormulasDataSource: FormulasDataSource, SearchFormulasDataSourceProt
     var sections: [FormulaSection] = []
     
     for formulaSection in allFormulaSections {
-      if formulaSection.title.contains(string) {
+      let lowercaseTitle = formulaSection.title.localized.lowercased()
+      if lowercaseTitle.contains(string.lowercased()) {
         sections.append(formulaSection)
         continue
       }
       let formulas = formulaSection.formulas.filter { formula -> Bool in
-        return (formula.title?.contains(string) ?? false)
+        let lowercaseTitle = formula.title?.localized.lowercased()
+        return (lowercaseTitle?.contains(string.lowercased()) ?? false)
       }
       if formulas.count > 0 {
         sections.append(FormulaSection(title: formulaSection.title, formulas: formulas))
