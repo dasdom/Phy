@@ -2,6 +2,7 @@
   {
     "specialFields" : [
       {
+        "title" : "Mechanik",
         "formulaSections" : [
           {
             "title" : "Newtonsche Gesetze",
@@ -2658,6 +2659,7 @@
             ]
           },
           {
+            "title" : "schiefer Wurf",
             "formulas" : [
               {
                 "imageName" : "schieferWurf_beschleunigung",
@@ -3528,10 +3530,10 @@
                   }
                 ]
               }
-            ],
-            "title" : "schiefer Wurf"
+            ]
           },
           {
+            "title" : "Keplerschen Gesetze",
             "formulas" : [
               {
                 "imageName" : "ersterKepler",
@@ -3596,12 +3598,14 @@
                   }
                 ]
               }
-            ],
-            "title" : "Keplerschen Gesetze"
+            ]
           },
           {
+            "title" : "Drehbewegung",
             "formulas" : [
               {
+                "imageName" : "drehimpuls01",
+                "title" : "Drehimpuls",
                 "details" : [
                   {
                     "detailItems": [
@@ -3612,6 +3616,7 @@
                     ]
                   },
                   {
+                    "title" : "Drehimpuls",
                     "detailItems" : [
                       {
                         "imageName" : "drehimpuls01",
@@ -3621,10 +3626,10 @@
                         "imageName" : "drehimpuls02",
                         "title" : "Drehimpuls02"
                       }
-                    ],
-                    "title" : "Drehimpuls"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "drehimpuls01_abk",
@@ -3646,10 +3651,10 @@
                         "imageName" : "winkelgeschwindigkeit_abk",
                         "title" : "WinkelgeschwindigkeitAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "drehimpuls01_einh",
@@ -3671,208 +3676,135 @@
                         "imageName" : "winkelgeschwindigkeit_einh",
                         "title" : "WinkelgeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "drehimpuls01",
-                "title" : "Drehimpuls"
+                ]
               },
               {
-                "details" : [
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "drehimpuls02",
-                        "title" : "Drehimpuls02"
-                      },
-                      {
-                        "imageName" : "drehimpuls01",
-                        "title" : "Drehimpuls01"
-                      }
-                    ],
-                    "title" : "Drehimpuls"
-                  },
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "drehimpuls01_abk",
-                        "title" : "DrehimpulsAbk"
-                      },
-                      {
-                        "imageName" : "abstandZurDrehachse_abk",
-                        "title" : "AbstandZurDrehachseAbk"
-                      },
-                      {
-                        "imageName" : "impuls_abk",
-                        "title" : "ImpulsAbk"
-                      },
-                      {
-                        "imageName" : "traegheitsmoment_abk",
-                        "title" : "TraegheitsmomentAbk"
-                      },
-                      {
-                        "imageName" : "winkelgeschwindigkeit_abk",
-                        "title" : "WinkelgeschwindigkeitAbk"
-                      }
-                    ],
-                    "title" : "Abkürzung"
-                  },
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "drehimpuls01_einh",
-                        "title" : "DrehimpulsEinh"
-                      },
-                      {
-                        "imageName" : "radius_einh",
-                        "title" : "RadiusEinh"
-                      },
-                      {
-                        "imageName" : "impuls_einh",
-                        "title" : "ImpulsEinh"
-                      },
-                      {
-                        "imageName" : "traegheitsmoment_einh",
-                        "title" : "TraegheitsmomentEinh"
-                      },
-                      {
-                        "imageName" : "winkelgeschwindigkeit_einh",
-                        "title" : "WinkelgeschwindigkeitEinh"
-                      }
-                    ],
-                    "title" : "Einheiten"
-                  }
-                ],
                 "imageName" : "drehimpuls02",
-                "title" : "Drehimpuls"
-              },
-              {
+                "title" : "Drehimpuls",
                 "details" : [
                   {
+                    "title" : "Drehimpuls",
+                    "detailItems" : [
+                      {
+                        "imageName" : "drehimpuls02",
+                        "title" : "Drehimpuls02"
+                      },
+                      {
+                        "imageName" : "drehimpuls01",
+                        "title" : "Drehimpuls01"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
+                    "detailItems" : [
+                      {
+                        "imageName" : "drehimpuls01_abk",
+                        "title" : "DrehimpulsAbk"
+                      },
+                      {
+                        "imageName" : "abstandZurDrehachse_abk",
+                        "title" : "AbstandZurDrehachseAbk"
+                      },
+                      {
+                        "imageName" : "impuls_abk",
+                        "title" : "ImpulsAbk"
+                      },
+                      {
+                        "imageName" : "traegheitsmoment_abk",
+                        "title" : "TraegheitsmomentAbk"
+                      },
+                      {
+                        "imageName" : "winkelgeschwindigkeit_abk",
+                        "title" : "WinkelgeschwindigkeitAbk"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Einheiten",
+                    "detailItems" : [
+                      {
+                        "imageName" : "drehimpuls01_einh",
+                        "title" : "DrehimpulsEinh"
+                      },
+                      {
+                        "imageName" : "radius_einh",
+                        "title" : "RadiusEinh"
+                      },
+                      {
+                        "imageName" : "impuls_einh",
+                        "title" : "ImpulsEinh"
+                      },
+                      {
+                        "imageName" : "traegheitsmoment_einh",
+                        "title" : "TraegheitsmomentEinh"
+                      },
+                      {
+                        "imageName" : "winkelgeschwindigkeit_einh",
+                        "title" : "WinkelgeschwindigkeitEinh"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "imageName" : "drehimpulserhaltungssatz",
+                "title" : "Drehimpulserhaltungssatz",
+                "details" : [
+                  {
+                    "title" : "Drehimpulserhaltungssatz",
                     "detailItems" : [
                       {
                         "imageName" : "drehimpulserhaltungssatz",
                         "title" : "Drehimpulserhaltungssatz"
                       }
-                    ],
-                    "title" : "Drehimpulserhaltungssatz"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "einzeldrehimpuls_abk",
                         "title" : "EinzeldrehimpulsAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "einzeldrehimpuls_einh",
                         "title" : "EinzeldrehimpulsEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "drehimpulserhaltungssatz",
-                "title" : "Drehimpulserhaltungssatz"
+                ]
               },
               {
-                "details" : [
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "drehmoment01",
-                        "title" : "Drehmoment01"
-                      },
-                      {
-                        "imageName" : "drehmoment02",
-                        "title" : "Drehmoment02"
-                      },
-                      {
-                        "imageName" : "drehmoment03",
-                        "title" : "Drehmoment03"
-                      }
-                    ],
-                    "title" : "Drehmoment"
-                  },
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "drehmoment01_abk",
-                        "title" : "Drehmoment01Abk"
-                      },
-                      {
-                        "imageName" : "abstandZurDrehachse_abk",
-                        "title" : "AbstandZurDrehachseAbk"
-                      },
-                      {
-                        "imageName" : "kraft_abk",
-                        "title" : "KraftAbk"
-                      },
-                      {
-                        "imageName" : "traegheitsmoment_abk",
-                        "title" : "TraegheitsmomentAbk"
-                      },
-                      {
-                        "imageName" : "winkelgeschwindigkeit_abk",
-                        "title" : "WinkelgeschwindigkeitAbk"
-                      }
-                    ],
-                    "title" : "Abkürzung"
-                  },
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "drehmoment01_einh",
-                        "title" : "DrehmomentEinh"
-                      },
-                      {
-                        "imageName" : "radius_einh",
-                        "title" : "RadiusEinh"
-                      },
-                      {
-                        "imageName" : "kraft_einh",
-                        "title" : "KraftEinh"
-                      },
-                      {
-                        "imageName" : "traegheitsmoment_einh",
-                        "title" : "TraegheitsmomentEinh"
-                      },
-                      {
-                        "imageName" : "winkelgeschwindigkeit_einh",
-                        "title" : "WinkelgeschwindigkeitEinh"
-                      }
-                    ],
-                    "title" : "Einheiten"
-                  }
-                ],
                 "imageName" : "drehmoment01",
-                "title" : "Drehmoment"
-              },
-              {
+                "title" : "Drehmoment",
                 "details" : [
                   {
+                    "title" : "Drehmoment",
                     "detailItems" : [
-                      {
-                        "imageName" : "drehmoment02",
-                        "title" : "Drehmoment02"
-                      },
                       {
                         "imageName" : "drehmoment01",
                         "title" : "Drehmoment01"
                       },
                       {
+                        "imageName" : "drehmoment02",
+                        "title" : "Drehmoment02"
+                      },
+                      {
                         "imageName" : "drehmoment03",
                         "title" : "Drehmoment03"
                       }
-                    ],
-                    "title" : "Drehmoment"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "drehmoment01_abk",
@@ -3894,10 +3826,10 @@
                         "imageName" : "winkelgeschwindigkeit_abk",
                         "title" : "WinkelgeschwindigkeitAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "drehmoment01_einh",
@@ -3919,21 +3851,17 @@
                         "imageName" : "winkelgeschwindigkeit_einh",
                         "title" : "WinkelgeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
+                ]
+              },
+              {
                 "imageName" : "drehmoment02",
-                "title" : "Drehmoment"
-              },
-              {
+                "title" : "Drehmoment",
                 "details" : [
                   {
+                    "title" : "Drehmoment",
                     "detailItems" : [
-                      {
-                        "imageName" : "drehmoment03",
-                        "title" : "Drehmoment03"
-                      },
                       {
                         "imageName" : "drehmoment02",
                         "title" : "Drehmoment02"
@@ -3941,11 +3869,15 @@
                       {
                         "imageName" : "drehmoment01",
                         "title" : "Drehmoment01"
+                      },
+                      {
+                        "imageName" : "drehmoment03",
+                        "title" : "Drehmoment03"
                       }
-                    ],
-                    "title" : "Drehmoment"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "drehmoment01_abk",
@@ -3967,10 +3899,10 @@
                         "imageName" : "winkelgeschwindigkeit_abk",
                         "title" : "WinkelgeschwindigkeitAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "drehmoment01_einh",
@@ -3992,25 +3924,98 @@
                         "imageName" : "winkelgeschwindigkeit_einh",
                         "title" : "WinkelgeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "drehmoment03",
-                "title" : "Drehmoment"
+                ]
               },
               {
+                "imageName" : "drehmoment03",
+                "title" : "Drehmoment",
                 "details" : [
                   {
+                    "title" : "Drehmoment",
+                    "detailItems" : [
+                      {
+                        "imageName" : "drehmoment03",
+                        "title" : "Drehmoment03"
+                      },
+                      {
+                        "imageName" : "drehmoment02",
+                        "title" : "Drehmoment02"
+                      },
+                      {
+                        "imageName" : "drehmoment01",
+                        "title" : "Drehmoment01"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
+                    "detailItems" : [
+                      {
+                        "imageName" : "drehmoment01_abk",
+                        "title" : "Drehmoment01Abk"
+                      },
+                      {
+                        "imageName" : "abstandZurDrehachse_abk",
+                        "title" : "AbstandZurDrehachseAbk"
+                      },
+                      {
+                        "imageName" : "kraft_abk",
+                        "title" : "KraftAbk"
+                      },
+                      {
+                        "imageName" : "traegheitsmoment_abk",
+                        "title" : "TraegheitsmomentAbk"
+                      },
+                      {
+                        "imageName" : "winkelgeschwindigkeit_abk",
+                        "title" : "WinkelgeschwindigkeitAbk"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Einheiten",
+                    "detailItems" : [
+                      {
+                        "imageName" : "drehmoment01_einh",
+                        "title" : "DrehmomentEinh"
+                      },
+                      {
+                        "imageName" : "radius_einh",
+                        "title" : "RadiusEinh"
+                      },
+                      {
+                        "imageName" : "kraft_einh",
+                        "title" : "KraftEinh"
+                      },
+                      {
+                        "imageName" : "traegheitsmoment_einh",
+                        "title" : "TraegheitsmomentEinh"
+                      },
+                      {
+                        "imageName" : "winkelgeschwindigkeit_einh",
+                        "title" : "WinkelgeschwindigkeitEinh"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "imageName" : "traegheitsmoment",
+                "title" : "Trägheitsmoment",
+                "details" : [
+                  {
+                    "title" : "Trägheitsmoment",
                     "detailItems" : [
                       {
                         "imageName" : "traegheitsmoment",
                         "title" : "Traegheitsmoment"
                       }
-                    ],
-                    "title" : "Trägheitsmoment"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "traegheitsmoment_abk",
@@ -4024,10 +4029,10 @@
                         "imageName" : "masse_abk",
                         "title" : "MasseAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "traegheitsmoment_einh",
@@ -4041,12 +4046,9 @@
                         "imageName" : "masse_einh",
                         "title" : "MasseEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "traegheitsmoment",
-                "title" : "Trägheitsmoment"
+                ]
               },
               {
                 "imageName" : "satzVonSteiner",
@@ -4212,11 +4214,47 @@
                     "detailItems" : [
                       {
                         "imageName" : "rotationsenergie01",
-                        "title" : "Rotationsenergie01"
+                        "title" : "Rotationsenergie01",
+                        "inputs": [
+                          {
+                            "id": "J",
+                            "imageName": "traegheitsmoment_abk",
+                            "placeholder": "kg m^2"
+                          },
+                          {
+                            "id": "omega",
+                            "imageName": "winkelgeschwindigkeit_abk",
+                            "placeholder": "s^(-1)"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "0.5×#J×#omega^2",
+                            "imageName": "rotationsenergie01"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "rotationsenergie02",
-                        "title" : "Rotationsenergie02"
+                        "title" : "Rotationsenergie02",
+                        "inputs": [
+                          {
+                            "id": "L",
+                            "imageName": "drehimpuls02_abk",
+                            "placeholder": "kg m^2 s^(-1)"
+                          },
+                          {
+                            "id": "J",
+                            "imageName": "traegheitsmoment_abk",
+                            "placeholder": "kg m^2"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#L^2÷(2×#J)",
+                            "imageName": "rotationsenergie02"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -4265,21 +4303,60 @@
                 ]
               },
               {
+                "imageName" : "rotationsenergie02",
+                "title" : "Rotationsenergie",
                 "details" : [
                   {
+                    "title" : "Rotationsenergie",
                     "detailItems" : [
                       {
                         "imageName" : "rotationsenergie02",
-                        "title" : "Rotationsenergie02"
+                        "title" : "Rotationsenergie02",
+                        "inputs": [
+                          {
+                            "id": "L",
+                            "imageName": "drehimpuls02_abk",
+                            "placeholder": "kg m^2 s^(-1)"
+                          },
+                          {
+                            "id": "J",
+                            "imageName": "traegheitsmoment_abk",
+                            "placeholder": "kg m^2"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#L^2÷(2×#J)",
+                            "imageName": "rotationsenergie02"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "rotationsenergie01",
-                        "title" : "Rotationsenergie01"
+                        "title" : "Rotationsenergie01",
+                        "inputs": [
+                          {
+                            "id": "J",
+                            "imageName": "traegheitsmoment_abk",
+                            "placeholder": "kg m^2"
+                          },
+                          {
+                            "id": "omega",
+                            "imageName": "winkelgeschwindigkeit_abk",
+                            "placeholder": "s^(-1)"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "0.5×#J×#omega^2",
+                            "imageName": "rotationsenergie01"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Rotationsenergie"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "rotationsenergie01_abk",
@@ -4297,10 +4374,10 @@
                         "imageName" : "drehimpuls02_abk",
                         "title" : "DrehimpulsAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "rotationsenergie01_einh",
@@ -4318,122 +4395,79 @@
                         "imageName" : "drehimpuls01_einh",
                         "title" : "DrehimpulsEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "rotationsenergie02",
-                "title" : "Rotationsenergie"
+                ]
               },
               {
-                "details" : [
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "zentripetalkraft01",
-                        "title" : "Zentripetalkraft01"
-                      },
-                      {
-                        "imageName" : "zentripetalkraft02",
-                        "title" : "Zentripetalkraft02"
-                      },
-                      {
-                        "imageName" : "kreisgeschwindigkeit",
-                        "title" : "Kreisgeschwindigkeit"
-                      }
-                    ],
-                    "title" : "Zentripetalkraft"
-                  },
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "zentripetalkraft01_abk",
-                        "title" : "ZentripetalkraftAbk"
-                      },
-                      {
-                        "imageName" : "masse_abk",
-                        "title" : "MasseAbk"
-                      },
-                      {
-                        "imageName" : "geschwindigkeit_abk",
-                        "title" : "GeschwindigkeitAbk"
-                      },
-                      {
-                        "imageName" : "radius_abk",
-                        "title" : "RadiusAbk"
-                      },
-                      {
-                        "imageName" : "winkelgeschwindigkeit_abk",
-                        "title" : "WinkelgeschwindigkeitAbk"
-                      },
-                      {
-                        "imageName" : "periode_abk",
-                        "title" : "PeriodeAbk"
-                      },
-                      {
-                        "imageName" : "frequenz_abk",
-                        "title" : "FrequenzAbk"
-                      }
-                    ],
-                    "title" : "Abkürzung"
-                  },
-                  {
-                    "detailItems" : [
-                      {
-                        "imageName" : "kraft_einh",
-                        "title" : "KraftEinh"
-                      },
-                      {
-                        "imageName" : "masse_einh",
-                        "title" : "MasseEinh"
-                      },
-                      {
-                        "imageName" : "geschwindigkeit_einh",
-                        "title" : "GeschwindigkeitEinh"
-                      },
-                      {
-                        "imageName" : "radius_einh",
-                        "title" : "RadiusEinh"
-                      },
-                      {
-                        "imageName" : "winkelgeschwindigkeit_einh",
-                        "title" : "WinkelgeschwindigkeitEinh"
-                      },
-                      {
-                        "imageName" : "periode_einh",
-                        "title" : "PeriodeEinh"
-                      },
-                      {
-                        "imageName" : "frequenz_einh",
-                        "title" : "FrequenzEinh"
-                      }
-                    ],
-                    "title" : "Einheiten"
-                  }
-                ],
                 "imageName" : "zentripetalkraft01",
-                "title" : "Zentripetalkraft"
-              },
-              {
+                "title" : "Zentripetalkraft",
                 "details" : [
                   {
+                    "title" : "Zentripetalkraft",
                     "detailItems" : [
                       {
-                        "imageName" : "zentripetalkraft02",
-                        "title" : "Zentripetalkraft02"
+                        "imageName" : "zentripetalkraft01",
+                        "title" : "Zentripetalkraft01",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s^(-1)"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "radius_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m×#v^2÷#r",
+                            "imageName": "zentripetalkraft01"
+                          }
+                        ]
                       },
                       {
-                        "imageName" : "zentripetalkraft01",
-                        "title" : "Zentripetalkraft01"
+                        "imageName" : "zentripetalkraft02",
+                        "title" : "Zentripetalkraft02",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "omega",
+                            "imageName": "winkelgeschwindigkeit_abk",
+                            "placeholder": "s^(-1)"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "radius_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m×#omega^2×#r",
+                            "imageName": "zentripetalkraft02"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "kreisgeschwindigkeit",
                         "title" : "Kreisgeschwindigkeit"
                       }
-                    ],
-                    "title" : "Zentripetalkraft"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "zentripetalkraft01_abk",
@@ -4463,10 +4497,10 @@
                         "imageName" : "frequenz_abk",
                         "title" : "FrequenzAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "kraft_einh",
@@ -4496,25 +4530,160 @@
                         "imageName" : "frequenz_einh",
                         "title" : "FrequenzEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "zentripetalkraft02",
-                "title" : "Zentripetalkraft"
+                ]
               },
               {
+                "imageName" : "zentripetalkraft02",
+                "title" : "Zentripetalkraft",
                 "details" : [
                   {
+                    "title" : "Zentripetalkraft",
+                    "detailItems" : [
+                      {
+                        "imageName" : "zentripetalkraft02",
+                        "title" : "Zentripetalkraft02",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "omega",
+                            "imageName": "winkelgeschwindigkeit_abk",
+                            "placeholder": "s^(-1)"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "radius_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m×#omega^2×#r",
+                            "imageName": "zentripetalkraft02"
+                          }
+                        ]
+                      },
+                      {
+                        "imageName" : "zentripetalkraft01",
+                        "title" : "Zentripetalkraft01",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s^(-1)"
+                          },
+                          {
+                            "id": "r",
+                            "imageName": "radius_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m×#v^2÷#r",
+                            "imageName": "zentripetalkraft01"
+                          }
+                        ]
+                      },
+                      {
+                        "imageName" : "kreisgeschwindigkeit",
+                        "title" : "Kreisgeschwindigkeit"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Abkürzung",
+                    "detailItems" : [
+                      {
+                        "imageName" : "zentripetalkraft01_abk",
+                        "title" : "ZentripetalkraftAbk"
+                      },
+                      {
+                        "imageName" : "masse_abk",
+                        "title" : "MasseAbk"
+                      },
+                      {
+                        "imageName" : "geschwindigkeit_abk",
+                        "title" : "GeschwindigkeitAbk"
+                      },
+                      {
+                        "imageName" : "radius_abk",
+                        "title" : "RadiusAbk"
+                      },
+                      {
+                        "imageName" : "winkelgeschwindigkeit_abk",
+                        "title" : "WinkelgeschwindigkeitAbk"
+                      },
+                      {
+                        "imageName" : "periode_abk",
+                        "title" : "PeriodeAbk"
+                      },
+                      {
+                        "imageName" : "frequenz_abk",
+                        "title" : "FrequenzAbk"
+                      }
+                    ]
+                  },
+                  {
+                    "title" : "Einheiten",
+                    "detailItems" : [
+                      {
+                        "imageName" : "kraft_einh",
+                        "title" : "KraftEinh"
+                      },
+                      {
+                        "imageName" : "masse_einh",
+                        "title" : "MasseEinh"
+                      },
+                      {
+                        "imageName" : "geschwindigkeit_einh",
+                        "title" : "GeschwindigkeitEinh"
+                      },
+                      {
+                        "imageName" : "radius_einh",
+                        "title" : "RadiusEinh"
+                      },
+                      {
+                        "imageName" : "winkelgeschwindigkeit_einh",
+                        "title" : "WinkelgeschwindigkeitEinh"
+                      },
+                      {
+                        "imageName" : "periode_einh",
+                        "title" : "PeriodeEinh"
+                      },
+                      {
+                        "imageName" : "frequenz_einh",
+                        "title" : "FrequenzEinh"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "imageName" : "kreisgeschwindigkeit",
+                "title" : "Kreisgeschwindigkeit",
+                "details" : [
+                  {
+                    "title" : "Kreisgeschwindigkeit",
                     "detailItems" : [
                       {
                         "imageName" : "kreisgeschwindigkeit",
                         "title" : "Kreisgeschwindigkeit"
                       }
-                    ],
-                    "title" : "Kreisgeschwindigkeit"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_abk",
@@ -4536,10 +4705,10 @@
                         "imageName" : "frequenz_abk",
                         "title" : "FrequenzAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeit_einh",
@@ -4561,30 +4730,30 @@
                         "imageName" : "frequenz_einh",
                         "title" : "FrequenzEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "kreisgeschwindigkeit",
-                "title" : "Kreisgeschwindigkeit"
+                ]
               }
-            ],
-            "title" : "Drehbewegung"
+            ]
           },
           {
+            "title" : "harmonischer Oszillator",
             "formulas" : [
               {
+                "imageName" : "harmonischer_oszi_dgl",
+                "title" : "Differentialgleichung (harmonischer Oszillator)",
                 "details" : [
                   {
+                    "title" : "Differentialgleichung (harmonischer Oszillator)",
                     "detailItems" : [
                       {
                         "imageName" : "harmonischer_oszi_dgl",
                         "title" : "DGLHarmonischerOszi"
                       }
-                    ],
-                    "title" : "Differentialgleichung (harmonischer Oszillator)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "masse_abk",
@@ -4598,10 +4767,10 @@
                         "imageName" : "federkonstante_abk",
                         "title" : "FederkonstanteAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "masse_einh",
@@ -4615,16 +4784,16 @@
                         "imageName" : "federkonstante_einh",
                         "title" : "FederkonstanteEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "harmonischer_oszi_dgl",
-                "title" : "Differentialgleichung (harmonischer Oszillator)"
+                ]
               },
               {
+                "imageName" : "harmonischer_oszi_bewegungsgl",
+                "title" : "Bewegungsgleichung (harmonischer Oszillator)",
                 "details" : [
                   {
+                    "title" : "Bewegungsgleichung (harmonischer Oszillator)",
                     "detailItems" : [
                       {
                         "imageName" : "harmonischer_oszi_bewegungsgl",
@@ -4638,10 +4807,10 @@
                         "imageName" : "harmonischer_oszi_beschleunigung",
                         "title" : "BeschleunigungHarmonischerOszi"
                       }
-                    ],
-                    "title" : "Bewegungsgleichung (harmonischer Oszillator)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "auslenkung_abk",
@@ -4671,10 +4840,10 @@
                         "imageName" : "beschleunigung_abk",
                         "title" : "BeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "auslenkung_einh",
@@ -4700,25 +4869,43 @@
                         "imageName" : "beschleunigung_einh",
                         "title" : "BeschleunigungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "harmonischer_oszi_bewegungsgl",
-                "title" : "Bewegungsgleichung (harmonischer Oszillator)"
+                ]
               },
               {
+                "imageName" : "periodendauer",
+                "title" : "Periodendauer (harmonischer Oszillator)",
                 "details" : [
                   {
+                    "title" : "Periodendauer (harm. Oszi.)",
                     "detailItems" : [
                       {
                         "imageName" : "periodendauer",
-                        "title" : "Periodendauer"
+                        "title" : "Periodendauer",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "D",
+                            "imageName": "federkonstante_abk",
+                            "placeholder": "kg s^(-2)"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2×𝜋×sqrt(#m÷#D)",
+                            "imageName": "periodendauer"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Periodendauer (harm. Oszi.)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "periode_abk",
@@ -4732,10 +4919,10 @@
                         "imageName" : "federkonstante_abk",
                         "title" : "FederkonstanteAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "periode_einh",
@@ -4746,28 +4933,41 @@
                         "title" : "MasseEinh"
                       },
                       {
-                        "imageName" : "federkonstante_einh",
+                        "imageName" : "spring_constant_unit",
                         "title" : "FederkonstanteEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "periodendauer",
-                "title" : "Periodendauer (harmonischer Oszillator)"
+                ]
               },
               {
+                "imageName" : "periodendauer_fadenpendel",
+                "title" : "Periodendauer (Fadenpendel)",
                 "details" : [
                   {
+                    "title" : "Periodendauer (Fadenpendel)",
                     "detailItems" : [
                       {
                         "imageName" : "periodendauer_fadenpendel",
-                        "title" : "PeriodendauerFadenpendel"
+                        "title" : "PeriodendauerFadenpendel",
+                        "inputs": [
+                          {
+                            "id": "l",
+                            "imageName": "fadenlaenge_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2×𝜋×sqrt(#l÷9.80665)",
+                            "imageName": "periodendauer_fadenpendel"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Periodendauer (Fadenpendel)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "periode_abk",
@@ -4781,10 +4981,10 @@
                         "imageName" : "gravitationsbeschleunigung_abk",
                         "title" : "GravitationsbeschleunigungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "periode_einh",
@@ -4798,34 +4998,47 @@
                         "imageName" : "gravitationsbeschleunigung_einh",
                         "title" : "GravitationsbeschleunigungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   },
                   {
+                    "title" : "Konstanten",
                     "detailItems" : [
                       {
                         "imageName" : "gravitationsbeschleunigung",
                         "title" : "Gravitationsbeschleunigung"
                       }
-                    ],
-                    "title" : "Konstanten"
+                    ]
                   }
-                ],
-                "imageName" : "periodendauer_fadenpendel",
-                "title" : "Periodendauer (Fadenpendel)"
+                ]
               },
               {
+                "imageName" : "kreisfrequenz",
+                "title" : "Kreisfrequenz",
                 "details" : [
                   {
+                    "title" : "Kreisfrequenz",
                     "detailItems" : [
                       {
                         "imageName" : "kreisfrequenz",
-                        "title" : "Kreisfrequenz"
+                        "title" : "Kreisfrequenz",
+                        "inputs": [
+                          {
+                            "id": "T",
+                            "imageName": "periode_abk",
+                            "placeholder": "s"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2×𝜋÷#T",
+                            "imageName": "kreisfrequenz"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Kreisfrequenz"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "winkelgeschwindigkeit_abk",
@@ -4839,10 +5052,10 @@
                         "imageName" : "frequenz_abk",
                         "title" : "FrequenzAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "winkelgeschwindigkeit_einh",
@@ -4856,25 +5069,43 @@
                         "imageName" : "frequenz_einh",
                         "title" : "FrequenzEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "kreisfrequenz",
-                "title" : "Kreisfrequenz"
+                ]
               },
               {
+                "imageName" : "e_pot_schwingung",
+                "title" : "potentielle Energie (harmonischer Oszillator)",
                 "details" : [
                   {
+                    "title" : "potentielle Energie eines Oszillators",
                     "detailItems" : [
                       {
                         "imageName" : "e_pot_schwingung",
-                        "title" : "EPotSchwingung01"
+                        "title" : "EPotSchwingung01",
+                        "inputs": [
+                          {
+                            "id": "D",
+                            "imageName": "federkonstante_abk",
+                            "placeholder": "kg s^(-2)"
+                          },
+                          {
+                            "id": "x",
+                            "imageName": "auslenkung_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "0.5×#D×#x^2",
+                            "imageName": "e_pot_schwingung"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "potentielle Energie eines Oszillators"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "e_pot_abk",
@@ -4888,42 +5119,60 @@
                         "imageName" : "auslenkung_abk",
                         "title" : "AuslenkungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "e_pot_einh",
                         "title" : "EPotEinh"
                       },
                       {
-                        "imageName" : "federkonstante_einh",
+                        "imageName" : "spring_constant_unit",
                         "title" : "FederkonstanteEinh"
                       },
                       {
                         "imageName" : "auslenkung_einh",
                         "title" : "AuslenkungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "e_pot_schwingung",
-                "title" : "potentielle Energie (harmonischer Oszillator)"
+                ]
               },
               {
+                "imageName" : "federkraft",
+                "title" : "Federkraft",
                 "details" : [
                   {
+                    "title" : "Federkraft",
                     "detailItems" : [
                       {
                         "imageName" : "federkraft",
-                        "title" : "Federkraft"
+                        "title" : "Federkraft",
+                        "inputs": [
+                          {
+                            "id": "D",
+                            "imageName": "federkonstante_abk",
+                            "placeholder": "kg s^(-2)"
+                          },
+                          {
+                            "id": "x",
+                            "imageName": "auslenkung_abk",
+                            "placeholder": "m"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "-#x×#D",
+                            "imageName": "federkraft"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Federkraft"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "federkraft_abk",
@@ -4937,10 +5186,10 @@
                         "imageName" : "auslenkung_abk",
                         "title" : "AuslenkungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "kraft_einh",
@@ -4954,54 +5203,54 @@
                         "imageName" : "auslenkung_einh",
                         "title" : "AuslenkungEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "federkraft",
-                "title" : "Federkraft"
+                ]
               }
-            ],
-            "title" : "harmonischer Oszillator"
+            ]
           },
           {
+            "title" : "Lagrange Formalismus",
             "formulas" : [
               {
+                "imageName" : "kleinsteWirkung",
+                "title" : "Prinzip der kleinsten Wirkung",
                 "details" : [
                   {
+                    "title" : "Prinzip der kleinsten Wirkung",
                     "detailItems" : [
                       {
                         "imageName" : "kleinsteWirkung",
                         "title" : "PrinzipDerKleinstenWirkung"
                       }
-                    ],
-                    "title" : "Prinzip der kleinsten Wirkung"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "wirkung_abk",
                         "title" : "WirkungAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   }
-                ],
-                "imageName" : "kleinsteWirkung",
-                "title" : "Prinzip der kleinsten Wirkung"
+                ]
               },
               {
+                "imageName" : "lagrangeFunktion",
+                "title" : "Lagrangefunktion",
                 "details" : [
                   {
+                    "title" : "Lagrangefunktion",
                     "detailItems" : [
                       {
                         "imageName" : "lagrangeFunktion",
                         "title" : "Lagrangefunktion"
                       }
-                    ],
-                    "title" : "Lagrangefunktion"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "kinetischeEnergieLagrange_abk",
@@ -5011,49 +5260,49 @@
                         "imageName" : "potentielleEnergieLagrange_abk",
                         "title" : "potentielleEnerigeLagrangeAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   }
-                ],
-                "imageName" : "lagrangeFunktion",
-                "title" : "Lagrangefunktion"
+                ]
               },
               {
+                "imageName" : "randbedingungenLagrange",
+                "title" : "Randbedingung",
                 "details" : [
                   {
+                    "title" : "Randbedingung",
                     "detailItems" : [
                       {
                         "imageName" : "randbedingungenLagrange",
                         "title" : "Randbedingung"
                       }
-                    ],
-                    "title" : "Randbedingung"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "generalisierteKoordinaten_abk",
                         "title" : "generalisierteKoordinatenAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   }
-                ],
-                "imageName" : "randbedingungenLagrange",
-                "title" : "Randbedingung"
+                ]
               },
               {
+                "imageName" : "eulerLagrangeGleichungen",
+                "title" : "Euler-Lagrange-Gleichungen",
                 "details" : [
                   {
+                    "title" : "Euler-Lagrange-Gleichungen",
                     "detailItems" : [
                       {
                         "imageName" : "eulerLagrangeGleichungen",
                         "title" : "EulerLagrangeGleichungen"
                       }
-                    ],
-                    "title" : "Euler-Lagrange-Gleichungen"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "lagrangefunktion_abk",
@@ -5067,25 +5316,25 @@
                         "imageName" : "generalisierteGeschwindigkeiten_abk",
                         "title" : "generalisierteGeschwindigkeitenAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   }
-                ],
-                "imageName" : "eulerLagrangeGleichungen",
-                "title" : "Euler-Lagrange-Gleichungen"
+                ]
               },
               {
+                "imageName" : "eulerLagrangeGleichungenNichtKonservativ",
+                "title" : "Euler-Lagrange-Gleichungen (nicht-konservatives System)",
                 "details" : [
                   {
+                    "title" : "Euler-Lagrange-Gleichungen (nicht-konservatives System)",
                     "detailItems" : [
                       {
                         "imageName" : "eulerLagrangeGleichungenNichtKonservativ",
                         "title" : "EulerLagrangeGleichungenNichtKonservativesSystem"
                       }
-                    ],
-                    "title" : "Euler-Lagrange-Gleichungen (nicht-konservatives System)"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "kinetischeEnergieLagrange_abk",
@@ -5103,18 +5352,13 @@
                         "imageName" : "generalisierteKraefte_abk",
                         "title" : "generalisierteKraefteAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   }
-                ],
-                "imageName" : "eulerLagrangeGleichungenNichtKonservativ",
-                "title" : "Euler-Lagrange-Gleichungen (nicht-konservatives System)"
+                ]
               }
-            ],
-            "title" : "Lagrange Formalismus"
+            ]
           }
-        ],
-        "title" : "Mechanik"
+        ]
       },
       {
         "formulaSections" : [
