@@ -42,5 +42,13 @@ class FormulaListCell: NameAndFormulaImageCell {
         toolsIndicatorImageView.isHidden = true
       }
     }
+    
+    let accessibilityText = item.imageName.localized
+    if accessibilityText != item.imageName {
+      formulaImageView.isAccessibilityElement = true
+      formulaImageView.accessibilityLabel = accessibilityText
+    } else {
+      formulaImageView.isAccessibilityElement = false
+    }
   }
 }

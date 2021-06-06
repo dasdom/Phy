@@ -5361,12 +5361,16 @@
         ]
       },
       {
+        "title" : "Relativitätstheorie",
         "formulaSections" : [
           {
             "formulas" : [
               {
+                "imageName" : "xStrich",
+                "title" : "Lorentz-Transformation",
                 "details" : [
                   {
+                    "title" : "Lorentz-Transformation",
                     "detailItems" : [
                       {
                         "imageName" : "ctStrich",
@@ -5396,10 +5400,10 @@
                         "imageName" : "beta",
                         "title" : "beta"
                       }
-                    ],
-                    "title" : "Lorentz-Transformation"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "xyzctStrich_abk",
@@ -5413,10 +5417,10 @@
                         "imageName" : "geschwindigkeit_abk",
                         "title" : "GeschwindigkeitVonSStrichAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "xyzctStrich_einh",
@@ -5430,12 +5434,9 @@
                         "imageName" : "geschwindigkeit_einh",
                         "title" : "GeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "xStrich",
-                "title" : "Lorentz-Transformation"
+                ]
               },
               {
                 "details" : [
@@ -5734,8 +5735,7 @@
             ],
             "title" : "None"
           }
-        ],
-        "title" : "Relativitätstheorie"
+        ]
       },
       {
         "formulaSections" : [
