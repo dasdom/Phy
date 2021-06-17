@@ -5374,11 +5374,57 @@
                     "detailItems" : [
                       {
                         "imageName" : "ctStrich",
-                        "title" : "ctStrich"
+                        "title" : "ctStrich",
+                        "inputs": [
+                          {
+                            "id": "ct",
+                            "imageName": "ct_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "x",
+                            "imageName": "x_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#ct-#beta×#x)÷sqrt(1-#beta^2)",
+                            "imageName": "ctStrich"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "xStrich",
-                        "title" : "xStrich"
+                        "title" : "xStrich",
+                        "inputs": [
+                          {
+                            "id": "x",
+                            "imageName": "x_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "ct",
+                            "imageName": "ct_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#x-#beta×#ct)÷sqrt(1-#beta^2)",
+                            "imageName": "ctStrich"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "yStrich",
@@ -5390,15 +5436,74 @@
                       },
                       {
                         "imageName" : "ct",
-                        "title" : "ct"
+                        "title" : "ct",
+                        "inputs": [
+                          {
+                            "id": "ctprime",
+                            "imageName": "ct_prime_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "xprime",
+                            "imageName": "x_prime_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#ctprime+#beta×#xprime)÷sqrt(1-#beta^2)",
+                            "imageName": "ct"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "x",
-                        "title" : "x"
+                        "title" : "x",
+                        "inputs": [
+                          {
+                            "id": "xprime",
+                            "imageName": "x_prime_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "ctprime",
+                            "imageName": "ct_prime_abbr",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#xprime+#beta×#ctprime)÷sqrt(1-#beta^2)",
+                            "imageName": "x"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beta",
-                        "title" : "beta"
+                        "title" : "beta",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s⁻¹"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v÷2.99792458e8",
+                            "imageName": "beta"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -5439,21 +5544,55 @@
                 ]
               },
               {
+                "imageName" : "massenzunahme",
+                "title" : "Massenzunahme",
                 "details" : [
                   {
+                    "title" : "Massenzunahme",
                     "detailItems" : [
                       {
                         "imageName" : "massenzunahme",
-                        "title" : "Massenzunahme"
+                        "title" : "Massenzunahme",
+                        "inputs": [
+                          {
+                            "id": "m0",
+                            "imageName": "masse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m0÷sqrt(1-#beta^2)",
+                            "imageName": "massenzunahme"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beta",
-                        "title" : "Beta"
+                        "title" : "Beta",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s⁻¹"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v÷2.99792458e8",
+                            "imageName": "beta"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Massenzunahme"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "masse_abk",
@@ -5467,10 +5606,10 @@
                         "imageName" : "geschwindigkeit_abk",
                         "title" : "GeschwindigkeitVonSStrichAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "masse_einh",
@@ -5480,29 +5619,60 @@
                         "imageName" : "geschwindigkeit_einh",
                         "title" : "GeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "massenzunahme",
-                "title" : "Massenzunahme"
+                ]
               },
               {
+                "imageName" : "zeitdilatation",
+                "title" : "Zeitdilatation",
                 "details" : [
                   {
+                    "title" : "Zeitdilatation",
                     "detailItems" : [
                       {
                         "imageName" : "zeitdilatation",
-                        "title" : "Zeitdilatation"
+                        "title" : "Zeitdilatation",
+                        "inputs": [
+                          {
+                            "id": "Deltat",
+                            "imageName": "deltatStrich_abk",
+                            "placeholder": "s"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#Deltat÷sqrt(1-#beta^2)",
+                            "imageName": "zeitdilatation"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beta",
-                        "title" : "Beta"
+                        "title" : "Beta",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s⁻¹"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v÷2.99792458e8",
+                            "imageName": "beta"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Zeitdilatation"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "deltat_abk",
@@ -5516,10 +5686,10 @@
                         "imageName" : "geschwindigkeit_abk",
                         "title" : "GeschwindigkeitVonSStrichAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "zeit_einh",
@@ -5529,29 +5699,60 @@
                         "imageName" : "geschwindigkeit_einh",
                         "title" : "GeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "zeitdilatation",
-                "title" : "Zeitdilatation"
+                ]
               },
               {
+                "imageName" : "laengenkontraktion",
+                "title" : "Längenkontraktion",
                 "details" : [
                   {
+                    "title" : "Längenkontraktion",
                     "detailItems" : [
                       {
                         "imageName" : "laengenkontraktion",
-                        "title" : "Längenkontraktion"
+                        "title" : "Längenkontraktion",
+                        "inputs": [
+                          {
+                            "id": "Deltax",
+                            "imageName": "deltaxStrich_abk",
+                            "placeholder": "m"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(1-#beta^2)×#Deltax",
+                            "imageName": "laengenkontraktion"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beta",
-                        "title" : "Beta"
+                        "title" : "Beta",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s⁻¹"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v÷2.99792458e8",
+                            "imageName": "beta"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Längenkontraktion"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "deltax_abk",
@@ -5565,10 +5766,10 @@
                         "imageName" : "geschwindigkeit_abk",
                         "title" : "GeschwindigkeitVonSStrichAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "deltax_einh",
@@ -5578,25 +5779,43 @@
                         "imageName" : "geschwindigkeit_einh",
                         "title" : "GeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "laengenkontraktion",
-                "title" : "Längenkontraktion"
+                ]
               },
               {
+                "imageName" : "additionVonGeschwindigkeiten",
+                "title" : "Addition von Geschwindigkeiten",
                 "details" : [
                   {
+                    "title" : "Relativistische Addition von Geschwindigkeiten",
                     "detailItems" : [
                       {
                         "imageName" : "additionVonGeschwindigkeiten",
-                        "title" : "AdditionVonGeschwindigkeiten"
+                        "title" : "AdditionVonGeschwindigkeiten",
+                        "inputs": [
+                          {
+                            "id": "uStrich",
+                            "imageName": "geschwindigkeitInSStrich_abk",
+                            "placeholder": "m s⁻¹"
+                          },
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeitVonSStrich_abk",
+                            "placeholder": "m s⁻¹"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#uStrich+#v)÷(1+#uStrich×#v/2.99792458e8^2)",
+                            "imageName": "additionVonGeschwindigkeiten"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Relativistische Addition von Geschwindigkeiten"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeitInS_abk",
@@ -5610,10 +5829,10 @@
                         "imageName" : "geschwindigkeitVonSStrich_abk",
                         "title" : "GeschwindigkeitVonSStrichAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "geschwindigkeitInS_einh",
@@ -5623,29 +5842,65 @@
                         "imageName" : "geschwindigkeit_einh",
                         "title" : "GeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "additionVonGeschwindigkeiten",
-                "title" : "Addition von Geschwindigkeiten"
+                ]
               },
               {
+                "imageName" : "relativistischerImpuls",
+                "title" : "Relativistischer Impuls",
                 "details" : [
                   {
+                    "title" : "Relativistischer Impuls",
                     "detailItems" : [
                       {
                         "imageName" : "relativistischerImpuls",
-                        "title" : "RelativistischerImpuls"
+                        "title" : "RelativistischerImpuls",
+                        "inputs": [
+                          {
+                            "id": "m0",
+                            "imageName": "ruhemasse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s⁻¹"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_abbr",
+                            "placeholder": ""
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m0×#v÷sqrt(1-#beta^2)",
+                            "imageName": "relativistischerImpuls"
+                          }
+                        ]
                       },
                       {
                         "imageName" : "beta",
-                        "title" : "Beta"
+                        "title" : "Beta",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk",
+                            "placeholder": "m s⁻¹"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v÷2.99792458e8",
+                            "imageName": "beta"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Relativistischer Impuls"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "impuls_abk",
@@ -5659,10 +5914,10 @@
                         "imageName" : "geschwindigkeit_abk",
                         "title" : "GeschwindigkeitAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "impuls_einh",
@@ -5676,25 +5931,43 @@
                         "imageName" : "geschwindigkeit_einh",
                         "title" : "GeschwindigkeitEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "relativistischerImpuls",
-                "title" : "Relativistischer Impuls"
+                ]
               },
               {
+                "imageName" : "energieImpulsBeziehung",
+                "title" : "Energie-Impuls-Beziehung",
                 "details" : [
                   {
+                    "title" : "Energie-Impuls-Beziehung",
                     "detailItems" : [
                       {
                         "imageName" : "energieImpulsBeziehung",
-                        "title" : "EnergieImpulsBeziehung"
+                        "title" : "EnergieImpulsBeziehung",
+                        "inputs": [
+                          {
+                            "id": "m0",
+                            "imageName": "ruhemasse_abk",
+                            "placeholder": "kg"
+                          },
+                          {
+                            "id": "p",
+                            "imageName": "impuls_abk",
+                            "placeholder": "kg m s⁻¹"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt((#m0×2.99792458e8^2)^2+(#p×2.99792458e8)^2)",
+                            "imageName": "energieImpulsBeziehung"
+                          }
+                        ]
                       }
-                    ],
-                    "title" : "Energie-Impuls-Beziehung"
+                    ]
                   },
                   {
+                    "title" : "Abkürzung",
                     "detailItems" : [
                       {
                         "imageName" : "energie_abk",
@@ -5708,10 +5981,10 @@
                         "imageName" : "impuls_abk",
                         "title" : "ImpulsAbk"
                       }
-                    ],
-                    "title" : "Abkürzung"
+                    ]
                   },
                   {
+                    "title" : "Einheiten",
                     "detailItems" : [
                       {
                         "imageName" : "energie_einh",
@@ -5725,12 +5998,9 @@
                         "imageName" : "impuls_einh",
                         "title" : "ImpulsEinh"
                       }
-                    ],
-                    "title" : "Einheiten"
+                    ]
                   }
-                ],
-                "imageName" : "energieImpulsBeziehung",
-                "title" : "Energie-Impuls-Beziehung"
+                ]
               }
             ],
             "title" : "None"

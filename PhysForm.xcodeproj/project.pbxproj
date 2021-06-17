@@ -140,6 +140,7 @@
 		F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5822EB2F2100EB4E26 /* SolverResult.swift */; };
 		F29AEB5B22EB545E00EB4E26 /* SolverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB5A22EB545E00EB4E26 /* SolverDetailViewController.swift */; };
 		F29F212D22E1EB4400426712 /* Legacy_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* Legacy_CalculatorTests.m */; };
+		F29FC6FE2670118D00A46182 /* ConvertersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29FC6FD2670118D00A46182 /* ConvertersTableViewController.swift */; };
 		F2A529F3262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */; };
 		F2D04DD82642B6BD00938EFC /* Abbreviations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */; };
 		F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */; };
@@ -352,6 +353,7 @@
 		F29AEB5822EB2F2100EB4E26 /* SolverResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverResult.swift; sourceTree = "<group>"; };
 		F29AEB5A22EB545E00EB4E26 /* SolverDetailViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SolverDetailViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		F29F212C22E1EB4400426712 /* Legacy_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Legacy_CalculatorTests.m; sourceTree = "<group>"; };
+		F29FC6FD2670118D00A46182 /* ConvertersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertersTableViewController.swift; sourceTree = "<group>"; };
 		F2A120BA149E527100AD3215 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F2A120C514A141CF00AD3215 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceProtocolMock.swift; sourceTree = "<group>"; };
@@ -869,6 +871,7 @@
 				F26C9AE02631E4BF00A1B161 /* ConvertInfo.swift */,
 				F2164FED2632A4FF009FCC64 /* Converter.swift */,
 				F26C9ADC2631E16E00A1B161 /* converter.json */,
+				F29FC6FD2670118D00A46182 /* ConvertersTableViewController.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -1152,6 +1155,7 @@
 				F2DB7D6B231076250098B42A /* TopicDataSource.swift in Sources */,
 				F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */,
 				F2DB7D5823101A730098B42A /* FormulaDetailItem.swift in Sources */,
+				F29FC6FE2670118D00A46182 /* ConvertersTableViewController.swift in Sources */,
 				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
 				F22FEFFD23020026003F3A9B /* SolverDetailImageCell.swift in Sources */,
 				F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */,
@@ -1328,7 +1332,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3;
+				MARKETING_VERSION = 3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1363,7 +1367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3;
+				MARKETING_VERSION = 3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1515,7 +1519,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3;
+				MARKETING_VERSION = 3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";

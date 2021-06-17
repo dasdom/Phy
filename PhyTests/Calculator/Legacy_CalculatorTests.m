@@ -124,4 +124,10 @@
     XCTAssertEqualWithAccuracy(1.4142135623730951, [result doubleValue], 0.0000000001);
 }
 
+- (void)test_calcSeveralParentheses {
+  NSDecimalNumber *result = [calculator calculateString:@"sqrt((2×2.99792458e8^2)^2+(2×2.99792458e8)^2)"];
+
+  XCTAssertEqualWithAccuracy(1.797510357e17, [result doubleValue], 0.000000001e17);
+}
+
 @end

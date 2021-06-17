@@ -183,46 +183,46 @@
 //	if ([dummyString rangeOfString: @"^("].location != NSNotFound) {
 //		[dummyString setString: [self calcPow: dummyString]];
 //	}
-	if ([dummyString rangeOfString: @"exp("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"exp("].location != NSNotFound) {
 		[dummyString setString: [self calcExp: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"ln("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"ln("].location != NSNotFound) {
 		[dummyString setString: [self calcLn: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"log2("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"log2("].location != NSNotFound) {
 		[dummyString setString: [self calcLog2: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"log10("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"log10("].location != NSNotFound) {
 		[dummyString setString: [self calcLog10: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"asin("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"asin("].location != NSNotFound) {
 		[dummyString setString: [self calcAsin: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"acos("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"acos("].location != NSNotFound) {
 		[dummyString setString: [self calcAcos: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"atan("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"atan("].location != NSNotFound) {
 		[dummyString setString: [self calcAtan: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"sin("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"sin("].location != NSNotFound) {
 		[dummyString setString: [self calcSin: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"cos("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"cos("].location != NSNotFound) {
 		[dummyString setString: [self calcCos: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"tan("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"tan("].location != NSNotFound) {
 		[dummyString setString: [self calcTan: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"𝜋"].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"𝜋"].location != NSNotFound) {
 		[dummyString setString: [self calcPi: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"sqrt("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"sqrt("].location != NSNotFound) {
 		[dummyString setString: [self calcSqrt: dummyString]];
 	}
-	if ([dummyString rangeOfString: @"("].location != NSNotFound) {
-		[dummyString setString: [self calcKlammers: dummyString]];
-	}
-  if ([dummyString rangeOfString: @"^("].location != NSNotFound) {
+  while ([dummyString rangeOfString: @"("].location != NSNotFound) {
+    [dummyString setString: [self calcKlammers: dummyString]];
+  }
+  while ([dummyString rangeOfString: @"^("].location != NSNotFound) {
     [dummyString setString: [self calcPow: dummyString]];
   }
 	

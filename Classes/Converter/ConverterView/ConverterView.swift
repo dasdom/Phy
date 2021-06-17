@@ -34,11 +34,11 @@ struct ConverterView: View {
       }
       
       GeometryReader { geometry in
-        VStack {
+        VStack(spacing: 0) {
                     
           ActionRowView(converter: converter)
           
-          HStack {
+          HStack(spacing: 0) {
             NumberButtonsView(converter: converter, geometry: geometry)
             
             ModifierButtonsView(converter: converter, geometry: geometry)
