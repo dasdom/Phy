@@ -13,6 +13,7 @@ extension ConstantsListView: Inspectable {}
 class ConstantsListViewTest: XCTestCase {
 
   func test_constantsListView_snapshotTest() {
+    SnapshotTesting.isRecording = true
     let sut = ConstantsListView()
     let host = UIHostingController(rootView: sut)
     
