@@ -33,8 +33,15 @@ class ConverterViewTests: XCTestCase {
   func test_hasInputText() throws {
     
     let string = try textWith(index: 0, inViewOfType: ValueUnitView.self, withIndex: 0)
-    
-    XCTAssertEqual(string, "Input:")
+
+    let expectedString: String
+    switch language() {
+      case .en:
+        expectedString = "Input:"
+      case .de:
+        expectedString = "Eingabe:"
+    }
+    XCTAssertEqual(string, expectedString)
   }
   
   func test_showsInputValue() throws {
@@ -49,8 +56,15 @@ class ConverterViewTests: XCTestCase {
   func test_hasOutputText() throws {
     
     let string = try textWith(index: 0, inViewOfType: ValueUnitView.self, withIndex: 1)
-    
-    XCTAssertEqual(string, "Output:")
+
+    let expectedString: String
+    switch language() {
+      case .en:
+        expectedString = "Output:"
+      case .de:
+        expectedString = "Ausgabe:"
+    }
+    XCTAssertEqual(string, expectedString)
   }
   
   func test_showsOutputValue() throws {

@@ -140,6 +140,7 @@
 		F29F212D22E1EB4400426712 /* Legacy_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* Legacy_CalculatorTests.m */; };
 		F29FC6FE2670118D00A46182 /* ConvertersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29FC6FD2670118D00A46182 /* ConvertersTableViewController.swift */; };
 		F2A529F3262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */; };
+		F2C8FA75267DD44B008C8F82 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8FA74267DD44B008C8F82 /* TestHelper.swift */; };
 		F2D04DD82642B6BD00938EFC /* Abbreviations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */; };
 		F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */; };
 		F2DB7D4B23101A010098B42A /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4A23101A010098B42A /* TopicViewController.swift */; };
@@ -354,6 +355,8 @@
 		F2A120C514A141CF00AD3215 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceProtocolMock.swift; sourceTree = "<group>"; };
 		F2AC138813659F61006465C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F2C8FA73267DCF6A008C8F82 /* PhysForm.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PhysForm.xctestplan; sourceTree = "<group>"; };
+		F2C8FA74267DD44B008C8F82 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Abbreviations.xcassets; sourceTree = "<group>"; };
 		F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaDetailImageCell.swift; sourceTree = "<group>"; };
 		F2DB7D4A23101A010098B42A /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
@@ -453,6 +456,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				F2D8687B11C6CE27000DC559 /* Resources-iPad */,
+				F2C8FA73267DCF6A008C8F82 /* PhysForm.xctestplan */,
 				F239BAC920F8C0CE00612965 /* PhyTests */,
 				F24201F22645DEA700E0CA97 /* PhyUITests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -681,6 +685,7 @@
 				F20C8285265A26D800A8F3FC /* Extensions */,
 				F239BACC20F8C0CE00612965 /* Info.plist */,
 				F2372E4A22F5AB66003C0605 /* PhyTests-Bridging-Header.h */,
+				F2C8FA74267DD44B008C8F82 /* TestHelper.swift */,
 			);
 			path = PhyTests;
 			sourceTree = "<group>";
@@ -1233,6 +1238,7 @@
 				F2078E322620E0170094D74D /* FormulasCoordinatorTests.swift in Sources */,
 				F2DB7D6423101B510098B42A /* TopicTests.swift in Sources */,
 				F236256E22FE9FEF0075FC2F /* FormulasViewControllerTests.swift in Sources */,
+				F2C8FA75267DD44B008C8F82 /* TestHelper.swift in Sources */,
 				F236257B22FEEB940075FC2F /* PhyFormulaDetailCellTests.swift in Sources */,
 				F20C8290265BFE6A00A8F3FC /* ConverterListTests.swift in Sources */,
 				F236256F22FE9FEF0075FC2F /* FormulasDataSourceTests.swift in Sources */,

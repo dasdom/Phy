@@ -55,6 +55,9 @@ class ChemElementsDataSource : ChemElementsDataSourceProtocol {
   }
   
   func element(for indexPath: IndexPath) -> ChemElement {
+    guard filteredItems.count > indexPath.row else {
+      return ChemElement(abbreviation: "", atomMass: 0, chemieBool: true, electronConfiguration: "", group: "", name: "", ordinal: 0, period: 0, yPos: 0, title: "", pauling: "", mostImportantRadioactiveIsotope: 0, decayType: "", lifetime: "", phaseNorm: "", crystalStructure: "")
+    }
     return filteredItems[indexPath.row]
   }
 }

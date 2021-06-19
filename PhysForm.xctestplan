@@ -1,0 +1,76 @@
+{
+  "configurations" : [
+    {
+      "id" : "11122FE8-15EC-4973-AC57-10B0FCD60673",
+      "name" : "General",
+      "options" : {
+
+      }
+    },
+    {
+      "enabled" : false,
+      "id" : "8D2E64CE-D34C-4601-B66D-1D3A8ADC132E",
+      "name" : "ASan",
+      "options" : {
+        "addressSanitizer" : {
+          "enabled" : true
+        },
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    },
+    {
+      "enabled" : false,
+      "id" : "B78A520A-5E50-4DEC-9308-B4B6DF405D3B",
+      "name" : "TSan",
+      "options" : {
+        "threadSanitizerEnabled" : true,
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    },
+    {
+      "id" : "85703B8A-4D98-4C85-8FAE-B3D1C0419A61",
+      "name" : "German",
+      "options" : {
+        "language" : "de",
+        "region" : "DE"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:PhysForm.xcodeproj",
+          "identifier" : "1D6058900D05DD3D006BFB54",
+          "name" : "PhysForm"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PhysForm.xcodeproj",
+      "identifier" : "1D6058900D05DD3D006BFB54",
+      "name" : "PhysForm"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PhysForm.xcodeproj",
+        "identifier" : "F239BAC720F8C0CD00612965",
+        "name" : "PhyTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "skippedTests" : [
+        "PhyUITests\/test_screenshots()"
+      ],
+      "target" : {
+        "containerPath" : "container:PhysForm.xcodeproj",
+        "identifier" : "F24201F02645DEA700E0CA97",
+        "name" : "PhyUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

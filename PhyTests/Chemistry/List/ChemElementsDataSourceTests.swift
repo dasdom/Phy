@@ -31,7 +31,12 @@ class ChemElementsDataSourceTests: XCTestCase {
   }
   
   func test_filterString_filtersElements() {
-    sut.filterString = "Oxygen"
+    switch language() {
+      case .en:
+        sut.filterString = "Oxygen"
+      case .de:
+        sut.filterString = "Sauerstoff"
+    }
     let firstElement = sut.element(for: IndexPath(row: 0, section: 0))
     XCTAssertEqual("O", firstElement.abbreviation)
   }

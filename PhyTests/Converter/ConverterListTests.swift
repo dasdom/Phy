@@ -22,17 +22,31 @@ class ConverterListTests: XCTestCase {
   }
   
   func test_textWithEnergy_shouldExist() throws {
-    _ = try sut.inspect().find(text: "Energy")
+    let searchText: String
+    switch language() {
+      case .en:
+        searchText = "Energy"
+      case .de:
+        searchText = "Energie"
+    }
+    _ = try sut.inspect().find(text: searchText)
   }
   
   func test_converterView_shouldBeContainedInNavigationLink() throws {
     _ = try sut.inspect().find(ConverterView.self).parent().navigationLink()
   }
 
-  func test_dummy() throws {
-    let link = try sut.inspect().find(navigationLink: "Energy")
+  func test_valueOfSecondEnergyConverter() throws {
+    let searchText: String
+    switch language() {
+      case .en:
+        searchText = "Energy"
+      case .de:
+        searchText = "Energie"
+    }
+    let link = try sut.inspect().find(navigationLink: searchText)
 
     let converterView = try link.view(ConverterView.self).actualView()
-    XCTAssertEqual(converterView.converter.convertInfo.units.first?.value, "1.0")
+    XCTAssertEqual(converterView.converter.convertInfo.units[1].value, "1.602e-13")
   }
 }
