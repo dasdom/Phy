@@ -15,12 +15,12 @@
 - (void)insertFunction:(UIButton *)sender;
 @end
 
-@interface GeneralCalculatorViewControllerTests : XCTestCase
+@interface Legacy_CalculatorViewControllerTests : XCTestCase
 @property CalculatorViewController *sut;
 @property UIWindow *window;
 @end
 
-@implementation GeneralCalculatorViewControllerTests
+@implementation Legacy_CalculatorViewControllerTests
 
 - (void)setUp {
     [super setUp];
@@ -38,54 +38,6 @@
     self.window = nil;
     
     [super tearDown];
-}
-
-- (void)test_removeLastCalcSign1 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"+_"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"_");
-}
-
-- (void)test_removeLastCalcSign2 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"123+_"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"123_");
-}
-
-- (void)test_removeLastCalcSign3 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"1+_2"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"1_2");
-}
-
-- (void)test_removeLastCalcSign4 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"_"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"_");
-}
-
-- (void)test_removeLastCalcSign5 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"1-_2"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"1_2");
-}
-
-- (void)test_removeLastCalcSign6 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"1×_2"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"1_2");
-}
-
-- (void)test_removeLastCalcSign7 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"1÷_2"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"1_2");
-}
-
-- (void)test_removeLastCalcSign8 {
-    NSString *alteredCalcString = [self.sut performSelector:@selector(stringByRemoveLastCalcSignIfNeeded:) withObject:@"1÷_2+3-4×5"];
-    
-    XCTAssertEqualObjects(alteredCalcString, @"1_2+3-4×5");
 }
 
 #pragma mark - Insert
@@ -377,19 +329,19 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(shareButtonPressed:) withObject:nil];
 #pragma clang diagnostic pop
-  
+
     XCTAssertEqual([self.sut.presentedViewController class], [UIAlertController class]);
 }
 
 - (void)doesnt_work_test_sharing_presentsActivityViewController {
     self.sut.historyCalcStrings = [[NSMutableArray alloc] init];
     [self.sut.historyCalcStrings addObject:@{@"calcString": @"foo", @"solution": @(2)}];
- 
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(shareButtonPressed:) withObject:nil];
 #pragma clang diagnostic pop
-  
+
     XCTAssertEqual([self.sut.presentedViewController class], [UIActivityViewController class]);
 }
 
@@ -400,7 +352,7 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(historyButtonPressed:) withObject:nil];
 #pragma clang diagnostic pop
-  
+
     XCTAssertEqual([self.sut.presentedViewController class], [UINavigationController class]);
 }
 
@@ -413,7 +365,7 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(historyButtonPressed:) withObject:nil];
 #pragma clang diagnostic pop
-  
+
     XCTAssertEqual([self.sut.presentedViewController class], [UINavigationController class]);
     UINavigationController *navController = (UINavigationController *)self.sut.presentedViewController;
     HistoryTableViewController *historyController = navController.viewControllers.firstObject;
@@ -432,7 +384,7 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     [self.sut performSelector:@selector(ansButtonPressed:) withObject:nil];
 #pragma clang diagnostic pop
-  
+
     XCTAssertEqual([self.sut.presentedViewController class], [UINavigationController class]);
     UINavigationController *navController = (UINavigationController *)self.sut.presentedViewController;
     HistoryTableViewController *historyController = navController.viewControllers.firstObject;
@@ -442,9 +394,16 @@
     XCTAssertEqual(historyController.isCalcHistory, NO);
 }
 
+- (void)test_converterResultNotification_insertsValueForKeyResult {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ConverterResultNotification" object:nil userInfo:@{@"result" : @"42"}];
+
+    NSString *calcString = [self.sut valueForKey:@"calcString"];
+    XCTAssertEqualObjects(calcString, @"42");
+}
+
 #pragma mark - Helper
 - (NSString *)calcStringWithInitialCalcString:(NSString *)initialCalcString invokingSelector:(SEL)selector fromButtonWithTag:(NSInteger)buttonTag {
-  
+
     [self.sut.calcStringView becomeFirstResponder];
     
     NSRange underScoreRange = NSMakeRange(NSNotFound, 0);
@@ -459,16 +418,16 @@
     }
     
     UIButton *button = [UIButton new];
-  button.tag = buttonTag;
-  [self.sut setValue:[NSMutableString stringWithString:initialCalcString] forKey:@"calcString"];
-  
+    button.tag = buttonTag;
+    [self.sut setValue:[NSMutableString stringWithString:initialCalcString] forKey:@"calcString"];
+
     if (underScoreRange.location != NSNotFound) {
         self.sut.calcStringView.selectedRange = underScoreRange;
     }
-  
-  [self.sut performSelector:selector withObject:button];
-  
-  return [self.sut valueForKey:@"calcString"];
+
+    [self.sut performSelector:selector withObject:button];
+
+    return [self.sut valueForKey:@"calcString"];
 }
 
 @end

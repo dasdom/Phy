@@ -130,4 +130,81 @@
   XCTAssertEqualWithAccuracy(1.797510357e17, [result doubleValue], 0.000000001e17);
 }
 
+- (void)test_calcPi {
+  NSDecimalNumber *result = [calculator calculateString:@"𝜋"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 3.14159265359, 0.0000000001);
+}
+
+- (void)test_2ToThePowerOf3 {
+  NSDecimalNumber *result = [calculator calculateString:@"2^3"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 8, 0.0000000001);
+}
+
+- (void)test_2ToThePowerOf1Plus2 {
+  NSDecimalNumber *result = [calculator calculateString:@"2^(1+2)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 8, 0.0000000001);
+}
+
+- (void)test_exp1_isSomething {
+  NSDecimalNumber *result = [calculator calculateString:@"exp(1)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 2.71828182846, 0.0000000001);
+}
+
+- (void)test_ln10_isSomething {
+  NSDecimalNumber *result = [calculator calculateString:@"ln(10)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 2.302585093, 0.0000000001);
+}
+
+- (void)test_log2_10_isSomething {
+  NSDecimalNumber *result = [calculator calculateString:@"log2(10)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 3.321928095, 0.000000001);
+}
+
+- (void)test_log10_3_isSomething {
+  NSDecimalNumber *result = [calculator calculateString:@"log10(3)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 0.477121255, 0.000000001);
+}
+
+- (void)test_cos1_isSomething {
+  calculator.deg = NO;
+  NSDecimalNumber *result = [calculator calculateString:@"cos(1)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 0.540302306, 0.000000001);
+}
+
+- (void)test_tan1_isSomething {
+  calculator.deg = NO;
+  NSDecimalNumber *result = [calculator calculateString:@"tan(1)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 1.557407725, 0.000000001);
+}
+
+- (void)test_asin1_isSomething {
+  calculator.deg = NO;
+  NSDecimalNumber *result = [calculator calculateString:@"asin(1)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 1.570796327, 0.000000001);
+}
+
+- (void)test_acosZeroPointFive_isSomething {
+  calculator.deg = NO;
+  NSDecimalNumber *result = [calculator calculateString:@"acos(0.5)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 1.047197551, 0.000000001);
+}
+
+- (void)test_atan1_isSomething {
+  calculator.deg = NO;
+  NSDecimalNumber *result = [calculator calculateString:@"atan(1)"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], 0.785398163, 0.000000001);
+}
+
 @end

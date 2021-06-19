@@ -33,7 +33,7 @@ static NSString * const DDHDivide = @"÷";
 - (NSString *)calcAcos: (NSString *)dummyCalcString;
 - (NSString *)calcAtan: (NSString *)dummyCalcString;
 - (NSString *)calcSqrt: (NSString *)dummyCalcString;
-- (NSString *)calcPow: (NSString *)dummyCalcString;
+//- (NSString *)calcPow: (NSString *)dummyCalcString;
 - (NSString *)calcPi: (NSString *)dummyCalcString;
 - (NSString *)calcKlammers: (NSString *)dummyCalcString;
 - (NSRange)getRangeOfSubstringFromString: (NSString *)orgString bySearchingFor: (NSString *)funcString;

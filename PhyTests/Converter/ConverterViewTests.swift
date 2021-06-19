@@ -12,6 +12,7 @@ extension ValueUnitView: Inspectable {}
 extension NumberButtonsView: Inspectable {}
 extension ActionRowView: Inspectable {}
 extension ModifierButtonsView: Inspectable {}
+extension CalcButton: Inspectable {}
 
 class ConverterViewTests: XCTestCase {
   
@@ -77,6 +78,13 @@ class ConverterViewTests: XCTestCase {
     let modifierButtonsView = try sut.inspect().find(ModifierButtonsView.self).actualView()
     
     XCTAssertEqual(modifierButtonsView.converter, converter)
+  }
+
+  func test_oneButtonAddsOne() throws {
+    try sut.inspect().find(CalcButton.self, where: { view in try view.button().labelView().text().string() == "4" }).button().tap()
+
+    XCTAssertEqual(converter.input, "4")
+    XCTAssertEqual(converter.output, "2")
   }
 }
 

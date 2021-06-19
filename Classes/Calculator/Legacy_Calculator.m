@@ -222,9 +222,9 @@
   while ([dummyString rangeOfString: @"("].location != NSNotFound) {
     [dummyString setString: [self calcKlammers: dummyString]];
   }
-  while ([dummyString rangeOfString: @"^("].location != NSNotFound) {
-    [dummyString setString: [self calcPow: dummyString]];
-  }
+//  while ([dummyString rangeOfString: @"^("].location != NSNotFound) {
+//    [dummyString setString: [self calcPow: dummyString]];
+//  }
 	
 	return dummyString;
 }
@@ -466,41 +466,41 @@
 	return returnString;
 }
 
-- (NSString *)calcPow: (NSString *)dummyCalcString {
-    NSRange range = [self getRangeOfSubstringFromString: dummyCalcString bySearchingFor: @"^("];
-    NSInteger indexForSubstring = range.location;
-//    NSString *subString1 = [dummyCalcString substringToIndex: indexForSubstring];
-    indexForSubstring = range.location + range.length;
-    NSString *subString2 = [dummyCalcString substringFromIndex: indexForSubstring];
-//    //NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble:
-//    //                               sqrt([self addFromString: [self getFunctionStringFromString: dummyCalcString forFunction: @"pow(" withRange: range]])];
+//- (NSString *)calcPow: (NSString *)dummyCalcString {
+//    NSRange range = [self getRangeOfSubstringFromString: dummyCalcString bySearchingFor: @"^("];
+//    NSInteger indexForSubstring = range.location;
+////    NSString *subString1 = [dummyCalcString substringToIndex: indexForSubstring];
+//    indexForSubstring = range.location + range.length;
+//    NSString *subString2 = [dummyCalcString substringFromIndex: indexForSubstring];
+////    //NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble:
+////    //                               sqrt([self addFromString: [self getFunctionStringFromString: dummyCalcString forFunction: @"pow(" withRange: range]])];
+////
+////    NSArray *kommaArray = [dummyCalcString componentsSeparatedByString: @","];
+////    NSRange range1 = NSMakeRange(range.location, [[kommaArray objectAtIndex: 0] length] + 1 - range.location);
+////    NSRange range2 = NSMakeRange([[kommaArray objectAtIndex: 0] length], range.length - range1.length + 1);
+////    NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble:
+////                                  pow([[self addFromString:
+////                                        [self getFunctionStringFromString:dummyCalcString
+////                                                              forFunction:@"pow(" withRange:range1]] doubleValue],
+////                                      [[self addFromString:
+////                                        [self getFunctionStringFromString:dummyCalcString
+////                                                              forFunction:@"," withRange:range2]] doubleValue])];
+////    NSString *returnString = [[NSString alloc] initWithFormat: @"%@%@%@", subString1, powResult, subString2];
+////    return returnString;
 //
-//    NSArray *kommaArray = [dummyCalcString componentsSeparatedByString: @","];
-//    NSRange range1 = NSMakeRange(range.location, [[kommaArray objectAtIndex: 0] length] + 1 - range.location);
-//    NSRange range2 = NSMakeRange([[kommaArray objectAtIndex: 0] length], range.length - range1.length + 1);
-//    NSDecimalNumber *powResult = [[NSDecimalNumber alloc] initWithDouble:
-//                                  pow([[self addFromString:
-//                                        [self getFunctionStringFromString:dummyCalcString
-//                                                              forFunction:@"pow(" withRange:range1]] doubleValue],
-//                                      [[self addFromString:
-//                                        [self getFunctionStringFromString:dummyCalcString
-//                                                              forFunction:@"," withRange:range2]] doubleValue])];
-//    NSString *returnString = [[NSString alloc] initWithFormat: @"%@%@%@", subString1, powResult, subString2];
+//    NSArray *squareStrings = [dummyCalcString componentsSeparatedByString: @"^("];
+//    NSDecimalNumber *decimalNumber1 = [self addFromString:[squareStrings objectAtIndex:0]];
+//    NSDecimalNumber *decimalNumber3 = decimalNumber1;
+//    if ([squareStrings count] > 1) {
+//        NSDecimalNumber *decimalNumber2 = [self addFromString:[self getFunctionStringFromString:dummyCalcString
+//                                                                                    forFunction:@"^(" withRange:range]];
+//        decimalNumber3 = (NSDecimalNumber *)[NSDecimalNumber numberWithDouble:
+//                                             pow([decimalNumber1 doubleValue], [decimalNumber2 doubleValue])];
+//    }
+//
+//    NSString *returnString = [[NSString alloc] initWithFormat: @"%@%@", decimalNumber3, subString2];
 //    return returnString;
-    
-    NSArray *squareStrings = [dummyCalcString componentsSeparatedByString: @"^("];
-    NSDecimalNumber *decimalNumber1 = [self addFromString:[squareStrings objectAtIndex:0]];
-    NSDecimalNumber *decimalNumber3 = decimalNumber1;
-    if ([squareStrings count] > 1) {
-        NSDecimalNumber *decimalNumber2 = [self addFromString:[self getFunctionStringFromString:dummyCalcString
-                                                                                    forFunction:@"^(" withRange:range]];
-        decimalNumber3 = (NSDecimalNumber *)[NSDecimalNumber numberWithDouble:
-                                             pow([decimalNumber1 doubleValue], [decimalNumber2 doubleValue])];
-    }
-    
-    NSString *returnString = [[NSString alloc] initWithFormat: @"%@%@", decimalNumber3, subString2];
-    return returnString;
-}
+//}
 
 - (NSString *)calcPi: (NSString *)dummyCalcString {
 	NSRange range = [dummyCalcString rangeOfString: @"𝜋"];

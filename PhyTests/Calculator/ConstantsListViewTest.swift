@@ -4,21 +4,38 @@
 
 import XCTest
 import SnapshotTesting
+import SwiftUI
+import ViewInspector
 @testable import Phy
 
+extension ConstantsListView: Inspectable {}
+
 class ConstantsListViewTest: XCTestCase {
-  
-  override func setUpWithError() throws {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-  }
-  
-  override func tearDownWithError() throws {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-  }
-  
+
   func test_constantsListView_snapshotTest() {
-    let view = ConstantsListView()
-    assertSnapshot(matching: view, as: .image)
+    let sut = ConstantsListView()
+    let host = UIHostingController(rootView: sut)
+    
+    assertSnapshot(matching: host, as: .image(on: .iPhoneX))
   }
-  
+
+  func test_selectingConstant_callsDelegate() throws {
+    var sut = ConstantsListView()
+    let delegateMock = DelegateMock()
+    sut.delegate = delegateMock
+
+    try sut.inspect().list().find(ViewType.Button.self).tap()
+
+    XCTAssertEqual(delegateMock.insertedString, "9.80665")
+  }
+
+}
+
+class DelegateMock: NSObject, InsertStringProtocol {
+
+  var insertedString: String? = nil
+
+  func insertString(_ string: String) {
+    self.insertedString = string
+  }
 }

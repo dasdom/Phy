@@ -28,4 +28,11 @@ class ConverterListTests: XCTestCase {
   func test_converterView_shouldBeContainedInNavigationLink() throws {
     _ = try sut.inspect().find(ConverterView.self).parent().navigationLink()
   }
+
+  func test_dummy() throws {
+    let link = try sut.inspect().find(navigationLink: "Energy")
+
+    let converterView = try link.view(ConverterView.self).actualView()
+    XCTAssertEqual(converterView.converter.convertInfo.units.first?.value, "1.0")
+  }
 }

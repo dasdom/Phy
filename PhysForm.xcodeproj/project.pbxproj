@@ -34,10 +34,8 @@
 		F20C828C265B96F700A8F3FC /* CalculatorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C828B265B96F700A8F3FC /* CalculatorConstant.swift */; };
 		F20C828E265B97B300A8F3FC /* calculator_constants.json in Resources */ = {isa = PBXBuildFile; fileRef = F20C828D265B97B300A8F3FC /* calculator_constants.json */; };
 		F20C8290265BFE6A00A8F3FC /* ConverterListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */; };
-		F20C8292265C434300A8F3FC /* ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8291265C434300A8F3FC /* ConverterUITests.swift */; };
 		F20C8294265D416000A8F3FC /* ConstantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8293265D416000A8F3FC /* ConstantsListView.swift */; };
 		F20C8296266103DB00A8F3FC /* InsertStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8295266103DB00A8F3FC /* InsertStringProtocol.swift */; };
-		F20C829A2661090600A8F3FC /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82992661090600A8F3FC /* CalculatorUITests.swift */; };
 		F20C829D266120F700A8F3FC /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F20C829C266120F700A8F3FC /* SnapshotTesting */; };
 		F20C829F2661214D00A8F3FC /* ConstantsListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C829E2661214D00A8F3FC /* ConstantsListViewTest.swift */; };
 		F20C82A326622DB700A8F3FC /* FormulaListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82A226622DB600A8F3FC /* FormulaListCell.swift */; };
@@ -82,7 +80,7 @@
 		F236F4B52620876A00796E3D /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236F4B42620876A00796E3D /* AppCoordinatorTests.swift */; };
 		F2372E1522F0E3B4003C0605 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F2372E1422F0E3B4003C0605 /* Data.json */; };
 		F2372E4922F5687B003C0605 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F2372E4822F5687A003C0605 /* ReleaseNotes.txt */; };
-		F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */; };
+		F239BAD420F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F239BAD320F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m */; };
 		F23EBE74230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EBE73230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift */; };
 		F23EBE7B23100CFE00E8F4E4 /* data_math.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7923100CFE00E8F4E4 /* data_math.json */; };
 		F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
@@ -227,10 +225,8 @@
 		F20C828B265B96F700A8F3FC /* CalculatorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorConstant.swift; sourceTree = "<group>"; };
 		F20C828D265B97B300A8F3FC /* calculator_constants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = calculator_constants.json; sourceTree = "<group>"; };
 		F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterListTests.swift; sourceTree = "<group>"; };
-		F20C8291265C434300A8F3FC /* ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterUITests.swift; sourceTree = "<group>"; };
 		F20C8293265D416000A8F3FC /* ConstantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsListView.swift; sourceTree = "<group>"; };
 		F20C8295266103DB00A8F3FC /* InsertStringProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertStringProtocol.swift; sourceTree = "<group>"; };
-		F20C82992661090600A8F3FC /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		F20C829E2661214D00A8F3FC /* ConstantsListViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsListViewTest.swift; sourceTree = "<group>"; };
 		F20C82A226622DB600A8F3FC /* FormulaListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaListCell.swift; sourceTree = "<group>"; };
 		F20C82A426636BD000A8F3FC /* SolverDetailRadOrDegreeInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverDetailRadOrDegreeInputCell.swift; sourceTree = "<group>"; };
@@ -278,7 +274,7 @@
 		F2372E4A22F5AB66003C0605 /* PhyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhyTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F239BAC820F8C0CD00612965 /* PhyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F239BACC20F8C0CE00612965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCalculatorViewControllerTests.m; sourceTree = "<group>"; };
+		F239BAD320F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = Legacy_CalculatorViewControllerTests.m; sourceTree = "<group>"; tabWidth = 4; };
 		F23EBE73230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialFieldSectionTests.swift; sourceTree = "<group>"; };
 		F23EBE7923100CFE00E8F4E4 /* data_math.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data_math.json; sourceTree = "<group>"; };
 		F23EBE7A23100CFE00E8F4E4 /* data_physics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data_physics.json; sourceTree = "<group>"; };
@@ -617,7 +613,7 @@
 		F20C8288265B797800A8F3FC /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				F239BAD320F8C12D00612965 /* GeneralCalculatorViewControllerTests.m */,
+				F239BAD320F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m */,
 				F2E6175E2639504F008EB858 /* CalculationGrouperTests.swift */,
 				F2E6176826395978008EB858 /* CalculatorTests.swift */,
 				F29F212C22E1EB4400426712 /* Legacy_CalculatorTests.m */,
@@ -705,8 +701,6 @@
 			isa = PBXGroup;
 			children = (
 				F24201F32645DEA700E0CA97 /* PhyUITests.swift */,
-				F20C8291265C434300A8F3FC /* ConverterUITests.swift */,
-				F20C82992661090600A8F3FC /* CalculatorUITests.swift */,
 				F24201F52645DEA700E0CA97 /* Info.plist */,
 			);
 			path = PhyUITests;
@@ -1246,7 +1240,7 @@
 				F2078E5A262190380094D74D /* TopicViewControllerProtocolStub.swift in Sources */,
 				F2DB7D5C23101B3A0098B42A /* FormulaSectionTests.swift in Sources */,
 				F20C8284265A268F00A8F3FC /* XCTestCaseExtensions.swift in Sources */,
-				F239BAD420F8C12D00612965 /* GeneralCalculatorViewControllerTests.m in Sources */,
+				F239BAD420F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m in Sources */,
 				F2DB7D6F231121920098B42A /* TopicDataSourceTests.swift in Sources */,
 				F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */,
 				F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */,
@@ -1274,8 +1268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20C8292265C434300A8F3FC /* ConverterUITests.swift in Sources */,
-				F20C829A2661090600A8F3FC /* CalculatorUITests.swift in Sources */,
 				F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

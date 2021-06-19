@@ -90,20 +90,17 @@
   self.calcStringView.attributedText = attributedCalcString;
 }
 
-- (void)receivedFormula: (NSNotification *)note {
-  NSDictionary *userInfo = [note userInfo];
-  for (NSString *key in userInfo) {
-    NSLog(@"%@ = %@", key, [userInfo objectForKey: key]);
-  }
-  [self.calcString setString: [userInfo objectForKey: @"Formula"]];
-  [self.calcString appendFormat: @"_"];
-}
+//- (void)receivedFormula: (NSNotification *)note {
+//  NSDictionary *userInfo = [note userInfo];
+//  for (NSString *key in userInfo) {
+//    NSLog(@"%@ = %@", key, [userInfo objectForKey: key]);
+//  }
+//  [self.calcString setString: [userInfo objectForKey: @"Formula"]];
+//  [self.calcString appendFormat: @"_"];
+//}
 
 - (void)insertConverterResult: (NSNotification *)note {
   NSDictionary *userInfo = [note userInfo];
-  for (NSString *key in userInfo) {
-    NSLog(@"%@ = %@", key, [userInfo objectForKey: key]);
-  }
   NSString *converterResult = [userInfo objectForKey: @"result"];
   [self insertString:converterResult];
 }
@@ -202,9 +199,9 @@
   [self presentViewController:navController animated:YES completion:nil];
 }
 
-- (void)buttonPressedDown:(UIButton *)sender {
-  sender.layer.borderColor = [[UIColor blueColor] CGColor];
-}
+//- (void)buttonPressedDown:(UIButton *)sender {
+//  sender.layer.borderColor = [[UIColor blueColor] CGColor];
+//}
 
 #pragma mark -
 #pragma mark Number Buttons
@@ -636,34 +633,34 @@
 }
 
 #pragma mark - Helper methods
-- (NSString *)stringByRemoveLastCalcSignIfNeeded:(NSString *)inputString {
-  NSArray *components = [inputString componentsSeparatedByString:@"_"];
-  NSMutableString *returnString = [NSMutableString new];
-  NSUInteger length = [components[0] length];
-  if (length > 0) {
-    NSString *first = components[0];
-    NSString *substring = [first substringFromIndex:length-1];
-    if ([@[DDHPlus, DDHMinus, DDHTimes, DDHDivide] containsObject:substring]) {
-      [returnString appendString:[first substringToIndex:length-1]];
-    }
-  }
-  [returnString appendString:@"_"];
-  if ([components[1] length] > 0) {
-    [returnString appendString:components[1]];
-  }
-  return returnString;
-}
+//- (NSString *)stringByRemoveLastCalcSignIfNeeded:(NSString *)inputString {
+//  NSArray *components = [inputString componentsSeparatedByString:@"_"];
+//  NSMutableString *returnString = [NSMutableString new];
+//  NSUInteger length = [components[0] length];
+//  if (length > 0) {
+//    NSString *first = components[0];
+//    NSString *substring = [first substringFromIndex:length-1];
+//    if ([@[DDHPlus, DDHMinus, DDHTimes, DDHDivide] containsObject:substring]) {
+//      [returnString appendString:[first substringToIndex:length-1]];
+//    }
+//  }
+//  [returnString appendString:@"_"];
+//  if ([components[1] length] > 0) {
+//    [returnString appendString:components[1]];
+//  }
+//  return returnString;
+//}
 
-- (NSMutableString *)stringByInsertingString:(NSString *)string inInputString:(NSString *)inputString {
-  NSArray *components = [inputString componentsSeparatedByString:@"_"];
-  NSMutableString *first = [components[0] mutableCopy];
-  [first appendString:string];
-  [first appendString:@"_"];
-  if ([components count] > 1 && [components[1] length] > 0) {
-    [first appendString:components[1]];
-  }
-  return [first mutableCopy];
-}
+//- (NSMutableString *)stringByInsertingString:(NSString *)string inInputString:(NSString *)inputString {
+//  NSArray *components = [inputString componentsSeparatedByString:@"_"];
+//  NSMutableString *first = [components[0] mutableCopy];
+//  [first appendString:string];
+//  [first appendString:@"_"];
+//  if ([components count] > 1 && [components[1] length] > 0) {
+//    [first appendString:components[1]];
+//  }
+//  return [first mutableCopy];
+//}
 
 - (void)insertString:(NSString *)string inTextView:(UITextView *)textView {
   if ([textView.text containsString:@"="]) {
@@ -804,7 +801,9 @@
 - (void)nichtGenugKlammern {
   UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Klammer" message:@"Warnung: Da sind mehr oeffnende Klammern als schliessende Klammern" preferredStyle:UIAlertControllerStyleAlert];
   
-  [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+  [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [self.calcStringView becomeFirstResponder];
+  }]];
   
   [self presentViewController:alert animated:YES completion:nil];
 }
@@ -812,7 +811,9 @@
 - (void)kommaFehlt {
   UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Komma" message:@"Warnung: pow-Funktion ohne Komma. Die pow-Funktion braucht zwei Argumente." preferredStyle:UIAlertControllerStyleAlert];
   
-  [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+  [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [self.calcStringView becomeFirstResponder];
+  }]];
   
   [self presentViewController:alert animated:YES completion:nil];
 }
@@ -820,7 +821,9 @@
 - (void)calcSignAtTheEnd {
   UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Rechenzeichen" message:@"Rechnung endet mit einen Rechenzeichen." preferredStyle:UIAlertControllerStyleAlert];
   
-  [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+  [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [self.calcStringView becomeFirstResponder];
+  }]];
   
   [self presentViewController:alert animated:YES completion:nil];
 }
