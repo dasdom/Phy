@@ -207,4 +207,10 @@
   XCTAssertEqualWithAccuracy([result doubleValue], 0.785398163, 0.000000001);
 }
 
+- (void)test_ndivide_isSomething {
+  NSDecimalNumber *result = [calculator calculateString:@"2÷-1"];
+
+  XCTAssertEqualWithAccuracy([result doubleValue], -2, 0.000000001);
+}
+
 @end

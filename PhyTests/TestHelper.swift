@@ -16,3 +16,9 @@ func language() -> Language {
     return .de
   }
 }
+
+func tap(_ barButton: UIBarButtonItem) {
+  if let action = barButton.action {
+    _ = barButton.target?.perform(action, with: barButton)
+  }
+}

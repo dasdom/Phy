@@ -22,7 +22,7 @@ class SearchFormulasViewController: FormulasViewController {
 extension SearchFormulasViewController: UISearchBarDelegate {
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
     
-    if let dataSource = dataSource as? SearchFormulasDataSource {
+    if let dataSource = dataSource as? SearchFormulasDataSourceProtocol {
       dataSource.search(searchText) {
         tableView.reloadData()
       }

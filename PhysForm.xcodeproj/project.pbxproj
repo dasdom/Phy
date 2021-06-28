@@ -36,7 +36,6 @@
 		F20C8290265BFE6A00A8F3FC /* ConverterListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C828F265BFE6A00A8F3FC /* ConverterListTests.swift */; };
 		F20C8294265D416000A8F3FC /* ConstantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8293265D416000A8F3FC /* ConstantsListView.swift */; };
 		F20C8296266103DB00A8F3FC /* InsertStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8295266103DB00A8F3FC /* InsertStringProtocol.swift */; };
-		F20C829D266120F700A8F3FC /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F20C829C266120F700A8F3FC /* SnapshotTesting */; };
 		F20C829F2661214D00A8F3FC /* ConstantsListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C829E2661214D00A8F3FC /* ConstantsListViewTest.swift */; };
 		F20C82A326622DB700A8F3FC /* FormulaListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82A226622DB600A8F3FC /* FormulaListCell.swift */; };
 		F20C82A526636BD000A8F3FC /* SolverDetailRadOrDegreeInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82A426636BD000A8F3FC /* SolverDetailRadOrDegreeInputCell.swift */; };
@@ -121,7 +120,6 @@
 		F29AEAFE22EA466900EB4E26 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F29AEAFC22EA466900EB4E26 /* Smoke.sks */; };
 		F29AEAFF22EA466900EB4E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29AEAFD22EA466900EB4E26 /* Assets.xcassets */; };
 		F29AEB0A22EB01EE00EB4E26 /* SolverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB0922EB01ED00EB4E26 /* SolverTableViewController.swift */; };
-		F29AEB1222EB024800EB4E26 /* drawTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB0C22EB024800EB4E26 /* drawTest.m */; };
 		F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */; };
 		F29AEB1A22EB028300EB4E26 /* ReferenzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1622EB028300EB4E26 /* ReferenzViewController.m */; };
 		F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB1922EB028300EB4E26 /* ReferenzView.m */; };
@@ -171,6 +169,7 @@
 		F2E6176926395978008EB858 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6176826395978008EB858 /* CalculatorTests.swift */; };
 		F2E6176D263BEB9D008EB858 /* SearchFormulasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6176C263BEB9D008EB858 /* SearchFormulasViewController.swift */; };
 		F2E61771263BEC5E008EB858 /* SearchFormulasDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E61770263BEC5E008EB858 /* SearchFormulasDataSource.swift */; };
+		F2F9033C2680F7AA0026732A /* SearchFormulasViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9033B2680F7AA0026732A /* SearchFormulasViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,9 +321,7 @@
 		F29AEAFC22EA466900EB4E26 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
 		F29AEAFD22EA466900EB4E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29AEB0922EB01ED00EB4E26 /* SolverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SolverTableViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
-		F29AEB0C22EB024800EB4E26 /* drawTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawTest.m; sourceTree = "<group>"; };
 		F29AEB0E22EB024800EB4E26 /* DHSmartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSmartTableViewCell.h; sourceTree = "<group>"; };
-		F29AEB0F22EB024800EB4E26 /* drawTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawTest.h; sourceTree = "<group>"; };
 		F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSmartTableViewCell.m; sourceTree = "<group>"; };
 		F29AEB1622EB028300EB4E26 /* ReferenzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenzViewController.m; sourceTree = "<group>"; };
 		F29AEB1722EB028300EB4E26 /* ReferenzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzView.h; sourceTree = "<group>"; };
@@ -387,6 +384,7 @@
 		F2E6176826395978008EB858 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		F2E6176C263BEB9D008EB858 /* SearchFormulasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormulasViewController.swift; sourceTree = "<group>"; };
 		F2E61770263BEC5E008EB858 /* SearchFormulasDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormulasDataSource.swift; sourceTree = "<group>"; };
+		F2F9033B2680F7AA0026732A /* SearchFormulasViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormulasViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,7 +400,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20C8281265A260500A8F3FC /* ViewInspector in Frameworks */,
-				F20C829D266120F700A8F3FC /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,27 +657,28 @@
 			path = FormulaDetails;
 			sourceTree = "<group>";
 		};
-		F2372E4F22F5ABB6003C0605 /* Formulary */ = {
+		F2372E4F22F5ABB6003C0605 /* Formulas */ = {
 			isa = PBXGroup;
 			children = (
 				F2078E312620E0170094D74D /* FormulasCoordinatorTests.swift */,
+				F2F9033B2680F7AA0026732A /* SearchFormulasViewControllerTests.swift */,
 				F2DB7D6223101B510098B42A /* Topic */,
 				F2716A2122F8C842007D1528 /* SpecialField */,
 				F236256A22FE9FEF0075FC2F /* Formula */,
 				F236257122FEA02E0075FC2F /* FormulaDetails */,
 			);
-			path = Formulary;
+			path = Formulas;
 			sourceTree = "<group>";
 		};
 		F239BAC920F8C0CE00612965 /* PhyTests */ = {
 			isa = PBXGroup;
 			children = (
 				F236F4B42620876A00796E3D /* AppCoordinatorTests.swift */,
+				F2372E4F22F5ABB6003C0605 /* Formulas */,
 				F20C8288265B797800A8F3FC /* Calculator */,
 				F20C8282265A265300A8F3FC /* Converter */,
 				F200F0ED2312B68500C38045 /* Chemistry */,
 				F22FF0042302C52B003F3A9B /* Solver */,
-				F2372E4F22F5ABB6003C0605 /* Formulary */,
 				F2078E5226218F900094D74D /* Mocks */,
 				F20C8285265A26D800A8F3FC /* Extensions */,
 				F239BACC20F8C0CE00612965 /* Info.plist */,
@@ -840,8 +838,6 @@
 		F29AEB0B22EB024800EB4E26 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F29AEB0F22EB024800EB4E26 /* drawTest.h */,
-				F29AEB0C22EB024800EB4E26 /* drawTest.m */,
 				F29AEB0E22EB024800EB4E26 /* DHSmartTableViewCell.h */,
 				F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */,
 				F2716A0F22F8635F007D1528 /* DDHBaseTableViewCell.swift */,
@@ -969,7 +965,6 @@
 			name = PhyTests;
 			packageProductDependencies = (
 				F20C8280265A260500A8F3FC /* ViewInspector */,
-				F20C829C266120F700A8F3FC /* SnapshotTesting */,
 			);
 			productName = PhyTests;
 			productReference = F239BAC820F8C0CD00612965 /* PhyTests.xctest */;
@@ -1038,7 +1033,6 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			packageReferences = (
 				F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */,
-				F20C829B266120F700A8F3FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -1141,7 +1135,6 @@
 				F2716A1E22F8C753007D1528 /* NameAndFormulaImageCell.swift in Sources */,
 				F2078EB22622F3D40094D74D /* ChemElementDetailCell.swift in Sources */,
 				F236257722FEA8A80075FC2F /* FormulaDetailViewController.swift in Sources */,
-				F29AEB1222EB024800EB4E26 /* drawTest.m in Sources */,
 				F236257922FEDA970075FC2F /* FormulaDetailCell.swift in Sources */,
 				F29AEB0A22EB01EE00EB4E26 /* SolverTableViewController.swift in Sources */,
 				F20C82712658F82100A8F3FC /* ValueUnitView.swift in Sources */,
@@ -1247,6 +1240,7 @@
 				F2DB7D5C23101B3A0098B42A /* FormulaSectionTests.swift in Sources */,
 				F20C8284265A268F00A8F3FC /* XCTestCaseExtensions.swift in Sources */,
 				F239BAD420F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m in Sources */,
+				F2F9033C2680F7AA0026732A /* SearchFormulasViewControllerTests.swift in Sources */,
 				F2DB7D6F231121920098B42A /* TopicDataSourceTests.swift in Sources */,
 				F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */,
 				F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */,
@@ -1850,14 +1844,6 @@
 				minimumVersion = 0.7.5;
 			};
 		};
-		F20C829B266120F700A8F3FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.9.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1865,11 +1851,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
-		};
-		F20C829C266120F700A8F3FC /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F20C829B266120F700A8F3FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -3,7 +3,6 @@
 //
 
 import XCTest
-import SnapshotTesting
 import SwiftUI
 import ViewInspector
 @testable import Phy
@@ -11,13 +10,6 @@ import ViewInspector
 extension ConstantsListView: Inspectable {}
 
 class ConstantsListViewTest: XCTestCase {
-
-  func test_constantsListView_snapshotTest() {
-    let sut = ConstantsListView()
-    let host = UIHostingController(rootView: sut)
-    
-    assertSnapshot(matching: host, as: .image(on: .iPhoneX))
-  }
 
   func test_selectingConstant_callsDelegate() throws {
     var sut = ConstantsListView()

@@ -134,6 +134,25 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let expected = SolverTool(title: "Arbeit", imageName: "arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
     XCTAssertEqual(result.tool, expected)
   }
+
+  func test_loadingView_shouldAddFavoritesButton() {
+    sut.loadViewIfNeeded()
+
+    let button = sut.navigationItem.rightBarButtonItem
+
+    XCTAssertNotNil(button?.image)
+  }
+
+  func test_favButton_shouldCallDelegate() throws {
+    sut.loadViewIfNeeded()
+    let mockDelegate = FormulaDetailViewControllerDelegateMock()
+    sut.delegate = mockDelegate
+
+    let button = try XCTUnwrap(sut.navigationItem.rightBarButtonItem)
+    tap(button)
+
+    XCTAssertEqual(mockDelegate.favFormulaReceivedArguments?.formula, sut.formula)
+  }
 }
 
 // MARK: - Helper
@@ -174,6 +193,28 @@ extension PhyFormulaDetailViewControllerTests {
     
     override func update(with item: FormulaDetailItem) {
       lastItem = item
+    }
+  }
+
+  // MARK: - FormulaDetailViewControllerDelegateMock -
+
+  final class FormulaDetailViewControllerDelegateMock: FormulaDetailViewControllerDelegate {
+
+    // MARK: - fav
+
+    var favFormulaCallsCount = 0
+    var favFormulaCalled: Bool {
+      favFormulaCallsCount > 0
+    }
+    var favFormulaReceivedArguments: (viewController: UIViewController, formula: Formula)?
+    var favFormulaReceivedInvocations: [(viewController: UIViewController, formula: Formula)] = []
+    var favFormulaClosure: ((UIViewController, Formula) -> Void)?
+
+    func fav(_ viewController: UIViewController, formula: Formula) {
+      favFormulaCallsCount += 1
+      favFormulaReceivedArguments = (viewController: viewController, formula: formula)
+      favFormulaReceivedInvocations.append((viewController: viewController, formula: formula))
+      favFormulaClosure?(viewController, formula)
     }
   }
 }

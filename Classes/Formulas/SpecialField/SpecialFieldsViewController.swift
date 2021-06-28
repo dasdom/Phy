@@ -4,7 +4,7 @@
 
 import UIKit
 
-protocol SpecialFieldsViewControllerProtocol {
+protocol SpecialFieldsViewControllerProtocol: AnyObject {
   func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField)
   func showSearch(_ viewController: UIViewController, specialFieldSections: [SpecialFieldSection])
 }
@@ -12,7 +12,7 @@ protocol SpecialFieldsViewControllerProtocol {
 class SpecialFieldsViewController: UITableViewController {
   
   let specialFieldDataSource: SpecialFieldDataSourceProtocol
-  var delegate: SpecialFieldsViewControllerProtocol?
+  weak var delegate: SpecialFieldsViewControllerProtocol?
   
   init(style: UITableView.Style, dataSource: SpecialFieldDataSourceProtocol) {
     specialFieldDataSource = dataSource

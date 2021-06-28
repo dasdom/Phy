@@ -4,14 +4,14 @@
 
 import UIKit
 
-protocol FormulasViewControllerProtocol {
+protocol FormulasViewControllerProtocol: AnyObject {
   func formulaSelected(_ viewController: UIViewController, formula: Formula)
 }
 
 class FormulasViewController: UITableViewController {
   
   let dataSource: FormulasDataSourceProtocol
-  var delegate: FormulasViewControllerProtocol?
+  weak var delegate: FormulasViewControllerProtocol?
   
   init(dataSource: FormulasDataSourceProtocol) {
     self.dataSource = dataSource

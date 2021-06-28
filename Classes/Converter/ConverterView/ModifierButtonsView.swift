@@ -11,7 +11,11 @@ struct ModifierButtonsView: View {
   
   var body: some View {
     VStack {
-      Button(action: { converter.input.removeLast() }, label: {
+      Button(action: {
+        if converter.input.count > 0 {
+          converter.input.removeLast()
+        }
+      }, label: {
         Image(systemName: "delete.left")
       })
       
