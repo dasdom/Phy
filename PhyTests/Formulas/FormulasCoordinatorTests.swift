@@ -39,12 +39,13 @@ class FormulasCoordinatorTests: XCTestCase {
   func test_topicSelected_pushesSpecialFields() throws {
     sut.start()
     let topicViewController = try XCTUnwrap(navigationController.topViewController as? TopicViewController)
-    let topic = Topic(title: "Foo", json: "data_math", type: .formulas)
+    let topic = Topic(title: "Foo", type: .physics_formulas)
     
     sut.topicSelected(topicViewController, topic: topic)
     
     let specialField = try XCTUnwrap(navigationController.lastPushedViewController as? SpecialFieldsViewController)
     XCTAssertNotNil(specialField.delegate)
+    XCTAssertGreaterThanOrEqual(specialField.specialFieldDataSource.numberOfSections(), 2)
   }
   
   func test_showImprint_showsImprint() throws {
@@ -72,7 +73,7 @@ class FormulasCoordinatorTests: XCTestCase {
   func test_formulaSelected_pushesFormulaDetails() throws {
     sut.start()
     let viewController = UIViewController()
-    let formula = Formula(imageName: "foo", title: "Foobar", details: [
+    let formula = Formula(id: UUID(), imageName: "foo", title: "Foobar", details: [
       FormulaDetail(title: "Bar", detailItems: [FormulaDetailItem(imageName: "bla")])
     ])
     

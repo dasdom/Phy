@@ -9,6 +9,7 @@
             "title": "Dreieck",
             "formulas": [
               {
+                "id": "F4949F9A-6E31-4584-A925-245B0FD886D5",
                 "title": "Fläche",
                 "imageName": "geometry_triangle_area",
                 "details": [
@@ -46,6 +47,7 @@
                 ]
               },
               {
+                "id": "5C333457-B319-4037-A1B5-EE4EC1A661EE",
                 "title": "Umfang",
                 "imageName": "geometry_triangle_circumference",
                 "details": [
@@ -75,6 +77,7 @@
                 ]
               },
               {
+                "id": "E5C482F9-E3B6-49DA-91DF-53F14B3E77B0",
                 "title": "Winkelsumme",
                 "imageName": "geometry_triangle_angle_sum",
                 "details": [
@@ -96,6 +99,7 @@
                 ]
               },
               {
+                "id": "DA0DC5D5-8CB9-4454-9512-50CA6CBA841B",
                 "title": "Sinussatz",
                 "imageName": "geometry_triangle_sine_theorem",
                 "details": [
@@ -125,6 +129,7 @@
                 ]
               },
               {
+                "id": "CC0E0A2E-FBE3-46BD-A477-AF8206542175",
                 "title": "Kosinussatz",
                 "imageName": "geometry_triangle_cosine_theorem_c_squared",
                 "details": [
@@ -166,6 +171,7 @@
             "title": "Kreis",
             "formulas": [
               {
+                "id": "E444B38B-8750-4983-A4CC-881FA4AB5FBD",
                 "title": "Fläche",
                 "imageName": "geometry_circle_area",
                 "details": [
@@ -199,6 +205,7 @@
                 ]
               },
               {
+                "id": "E2A65FF1-706B-40D1-B444-3D0D4685EF0A",
                 "title": "Umfang",
                 "imageName": "geometry_circle_circumference",
                 "details": [
@@ -242,27 +249,35 @@
             "title": "",
             "formulas": [
               {
+                "id": "E7DAE006-7BDC-4AEA-9118-2FF71DC9A9E3",
                 "imageName": "a_pow_n"
               },
               {
+                "id": "66EFFB9A-D2E5-4FBA-950E-C3D3DBD7BA68",
                 "imageName": "a_pow_0"
               },
               {
+                "id": "FE44456E-5C15-4957-AA3F-CDFCEEE400C2",
                 "imageName": "a_pow_1"
               },
               {
+                "id": "7EE64522-A793-4B6A-B460-2A53C2CC1814",
                 "imageName": "a_pow_m_times_a_pow_n"
               },
               {
+                "id": "DCE01C96-615D-4EAC-8D45-1A5DED9C5B59",
                 "imageName": "a_pow_m_times_b_pow_m"
               },
               {
+                "id": "C1DF7B31-2BB8-4837-9CEA-035F4343FB95",
                 "imageName": "a_pow_m_pow_n"
               },
               {
+                "id": "CBF9A565-10E0-44AB-8A4F-55F7CAA3DF38",
                 "imageName": "a_pow_minus_n"
               },
               {
+                "id": "55093B31-365A-48C8-8DD2-AF538FB9C97D",
                 "imageName": "a_pow_m_minus_n"
               }
             ]
@@ -276,6 +291,7 @@
             "title": "allgemein",
             "formulas": [
               {
+                "id": "477A3526-824D-418E-8AC6-FCF622511757",
                 "imageName": "kegelschnitteAllgemein"
               }
             ]
@@ -284,6 +300,7 @@
             "title": "Kreis",
             "formulas": [
               {
+                "id": "544423CC-1199-4FEA-9E54-694E326F6F33",
                 "imageName": "kegelschnitteKreis"
               }
             ]
@@ -292,6 +309,7 @@
             "title": "Ellipse",
             "formulas": [
               {
+                "id": "825A5FF9-93A8-4E46-9B83-422D45279923",
                 "imageName": "kegelschnitteEllipse"
               }
             ]
@@ -300,6 +318,7 @@
             "title": "Hyperbel",
             "formulas": [
               {
+                "id": "3AC557B3-53A2-4085-9FBD-60D8688CB105",
                 "imageName": "kegelschnitteHyperbel"
               }
             ]
@@ -308,9 +327,11 @@
             "title": "Parabel",
             "formulas": [
               {
+                "id": "DD8CA8CB-A425-4B14-9253-A2899DDB2890",
                 "imageName": "kegelschnitteParabelY"
               },
               {
+                "id": "FF53AAB3-6C9C-4D73-9C67-4CC18E99BBC4",
                 "imageName": "kegelschnitteParabelX"
               }
             ]
@@ -324,21 +345,27 @@
             "title": "allgemein",
             "formulas": [
               {
+                "id": "564C0E56-79F5-47DF-87F8-45F8A84E4F1C",
                 "imageName": "imaginaereEinheit"
               },
               {
+                "id": "2CFD89F8-BA87-415E-85E7-0A0D3E385EFF",
                 "imageName": "komplexeZahl"
               },
               {
+                "id": "B4A9C499-8403-480B-924C-89EB97451C4E",
                 "imageName": "komplexKonjugierteZahl"
               },
               {
+                "id": "171F74F7-7C2E-46D4-B041-91E87E05285F",
                 "imageName": "multiKomplexeZahl"
               },
               {
+                "id": "172E9BDE-3F09-43A4-B11D-E63450D5B9B4",
                 "imageName": "betragKomplexeZahl"
               },
               {
+                "id": "331D43F7-0423-49E3-95D7-DC0362BF4BE4",
                 "imageName": "quotientKomplexeZahl"
               }
             ]
@@ -347,12 +374,15 @@
             "title": "exponentielle Darstellung",
             "formulas": [
               {
+                "id": "03B0922C-85AA-421A-A420-591B8C27EB74",
                 "imageName": "komplexeZahlExpDarstellung"
               },
               {
+                "id": "635C1ABB-154E-48BC-9BB9-F8965D4C712D",
                 "imageName": "komplexeZahlR"
               },
               {
+                "id": "54B74296-A623-45F8-BCBD-32FB7EE249B4",
                 "imageName": "komplexeZahlPhi"
               }
             ]
@@ -361,6 +391,7 @@
             "title": "Eulergleichung",
             "formulas": [
               {
+                "id": "A21D4CD5-C30F-4783-9E72-B3F2CB9E2ED3",
                 "imageName": "komplexeZahlEulerGl"
               }
             ]
@@ -369,6 +400,7 @@
             "title": "Beweis für die Existenz Gottes",
             "formulas": [
               {
+                "id": "B3DEA16A-3CC4-4AF0-80F8-DD2A2EE0F0A4",
                 "imageName": "komplexeZahlGottesbeweis"
               }
             ]
@@ -382,21 +414,27 @@
             "title": "kartesische Koordinaten",
             "formulas": [
               {
+                "id": "75227698-3356-4BF1-8C1A-FBF0C7AB6130",
                 "imageName": "kartesischLinienemement"
               },
               {
+                "id": "127A425E-616B-4B3F-A145-42988EBA0DE5",
                 "imageName": "kartesischFlaechenelement"
               },
               {
+                "id": "A60311B7-462C-4C50-BEB0-B2FECDDF1198",
                 "imageName": "kartesischVolumenelement"
               },
               {
+                "id": "9F2BF4A8-E77B-461B-8588-78E40B4E26CE",
                 "imageName": "kartesischOrtsvektor"
               },
               {
+                "id": "FB66727F-6DC3-4FE3-9DE9-B23923CAB102",
                 "imageName": "kartesischGeschwindigkeit"
               },
               {
+                "id": "7C44A6C6-FB88-4D6E-89D4-C06461F654E6",
                 "imageName": "kartesischBeschleunigung"
               }
             ]
@@ -405,33 +443,43 @@
             "title": "Kugelkoordinaten",
             "formulas": [
               {
+                "id": "F201BEEE-2374-4D9E-B23F-2618336EDC24",
                 "imageName": "kuglekooLinienelement"
               },
               {
+                "id": "DED1A626-28E1-47E7-AFD8-70C2BB6118F8",
                 "imageName": "kuglekooVolumenelement"
               },
               {
+                "id": "B6DA5AF6-8B45-4671-B1F0-8DB97C64EB83",
                 "imageName": "kugelkooOrtsvektor"
               },
               {
+                "id": "71A175A7-C2F3-4051-BC1A-EC0B93F81F70",
                 "imageName": "kugelkooDotE_r"
               },
               {
+                "id": "D2A3DC9A-B315-4557-90F0-120EFB8EF36F",
                 "imageName": "kugelkooDotE_theta"
               },
               {
+                "id": "C4CD3D99-7A57-43E1-BCC9-4DCE57D125D6",
                 "imageName": "kugelkooDotE_phi"
               },
               {
+                "id": "DB1E360D-AE83-4154-9AE6-7C75052EC7FC",
                 "imageName": "kugelkooGeschwindigkeit"
               },
               {
+                "id": "DC427B2C-8D62-4119-947C-3F41AFB1C8EB",
                 "imageName": "kugelkooBeschleunigung_r"
               },
               {
+                "id": "1E26530F-8BDF-4677-A67E-0C0046A0229F",
                 "imageName": "kugelkooBeschleunigung_theta"
               },
               {
+                "id": "7D9A17EA-3735-4F6D-B053-711D4AC1AD3D",
                 "imageName": "kugelkooBeschleunigung_phi"
               }
             ]
@@ -440,27 +488,35 @@
             "title": "Zylinderkoordinaten",
             "formulas": [
               {
+                "id": "0E734C1D-50E3-4640-B696-AD321561B4C8",
                 "imageName": "zylinderkooLinienelement"
               },
               {
+                "id": "CF770BC3-AE45-4099-A595-7E461E3E150E",
                 "imageName": "zylinderkooVolumenelement"
               },
               {
+                "id": "6669541B-D3BA-47D3-AD9D-2703A2BC5505",
                 "imageName": "zylinderkooOrtsvektor"
               },
               {
+                "id": "F149E5A8-20E8-4729-8134-94C4F83B2A2D",
                 "imageName": "zylinderkooDotE_rho"
               },
               {
+                "id": "A8D52267-A781-4BB8-8956-CF52E1816006",
                 "imageName": "zylinderkooDotE_phi"
               },
               {
+                "id": "1990AF65-E18F-4799-BE6B-7F97D3CCF8FE",
                 "imageName": "zylinderkooDotE_z"
               },
               {
+                "id": "74AABCCE-0DDD-4AE0-890F-277D308FA28E",
                 "imageName": "zylinderkooGeschwindigkeit"
               },
               {
+                "id": "05EA85BE-829A-4897-B268-85525C9C6833",
                 "imageName": "zylinderkooBeschleunigung"
               }
             ]
@@ -474,15 +530,19 @@
             "title": "Potenzfunktionen",
             "formulas": [
               {
+                "id": "1B20E2D9-E0BE-4B85-B799-495CC64EA167",
                 "imageName": "stammFunc0"
               },
               {
+                "id": "F98BA947-9557-426C-84C3-AA6C1AFD1B7C",
                 "imageName": "stammFuncA"
               },
               {
+                "id": "31BB0B0F-B403-48B7-9FF1-9475DBD735C6",
                 "imageName": "stammFuncXHochN"
               },
               {
+                "id": "2EF70A1E-9AE9-4804-8603-4FBA23E3E712",
                 "imageName": "stammFuncEinsDurchX"
               }
             ]
@@ -491,12 +551,15 @@
             "title": "Exponentialfuntionen",
             "formulas": [
               {
+                "id": "7130EAF4-565F-442C-AB4C-FF66A0494504",
                 "imageName": "stammFuncExp"
               },
               {
+                "id": "794F7144-CA66-4180-8D9C-37DB71486F42",
                 "imageName": "stammFuncAHochX"
               },
               {
+                "id": "31FA375A-0983-488D-815D-E0BF36B0EB5E",
                 "imageName": "stammFuncUStrichVonXLnUVonX"
               }
             ]
@@ -505,24 +568,31 @@
             "title": "trigonometrische Funktionen",
             "formulas": [
               {
+                "id": "25D77BFD-7E9A-402C-853B-8C959B8827A7",
                 "imageName": "stammFuncSin"
               },
               {
+                "id": "965C05FD-F275-4AC6-B1B3-C5E83CEB8BB2",
                 "imageName": "stammFuncCos"
               },
               {
+                "id": "674A8FEE-A49E-49EE-A4A7-5F4AD2FFA739",
                 "imageName": "stammFuncTan"
               },
               {
+                "id": "C859BD2E-87FF-44C8-8E76-40C4D79FE595",
                 "imageName": "stammFuncCot"
               },
               {
+                "id": "3300DFBD-3BB3-46C4-9841-E7E2190C54E7",
                 "imageName": "stammFuncEinsDurchCosQuad"
               },
               {
+                "id": "756C6367-1316-4221-914C-EE659CACC86A",
                 "imageName": "stammFuncEinsDurchWurzel"
               },
               {
+                "id": "99B2A979-7980-46B5-9592-55676544B7DE",
                 "imageName": "stammFuncEinsDurchXQuadPlusEins"
               }
             ]
@@ -536,6 +606,7 @@
             "title": "diskrete Verteilung; allg.",
             "formulas": [
               {
+                "id": "39FDC072-B478-4507-8E47-14FCB7E61792",
                 "title": "Norm; diskrete Verteilung",
                 "imageName": "diskreteVerteilungNorm",
                 "details": [
@@ -543,14 +614,15 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "diskreteVerteilungNorm",
-                        "title": "Norm; diskrete Verteilung"
+                        "title": "Norm; diskrete Verteilung",
+                        "imageName": "diskreteVerteilungNorm"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "D0BFB4F9-4229-4C36-9576-4293FB1EACD6",
                 "title": "Mittelwert; diskrete Verteilung",
                 "imageName": "diskreteVerteilungMittelwert",
                 "details": [
@@ -558,8 +630,8 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "diskreteVerteilungMittelwert",
-                        "title": "Mittelwert; diskrete Verteilung"
+                        "title": "Mittelwert; diskrete Verteilung",
+                        "imageName": "diskreteVerteilungMittelwert"
                       }
                     ]
                   }
@@ -571,6 +643,7 @@
             "title": "kontinuierliche Verteilung; allg.",
             "formulas": [
               {
+                "id": "588896D2-0937-4754-8872-32DA7A050B4C",
                 "title": "Wahrscheinlichkeit; kontinuierliche Verteilung",
                 "imageName": "kontinuierlicheVerteilungWahrscheinlichkeit",
                 "details": [
@@ -578,14 +651,15 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "kontinuierlicheVerteilungWahrscheinlichkeit",
-                        "title": "Wahrscheinlichkeit; kontinuierliche Verteilung"
+                        "title": "Wahrscheinlichkeit; kontinuierliche Verteilung",
+                        "imageName": "kontinuierlicheVerteilungWahrscheinlichkeit"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "2FE5F149-D865-4D90-A656-AD28F7E3D967",
                 "title": "nicht-negativ; kontinuierliche Verteilung",
                 "imageName": "kontinuierlicheVerteilungNichtNegativ",
                 "details": [
@@ -593,14 +667,15 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "kontinuierlicheVerteilungNichtNegativ",
-                        "title": "nicht-negativ; kontinuierliche Verteilung"
+                        "title": "nicht-negativ; kontinuierliche Verteilung",
+                        "imageName": "kontinuierlicheVerteilungNichtNegativ"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "B90F25AB-686B-45BD-A076-895A02942F72",
                 "title": "Norm; kontinuierliche Verteilung",
                 "imageName": "kontinuierlicheVerteilungNorm",
                 "details": [
@@ -608,14 +683,15 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "kontinuierlicheVerteilungNorm",
-                        "title": "Norm; kontinuierliche Verteilung"
+                        "title": "Norm; kontinuierliche Verteilung",
+                        "imageName": "kontinuierlicheVerteilungNorm"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "2B33E1C8-2F63-4303-9210-F4E113A2726B",
                 "title": "Mittelwert; kontinuierliche Verteilung",
                 "imageName": "kontinuierlicheVerteilungMittelwert",
                 "details": [
@@ -623,8 +699,8 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "kontinuierlicheVerteilungMittelwert",
-                        "title": "Mittelwert; kontinuierliche Verteilung"
+                        "title": "Mittelwert; kontinuierliche Verteilung",
+                        "imageName": "kontinuierlicheVerteilungMittelwert"
                       }
                     ]
                   }
@@ -636,6 +712,7 @@
             "title": "diskrete Verteilungen",
             "formulas": [
               {
+                "id": "FB0688A3-2319-4265-AE50-7F072F1179AB",
                 "title": "Binomialverteilung",
                 "imageName": "binomialverteilung",
                 "details": [
@@ -643,8 +720,8 @@
                     "title": "Binomialverteilung",
                     "detailItems": [
                       {
-                        "imageName": "binomialverteilung",
-                        "title": "Binomialverteilung"
+                        "title": "Binomialverteilung",
+                        "imageName": "binomialverteilung"
                       }
                     ]
                   },
@@ -652,8 +729,8 @@
                     "title": "Mittelwert",
                     "detailItems": [
                       {
-                        "imageName": "binomiMittelwert",
-                        "title": "BinomiMittelwert"
+                        "title": "BinomiMittelwert",
+                        "imageName": "binomiMittelwert"
                       }
                     ]
                   },
@@ -661,14 +738,15 @@
                     "title": "Varianz",
                     "detailItems": [
                       {
-                        "imageName": "binomiVarianz",
-                        "title": "BinomiVarianz"
+                        "title": "BinomiVarianz",
+                        "imageName": "binomiVarianz"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "332AAEEE-EADF-45E6-B6A8-E745108DF10F",
                 "title": "Poissonverteilung",
                 "imageName": "poissonverteilung",
                 "details": [
@@ -676,8 +754,8 @@
                     "title": "Poissonverteilung",
                     "detailItems": [
                       {
-                        "imageName": "poissonverteilung",
-                        "title": "Poissonverteilung"
+                        "title": "Poissonverteilung",
+                        "imageName": "poissonverteilung"
                       }
                     ]
                   },
@@ -685,8 +763,8 @@
                     "title": "Mittelwert",
                     "detailItems": [
                       {
-                        "imageName": "poissonMittelwert",
-                        "title": "PoissonMittelwert"
+                        "title": "PoissonMittelwert",
+                        "imageName": "poissonMittelwert"
                       }
                     ]
                   },
@@ -694,8 +772,8 @@
                     "title": "Varianz",
                     "detailItems": [
                       {
-                        "imageName": "poissonVarianz",
-                        "title": "PoissonVarianz"
+                        "title": "PoissonVarianz",
+                        "imageName": "poissonVarianz"
                       }
                     ]
                   }
@@ -707,6 +785,7 @@
             "title": "kontinuierliche Verteilungen",
             "formulas": [
               {
+                "id": "EDF016AB-A2BC-4F32-9818-2E3D51A1718A",
                 "title": "Normalverteilung",
                 "imageName": "normalverteilung",
                 "details": [
@@ -714,8 +793,8 @@
                     "title": "Normalverteilung",
                     "detailItems": [
                       {
-                        "imageName": "normalverteilung",
-                        "title": "Normalverteilung"
+                        "title": "Normalverteilung",
+                        "imageName": "normalverteilung"
                       }
                     ]
                   },
@@ -723,8 +802,8 @@
                     "title": "Mittelwert",
                     "detailItems": [
                       {
-                        "imageName": "normalMittelwert",
-                        "title": "NormalMittelwert"
+                        "title": "NormalMittelwert",
+                        "imageName": "normalMittelwert"
                       }
                     ]
                   },
@@ -732,14 +811,15 @@
                     "title": "Varianz",
                     "detailItems": [
                       {
-                        "imageName": "normalVarianz",
-                        "title": "NormalVarianz"
+                        "title": "NormalVarianz",
+                        "imageName": "normalVarianz"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "CD8D8A9F-2691-4B06-8E18-0436C22DE61C",
                 "title": "Gammaverteilung",
                 "imageName": "gammaverteilung",
                 "details": [
@@ -747,14 +827,15 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "gammaverteilung",
-                        "title": "Gammaverteilung"
+                        "title": "Gammaverteilung",
+                        "imageName": "gammaverteilung"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "E66319C5-E708-4424-A411-5187F0267293",
                 "title": "χ²-Verteilung",
                 "imageName": "chiquadratverteilung",
                 "details": [
@@ -762,8 +843,8 @@
                     "title": "χ²-Verteilung",
                     "detailItems": [
                       {
-                        "imageName": "chiquadratverteilung",
-                        "title": "ChiquadratVerteilung"
+                        "title": "ChiquadratVerteilung",
+                        "imageName": "chiquadratverteilung"
                       }
                     ]
                   },
@@ -771,8 +852,8 @@
                     "title": "Mittelwert",
                     "detailItems": [
                       {
-                        "imageName": "chiquadratMittelwert",
-                        "title": "ChiquadratMittelwert"
+                        "title": "ChiquadratMittelwert",
+                        "imageName": "chiquadratMittelwert"
                       }
                     ]
                   },
@@ -780,14 +861,15 @@
                     "title": "Varianz",
                     "detailItems": [
                       {
-                        "imageName": "chiquadratVarianz",
-                        "title": "ChiquadratVarianz"
+                        "title": "ChiquadratVarianz",
+                        "imageName": "chiquadratVarianz"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "48C5895D-57C0-4251-AFE7-44839713C790",
                 "title": "Cauchyverteilung",
                 "imageName": "cauchyverteilung",
                 "details": [
@@ -795,14 +877,15 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "cauchyverteilung",
-                        "title": "Cauchyverteilung"
+                        "title": "Cauchyverteilung",
+                        "imageName": "cauchyverteilung"
                       }
                     ]
                   }
                 ]
               },
               {
+                "id": "5B2F9B56-31CB-4611-AA8A-112F73C280B5",
                 "title": "t-verteilung",
                 "imageName": "tverteilung",
                 "details": [
@@ -810,8 +893,8 @@
                     "title": "None",
                     "detailItems": [
                       {
-                        "imageName": "tverteilung",
-                        "title": "Tverteilung"
+                        "title": "Tverteilung",
+                        "imageName": "tverteilung"
                       }
                     ]
                   }
@@ -828,6 +911,7 @@
             "title": "allgemein",
             "formulas": [
               {
+                "id": "6AA2EA51-95C4-42E4-AD0C-2E2B03A135EE",
                 "imageName": "taylorreihe_allgemein"
               }
             ]
@@ -836,33 +920,43 @@
             "title": "oft auftretende Reihen",
             "formulas": [
               {
+                "id": "85FE8DD5-BAAB-41F9-9DB2-089FC79F9226",
                 "imageName": "taylorreihe_exp"
               },
               {
+                "id": "3F391DEA-068E-4DF0-BF38-A2691225C93A",
                 "imageName": "taylorreihe_sin"
               },
               {
+                "id": "299CEC27-6862-4DB7-9D21-BA1BD05B3C52",
                 "imageName": "taylorreihe_cos"
               },
               {
+                "id": "1C11EC55-CDDF-40DA-9AC5-2AF28EF47920",
                 "imageName": "taylorreihe_sin_quadrat"
               },
               {
+                "id": "F4C89526-0517-4E33-87B5-E0DF9D731B6E",
                 "imageName": "taylorreihe_cos_quadrat"
               },
               {
+                "id": "C56C0253-9FA0-48C3-81A3-3F1702AD9021",
                 "imageName": "taylorreihe_tan"
               },
               {
+                "id": "EB7A9EB4-7B3A-4D32-9055-25850CB41A62",
                 "imageName": "taylorreihe_cot"
               },
               {
+                "id": "0DDB600D-B4F6-4F50-AE94-5B0426E13905",
                 "imageName": "taylorreihe_arcsin"
               },
               {
+                "id": "5A85D89D-736A-4A31-8512-79EF49B63F3A",
                 "imageName": "taylorreihe_arctan"
               },
               {
+                "id": "01256DD9-A741-4D8C-8F46-AE1EB4ACCE54",
                 "imageName": "taylorreihe_ln_einsplusx"
               }
             ]
@@ -876,7 +970,7 @@
             "title": "Sinus",
             "formulas": [
               {
-                "imageName": "geometry_sine_a_over_c",
+                "id": "6F57FC91-1E70-442D-A992-1625D683E56C",
                 "details": [
                   {
                     "detailItems": [
@@ -905,33 +999,43 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "imageName": "geometry_sine_a_over_c"
               },
               {
+                "id": "6924CD9C-53F1-4415-8251-44B75A262065",
                 "imageName": "sin_taylor"
               },
               {
+                "id": "63279A11-017D-49C1-AF8A-22E48576191A",
                 "imageName": "sin_x_2pi"
               },
               {
+                "id": "4DF205FD-BDA9-4C19-8B01-7BF30A3D30C5",
                 "imageName": "sin_minusX"
               },
               {
+                "id": "9AAF4DE9-C1A0-4782-988C-F42A16878DD4",
                 "imageName": "additionstheorem_sin"
               },
               {
+                "id": "0F91E83E-B30F-4497-B717-5C44A3761C0C",
                 "imageName": "sin_x_plus_sin_y"
               },
               {
+                "id": "51C79ADD-9768-4B9A-BD86-DC30E58C6758",
                 "imageName": "sin_x_minus_sin_y"
               },
               {
+                "id": "DEF58F15-A2E1-467F-9F29-843E9657D1AF",
                 "imageName": "sin_2x"
               },
               {
+                "id": "E2F49F58-C055-4727-8B14-A3D35B6396BD",
                 "imageName": "sin_3x"
               },
               {
+                "id": "4F9169B9-3C41-46FD-9E15-D59B899F477D",
                 "imageName": "sin_quadrat_x"
               }
             ]
@@ -940,27 +1044,35 @@
             "title": "Cosinus",
             "formulas": [
               {
+                "id": "035C33CD-9ABB-466A-99EA-0E14DDD86383",
                 "imageName": "cos_taylor"
               },
               {
+                "id": "EDDCD53F-0668-42C6-880F-2E712F46EB26",
                 "imageName": "cos_minusX"
               },
               {
+                "id": "91264EE7-0E80-4D1C-A095-C3302EDBA96C",
                 "imageName": "additionstheorem_cos"
               },
               {
+                "id": "ACDED55E-9D27-4882-B450-B147C529E9D3",
                 "imageName": "cos_x_plus_cos_y"
               },
               {
+                "id": "EBE9B17A-6B16-4E88-8936-58EA47EA61B1",
                 "imageName": "cos_x_minus_cos_y"
               },
               {
+                "id": "A1FD5EA5-6BE7-4F3C-A8A9-0F2B9FC4412F",
                 "imageName": "cos_2x"
               },
               {
+                "id": "C22CA81B-7C96-4980-AE07-2B7A29CDBBA3",
                 "imageName": "cos_3x"
               },
               {
+                "id": "0A046815-60DE-4D8C-B955-7D6ED30A5DF9",
                 "imageName": "cos_quadrat_x"
               }
             ]
@@ -969,12 +1081,15 @@
             "title": "Tangens",
             "formulas": [
               {
+                "id": "0D0CF6EE-CD96-47D9-9094-3910984CD07A",
                 "imageName": "additionstheorem_tan"
               },
               {
+                "id": "38D6436E-5F2A-487F-8A9E-E41E625D1326",
                 "imageName": "tan_x_pm_tan_y"
               },
               {
+                "id": "7266CF75-55BE-4430-8948-15CEB2360F57",
                 "imageName": "tan_2x"
               }
             ]
@@ -983,9 +1098,11 @@
             "title": "Cotangens",
             "formulas": [
               {
+                "id": "B6F5D71F-C5D7-4C47-B2C2-A3AA8314B648",
                 "imageName": "additionstheorem_cot"
               },
               {
+                "id": "4DFFE36C-2D8E-4956-B611-D118CF7059EB",
                 "imageName": "cot_2x"
               }
             ]
@@ -999,6 +1116,7 @@
             "title": "Komponenten",
             "formulas": [
               {
+                "id": "3059B56F-25D1-470B-AA95-8BE4B0514267",
                 "imageName": "vektor_komponenten"
               }
             ]
@@ -1007,6 +1125,7 @@
             "title": "Betrag",
             "formulas": [
               {
+                "id": "0A7C05F9-1E83-4880-8428-4ABFCCDFA74D",
                 "imageName": "vektor_betrag"
               }
             ]
@@ -1015,6 +1134,7 @@
             "title": "Richtung",
             "formulas": [
               {
+                "id": "B64289D6-2537-424A-A47D-C907ADE22E16",
                 "imageName": "vektor_richtung"
               }
             ]
@@ -1023,12 +1143,15 @@
             "title": "Skalarprodukt",
             "formulas": [
               {
+                "id": "E7E625C1-4A74-4660-897D-C8694C1F4E9F",
                 "imageName": "vektor_skalarprodukt01"
               },
               {
+                "id": "B38FACD6-004F-4A33-8195-203CDD190010",
                 "imageName": "vektor_skalarprodukt02"
               },
               {
+                "id": "3AFBA4F8-F02E-449A-9825-E075EF9936BE",
                 "imageName": "vektor_skalarprodukt_kommutativ"
               }
             ]
@@ -1037,18 +1160,23 @@
             "title": "Kreuzprodukt",
             "formulas": [
               {
+                "id": "2B14725B-5290-4F3B-9258-F65799B965CB",
                 "imageName": "vektor_kreuzprodukt"
               },
               {
+                "id": "A34A4F16-B2AA-4FD0-A42B-3C4BE9B84993",
                 "imageName": "vektor_kreuzprodukt_betrag"
               },
               {
+                "id": "32DF45D3-20D5-4045-8D53-6B1764C2B7A9",
                 "imageName": "vektor_kreuzprodukt_antikommutativ"
               },
               {
+                "id": "A37E13E0-6296-462A-8919-E1FF58EDD8D5",
                 "imageName": "vektor_kreuzprodukt_assoziativ"
               },
               {
+                "id": "6F36D7A4-4564-4618-B6E7-06D552E050C3",
                 "imageName": "vektor_kreuzprodukt_distributiv"
               }
             ]
@@ -1057,6 +1185,7 @@
             "title": "Spatprodukt",
             "formulas": [
               {
+                "id": "587F532C-C1DA-44D2-9D79-E450E8B8F11A",
                 "imageName": "spatprodukt"
               }
             ]
@@ -1065,6 +1194,7 @@
             "title": "Langrange-Identität",
             "formulas": [
               {
+                "id": "D67C3B11-A891-4D68-A87E-3500DCFBD3FE",
                 "imageName": "vektor_kreuzprodukt_lagrange"
               }
             ]
@@ -1073,6 +1203,7 @@
             "title": "Entwicklungssatz",
             "formulas": [
               {
+                "id": "A6F6E92C-EF5D-4202-87ED-D4A5A58899E5",
                 "imageName": "entwicklungssatz"
               }
             ]

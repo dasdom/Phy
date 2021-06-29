@@ -27,14 +27,14 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
   
   func topicSelected(_ viewController: UIViewController, topic: Topic) {
     switch topic.type {
-      case .formulas:
-        let dataSource = SpecialFieldDataSource(json: topic.json)
+      case .physics_formulas, .math_formulas:
+        let dataSource = SpecialFieldDataSource(specialFieldSections: [])
         let next = SpecialFieldsViewController(style: .insetGrouped, dataSource: dataSource)
         next.title = topic.title.localized
         next.delegate = self
         presenter.pushViewController(next, animated: true)
       case .elements:
-        let dataSource = ChemElementsDataSource(json: topic.json)
+        let dataSource = ChemElementsDataSource(json: "dummy")
         let next = ChemElementsTableViewController(style: .plain, dataSource: dataSource)
         next.title = topic.title.localized
         presenter.pushViewController(next, animated: true)
@@ -78,7 +78,10 @@ extension FormulasCoordinator: FormulasViewControllerProtocol {
   func formulaSelected(_ viewController: UIViewController, formula: Formula) {
     if let details = formula.details, details.count > 0 {
       let detail = FormulaDetailViewController(formula: formula)
+      // SwiftUI experiment
+//      let detail = UIHostingController(rootView: FormulaDetailView(formula: formula))
       detail.title = formula.title?.localized
+      detail.delegate = self
       presenter.pushViewController(detail, animated: true)
     }
   }
@@ -101,5 +104,11 @@ extension FormulasCoordinator: FeedbackViewDelegate {
 extension FormulasCoordinator: MFMailComposeViewControllerDelegate {
   func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
     controller.dismiss(animated: true)
+  }
+}
+
+extension FormulasCoordinator: FormulaDetailViewControllerDelegate {
+  func fav(_ viewController: UIViewController, formula: Formula) {
+    
   }
 }

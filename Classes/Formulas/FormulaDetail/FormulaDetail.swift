@@ -4,7 +4,11 @@
 
 import Foundation
 
-struct FormulaDetail : Codable, Equatable {
-    let title: String?
-    let detailItems: [FormulaDetailItem]
+struct FormulaDetail: Codable, Equatable, Identifiable {
+  let title: String?
+  let detailItems: [FormulaDetailItem]
+
+  var id: UUID {
+    return UUID()
+  }
 }

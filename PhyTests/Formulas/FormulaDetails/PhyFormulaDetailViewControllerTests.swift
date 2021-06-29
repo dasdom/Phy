@@ -121,7 +121,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     // given
     let detailItem = FormulaDetailItem(imageName: "arbeit", title: "Arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
     let detail = FormulaDetail(title: "Foo", detailItems: [detailItem])
-    let formula = Formula(imageName: "arbeit", title: "Arbeit", details: [detail])
+    let formula = Formula(id: UUID(), imageName: "arbeit", title: "Arbeit", details: [detail])
     sut = FormulaDetailViewController(formula: formula)
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
@@ -163,7 +163,7 @@ extension PhyFormulaDetailViewControllerTests {
     let formulasDetail = FormulaDetail(title: "Foo", detailItems: [FormulaDetailItem(imageName: "bar")])
     let abbreveationDetail = FormulaDetail(title: "Abbreveation", detailItems: [FormulaDetailItem(imageName: "bar_abk", title: "BarAbk"),FormulaDetailItem(imageName: "baz_abk", title: "BazAbk")])
     
-    return Formula(imageName: "foo", title: "Foo", details: [formulasDetail, abbreveationDetail])
+    return Formula(id: UUID(), imageName: "foo", title: "Foo", details: [formulasDetail, abbreveationDetail])
   }
   
   class TableViewMock<T> : UITableView where T: UITableViewCell {

@@ -20,7 +20,7 @@ struct TopicDataSource : TopicDataSourceProtocol {
   private let items: [Topic]
   
   init() {
-    guard let url = Bundle.main.url(forResource: "Data", withExtension: "json") else {
+    guard let url = Bundle.main.url(forResource: "topics", withExtension: "json") else {
       fatalError()
     }
     
@@ -58,7 +58,7 @@ struct TopicDataSource : TopicDataSourceProtocol {
     
     guard let topicSection = TopicSection(rawValue: indexPath.section) else {
       assert(false)
-      return Topic(title: "", json: "", type: .feedback)
+      return Topic(title: "", type: .feedback)
     }
     
     let topic: Topic

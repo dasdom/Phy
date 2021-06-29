@@ -1,6 +1,7 @@
 {
   "configurations" : [
     {
+      "enabled" : false,
       "id" : "11122FE8-15EC-4973-AC57-10B0FCD60673",
       "name" : "General",
       "options" : {

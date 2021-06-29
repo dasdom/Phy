@@ -10,7 +10,7 @@ class TopicCellTests: XCTestCase {
   func test_update_setsText() {
     // given
     let sut = TopicCell()
-    let item = Topic(title: "Foo", json: "foo", type: .formulas)
+    let item = Topic(title: "Foo", type: .physics_formulas)
     
     // when
     sut.update(with: item)

@@ -10,7 +10,13 @@ class SpecialFieldDataSourceTests: XCTestCase {
   var sut: SpecialFieldDataSource!
   
   override func setUp() {
-    sut = SpecialFieldDataSource(json: "data_physics")
+    let specialFieldSections = [
+      SpecialFieldSection(title: "Foo", specialFields: [SpecialField(title: "bla", formulaSections: []),
+                                                        SpecialField(title: "blubb", formulaSections: []),
+                                                        SpecialField(title: "blubber", formulaSections: [])]),
+      SpecialFieldSection(title: "Bar", specialFields: []),
+    ]
+    sut = SpecialFieldDataSource(specialFieldSections: specialFieldSections)
   }
   
   override func tearDown() {
@@ -24,12 +30,12 @@ class SpecialFieldDataSourceTests: XCTestCase {
   
   func test_init_generatesSpecialFieldsArray_2() {
     // then
-    XCTAssertEqual(9, sut.numberOfRows(in: 0))
+    XCTAssertEqual(3, sut.numberOfRows(in: 0))
   }
   
   func test_init_generatesSpecialFieldsArray_3() {
     // then
     let firstSpecialField = sut.specialField(for: IndexPath(row: 0, section: 0))
-    XCTAssertEqual("Mechanik", firstSpecialField.title)
+    XCTAssertEqual("bla", firstSpecialField.title)
   }
 }

@@ -77,7 +77,7 @@
 		F236F4A52620493D00796E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236F4A42620493D00796E3D /* AppDelegate.swift */; };
 		F236F4AD262049F000796E3D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236F4AC262049F000796E3D /* AppCoordinator.swift */; };
 		F236F4B52620876A00796E3D /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236F4B42620876A00796E3D /* AppCoordinatorTests.swift */; };
-		F2372E1522F0E3B4003C0605 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F2372E1422F0E3B4003C0605 /* Data.json */; };
+		F2372E1522F0E3B4003C0605 /* topics.json in Resources */ = {isa = PBXBuildFile; fileRef = F2372E1422F0E3B4003C0605 /* topics.json */; };
 		F2372E4922F5687B003C0605 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F2372E4822F5687A003C0605 /* ReleaseNotes.txt */; };
 		F239BAD420F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F239BAD320F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m */; };
 		F23EBE74230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EBE73230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift */; };
@@ -103,6 +103,13 @@
 		F2716A2022F8C79F007D1528 /* FormulasDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1F22F8C79F007D1528 /* FormulasDataSource.swift */; };
 		F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
 		F279640E1143FAFD00B8EBDE /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
+		F27B8151268A571D00785816 /* AddUUIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8150268A571D00785816 /* AddUUIDTests.swift */; };
+		F27B8153268B332300785816 /* Experiment_DescriptionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8152268B332300785816 /* Experiment_DescriptionImageView.swift */; };
+		F27B8155268B37CF00785816 /* DescriptionImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8154268B37CF00785816 /* DescriptionImageViewTests.swift */; };
+		F27B8157268B614600785816 /* Experiment_FormulaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8156268B614600785816 /* Experiment_FormulaDetailView.swift */; };
+		F27B8159268B755200785816 /* FormulaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8158268B755200785816 /* FormulaStore.swift */; };
+		F27B815B268B76C700785816 /* FormulaStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B815A268B76C700785816 /* FormulaStoreTests.swift */; };
+		F27B815E268B9B6E00785816 /* FormulaStoreProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B815D268B9B6E00785816 /* FormulaStoreProtocolMock.swift */; };
 		F27EEF771154F1F3008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
 		F28175F8263EA5FD00097228 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28175F7263EA5FD00097228 /* FileManagerExtension.swift */; };
 		F2817605263FE4D600097228 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2817604263FE4D600097228 /* FeedbackView.swift */; };
@@ -269,7 +276,7 @@
 		F236F4A42620493D00796E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F236F4AC262049F000796E3D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F236F4B42620876A00796E3D /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
-		F2372E1422F0E3B4003C0605 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		F2372E1422F0E3B4003C0605 /* topics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = topics.json; sourceTree = "<group>"; };
 		F2372E4822F5687A003C0605 /* ReleaseNotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
 		F2372E4A22F5AB66003C0605 /* PhyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhyTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F239BAC820F8C0CD00612965 /* PhyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,6 +308,13 @@
 		F2716A1F22F8C79F007D1528 /* FormulasDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasDataSource.swift; sourceTree = "<group>"; };
 		F279640B1143FAEA00B8EBDE /* addFormula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addFormula.png; sourceTree = "<group>"; };
 		F279640D1143FAFD00B8EBDE /* favorites.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favorites.db; sourceTree = "<group>"; };
+		F27B8150268A571D00785816 /* AddUUIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUUIDTests.swift; sourceTree = "<group>"; };
+		F27B8152268B332300785816 /* Experiment_DescriptionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiment_DescriptionImageView.swift; sourceTree = "<group>"; };
+		F27B8154268B37CF00785816 /* DescriptionImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionImageViewTests.swift; sourceTree = "<group>"; };
+		F27B8156268B614600785816 /* Experiment_FormulaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiment_FormulaDetailView.swift; sourceTree = "<group>"; };
+		F27B8158268B755200785816 /* FormulaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaStore.swift; sourceTree = "<group>"; };
+		F27B815A268B76C700785816 /* FormulaStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaStoreTests.swift; sourceTree = "<group>"; };
+		F27B815D268B9B6E00785816 /* FormulaStoreProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaStoreProtocolMock.swift; sourceTree = "<group>"; };
 		F27EEE671154D3A5008449FC /* InfoLite.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoLite.plist; sourceTree = "<group>"; };
 		F27EEF761154F1F3008449FC /* DataLite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataLite.plist; sourceTree = "<group>"; };
 		F28175F7263EA5FD00097228 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
@@ -537,6 +551,7 @@
 				F2078E59262190380094D74D /* TopicViewControllerProtocolStub.swift */,
 				F2078E7F2621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift */,
 				F2078E632621946F0094D74D /* ViewControllerStub.swift */,
+				F27B815D268B9B6E00785816 /* FormulaStoreProtocolMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -641,6 +656,7 @@
 				F236256D22FE9FEF0075FC2F /* FormulaCellTests.swift */,
 				F2DBAEE5262C1FD8004DA5F9 /* FormulasViewControllerProtocolMock.swift */,
 				F2DBAEF7262C21E8004DA5F9 /* FormulasDataSourceProtocolMock.swift */,
+				F27B8150268A571D00785816 /* AddUUIDTests.swift */,
 			);
 			path = Formula;
 			sourceTree = "<group>";
@@ -648,11 +664,12 @@
 		F236257122FEA02E0075FC2F /* FormulaDetails */ = {
 			isa = PBXGroup;
 			children = (
+				F236257222FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift */,
 				F2DB7D5E23101B450098B42A /* PhyFormulaDetailItemTests.swift */,
 				F2DB7D5F23101B450098B42A /* PhyFormulaDetailTests.swift */,
-				F236257222FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift */,
 				F236257A22FEEB940075FC2F /* PhyFormulaDetailCellTests.swift */,
 				F236257C22FEED0D0075FC2F /* PhyFormulaDetailWithTextCellTests.swift */,
+				F27B8154268B37CF00785816 /* DescriptionImageViewTests.swift */,
 			);
 			path = FormulaDetails;
 			sourceTree = "<group>";
@@ -674,6 +691,7 @@
 			isa = PBXGroup;
 			children = (
 				F236F4B42620876A00796E3D /* AppCoordinatorTests.swift */,
+				F27B815C268B76CE00785816 /* General */,
 				F2372E4F22F5ABB6003C0605 /* Formulas */,
 				F20C8288265B797800A8F3FC /* Calculator */,
 				F20C8282265A265300A8F3FC /* Converter */,
@@ -695,7 +713,7 @@
 				F2DB7D6A231076250098B42A /* TopicDataSource.swift */,
 				F2DB7D6C231078800098B42A /* TopicCell.swift */,
 				F2DB7D4C23101A2C0098B42A /* Topic.swift */,
-				F2372E1422F0E3B4003C0605 /* Data.json */,
+				F2372E1422F0E3B4003C0605 /* topics.json */,
 			);
 			path = Topic;
 			sourceTree = "<group>";
@@ -718,6 +736,8 @@
 				F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */,
 				F2DB7D5723101A730098B42A /* FormulaDetail.swift */,
 				F2DB7D5623101A730098B42A /* FormulaDetailItem.swift */,
+				F27B8156268B614600785816 /* Experiment_FormulaDetailView.swift */,
+				F27B8152268B332300785816 /* Experiment_DescriptionImageView.swift */,
 			);
 			path = FormulaDetail;
 			sourceTree = "<group>";
@@ -776,6 +796,14 @@
 			path = SpecialField;
 			sourceTree = "<group>";
 		};
+		F27B815C268B76CE00785816 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F27B815A268B76C700785816 /* FormulaStoreTests.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		F281760C263FE61900097228 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
@@ -798,6 +826,7 @@
 				F2716A1D22F8C753007D1528 /* NameAndFormulaImageCell.swift */,
 				F28175F7263EA5FD00097228 /* FileManagerExtension.swift */,
 				F2817608263FE5BF00097228 /* AppStrings.swift */,
+				F27B8158268B755200785816 /* FormulaStore.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -1061,7 +1090,7 @@
 				F20E53BF22D9C284001794E9 /* DecimalPotents.xcassets in Resources */,
 				F20E53B722D9BFA2001794E9 /* AtomPhysics.xcassets in Resources */,
 				F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */,
-				F2372E1522F0E3B4003C0605 /* Data.json in Resources */,
+				F2372E1522F0E3B4003C0605 /* topics.json in Resources */,
 				F279640E1143FAFD00B8EBDE /* favorites.db in Resources */,
 				F207F4FB1145B67200256864 /* Referenz.plist in Resources */,
 				F27EEF771154F1F3008449FC /* DataLite.plist in Resources */,
@@ -1153,6 +1182,7 @@
 				F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */,
 				F2E61771263BEC5E008EB858 /* SearchFormulasDataSource.swift in Sources */,
 				F2827277232D875E004E94E0 /* ChemElementDetailViewController.swift in Sources */,
+				F27B8157268B614600785816 /* Experiment_FormulaDetailView.swift in Sources */,
 				F23152B12307DACB005A26BD /* UIImageViewExtension.swift in Sources */,
 				F2164FEE2632A4FF009FCC64 /* Converter.swift in Sources */,
 				F29AEB5522EB2E1F00EB4E26 /* SolverCell.swift in Sources */,
@@ -1173,7 +1203,9 @@
 				F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */,
 				F2E6175B26395016008EB858 /* CalculationGrouper.swift in Sources */,
 				F2DB7D5123101A5A0098B42A /* SpecialFieldSection.swift in Sources */,
+				F27B8153268B332300785816 /* Experiment_DescriptionImageView.swift in Sources */,
 				F2078EA22622ED170094D74D /* StringExtension.swift in Sources */,
+				F27B8159268B755200785816 /* FormulaStore.swift in Sources */,
 				F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */,
 				F2164FE626321A88009FCC64 /* ConverterList.swift in Sources */,
 				F22FF003230207B3003F3A9B /* SolverDetailResultCell.swift in Sources */,
@@ -1218,8 +1250,10 @@
 			files = (
 				F236257D22FEED0D0075FC2F /* PhyFormulaDetailWithTextCellTests.swift in Sources */,
 				F2E6176926395978008EB858 /* CalculatorTests.swift in Sources */,
+				F27B815E268B9B6E00785816 /* FormulaStoreProtocolMock.swift in Sources */,
 				F2078E642621946F0094D74D /* ViewControllerStub.swift in Sources */,
 				F236257322FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift in Sources */,
+				F27B8151268A571D00785816 /* AddUUIDTests.swift in Sources */,
 				F2DB7D6123101B450098B42A /* PhyFormulaDetailTests.swift in Sources */,
 				F200F0EF2312B68500C38045 /* ChemElementTests.swift in Sources */,
 				F2E6175F2639504F008EB858 /* CalculationGrouperTests.swift in Sources */,
@@ -1239,9 +1273,11 @@
 				F2078E5A262190380094D74D /* TopicViewControllerProtocolStub.swift in Sources */,
 				F2DB7D5C23101B3A0098B42A /* FormulaSectionTests.swift in Sources */,
 				F20C8284265A268F00A8F3FC /* XCTestCaseExtensions.swift in Sources */,
+				F27B815B268B76C700785816 /* FormulaStoreTests.swift in Sources */,
 				F239BAD420F8C12D00612965 /* Legacy_CalculatorViewControllerTests.m in Sources */,
 				F2F9033C2680F7AA0026732A /* SearchFormulasViewControllerTests.swift in Sources */,
 				F2DB7D6F231121920098B42A /* TopicDataSourceTests.swift in Sources */,
+				F27B8155268B37CF00785816 /* DescriptionImageViewTests.swift in Sources */,
 				F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */,
 				F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */,
 				F20C827E2659293900A8F3FC /* ConverterTests.swift in Sources */,
@@ -1319,7 +1355,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1354,7 +1390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1506,7 +1542,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1556,7 +1592,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1599,7 +1635,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1642,7 +1678,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1688,7 +1724,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1730,7 +1766,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1772,7 +1808,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhyUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

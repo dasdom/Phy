@@ -66,7 +66,7 @@ class MockDataSource : SearchFormulasDataSourceProtocol {
   }
 
   func formula(for: IndexPath) -> Formula {
-    return Formula(imageName: "foo", title: "bar")
+    return Formula(id: UUID(), imageName: "foo", title: "bar")
   }
 
   func search(_ string: String, completion: () -> Void) {

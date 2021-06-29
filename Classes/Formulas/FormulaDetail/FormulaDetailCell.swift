@@ -14,7 +14,7 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     detailImageView = UIImageView(frame: .zero)
-    
+
     toolsIndicatorImageView = UIImageView(image: UIImage(systemName: "wrench.and.screwdriver"))
     toolsIndicatorImageView.translatesAutoresizingMaskIntoConstraints = false
     toolsIndicatorImageView.isHidden = true
@@ -84,9 +84,9 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
   }
   
   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-    
+
     detailImageView.update(heightConstraint: imageHeightConstraint)
-    
+
     tintColor = UIColor.label
   }
 }

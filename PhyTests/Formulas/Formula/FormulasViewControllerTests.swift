@@ -45,7 +45,7 @@ class FormulasViewControllerTests: XCTestCase {
   func test_cellForRow_dequeuesCell() {
     // given
     let mockTableView = TableViewMock()
-    dataSourceMock.formulaForReturnValue = Formula(imageName: "bar", title: "Bar")
+    dataSourceMock.formulaForReturnValue = Formula(id: UUID(), imageName: "bar", title: "Bar")
     
     // when
     let indexPath = IndexPath(row: 0, section: 0)
@@ -90,7 +90,7 @@ class FormulasViewControllerTests: XCTestCase {
   
   func test_cellForRow_callsUpdateWithFormula() throws {
     // given
-    let formula = Formula(imageName: "bar", title: "Bar")
+    let formula = Formula(id: UUID(), imageName: "bar", title: "Bar")
     dataSourceMock.formulaForReturnValue = formula
     sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: FormulaListCell.identifier)
     
@@ -104,7 +104,7 @@ class FormulasViewControllerTests: XCTestCase {
   
   func test_didSelectCell_callDelegate() throws {
     // given
-    let formula = Formula(imageName: "arbeit", title: "Arbeit", details: [
+    let formula = Formula(id: UUID(), imageName: "arbeit", title: "Arbeit", details: [
       FormulaDetail(title: "Arbeit", detailItems: [FormulaDetailItem(imageName: "arbeit")])
     ])
     dataSourceMock.formulaForReturnValue = formula

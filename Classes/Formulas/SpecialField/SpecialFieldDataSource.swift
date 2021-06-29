@@ -15,17 +15,8 @@ struct SpecialFieldDataSource : SpecialFieldDataSourceProtocol {
   
   private let specialFieldSections: [SpecialFieldSection]
   
-  init(json: String) {
-    guard let url = Bundle.main.url(forResource: json, withExtension: "json") else { fatalError() }
-    
-    let data: Data
-    do {
-      data = try Data(contentsOf: url)
-      self.specialFieldSections = try JSONDecoder().decode([SpecialFieldSection].self, from: data)
-    } catch {
-      print(error)
-      self.specialFieldSections = []
-    }
+  init(specialFieldSections: [SpecialFieldSection]) {
+    self.specialFieldSections = specialFieldSections
   }
 
   func numberOfSections() -> Int {

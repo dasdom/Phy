@@ -90,11 +90,11 @@ extension FormulasDataSourceTests {
   func sections_2() -> [FormulaSection] {
     return [
       FormulaSection(title: "Foo", formulas: [
-        Formula(imageName: "bla", title: "Bla"),
-        Formula(imageName: "blubb", title: "Blubb")
+        Formula(id: UUID(), imageName: "bla", title: "Bla"),
+        Formula(id: UUID(), imageName: "blubb", title: "Blubb")
         ]),
       FormulaSection(title: "Bar", formulas: [
-        Formula(imageName: "blubb", title: "Blubb")
+        Formula(id: UUID(), imageName: "blubb", title: "Blubb")
         ])
     ]
   }
