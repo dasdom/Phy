@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import CommonExtensions
 
 protocol SearchFormulasDataSourceProtocol: FormulasDataSourceProtocol {
   func search(_ string: String, completion: () -> Void)

@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import CommonExtensions
 
 protocol TopicViewControllerProtocol {
   func topicSelected(_ viewController: UIViewController, topic: Topic)

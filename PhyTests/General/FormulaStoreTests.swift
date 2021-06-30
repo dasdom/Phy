@@ -23,4 +23,11 @@ class FormulaStoreTests: XCTestCase {
 
     XCTAssertGreaterThanOrEqual(specialFieldSections.count, 2)
   }
+
+  func test_shouldProvideElements() {
+
+    let elements = sut.elements()
+
+    XCTAssertGreaterThanOrEqual(elements.count, 2)
+  }
 }

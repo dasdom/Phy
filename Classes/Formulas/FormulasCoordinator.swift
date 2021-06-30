@@ -5,11 +5,13 @@
 import UIKit
 import SwiftUI
 import MessageUI
+import CommonExtensions
 
 class FormulasCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
   
   private let presenter: UINavigationController
   private let viewController: TopicViewController
+  lazy var formulaStore: FormulaStoreProtocol = FormulaStore()
 
   init(presenter: UINavigationController) {
     self.presenter = presenter
@@ -28,13 +30,15 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
   func topicSelected(_ viewController: UIViewController, topic: Topic) {
     switch topic.type {
       case .physics_formulas, .math_formulas:
-        let dataSource = SpecialFieldDataSource(specialFieldSections: [])
+        let specialFieldSections = formulaStore.specialFieldSections(topic.type)
+        let dataSource = SpecialFieldDataSource(specialFieldSections: specialFieldSections)
         let next = SpecialFieldsViewController(style: .insetGrouped, dataSource: dataSource)
         next.title = topic.title.localized
         next.delegate = self
         presenter.pushViewController(next, animated: true)
       case .elements:
-        let dataSource = ChemElementsDataSource(json: "dummy")
+        let elements = formulaStore.elements()
+        let dataSource = ChemElementsDataSource(elements: elements)
         let next = ChemElementsTableViewController(style: .plain, dataSource: dataSource)
         next.title = topic.title.localized
         presenter.pushViewController(next, animated: true)

@@ -36,7 +36,10 @@ class FormulasCoordinatorTests: XCTestCase {
     XCTAssertEqual(topicViewController.delegate as? FormulasCoordinator, sut)
   }
   
-  func test_topicSelected_pushesSpecialFields() throws {
+  func test_physicsFormulaTopicSelected_pushesSpecialFields() throws {
+    let formulaStoreMock = FormulaStoreProtocolMock()
+    formulaStoreMock.specialFieldSectionsReturnValue = specialFieldSections()
+    sut.formulaStore = formulaStoreMock
     sut.start()
     let topicViewController = try XCTUnwrap(navigationController.topViewController as? TopicViewController)
     let topic = Topic(title: "Foo", type: .physics_formulas)
@@ -45,7 +48,24 @@ class FormulasCoordinatorTests: XCTestCase {
     
     let specialField = try XCTUnwrap(navigationController.lastPushedViewController as? SpecialFieldsViewController)
     XCTAssertNotNil(specialField.delegate)
+    XCTAssertEqual(formulaStoreMock.specialFieldSectionsCallsCount, 1)
     XCTAssertGreaterThanOrEqual(specialField.specialFieldDataSource.numberOfSections(), 2)
+  }
+
+  func test_elementsTopicSelected_pushesChemElements() throws {
+    let formulaStoreMock = FormulaStoreProtocolMock()
+    formulaStoreMock.elementsReturnValue = elements()
+    sut.formulaStore = formulaStoreMock
+    sut.start()
+    let topicViewController = try XCTUnwrap(navigationController.topViewController as? TopicViewController)
+    let topic = Topic(title: "Foo", type: .elements)
+
+    sut.topicSelected(topicViewController, topic: topic)
+
+    let elements = try XCTUnwrap(navigationController.lastPushedViewController as? ChemElementsTableViewController)
+//    XCTAssertNotNil(elements.delegate)
+    XCTAssertEqual(formulaStoreMock.elementsCallsCount, 1)
+    XCTAssertGreaterThanOrEqual(elements.elementsDataSource.numberOfRows(in: 0), 1)
   }
   
   func test_showImprint_showsImprint() throws {
@@ -59,7 +79,7 @@ class FormulasCoordinatorTests: XCTestCase {
     XCTAssertTrue(topViewController is ImprintViewController)
   }
   
-  func test_topicSelected_pushesFormulas() throws {
+  func test_specialFieldSelected_pushesFormulas() throws {
     sut.start()
     let viewController = UIViewController()
     let specialField = SpecialField(title: "Foo", formulaSections: [])
@@ -80,5 +100,23 @@ class FormulasCoordinatorTests: XCTestCase {
     sut.formulaSelected(viewController, formula: formula)
     
     XCTAssertTrue(navigationController.lastPushedViewController is FormulaDetailViewController)
+  }
+}
+
+// MARK: - Helpers
+extension FormulasCoordinatorTests {
+  func specialFieldSections() -> [SpecialFieldSection] {
+    return [
+      SpecialFieldSection(title: "Foo", specialFields: [SpecialField(title: "Bla", formulaSections: []),
+                                                        SpecialField(title: "Blub", formulaSections: [])]),
+      SpecialFieldSection(title: "Bar", specialFields: [SpecialField(title: "Ta", formulaSections: []),
+                                                        SpecialField(title: "Tü", formulaSections: [])]),
+    ]
+  }
+
+  func elements() -> [ChemElement] {
+    return [
+      ChemElement(abbreviation: "A", atomMass: 1, chemieBool: true, electronConfiguration: "B", group: "C", name: "D", ordinal: 2, period: 3, yPos: 4, title: "E", pauling: "F", mostImportantRadioactiveIsotope: 5, decayType: "G", lifetime: "H", phaseNorm: "I", crystalStructure: "J")
+    ]
   }
 }

@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import CommonExtensions
 
 enum AppStrings: String {
   case asking_for_feedback

@@ -26,4 +26,19 @@ final class FormulaStoreProtocolMock: FormulaStoreProtocol {
     specialFieldSectionsReceivedInvocations.append(type)
     return specialFieldSectionsClosure.map({ $0(type) }) ?? specialFieldSectionsReturnValue
   }
+
+  // MARK: - elements
+
+  var elementsCallsCount = 0
+  var elementsCalled: Bool {
+    elementsCallsCount > 0
+  }
+  var elementsReturnValue: [ChemElement]!
+  var elementsClosure: (() -> [ChemElement])?
+
+  func elements() -> [ChemElement] {
+    elementsCallsCount += 1
+    return elementsClosure.map({ $0() }) ?? elementsReturnValue
+  }
 }
+

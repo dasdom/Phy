@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import CommonExtensions
 
 enum AngleType : Int {
   case rad

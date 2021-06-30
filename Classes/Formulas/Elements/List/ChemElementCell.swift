@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import CommonExtensions
 
 class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
 

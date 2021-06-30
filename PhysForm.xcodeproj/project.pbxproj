@@ -17,7 +17,6 @@
 		F2078E5A262190380094D74D /* TopicViewControllerProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E59262190380094D74D /* TopicViewControllerProtocolStub.swift */; };
 		F2078E642621946F0094D74D /* ViewControllerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E632621946F0094D74D /* ViewControllerStub.swift */; };
 		F2078E802621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E7F2621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift */; };
-		F2078EA22622ED170094D74D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E972622EC140094D74D /* StringExtension.swift */; };
 		F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078EAA2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift */; };
 		F2078EB22622F3D40094D74D /* ChemElementDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078EB12622F3D40094D74D /* ChemElementDetailCell.swift */; };
 		F207F4FB1145B67200256864 /* Referenz.plist in Resources */ = {isa = PBXBuildFile; fileRef = F207F4FA1145B67200256864 /* Referenz.plist */; };
@@ -86,6 +85,7 @@
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
 		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
 		F2569B350F9E2B0100968581 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2569B340F9E2B0100968581 /* Data.plist */; };
+		F25DF966268CBF1D00B6E456 /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = F25DF965268CBF1D00B6E456 /* CommonExtensions */; };
 		F26C9AD92630B2C700A1B161 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C9AD82630B2C700A1B161 /* ConverterView.swift */; };
 		F26C9ADD2631E16E00A1B161 /* converter.json in Resources */ = {isa = PBXBuildFile; fileRef = F26C9ADC2631E16E00A1B161 /* converter.json */; };
 		F26C9AE12631E4BF00A1B161 /* ConvertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C9AE02631E4BF00A1B161 /* ConvertInfo.swift */; };
@@ -216,7 +216,6 @@
 		F2078E59262190380094D74D /* TopicViewControllerProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewControllerProtocolStub.swift; sourceTree = "<group>"; };
 		F2078E632621946F0094D74D /* ViewControllerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStub.swift; sourceTree = "<group>"; };
 		F2078E7F2621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialFieldsViewControllerProtocolStub.swift; sourceTree = "<group>"; };
-		F2078E972622EC140094D74D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F2078EAA2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		F2078EB12622F3D40094D74D /* ChemElementDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementDetailCell.swift; sourceTree = "<group>"; };
 		F207F4FA1145B67200256864 /* Referenz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Referenz.plist; sourceTree = "<group>"; };
@@ -406,6 +405,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25DF966268CBF1D00B6E456 /* CommonExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,7 +871,6 @@
 				F29AEB1122EB024800EB4E26 /* DHSmartTableViewCell.m */,
 				F2716A0F22F8635F007D1528 /* DDHBaseTableViewCell.swift */,
 				F23152B02307DACB005A26BD /* UIImageViewExtension.swift */,
-				F2078E972622EC140094D74D /* StringExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -973,6 +972,7 @@
 			);
 			name = PhysForm;
 			packageProductDependencies = (
+				F25DF965268CBF1D00B6E456 /* CommonExtensions */,
 			);
 			productName = PhysForm;
 			productReference = 1D6058910D05DD3D006BFB54 /* Phy.app */;
@@ -1062,6 +1062,7 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			packageReferences = (
 				F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -1204,7 +1205,6 @@
 				F2E6175B26395016008EB858 /* CalculationGrouper.swift in Sources */,
 				F2DB7D5123101A5A0098B42A /* SpecialFieldSection.swift in Sources */,
 				F27B8153268B332300785816 /* Experiment_DescriptionImageView.swift in Sources */,
-				F2078EA22622ED170094D74D /* StringExtension.swift in Sources */,
 				F27B8159268B755200785816 /* FormulaStore.swift in Sources */,
 				F29AEB1422EB024800EB4E26 /* DHSmartTableViewCell.m in Sources */,
 				F2164FE626321A88009FCC64 /* ConverterList.swift in Sources */,
@@ -1880,6 +1880,14 @@
 				minimumVersion = 0.7.5;
 			};
 		};
+		F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dasdom/CommonExtensions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1887,6 +1895,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
+		};
+		F25DF965268CBF1D00B6E456 /* CommonExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */;
+			productName = CommonExtensions;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
