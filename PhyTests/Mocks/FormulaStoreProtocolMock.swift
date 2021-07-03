@@ -40,5 +40,41 @@ final class FormulaStoreProtocolMock: FormulaStoreProtocol {
     elementsCallsCount += 1
     return elementsClosure.map({ $0() }) ?? elementsReturnValue
   }
+
+  // MARK: - addFavorite
+
+  var addFavoriteFormulaCallsCount = 0
+  var addFavoriteFormulaCalled: Bool {
+    addFavoriteFormulaCallsCount > 0
+  }
+  var addFavoriteFormulaReceivedFormula: Formula?
+  var addFavoriteFormulaReceivedInvocations: [Formula] = []
+  var addFavoriteFormulaClosure: ((Formula) -> Void)?
+
+  func addFavorite(formula: Formula) {
+    addFavoriteFormulaCallsCount += 1
+    addFavoriteFormulaReceivedFormula = formula
+    addFavoriteFormulaReceivedInvocations.append(formula)
+    addFavoriteFormulaClosure?(formula)
+  }
+
+  // MARK: - favoritesSection
+
+  var favoritesSectionFromSectionsCallsCount = 0
+  var favoritesSectionFromSectionsCalled: Bool {
+    favoritesSectionFromSectionsCallsCount > 0
+  }
+  var favoritesSectionFromSectionsReceivedFromSections: [FormulaSection]?
+  var favoritesSectionFromSectionsReceivedInvocations: [[FormulaSection]] = []
+  var favoritesSectionFromSectionsReturnValue: FormulaSection!
+  var favoritesSectionFromSectionsClosure: (([FormulaSection]) -> FormulaSection)?
+
+  func favoritesSection(from: [FormulaSection]) -> FormulaSection {
+    favoritesSectionFromSectionsCallsCount += 1
+    favoritesSectionFromSectionsReceivedFromSections = from
+    favoritesSectionFromSectionsReceivedInvocations.append(from)
+    return favoritesSectionFromSectionsClosure.map({ $0(from) }) ?? favoritesSectionFromSectionsReturnValue
+  }
 }
+
 

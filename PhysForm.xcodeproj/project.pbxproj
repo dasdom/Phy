@@ -86,6 +86,8 @@
 		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
 		F2569B350F9E2B0100968581 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2569B340F9E2B0100968581 /* Data.plist */; };
 		F25DF966268CBF1D00B6E456 /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = F25DF965268CBF1D00B6E456 /* CommonExtensions */; };
+		F25DF96A268E46AB00B6E456 /* FormulaCollectionViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF969268E46AB00B6E456 /* FormulaCollectionViewListCell.swift */; };
+		F25DF96C268F68B200B6E456 /* FormulaHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF96B268F68B200B6E456 /* FormulaHeaderView.swift */; };
 		F26C9AD92630B2C700A1B161 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C9AD82630B2C700A1B161 /* ConverterView.swift */; };
 		F26C9ADD2631E16E00A1B161 /* converter.json in Resources */ = {isa = PBXBuildFile; fileRef = F26C9ADC2631E16E00A1B161 /* converter.json */; };
 		F26C9AE12631E4BF00A1B161 /* ConvertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26C9AE02631E4BF00A1B161 /* ConvertInfo.swift */; };
@@ -99,7 +101,7 @@
 		F2716A1222F87078007D1528 /* SpecialFieldDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1122F87078007D1528 /* SpecialFieldDataSourceTests.swift */; };
 		F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1322F8766C007D1528 /* SpecialFieldCellTests.swift */; };
 		F2716A1622F8789F007D1528 /* FormulasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1522F8789F007D1528 /* FormulasViewController.swift */; };
-		F2716A1E22F8C753007D1528 /* NameAndFormulaImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1D22F8C753007D1528 /* NameAndFormulaImageCell.swift */; };
+		F2716A1E22F8C753007D1528 /* NameAndFormulaImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1D22F8C753007D1528 /* NameAndFormulaImageTableViewCell.swift */; };
 		F2716A2022F8C79F007D1528 /* FormulasDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1F22F8C79F007D1528 /* FormulasDataSource.swift */; };
 		F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
 		F279640E1143FAFD00B8EBDE /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
@@ -289,6 +291,8 @@
 		F24201F52645DEA700E0CA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F2569B340F9E2B0100968581 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		F25DF969268E46AB00B6E456 /* FormulaCollectionViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaCollectionViewListCell.swift; sourceTree = "<group>"; };
+		F25DF96B268F68B200B6E456 /* FormulaHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaHeaderView.swift; sourceTree = "<group>"; };
 		F26C9AD82630B2C700A1B161 /* ConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		F26C9ADC2631E16E00A1B161 /* converter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = converter.json; sourceTree = "<group>"; };
 		F26C9AE02631E4BF00A1B161 /* ConvertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertInfo.swift; sourceTree = "<group>"; };
@@ -303,7 +307,7 @@
 		F2716A1122F87078007D1528 /* SpecialFieldDataSourceTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SpecialFieldDataSourceTests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		F2716A1322F8766C007D1528 /* SpecialFieldCellTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SpecialFieldCellTests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		F2716A1522F8789F007D1528 /* FormulasViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FormulasViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
-		F2716A1D22F8C753007D1528 /* NameAndFormulaImageCell.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NameAndFormulaImageCell.swift; sourceTree = "<group>"; tabWidth = 2; };
+		F2716A1D22F8C753007D1528 /* NameAndFormulaImageTableViewCell.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NameAndFormulaImageTableViewCell.swift; sourceTree = "<group>"; tabWidth = 2; };
 		F2716A1F22F8C79F007D1528 /* FormulasDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasDataSource.swift; sourceTree = "<group>"; };
 		F279640B1143FAEA00B8EBDE /* addFormula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addFormula.png; sourceTree = "<group>"; };
 		F279640D1143FAFD00B8EBDE /* favorites.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favorites.db; sourceTree = "<group>"; };
@@ -774,6 +778,8 @@
 			isa = PBXGroup;
 			children = (
 				F2716A1522F8789F007D1528 /* FormulasViewController.swift */,
+				F25DF969268E46AB00B6E456 /* FormulaCollectionViewListCell.swift */,
+				F25DF96B268F68B200B6E456 /* FormulaHeaderView.swift */,
 				F20C82A226622DB600A8F3FC /* FormulaListCell.swift */,
 				F2716A1F22F8C79F007D1528 /* FormulasDataSource.swift */,
 				F2DB7D5323101A650098B42A /* FormulaSection.swift */,
@@ -823,7 +829,7 @@
 		F28B6FC62639206B008C8F71 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				F2716A1D22F8C753007D1528 /* NameAndFormulaImageCell.swift */,
+				F2716A1D22F8C753007D1528 /* NameAndFormulaImageTableViewCell.swift */,
 				F28175F7263EA5FD00097228 /* FileManagerExtension.swift */,
 				F2817608263FE5BF00097228 /* AppStrings.swift */,
 				F27B8158268B755200785816 /* FormulaStore.swift */,
@@ -1162,7 +1168,7 @@
 				F200F0EC2312B44900C38045 /* ChemElementsTableViewController.swift in Sources */,
 				F2E6176D263BEB9D008EB858 /* SearchFormulasViewController.swift in Sources */,
 				F29AEB1B22EB028300EB4E26 /* ReferenzView.m in Sources */,
-				F2716A1E22F8C753007D1528 /* NameAndFormulaImageCell.swift in Sources */,
+				F2716A1E22F8C753007D1528 /* NameAndFormulaImageTableViewCell.swift in Sources */,
 				F2078EB22622F3D40094D74D /* ChemElementDetailCell.swift in Sources */,
 				F236257722FEA8A80075FC2F /* FormulaDetailViewController.swift in Sources */,
 				F236257922FEDA970075FC2F /* FormulaDetailCell.swift in Sources */,
@@ -1173,6 +1179,7 @@
 				F20C82782659145F00A8F3FC /* NumberButtonsView.swift in Sources */,
 				F2817609263FE5BF00097228 /* AppStrings.swift in Sources */,
 				F2DB7D5423101A650098B42A /* Formula.swift in Sources */,
+				F25DF96A268E46AB00B6E456 /* FormulaCollectionViewListCell.swift in Sources */,
 				F29AEB4422EB034E00EB4E26 /* Legacy_Calculator.m in Sources */,
 				F2DB7D6B231076250098B42A /* TopicDataSource.swift in Sources */,
 				F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */,
@@ -1237,6 +1244,7 @@
 				F236257522FEA8850075FC2F /* FormulaDetailWithTextCell.swift in Sources */,
 				F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */,
 				F294101422E7AD1B00379868 /* CaveScene.swift in Sources */,
+				F25DF96C268F68B200B6E456 /* FormulaHeaderView.swift in Sources */,
 				F22FEFFF230205BE003F3A9B /* SolverDetailInputCell.swift in Sources */,
 				F26C9AD92630B2C700A1B161 /* ConverterView.swift in Sources */,
 				F28B6FC026391FF0008C8F71 /* FormulaCellProtocol.swift in Sources */,

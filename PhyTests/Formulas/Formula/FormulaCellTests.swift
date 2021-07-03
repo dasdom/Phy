@@ -9,7 +9,7 @@ class FormulaCellTests: XCTestCase {
   
   func test_update_setsText() {
     // given
-    let sut = NameAndFormulaImageCell()
+    let sut = NameAndFormulaImageTableViewCell()
     let formula = Formula(id: UUID(), imageName: "arbeit", title: "Bar")
     
     // when

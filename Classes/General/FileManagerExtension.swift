@@ -9,4 +9,8 @@ extension FileManager {
   @objc func historyPath() -> URL {
     return documentsURL().appendingPathComponent("history.json")
   }
+
+  func favorites() -> URL {
+    return documentsURL().appendingPathComponent("favorites.json")
+  }
 }

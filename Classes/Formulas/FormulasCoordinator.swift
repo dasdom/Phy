@@ -63,25 +63,25 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
 
 extension FormulasCoordinator: SpecialFieldsViewControllerProtocol {
   func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField) {
-    let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
-    let next = FormulasViewController(dataSource: formulasDataSource)
+//    let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
+    let next = FormulasViewController(sections: specialField.formulaSections, formulaStore: formulaStore)
     next.title = specialField.title.localized
     next.delegate = self
     presenter.pushViewController(next, animated: true)
   }
 
   func showSearch(_ viewController: UIViewController, specialFieldSections: [SpecialFieldSection]) {
-    let searchFormulasDataSource = SearchFormulasDataSource(specialFieldSections: specialFieldSections)
-    let next = SearchFormulasViewController(dataSource: searchFormulasDataSource)
-    next.delegate = self
-    presenter.pushViewController(next, animated: true)
+//    let searchFormulasDataSource = SearchFormulasDataSource(specialFieldSections: specialFieldSections)
+//    let next = SearchFormulasViewController(dataSource: searchFormulasDataSource)
+//    next.delegate = self
+//    presenter.pushViewController(next, animated: true)
   }
 }
 
 extension FormulasCoordinator: FormulasViewControllerProtocol {
   func formulaSelected(_ viewController: UIViewController, formula: Formula) {
     if let details = formula.details, details.count > 0 {
-      let detail = FormulaDetailViewController(formula: formula)
+      let detail = FormulaDetailViewController(formula: formula, formulaStore: formulaStore)
       // SwiftUI experiment
 //      let detail = UIHostingController(rootView: FormulaDetailView(formula: formula))
       detail.title = formula.title?.localized
@@ -113,6 +113,6 @@ extension FormulasCoordinator: MFMailComposeViewControllerDelegate {
 
 extension FormulasCoordinator: FormulaDetailViewControllerDelegate {
   func fav(_ viewController: UIViewController, formula: Formula) {
-    
+    formulaStore.addOrRemoveFavorite(formula: formula)
   }
 }

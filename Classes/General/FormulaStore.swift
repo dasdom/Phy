@@ -7,9 +7,26 @@ import Foundation
 protocol FormulaStoreProtocol {
   func specialFieldSections(_ type: TopicType) -> [SpecialFieldSection]
   func elements() -> [ChemElement]
+  func addOrRemoveFavorite(formula: Formula)
+  func favoritesSection(from: [FormulaSection]) -> FormulaSection
+  func formulaIsFavorit(_ formula: Formula) -> Bool
 }
 
 class FormulaStore: FormulaStoreProtocol {
+
+  var favorites: [UUID]
+
+  init() {
+    let url = FileManager.default.favorites()
+
+    do {
+      let data = try Data(contentsOf: url)
+      favorites = try JSONDecoder().decode([UUID].self, from: data)
+    } catch {
+      print("error \(error) in \(#file)")
+      favorites = []
+    }
+  }
 
   func specialFieldSections(_ type: TopicType) -> [SpecialFieldSection] {
 
@@ -40,6 +57,31 @@ class FormulaStore: FormulaStoreProtocol {
     return elements
   }
 
+  func addOrRemoveFavorite(formula: Formula) {
+    let id = formula.referenceUUID ?? formula.id
+    if favorites.contains(id) {
+      favorites.removeAll(where: { $0 == id })
+    } else {
+      favorites.append(formula.id)
+    }
+    writeFavorites()
+  }
+
+  func favoritesSection(from sections: [FormulaSection]) -> FormulaSection {
+    let formulas = sections.flatMap({ $0.formulas }).filter({ favorites.contains($0.id) }).map({ $0.copyWithNewUUID() })
+    return FormulaSection(title: "Favorites", formulas: formulas)
+  }
+
+  func formulaIsFavorit(_ formula: Formula) -> Bool {
+    if let id = formula.referenceUUID {
+      return favorites.contains(id)
+    }
+    return favorites.contains(formula.id)
+  }
+}
+
+// Mark: - Helpers
+extension FormulaStore {
   private func loadSpecialFieldSections(from json: String) -> [SpecialFieldSection] {
     guard let url = Bundle.main.url(forResource: json, withExtension: "json") else { fatalError() }
 
@@ -53,5 +95,14 @@ class FormulaStore: FormulaStoreProtocol {
     }
 
     return specialFieldSections
+  }
+
+  private func writeFavorites() {
+    do {
+      let data = try JSONEncoder().encode(favorites)
+      try data.write(to: FileManager.default.favorites())
+    } catch {
+      print("error \(error) in \(#file)")
+    }
   }
 }

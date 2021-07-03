@@ -86,7 +86,7 @@ class FormulasCoordinatorTests: XCTestCase {
     
     sut.specialFieldSelected(viewController, specialField: specialField)
     
-    let formulas = try XCTUnwrap(navigationController.lastPushedViewController as? FormulasViewController)
+    let formulas = try XCTUnwrap(navigationController.lastPushedViewController as? Legacy_FormulasViewController)
     XCTAssertNotNil(formulas.delegate)
   }
   
@@ -100,6 +100,16 @@ class FormulasCoordinatorTests: XCTestCase {
     sut.formulaSelected(viewController, formula: formula)
     
     XCTAssertTrue(navigationController.lastPushedViewController is FormulaDetailViewController)
+  }
+
+  func test_fav_shouldCallAddMethodInFormulaStore() {
+    let formulaStoreMock = FormulaStoreProtocolMock()
+    sut.formulaStore = formulaStoreMock
+
+    let formula = Formula(id: UUID(), imageName: "Foo", title: "Bar")
+    sut.fav(UIViewController(), formula: formula)
+
+    XCTAssertEqual(formulaStoreMock.addFavoriteFormulaReceivedFormula, formula)
   }
 }
 

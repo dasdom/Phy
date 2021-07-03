@@ -4,7 +4,7 @@
 
 import UIKit
 
-class NameAndFormulaImageCell: DDHBaseTableViewCell<FormulaCellProtocol> {
+class NameAndFormulaImageTableViewCell: DDHBaseTableViewCell<FormulaCellProtocol> {
   
   let nameLabel: UILabel
   let formulaImageView: UIImageView

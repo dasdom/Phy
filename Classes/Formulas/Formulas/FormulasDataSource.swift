@@ -14,9 +14,11 @@ protocol FormulasDataSourceProtocol {
 class FormulasDataSource: FormulasDataSourceProtocol {
   
   var sections: [FormulaSection]
+  var sectionsWithFavorites: [FormulaSection]
   
-  internal init(sections: [FormulaSection]) {
+  init(sections: [FormulaSection]) {
     self.sections = sections
+    self.sectionsWithFavorites = sections
   }
   
   func numberOfSections() -> Int {

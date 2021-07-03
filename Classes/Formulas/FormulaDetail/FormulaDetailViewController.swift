@@ -10,12 +10,14 @@ protocol FormulaDetailViewControllerDelegate: AnyObject {
 
 class FormulaDetailViewController: UITableViewController {
 
-  let formula: Formula
+  private let formula: Formula
+  private let formulaStore: FormulaStoreProtocol
   weak var delegate: FormulaDetailViewControllerDelegate?
 
-  init(formula: Formula) {
+  init(formula: Formula, formulaStore: FormulaStoreProtocol) {
 
     self.formula = formula
+    self.formulaStore = formulaStore
 
     super.init(style: .insetGrouped)
   }
@@ -29,8 +31,18 @@ class FormulaDetailViewController: UITableViewController {
     tableView.register(FormulaDetailWithTextCell.self, forCellReuseIdentifier: FormulaDetailWithTextCell.identifier)
     tableView.register(FormulaDetailImageCell.self, forCellReuseIdentifier: FormulaDetailImageCell.identifier)
 
-    let favButton = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(fav(_:)))
+    let favButton = UIBarButtonItem(image: favButtonImage(), style: .plain, target: self, action: #selector(fav(_:)))
     navigationItem.rightBarButtonItem = favButton
+  }
+
+  func favButtonImage() -> UIImage? {
+    let symbolName: String
+    if formulaStore.formulaIsFavorit(formula) {
+      symbolName = "star.fill"
+    } else {
+      symbolName = "star"
+    }
+    return UIImage(systemName: symbolName)
   }
 
   // MARK: - Table view data source
@@ -105,5 +117,7 @@ class FormulaDetailViewController: UITableViewController {
 extension FormulaDetailViewController {
   @objc func fav(_ sender: UIBarButtonItem) {
     delegate?.fav(self, formula: formula)
+
+    sender.image = favButtonImage()
   }
 }

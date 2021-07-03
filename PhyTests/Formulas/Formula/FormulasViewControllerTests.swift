@@ -7,13 +7,13 @@ import XCTest
 
 class FormulasViewControllerTests: XCTestCase {
   
-  var sut: FormulasViewController!
+  var sut: Legacy_FormulasViewController!
   var dataSourceMock: FormulasDataSourceProtocolMock!
   var delegateMock: FormulasViewControllerProtocolMock!
   
   override func setUp() {
     dataSourceMock = FormulasDataSourceProtocolMock()
-    sut = FormulasViewController(dataSource: dataSourceMock)
+    sut = Legacy_FormulasViewController(dataSource: dataSourceMock)
     delegateMock = FormulasViewControllerProtocolMock()
     sut.delegate = delegateMock
   }
@@ -29,7 +29,7 @@ class FormulasViewControllerTests: XCTestCase {
     let formulasDataSource = FormulasDataSource(sections: [])
     
     // when
-    _ = FormulasViewController(dataSource: formulasDataSource)
+    _ = Legacy_FormulasViewController(dataSource: formulasDataSource)
   }
   
   func test_loadingView_registersCell() {
@@ -37,9 +37,9 @@ class FormulasViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
     
     // Assert
-    let cell = sut.tableView.dequeueReusableCell(withIdentifier: FormulaListCell.identifier, for: IndexPath(row: 0, section: 0))
+    let cell = sut.tableView.dequeueReusableCell(withIdentifier: Legacy_FormulaListCell.identifier, for: IndexPath(row: 0, section: 0))
     XCTAssertNotNil(cell)
-    XCTAssertTrue(cell is FormulaListCell)
+    XCTAssertTrue(cell is Legacy_FormulaListCell)
   }
   
   func test_cellForRow_dequeuesCell() {
@@ -92,7 +92,7 @@ class FormulasViewControllerTests: XCTestCase {
     // given
     let formula = Formula(id: UUID(), imageName: "bar", title: "Bar")
     dataSourceMock.formulaForReturnValue = formula
-    sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: FormulaListCell.identifier)
+    sut.tableView.register(MockFormulaCell.self, forCellReuseIdentifier: Legacy_FormulaListCell.identifier)
     
     // when
     let cell = sut.tableView(sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
@@ -127,11 +127,11 @@ extension FormulasViewControllerTests {
       
       dequeueReusableCellCalls += 1
       
-      return FormulaListCell()
+      return Legacy_FormulaListCell()
     }
   }
   
-  class MockFormulaCell : FormulaListCell {
+  class MockFormulaCell : Legacy_FormulaListCell {
     
     var lastFormula: Formula? = nil
     

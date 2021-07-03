@@ -30,4 +30,19 @@ class FormulaStoreTests: XCTestCase {
 
     XCTAssertGreaterThanOrEqual(elements.count, 2)
   }
+
+  func test_addFavorite_shouldPersistFormula() {
+    let uuid = UUID()
+    let localSUT = FormulaStore()
+    localSUT.addFavorite(formula: Formula(id: uuid, imageName: "Foo", title: "Bar"))
+
+    let secondSUT = FormulaStore()
+    let section = secondSUT.favoritesSection(from: [
+      FormulaSection(title: "Bla", formulas: [Formula(id: UUID(), imageName: "aa1", title: "aa2"),
+                                              Formula(id: uuid, imageName: "bb1", title: "bb2")])
+    ])
+
+    XCTAssertEqual(section.title, "Favorites")
+    XCTAssertEqual(section.formulas.first?.id, uuid)
+  }
 }

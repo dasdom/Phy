@@ -78,6 +78,10 @@ class FormulasDataSourceTests: XCTestCase {
     // then
     XCTAssertEqual(sections.last?.formulas.first, result)
   }
+
+  func test_init_shouldAddFavoritesSection() {
+    
+  }
 }
 
 extension FormulasDataSourceTests {

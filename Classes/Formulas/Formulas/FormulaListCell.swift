@@ -5,7 +5,7 @@
 import UIKit
 import CommonExtensions
 
-class FormulaListCell: NameAndFormulaImageCell {
+class FormulaListCell: NameAndFormulaImageTableViewCell {
 
   let toolsIndicatorImageView: UIImageView
   
