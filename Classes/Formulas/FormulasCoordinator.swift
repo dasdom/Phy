@@ -64,17 +64,16 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
 extension FormulasCoordinator: SpecialFieldsViewControllerProtocol {
   func specialFieldSelected(_ viewController: UIViewController, specialField: SpecialField) {
 //    let formulasDataSource = FormulasDataSource(sections: specialField.formulaSections)
-    let next = FormulasViewController(sections: specialField.formulaSections, formulaStore: formulaStore)
+    let next = FormulasViewController(sectionsInSpecialField: specialField.formulaSections, formulaStore: formulaStore)
     next.title = specialField.title.localized
     next.delegate = self
     presenter.pushViewController(next, animated: true)
   }
 
   func showSearch(_ viewController: UIViewController, specialFieldSections: [SpecialFieldSection]) {
-//    let searchFormulasDataSource = SearchFormulasDataSource(specialFieldSections: specialFieldSections)
-//    let next = SearchFormulasViewController(dataSource: searchFormulasDataSource)
-//    next.delegate = self
-//    presenter.pushViewController(next, animated: true)
+    let next = SearchFormulasViewController(specialFieldSections: specialFieldSections)
+    next.delegate = self
+    presenter.pushViewController(next, animated: true)
   }
 }
 

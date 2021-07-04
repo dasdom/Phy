@@ -86,7 +86,7 @@ class FormulasCoordinatorTests: XCTestCase {
     
     sut.specialFieldSelected(viewController, specialField: specialField)
     
-    let formulas = try XCTUnwrap(navigationController.lastPushedViewController as? Legacy_FormulasViewController)
+    let formulas = try XCTUnwrap(navigationController.lastPushedViewController as? FormulasViewController)
     XCTAssertNotNil(formulas.delegate)
   }
   
@@ -109,7 +109,7 @@ class FormulasCoordinatorTests: XCTestCase {
     let formula = Formula(id: UUID(), imageName: "Foo", title: "Bar")
     sut.fav(UIViewController(), formula: formula)
 
-    XCTAssertEqual(formulaStoreMock.addFavoriteFormulaReceivedFormula, formula)
+    XCTAssertEqual(formulaStoreMock.addOrRemoveFavoriteFormulaReceivedFormula, formula)
   }
 }
 

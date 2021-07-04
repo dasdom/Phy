@@ -6,6 +6,7 @@
         "title": "Mechanik",
         "formulaSections": [
           {
+            "id": "A360077B-464B-4453-B24C-BC6303C04AAB",
             "title": "Newtonsche Gesetze",
             "formulas": [
               {
@@ -74,6 +75,7 @@
             ]
           },
           {
+            "id": "30D8C0E7-079F-48C5-A611-DE816DF3E659",
             "title": "unbeschleunigte Bewegung",
             "formulas": [
               {
@@ -1317,6 +1319,7 @@
             ]
           },
           {
+            "id": "32F74BF2-E92A-4B1B-9169-5CDF92ADEA1B",
             "title": "konstante Beschleunigung",
             "formulas": [
               {
@@ -1973,6 +1976,7 @@
             ]
           },
           {
+            "id": "950AF0AC-90B6-4911-AA95-CE2B5D556D04",
             "title": "räumliche Bewegung",
             "formulas": [
               {
@@ -2144,6 +2148,7 @@
             ]
           },
           {
+            "id": "9EE48479-A52B-4A01-9D43-59B4AF537E9C",
             "title": "Bewegung im Gravitationsfeld",
             "formulas": [
               {
@@ -2696,6 +2701,7 @@
             ]
           },
           {
+            "id": "F90E5869-D949-4857-9849-85AFB181958D",
             "title": "schiefer Wurf",
             "formulas": [
               {
@@ -3580,6 +3586,7 @@
             ]
           },
           {
+            "id": "FE5A816F-6CEF-4E13-8536-CE5A96867E57",
             "title": "Keplerschen Gesetze",
             "formulas": [
               {
@@ -3651,6 +3658,7 @@
             ]
           },
           {
+            "id": "9F5C2B8E-ADB1-4388-ADC0-3125D5B691EB",
             "title": "Drehbewegung",
             "formulas": [
               {
@@ -4801,6 +4809,7 @@
             ]
           },
           {
+            "id": "EC2C6F07-D1B1-4DDB-A96C-AF6D777AD907",
             "title": "harmonischer Oszillator",
             "formulas": [
               {
@@ -5281,6 +5290,7 @@
             ]
           },
           {
+            "id": "DAE0F428-C282-442A-B5AE-11C63C46DF88",
             "title": "Lagrange Formalismus",
             "formulas": [
               {
@@ -5440,6 +5450,7 @@
         "title": "Relativitätstheorie",
         "formulaSections": [
           {
+            "id": "82ED094A-E20F-4556-82B3-D64D26436CA8",
             "title": "None",
             "formulas": [
               {
@@ -6094,6 +6105,7 @@
         "title": "Fluidmechanik",
         "formulaSections": [
           {
+            "id": "AC5DF988-51DE-45EC-AB73-B968FBDA72DD",
             "title": "Statik",
             "formulas": [
               {
@@ -6404,6 +6416,7 @@
             ]
           },
           {
+            "id": "86D4CE28-9C3F-4EA3-B72D-B699C4C6582C",
             "title": "Dynamik",
             "formulas": [
               {
@@ -6522,6 +6535,7 @@
         "title": "Wärme",
         "formulaSections": [
           {
+            "id": "BB9BAA1A-9382-4D59-9261-787BA1C68E77",
             "title": "Temperatur",
             "formulas": [
               {
@@ -6603,6 +6617,7 @@
             ]
           },
           {
+            "id": "805783D1-B9E4-461E-BC43-1EB8CF1870D3",
             "title": "Verhalten idealer Gase",
             "formulas": [
               {
@@ -7062,6 +7077,7 @@
             ]
           },
           {
+            "id": "7E7C2E47-3979-437A-BCBA-7861A482C0F0",
             "title": "Hauptsätze der Wärmelehre",
             "formulas": [
               {
@@ -7205,6 +7221,7 @@
             ]
           },
           {
+            "id": "6F8989BE-29D2-473C-98DA-9DE33D56331E",
             "title": "kinetische Gastheorie",
             "formulas": [
               {
@@ -7762,6 +7779,7 @@
             ]
           },
           {
+            "id": "B0A3D426-F53F-4279-B5D0-534EE6A5FA05",
             "title": "molare Grössen",
             "formulas": [
               {
@@ -7901,6 +7919,7 @@
             ]
           },
           {
+            "id": "4D120819-319F-453C-A7BA-F785E5EB333A",
             "title": "Wärmekapazitäten",
             "formulas": [
               {
@@ -8293,6 +8312,7 @@
         "title": "Elektrodynamik",
         "formulaSections": [
           {
+            "id": "E0A6EFC5-162E-43C3-95BF-AC9189429EAF",
             "title": "Maxwellsche Gesetze",
             "formulas": [
               {
@@ -8524,6 +8544,7 @@
             ]
           },
           {
+            "id": "F47D03FF-7EF7-40C1-A2D5-901050B3DC59",
             "title": "Gleichstrom",
             "formulas": [
               {
@@ -9013,6 +9034,7 @@
             ]
           },
           {
+            "id": "868D895A-2CEF-447F-8453-285239AAFEAE",
             "title": "elektrisches Feld",
             "formulas": [
               {
@@ -9548,6 +9570,7 @@
             ]
           },
           {
+            "id": "5D688F47-B83E-4940-B5DE-F257127E2033",
             "title": "Kondensator",
             "formulas": [
               {
@@ -10053,6 +10076,7 @@
             ]
           },
           {
+            "id": "3CD1F6AD-C30A-4B13-A8EE-7AA499F01586",
             "title": "Magnetfeld",
             "formulas": [
               {
@@ -10650,6 +10674,7 @@
             ]
           },
           {
+            "id": "F35811E2-43BE-4F4E-9F8E-7E7F15F9D7EF",
             "title": "Wechselstrom",
             "formulas": [
               {
@@ -10884,6 +10909,7 @@
         "title": "Strahlenoptik",
         "formulaSections": [
           {
+            "id": "E174AC32-E9BF-430A-A6FD-63AF34ABF3A4",
             "title": "Reflexion und Brechung",
             "formulas": [
               {
@@ -11065,6 +11091,7 @@
             ]
           },
           {
+            "id": "29C52A87-3E17-4B42-9F0C-A14056180C9A",
             "title": "Dünne Linsen",
             "formulas": [
               {
@@ -11262,6 +11289,7 @@
             ]
           },
           {
+            "id": "6624E6F9-E8AD-48B9-9EF1-3B52E7A9F207",
             "title": "Optische Instrumente",
             "formulas": [
               {
@@ -11314,7 +11342,8 @@
         "title": "Wellenoptik",
         "formulaSections": [
           {
-            "title": "Allgemein",
+            "id": "2AF055C1-0A46-4E71-9E52-17F5836DA023",
+            "title": "Allgemein (Wellenoptik)",
             "formulas": [
               {
                 "id": "383824E8-F610-486B-8309-B9D605175FF0",
@@ -11407,6 +11436,7 @@
             ]
           },
           {
+            "id": "A37562DA-8DE5-40E3-BC39-7EEE617A7C87",
             "title": "Beugung und Interferenz",
             "formulas": [
               {
@@ -11700,6 +11730,7 @@
             ]
           },
           {
+            "id": "0913D746-F7F2-4A91-860C-90DED08EBD37",
             "title": "Beugung am Spalt",
             "formulas": [
               {
@@ -11755,6 +11786,7 @@
             ]
           },
           {
+            "id": "6C47D6D4-BB40-4EC7-BD47-C081CBD58F9D",
             "title": "Beugung am Doppelspalt",
             "formulas": [
               {
@@ -11810,6 +11842,7 @@
             ]
           },
           {
+            "id": "347BB02C-28E1-438D-AAF5-74DCDBDC58BF",
             "title": "Beugung am Gitter",
             "formulas": [
               {
@@ -11866,7 +11899,8 @@
         "title": "Quantenmechanik",
         "formulaSections": [
           {
-            "title": "Allgemein",
+            "id": "072C97B6-E9A3-4748-8136-9F78889CB137",
+            "title": "Allgemein (Quantenmechanik)",
             "formulas": [
               {
                 "id": "D430FAE4-61D8-4DBD-90F0-5F448D63985D",
@@ -11979,6 +12013,7 @@
             ]
           },
           {
+            "id": "8D81F22E-6383-4262-8AF7-C5F0A3DAF966",
             "title": "Schrödingergleichung",
             "formulas": [
               {
@@ -12240,6 +12275,7 @@
             ]
           },
           {
+            "id": "D84033FE-54C7-480A-9791-324EBB63061F",
             "title": "Heisenbergsche Unschärferelation",
             "formulas": [
               {
@@ -12345,7 +12381,8 @@
             ]
           },
           {
-            "title": "harmonischer Oszillator",
+            "id": "2F9B116C-AB99-4B93-ABA0-2E0F852187B5",
+            "title": "harmonischer Oszillator (Quantenmechanik)",
             "formulas": [
               {
                 "id": "A390AAB0-0938-4D2E-867F-5028352CE915",
@@ -12910,6 +12947,7 @@
             ]
           },
           {
+            "id": "963BEEEA-37CA-4DB4-8478-6A5E7D71E13C",
             "title": "Drehimpuls",
             "formulas": [
               {
@@ -13238,6 +13276,7 @@
         "title": "Atomphysik",
         "formulaSections": [
           {
+            "id": "2D31A3D7-5C1D-47A0-A1CA-F8545E289EA4",
             "title": "None",
             "formulas": [
               {
@@ -13715,6 +13754,7 @@
         "title": "Physikalische Konstanten",
         "formulaSections": [
           {
+            "id": "3BA6FE61-ED8A-44B0-868A-1414544FE2B4",
             "title": "Mechanik",
             "formulas": [
               {
@@ -13813,6 +13853,7 @@
             ]
           },
           {
+            "id": "0D81972A-BD4F-44AA-A58D-EF4B1AE343EE",
             "title": "Thermodynamik",
             "formulas": [
               {
@@ -14029,6 +14070,7 @@
             ]
           },
           {
+            "id": "47351F75-BF91-4D44-9EC1-F9663E0D052D",
             "title": "Elektrodynamik",
             "formulas": [
               {
@@ -14136,6 +14178,7 @@
             ]
           },
           {
+            "id": "DABECFBB-4D84-4F3B-9428-31887743FFE6",
             "title": "Atomphysik",
             "formulas": [
               {
@@ -14384,6 +14427,7 @@
         "title": "Einheiten",
         "formulaSections": [
           {
+            "id": "A3944F18-E0F9-45E8-90E2-E40C04EF00D2",
             "title": "None",
             "formulas": [
               {
@@ -14678,6 +14722,7 @@
         "title": "Dezimale Vorsilben",
         "formulaSections": [
           {
+            "id": "AB384078-C853-4A8D-B1F3-9EF9BEAB1E8F",
             "title": "None",
             "formulas": [
               {

@@ -41,40 +41,56 @@ final class FormulaStoreProtocolMock: FormulaStoreProtocol {
     return elementsClosure.map({ $0() }) ?? elementsReturnValue
   }
 
-  // MARK: - addFavorite
+  // MARK: - addOrRemoveFavorite
 
-  var addFavoriteFormulaCallsCount = 0
-  var addFavoriteFormulaCalled: Bool {
-    addFavoriteFormulaCallsCount > 0
+  var addOrRemoveFavoriteFormulaCallsCount = 0
+  var addOrRemoveFavoriteFormulaCalled: Bool {
+    addOrRemoveFavoriteFormulaCallsCount > 0
   }
-  var addFavoriteFormulaReceivedFormula: Formula?
-  var addFavoriteFormulaReceivedInvocations: [Formula] = []
-  var addFavoriteFormulaClosure: ((Formula) -> Void)?
+  var addOrRemoveFavoriteFormulaReceivedFormula: Formula?
+  var addOrRemoveFavoriteFormulaReceivedInvocations: [Formula] = []
+  var addOrRemoveFavoriteFormulaClosure: ((Formula) -> Void)?
 
-  func addFavorite(formula: Formula) {
-    addFavoriteFormulaCallsCount += 1
-    addFavoriteFormulaReceivedFormula = formula
-    addFavoriteFormulaReceivedInvocations.append(formula)
-    addFavoriteFormulaClosure?(formula)
+  func addOrRemoveFavorite(formula: Formula) {
+    addOrRemoveFavoriteFormulaCallsCount += 1
+    addOrRemoveFavoriteFormulaReceivedFormula = formula
+    addOrRemoveFavoriteFormulaReceivedInvocations.append(formula)
+    addOrRemoveFavoriteFormulaClosure?(formula)
   }
 
   // MARK: - favoritesSection
 
-  var favoritesSectionFromSectionsCallsCount = 0
-  var favoritesSectionFromSectionsCalled: Bool {
-    favoritesSectionFromSectionsCallsCount > 0
+  var favoritesSectionFromCallsCount = 0
+  var favoritesSectionFromCalled: Bool {
+    favoritesSectionFromCallsCount > 0
   }
-  var favoritesSectionFromSectionsReceivedFromSections: [FormulaSection]?
-  var favoritesSectionFromSectionsReceivedInvocations: [[FormulaSection]] = []
-  var favoritesSectionFromSectionsReturnValue: FormulaSection!
-  var favoritesSectionFromSectionsClosure: (([FormulaSection]) -> FormulaSection)?
+  var favoritesSectionFromReceivedFrom: [FormulaSection]?
+  var favoritesSectionFromReceivedInvocations: [[FormulaSection]] = []
+  var favoritesSectionFromReturnValue: FormulaSection!
+  var favoritesSectionFromClosure: (([FormulaSection]) -> FormulaSection)?
 
   func favoritesSection(from: [FormulaSection]) -> FormulaSection {
-    favoritesSectionFromSectionsCallsCount += 1
-    favoritesSectionFromSectionsReceivedFromSections = from
-    favoritesSectionFromSectionsReceivedInvocations.append(from)
-    return favoritesSectionFromSectionsClosure.map({ $0(from) }) ?? favoritesSectionFromSectionsReturnValue
+    favoritesSectionFromCallsCount += 1
+    favoritesSectionFromReceivedFrom = from
+    favoritesSectionFromReceivedInvocations.append(from)
+    return favoritesSectionFromClosure.map({ $0(from) }) ?? favoritesSectionFromReturnValue
+  }
+
+  // MARK: - formulaIsFavorit
+
+  var formulaIsFavoritCallsCount = 0
+  var formulaIsFavoritCalled: Bool {
+    formulaIsFavoritCallsCount > 0
+  }
+  var formulaIsFavoritReceivedFormula: Formula?
+  var formulaIsFavoritReceivedInvocations: [Formula] = []
+  var formulaIsFavoritReturnValue: Bool!
+  var formulaIsFavoritClosure: ((Formula) -> Bool)?
+
+  func formulaIsFavorit(_ formula: Formula) -> Bool {
+    formulaIsFavoritCallsCount += 1
+    formulaIsFavoritReceivedFormula = formula
+    formulaIsFavoritReceivedInvocations.append(formula)
+    return formulaIsFavoritClosure.map({ $0(formula) }) ?? formulaIsFavoritReturnValue
   }
 }
-
-

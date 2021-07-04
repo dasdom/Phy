@@ -8,9 +8,11 @@ import XCTest
 class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   var sut: FormulaDetailViewController!
-  
+  var formula: Formula!
+
   override func setUp() {
-    sut = FormulaDetailViewController(formula: formula())
+    formula = dummyFormula()
+    sut = FormulaDetailViewController(formula: formula, formulaStore: FormulaStoreProtocolMock())
   }
   
   override func tearDown() {
@@ -42,7 +44,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let result = sut.numberOfSections(in: sut.tableView)
     
     // then
-    XCTAssertEqual(formula().details?.count, result)
+    XCTAssertEqual(result, formula.details?.count)
   }
   
   func test_numberOfRows() {
@@ -50,7 +52,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let result = sut.tableView(sut.tableView, numberOfRowsInSection: 1)
     
     // then
-    XCTAssertEqual(formula().details?[1].detailItems.count, result)
+    XCTAssertEqual(result, formula.details?[1].detailItems.count)
   }
   
   func test_cellForRow_whenFormula_dequeuesCell() {
@@ -82,7 +84,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let result = sut.tableView(sut.tableView, titleForHeaderInSection: 0)
     
     // then
-    XCTAssertEqual(formula().details?[0].title, result)
+    XCTAssertEqual(result, formula.details?[0].title)
   }
   
   func test_titleForSection_2() {
@@ -90,7 +92,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let result = sut.tableView(sut.tableView, titleForHeaderInSection: 1)
     
     // then
-    XCTAssertEqual(formula().details?[1].title, result)
+    XCTAssertEqual(result, formula.details?[1].title)
   }
   
   func test_cellForRow_callsUpdateWithFormulaDetail() {
@@ -102,7 +104,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     
     // then
     let mockCell = cell as! MockFormulaDetailCell
-    XCTAssertEqual(formula().details?[0].detailItems[0], mockCell.lastItem)
+    XCTAssertEqual(mockCell.lastItem, formula.details?[0].detailItems[0])
   }
   
   func test_cellForRow_callsUpdateWithFormulaDetailWithText() {
@@ -114,7 +116,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     
     // then
     let mockCell = cell as! MockFormulaDetailWithTextCell
-    XCTAssertEqual(formula().details?[1].detailItems[0], mockCell.lastItem)
+    XCTAssertEqual(mockCell.lastItem, formula.details?[1].detailItems[0])
   }
   
   func test_didSelectRow_whenPossible_showsSolver() {
@@ -122,7 +124,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let detailItem = FormulaDetailItem(imageName: "arbeit", title: "Arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
     let detail = FormulaDetail(title: "Foo", detailItems: [detailItem])
     let formula = Formula(id: UUID(), imageName: "arbeit", title: "Arbeit", details: [detail])
-    sut = FormulaDetailViewController(formula: formula)
+    sut = FormulaDetailViewController(formula: formula, formulaStore: FormulaStoreProtocolMock())
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
     
@@ -151,14 +153,14 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let button = try XCTUnwrap(sut.navigationItem.rightBarButtonItem)
     tap(button)
 
-    XCTAssertEqual(mockDelegate.favFormulaReceivedArguments?.formula, sut.formula)
+    XCTAssertEqual(formula, mockDelegate.favFormulaReceivedArguments?.formula)
   }
 }
 
 // MARK: - Helper
 extension PhyFormulaDetailViewControllerTests {
   
-  func formula() -> Formula {
+  func dummyFormula() -> Formula {
     
     let formulasDetail = FormulaDetail(title: "Foo", detailItems: [FormulaDetailItem(imageName: "bar")])
     let abbreveationDetail = FormulaDetail(title: "Abbreveation", detailItems: [FormulaDetailItem(imageName: "bar_abk", title: "BarAbk"),FormulaDetailItem(imageName: "baz_abk", title: "BazAbk")])

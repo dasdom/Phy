@@ -34,7 +34,7 @@ class FormulaStoreTests: XCTestCase {
   func test_addFavorite_shouldPersistFormula() {
     let uuid = UUID()
     let localSUT = FormulaStore()
-    localSUT.addFavorite(formula: Formula(id: uuid, imageName: "Foo", title: "Bar"))
+    localSUT.addOrRemoveFavorite(formula: Formula(id: uuid, imageName: "Foo", title: "Bar"))
 
     let secondSUT = FormulaStore()
     let section = secondSUT.favoritesSection(from: [

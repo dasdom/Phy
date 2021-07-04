@@ -7,69 +7,7 @@ import XCTest
 
 class SearchFormulasViewControllerTests: XCTestCase {
 
-  var sut: SearchFormulasViewController!
-  private var mockDataSource: MockDataSource!
-
-  override func setUpWithError() throws {
-    mockDataSource = MockDataSource()
-    sut = SearchFormulasViewController(dataSource: mockDataSource)
-  }
-
-  override func tearDownWithError() throws {
-    sut = nil
-    mockDataSource = nil
-  }
-
-  func test_loading_shouldAddSearchBarToHeader() {
-    sut.loadViewIfNeeded()
-
-    let headerView = sut.tableView.tableHeaderView
-
-    XCTAssertTrue(headerView is UISearchBar, "Searchbar")
-  }
-
-  func test_loading_shouldSetDelegateOfSearchBarToSut() throws {
-    sut.loadViewIfNeeded()
-
-    let searchBar = try XCTUnwrap(sut.tableView.tableHeaderView as? UISearchBar)
-    let delegate = try XCTUnwrap(searchBar.delegate as? UIViewController)
-
-    XCTAssertEqual(delegate, sut)
-  }
-
-  func test_searchBarTextDidChange_callsDataSource() throws {
-    sut.loadViewIfNeeded()
-    let searchBar = try XCTUnwrap(sut.tableView.tableHeaderView as? UISearchBar)
-    let delegate = try XCTUnwrap(searchBar.delegate)
-
-    let searchString = "Foobar"
-    delegate.searchBar?(searchBar, textDidChange: searchString)
-
-    XCTAssertEqual(mockDataSource.lastSearchString, searchString)
-  }
-}
-
-class MockDataSource : SearchFormulasDataSourceProtocol {
-
-  var lastSearchString: String?
-
-  func numberOfSections() -> Int {
-    return 0
-  }
-
-  func numberOfRows(in: Int) -> Int {
-    return 0
-  }
-
-  func titleFor(section: Int) -> String {
-    return ""
-  }
-
-  func formula(for: IndexPath) -> Formula {
-    return Formula(id: UUID(), imageName: "foo", title: "bar")
-  }
-
-  func search(_ string: String, completion: () -> Void) {
-    lastSearchString = string
+  func test() {
+    XCTFail("Implement tests")
   }
 }

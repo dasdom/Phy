@@ -16,7 +16,7 @@ class AddUUIDTests: XCTestCase {
   }
 
   func testExample() throws {
-    guard let url = Bundle.main.url(forResource: "data_math", withExtension: "json") else { fatalError() }
+    guard let url = Bundle.main.url(forResource: "data_physics", withExtension: "json") else { fatalError() }
 
     let data = try Data(contentsOf: url)
     let specialFieldSections = try JSONDecoder().decode([SpecialFieldSection].self, from: data)
@@ -30,16 +30,16 @@ class AddUUIDTests: XCTestCase {
         var formulaSections: [FormulaSection] = []
         for formulaSection in specialField.formulaSections {
 
-          var formulas: [Formula] = []
-          for formula in formulaSection.formulas {
+//          var formulas: [Formula] = []
+//          for formula in formulaSection.formulas {
+//
+//            let formulaWithUUID = Formula(id: UUID(), imageName: formula.imageName, title: formula.title, accessibilityText: formula.accessibilityText, details: formula.details)
+////            print("formula: \(formulaWithUUID)")
+//
+//            formulas.append(formulaWithUUID)
+//          }
 
-            let formulaWithUUID = Formula(id: UUID(), imageName: formula.imageName, title: formula.title, accessibilityText: formula.accessibilityText, details: formula.details)
-//            print("formula: \(formulaWithUUID)")
-
-            formulas.append(formulaWithUUID)
-          }
-
-          let newFormulaSection = FormulaSection(title: formulaSection.title, formulas: formulas)
+          let newFormulaSection = FormulaSection(id: UUID(), title: formulaSection.title, formulas: formulaSection.formulas)
           formulaSections.append(newFormulaSection)
         }
 

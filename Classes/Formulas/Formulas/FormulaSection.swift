@@ -5,6 +5,7 @@
 import Foundation
 
 struct FormulaSection: Codable, Equatable {
+  let id: UUID
   let title: String
   let formulas: [Formula]
 }

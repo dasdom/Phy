@@ -10,19 +10,25 @@ protocol FormulasViewControllerProtocol: AnyObject {
 
 class FormulasViewController: UIViewController {
 
-  private let collectionView: UICollectionView
-  private let dataSource: UICollectionViewDiffableDataSource<String, Formula>
-  private let sections: [FormulaSection]
-  private var sectionsWithFavorites: [FormulaSection] {
-    let favoritesSection = formulaStore.favoritesSection(from: sections)
-    return [favoritesSection] + sections
+  let collectionView: UICollectionView
+  private let dataSource: UICollectionViewDiffableDataSource<Section, Formula>
+  private let favoritesUUID = UUID()
+  private let sectionsInSpecialField: [FormulaSection]
+  var sectionsToShow: [FormulaSection] {
+    let sections: [FormulaSection]
+    if let favoritesSection = formulaStore?.favoritesSection(from: sectionsInSpecialField, favoritesUUID: favoritesUUID) {
+      sections = [favoritesSection] + sectionsInSpecialField
+    } else {
+      sections = sectionsInSpecialField
+    }
+    return sections
   }
-  private let formulaStore: FormulaStoreProtocol
+  private let formulaStore: FormulaStoreProtocol?
   var delegate: FormulasViewControllerProtocol?
 
-  init(sections: [FormulaSection], formulaStore: FormulaStoreProtocol) {
+  init(sectionsInSpecialField: [FormulaSection], formulaStore: FormulaStoreProtocol? = nil) {
 
-    self.sections = sections
+    self.sectionsInSpecialField = sectionsInSpecialField
     self.formulaStore = formulaStore
 
     let layout = UICollectionViewCompositionalLayout { section, layoutEnvironment in
@@ -44,20 +50,21 @@ class FormulasViewController: UIViewController {
 
     collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: layout)
     collectionView.translatesAutoresizingMaskIntoConstraints = false
+    collectionView.backgroundColor = UIColor.systemBackground
 
     let cellRegistration = UICollectionView.CellRegistration<FormulaCollectionViewListCell, Formula> { cell, indexPath, formula in
       cell.update(with: formula)
       cell.accessories = [.disclosureIndicator()]
     }
 
-    dataSource = UICollectionViewDiffableDataSource<String, Formula>(collectionView: collectionView, cellProvider: { collectionView, indexPath, formula in
+    dataSource = UICollectionViewDiffableDataSource<Section, Formula>(collectionView: collectionView, cellProvider: { collectionView, indexPath, formula in
       return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: formula)
     })
 
     super.init(nibName: nil, bundle: nil)
 
     let headerRegistration = UICollectionView.SupplementaryRegistration<FormulaHeaderView>(elementKind: "header") { headerView, elementKind, indexPath in
-      headerView.label.text = self.sectionsWithFavorites[indexPath.section].title.localized
+      headerView.label.text = self.sectionsToShow[indexPath.section].title.localized
     }
 
     dataSource.supplementaryViewProvider = { collectionView, elementKind, indexPath in
@@ -81,13 +88,18 @@ class FormulasViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
-    var snapshot = NSDiffableDataSourceSnapshot<String, Formula>()
-    for section in sectionsWithFavorites {
-      let title = section.title
-      snapshot.appendSections([title])
-      snapshot.appendItems(section.formulas, toSection: title)
+    newSnapshot()
+  }
+
+  func newSnapshot() {
+    var snapshot = NSDiffableDataSourceSnapshot<Section, Formula>()
+    for formulaSection in sectionsToShow {
+      let section = Section(id: formulaSection.id, title: formulaSection.title)
+//      print("\(title)")
+      snapshot.appendSections([section])
+      snapshot.appendItems(formulaSection.formulas, toSection: section)
     }
-    dataSource.apply(snapshot, animatingDifferences: false)
+    dataSource.apply(snapshot, animatingDifferences: true)
 
     for indexPath in collectionView.indexPathsForSelectedItems ?? [] {
       collectionView.deselectItem(at: indexPath, animated: true)
@@ -97,7 +109,16 @@ class FormulasViewController: UIViewController {
 
 extension FormulasViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let formula = sectionsWithFavorites[indexPath.section].formulas[indexPath.row]
+    let formula = sectionsToShow[indexPath.section].formulas[indexPath.row]
     delegate?.formulaSelected(self, formula: formula)
+  }
+}
+
+private struct Section: Hashable {
+  let id: UUID
+  let title: String
+
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(id)
   }
 }
