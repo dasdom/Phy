@@ -6,6 +6,7 @@
         "title": "Geometrie",
         "formulaSections": [
           {
+            "id": "671873EA-1AB4-4FD5-AEDE-B5EA90392684",
             "title": "Dreieck",
             "formulas": [
               {
@@ -168,6 +169,7 @@
             ]
           },
           {
+            "id": "F165FE64-C487-4E8E-83FE-BB67EE0455B2",
             "title": "Kreis",
             "formulas": [
               {
@@ -246,6 +248,7 @@
         "title": "Potenzgesetze",
         "formulaSections": [
           {
+            "id": "E79E777E-80EA-4D9F-879A-65D4A890584E",
             "title": "",
             "formulas": [
               {
@@ -288,6 +291,7 @@
         "title": "Kegelschnitte",
         "formulaSections": [
           {
+            "id": "BDCB7B12-BE18-4E6E-B0B8-8473513DDB9C",
             "title": "allgemein",
             "formulas": [
               {
@@ -297,6 +301,7 @@
             ]
           },
           {
+            "id": "FAB96DCB-A47F-4D06-A10F-68AF453CD1B2",
             "title": "Kreis",
             "formulas": [
               {
@@ -306,6 +311,7 @@
             ]
           },
           {
+            "id": "80811960-ABAC-4432-B0B2-B28A96D4BC65",
             "title": "Ellipse",
             "formulas": [
               {
@@ -315,6 +321,7 @@
             ]
           },
           {
+            "id": "4BD2A678-E0A3-4BC6-A979-1501F86FD36D",
             "title": "Hyperbel",
             "formulas": [
               {
@@ -324,6 +331,7 @@
             ]
           },
           {
+            "id": "D43B29D8-3122-4863-AF90-3B287ECFDD6D",
             "title": "Parabel",
             "formulas": [
               {
@@ -342,6 +350,7 @@
         "title": "Komplexe Zahlen",
         "formulaSections": [
           {
+            "id": "D06E6535-633D-460D-B5B5-535552CEEC16",
             "title": "allgemein",
             "formulas": [
               {
@@ -371,6 +380,7 @@
             ]
           },
           {
+            "id": "C8C06056-C6AF-478C-BE84-DCF4F79C4E5E",
             "title": "exponentielle Darstellung",
             "formulas": [
               {
@@ -388,6 +398,7 @@
             ]
           },
           {
+            "id": "7487C93E-C231-4054-8209-43987C831F9D",
             "title": "Eulergleichung",
             "formulas": [
               {
@@ -397,6 +408,7 @@
             ]
           },
           {
+            "id": "68793E4C-0094-4D7A-B635-8A85F7166501",
             "title": "Beweis für die Existenz Gottes",
             "formulas": [
               {
@@ -411,6 +423,7 @@
         "title": "Koordinatensysteme",
         "formulaSections": [
           {
+            "id": "DFA220CE-867B-4A5F-93E8-7EF44542DC58",
             "title": "kartesische Koordinaten",
             "formulas": [
               {
@@ -440,6 +453,7 @@
             ]
           },
           {
+            "id": "D225AE54-73CF-4ADC-9540-CB64862F6635",
             "title": "Kugelkoordinaten",
             "formulas": [
               {
@@ -485,6 +499,7 @@
             ]
           },
           {
+            "id": "B84765D0-BE66-4F12-83A3-265EB803EF90",
             "title": "Zylinderkoordinaten",
             "formulas": [
               {
@@ -527,6 +542,7 @@
         "title": "Stammfunktionen",
         "formulaSections": [
           {
+            "id": "E67A5D3A-96E0-4095-BDAF-88BD766334F8",
             "title": "Potenzfunktionen",
             "formulas": [
               {
@@ -548,6 +564,7 @@
             ]
           },
           {
+            "id": "B8EE869E-A1C9-4141-A03D-EC4AAE2FC1B9",
             "title": "Exponentialfuntionen",
             "formulas": [
               {
@@ -565,6 +582,7 @@
             ]
           },
           {
+            "id": "BC679C1F-81AE-405E-A6D1-B9DE8B24533F",
             "title": "trigonometrische Funktionen",
             "formulas": [
               {
@@ -603,6 +621,7 @@
         "title": "Statistik",
         "formulaSections": [
           {
+            "id": "941BB8F7-ADC6-4597-939F-A45436615DA1",
             "title": "diskrete Verteilung; allg.",
             "formulas": [
               {
@@ -640,6 +659,7 @@
             ]
           },
           {
+            "id": "FA395494-1D10-444A-97EF-39626898F22D",
             "title": "kontinuierliche Verteilung; allg.",
             "formulas": [
               {
@@ -709,6 +729,7 @@
             ]
           },
           {
+            "id": "F5E345B4-DFAA-400C-95C0-664A9E6A0BBD",
             "title": "diskrete Verteilungen",
             "formulas": [
               {
@@ -782,6 +803,7 @@
             ]
           },
           {
+            "id": "FC6559A6-9796-4416-9257-B6767B4B8413",
             "title": "kontinuierliche Verteilungen",
             "formulas": [
               {
@@ -908,6 +930,7 @@
         "title": "Taylorreihen",
         "formulaSections": [
           {
+            "id": "9A118069-EC9C-4D7B-BA30-7C24038C5DE1",
             "title": "allgemein",
             "formulas": [
               {
@@ -917,6 +940,7 @@
             ]
           },
           {
+            "id": "45BC5A46-1B12-4425-97BC-047F61E6C11A",
             "title": "oft auftretende Reihen",
             "formulas": [
               {
@@ -967,6 +991,7 @@
         "title": "trigonometrische Funktionen",
         "formulaSections": [
           {
+            "id": "523FB05A-059D-4F11-BE72-1D84058CE615",
             "title": "Sinus",
             "formulas": [
               {
@@ -1041,6 +1066,7 @@
             ]
           },
           {
+            "id": "F06E4602-C33D-4A77-9524-D17376BC9076",
             "title": "Cosinus",
             "formulas": [
               {
@@ -1078,6 +1104,7 @@
             ]
           },
           {
+            "id": "A0C207E5-BE6D-4A10-9462-33D820539935",
             "title": "Tangens",
             "formulas": [
               {
@@ -1095,6 +1122,7 @@
             ]
           },
           {
+            "id": "6ECBD122-D8C4-4426-A719-B7F04E293500",
             "title": "Cotangens",
             "formulas": [
               {
@@ -1113,6 +1141,7 @@
         "title": "Vektoren",
         "formulaSections": [
           {
+            "id": "95D4F6D6-D4F8-405A-906B-2F5990494606",
             "title": "Komponenten",
             "formulas": [
               {
@@ -1122,6 +1151,7 @@
             ]
           },
           {
+            "id": "950EDEF1-BB9A-4DFC-9E21-BCF5F60F2885",
             "title": "Betrag",
             "formulas": [
               {
@@ -1131,6 +1161,7 @@
             ]
           },
           {
+            "id": "D6A32F9B-8F58-44D9-9B78-9BCC1E49A3DC",
             "title": "Richtung",
             "formulas": [
               {
@@ -1140,6 +1171,7 @@
             ]
           },
           {
+            "id": "E68C7EB9-00D2-413F-967B-E902D9F17F60",
             "title": "Skalarprodukt",
             "formulas": [
               {
@@ -1157,6 +1189,7 @@
             ]
           },
           {
+            "id": "07952798-5F37-4D31-95F7-18C2BF92E4A1",
             "title": "Kreuzprodukt",
             "formulas": [
               {
@@ -1182,6 +1215,7 @@
             ]
           },
           {
+            "id": "A568A27D-6F55-4CED-9AAA-786B26DD1A08",
             "title": "Spatprodukt",
             "formulas": [
               {
@@ -1191,6 +1225,7 @@
             ]
           },
           {
+            "id": "17C0335E-3CCF-43EB-B57D-6D8B616DFFEB",
             "title": "Langrange-Identität",
             "formulas": [
               {
@@ -1200,6 +1235,7 @@
             ]
           },
           {
+            "id": "BC399D86-5FD4-4E2A-9216-E4CB569CB794",
             "title": "Entwicklungssatz",
             "formulas": [
               {

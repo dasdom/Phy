@@ -9,14 +9,19 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   var sut: FormulaDetailViewController!
   var formula: Formula!
+  var formulaStoreMock: FormulaStoreProtocolMock!
 
   override func setUp() {
     formula = dummyFormula()
-    sut = FormulaDetailViewController(formula: formula, formulaStore: FormulaStoreProtocolMock())
+    formulaStoreMock = FormulaStoreProtocolMock()
+    formulaStoreMock.formulaIsFavoritReturnValue = true
+    sut = FormulaDetailViewController(formula: formula, formulaStore: formulaStoreMock)
   }
   
   override func tearDown() {
     sut = nil
+    formula = nil
+    formulaStoreMock = nil
   }
   
   func test_loadingView_registersDetailCell() {
@@ -124,7 +129,9 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     let detailItem = FormulaDetailItem(imageName: "arbeit", title: "Arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
     let detail = FormulaDetail(title: "Foo", detailItems: [detailItem])
     let formula = Formula(id: UUID(), imageName: "arbeit", title: "Arbeit", details: [detail])
-    sut = FormulaDetailViewController(formula: formula, formulaStore: FormulaStoreProtocolMock())
+    let formulaStoreMock = FormulaStoreProtocolMock()
+    formulaStoreMock.formulaIsFavoritReturnValue = true
+    sut = FormulaDetailViewController(formula: formula, formulaStore: formulaStoreMock)
     let navController = MockNavigationController(rootViewController: sut)
     navController.lastPushedViewController = nil
     

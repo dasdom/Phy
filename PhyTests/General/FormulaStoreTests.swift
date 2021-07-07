@@ -38,11 +38,12 @@ class FormulaStoreTests: XCTestCase {
 
     let secondSUT = FormulaStore()
     let section = secondSUT.favoritesSection(from: [
-      FormulaSection(title: "Bla", formulas: [Formula(id: UUID(), imageName: "aa1", title: "aa2"),
+      FormulaSection(id: UUID(), title: "Bla", formulas: [Formula(id: UUID(), imageName: "aa1", title: "aa2"),
                                               Formula(id: uuid, imageName: "bb1", title: "bb2")])
-    ])
+    ], favoritesUUID: UUID())
 
-    XCTAssertEqual(section.title, "Favorites")
-    XCTAssertEqual(section.formulas.first?.id, uuid)
+    XCTAssertEqual(section?.title, "Favorites")
+    XCTAssertEqual(section?.formulas.first?.referenceUUID, uuid)
+    localSUT.addOrRemoveFavorite(formula: Formula(id: uuid, imageName: "Foo", title: "Bar"))
   }
 }

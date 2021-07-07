@@ -95,7 +95,10 @@ class ConverterViewTests: XCTestCase {
   }
 
   func test_oneButtonAddsOne() throws {
-    try sut.inspect().find(CalcButton.self, where: { view in try view.button().labelView().text().string() == "4" }).button().tap()
+    try sut.inspect().find(CalcButton.self, where: { view in
+//      print(">>> \(try view.button().labelView())")
+      return try view.button().labelView().text().string() == "4"
+    }).button().tap()
 
     XCTAssertEqual(converter.input, "4")
     XCTAssertEqual(converter.output, "2")

@@ -10,8 +10,8 @@ protocol FormulasViewControllerProtocol: AnyObject {
 
 class FormulasViewController: UIViewController {
 
-  let collectionView: UICollectionView
-  private let dataSource: UICollectionViewDiffableDataSource<Section, Formula>
+  var collectionView: UICollectionView!
+  private var dataSource: UICollectionViewDiffableDataSource<Section, Formula>!
   private let favoritesUUID = UUID()
   private let sectionsInSpecialField: [FormulaSection]
   var sectionsToShow: [FormulaSection] {
@@ -31,9 +31,39 @@ class FormulasViewController: UIViewController {
     self.sectionsInSpecialField = sectionsInSpecialField
     self.formulaStore = formulaStore
 
-    let layout = UICollectionViewCompositionalLayout { section, layoutEnvironment in
+    super.init(nibName: nil, bundle: nil)
+  }
+
+  required init?(coder: NSCoder) { fatalError() }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    configureHierarchy()
+    configureDataSource()
+  }
+
+  private func configureHierarchy() {
+    collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: createLayout())
+    collectionView.translatesAutoresizingMaskIntoConstraints = false
+    collectionView.backgroundColor = UIColor.systemBackground
+    collectionView.delegate = self
+
+    view.addSubview(collectionView)
+
+    NSLayoutConstraint.activate([
+      collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+      collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+      collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+      collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+    ])
+  }
+
+  private func createLayout() -> UICollectionViewLayout {
+    return UICollectionViewCompositionalLayout { section, layoutEnvironment in
       var config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
       config.headerMode = .supplementary
+
       let section = NSCollectionLayoutSection.list(using: config, layoutEnvironment: layoutEnvironment)
 
       let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
@@ -47,11 +77,9 @@ class FormulasViewController: UIViewController {
 
       return section
     }
+  }
 
-    collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: layout)
-    collectionView.translatesAutoresizingMaskIntoConstraints = false
-    collectionView.backgroundColor = UIColor.systemBackground
-
+  private func configureDataSource() {
     let cellRegistration = UICollectionView.CellRegistration<FormulaCollectionViewListCell, Formula> { cell, indexPath, formula in
       cell.update(with: formula)
       cell.accessories = [.disclosureIndicator()]
@@ -61,8 +89,6 @@ class FormulasViewController: UIViewController {
       return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: formula)
     })
 
-    super.init(nibName: nil, bundle: nil)
-
     let headerRegistration = UICollectionView.SupplementaryRegistration<FormulaHeaderView>(elementKind: "header") { headerView, elementKind, indexPath in
       headerView.label.text = self.sectionsToShow[indexPath.section].title.localized
     }
@@ -70,20 +96,7 @@ class FormulasViewController: UIViewController {
     dataSource.supplementaryViewProvider = { collectionView, elementKind, indexPath in
       return collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration, for: indexPath)
     }
-
-    collectionView.delegate = self
-
-    view.addSubview(collectionView)
-
-    NSLayoutConstraint.activate([
-      collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-      collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-      collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-      collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-    ])
   }
-
-  required init?(coder: NSCoder) { fatalError() }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)

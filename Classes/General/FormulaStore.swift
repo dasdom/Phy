@@ -8,14 +8,13 @@ protocol FormulaStoreProtocol {
   func specialFieldSections(_ type: TopicType) -> [SpecialFieldSection]
   func elements() -> [ChemElement]
   func addOrRemoveFavorite(formula: Formula)
-  func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection
+  func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection?
   func formulaIsFavorit(_ formula: Formula) -> Bool
 }
 
 class FormulaStore: FormulaStoreProtocol {
 
   var favorites: [UUID]
-  private var sectionIds: [String:UUID] = [:]
 
   init() {
     let url = FileManager.default.favorites()
@@ -68,8 +67,11 @@ class FormulaStore: FormulaStoreProtocol {
     writeFavorites()
   }
 
-  func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID = UUID()) -> FormulaSection {
+  func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection? {
     let formulas = sections.flatMap({ $0.formulas }).filter({ favorites.contains($0.id) }).map({ $0.copyWithNewUUID() })
+    if formulas.count < 1 {
+      return nil
+    }
     return FormulaSection(id: favoritesUUID, title: "Favorites", formulas: formulas)
   }
 

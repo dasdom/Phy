@@ -60,20 +60,20 @@ final class FormulaStoreProtocolMock: FormulaStoreProtocol {
 
   // MARK: - favoritesSection
 
-  var favoritesSectionFromCallsCount = 0
-  var favoritesSectionFromCalled: Bool {
-    favoritesSectionFromCallsCount > 0
+  var favoritesSectionFromFavoritesUUIDCallsCount = 0
+  var favoritesSectionFromFavoritesUUIDCalled: Bool {
+    favoritesSectionFromFavoritesUUIDCallsCount > 0
   }
-  var favoritesSectionFromReceivedFrom: [FormulaSection]?
-  var favoritesSectionFromReceivedInvocations: [[FormulaSection]] = []
-  var favoritesSectionFromReturnValue: FormulaSection!
-  var favoritesSectionFromClosure: (([FormulaSection]) -> FormulaSection)?
+  var favoritesSectionFromFavoritesUUIDReceivedArguments: (sections: [FormulaSection], favoritesUUID: UUID)?
+  var favoritesSectionFromFavoritesUUIDReceivedInvocations: [(sections: [FormulaSection], favoritesUUID: UUID)] = []
+  var favoritesSectionFromFavoritesUUIDReturnValue: FormulaSection?
+  var favoritesSectionFromFavoritesUUIDClosure: (([FormulaSection], UUID) -> FormulaSection?)?
 
-  func favoritesSection(from: [FormulaSection]) -> FormulaSection {
-    favoritesSectionFromCallsCount += 1
-    favoritesSectionFromReceivedFrom = from
-    favoritesSectionFromReceivedInvocations.append(from)
-    return favoritesSectionFromClosure.map({ $0(from) }) ?? favoritesSectionFromReturnValue
+  func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection? {
+    favoritesSectionFromFavoritesUUIDCallsCount += 1
+    favoritesSectionFromFavoritesUUIDReceivedArguments = (sections: sections, favoritesUUID: favoritesUUID)
+    favoritesSectionFromFavoritesUUIDReceivedInvocations.append((sections: sections, favoritesUUID: favoritesUUID))
+    return favoritesSectionFromFavoritesUUIDClosure.map({ $0(sections, favoritesUUID) }) ?? favoritesSectionFromFavoritesUUIDReturnValue
   }
 
   // MARK: - formulaIsFavorit

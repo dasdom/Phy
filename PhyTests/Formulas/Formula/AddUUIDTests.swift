@@ -16,7 +16,7 @@ class AddUUIDTests: XCTestCase {
   }
 
   func testExample() throws {
-    guard let url = Bundle.main.url(forResource: "data_physics", withExtension: "json") else { fatalError() }
+    guard let url = Bundle.main.url(forResource: "data_math", withExtension: "json") else { fatalError() }
 
     let data = try Data(contentsOf: url)
     let specialFieldSections = try JSONDecoder().decode([SpecialFieldSection].self, from: data)
