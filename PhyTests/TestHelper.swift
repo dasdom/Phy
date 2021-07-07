@@ -22,3 +22,11 @@ func tap(_ barButton: UIBarButtonItem) {
     _ = barButton.target?.perform(action, with: barButton)
   }
 }
+
+func cellForRow(at indexPath: IndexPath, in collectionView: UICollectionView) -> UICollectionViewCell? {
+  return collectionView.dataSource?.collectionView(collectionView, cellForItemAt: indexPath)
+}
+
+func didSelectItem(at indexPath: IndexPath, in collectionView: UICollectionView) {
+  collectionView.delegate?.collectionView?(collectionView, didSelectItemAt: indexPath)
+}

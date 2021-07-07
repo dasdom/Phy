@@ -142,7 +142,7 @@ fileprivate extension UIConfigurationStateCustomKey {
   static let formula = UIConfigurationStateCustomKey("de.dasdom.item")
 }
 
-fileprivate extension UICellConfigurationState {
+extension UICellConfigurationState {
   var formula: Formula? {
     set { self[.formula] = newValue }
     get { self[.formula] as? Formula }
