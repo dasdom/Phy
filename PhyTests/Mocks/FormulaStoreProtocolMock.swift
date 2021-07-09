@@ -27,6 +27,20 @@ final class FormulaStoreProtocolMock: FormulaStoreProtocol {
     return specialFieldSectionsClosure.map({ $0(type) }) ?? specialFieldSectionsReturnValue
   }
 
+  // MARK: - allFavoritesSpecialFieldSections
+
+  var allFavoritesSpecialFieldSectionsCallsCount = 0
+  var allFavoritesSpecialFieldSectionsCalled: Bool {
+    allFavoritesSpecialFieldSectionsCallsCount > 0
+  }
+  var allFavoritesSpecialFieldSectionsReturnValue: [FormulaSection]!
+  var allFavoritesSpecialFieldSectionsClosure: (() -> [FormulaSection])?
+
+  func allFavoritesSpecialFieldSections() -> [FormulaSection] {
+    allFavoritesSpecialFieldSectionsCallsCount += 1
+    return allFavoritesSpecialFieldSectionsClosure.map({ $0() }) ?? allFavoritesSpecialFieldSectionsReturnValue
+  }
+
   // MARK: - elements
 
   var elementsCallsCount = 0

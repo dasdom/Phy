@@ -8,7 +8,7 @@
 
 #import "Legacy_Calculator.h"
 
-#define kFastNull pow(10, -15)
+#define kFastNull pow(10, -200)
 
 @implementation Legacy_Calculator
 

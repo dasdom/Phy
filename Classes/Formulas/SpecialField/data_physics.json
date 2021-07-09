@@ -6038,13 +6038,8 @@
                     "title": "Energie-Impuls-Beziehung",
                     "detailItems": [
                       {
-                        "results": [
-                          {
-                            "formula": "sqrt((#m0×2.99792458e8^2)^2+(#p×2.99792458e8)^2)",
-                            "imageName": "energieImpulsBeziehung"
-                          }
-                        ],
                         "title": "EnergieImpulsBeziehung",
+                        "imageName": "energieImpulsBeziehung",
                         "inputs": [
                           {
                             "id": "m0",
@@ -6057,7 +6052,12 @@
                             "imageName": "impuls_abk"
                           }
                         ],
-                        "imageName": "energieImpulsBeziehung"
+                        "results": [
+                          {
+                            "formula": "sqrt((#m0×2.99792458e8^2)^2+(#p×2.99792458e8)^2)",
+                            "imageName": "energieImpulsBeziehung"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -6118,7 +6118,25 @@
                     "detailItems": [
                       {
                         "title": "Dichte",
-                        "imageName": "dichte"
+                        "imageName": "dichte",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "placeholder": "kg",
+                            "imageName": "masse_abk"
+                          },
+                          {
+                            "id": "V",
+                            "placeholder": "m³",
+                            "imageName": "volumen_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m÷#V",
+                            "imageName": "dichte"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -6168,7 +6186,25 @@
                     "detailItems": [
                       {
                         "title": "Druck",
-                        "imageName": "druck"
+                        "imageName": "druck",
+                        "inputs": [
+                          {
+                            "id": "Fn",
+                            "placeholder": "kg m s⁻²",
+                            "imageName": "normalkraft_abk"
+                          },
+                          {
+                            "id": "A",
+                            "placeholder": "m²",
+                            "imageName": "flaeche01_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#Fn÷#A",
+                            "imageName": "druck"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -6218,7 +6254,25 @@
                     "detailItems": [
                       {
                         "title": "DruckFluessigkeit",
-                        "imageName": "druckFluessigkeit"
+                        "imageName": "druckFluessigkeit",
+                        "inputs": [
+                          {
+                            "id": "h",
+                            "placeholder": "m",
+                            "imageName": "hoehe_abk"
+                          },
+                          {
+                            "id": "roh",
+                            "placeholder": "kg m⁻³",
+                            "imageName": "dichte_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#h×9.80665×#roh",
+                            "imageName": "druckFluessigkeit"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -6285,7 +6339,25 @@
                     "detailItems": [
                       {
                         "title": "Auftriebskraft",
-                        "imageName": "auftriebskraft"
+                        "imageName": "auftriebskraft",
+                        "inputs": [
+                          {
+                            "id": "roh",
+                            "placeholder": "kg m⁻³",
+                            "imageName": "dichte_abk"
+                          },
+                          {
+                            "id": "V",
+                            "placeholder": "m⁻³",
+                            "imageName": "volumen_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#roh×9.80665×#V",
+                            "imageName": "auftriebskraft"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -6352,7 +6424,30 @@
                     "detailItems": [
                       {
                         "title": "barometrischeHöhenformel",
-                        "imageName": "barometrischeHoehenformel"
+                        "imageName": "barometrischeHoehenformel",
+                        "inputs": [
+                          {
+                            "id": "p0",
+                            "placeholder": "N m⁻²",
+                            "imageName": "druck0_abk"
+                          },
+                          {
+                            "id": "roh0",
+                            "placeholder": "kg m⁻³",
+                            "imageName": "dichte0_abk"
+                          },
+                          {
+                            "id": "h",
+                            "placeholder": "m",
+                            "imageName": "hoehe_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#p0×exp(-(#roh0×9.80665)÷#p0×#h)",
+                            "imageName": "barometrischeHoehenformel"
+                          }
+                        ]
                       }
                     ]
                   },

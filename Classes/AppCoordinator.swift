@@ -10,6 +10,7 @@ class AppCoordinator: Coordinator {
   private let window: UIWindow
   private let tabBarController: UITabBarController
   private var childCoordinators: [Coordinator] = []
+  lazy var formulaStore: FormulaStoreProtocol = FormulaStore()
   
   init(window: UIWindow) {
     self.window = window
@@ -17,7 +18,7 @@ class AppCoordinator: Coordinator {
   }
   
   func start() {
-    tabBarController.viewControllers = [formulas, calculator, converter, reference, solver]
+    tabBarController.viewControllers = [formulas, calculator, converter, favorites, solver]
     
     window.rootViewController = tabBarController
     window.makeKeyAndVisible()
@@ -26,7 +27,7 @@ class AppCoordinator: Coordinator {
   private var formulas: UIViewController {
     let formulasNavigationController = UINavigationController()
     formulasNavigationController.navigationBar.prefersLargeTitles = true
-    let phyTopicCoordinator = FormulasCoordinator(presenter: formulasNavigationController)
+    let phyTopicCoordinator = FormulasCoordinator(presenter: formulasNavigationController, formulaStore: formulaStore)
     phyTopicCoordinator.start()
     childCoordinators.append(phyTopicCoordinator)
     
@@ -46,10 +47,20 @@ class AppCoordinator: Coordinator {
     return viewController
   }
   
-  private var reference: UIViewController {
-    let viewController = ReferenzViewController()
-    viewController.tabBarItem = UITabBarItem(title: "Referenz".localized, image: UIImage(systemName: "doc.text.magnifyingglass"), tag: 3)
-    return viewController
+//  private var reference: UIViewController {
+//    let viewController = ReferenzViewController()
+//    viewController.tabBarItem = UITabBarItem(title: "Referenz".localized, image: UIImage(systemName: "doc.text.magnifyingglass"), tag: 3)
+//    return viewController
+//  }
+
+  private var favorites: UIViewController {
+    let navigationController = UINavigationController()
+    let favoritesCoordinator = FavoritesCoordinator(presenter: navigationController, formulaStore: formulaStore)
+    favoritesCoordinator.start()
+    childCoordinators.append(favoritesCoordinator)
+    
+    navigationController.tabBarItem = UITabBarItem(title: "Favoriten".localized, image: UIImage(systemName: "star"), tag: 3)
+    return navigationController
   }
   
   private var solver: UIViewController {

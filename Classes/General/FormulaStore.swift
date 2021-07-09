@@ -6,6 +6,7 @@ import Foundation
 
 protocol FormulaStoreProtocol {
   func specialFieldSections(_ type: TopicType) -> [SpecialFieldSection]
+  func allFavoritesSpecialFieldSections() -> [FormulaSection]
   func elements() -> [ChemElement]
   func addOrRemoveFavorite(formula: Formula)
   func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection?
@@ -41,6 +42,24 @@ class FormulaStore: FormulaStoreProtocol {
         specialFieldSections = []
     }
     return specialFieldSections
+  }
+
+  func allFavoritesSpecialFieldSections() -> [FormulaSection] {
+
+    let allSpecialFieldSections = specialFieldSections(.physics_formulas) + specialFieldSections(.math_formulas)
+
+    let allFormulaSections = allSpecialFieldSections.flatMap({ $0.specialFields }).flatMap({ $0.formulaSections })
+
+    var sections: [FormulaSection] = []
+    for formulaSection in allFormulaSections {
+      let formulas = formulaSection.formulas.filter { formula -> Bool in
+        return favorites.contains(formula.id)
+      }
+      if formulas.count > 0 {
+        sections.append(FormulaSection(id: formulaSection.id, title: formulaSection.title, formulas: formulas))
+      }
+    }
+    return sections
   }
 
   func elements() -> [ChemElement] {

@@ -12,7 +12,7 @@ class FormulasCoordinatorTests: XCTestCase {
   
   override func setUpWithError() throws {
     navigationController = MockNavigationController()
-    sut = FormulasCoordinator(presenter: navigationController)
+    sut = FormulasCoordinator(presenter: navigationController, formulaStore: FormulaStoreProtocolMock())
   }
   
   override func tearDownWithError() throws {
@@ -39,7 +39,7 @@ class FormulasCoordinatorTests: XCTestCase {
   func test_physicsFormulaTopicSelected_pushesSpecialFields() throws {
     let formulaStoreMock = FormulaStoreProtocolMock()
     formulaStoreMock.specialFieldSectionsReturnValue = specialFieldSections()
-    sut.formulaStore = formulaStoreMock
+    sut = FormulasCoordinator(presenter: navigationController, formulaStore: formulaStoreMock)
     sut.start()
     let topicViewController = try XCTUnwrap(navigationController.topViewController as? TopicViewController)
     let topic = Topic(title: "Foo", type: .physics_formulas)
@@ -55,7 +55,7 @@ class FormulasCoordinatorTests: XCTestCase {
   func test_elementsTopicSelected_pushesChemElements() throws {
     let formulaStoreMock = FormulaStoreProtocolMock()
     formulaStoreMock.elementsReturnValue = elements()
-    sut.formulaStore = formulaStoreMock
+    sut = FormulasCoordinator(presenter: navigationController, formulaStore: formulaStoreMock)
     sut.start()
     let topicViewController = try XCTUnwrap(navigationController.topViewController as? TopicViewController)
     let topic = Topic(title: "Foo", type: .elements)
@@ -104,7 +104,7 @@ class FormulasCoordinatorTests: XCTestCase {
 
   func test_fav_shouldCallAddMethodInFormulaStore() {
     let formulaStoreMock = FormulaStoreProtocolMock()
-    sut.formulaStore = formulaStoreMock
+    sut = FormulasCoordinator(presenter: navigationController, formulaStore: formulaStoreMock)
 
     let formula = Formula(id: UUID(), imageName: "Foo", title: "Bar")
     sut.fav(UIViewController(), formula: formula)

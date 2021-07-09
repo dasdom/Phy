@@ -46,4 +46,17 @@ class FormulaStoreTests: XCTestCase {
     XCTAssertEqual(section?.formulas.first?.referenceUUID, uuid)
     localSUT.addOrRemoveFavorite(formula: Formula(id: uuid, imageName: "Foo", title: "Bar"))
   }
+
+  func test_allFavorites_returnsSectionsWithFavoriteFormulas() throws {
+
+    sut.favorites = []
+    let favoriteSectionsBefore = sut.allFavoritesSpecialFieldSections()
+    XCTAssertEqual(favoriteSectionsBefore.count, 0)
+
+    let formula = try XCTUnwrap(sut.specialFieldSections(.physics_formulas).first?.specialFields.first?.formulaSections.first?.formulas.first)
+    sut.favorites = [formula.id]
+
+    let favoriteSectionsAfter = sut.allFavoritesSpecialFieldSections()
+    XCTAssertEqual(favoriteSectionsAfter.count, 1)
+  }
 }

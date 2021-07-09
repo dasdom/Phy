@@ -9,17 +9,19 @@ import CommonExtensions
 
 class FormulasCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
   
-  private let presenter: UINavigationController
-  private let viewController: TopicViewController
-  lazy var formulaStore: FormulaStoreProtocol = FormulaStore()
+  let presenter: UINavigationController
+//  var viewController: UIViewController
+  let formulaStore: FormulaStoreProtocol
 
-  init(presenter: UINavigationController) {
+  init(presenter: UINavigationController, formulaStore: FormulaStoreProtocol) {
     self.presenter = presenter
-    let topicDataSource = TopicDataSource()
-    viewController = TopicViewController(dataSource: topicDataSource)
+    self.formulaStore = formulaStore
   }
-  
+
   func start() {
+    let topicDataSource = TopicDataSource()
+    let viewController = TopicViewController(dataSource: topicDataSource)
+
     viewController.delegate = self
     presenter.pushViewController(viewController, animated: false)
   }

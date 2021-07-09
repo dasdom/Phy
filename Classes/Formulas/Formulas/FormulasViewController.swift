@@ -23,7 +23,7 @@ class FormulasViewController: UIViewController {
     }
     return sections
   }
-  private let formulaStore: FormulaStoreProtocol?
+  let formulaStore: FormulaStoreProtocol?
   var delegate: FormulasViewControllerProtocol?
 
   init(sectionsInSpecialField: [FormulaSection], formulaStore: FormulaStoreProtocol? = nil) {
