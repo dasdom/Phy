@@ -25,14 +25,14 @@ class AppCoordinator: Coordinator {
   }
   
   private var formulas: UIViewController {
-    let formulasNavigationController = UINavigationController()
-    formulasNavigationController.navigationBar.prefersLargeTitles = true
-    let phyTopicCoordinator = FormulasCoordinator(presenter: formulasNavigationController, formulaStore: formulaStore)
+    let navigationController = UINavigationController()
+    navigationController.navigationBar.prefersLargeTitles = true
+    let phyTopicCoordinator = FormulasCoordinator(presenter: navigationController, formulaStore: formulaStore)
     phyTopicCoordinator.start()
     childCoordinators.append(phyTopicCoordinator)
     
-    formulasNavigationController.tabBarItem = UITabBarItem(title: "Formeln".localized, image: UIImage(systemName: "function"), tag: 0)
-    return formulasNavigationController
+    navigationController.tabBarItem = UITabBarItem(title: "Formeln".localized, image: UIImage(systemName: "function"), tag: 0)
+    return navigationController
   }
   
   private var calculator: UIViewController {
@@ -55,6 +55,7 @@ class AppCoordinator: Coordinator {
 
   private var favorites: UIViewController {
     let navigationController = UINavigationController()
+    navigationController.navigationBar.prefersLargeTitles = true
     let favoritesCoordinator = FavoritesCoordinator(presenter: navigationController, formulaStore: formulaStore)
     favoritesCoordinator.start()
     childCoordinators.append(favoritesCoordinator)

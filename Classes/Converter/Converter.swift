@@ -10,7 +10,7 @@ class Converter: ObservableObject, Equatable {
     return lhs.convertInfo == rhs.convertInfo
   }
   
-  
+    
   let convertInfo: ConvertInfo
   @Published var input: String = "" {
     didSet {
@@ -36,9 +36,7 @@ class Converter: ObservableObject, Equatable {
   func updateOutput() {
     if input.count > 0 {
       let calcString = String(format: "%@%@%@%@%@", input, DDHTimes, convertInfo.units[selectedInputIndex].value, DDHDivide, convertInfo.units[selectedOutputIndex].value)
-      
-      print("calcString: \(calcString)")
-      
+
       let calculator = Legacy_Calculator(deg: true)
       let result = calculator?.calculate(calcString)
       

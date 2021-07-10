@@ -1221,6 +1221,10 @@
 "Zum Rechner" = "To calculator";
 "Löschen" = "Clear";
 
+// MARK: - Favorites
+"Favoriten" = "Favorites";
+"★ Favoriten ★" = "★ Favorites ★";
+
 // MARK: - Solver
 "Werkzeuge" = "Tools";
 "Formel"    = "Formla";

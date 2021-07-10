@@ -82,7 +82,11 @@ class FormulasViewController: UIViewController {
   private func configureDataSource() {
     let cellRegistration = UICollectionView.CellRegistration<FormulaCollectionViewListCell, Formula> { cell, indexPath, formula in
       cell.update(with: formula)
-      cell.accessories = [.disclosureIndicator()]
+      if nil == formula.details {
+        cell.accessories = []
+      } else {
+        cell.accessories = [.disclosureIndicator()]
+      }
     }
 
     dataSource = UICollectionViewDiffableDataSource<Section, Formula>(collectionView: collectionView, cellProvider: { collectionView, indexPath, formula in

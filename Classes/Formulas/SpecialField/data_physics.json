@@ -6524,7 +6524,30 @@
                     "detailItems": [
                       {
                         "title": "Stokesreibung",
-                        "imageName": "stokesreibung"
+                        "imageName": "stokesreibung",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "placeholder": "m",
+                            "imageName": "radius_abk"
+                          },
+                          {
+                            "id": "eta",
+                            "placeholder": "Pa s",
+                            "imageName": "viskositaet_abk"
+                          },
+                          {
+                            "id": "v",
+                            "placeholder": "m s⁻¹",
+                            "imageName": "geschwindigkeit_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "6×𝜋×#r×#eta×#v",
+                            "imageName": "stokesreibung"
+                          }
+                        ]
                       }
                     ]
                   },

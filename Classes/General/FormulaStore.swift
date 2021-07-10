@@ -91,7 +91,7 @@ class FormulaStore: FormulaStoreProtocol {
     if formulas.count < 1 {
       return nil
     }
-    return FormulaSection(id: favoritesUUID, title: "Favorites", formulas: formulas)
+    return FormulaSection(id: favoritesUUID, title: "Favoriten", formulas: formulas)
   }
 
   func formulaIsFavorit(_ formula: Formula) -> Bool {
