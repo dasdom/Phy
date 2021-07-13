@@ -6748,7 +6748,25 @@
                     "detailItems": [
                       {
                         "title": "Gay-Lussac",
-                        "imageName": "gayLussac"
+                        "imageName": "gayLussac",
+                        "inputs": [
+                          {
+                            "id": "V0",
+                            "placeholder": "m³",
+                            "imageName": "volumenNull_abk"
+                          },
+                          {
+                            "id": "theta",
+                            "placeholder": "°C",
+                            "imageName": "celsius_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#V0×(1+#theta÷273.15)",
+                            "imageName": "gayLussac"
+                          }
+                        ]
                       },
                       {
                         "title": "DruckConst",
@@ -6806,7 +6824,25 @@
                     "detailItems": [
                       {
                         "title": "Amonton",
-                        "imageName": "amonton"
+                        "imageName": "amonton",
+                        "inputs": [
+                          {
+                            "id": "p0",
+                            "placeholder": "N m⁻²",
+                            "imageName": "volumenNull_abk"
+                          },
+                          {
+                            "id": "theta",
+                            "placeholder": "°C",
+                            "imageName": "celsius_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#p0×(1+#theta÷273.15)",
+                            "imageName": "amonton"
+                          }
+                        ]
                       },
                       {
                         "title": "VolumenConst",
@@ -7264,7 +7300,44 @@
               {
                 "id": "B9E0B392-61BA-4827-8AC3-3B4F8D506078",
                 "title": "2. Hauptsatz",
-                "imageName": "nopic"
+                "imageName": "second_fundamental_thermodynamic_theorem",
+                "details": [
+                  {
+                    "title": "2. Hauptsatz",
+                    "detailItems": [
+                      {
+                        "title": "2. Hauptsatz",
+                        "imageName": "second_fundamental_thermodynamic_theorem"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Abkürzung",
+                    "detailItems": [
+                      {
+                        "title": "WaermeAbk",
+                        "imageName": "waerme_abk"
+                      },
+                      {
+                        "title": "KelvinAbk",
+                        "imageName": "kelvin_abk"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Einheiten",
+                    "detailItems": [
+                      {
+                        "title": "WaermeEinh",
+                        "imageName": "waerme_einh"
+                      },
+                      {
+                        "title": "KelvinEinh",
+                        "imageName": "kelvin_einh"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "id": "EEADA1DF-C307-4C5A-8DB9-B1DD64C4C72A",
@@ -7418,15 +7491,84 @@
                     "detailItems": [
                       {
                         "title": "kin. Energie",
-                        "imageName": "e_kin_idealesGas"
+                        "imageName": "e_kin_idealesGas",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "n",
+                            "placeholder": "",
+                            "imageName": "stoffmenge_abk"
+                          },
+                          {
+                            "id": "T",
+                            "placeholder": "K",
+                            "imageName": "temperatur_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#n×8.314472×#T",
+                            "imageName": "e_kin_idealesGas"
+                          }
+                        ]
                       },
                       {
                         "title": "kin. Energie03",
-                        "imageName": "e_kin_idealesGas03"
+                        "imageName": "e_kin_idealesGas03",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "N",
+                            "placeholder": "",
+                            "imageName": "teilchenzahl_abk"
+                          },
+                          {
+                            "id": "T",
+                            "placeholder": "K",
+                            "imageName": "temperatur_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#N×1.3806503e-23×#T",
+                            "imageName": "e_kin_idealesGas03"
+                          }
+                        ]
                       },
                       {
                         "title": "kin. Energie02",
-                        "imageName": "e_kin_idealesGas02"
+                        "imageName": "e_kin_idealesGas02",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "p",
+                            "placeholder": "N m⁻²",
+                            "imageName": "druck_abk"
+                          },
+                          {
+                            "id": "V",
+                            "placeholder": "m³",
+                            "imageName": "volumen_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#p×#V",
+                            "imageName": "e_kin_idealesGas02"
+                          }
+                        ]
                       },
                       {
                         "title": "FreiheitsgradIdeal",
@@ -7541,15 +7683,84 @@
                     "detailItems": [
                       {
                         "title": "kin. Energie03",
-                        "imageName": "e_kin_idealesGas03"
+                        "imageName": "e_kin_idealesGas03",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "N",
+                            "placeholder": "",
+                            "imageName": "teilchenzahl_abk"
+                          },
+                          {
+                            "id": "T",
+                            "placeholder": "K",
+                            "imageName": "temperatur_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#N×1.3806503e-23×#T",
+                            "imageName": "e_kin_idealesGas03"
+                          }
+                        ]
                       },
                       {
                         "title": "kin. Energie",
-                        "imageName": "e_kin_idealesGas"
+                        "imageName": "e_kin_idealesGas",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "n",
+                            "placeholder": "",
+                            "imageName": "stoffmenge_abk"
+                          },
+                          {
+                            "id": "T",
+                            "placeholder": "K",
+                            "imageName": "temperatur_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#n×8.314472×#T",
+                            "imageName": "e_kin_idealesGas"
+                          }
+                        ]
                       },
                       {
                         "title": "kin. Energie02",
-                        "imageName": "e_kin_idealesGas02"
+                        "imageName": "e_kin_idealesGas02",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "p",
+                            "placeholder": "N m⁻²",
+                            "imageName": "druck_abk"
+                          },
+                          {
+                            "id": "V",
+                            "placeholder": "m³",
+                            "imageName": "volumen_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#p×#V",
+                            "imageName": "e_kin_idealesGas02"
+                          }
+                        ]
                       },
                       {
                         "title": "FreiheitsgradIdeal",
@@ -7664,15 +7875,84 @@
                     "detailItems": [
                       {
                         "title": "kin. Energie02",
-                        "imageName": "e_kin_idealesGas02"
+                        "imageName": "e_kin_idealesGas02",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "p",
+                            "placeholder": "N m⁻²",
+                            "imageName": "druck_abk"
+                          },
+                          {
+                            "id": "V",
+                            "placeholder": "m³",
+                            "imageName": "volumen_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#p×#V",
+                            "imageName": "e_kin_idealesGas02"
+                          }
+                        ]
                       },
                       {
                         "title": "kin. Energie",
-                        "imageName": "e_kin_idealesGas"
+                        "imageName": "e_kin_idealesGas",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "n",
+                            "placeholder": "",
+                            "imageName": "stoffmenge_abk"
+                          },
+                          {
+                            "id": "T",
+                            "placeholder": "K",
+                            "imageName": "temperatur_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#n×8.314472×#T",
+                            "imageName": "e_kin_idealesGas"
+                          }
+                        ]
                       },
                       {
                         "title": "kin. Energie03",
-                        "imageName": "e_kin_idealesGas03"
+                        "imageName": "e_kin_idealesGas03",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "N",
+                            "placeholder": "",
+                            "imageName": "teilchenzahl_abk"
+                          },
+                          {
+                            "id": "T",
+                            "placeholder": "K",
+                            "imageName": "temperatur_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×#N×1.3806503e-23×#T",
+                            "imageName": "e_kin_idealesGas03"
+                          }
+                        ]
                       },
                       {
                         "title": "FreiheitsgradIdeal",
@@ -8050,7 +8330,25 @@
                     "detailItems": [
                       {
                         "title": "Wärmekapazität",
-                        "imageName": "waermekapazitaet"
+                        "imageName": "waermekapazitaet",
+                        "inputs": [
+                          {
+                            "id": "deltaQ",
+                            "placeholder": "J",
+                            "imageName": "delta_capital_q_colon"
+                          },
+                          {
+                            "id": "deltaT",
+                            "placeholder": "K",
+                            "imageName": "delta_capital_t_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#deltaQ÷#deltaT",
+                            "imageName": "waermekapazitaet"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -8100,7 +8398,30 @@
                     "detailItems": [
                       {
                         "title": "spezifischeWärmekapazität",
-                        "imageName": "spezifischeWaermekapazitaet"
+                        "imageName": "spezifischeWaermekapazitaet",
+                        "inputs": [
+                          {
+                            "id": "deltaQ",
+                            "placeholder": "J",
+                            "imageName": "delta_capital_q_colon"
+                          },
+                          {
+                            "id": "m",
+                            "placeholder": "kg",
+                            "imageName": "masse_abk"
+                          },
+                          {
+                            "id": "deltaT",
+                            "placeholder": "K",
+                            "imageName": "delta_capital_t_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#deltaQ÷(#m×#deltaT)",
+                            "imageName": "spezifischeWaermekapazitaet"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -8158,15 +8479,64 @@
                     "detailItems": [
                       {
                         "title": "molareWärmekapazität",
-                        "imageName": "molareWaermekapazitaet"
+                        "imageName": "molareWaermekapazitaet",
+                        "inputs": [
+                          {
+                            "id": "deltaQ",
+                            "placeholder": "J",
+                            "imageName": "delta_capital_q_colon"
+                          },
+                          {
+                            "id": "n",
+                            "placeholder": "",
+                            "imageName": "stoffmenge_abk"
+                          },
+                          {
+                            "id": "deltaT",
+                            "placeholder": "K",
+                            "imageName": "delta_capital_t_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#deltaQ÷(#n×#deltaT)",
+                            "imageName": "molareWaermekapazitaet"
+                          }
+                        ]
                       },
                       {
                         "title": "molareWärmekapazität_V",
-                        "imageName": "molareWaermekapazitaet_V"
+                        "imageName": "molareWaermekapazitaet_V",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×8.314472",
+                            "imageName": "molareWaermekapazitaet_V"
+                          }
+                        ]
                       },
                       {
                         "title": "molareWärmekapazität_p",
-                        "imageName": "molareWaermekapazitaet_p"
+                        "imageName": "molareWaermekapazitaet_p",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#f+2)÷2×8.314472",
+                            "imageName": "molareWaermekapazitaet_p"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -8196,6 +8566,10 @@
                       {
                         "title": "molareWaermekapazitaet_VAbk",
                         "imageName": "molareWaermekapazitaet_V_abk"
+                      },
+                      {
+                        "title": "FreiheitsgradeAbk",
+                        "imageName": "freiheitsgrade_abk"
                       }
                     ]
                   },
@@ -8225,6 +8599,10 @@
                       {
                         "title": "molareWaermekapazitaet_pEinh",
                         "imageName": "molareWaermekapazitaet_p_einh"
+                      },
+                      {
+                        "title": "FreiheitsgradeEinh",
+                        "imageName": "freiheitsgrade_einh"
                       }
                     ]
                   }
@@ -8240,7 +8618,20 @@
                     "detailItems": [
                       {
                         "title": "molareWärmekapazität_V",
-                        "imageName": "molareWaermekapazitaet_V"
+                        "imageName": "molareWaermekapazitaet_V",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f÷2×8.314472",
+                            "imageName": "molareWaermekapazitaet_V"
+                          }
+                        ]
                       },
                       {
                         "title": "molareWärmekapazitäten",
@@ -8311,7 +8702,20 @@
                     "detailItems": [
                       {
                         "title": "molareWärmekapazität_p",
-                        "imageName": "molareWaermekapazitaet_p"
+                        "imageName": "molareWaermekapazitaet_p",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "placeholder": "",
+                            "imageName": "freiheitsgrade_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#f+2)÷2×8.314472",
+                            "imageName": "molareWaermekapazitaet_p"
+                          }
+                        ]
                       },
                       {
                         "title": "molareWärmekapazitäten",
