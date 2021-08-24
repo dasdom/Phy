@@ -35,7 +35,7 @@ class PhyUITests: XCTestCase {
     
     takeScreenshot(named: "special_field")
 
-    app.tables.firstMatch.cells.element(boundBy: 3).tap()
+    app.collectionViews.firstMatch.cells.element(boundBy: 3).tap()
     
     takeScreenshot(named: "formula")
 
@@ -57,6 +57,11 @@ class PhyUITests: XCTestCase {
 
     app.tabBars.firstMatch.buttons.element(boundBy: 2).tap()
 
+    let button = app.navigationBars.buttons.firstMatch
+    if button.exists {
+      button.tap()
+    }
+
     app.tables.firstMatch.cells.element(boundBy: 0).tap()
 
     calcString = "1.442e4"
@@ -67,9 +72,9 @@ class PhyUITests: XCTestCase {
     
     takeScreenshot(named: "converter")
     
-    app.tabBars.firstMatch.buttons.element(boundBy: 3).tap()
-    
-    takeScreenshot(named: "reference")
+//    app.tabBars.firstMatch.buttons.element(boundBy: 3).tap()
+//
+//    takeScreenshot(named: "reference")
 
     app.tabBars.firstMatch.buttons.element(boundBy: 4).tap()
     
@@ -77,15 +82,17 @@ class PhyUITests: XCTestCase {
     
     app.typeText("2")
 
-    app.buttons["next"].firstMatch.tap()
+    let nextKey = NSLocalizedString("weiter", comment: "")
+
+    app.buttons[nextKey].firstMatch.tap()
     
     app.typeText("5")
 
-    app.buttons["next"].firstMatch.tap()
+    app.buttons[nextKey].firstMatch.tap()
     
     app.typeText("3")
     
-    app.buttons["next"].firstMatch.tap()
+    app.buttons[nextKey].firstMatch.tap()
 
     sleep(1)
     

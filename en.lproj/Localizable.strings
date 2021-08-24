@@ -844,6 +844,7 @@
 		"EingetauchtesVolumenAbk"   = "Dipped volume";
 		"ViskositaetAbk"            = "Viscosity";
 		"AuftriebskraftAbk"         = "Lifting force";
+    "barometrische Höhenformel" = "Boltzmann barometric equation";
 		"HoeheAbk"                  = "Height";
 		"FlaecheAbk"                = "Area";
 		"HoeheDerFluessigkeitAbk"   = "Height of the liquid";
