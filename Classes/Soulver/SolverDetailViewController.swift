@@ -84,10 +84,13 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
           cell = inputCell
         } else {
           let inputCell = SolverDetailInputCell(style: .default, reuseIdentifier: nil)
-          
+
           inputCell.update(with: tool.inputs[indexPath.row])
           inputCell.textField.tag = indexPath.row
           inputCell.textField.delegate = self
+          if let value = toolInput.value {
+            inputValues[indexPath.row] = value
+          }
           inputCell.textField.text = inputValues[indexPath.row]
           inputCell.textField.returnKeyType = .next
           
@@ -115,14 +118,8 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
         
         if indexPath.row < results.count {
           let toolResult = tool.results[indexPath.row]
-          var formulaString = toolResult.formula
-          
-          let numberInputs = tool.inputs.filter({ $0.inputType != .angleType })
-          for (idx, input) in numberInputs.enumerated() {
-            let userInput = inputValues[idx]
-            formulaString = formulaString.replacingOccurrences(of: "#\(input.id)", with: userInput)
-          }
-          resultCell.resultLabel.text = "= \(formulaString)\n= " + results[indexPath.row]
+          let result = results[indexPath.row]
+          resultCell.resultLabel.text = toolResult.resultString(inputs: tool.inputs, inputValues: inputValues, result: result)
         }
         
         cell = resultCell

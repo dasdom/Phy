@@ -12,6 +12,7 @@ enum InputType: String, Codable {
 struct SolverInput : Codable, Equatable {
   let id: String
   let imageName: String
-  let placeholder: String
+  var unit: String?
+  var value: String?
   let inputType: InputType?
 }

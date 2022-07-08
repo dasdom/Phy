@@ -68,7 +68,7 @@ class FormulasViewController: UIViewController {
 
       let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
 
-      let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerFooterSize, elementKind: "Header", alignment: .top)
+      let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerFooterSize, elementKind: "header", alignment: .top)
 
       sectionHeader.pinToVisibleBounds = true
       sectionHeader.zIndex = Int.max

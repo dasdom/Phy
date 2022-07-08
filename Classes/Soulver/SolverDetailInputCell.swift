@@ -14,6 +14,7 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
 
   let abbreviationImageView: UIImageView
   let textField: UITextField
+  let unitLabel: UILabel
   private var imageHeightConstraint: NSLayoutConstraint?
   private var imageWidthConstraint: NSLayoutConstraint?
   
@@ -25,12 +26,19 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     textField.font = .preferredFont(forTextStyle: .body)
     textField.adjustsFontForContentSizeCategory = true
     textField.keyboardType = .decimalPad
+    textField.borderStyle = .roundedRect
+    textField.textAlignment = .right
+
+    unitLabel = UILabel()
+    unitLabel.font = .preferredFont(forTextStyle: .body)
+    unitLabel.adjustsFontForContentSizeCategory = true
+    unitLabel.textColor = .gray
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     selectionStyle = .none
     
-    let stackView = UIStackView(arrangedSubviews: [abbreviationImageView, textField])
+    let stackView = UIStackView(arrangedSubviews: [abbreviationImageView, textField, unitLabel])
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.spacing = 5
     stackView.alignment = .center
@@ -47,6 +55,7 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     imageWidthConstraint.priority = UILayoutPriority(rawValue: 999)
     
     textField.setContentCompressionResistancePriority(.required, for: .vertical)
+    textField.setContentHuggingPriority(.required, for: .horizontal)
     
     NSLayoutConstraint.activate([
       stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
@@ -55,6 +64,8 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
       stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
       imageWidthConstraint,
       imageHeightConstraint,
+
+//      textField.widthAnchor.constraint(greaterThanOrEqualToConstant: 20),
       ])
     
     let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
@@ -83,9 +94,12 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
     let size = image.size
     imageWidthConstraint = abbreviationImageView.widthAnchor.constraint(equalTo: abbreviationImageView.heightAnchor, multiplier: size.width/size.height)
     imageWidthConstraint?.isActive = true
-    
-    textField.placeholder = item.placeholder
-    
+
+    if let unit = item.unit {
+      textField.placeholder = "in \(unit)"
+      unitLabel.text = unit
+    }
+
     traitCollectionDidChange(nil)
   }
   

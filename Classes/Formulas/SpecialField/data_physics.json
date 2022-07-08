@@ -89,7 +89,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#s÷#t",
+                            "formula": "#s ÷ #t",
+                            "unit": "m/s",
                             "imageName": "geschwindigkeit01"
                           }
                         ],
@@ -97,12 +98,12 @@
                         "inputs": [
                           {
                             "id": "s",
-                            "placeholder": "in m",
+                            "unit": "m",
                             "imageName": "zurueckgelegter_weg_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "in s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           }
                         ],
@@ -157,7 +158,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m÷#v",
+                            "formula": "#m × #v",
+                            "unit": "kg m/s",
                             "imageName": "impuls"
                           }
                         ],
@@ -165,12 +167,12 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "in kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "v",
-                            "placeholder": "in m\/s",
+                            "unit": "m/s",
                             "imageName": "geschwindigkeit_abk"
                           }
                         ],
@@ -263,7 +265,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m÷#a",
+                            "formula": "#m × #a",
+                            "unit": "kg m/s²",
                             "imageName": "kraft02"
                           }
                         ],
@@ -271,12 +274,12 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "in kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "in m\/s^2",
+                            "unit": "m/s²",
                             "imageName": "beschleunigung_abk"
                           }
                         ],
@@ -347,7 +350,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m÷#a",
+                            "formula": "#m × #a",
+                            "unit": "N",
                             "imageName": "kraft02"
                           }
                         ],
@@ -355,12 +359,12 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "in kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "in m\/s^2",
+                            "unit": "m/s²",
                             "imageName": "beschleunigung_abk"
                           }
                         ],
@@ -534,7 +538,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#fr×#Fn",
+                            "formula": "#fr × #Fn",
+                            "unit": "N",
                             "imageName": "reibungskraft"
                           }
                         ],
@@ -542,12 +547,11 @@
                         "inputs": [
                           {
                             "id": "fr",
-                            "placeholder": "",
                             "imageName": "reibungskoeff_abk"
                           },
                           {
                             "id": "Fn",
-                            "placeholder": "in N",
+                            "unit": "N",
                             "imageName": "normalkraft_abk"
                           }
                         ],
@@ -609,25 +613,30 @@
                       {
                         "results": [
                           {
-                            "formula": "#m×9.80665×sin(#alpha)",
-                            "imageName": "hangabtriebskraft"
+                            "formula": "#m × #g × sin(#alpha)",
+                            "imageName": "hangabtriebskraft",
+                            "unit": "N"
                           }
                         ],
                         "title": "Hangabtriebskraft",
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m/s²",
+                            "imageName": "gravitationsbeschleunigung_abk",
+                            "value": "9.80665"
+                          },
+                          {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -870,7 +879,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#W÷#t",
+                            "formula": "#W ÷ #t",
+                            "unit": "W",
                             "imageName": "leistung01"
                           }
                         ],
@@ -878,12 +888,12 @@
                         "inputs": [
                           {
                             "id": "W",
-                            "placeholder": "",
+                            "unit": "J",
                             "imageName": "arbeit_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           }
                         ],
@@ -962,7 +972,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#W÷#t",
+                            "formula": "#W ÷ #t",
+                            "unit": "W",
                             "imageName": "leistung01"
                           }
                         ],
@@ -970,12 +981,12 @@
                         "inputs": [
                           {
                             "id": "W",
-                            "placeholder": "",
+                            "unit": "J",
                             "imageName": "arbeit_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           }
                         ],
@@ -1046,7 +1057,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#p^2÷(2×#m)",
+                            "formula": "(#p)^2 ÷ (2 × #m)",
+                            "unit": "J",
                             "imageName": "e_kin01"
                           }
                         ],
@@ -1054,12 +1066,12 @@
                         "inputs": [
                           {
                             "id": "p",
-                            "placeholder": "kg m \/ s",
+                            "unit": "kg m / s",
                             "imageName": "impuls_abk"
                           },
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           }
                         ],
@@ -1068,21 +1080,22 @@
                       {
                         "results": [
                           {
-                            "formula": "0.5×#m×#v^2",
+                            "formula": "0.5 × #m × (#v)^2",
+                            "unit": "J",
                             "imageName": "e_kin02"
                           }
                         ],
                         "title": "EKin",
                         "inputs": [
                           {
-                            "id": "v",
-                            "placeholder": "m \/ s",
-                            "imageName": "geschwindigkeit_abk"
+                            "id": "m",
+                            "unit": "kg",
+                            "imageName": "masse_abk"
                           },
                           {
-                            "id": "m",
-                            "placeholder": "kg",
-                            "imageName": "masse_abk"
+                            "id": "v",
+                            "unit": "m / s",
+                            "imageName": "geschwindigkeit_abk"
                           }
                         ],
                         "imageName": "e_kin02"
@@ -1144,21 +1157,22 @@
                       {
                         "results": [
                           {
-                            "formula": "0.5×#m×#v^2",
+                            "formula": "0.5 × #m × (#v)^2",
+                            "unit": "J",
                             "imageName": "e_kin02"
                           }
                         ],
                         "title": "EKin",
                         "inputs": [
                           {
-                            "id": "v",
-                            "placeholder": "m \/ s",
-                            "imageName": "geschwindigkeit_abk"
+                            "id": "m",
+                            "unit": "kg",
+                            "imageName": "masse_abk"
                           },
                           {
-                            "id": "m",
-                            "placeholder": "kg",
-                            "imageName": "masse_abk"
+                            "id": "v",
+                            "unit": "m / s",
+                            "imageName": "geschwindigkeit_abk"
                           }
                         ],
                         "imageName": "e_kin02"
@@ -1166,7 +1180,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#p^2÷(2×#m)",
+                            "formula": "(#p)^2 ÷ (2 × #m)",
+                            "unit": "J",
                             "imageName": "e_kin01"
                           }
                         ],
@@ -1174,17 +1189,17 @@
                         "inputs": [
                           {
                             "id": "p",
-                            "placeholder": "kg m \/ s",
+                            "unit": "kg m / s",
                             "imageName": "impuls_abk"
                           },
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           }
                         ],
                         "imageName": "e_kin01"
-                      }
+                      },
                     ]
                   },
                   {
@@ -1242,7 +1257,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m×9.80665×#h",
+                            "formula": "#m × #g × #h",
+                            "unit": "J",
                             "imageName": "potentielle_energie01"
                           }
                         ],
@@ -1250,12 +1266,18 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "imageName": "gravitationsbeschleunigung_abk",
+                            "value": "9.80665"
+                          },
+                          {
                             "id": "h",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "hoehe_abk"
                           }
                         ],
@@ -1387,7 +1409,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0+#a×#t",
+                            "formula": "#v0 + #a × #t",
+                            "unit": "m / s",
                             "imageName": "geschwindigkeit03"
                           }
                         ],
@@ -1395,17 +1418,17 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           }
                         ],
@@ -1414,7 +1437,8 @@
                       {
                         "results": [
                           {
-                            "formula": "sqrt(#v0^2+2×#a×#s)",
+                            "formula": "sqrt((#v0)^2 + 2 × #a × #s)",
+                            "unit": "m / s",
                             "imageName": "geschwindigkeit04"
                           }
                         ],
@@ -1422,17 +1446,17 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           },
                           {
                             "id": "s",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "zurueckgelegter_weg_abk"
                           }
                         ],
@@ -1507,7 +1531,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0+#a×#t",
+                            "formula": "#v0 + #a × #t",
+                            "unit": "m / s",
                             "imageName": "geschwindigkeit03"
                           }
                         ],
@@ -1515,17 +1540,17 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           }
                         ],
@@ -1538,7 +1563,8 @@
                       {
                         "results": [
                           {
-                            "formula": "sqrt(#v0^2+2×#a×#s)",
+                            "formula": "sqrt((#v0)^2 + 2 × #a × #s)",
+                            "unit": "m / s",
                             "imageName": "geschwindigkeit04"
                           }
                         ],
@@ -1546,17 +1572,17 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           },
                           {
                             "id": "s",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "zurueckgelegter_weg_abk"
                           }
                         ],
@@ -1631,7 +1657,8 @@
                       {
                         "results": [
                           {
-                            "formula": "sqrt(#v0^2+2×#a×#s)",
+                            "formula": "sqrt((#v0)^2 + 2 × #a × #s)",
+                            "unit": "m / s",
                             "imageName": "geschwindigkeit04"
                           }
                         ],
@@ -1639,17 +1666,17 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           },
                           {
                             "id": "s",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "zurueckgelegter_weg_abk"
                           }
                         ],
@@ -1662,7 +1689,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0+#a×#t",
+                            "formula": "#v0 + #a × #t",
+                            "unit": "m / s",
                             "imageName": "geschwindigkeit03"
                           }
                         ],
@@ -1670,17 +1698,17 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           }
                         ],
@@ -1755,7 +1783,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0×#t+0.5×#a×#t^2",
+                            "formula": "#v0 × #t + 0.5 × #a × #t^2",
+                            "unit": "m",
                             "imageName": "zurueckgelegter_weg"
                           }
                         ],
@@ -1763,17 +1792,17 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           }
                         ],
@@ -1840,7 +1869,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0^2÷(2×#a)",
+                            "formula": "#v0^2 ÷ (2 × #a)",
+                            "unit": "m",
                             "imageName": "bremsweg"
                           }
                         ],
@@ -1848,12 +1878,12 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           }
                         ],
@@ -1912,7 +1942,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0÷#a",
+                            "formula": "#v0 ÷ #a",
+                            "unit": "s",
                             "imageName": "bremsdauer"
                           }
                         ],
@@ -1920,12 +1951,12 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "anfangsgeschwindigkeit_abk"
                           },
                           {
                             "id": "a",
-                            "placeholder": "m \/ s^2",
+                            "unit": "m / s²",
                             "imageName": "beschleunigung_abk"
                           }
                         ],
@@ -2162,7 +2193,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m×9.80665",
+                            "formula": "#m × #g",
+                            "unit": "N",
                             "imageName": "gewichtskraft"
                           }
                         ],
@@ -2170,8 +2202,14 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
+                          },
+                          {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
                           }
                         ],
                         "imageName": "gewichtskraft"
@@ -2242,25 +2280,32 @@
                       {
                         "results": [
                           {
-                            "formula": "6.6726e-11×#m1×#m2÷#r^2",
+                            "formula": "#gamma × #m1 × #m2 ÷ (#r)^2",
+                            "unit": "N",
                             "imageName": "mechanics_gravitational_force"
                           }
                         ],
                         "title": "Gravitationskraft",
                         "inputs": [
                           {
+                            "id": "gamma",
+                            "unit": "N m² kg⁻²",
+                            "value": "6.6726e-11",
+                            "imageName": "gravitationskonstante_abk"
+                          },
+                          {
                             "id": "m1",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse1_abk"
                           },
                           {
                             "id": "m2",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse2_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "abstand_abk"
                           }
                         ],
@@ -2344,25 +2389,32 @@
                       {
                         "results": [
                           {
-                            "formula": "6.6726e-11×#m1×#m2÷#r",
+                            "formula": "#gamma × #m1 × #m2 ÷ #r",
+                            "unit": "N m",
                             "imageName": "gravitationspotential"
                           }
                         ],
                         "title": "Gravitationspotential",
                         "inputs": [
                           {
+                            "id": "gamma",
+                            "unit": "N m² kg⁻²",
+                            "value": "6.6726e-11",
+                            "imageName": "gravitationskonstante_abk"
+                          },
+                          {
                             "id": "m1",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse1_abk"
                           },
                           {
                             "id": "m2",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse2_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "abstand_abk"
                           }
                         ],
@@ -2458,15 +2510,22 @@
                       {
                         "results": [
                           {
-                            "formula": "-9.80665×#t",
+                            "formula": "-#g × #t",
+                            "unit": "m / s",
                             "imageName": "freierFall02"
                           }
                         ],
                         "title": "Geschwindigkeit",
                         "inputs": [
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           }
                         ],
@@ -2475,21 +2534,28 @@
                       {
                         "results": [
                           {
-                            "formula": "#h-0.5×9.80665×#t^2",
+                            "formula": "#h - 0.5 × #g × (#t)^2",
+                            "unit": "m",
                             "imageName": "freierFall01"
                           }
                         ],
                         "title": "Ort",
                         "inputs": [
                           {
-                            "id": "t",
-                            "placeholder": "s",
-                            "imageName": "zeit_abk"
+                            "id": "h",
+                            "unit": "m",
+                            "imageName": "hoehe_abk"
                           },
                           {
-                            "id": "h",
-                            "placeholder": "m",
-                            "imageName": "hoehe_abk"
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
+                            "id": "t",
+                            "unit": "s",
+                            "imageName": "zeit_abk"
                           }
                         ],
                         "imageName": "freierFall01"
@@ -2560,20 +2626,27 @@
                       {
                         "results": [
                           {
-                            "formula": "sqrt(2×6.673e-11×#m\/#r)",
+                            "formula": "sqrt(2 × #gamma × #m / #r)",
+                            "unit": "m / s",
                             "imageName": "fluchtgeschwindigkeit_allgemein"
                           }
                         ],
                         "title": "Fluchtgeschwindigkeit allgemein",
                         "inputs": [
                           {
+                            "id": "gamma",
+                            "unit": "N m² kg⁻²",
+                            "value": "6.673e-11",
+                            "imageName": "gravitationskonstante_abk"
+                          },
+                          {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse3_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "radiusR_abk"
                           }
                         ],
@@ -2641,15 +2714,22 @@
                       {
                         "results": [
                           {
-                            "formula": "sqrt(2×9.80665×#r)",
+                            "formula": "sqrt(2 × #g × #r)",
+                            "unit": "m / s",
                             "imageName": "fluchtgeschwindigkeit_erde"
                           }
                         ],
                         "title": "Fluchtgeschwindigkeit Erde",
                         "inputs": [
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "radiusR_abk"
                           }
                         ],
@@ -2782,7 +2862,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0×#t×cos(#alpha)",
+                            "formula": "#v0 × #t × cos(#alpha)",
+                            "unit": "m",
                             "imageName": "schieferWurf_x"
                           }
                         ],
@@ -2790,22 +2871,20 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           },
                           {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -2873,7 +2952,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0×#t×sin(#alpha)-0.5×9.80665×#t^2",
+                            "formula": "#v0 × #t × sin(#alpha) - 0.5 × #g × (#t)^2",
+                            "unit": "m",
                             "imageName": "schieferWurf_y"
                           }
                         ],
@@ -2881,22 +2961,27 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "alpha",
-                            "placeholder": "",
+                            "unit": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -2981,7 +3066,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0×cos(#alpha)",
+                            "formula": "#v0 × cos(#alpha)",
+                            "unit": "m / s",
                             "imageName": "schieferWurf_vx"
                           }
                         ],
@@ -2989,17 +3075,15 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -3055,7 +3139,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0×sin(#alpha)-9.80665×#t",
+                            "formula": "#v0 × sin(#alpha) - #g × #t",
+                            "unit": "m / s",
                             "imageName": "schieferWurf_vy"
                           }
                         ],
@@ -3063,22 +3148,26 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
                             "id": "t",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "zeit_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -3238,7 +3327,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0^2×(sin(#alpha))^2÷(2×9.80665)",
+                            "formula": "(#v0)^2 × (sin(#alpha))^2 ÷ (2 × #g)",
+                            "unit": "m",
                             "imageName": "schieferWurf_maximalhoehe"
                           }
                         ],
@@ -3246,17 +3336,21 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -3325,7 +3419,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0^2×sin(2×#alpha)÷9.80665",
+                            "formula": "(#v0)^2 × sin(2 × #alpha) ÷ #g",
+                            "unit": "m",
                             "imageName": "schieferWurf_maximalweite"
                           }
                         ],
@@ -3333,17 +3428,21 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -3412,7 +3511,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v0×sin(#alpha)÷9.80665",
+                            "formula": "#v0 × sin(#alpha) ÷ #g",
+                            "unit": "s",
                             "imageName": "schieferWurf_steigzeit"
                           }
                         ],
@@ -3420,17 +3520,21 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -3507,7 +3611,8 @@
                       {
                         "results": [
                           {
-                            "formula": "2×#v0×sin(#alpha)÷9.80665",
+                            "formula": "2 × #v0 × sin(#alpha) ÷ #g",
+                            "unit": "s",
                             "imageName": "schieferWurf_wurfdauer"
                           }
                         ],
@@ -3515,17 +3620,21 @@
                         "inputs": [
                           {
                             "id": "v0",
-                            "placeholder": "m \/ s",
+                            "unit": "m / s",
                             "imageName": "V0_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "alpha",
-                            "placeholder": "",
                             "imageName": "neigungswinkel_abk"
                           },
                           {
                             "id": "",
-                            "placeholder": "",
                             "imageName": "",
                             "inputType": "angleType"
                           }
@@ -4126,7 +4235,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#j0+#r^2×#m",
+                            "formula": "#j0 + (#r)^2 × #m",
+                            "unit": "kg m²",
                             "imageName": "satzVonSteiner"
                           }
                         ],
@@ -4134,17 +4244,17 @@
                         "inputs": [
                           {
                             "id": "j0",
-                            "placeholder": "kg m^2",
+                            "unit": "kg m²",
                             "imageName": "traegheitsmomentHaupt_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "abstandZurDrehachse_abk"
                           },
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           }
                         ],
@@ -4211,7 +4321,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#M×#alpha",
+                            "formula": "#M × #alpha",
+                            "unit": "J",
                             "imageName": "rotationsarbeit"
                           }
                         ],
@@ -4219,12 +4330,12 @@
                         "inputs": [
                           {
                             "id": "M",
-                            "placeholder": "N m",
+                            "unit": "N m",
                             "imageName": "drehmoment01_abk"
                           },
                           {
                             "id": "alpha",
-                            "placeholder": "rad",
+                            "unit": "rad",
                             "imageName": "winkel_abk"
                           }
                         ],
@@ -4283,7 +4394,8 @@
                       {
                         "results": [
                           {
-                            "formula": "0.5×#J×#omega^2",
+                            "formula": "1/2 × #J × (#omega)^2",
+                            "unit": "J",
                             "imageName": "rotationsenergie01"
                           }
                         ],
@@ -4291,12 +4403,12 @@
                         "inputs": [
                           {
                             "id": "J",
-                            "placeholder": "kg m^2",
+                            "unit": "kg m²",
                             "imageName": "traegheitsmoment_abk"
                           },
                           {
                             "id": "omega",
-                            "placeholder": "s^(-1)",
+                            "unit": "s⁻¹",
                             "imageName": "winkelgeschwindigkeit_abk"
                           }
                         ],
@@ -4305,7 +4417,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#L^2÷(2×#J)",
+                            "formula": "(#L)^2 ÷ (2 × #J)",
+                            "unit": "J",
                             "imageName": "rotationsenergie02"
                           }
                         ],
@@ -4313,12 +4426,12 @@
                         "inputs": [
                           {
                             "id": "L",
-                            "placeholder": "kg m^2 s^(-1)",
+                            "unit": "kg m² s⁻¹",
                             "imageName": "drehimpuls02_abk"
                           },
                           {
                             "id": "J",
-                            "placeholder": "kg m^2",
+                            "unit": "kg m²",
                             "imageName": "traegheitsmoment_abk"
                           }
                         ],
@@ -4381,7 +4494,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#L^2÷(2×#J)",
+                            "formula": "(#L)^2 ÷ (2 × #J)",
+                            "unit": "J",
                             "imageName": "rotationsenergie02"
                           }
                         ],
@@ -4389,12 +4503,12 @@
                         "inputs": [
                           {
                             "id": "L",
-                            "placeholder": "kg m^2 s^(-1)",
+                            "unit": "kg m² s⁻¹",
                             "imageName": "drehimpuls02_abk"
                           },
                           {
                             "id": "J",
-                            "placeholder": "kg m^2",
+                            "unit": "kg m²",
                             "imageName": "traegheitsmoment_abk"
                           }
                         ],
@@ -4403,7 +4517,8 @@
                       {
                         "results": [
                           {
-                            "formula": "0.5×#J×#omega^2",
+                            "formula": "1/2 × #J × (#omega)^2",
+                            "unit": "J",
                             "imageName": "rotationsenergie01"
                           }
                         ],
@@ -4411,12 +4526,12 @@
                         "inputs": [
                           {
                             "id": "J",
-                            "placeholder": "kg m^2",
+                            "unit": "kg m²",
                             "imageName": "traegheitsmoment_abk"
                           },
                           {
                             "id": "omega",
-                            "placeholder": "s^(-1)",
+                            "unit": "s⁻¹",
                             "imageName": "winkelgeschwindigkeit_abk"
                           }
                         ],
@@ -4479,7 +4594,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m×#v^2÷#r",
+                            "formula": "#m × (#v)^2 ÷ #r",
+                            "unit": "N",
                             "imageName": "zentripetalkraft01"
                           }
                         ],
@@ -4487,17 +4603,17 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "v",
-                            "placeholder": "m s^(-1)",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "radius_abk"
                           }
                         ],
@@ -4506,7 +4622,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m×#omega^2×#r",
+                            "formula": "#m × (#omega)^2 × #r",
+                            "unit": "N",
                             "imageName": "zentripetalkraft02"
                           }
                         ],
@@ -4514,17 +4631,17 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "omega",
-                            "placeholder": "s^(-1)",
+                            "unit": "s⁻¹",
                             "imageName": "winkelgeschwindigkeit_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "radius_abk"
                           }
                         ],
@@ -4615,7 +4732,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m×#omega^2×#r",
+                            "formula": "#m × (#omega)^2 × #r",
+                            "unit": "N",
                             "imageName": "zentripetalkraft02"
                           }
                         ],
@@ -4623,17 +4741,17 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "omega",
-                            "placeholder": "s^(-1)",
+                            "unit": "s⁻¹",
                             "imageName": "winkelgeschwindigkeit_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "radius_abk"
                           }
                         ],
@@ -4642,7 +4760,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m×#v^2÷#r",
+                            "formula": "#m × (#v)^2 ÷ #r",
+                            "unit": "N",
                             "imageName": "zentripetalkraft01"
                           }
                         ],
@@ -4650,17 +4769,17 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "v",
-                            "placeholder": "m s^(-1)",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
                           },
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "radius_abk"
                           }
                         ],
@@ -4959,7 +5078,8 @@
                       {
                         "results": [
                           {
-                            "formula": "2×𝜋×sqrt(#m÷#D)",
+                            "formula": "2 × 𝜋 × sqrt(#m ÷ #D)",
+                            "unit": "s",
                             "imageName": "periodendauer"
                           }
                         ],
@@ -4967,12 +5087,12 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "D",
-                            "placeholder": "kg s^(-2)",
+                            "unit": "kg s⁻²",
                             "imageName": "federkonstante_abk"
                           }
                         ],
@@ -5027,7 +5147,8 @@
                       {
                         "results": [
                           {
-                            "formula": "2×𝜋×sqrt(#l÷9.80665)",
+                            "formula": "2 × 𝜋 × sqrt(#l ÷ #g)",
+                            "unit": "s",
                             "imageName": "periodendauer_fadenpendel"
                           }
                         ],
@@ -5035,8 +5156,14 @@
                         "inputs": [
                           {
                             "id": "l",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "fadenlaenge_abk"
+                          },
+                          {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
                           }
                         ],
                         "imageName": "periodendauer_fadenpendel"
@@ -5099,7 +5226,8 @@
                       {
                         "results": [
                           {
-                            "formula": "2×𝜋÷#T",
+                            "formula": "2 × 𝜋 ÷ #T",
+                            "unit": "s⁻¹",
                             "imageName": "kreisfrequenz"
                           }
                         ],
@@ -5107,7 +5235,7 @@
                         "inputs": [
                           {
                             "id": "T",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "periode_abk"
                           }
                         ],
@@ -5162,7 +5290,8 @@
                       {
                         "results": [
                           {
-                            "formula": "0.5×#D×#x^2",
+                            "formula": "1/2 × #D × (#x)^2",
+                            "unit": "J",
                             "imageName": "e_pot_schwingung"
                           }
                         ],
@@ -5170,12 +5299,12 @@
                         "inputs": [
                           {
                             "id": "D",
-                            "placeholder": "kg s^(-2)",
+                            "unit": "kg s⁻²",
                             "imageName": "federkonstante_abk"
                           },
                           {
                             "id": "x",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "auslenkung_abk"
                           }
                         ],
@@ -5230,7 +5359,8 @@
                       {
                         "results": [
                           {
-                            "formula": "-#x×#D",
+                            "formula": "-#x × #D",
+                            "unit": "N",
                             "imageName": "federkraft"
                           }
                         ],
@@ -5238,12 +5368,12 @@
                         "inputs": [
                           {
                             "id": "D",
-                            "placeholder": "kg s^(-2)",
+                            "unit": "kg s⁻²",
                             "imageName": "federkonstante_abk"
                           },
                           {
                             "id": "x",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "auslenkung_abk"
                           }
                         ],
