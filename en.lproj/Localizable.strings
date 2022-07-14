@@ -508,11 +508,11 @@
 		"Energiedichte"                             = "Energy Density";
 		"Energiedichte des el. Feldes"              = "Energy Density of the El. Field";
 		
-		"Kapazität" = "capacity";
+		"Kapazität" = "Capacity";
 		"Kapazität eines Plattenkondensators" = "Capacity of a Plate Capacitor";
 		"el. Feldstärke Plattenkondensator" = "El. Field of a Plate Capacitor";
 		"elektrische Feldstärke in einem Plattenkondensator" = "El. Field Strength Within a Plate Capacity";
-		"Energie des geladenen Kondensators" = "Energie of a Charged Capacitor";
+		"Energie des geladenen Kondensators" = "Energy of a Charged Capacitor";
 		"Reihenschaltung Kondensatoren" = "Series Connection of Capacitors";
         "Reihenschaltung von Kondensatoren" = "Series Connection of Capacitors";
 		"Parallelschaltung Kondensatoren" = "Parallel Connection of Capacitors";
@@ -855,7 +855,7 @@
 		"VolumenBeiThetaAbk"        = "Volume at ϑ";
 		"VolumenNullAbk"            = "Volume at ϑ = 0";
 		"DruckAbk"                  = "Pressure";
-        "Druch0Abk"                 = "Pressure at h=0";
+        "Druck0Abk"                 = "Pressure at h=0";
         "Dichte0Abk"                = "Density at h=0";
 		"DruckBeiThetaAbk"          = "Pressure bei ϑ";
 		"DruckNullAbk"              = "Pressure bei ϑ = 0";

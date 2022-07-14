@@ -644,6 +644,8 @@
         if ([decimalNumber2 isEqualToNumber:NSDecimalNumber.notANumber]) {
             return NSDecimalNumber.notANumber;
         }
+//    NSLog(@"decimalNumber1: %@", decimalNumber1);
+//    NSLog(@"decimalNumber2: %@", decimalNumber2);
 		decimalNumber1 = [decimalNumber1 decimalNumberByMultiplyingBy:decimalNumber2];
 	}
 	return decimalNumber1;

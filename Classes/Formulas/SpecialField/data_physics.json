@@ -5594,7 +5594,8 @@
                       {
                         "results": [
                           {
-                            "formula": "(#ct-#beta×#x)÷sqrt(1-#beta^2)",
+                            "formula": "(#ct - #beta × #x) ÷ sqrt(1 - (#beta)^2)",
+                            "unit": "m",
                             "imageName": "ctStrich"
                           }
                         ],
@@ -5602,17 +5603,16 @@
                         "inputs": [
                           {
                             "id": "ct",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "ct_abbr"
                           },
                           {
                             "id": "x",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "x_abbr"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -5621,7 +5621,8 @@
                       {
                         "results": [
                           {
-                            "formula": "(#x-#beta×#ct)÷sqrt(1-#beta^2)",
+                            "formula": "(#x - #beta × #ct) ÷ sqrt(1 - (#beta)^2)",
+                            "unit": "m",
                             "imageName": "ctStrich"
                           }
                         ],
@@ -5629,17 +5630,16 @@
                         "inputs": [
                           {
                             "id": "x",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "x_abbr"
                           },
                           {
                             "id": "ct",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "ct_abbr"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -5656,7 +5656,8 @@
                       {
                         "results": [
                           {
-                            "formula": "(#ctprime+#beta×#xprime)÷sqrt(1-#beta^2)",
+                            "formula": "(#ctprime + #beta × #xprime) ÷ sqrt(1 - (#beta)^2)",
+                            "unit": "m",
                             "imageName": "ct"
                           }
                         ],
@@ -5664,17 +5665,16 @@
                         "inputs": [
                           {
                             "id": "ctprime",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "ct_prime_abbr"
                           },
                           {
                             "id": "xprime",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "x_prime_abbr"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -5683,7 +5683,8 @@
                       {
                         "results": [
                           {
-                            "formula": "(#xprime+#beta×#ctprime)÷sqrt(1-#beta^2)",
+                            "formula": "(#xprime + #beta × #ctprime) ÷ sqrt(1 - (#beta)^2)",
+                            "unit": "m",
                             "imageName": "x"
                           }
                         ],
@@ -5691,17 +5692,16 @@
                         "inputs": [
                           {
                             "id": "xprime",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "x_prime_abbr"
                           },
                           {
                             "id": "ctprime",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "ct_prime_abbr"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -5710,7 +5710,7 @@
                       {
                         "results": [
                           {
-                            "formula": "#v÷2.99792458e8",
+                            "formula": "#v ÷ #c",
                             "imageName": "beta"
                           }
                         ],
@@ -5718,8 +5718,14 @@
                         "inputs": [
                           {
                             "id": "v",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
+                          },
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "c_abbr"
                           }
                         ],
                         "imageName": "beta"
@@ -5773,7 +5779,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m0÷sqrt(1-#beta^2)",
+                            "formula": "#m0 ÷ sqrt(1 - (#beta)^2)",
+                            "unit": "kg",
                             "imageName": "massenzunahme"
                           }
                         ],
@@ -5781,12 +5788,11 @@
                         "inputs": [
                           {
                             "id": "m0",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -5795,7 +5801,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#v÷2.99792458e8",
+                            "formula": "#v ÷ #c",
+                            "unit": "m s⁻¹",
                             "imageName": "beta"
                           }
                         ],
@@ -5803,8 +5810,14 @@
                         "inputs": [
                           {
                             "id": "v",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
+                          },
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "c_abbr"
                           }
                         ],
                         "imageName": "beta"
@@ -5854,7 +5867,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#Deltat÷sqrt(1-#beta^2)",
+                            "formula": "#Deltat ÷ sqrt(1 - (#beta)^2)",
+                            "unit": "s",
                             "imageName": "zeitdilatation"
                           }
                         ],
@@ -5862,12 +5876,11 @@
                         "inputs": [
                           {
                             "id": "Deltat",
-                            "placeholder": "s",
+                            "unit": "s",
                             "imageName": "deltatStrich_abk"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -5876,7 +5889,7 @@
                       {
                         "results": [
                           {
-                            "formula": "#v÷2.99792458e8",
+                            "formula": "#v ÷ #c",
                             "imageName": "beta"
                           }
                         ],
@@ -5884,8 +5897,14 @@
                         "inputs": [
                           {
                             "id": "v",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
+                          },
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "c_abbr"
                           }
                         ],
                         "imageName": "beta"
@@ -5935,7 +5954,8 @@
                       {
                         "results": [
                           {
-                            "formula": "sqrt(1-#beta^2)×#Deltax",
+                            "formula": "sqrt(1 - (#beta)^2) × #Deltax",
+                            "unit": "m",
                             "imageName": "laengenkontraktion"
                           }
                         ],
@@ -5943,12 +5963,11 @@
                         "inputs": [
                           {
                             "id": "Deltax",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "deltaxStrich_abk"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -5957,7 +5976,7 @@
                       {
                         "results": [
                           {
-                            "formula": "#v÷2.99792458e8",
+                            "formula": "#v ÷ #c",
                             "imageName": "beta"
                           }
                         ],
@@ -5967,6 +5986,12 @@
                             "id": "v",
                             "placeholder": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
+                          },
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "c_abbr"
                           }
                         ],
                         "imageName": "beta"
@@ -6016,7 +6041,8 @@
                       {
                         "results": [
                           {
-                            "formula": "(#uStrich+#v)÷(1+#uStrich×#v\/2.99792458e8^2)",
+                            "formula": "(#uStrich + #v) ÷ (1 + #uStrich × #v / (#c)^2)",
+                            "unit": "m s⁻¹",
                             "imageName": "additionVonGeschwindigkeiten"
                           }
                         ],
@@ -6024,13 +6050,19 @@
                         "inputs": [
                           {
                             "id": "uStrich",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeitInSStrich_abk"
                           },
                           {
                             "id": "v",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeitVonSStrich_abk"
+                          },
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "c_abbr"
                           }
                         ],
                         "imageName": "additionVonGeschwindigkeiten"
@@ -6080,7 +6112,8 @@
                       {
                         "results": [
                           {
-                            "formula": "#m0×#v÷sqrt(1-#beta^2)",
+                            "formula": "#m0 × #v ÷ sqrt(1 - (#beta)^2)",
+                            "unit": "kg m s⁻¹",
                             "imageName": "relativistischerImpuls"
                           }
                         ],
@@ -6088,17 +6121,16 @@
                         "inputs": [
                           {
                             "id": "m0",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "ruhemasse_abk"
                           },
                           {
                             "id": "v",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
                           },
                           {
                             "id": "beta",
-                            "placeholder": "",
                             "imageName": "beta_abbr"
                           }
                         ],
@@ -6107,7 +6139,7 @@
                       {
                         "results": [
                           {
-                            "formula": "#v÷2.99792458e8",
+                            "formula": "#v ÷ #c",
                             "imageName": "beta"
                           }
                         ],
@@ -6115,8 +6147,14 @@
                         "inputs": [
                           {
                             "id": "v",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
+                          },
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "c_abbr"
                           }
                         ],
                         "imageName": "beta"
@@ -6173,18 +6211,25 @@
                         "inputs": [
                           {
                             "id": "m0",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "ruhemasse_abk"
                           },
                           {
                             "id": "p",
-                            "placeholder": "kg m s⁻¹",
+                            "unit": "kg m s⁻¹",
                             "imageName": "impuls_abk"
+                          },
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "c_abbr"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "sqrt((#m0×2.99792458e8^2)^2+(#p×2.99792458e8)^2)",
+                            "formula": "sqrt((#m0 × (#c)^2)^2 + (#p × #c)^2)",
+                            "unit": "J",
                             "imageName": "energieImpulsBeziehung"
                           }
                         ]
@@ -6252,18 +6297,19 @@
                         "inputs": [
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "V",
-                            "placeholder": "m³",
+                            "unit": "m³",
                             "imageName": "volumen_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#m÷#V",
+                            "formula": "#m ÷ #V",
+                            "unit": "kg m⁻³",
                             "imageName": "dichte"
                           }
                         ]
@@ -6320,18 +6366,19 @@
                         "inputs": [
                           {
                             "id": "Fn",
-                            "placeholder": "kg m s⁻²",
+                            "unit": "kg m s⁻²",
                             "imageName": "normalkraft_abk"
                           },
                           {
                             "id": "A",
-                            "placeholder": "m²",
+                            "unit": "m²",
                             "imageName": "flaeche01_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#Fn÷#A",
+                            "formula": "#Fn ÷ #A",
+                            "unit": "N m⁻²",
                             "imageName": "druck"
                           }
                         ]
@@ -6388,18 +6435,25 @@
                         "inputs": [
                           {
                             "id": "h",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "hoehe_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "roh",
-                            "placeholder": "kg m⁻³",
+                            "unit": "kg m⁻³",
                             "imageName": "dichte_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#h×9.80665×#roh",
+                            "formula": "#h × #g × #roh",
+                            "unit": "N m⁻²",
                             "imageName": "druckFluessigkeit"
                           }
                         ]
@@ -6473,18 +6527,25 @@
                         "inputs": [
                           {
                             "id": "roh",
-                            "placeholder": "kg m⁻³",
+                            "unit": "kg m⁻³",
                             "imageName": "dichte_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "V",
-                            "placeholder": "m⁻³",
+                            "unit": "m⁻³",
                             "imageName": "volumen_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#roh×9.80665×#V",
+                            "formula": "#roh × #g × #V",
+                            "unit": "N",
                             "imageName": "auftriebskraft"
                           }
                         ]
@@ -6558,23 +6619,30 @@
                         "inputs": [
                           {
                             "id": "p0",
-                            "placeholder": "N m⁻²",
+                            "unit": "Pa",
                             "imageName": "druck0_abk"
                           },
                           {
                             "id": "roh0",
-                            "placeholder": "kg m⁻³",
+                            "unit": "kg m⁻³",
                             "imageName": "dichte0_abk"
                           },
                           {
+                            "id": "g",
+                            "unit": "m / s²",
+                            "value": "9.80665",
+                            "imageName": "gravitationsbeschleunigung_abk"
+                          },
+                          {
                             "id": "h",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "hoehe_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#p0×exp(-(#roh0×9.80665)÷#p0×#h)",
+                            "formula": "#p0 × exp(-(#roh0 × #g) ÷ #p0 × #h)",
+                            "unit": "Pa",
                             "imageName": "barometrischeHoehenformel"
                           }
                         ]
@@ -6658,23 +6726,24 @@
                         "inputs": [
                           {
                             "id": "r",
-                            "placeholder": "m",
+                            "unit": "m",
                             "imageName": "radius_abk"
                           },
                           {
                             "id": "eta",
-                            "placeholder": "Pa s",
+                            "unit": "Pa s",
                             "imageName": "viskositaet_abk"
                           },
                           {
                             "id": "v",
-                            "placeholder": "m s⁻¹",
+                            "unit": "m s⁻¹",
                             "imageName": "geschwindigkeit_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "6×𝜋×#r×#eta×#v",
+                            "formula": "6 × 𝜋 × #r × #eta ×#v",
+                            "unit": "N",
                             "imageName": "stokesreibung"
                           }
                         ]
@@ -6882,18 +6951,19 @@
                         "inputs": [
                           {
                             "id": "V0",
-                            "placeholder": "m³",
+                            "unit": "m³",
                             "imageName": "volumenNull_abk"
                           },
                           {
                             "id": "theta",
-                            "placeholder": "°C",
+                            "unit": "°C",
                             "imageName": "celsius_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#V0×(1+#theta÷273.15)",
+                            "formula": "#V0 × (1 + #theta ÷ 273.15)",
+                            "unit": "m³",
                             "imageName": "gayLussac"
                           }
                         ]
@@ -6958,18 +7028,19 @@
                         "inputs": [
                           {
                             "id": "p0",
-                            "placeholder": "N m⁻²",
+                            "unit": "Pa",
                             "imageName": "volumenNull_abk"
                           },
                           {
                             "id": "theta",
-                            "placeholder": "°C",
+                            "unit": "°C",
                             "imageName": "celsius_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#p0×(1+#theta÷273.15)",
+                            "formula": "#p0 × (1 + #theta ÷ 273.15)",
+                            "unit": "Pa",
                             "imageName": "amonton"
                           }
                         ]
@@ -7625,23 +7696,28 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "n",
-                            "placeholder": "",
                             "imageName": "stoffmenge_abk"
                           },
                           {
+                            "id": "R",
+                            "unit": "J K⁻¹ mol⁻¹",
+                            "value": "8.31441",
+                            "imageName": "gaskonstante_abk"
+                          },
+                          {
                             "id": "T",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "temperatur_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#n×8.314472×#T",
+                            "formula": "#f ÷ 2 × #n × #R × #T",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas"
                           }
                         ]
@@ -7652,23 +7728,28 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "N",
-                            "placeholder": "",
                             "imageName": "teilchenzahl_abk"
                           },
                           {
+                            "id": "k",
+                            "unit": "J K⁻¹",
+                            "value": "1.38062e-23",
+                            "imageName": "boltzmannkonstante_abk"
+                          },
+                          {
                             "id": "T",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "temperatur_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#N×1.3806503e-23×#T",
+                            "formula": "#f ÷ 2 × #N × #k × #T",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas03"
                           }
                         ]
@@ -7679,23 +7760,23 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "p",
-                            "placeholder": "N m⁻²",
+                            "unit": "Pa",
                             "imageName": "druck_abk"
                           },
                           {
                             "id": "V",
-                            "placeholder": "m³",
+                            "unit": "m³",
                             "imageName": "volumen_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#p×#V",
+                            "formula": "#f ÷ 2 × #p × #V",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas02"
                           }
                         ]
@@ -7817,23 +7898,28 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "N",
-                            "placeholder": "",
                             "imageName": "teilchenzahl_abk"
                           },
                           {
+                            "id": "k",
+                            "unit": "J K⁻¹",
+                            "value": "1.38062e-23",
+                            "imageName": "boltzmannkonstante_abk"
+                          },
+                          {
                             "id": "T",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "temperatur_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#N×1.3806503e-23×#T",
+                            "formula": "#f ÷ 2 × #N × #k × #T",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas03"
                           }
                         ]
@@ -7844,23 +7930,28 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "n",
-                            "placeholder": "",
                             "imageName": "stoffmenge_abk"
                           },
                           {
+                            "id": "R",
+                            "unit": "J K⁻¹ mol⁻¹",
+                            "value": "8.31441",
+                            "imageName": "gaskonstante_abk"
+                          },
+                          {
                             "id": "T",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "temperatur_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#n×8.314472×#T",
+                            "formula": "#f ÷ 2 × #n × #R × #T",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas"
                           }
                         ]
@@ -7871,23 +7962,23 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "p",
-                            "placeholder": "N m⁻²",
+                            "unit": "Pa",
                             "imageName": "druck_abk"
                           },
                           {
                             "id": "V",
-                            "placeholder": "m³",
+                            "unit": "m³",
                             "imageName": "volumen_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#p×#V",
+                            "formula": "#f ÷ 2 × #p × #V",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas02"
                           }
                         ]
@@ -8009,23 +8100,23 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "p",
-                            "placeholder": "N m⁻²",
+                            "unit": "Pa",
                             "imageName": "druck_abk"
                           },
                           {
                             "id": "V",
-                            "placeholder": "m³",
+                            "unit": "m³",
                             "imageName": "volumen_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#p×#V",
+                            "formula": "#f ÷ 2 × #p × #V",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas02"
                           }
                         ]
@@ -8036,23 +8127,28 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "n",
-                            "placeholder": "",
                             "imageName": "stoffmenge_abk"
                           },
                           {
+                            "id": "R",
+                            "unit": "J K⁻¹ mol⁻¹",
+                            "value": "8.31441",
+                            "imageName": "gaskonstante_abk"
+                          },
+                          {
                             "id": "T",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "temperatur_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#n×8.314472×#T",
+                            "formula": "#f ÷ 2 × #n × #R × #T",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas"
                           }
                         ]
@@ -8063,23 +8159,28 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
                           },
                           {
                             "id": "N",
-                            "placeholder": "",
                             "imageName": "teilchenzahl_abk"
                           },
                           {
+                            "id": "k",
+                            "unit": "J K⁻¹",
+                            "value": "1.38062e-23",
+                            "imageName": "boltzmannkonstante_abk"
+                          },
+                          {
                             "id": "T",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "temperatur_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×#N×1.3806503e-23×#T",
+                            "formula": "#f ÷ 2 × #N × #k × #T",
+                            "unit": "J",
                             "imageName": "e_kin_idealesGas03"
                           }
                         ]
@@ -8464,18 +8565,19 @@
                         "inputs": [
                           {
                             "id": "deltaQ",
-                            "placeholder": "J",
+                            "unit": "J",
                             "imageName": "delta_capital_q_colon"
                           },
                           {
                             "id": "deltaT",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "delta_capital_t_colon"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#deltaQ÷#deltaT",
+                            "formula": "#deltaQ ÷ #deltaT",
+                            "unit": "J K⁻¹",
                             "imageName": "waermekapazitaet"
                           }
                         ]
@@ -8532,23 +8634,24 @@
                         "inputs": [
                           {
                             "id": "deltaQ",
-                            "placeholder": "J",
+                            "unit": "J",
                             "imageName": "delta_capital_q_colon"
                           },
                           {
                             "id": "m",
-                            "placeholder": "kg",
+                            "unit": "kg",
                             "imageName": "masse_abk"
                           },
                           {
                             "id": "deltaT",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "delta_capital_t_colon"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#deltaQ÷(#m×#deltaT)",
+                            "formula": "#deltaQ ÷ (#m × #deltaT)",
+                            "unit": "J kg ⁻¹ K⁻¹",
                             "imageName": "spezifischeWaermekapazitaet"
                           }
                         ]
@@ -8613,23 +8716,23 @@
                         "inputs": [
                           {
                             "id": "deltaQ",
-                            "placeholder": "J",
+                            "unit": "J",
                             "imageName": "delta_capital_q_colon"
                           },
                           {
                             "id": "n",
-                            "placeholder": "",
                             "imageName": "stoffmenge_abk"
                           },
                           {
                             "id": "deltaT",
-                            "placeholder": "K",
+                            "unit": "K",
                             "imageName": "delta_capital_t_colon"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#deltaQ÷(#n×#deltaT)",
+                            "formula": "#deltaQ ÷ (#n × #deltaT)",
+                            "unit": "J K⁻¹",
                             "imageName": "molareWaermekapazitaet"
                           }
                         ]
@@ -8640,13 +8743,19 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "J K⁻¹ mol⁻¹",
+                            "value": "8.31441",
+                            "imageName": "gaskonstante_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×8.314472",
+                            "formula": "#f ÷ 2 × #R",
+                            "unit": "J K⁻¹ mol⁻¹",
                             "imageName": "molareWaermekapazitaet_V"
                           }
                         ]
@@ -8657,13 +8766,19 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "J K⁻¹ mol⁻¹",
+                            "value": "8.31441",
+                            "imageName": "gaskonstante_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "(#f+2)÷2×8.314472",
+                            "formula": "(#f + 2) ÷ 2 × #R",
+                            "unit": "J K⁻¹ mol⁻¹",
                             "imageName": "molareWaermekapazitaet_p"
                           }
                         ]
@@ -8752,13 +8867,19 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "J K⁻¹ mol⁻¹",
+                            "value": "8.31441",
+                            "imageName": "gaskonstante_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "#f÷2×8.314472",
+                            "formula": "#f ÷ 2 × #R",
+                            "unit": "J K⁻¹ mol⁻¹",
                             "imageName": "molareWaermekapazitaet_V"
                           }
                         ]
@@ -8836,13 +8957,19 @@
                         "inputs": [
                           {
                             "id": "f",
-                            "placeholder": "",
                             "imageName": "freiheitsgrade_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "J K⁻¹ mol⁻¹",
+                            "value": "8.31441",
+                            "imageName": "gaskonstante_abk"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "(#f+2)÷2×8.314472",
+                            "formula": "(#f + 2) ÷ 2 × #R",
+                            "unit": "J K⁻¹ mol⁻¹",
                             "imageName": "molareWaermekapazitaet_p"
                           }
                         ]
@@ -9259,11 +9386,54 @@
                     "detailItems": [
                       {
                         "title": "elektrischeArbeit01",
-                        "imageName": "elektrischeArbeit01"
+                        "imageName": "elektrischeArbeit01",
+                        "inputs": [
+                          {
+                            "id": "Q",
+                            "unit": "C",
+                            "imageName": "ladung01_abk"
+                          },
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#Q × #U",
+                            "unit": "J",
+                            "imageName": "elektrischeArbeit01"
+                          }
+                        ]
                       },
                       {
                         "title": "elektrischeArbeit02",
-                        "imageName": "elektrischeArbeit02"
+                        "imageName": "elektrischeArbeit02",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "t",
+                            "unit": "s",
+                            "imageName": "zeit_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#U × #I × #t",
+                            "unit": "J",
+                            "imageName": "elektrischeArbeit02"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9329,11 +9499,54 @@
                     "detailItems": [
                       {
                         "title": "elektrischeArbeit02",
-                        "imageName": "elektrischeArbeit02"
+                        "imageName": "elektrischeArbeit02",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "t",
+                            "unit": "s",
+                            "imageName": "zeit_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#U × #I × #t",
+                            "unit": "J",
+                            "imageName": "elektrischeArbeit02"
+                          }
+                        ]
                       },
                       {
                         "title": "elektrischeArbeit01",
-                        "imageName": "elektrischeArbeit01"
+                        "imageName": "elektrischeArbeit01",
+                        "inputs": [
+                          {
+                            "id": "Q",
+                            "unit": "C",
+                            "imageName": "ladung01_abk"
+                          },
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#Q × #U",
+                            "unit": "J",
+                            "imageName": "elektrischeArbeit01"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9399,11 +9612,72 @@
                     "detailItems": [
                       {
                         "title": "elektrischeLeistung01",
-                        "imageName": "elektrischeLeistung01"
+                        "imageName": "elektrischeLeistung01",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#U × #I",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung01"
+                          }
+                        ]
                       },
                       {
                         "title": "elektrischeLeistung02",
-                        "imageName": "elektrischeLeistung02"
+                        "imageName": "elektrischeLeistung02",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#U)^2 ÷ #R",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung02"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "elektrischeLeistung03",
+                        "imageName": "elektrischeLeistung03",
+                        "inputs": [
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#I)^2 × #R",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung03"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9461,11 +9735,195 @@
                     "detailItems": [
                       {
                         "title": "elektrischeLeistung02",
-                        "imageName": "elektrischeLeistung02"
+                        "imageName": "elektrischeLeistung02",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#U)^2 ÷ #R",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung02"
+                          }
+                        ]
                       },
                       {
                         "title": "elektrischeLeistung01",
-                        "imageName": "elektrischeLeistung01"
+                        "imageName": "elektrischeLeistung01",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#U × #I",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung01"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "elektrischeLeistung03",
+                        "imageName": "elektrischeLeistung03",
+                        "inputs": [
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#I)^2 × #R",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung03"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Abkürzung",
+                    "detailItems": [
+                      {
+                        "title": "ElektrischeLeistungAbk",
+                        "imageName": "leistung_abk"
+                      },
+                      {
+                        "title": "SpannungAbk",
+                        "imageName": "spannung_abk"
+                      },
+                      {
+                        "title": "StromstaerkeAbk",
+                        "imageName": "stromstaerke_abk"
+                      },
+                      {
+                        "title": "ElektrischerWiderstandAbk",
+                        "imageName": "elektrischerWiderstand_abk"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Einheiten",
+                    "detailItems": [
+                      {
+                        "title": "LeistungEinh",
+                        "imageName": "leistung_einh"
+                      },
+                      {
+                        "title": "SpannungEinh",
+                        "imageName": "spannung_einh"
+                      },
+                      {
+                        "title": "StromstaerkeEinh",
+                        "imageName": "stromstaerke_einh"
+                      },
+                      {
+                        "title": "ElektrischerWiderstandEinh",
+                        "imageName": "elektrischerWiderstand_einh"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1F80FC9B-E295-459D-8A0F-55560CBAC15F",
+                "title": "elektrische Leistung",
+                "imageName": "elektrischeLeistung03",
+                "details": [
+                  {
+                    "title": "elektrische Leistung",
+                    "detailItems": [
+                      {
+                        "title": "elektrischeLeistung03",
+                        "imageName": "elektrischeLeistung03",
+                        "inputs": [
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#I)^2 × #R",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung03"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "elektrischeLeistung02",
+                        "imageName": "elektrischeLeistung02",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#U)^2 ÷ #R",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung02"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "elektrischeLeistung01",
+                        "imageName": "elektrischeLeistung01",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#U × #I",
+                            "unit": "W",
+                            "imageName": "elektrischeLeistung01"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9527,7 +9985,26 @@
                       },
                       {
                         "title": "elektrischer Widerstand",
-                        "imageName": "elektrischerWiderstand"
+                        "imageName": "elektrischerWiderstand",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#U ÷ #I",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9699,7 +10176,26 @@
                     "detailItems": [
                       {
                         "title": "elektrischesFeld",
-                        "imageName": "elektrischesFeld"
+                        "imageName": "elektrischesFeld",
+                        "inputs": [
+                          {
+                            "id": "F",
+                            "unit": "N",
+                            "imageName": "kraft_abk"
+                          },
+                          {
+                            "id": "q",
+                            "unit": "C",
+                            "imageName": "ladung05_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#F ÷ #q",
+                            "unit": "V m⁻¹",
+                            "imageName": "elektrischesFeld"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9749,7 +10245,26 @@
                     "detailItems": [
                       {
                         "title": "elektrischeSpannung",
-                        "imageName": "elektrischeSpannung"
+                        "imageName": "elektrischeSpannung",
+                        "inputs": [
+                          {
+                            "id": "phi2",
+                            "unit": "V",
+                            "imageName": "phi2_colon"
+                          },
+                          {
+                            "id": "phi1",
+                            "unit": "V",
+                            "imageName": "phi1_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#phi2 - #phi1",
+                            "unit": "V",
+                            "imageName": "elektrischeSpannung"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9791,13 +10306,36 @@
                     "detailItems": [
                       {
                         "title": "elektrischeSpannungHomogen",
-                        "imageName": "elektrischeSpannungHomogenesFeld"
+                        "imageName": "elektrischeSpannungHomogenesFeld",
+                        "inputs": [
+                          {
+                            "id": "E",
+                            "unit": "V m⁻¹",
+                            "imageName": "elektrischeFeldstaerke_abk"
+                          },
+                          {
+                            "id": "s",
+                            "unit": "m",
+                            "imageName": "zurueckgelegter_weg_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#E × #s",
+                            "unit": "V",
+                            "imageName": "elektrischeSpannungHomogenesFeld"
+                          }
+                        ]
                       }
                     ]
                   },
                   {
                     "title": "Abkürzung",
                     "detailItems": [
+                      {
+                        "title": "ElektrischeSpannungAbk",
+                        "imageName": "elektrischeSpannung_abk"
+                      },
                       {
                         "title": "ElektrischesFeldAbk",
                         "imageName": "elektrischeFeldstaerke_abk"
@@ -9811,6 +10349,10 @@
                   {
                     "title": "Einheiten",
                     "detailItems": [
+                      {
+                        "title": "ElektrischeSpannungEinh",
+                        "imageName": "elektrischeSpannung_einh"
+                      },
                       {
                         "title": "ElektrischeFeldstaerkeEinh",
                         "imageName": "elektrischeFeldstaerke_einh"
@@ -9883,7 +10425,41 @@
                     "detailItems": [
                       {
                         "title": "CoulombGesetz",
-                        "imageName": "coulombGesetz"
+                        "imageName": "coulombGesetz",
+                        "inputs": [
+                          {
+                            "id": "epsilon0",
+                            "unit": "A s V⁻¹ m⁻¹",
+                            "value": "8.8541878128e-12",
+                            "imageName": "elektrischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "epsilonR",
+                            "imageName": "dielektrizitaetszahl_abk"
+                          },
+                          {
+                            "id": "q1",
+                            "unit": "C",
+                            "imageName": "q1_colon"
+                          },
+                          {
+                            "id": "q2",
+                            "unit": "C",
+                            "imageName": "q2_colon"
+                          },
+                          {
+                            "id": "r",
+                            "unit": "m",
+                            "imageName": "abstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ (4 × 𝜋 × #epsilon0 × #epsilonR) × #q1 × #q2 ÷ (#r)^2",
+                            "unit": "N",
+                            "imageName": "coulombGesetz"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -9904,11 +10480,11 @@
                       },
                       {
                         "title": "Ladung03Abk",
-                        "imageName": "ladung03_abk"
+                        "imageName": "q1_colon"
                       },
                       {
                         "title": "Ladung04Abk",
-                        "imageName": "ladung04_abk"
+                        "imageName": "q2_colon"
                       },
                       {
                         "title": "AbstandAbk",
@@ -9962,7 +10538,36 @@
                     "detailItems": [
                       {
                         "title": "ElFeldstaerke",
-                        "imageName": "elektrischesFeld02"
+                        "imageName": "elektrischesFeld02",
+                        "inputs": [
+                          {
+                            "id": "epsilon0",
+                            "unit": "A s V⁻¹ m⁻¹",
+                            "value": "8.8541878128e-12",
+                            "imageName": "elektrischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "epsilonR",
+                            "imageName": "dielektrizitaetszahl_abk"
+                          },
+                          {
+                            "id": "q",
+                            "unit": "C",
+                            "imageName": "q_colon"
+                          },
+                          {
+                            "id": "r",
+                            "unit": "m",
+                            "imageName": "abstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ (4 × 𝜋 × #epsilon0 × #epsilonR) × #q ÷ (#r)^2",
+                            "unit": "V m⁻¹",
+                            "imageName": "elektrischesFeld02"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10037,7 +10642,36 @@
                     "detailItems": [
                       {
                         "title": "ElPotential",
-                        "imageName": "elektrischesPotential02"
+                        "imageName": "elektrischesPotential02",
+                        "inputs": [
+                          {
+                            "id": "epsilon0",
+                            "unit": "A s V⁻¹ m⁻¹",
+                            "value": "8.8541878128e-12",
+                            "imageName": "elektrischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "epsilonR",
+                            "imageName": "dielektrizitaetszahl_abk"
+                          },
+                          {
+                            "id": "q",
+                            "unit": "C",
+                            "imageName": "q_colon"
+                          },
+                          {
+                            "id": "r",
+                            "unit": "m",
+                            "imageName": "abstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ (4 × 𝜋 × #epsilon0 × #epsilonR) × #q ÷ #r",
+                            "unit": "V",
+                            "imageName": "elektrischesPotential02"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10071,7 +10705,7 @@
                     "detailItems": [
                       {
                         "title": "ElPotentialEinh",
-                        "imageName": "kraft_einh"
+                        "imageName": "elektrischesPotential_einh"
                       },
                       {
                         "title": "ElektrischeFeldkonstanteEinh",
@@ -10112,7 +10746,31 @@
                     "detailItems": [
                       {
                         "title": "ElFlussdichte",
-                        "imageName": "elektrischeFlussdichte01"
+                        "imageName": "elektrischeFlussdichte01",
+                        "inputs": [
+                          {
+                            "id": "epsilon0",
+                            "unit": "A s V⁻¹ m⁻¹",
+                            "value": "8.8541878128e-12",
+                            "imageName": "elektrischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "epsilonR",
+                            "imageName": "dielektrizitaetszahl_abk"
+                          },
+                          {
+                            "id": "E",
+                            "unit": "V m⁻¹",
+                            "imageName": "elektrischeFeldstaerke_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#epsilon0 × #epsilonR × #E",
+                            "unit": "C m⁻²",
+                            "imageName": "elektrischeFlussdichte01"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10179,7 +10837,26 @@
                     "detailItems": [
                       {
                         "title": "Energiedichte",
-                        "imageName": "elektrischeEnergiedichte"
+                        "imageName": "elektrischeEnergiedichte",
+                        "inputs": [
+                          {
+                            "id": "E",
+                            "unit": "V m⁻¹",
+                            "imageName": "elektrischeFeldstaerke_abk"
+                          },
+                          {
+                            "id": "D",
+                            "unit": "C m⁻²",
+                            "imageName": "elektrischeFlussdichte01_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 / 2 × #E × #D",
+                            "unit": "J m⁻³",
+                            "imageName": "elektrischeEnergiedichte"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10235,7 +10912,26 @@
                     "detailItems": [
                       {
                         "title": "Kapazität",
-                        "imageName": "kapazitaet"
+                        "imageName": "kapazitaet",
+                        "inputs": [
+                          {
+                            "id": "Q",
+                            "unit": "C",
+                            "imageName": "ladung01_abk"
+                          },
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#Q ÷ #U",
+                            "unit": "F",
+                            "imageName": "kapazitaet"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10285,7 +10981,36 @@
                     "detailItems": [
                       {
                         "title": "KapazitätPlattenkondensator",
-                        "imageName": "kapazitaetPlattenkondensator"
+                        "imageName": "kapazitaetPlattenkondensator",
+                        "inputs": [
+                          {
+                            "id": "epsilon0",
+                            "unit": "A s V⁻¹ m⁻¹",
+                            "value": "8.8541878128e-12",
+                            "imageName": "elektrischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "epsilonR",
+                            "imageName": "dielektrizitaetszahl_abk"
+                          },
+                          {
+                            "id": "A",
+                            "unit": "m²",
+                            "imageName": "flaeche01_abk"
+                          },
+                          {
+                            "id": "d",
+                            "unit": "m",
+                            "imageName": "plattenabstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#epsilon0 × #epsilonR × #A ÷ #d",
+                            "unit": "F",
+                            "imageName": "kapazitaetPlattenkondensator"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10360,7 +11085,26 @@
                     "detailItems": [
                       {
                         "title": "ElFeldKondensator",
-                        "imageName": "elektrischesFeldKondensator"
+                        "imageName": "elektrischesFeldKondensator",
+                        "inputs": [
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          },
+                          {
+                            "id": "d",
+                            "unit": "m",
+                            "imageName": "plattenabstand_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#U ÷ #d",
+                            "unit": "V m⁻¹",
+                            "imageName": "elektrischesFeldKondensator"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10410,15 +11154,72 @@
                     "detailItems": [
                       {
                         "title": "EnergieKondensator01",
-                        "imageName": "energieKondensator01"
+                        "imageName": "energieKondensator01",
+                        "inputs": [
+                          {
+                            "id": "C",
+                            "unit": "F",
+                            "imageName": "kapazitaet_abk"
+                          },
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 / 2 × #C × (#U)^2",
+                            "unit": "J",
+                            "imageName": "energieKondensator01"
+                          }
+                        ]
                       },
                       {
                         "title": "EnergieKondensator02",
-                        "imageName": "energieKondensator02"
+                        "imageName": "energieKondensator02",
+                        "inputs": [
+                          {
+                            "id": "Q",
+                            "unit": "C",
+                            "imageName": "ladung01_abk"
+                          },
+                          {
+                            "id": "U",
+                            "unit": "V",
+                            "imageName": "spannung_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 / 2 × #Q × #U",
+                            "unit": "J",
+                            "imageName": "energieKondensator02"
+                          }
+                        ]
                       },
                       {
                         "title": "EnergieKondensator03",
-                        "imageName": "energieKondensator03"
+                        "imageName": "energieKondensator03",
+                        "inputs": [
+                          {
+                            "id": "Q",
+                            "unit": "C",
+                            "imageName": "ladung01_abk"
+                          },
+                          {
+                            "id": "C",
+                            "unit": "F",
+                            "imageName": "kapazitaet_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 / 2 × (#Q)^2 ÷ #C",
+                            "unit": "J",
+                            "imageName": "energieKondensator03"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10544,7 +11345,31 @@
                     "detailItems": [
                       {
                         "title": "KapazitaetKugel",
-                        "imageName": "kapazitaetKugel"
+                        "imageName": "kapazitaetKugel",
+                        "inputs": [
+                          {
+                            "id": "epsilon0",
+                            "unit": "A s V⁻¹ m⁻¹",
+                            "value": "8.8541878128e-12",
+                            "imageName": "elektrischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "epsilonR",
+                            "imageName": "dielektrizitaetszahl_abk"
+                          },
+                          {
+                            "id": "r",
+                            "unit": "m",
+                            "imageName": "radius_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "4 × 𝜋 × #epsilon0 × #epsilonR × #r",
+                            "unit": "F",
+                            "imageName": "kapazitaetKugel",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10611,7 +11436,36 @@
                     "detailItems": [
                       {
                         "title": "AufladungKondensator",
-                        "imageName": "aufladungKondensator"
+                        "imageName": "aufladungKondensator",
+                        "inputs": [
+                          {
+                            "id": "Um",
+                            "unit": "V",
+                            "imageName": "elektrischeMaximalspannung_abk"
+                          },
+                          {
+                            "id": "t",
+                            "unit": "s",
+                            "imageName": "zeit_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          },
+                          {
+                            "id": "C",
+                            "unit": "F",
+                            "imageName": "kapazitaet_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#Um × (1 - exp(-#t ÷ (#R × #C)))",
+                            "unit": "V",
+                            "imageName": "aufladungKondensator"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10673,7 +11527,36 @@
                     "detailItems": [
                       {
                         "title": "EntladungKondensator",
-                        "imageName": "entladungKondensator"
+                        "imageName": "entladungKondensator",
+                        "inputs": [
+                          {
+                            "id": "Um",
+                            "unit": "V",
+                            "imageName": "elektrischeMaximalspannung_abk"
+                          },
+                          {
+                            "id": "t",
+                            "unit": "s",
+                            "imageName": "zeit_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "Ω",
+                            "imageName": "elektrischerWiderstand_abk"
+                          },
+                          {
+                            "id": "C",
+                            "unit": "F",
+                            "imageName": "kapazitaet_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#Um × exp(-#t ÷ (#R × #C))",
+                            "unit": "V",
+                            "imageName": "entladungKondensator"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10741,7 +11624,31 @@
                     "detailItems": [
                       {
                         "title": "MagnetischeFlussdichte",
-                        "imageName": "magnetischeFlussdichte"
+                        "imageName": "magnetischeFlussdichte",
+                        "inputs": [
+                          {
+                            "id": "mu0",
+                            "unit": "V s A⁻¹ m⁻¹",
+                            "value": "1.25663706212e-6",
+                            "imageName": "magnetischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "muR",
+                            "imageName": "permeabilitaetszahl_abk"
+                          },
+                          {
+                            "id": "H",
+                            "unit": "A m⁻¹",
+                            "imageName": "magnetischeFeldstaerke_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#mu0 × #muR × #H",
+                            "unit": "T",
+                            "imageName": "magnetischeFlussdichte"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10808,7 +11715,32 @@
                     "detailItems": [
                       {
                         "title": "Lorentzkraft",
-                        "imageName": "lorentzkraft"
+                        "imageName": "lorentzkraft",
+                        "solverImageName": "lorentzForcePerpendicular",
+                        "inputs": [
+                          {
+                            "id": "q",
+                            "unit": "C",
+                            "imageName": "q_colon"
+                          },
+                          {
+                            "id": "vPerp",
+                            "unit": "m s⁻¹",
+                            "imageName": "v_perp_colon"
+                          },
+                          {
+                            "id": "B",
+                            "unit": "T",
+                            "imageName": "capital_b_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#q × (#vPerp × #B)",
+                            "unit": "N",
+                            "imageName": "lorentzForcePerpendicular"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10866,7 +11798,32 @@
                     "detailItems": [
                       {
                         "title": "KraftAufLeiter",
-                        "imageName": "kraftAufLeiter"
+                        "imageName": "kraftAufLeiter",
+                        "solverImageName": "forceOnConductorWithCurrent",
+                        "inputs": [
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "lPerp",
+                            "unit": "m",
+                            "imageName": "l_perp_colon"
+                          },
+                          {
+                            "id": "B",
+                            "unit": "T",
+                            "imageName": "magnetischeFlussdichte_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#I × (#lPerp × #B)",
+                            "unit": "N",
+                            "imageName": "forceOnConductorWithCurrent"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10904,7 +11861,7 @@
                       },
                       {
                         "title": "LaengeEinh",
-                        "imageName": "laenge_einh"
+                        "imageName": "length_unit"
                       },
                       {
                         "title": "MagFlussdichteEinh",
@@ -10924,7 +11881,40 @@
                     "detailItems": [
                       {
                         "title": "ImInnernEinerLangenSpule",
-                        "imageName": "BimInnernEinerSpule"
+                        "imageName": "BimInnernEinerSpule",
+                        "inputs": [
+                          {
+                            "id": "mu0",
+                            "unit": "V s A⁻¹ m⁻¹",
+                            "value": "1.25663706212e-6",
+                            "imageName": "magnetischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "muR",
+                            "imageName": "permeabilitaetszahl_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "n",
+                            "imageName": "anzahlWindungen_abk"
+                          },
+                          {
+                            "id": "l",
+                            "unit": "m",
+                            "imageName": "laenge_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#mu0 × #muR × #I × #n ÷ #l",
+                            "unit": "T",
+                            "imageName": "BimInnernEinerSpule",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10982,7 +11972,7 @@
                       },
                       {
                         "title": "LaengeEinh",
-                        "imageName": "laenge_einh"
+                        "imageName": "length_unit"
                       }
                     ]
                   },

@@ -42,16 +42,26 @@ class SolverDetailImageCell: DDHBaseTableViewCell<SolverTool> {
   required init?(coder aDecoder: NSCoder) { fatalError() }
   
   override func update(with item: SolverTool) {
-    
-    guard let image = UIImage(named: item.imageName) else {
+
+    var image: UIImage?
+    if let solverImageName = item.solverImageName {
+      image = UIImage(named: solverImageName)
+    }
+
+    if image == nil {
+      image = UIImage(named: item.imageName)
+    }
+
+    guard let unwrappedImage = image else {
       print("image missing: \(item.imageName)")
       return
     }
-    formulaImageView.image = image
+
+    formulaImageView.image = unwrappedImage
     
     imageWidthConstraint?.isActive = false
 
-    let size = image.size
+    let size = unwrappedImage.size
     imageWidthConstraint = formulaImageView.widthAnchor.constraint(equalTo: formulaImageView.heightAnchor, multiplier: size.width/size.height)
     imageWidthConstraint?.isActive = true
     
