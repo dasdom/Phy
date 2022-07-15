@@ -11997,7 +11997,36 @@
                     "detailItems": [
                       {
                         "title": "UmGeradenLeiter",
-                        "imageName": "BumGeradenLeiter"
+                        "imageName": "BumGeradenLeiter",
+                        "inputs": [
+                          {
+                            "id": "muR",
+                            "imageName": "permeabilitaetszahl_abk"
+                          },
+                          {
+                            "id": "mu0",
+                            "unit": "V s A⁻¹ m⁻¹",
+                            "value": "1.25663706212e-6",
+                            "imageName": "magnetischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "r",
+                            "unit": "m",
+                            "imageName": "radius_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#muR × #mu0 × #I ÷ (2 × 𝜋 × #r)",
+                            "unit": "T",
+                            "imageName": "BumGeradenLeiter",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12072,7 +12101,36 @@
                     "detailItems": [
                       {
                         "title": "UmGeradenLeiter",
-                        "imageName": "BimMittelpunktKreisfoermig"
+                        "imageName": "BimMittelpunktKreisfoermig",
+                        "inputs": [
+                          {
+                            "id": "muR",
+                            "imageName": "permeabilitaetszahl_abk"
+                          },
+                          {
+                            "id": "mu0",
+                            "unit": "V s A⁻¹ m⁻¹",
+                            "value": "1.25663706212e-6",
+                            "imageName": "magnetischeFeldkonstante_abk"
+                          },
+                          {
+                            "id": "I",
+                            "unit": "A",
+                            "imageName": "stromstaerke_abk"
+                          },
+                          {
+                            "id": "R",
+                            "unit": "m",
+                            "imageName": "radiusLeiter_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#muR × #mu0 × #I ÷ (2 × #R)",
+                            "unit": "T",
+                            "imageName": "BimMittelpunktKreisfoermig",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12656,7 +12714,29 @@
                     "detailItems": [
                       {
                         "title": "Totalreflexion",
-                        "imageName": "totalreflexion"
+                        "imageName": "totalreflexion",
+                        "solverImageName": "totalReflectionAlpha",
+                        "inputs": [
+                          {
+                            "id": "n2",
+                            "imageName": "brechungsindex2_abk"
+                          },
+                          {
+                            "id": "n1",
+                            "imageName": "brechungsindex1_abk"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "asin(#n2 ÷ #n1)",
+                            "imageName": "totalReflectionAlpha"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12668,12 +12748,12 @@
                         "imageName": "grenzwinkel_abk"
                       },
                       {
-                        "title": "Brechungsindex1Abk",
-                        "imageName": "brechungsindex1_abk"
-                      },
-                      {
                         "title": "Brechungsindex2Abk",
                         "imageName": "brechungsindex2_abk"
+                      },
+                      {
+                        "title": "Brechungsindex1Abk",
+                        "imageName": "brechungsindex1_abk"
                       }
                     ]
                   },
@@ -12698,7 +12778,26 @@
                     "detailItems": [
                       {
                         "title": "LichtgeschwindigkeitInMaterie",
-                        "imageName": "lichtgeschwindigkeit"
+                        "imageName": "lichtgeschwindigkeit",
+                        "inputs": [
+                          {
+                            "id": "c",
+                            "unit": "m s⁻¹",
+                            "value": "2.99792458e8",
+                            "imageName": "lichtgeschwindigkeit_abk"
+                          },
+                          {
+                            "id": "n",
+                            "imageName": "brechungsindex_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#c ÷ #n",
+                            "unit": "m s⁻¹",
+                            "imageName": "lichtgeschwindigkeit",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12727,6 +12826,15 @@
                         "imageName": "brechungsindex_einh"
                       }
                     ]
+                  },
+                  {
+                    "title": "Konstanten",
+                    "detailItems": [
+                      {
+                        "title": "Vakuumlichtgeschwindigkeit",
+                        "imageName": "vacuumlichtgeschwindigkeit"
+                      }
+                    ]
                   }
                 ]
               }
@@ -12746,7 +12854,27 @@
                     "detailItems": [
                       {
                         "title": "AbbildungsgleichungFuerDuenneLinsen",
-                        "imageName": "abbildungsgleichung"
+                        "imageName": "abbildungsgleichung",
+                        "solverImageName": "inverseReproductionEquationThinLens",
+                        "inputs": [
+                          {
+                            "id": "g",
+                            "unit": "m",
+                            "imageName": "gegenstandsweite_abk"
+                          },
+                          {
+                            "id": "b",
+                            "unit": "m",
+                            "imageName": "bildweite_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ (1 ÷ #g + 1 ÷ #b)",
+                            "unit": "m",
+                            "imageName": "inverseReproductionEquationThinLens"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12796,7 +12924,25 @@
                     "detailItems": [
                       {
                         "title": "AbbildungsmaßstabFuerDuenneLinsen",
-                        "imageName": "abbildungsmassstab"
+                        "imageName": "abbildungsmassstab",
+                        "inputs": [
+                          {
+                            "id": "b",
+                            "unit": "m",
+                            "imageName": "bildweite_abk"
+                          },
+                          {
+                            "id": "g",
+                            "unit": "m",
+                            "imageName": "gegenstandsweite_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#b ÷ #g",
+                            "imageName": "abbildungsmassstab",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12846,7 +12992,31 @@
                     "detailItems": [
                       {
                         "title": "Brennweite",
-                        "imageName": "brennweite"
+                        "imageName": "brennweite",
+                        "solverImageName": "inverseFocalLength",
+                        "inputs": [
+                          {
+                            "id": "n",
+                            "imageName": "brechungsindex_abk"
+                          },
+                          {
+                            "id": "r1",
+                            "unit": "m",
+                            "imageName": "r1_colon"
+                          },
+                          {
+                            "id": "r2",
+                            "unit": "m",
+                            "imageName": "r2_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ ((#n - 1) × (1 ÷ #r1 + 1 ÷ #r2))",
+                            "unit": "m",
+                            "imageName": "inverseFocalLength"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12896,7 +13066,27 @@
                     "detailItems": [
                       {
                         "title": "BrennweiteLinsensystem",
-                        "imageName": "brennweiteLinsensystem"
+                        "imageName": "brennweiteLinsensystem",
+                        "solverImageName": "inverseFocalLengthOfLensSystem",
+                        "inputs": [
+                          {
+                            "id": "f1",
+                            "unit": "m",
+                            "imageName": "brennweiteLinse1_abk"
+                          },
+                          {
+                            "id": "f2",
+                            "unit": "m",
+                            "imageName": "brennweiteLinse2_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ (1 ÷ #f1 + 1 ÷ #f2)",
+                            "unit": "m",
+                            "imageName": "inverseFocalLengthOfLensSystem"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -12944,7 +13134,28 @@
                     "detailItems": [
                       {
                         "title": "Vergrößerung",
-                        "imageName": "vergroesserung"
+                        "imageName": "vergroesserung",
+                        "inputs": [
+                          {
+                            "id": "epsilonM",
+                            "imageName": "sehwinkelMit_abk"
+                          },
+                          {
+                            "id": "epsilon0",
+                            "imageName": "sehwinkelOhne_abk"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "tan(#epsilonM) ÷ tan(#epsilon0)",
+                            "imageName": "vergroesserung",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -14024,7 +14235,7 @@
           },
           {
             "id": "2F9B116C-AB99-4B93-ABA0-2E0F852187B5",
-            "title": "harmonischer Oszillator (Quantenmechanik)",
+            "title": "Harmonischer Oszillator (Quantenmechanik)",
             "formulas": [
               {
                 "id": "A390AAB0-0938-4D2E-867F-5028352CE915",
@@ -16315,10 +16526,6 @@
                       {
                         "title": "Ohm01",
                         "imageName": "ohm01"
-                      },
-                      {
-                        "title": "Ohm02",
-                        "imageName": "ohm02"
                       }
                     ]
                   }

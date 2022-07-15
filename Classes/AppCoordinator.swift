@@ -18,7 +18,7 @@ class AppCoordinator: Coordinator {
   }
   
   func start() {
-    tabBarController.viewControllers = [formulas, calculator, converter, favorites, solver]
+    tabBarController.viewControllers = [formulas, converter, favorites, solver]
     
     window.rootViewController = tabBarController
     window.makeKeyAndVisible()

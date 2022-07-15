@@ -70,4 +70,8 @@ extension SearchFormulasViewController: UISearchBarDelegate {
     self._sections = sections
     newSnapshot()
   }
+
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    searchBar.resignFirstResponder()
+  }
 }
