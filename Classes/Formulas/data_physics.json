@@ -13208,7 +13208,26 @@
                     "detailItems": [
                       {
                         "title": "Lichtgeschwindigkeit",
-                        "imageName": "lichtgeschwindigkeitVsWellenlaenge"
+                        "imageName": "lichtgeschwindigkeitVsWellenlaenge",
+                        "inputs": [
+                          {
+                            "id": "f",
+                            "unit": "s⁻¹",
+                            "imageName": "frequenz_abk"
+                          },
+                          {
+                            "id": "lambda",
+                            "unit": "m",
+                            "imageName": "wellenlaenge_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#f × #lambda",
+                            "unit": "m s⁻¹",
+                            "imageName": "lichtgeschwindigkeitVsWellenlaenge",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -13302,7 +13321,25 @@
                     "detailItems": [
                       {
                         "title": "InterferenzmaximumAllg",
-                        "imageName": "interferenzmaximumAllgemein"
+                        "imageName": "interferenzmaximumAllgemein",
+                        "inputs": [
+                          {
+                            "id": "k",
+                            "imageName": "k_colon"
+                          },
+                          {
+                            "id": "lambda",
+                            "unit": "m",
+                            "imageName": "wellenlaenge_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#k × #lambda",
+                            "unit": "m",
+                            "imageName": "interferenzmaximumAllgemein"
+                          }
+                        ]
                       },
                       {
                         "title": "Ordnungen",
@@ -13348,7 +13385,25 @@
                     "detailItems": [
                       {
                         "title": "InterferenzminimumAllg",
-                        "imageName": "interferenzminimumAllgemein"
+                        "imageName": "interferenzminimumAllgemein",
+                        "inputs": [
+                          {
+                            "id": "k",
+                            "imageName": "k_colon"
+                          },
+                          {
+                            "id": "lambda",
+                            "unit": "m",
+                            "imageName": "wellenlaenge_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(#k + 1 ÷ 2) × #lambda",
+                            "unit": "m",
+                            "imageName": "interferenzminimumAllgemein"
+                          }
+                        ]
                       },
                       {
                         "title": "Ordnungen",
@@ -13394,7 +13449,25 @@
                     "detailItems": [
                       {
                         "title": "Phasenverschiebung",
-                        "imageName": "phasenverschiebung"
+                        "imageName": "phasenverschiebung",
+                        "inputs": [
+                          {
+                            "id": "lambda",
+                            "unit": "m",
+                            "imageName": "wellenlaenge_abk"
+                          },
+                          {
+                            "id": "deltaS0",
+                            "unit": "m",
+                            "imageName": "gangunterschied_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × 𝜋 ÷ #lambda × #deltaS0",
+                            "imageName": "phasenverschiebung",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -13441,6 +13514,60 @@
                       {
                         "title": "InterferenzAnDuennenSchichten",
                         "imageName": "interferenzAnDuennenSchichten"
+                      },
+                      {
+                        "title": "InterferenzAnDuennenSchichten",
+                        "imageName": "interferenceAtThinLayersPlus",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "unit": "m",
+                            "imageName": "schichtDicke_abk"
+                          },
+                          {
+                            "id": "n",
+                            "imageName": "brechungsindex_abk"
+                          },
+                          {
+                            "id": "lambda",
+                            "unit": "m",
+                            "imageName": "wellenlaenge_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × #d × #n + #lambda ÷ 2",
+                            "unit": "m",
+                            "imageName": "interferenceAtThinLayersPlus",
+                          }
+                        ]
+                      },
+                      {
+                        "title": "InterferenzAnDuennenSchichten",
+                        "imageName": "interferenceAtThinLayersMinus",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "unit": "m",
+                            "imageName": "schichtDicke_abk"
+                          },
+                          {
+                            "id": "n",
+                            "imageName": "brechungsindex_abk"
+                          },
+                          {
+                            "id": "lambda",
+                            "unit": "m",
+                            "imageName": "wellenlaenge_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × #d × #n - #lambda ÷ 2",
+                            "unit": "m",
+                            "imageName": "interferenceAtThinLayersMinus",
+                          }
+                        ]
                       }
                     ]
                   },
@@ -16267,6 +16394,40 @@
                       {
                         "title": "ruhemasseProtonUnsicherheit",
                         "imageName": "ruhemasseProton_unsicherheit"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "19BCDD3D-4DF9-4019-A737-9EA46067348A",
+                "title": "Dielektrizitätskonstante",
+                "imageName": "vacuumElectricPermittivitySymbol",
+                "details": [
+                  {
+                    "title": "Symbol",
+                    "detailItems": [
+                      {
+                        "title": "vacuumElectricPermittivitySymbol",
+                        "imageName": "vacuumElectricPermittivitySymbol"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Zahlenwert und Einheit",
+                    "detailItems": [
+                      {
+                        "title": "vacuumElectricPermittivityValue",
+                        "imageName": "vacuumElectricPermittivityValue"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "relative Unsicherheit",
+                    "detailItems": [
+                      {
+                        "title": "vacuumElectricPermittivityUncertainty",
+                        "imageName": "vacuumElectricPermittivityUncertainty"
                       }
                     ]
                   }

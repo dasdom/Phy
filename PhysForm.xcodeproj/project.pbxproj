@@ -746,6 +746,8 @@
 		F24E129722DF4D8000F4038F /* Formulas */ = {
 			isa = PBXGroup;
 			children = (
+				F23EBE7A23100CFE00E8F4E4 /* data_physics.json */,
+				F23EBE7923100CFE00E8F4E4 /* data_math.json */,
 				F236F4982620441400796E3D /* FormulasCoordinator.swift */,
 				F23EBE7D2310190800E8F4E4 /* Topic */,
 				F2716A1B22F87AC7007D1528 /* SpecialField */,
@@ -766,8 +768,6 @@
 				F2716A0922F77D21007D1528 /* SpecialFieldCell.swift */,
 				F2DB7D4F23101A5A0098B42A /* SpecialFieldSection.swift */,
 				F2DB7D4E23101A5A0098B42A /* SpecialField.swift */,
-				F23EBE7A23100CFE00E8F4E4 /* data_physics.json */,
-				F23EBE7923100CFE00E8F4E4 /* data_math.json */,
 			);
 			path = SpecialField;
 			sourceTree = "<group>";
