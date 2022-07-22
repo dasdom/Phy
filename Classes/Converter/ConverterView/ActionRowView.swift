@@ -11,15 +11,15 @@ struct ActionRowView: View {
   
   var body: some View {
     HStack(spacing: 0) {
-      Button(action: {
-        NotificationCenter.default.post(name: NSNotification.Name("ConverterResultNotification"), object: self, userInfo: ["result": self.converter.output])
-      }, label: {
-        Text("Zum Rechner")
-          .lineLimit(nil)
-          .multilineTextAlignment(.center)
-      })
-      .frame(maxWidth: .infinity,
-             maxHeight: .infinity)
+//      Button(action: {
+//        NotificationCenter.default.post(name: NSNotification.Name("ConverterResultNotification"), object: self, userInfo: ["result": self.converter.output])
+//      }, label: {
+//        Text("Zum Rechner")
+//          .lineLimit(nil)
+//          .multilineTextAlignment(.center)
+//      })
+//      .frame(maxWidth: .infinity,
+//             maxHeight: .infinity)
       
       Button("Löschen".localized, action: { converter.input = "" })
         .frame(maxWidth: .infinity,
