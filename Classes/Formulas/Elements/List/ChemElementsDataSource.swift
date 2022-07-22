@@ -5,6 +5,7 @@
 import Foundation
 
 protocol ChemElementsDataSourceProtocol: AnyObject {
+  var allItems: [ChemElement] { get }
   var filterString: String? { get set }
   func numberOfSections() -> Int
   func numberOfRows(in: Int) -> Int
@@ -13,7 +14,7 @@ protocol ChemElementsDataSourceProtocol: AnyObject {
 
 class ChemElementsDataSource : ChemElementsDataSourceProtocol {
   
-  private let allItems: [ChemElement]
+  let allItems: [ChemElement]
   private var filteredItems: [ChemElement]
   var filterString: String? {
     didSet {

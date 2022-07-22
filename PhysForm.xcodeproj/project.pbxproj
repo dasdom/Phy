@@ -61,6 +61,7 @@
 		F22FEFFF230205BE003F3A9B /* SolverDetailInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FEFFE230205BE003F3A9B /* SolverDetailInputCell.swift */; };
 		F22FF001230206E1003F3A9B /* SolverDetailButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FF000230206E1003F3A9B /* SolverDetailButtonCell.swift */; };
 		F22FF003230207B3003F3A9B /* SolverDetailResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FF002230207B3003F3A9B /* SolverDetailResultCell.swift */; };
+		F2300B6A28885F0E00CC91D0 /* ElementInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2300B6928885F0E00CC91D0 /* ElementInfoTableViewController.m */; };
 		F23152B12307DACB005A26BD /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23152B02307DACB005A26BD /* UIImageViewExtension.swift */; };
 		F236256E22FE9FEF0075FC2F /* FormulasViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256B22FE9FEF0075FC2F /* FormulasViewControllerTests.swift */; };
 		F236257022FE9FEF0075FC2F /* FormulaCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236256D22FE9FEF0075FC2F /* FormulaCellTests.swift */; };
@@ -146,10 +147,13 @@
 		F29F212D22E1EB4400426712 /* Legacy_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F212C22E1EB4400426712 /* Legacy_CalculatorTests.m */; };
 		F29FC6FE2670118D00A46182 /* ConvertersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29FC6FD2670118D00A46182 /* ConvertersTableViewController.swift */; };
 		F2A529F3262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */; };
+		F2C6D8982883F4CF000080B2 /* CollectionOfElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C6D8972883F4CF000080B2 /* CollectionOfElementsView.m */; };
+		F2C6D8992883FB6C000080B2 /* CollectionOfElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */; };
 		F2C8FA75267DD44B008C8F82 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8FA74267DD44B008C8F82 /* TestHelper.swift */; };
 		F2CBD49026978D830043230B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBD48F26978D830043230B /* FavoritesViewController.swift */; };
 		F2CBD494269797250043230B /* FavoritesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBD493269797250043230B /* FavoritesViewControllerTests.swift */; };
 		F2CBD497269895C60043230B /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBD496269895C60043230B /* FavoritesCoordinator.swift */; };
+		F2D028FC2889A81700DC8564 /* ElementInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D028FB2889A81700DC8564 /* ElementInfoCell.m */; };
 		F2D04DD82642B6BD00938EFC /* Abbreviations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */; };
 		F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */; };
 		F2DB7D4B23101A010098B42A /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4A23101A010098B42A /* TopicViewController.swift */; };
@@ -178,6 +182,7 @@
 		F2E6176926395978008EB858 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6176826395978008EB858 /* CalculatorTests.swift */; };
 		F2E6176D263BEB9D008EB858 /* SearchFormulasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6176C263BEB9D008EB858 /* SearchFormulasViewController.swift */; };
 		F2F9033C2680F7AA0026732A /* SearchFormulasViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9033B2680F7AA0026732A /* SearchFormulasViewControllerTests.swift */; };
+		F2FADFFD288ABAA200734BF9 /* ElementButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FADFFC288ABAA200734BF9 /* ElementButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +266,8 @@
 		F22FEFFE230205BE003F3A9B /* SolverDetailInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverDetailInputCell.swift; sourceTree = "<group>"; };
 		F22FF000230206E1003F3A9B /* SolverDetailButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverDetailButtonCell.swift; sourceTree = "<group>"; };
 		F22FF002230207B3003F3A9B /* SolverDetailResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverDetailResultCell.swift; sourceTree = "<group>"; };
+		F2300B6828885F0E00CC91D0 /* ElementInfoTableViewController.h */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = ElementInfoTableViewController.h; sourceTree = "<group>"; tabWidth = 4; };
+		F2300B6928885F0E00CC91D0 /* ElementInfoTableViewController.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ElementInfoTableViewController.m; sourceTree = "<group>"; tabWidth = 4; };
 		F23152B02307DACB005A26BD /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		F236256B22FE9FEF0075FC2F /* FormulasViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasViewControllerTests.swift; sourceTree = "<group>"; };
 		F236256D22FE9FEF0075FC2F /* FormulaCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaCellTests.swift; sourceTree = "<group>"; };
@@ -343,7 +350,7 @@
 		F29AEB1822EB028300EB4E26 /* ReferenzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenzViewController.h; sourceTree = "<group>"; };
 		F29AEB1922EB028300EB4E26 /* ReferenzView.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenzView.m; sourceTree = "<group>"; tabWidth = 4; };
 		F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsViewController.h; sourceTree = "<group>"; };
-		F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsViewController.m; sourceTree = "<group>"; };
+		F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsViewController.m; sourceTree = "<group>"; tabWidth = 4; };
 		F29AEB3422EB034E00EB4E26 /* Legacy_Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Legacy_Calculator.m; sourceTree = "<group>"; };
 		F29AEB3722EB034E00EB4E26 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		F29AEB3822EB034E00EB4E26 /* CalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
@@ -367,11 +374,15 @@
 		F2A120C514A141CF00AD3215 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F2A529F2262ABF4700614BF8 /* ChemElementsDataSourceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSourceProtocolMock.swift; sourceTree = "<group>"; };
 		F2AC138813659F61006465C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F2C6D8962883F4CF000080B2 /* CollectionOfElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOfElementsView.h; sourceTree = "<group>"; };
+		F2C6D8972883F4CF000080B2 /* CollectionOfElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOfElementsView.m; sourceTree = "<group>"; tabWidth = 4; };
 		F2C8FA73267DCF6A008C8F82 /* PhysForm.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PhysForm.xctestplan; sourceTree = "<group>"; };
 		F2C8FA74267DD44B008C8F82 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		F2CBD48F26978D830043230B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F2CBD493269797250043230B /* FavoritesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerTests.swift; sourceTree = "<group>"; };
 		F2CBD496269895C60043230B /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		F2D028FA2889A81700DC8564 /* ElementInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementInfoCell.h; sourceTree = "<group>"; };
+		F2D028FB2889A81700DC8564 /* ElementInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElementInfoCell.m; sourceTree = "<group>"; };
 		F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Abbreviations.xcassets; sourceTree = "<group>"; };
 		F2D04DD92642E6EA00938EFC /* FormulaDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaDetailImageCell.swift; sourceTree = "<group>"; };
 		F2DB7D4A23101A010098B42A /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
@@ -400,6 +411,8 @@
 		F2E6176826395978008EB858 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		F2E6176C263BEB9D008EB858 /* SearchFormulasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormulasViewController.swift; sourceTree = "<group>"; };
 		F2F9033B2680F7AA0026732A /* SearchFormulasViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormulasViewControllerTests.swift; sourceTree = "<group>"; };
+		F2FADFFB288ABAA200734BF9 /* ElementButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementButton.h; sourceTree = "<group>"; };
+		F2FADFFC288ABAA200734BF9 /* ElementButton.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ElementButton.m; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -905,6 +918,14 @@
 			children = (
 				F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */,
 				F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */,
+				F2C6D8962883F4CF000080B2 /* CollectionOfElementsView.h */,
+				F2C6D8972883F4CF000080B2 /* CollectionOfElementsView.m */,
+				F2FADFFB288ABAA200734BF9 /* ElementButton.h */,
+				F2FADFFC288ABAA200734BF9 /* ElementButton.m */,
+				F2300B6828885F0E00CC91D0 /* ElementInfoTableViewController.h */,
+				F2300B6928885F0E00CC91D0 /* ElementInfoTableViewController.m */,
+				F2D028FA2889A81700DC8564 /* ElementInfoCell.h */,
+				F2D028FB2889A81700DC8564 /* ElementInfoCell.m */,
 				F2DB7D742311D7720098B42A /* ChemElement.swift */,
 				F2078E912622EA610094D74D /* List */,
 				F2078E942622EA6B0094D74D /* Detail */,
@@ -1199,6 +1220,7 @@
 				F20C82A526636BD000A8F3FC /* SolverDetailRadOrDegreeInputCell.swift in Sources */,
 				F20C82782659145F00A8F3FC /* NumberButtonsView.swift in Sources */,
 				F2817609263FE5BF00097228 /* AppStrings.swift in Sources */,
+				F2C6D8982883F4CF000080B2 /* CollectionOfElementsView.m in Sources */,
 				F2DB7D5423101A650098B42A /* Formula.swift in Sources */,
 				F25DF96A268E46AB00B6E456 /* FormulaCollectionViewListCell.swift in Sources */,
 				F29AEB4422EB034E00EB4E26 /* Legacy_Calculator.m in Sources */,
@@ -1208,6 +1230,7 @@
 				F29FC6FE2670118D00A46182 /* ConvertersTableViewController.swift in Sources */,
 				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
 				F22FEFFD23020026003F3A9B /* SolverDetailImageCell.swift in Sources */,
+				F2300B6A28885F0E00CC91D0 /* ElementInfoTableViewController.m in Sources */,
 				F2D04DDA2642E6EA00938EFC /* FormulaDetailImageCell.swift in Sources */,
 				F2827277232D875E004E94E0 /* ChemElementDetailViewController.swift in Sources */,
 				F27B8157268B614600785816 /* Experiment_FormulaDetailView.swift in Sources */,
@@ -1265,8 +1288,11 @@
 				F236257522FEA8850075FC2F /* FormulaDetailWithTextCell.swift in Sources */,
 				F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */,
 				F294101422E7AD1B00379868 /* CaveScene.swift in Sources */,
+				F2C6D8992883FB6C000080B2 /* CollectionOfElementsViewController.m in Sources */,
 				F25DF96C268F68B200B6E456 /* FormulaHeaderView.swift in Sources */,
+				F2D028FC2889A81700DC8564 /* ElementInfoCell.m in Sources */,
 				F22FEFFF230205BE003F3A9B /* SolverDetailInputCell.swift in Sources */,
+				F2FADFFD288ABAA200734BF9 /* ElementButton.m in Sources */,
 				F26C9AD92630B2C700A1B161 /* ConverterView.swift in Sources */,
 				F28B6FC026391FF0008C8F71 /* FormulaCellProtocol.swift in Sources */,
 				F29AEB5722EB2EEA00EB4E26 /* SolverInput.swift in Sources */,

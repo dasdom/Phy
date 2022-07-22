@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class ChemElement;
+
 @interface CollectionOfElementsViewController : UIViewController
 
-@property (nonatomic, strong) NSArray *elementArray;
+- (instancetype)initWithElements: (NSArray<ChemElement *> *)elements;
+@property (nonatomic, strong) NSArray<ChemElement *> *elementArray;
 
 @end

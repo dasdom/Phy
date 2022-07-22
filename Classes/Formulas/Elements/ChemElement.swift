@@ -4,21 +4,48 @@
 
 import Foundation
 
-struct ChemElement : Codable, Equatable {
-  let abbreviation: String
-  let atomMass: Double
-  let chemieBool: Bool
-  let electronConfiguration: String
-  let group: String
-  let name: String
-  let ordinal: Int
-  let period: Int
-  let yPos: Int
-  let title: String
-  let pauling: String
+@objc class ChemElement: NSObject, Codable {
+  @objc let abbreviation: String
+  @objc let atomMass: Double
+  @objc let chemieBool: Bool
+  @objc let electronConfiguration: String
+  @objc let group: String
+  @objc let name: String
+  @objc let ordinal: Int
+  @objc let period: Int
+  @objc let yPos: Int
+  @objc let title: String
+  @objc let pauling: String
   let mostImportantRadioactiveIsotope: Int?
-  let decayType: String
-  let lifetime: String
-  let phaseNorm: String
-  let crystalStructure: String
+  @objc let decayType: String
+  @objc let lifetime: String
+  @objc let phaseNorm: String
+  @objc let crystalStructure: String
+
+  init(abbreviation: String, atomMass: Double, chemieBool: Bool, electronConfiguration: String, group: String, name: String, ordinal: Int, period: Int, yPos: Int, title: String, pauling: String, mostImportantRadioactiveIsotope: Int?, decayType: String, lifetime: String, phaseNorm: String, crystalStructure: String) {
+    self.abbreviation = abbreviation
+    self.atomMass = atomMass
+    self.chemieBool = chemieBool
+    self.electronConfiguration = electronConfiguration
+    self.group = group
+    self.name = name
+    self.ordinal = ordinal
+    self.period = period
+    self.yPos = yPos
+    self.title = title
+    self.pauling = pauling
+    self.mostImportantRadioactiveIsotope = mostImportantRadioactiveIsotope
+    self.decayType = decayType
+    self.lifetime = lifetime
+    self.phaseNorm = phaseNorm
+    self.crystalStructure = crystalStructure
+  }
+
+  @objc func mostImportantRadioactiveIsotopeString() -> String {
+    if let isotope = mostImportantRadioactiveIsotope {
+      return "\(isotope)"
+    } else {
+      return "-"
+    }
+  }
 }

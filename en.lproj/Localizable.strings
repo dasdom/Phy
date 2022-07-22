@@ -260,11 +260,16 @@
 "Pauling-Elektronegativität" = "Pauling electronegativity";
 "wich. radioak. Isotop" = "Most Imp.Radio.Iso.";
 "Wichtigstes radioaktives Isotop" = "Most important radioactive isotop";
+"Wichtigstes radioaktives Isotop: %@" = "Most important radioactive isotop: %@";
 "Zerfallsart"           = "Decay type";
+"Zerfallsart: %@"           = "Decay type: %@";
 "Lebensdauer"           = "Livetime";
+"Lebensdauer: %@"           = "Livetime: %@";
 "Phase (Normbed.)"      = "Phase (norm.)";
 "Phase (Normbedingungen)" = "Phase (standard conditions)";
+"Phase (Normbedingungen): %@" = "Phase (standard conditions): %@";
 "Kristallstruktur"      = "Cristal structure";
+"Kristallstruktur: %@"      = "Cristal structure: %@";
 "Gas"                    = "Gas";
 "Halbmetall"             = "Half metal";
 "Halbleiter"             = "Semiconductor";
@@ -303,6 +308,7 @@
 "monoklin"               = "Monoklin";
 "Actinide"               = "Actinids";
 "Masse"                  = "Mass";
+"Masse: %.6lf"           = "Mass: %.6lf";
 "Phase (Normbed.)"       = "Phase (norm.)";
 "Pauling-Skala"          = "Pauling";
 
@@ -654,7 +660,7 @@
 "Molvolumen eines idealen Gases" = "Volume of a mol of an ideal gas";
 "Normdruck" = "Norm pressure";
 "elektrische Feldkonstante" = "Electric field constante";
-"magnetische Feldkonstante" = "Magnetic constant";
+"magnetische Feldkonstante" = "Vacuum magnetic permeability";
 "absoluter Nullpunkt" = "Absolute zero";
 "Tripelpunkt des Wassers" = "Triple point of water";
 "Vakuumlichtgeschwindigkeit" = "Speed of light in vacuum";

@@ -16056,14 +16056,14 @@
               {
                 "id": "A1A1AE74-9B35-4AD9-97BE-FBA35A174417",
                 "title": "Elementarladung",
-                "imageName": "elementarladung_symbol",
+                "imageName": "elementaryChargeSymbol",
                 "details": [
                   {
                     "title": "Symbol",
                     "detailItems": [
                       {
                         "title": "ElementarladungSymbol",
-                        "imageName": "elementarladung_symbol"
+                        "imageName": "elementaryChargeSymbol"
                       }
                     ]
                   },
@@ -16072,7 +16072,7 @@
                     "detailItems": [
                       {
                         "title": "ElementarladungZahlenwert",
-                        "imageName": "elementarladung_zahlenwert"
+                        "imageName": "elementaryChargeValue"
                       }
                     ]
                   },
@@ -16081,7 +16081,7 @@
                     "detailItems": [
                       {
                         "title": "ElementarladungUnsicherheit",
-                        "imageName": "elementarladung_unsicherheit"
+                        "imageName": "elementaryChargeUncertainty"
                       }
                     ]
                   }
@@ -16090,14 +16090,14 @@
               {
                 "id": "7CC1CE00-3756-4E5E-9619-AE23FCA37213",
                 "title": "magnetische Feldkonstante",
-                "imageName": "magnetischeFeldkonstante_symbol",
+                "imageName": "vacuumMagneticPermeabilitySymbol",
                 "details": [
                   {
                     "title": "Symbol",
                     "detailItems": [
                       {
                         "title": "MagnetischeFeldkonstanteSymbol",
-                        "imageName": "magnetischeFeldkonstante_symbol"
+                        "imageName": "vacuumMagneticPermeabilitySymbol"
                       }
                     ]
                   },
@@ -16106,7 +16106,7 @@
                     "detailItems": [
                       {
                         "title": "MagnetischeFeldkonstanteZahlenwert",
-                        "imageName": "magnetischeFeldkonstante_zahlenwert"
+                        "imageName": "vacuumMagneticPermeabilityValue"
                       }
                     ]
                   },
@@ -16115,7 +16115,40 @@
                     "detailItems": [
                       {
                         "title": "MagnetischeFeldkonstanteUnsicherheit",
-                        "imageName": "magnetischeFeldkonstante_unsicherheit"
+                        "imageName": "vacuumMagneticPermeabilityUncertainty"
+                      }
+                    ]
+                  }
+                ]
+              },{
+                "id": "19BCDD3D-4DF9-4019-A737-9EA46067348A",
+                "title": "Dielektrizitätskonstante",
+                "imageName": "vacuumElectricPermittivitySymbol",
+                "details": [
+                  {
+                    "title": "Symbol",
+                    "detailItems": [
+                      {
+                        "title": "vacuumElectricPermittivitySymbol",
+                        "imageName": "vacuumElectricPermittivitySymbol"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Zahlenwert und Einheit",
+                    "detailItems": [
+                      {
+                        "title": "vacuumElectricPermittivityValue",
+                        "imageName": "vacuumElectricPermittivityValue"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "relative Unsicherheit",
+                    "detailItems": [
+                      {
+                        "title": "vacuumElectricPermittivityUncertainty",
+                        "imageName": "vacuumElectricPermittivityUncertainty"
                       }
                     ]
                   }
@@ -16394,40 +16427,6 @@
                       {
                         "title": "ruhemasseProtonUnsicherheit",
                         "imageName": "ruhemasseProton_unsicherheit"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "19BCDD3D-4DF9-4019-A737-9EA46067348A",
-                "title": "Dielektrizitätskonstante",
-                "imageName": "vacuumElectricPermittivitySymbol",
-                "details": [
-                  {
-                    "title": "Symbol",
-                    "detailItems": [
-                      {
-                        "title": "vacuumElectricPermittivitySymbol",
-                        "imageName": "vacuumElectricPermittivitySymbol"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "Zahlenwert und Einheit",
-                    "detailItems": [
-                      {
-                        "title": "vacuumElectricPermittivityValue",
-                        "imageName": "vacuumElectricPermittivityValue"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "relative Unsicherheit",
-                    "detailItems": [
-                      {
-                        "title": "vacuumElectricPermittivityUncertainty",
-                        "imageName": "vacuumElectricPermittivityUncertainty"
                       }
                     ]
                   }

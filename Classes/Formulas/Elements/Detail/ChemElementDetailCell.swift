@@ -35,6 +35,8 @@ class ChemElementDetailCell: UITableViewCell {
 //    stackView.axis = .vertical
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+    selectionStyle = .none
         
     contentView.addSubview(stackView)
     

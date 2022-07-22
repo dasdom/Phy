@@ -24,6 +24,19 @@ class ChemElementsTableViewController: UITableViewController {
     
     tableView.tableHeaderView = headerView()
   }
+
+  override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    if size.width > size.height {
+      guard let tableOfElements = CollectionOfElementsViewController(elements: self.elementsDataSource.allItems) else {
+        return
+      }
+      tableOfElements.modalPresentationStyle = .fullScreen
+
+      coordinator.animate(alongsideTransition: nil) { context in
+        self.present(tableOfElements, animated: true)
+      }
+    }
+  }
   
   private func headerView() -> UIView {
     let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 0, height: 50))
