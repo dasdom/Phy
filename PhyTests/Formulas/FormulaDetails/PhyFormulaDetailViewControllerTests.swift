@@ -126,7 +126,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
   
   func test_didSelectRow_whenPossible_showsSolver() {
     // given
-    let detailItem = FormulaDetailItem(imageName: "arbeit", title: "Arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
+    let detailItem = FormulaDetailItem(imageName: "arbeit", title: "Arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
     let detail = FormulaDetail(title: "Foo", detailItems: [detailItem])
     let formula = Formula(id: UUID(), imageName: "arbeit", title: "Arbeit", details: [detail])
     let formulaStoreMock = FormulaStoreProtocolMock()
@@ -140,7 +140,7 @@ class PhyFormulaDetailViewControllerTests: XCTestCase {
     
     // then
     let result = navController.lastPushedViewController as! SolverDetailViewController
-    let expected = SolverTool(title: "Arbeit", imageName: "arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", placeholder: "a", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
+    let expected = SolverTool(title: "Arbeit", imageName: "arbeit", inputs: [SolverInput(id: "a", imageName: "a_colon", inputType: nil)], results: [SolverResult(formula: "a", imageName: "a", imageNameShort: nil)])
     XCTAssertEqual(result.tool, expected)
   }
 

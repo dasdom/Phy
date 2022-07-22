@@ -10,4 +10,12 @@ struct SolverTool: FormulaCellProtocol, Codable, Equatable {
   let solverImageName: String?
   var inputs: [SolverInput]
   var results: [SolverResult]
+
+  init(title: String? = nil, imageName: String, solverImageName: String? = nil, inputs: [SolverInput], results: [SolverResult]) {
+    self.title = title
+    self.imageName = imageName
+    self.solverImageName = solverImageName
+    self.inputs = inputs
+    self.results = results
+  }
 }

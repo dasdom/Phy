@@ -14,8 +14,8 @@ class SolverDetailViewControllerTests: XCTestCase {
     let solver = SolverTool(title: "Arbeit",
                             imageName: "arbeit",
                             inputs: [
-                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: nil),
-                              SolverInput(id: "b", imageName: "b", placeholder: "b", inputType: nil)
+                              SolverInput(id: "a", imageName: "a", inputType: nil),
+                              SolverInput(id: "b", imageName: "b", inputType: nil)
                             ], results: [
                               SolverResult(formula: "#a+#b", imageName: "a", imageNameShort: nil),
                               SolverResult(formula: "#a-#b", imageName: "a", imageNameShort: nil)
@@ -177,7 +177,7 @@ class SolverDetailViewControllerTests: XCTestCase {
     let solver = SolverTool(title: "Foo",
                             imageName: "foobar",
                             inputs: [
-                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: .angleType)
+                              SolverInput(id: "a", imageName: "a", inputType: .angleType)
                             ],
                             results: [])
     sut = SolverDetailViewController(tool: solver)
@@ -235,8 +235,8 @@ class SolverDetailViewControllerTests: XCTestCase {
     let solver = SolverTool(title: "Foobar",
                             imageName: "foobar",
                             inputs: [
-                              SolverInput(id: "alpha", imageName: "alpha", placeholder: "alpha", inputType: nil),
-                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: .angleType)
+                              SolverInput(id: "alpha", imageName: "alpha", inputType: nil),
+                              SolverInput(id: "a", imageName: "a", inputType: .angleType)
                             ], results: [
                               SolverResult(formula: "sin(#alpha)", imageName: "a", imageNameShort: nil)
                             ])
@@ -254,8 +254,8 @@ class SolverDetailViewControllerTests: XCTestCase {
     let solver = SolverTool(title: "Foobar",
                             imageName: "foobar",
                             inputs: [
-                              SolverInput(id: "alpha", imageName: "alpha", placeholder: "alpha", inputType: nil),
-                              SolverInput(id: "a", imageName: "a", placeholder: "a", inputType: .angleType)
+                              SolverInput(id: "alpha", imageName: "alpha", inputType: nil),
+                              SolverInput(id: "a", imageName: "a", inputType: .angleType)
                             ], results: [
                               SolverResult(formula: "sin(#alpha)", imageName: "a", imageNameShort: nil)
                             ])

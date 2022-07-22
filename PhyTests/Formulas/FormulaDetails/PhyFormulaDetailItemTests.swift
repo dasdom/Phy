@@ -32,7 +32,7 @@ class PhyFormulaDetailItemTests: XCTestCase {
         
         let result = try! JSONDecoder().decode(FormulaDetailItem.self, from: data)
         
-      let input = SolverInput(id: "s", imageName: "s_colon", placeholder: "s", inputType: nil)
+      let input = SolverInput(id: "s", imageName: "s_colon", inputType: nil)
         let soverResult = SolverResult(formula: "#s÷#t", imageName: "v_equals", imageNameShort: nil)
         let expected = FormulaDetailItem(imageName: "foo.png", inputs: [input], results: [soverResult])
         XCTAssertEqual(expected, result)

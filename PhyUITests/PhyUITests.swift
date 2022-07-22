@@ -21,10 +21,16 @@ class PhyUITests: XCTestCase {
   }
   
   func test_screenshots() {
+
     let app = XCUIApplication()
-    
+
     app.launch()
-    
+
+    XCUIDevice.shared.orientation = .landscapeRight
+    XCUIDevice.shared.orientation = .portrait
+
+    sleep(1)
+
     takeScreenshot(named: "start")
     
     app.tables.firstMatch.cells.element(boundBy: 0).tap()
@@ -39,23 +45,23 @@ class PhyUITests: XCTestCase {
     
     takeScreenshot(named: "formula")
 
+//    app.tabBars.firstMatch.buttons.element(boundBy: 1).tap()
+//
+//    app.buttons["const"].tap()
+//
+//    takeScreenshot(named: "calculator_constants")
+
+//    app.tables.firstMatch.cells.element(boundBy: 2).tap()
+//
+//    var calcString: String = "×5.9723e24×455000÷400e3^2="
+//    calcString.forEach { character in
+//      let string = String(character)
+//      app.buttons[string].tap()
+//    }
+//
+//    takeScreenshot(named: "calculator_result")
+
     app.tabBars.firstMatch.buttons.element(boundBy: 1).tap()
-
-    app.buttons["const"].tap()
-
-    takeScreenshot(named: "calculator_constants")
-
-    app.tables.firstMatch.cells.element(boundBy: 2).tap()
-
-    var calcString: String = "×5.9723e24×455000÷400e3^2="
-    calcString.forEach { character in
-      let string = String(character)
-      app.buttons[string].tap()
-    }
-    
-    takeScreenshot(named: "calculator_result")
-
-    app.tabBars.firstMatch.buttons.element(boundBy: 2).tap()
 
     let button = app.navigationBars.buttons.firstMatch
     if button.exists {
@@ -64,7 +70,7 @@ class PhyUITests: XCTestCase {
 
     app.tables.firstMatch.cells.element(boundBy: 0).tap()
 
-    calcString = "1.442e4"
+    let calcString = "1.442e4"
     calcString.forEach { character in
       let string = String(character)
       app.buttons[string].tap()
@@ -76,13 +82,14 @@ class PhyUITests: XCTestCase {
 //
 //    takeScreenshot(named: "reference")
 
-    app.tabBars.firstMatch.buttons.element(boundBy: 4).tap()
+    app.tabBars.firstMatch.buttons.element(boundBy: 3).tap()
     
     app.tables.firstMatch.cells.element(boundBy: 0).tap()
     
     app.typeText("2")
 
-    let nextKey = NSLocalizedString("weiter", comment: "")
+//    let nextKey = NSLocalizedString("weiter", comment: "")
+    let nextKey = NSLocalizedString("next", comment: "")
 
     app.buttons[nextKey].firstMatch.tap()
     
@@ -103,9 +110,17 @@ class PhyUITests: XCTestCase {
 
     app.tables.firstMatch.cells.element(boundBy: 2).tap()
 
+    takeScreenshot(named: "chemistry_list")
+
     app.tables.firstMatch.cells.element(boundBy: 7).tap()
 
-    takeScreenshot(named: "chemistry")
+    takeScreenshot(named: "chemistry_detail")
+
+    XCUIDevice.shared.orientation = .landscapeRight
+
+    sleep(1)
+
+    takeScreenshot(named: "chemistry_landscape")
   }
 }
 

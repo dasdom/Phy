@@ -79,7 +79,7 @@ class ChemElementsTableViewControllerTests: XCTestCase {
     _ = sut.tableView(sut.tableView, cellForRowAt: indexPath)
     
     // then
-    XCTAssertEqual(indexPath, dataSourceMock.elementForReceivedFor)
+    XCTAssertEqual(indexPath, dataSourceMock.elementForReceivedIndexPath)
   }
   
   func test_cellForRow_callsUpdateOfCell() {
