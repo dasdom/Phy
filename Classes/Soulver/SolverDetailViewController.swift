@@ -35,6 +35,10 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
     super.viewDidLoad()
     
     //    title = tool.title?.localized
+
+    let share = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(_:)))
+    share.isEnabled = false
+    navigationItem.rightBarButtonItem = share
     
     tableView.register(SolverDetailImageCell.self, forCellReuseIdentifier: SolverDetailImageCell.identifier)
     tableView.register(SolverDetailInputCell.self, forCellReuseIdentifier: SolverDetailInputCell.identifier)
@@ -54,7 +58,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
     }
     
     switch section {
-      case .formula, .caclulateButton: return 1
+      case .formula, .calculateButton: return 1
       case .input: return tool.inputs.count
       case .output: return tool.results.count
     }
@@ -103,7 +107,7 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
           cell = inputCell
         }
         
-      case .caclulateButton:
+      case .calculateButton:
         let buttonCell = SolverDetailButtonCell(style: .default, reuseIdentifier: nil)
         
         buttonCell.button.addTarget(self, action: #selector(calculate), for: .touchUpInside)
@@ -184,8 +188,11 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
     
     return false
   }
-  
-  // MARK: -
+}
+
+// MARK: - Actions
+extension SolverDetailViewController {
+
   @objc func angleTypeChanged(_ sender: UISegmentedControl) {
     angleType = AngleType(rawValue: sender.selectedSegmentIndex)
     calculate()
@@ -224,6 +231,26 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
     }
     
     tableView.reloadSections([3], with: .fade)
+
+    navigationItem.rightBarButtonItem?.isEnabled = true
+  }
+
+  @objc func share(_ sender: UIBarButtonItem) {
+
+    var activityItems: [Any] = []
+    for (index, toolResult) in tool.results.enumerated() {
+      let result = results[index]
+      var resultString = toolResult.resultString(inputs: tool.inputs, inputValues: inputValues, result: result)
+      if let title = tool.title?.localized {
+        resultString = "\(title) =\n\(resultString)"
+      }
+      activityItems.append(resultString)
+    }
+
+    if false == activityItems.isEmpty {
+      let activity = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+      self.present(activity, animated: true)
+    }
   }
 }
 
@@ -277,7 +304,7 @@ extension SolverDetailViewController {
   enum Section : Int, CaseIterable {
     case formula
     case input
-    case caclulateButton
+    case calculateButton
     case output
     
     var title: String? {
@@ -287,7 +314,7 @@ extension SolverDetailViewController {
           title = "Formel".localized
         case .input:
           title = "Eingabe".localized
-        case .caclulateButton:
+        case .calculateButton:
           title = nil
         case .output:
           title = "Ergebnis".localized
