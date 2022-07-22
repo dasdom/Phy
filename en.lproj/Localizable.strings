@@ -1242,6 +1242,8 @@
 "Ergebnis"  = "Result";
 "Berechnen" = "Calculate";
 "weiter" = "next";
+"abc-Formel" = "abc formula";
+"pq-Formel" = "pq formula";
 
 // MARK: - General
 "(erlaubte Zeichen: -123456789.e)" = "(allowed digits: -123456789.e)";
