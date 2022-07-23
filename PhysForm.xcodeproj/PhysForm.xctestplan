@@ -1,0 +1,48 @@
+{
+  "configurations" : [
+    {
+      "id" : "6D9B834D-DDDB-4C44-8DBE-B67100C47D9F",
+      "name" : "Configuration 1",
+      "options" : {
+        "language" : "en"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:PhysForm.xcodeproj",
+          "identifier" : "1D6058900D05DD3D006BFB54",
+          "name" : "PhysForm"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PhysForm.xcodeproj",
+      "identifier" : "1D6058900D05DD3D006BFB54",
+      "name" : "PhysForm"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PhysForm.xcodeproj",
+        "identifier" : "F239BAC720F8C0CD00612965",
+        "name" : "PhyTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "skippedTests" : [
+        "PhyUITests\/test_screenshots()"
+      ],
+      "target" : {
+        "containerPath" : "container:PhysForm.xcodeproj",
+        "identifier" : "F24201F02645DEA700E0CA97",
+        "name" : "PhyUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

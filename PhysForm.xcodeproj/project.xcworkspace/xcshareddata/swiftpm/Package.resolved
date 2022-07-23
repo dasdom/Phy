@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "commonextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dasdom/CommonExtensions.git",
+      "state" : {
+        "revision" : "bc92c8c342779f9935f9fdb343ef28b15e63fc27",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "viewinspector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nalexn/ViewInspector",
+      "state" : {
+        "revision" : "6b88c4ec1fa20cf38f2138052e63c8e79df5d76e",
+        "version" : "0.9.1"
+      }
+    }
+  ],
+  "version" : 2
+}

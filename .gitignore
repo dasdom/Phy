@@ -133,11 +133,11 @@ playground.xcworkspace
 /*.gcno
 
 ### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcworkspace/contents.xcworkspacedata
-**/xcshareddata/WorkspaceSettings.xcsettings
+#*.xcodeproj/*
+#!*.xcodeproj/project.pbxproj
+#!*.xcodeproj/xcshareddata/
+#!*.xcworkspace/contents.xcworkspacedata
+#**/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,objective-c,xcode
 .DS_Store
