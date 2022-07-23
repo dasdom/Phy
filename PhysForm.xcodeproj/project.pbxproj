@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F200F0EC2312B44900C38045 /* ChemElementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */; };
-		F200F0EF2312B68500C38045 /* ChemElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0EE2312B68500C38045 /* ChemElementTests.swift */; };
 		F200F0F12312B6F600C38045 /* ChemElementsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */; };
 		F200F0F42313212A00C38045 /* ChemElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F2231320EA00C38045 /* ChemElementCell.swift */; };
 		F200F0F62313258300C38045 /* ChemElementsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0F52313258300C38045 /* ChemElementsDataSource.swift */; };
@@ -213,7 +212,6 @@
 		32CA4F630368D1EE00C91783 /* PhysForm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysForm_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F200F0EB2312B44900C38045 /* ChemElementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsTableViewController.swift; sourceTree = "<group>"; };
-		F200F0EE2312B68500C38045 /* ChemElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemElementTests.swift; sourceTree = "<group>"; };
 		F200F0F02312B6F600C38045 /* ChemElementsTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsTableViewControllerTests.swift; sourceTree = "<group>"; };
 		F200F0F2231320EA00C38045 /* ChemElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementCell.swift; sourceTree = "<group>"; };
 		F200F0F52313258300C38045 /* ChemElementsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementsDataSource.swift; sourceTree = "<group>"; };
@@ -552,7 +550,6 @@
 		F200F0ED2312B68500C38045 /* Chemistry */ = {
 			isa = PBXGroup;
 			children = (
-				F200F0EE2312B68500C38045 /* ChemElementTests.swift */,
 				F2078EA52622EEBD0094D74D /* List */,
 				F2078EAE2622EED00094D74D /* Details */,
 			);
@@ -1289,7 +1286,6 @@
 				F236257322FEA02E0075FC2F /* PhyFormulaDetailViewControllerTests.swift in Sources */,
 				F27B8151268A571D00785816 /* AddUUIDTests.swift in Sources */,
 				F2DB7D6123101B450098B42A /* PhyFormulaDetailTests.swift in Sources */,
-				F200F0EF2312B68500C38045 /* ChemElementTests.swift in Sources */,
 				F2E6175F2639504F008EB858 /* CalculationGrouperTests.swift in Sources */,
 				F2DB7D6623101B790098B42A /* TopicViewControllerTests.swift in Sources */,
 				F2DB7D5D23101B3A0098B42A /* FormulaTests.swift in Sources */,
