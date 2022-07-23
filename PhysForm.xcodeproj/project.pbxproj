@@ -1012,7 +1012,6 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				F24201FC264885C000E0CA97 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1180,26 +1179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F24201FC264885C000E0CA97 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    buildNumber=$(git rev-list --count head)\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -1401,7 +1380,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 120;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1414,7 +1393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1438,7 +1417,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 120;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1449,7 +1428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1590,7 +1569,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominik Hauser";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 120;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q6PD97MRX4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1601,7 +1580,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.6;
+				MARKETING_VERSION = 3.6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";
