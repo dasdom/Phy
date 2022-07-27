@@ -20,6 +20,8 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
     toolsIndicatorImageView.isHidden = true
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+    selectionStyle = .none
     
     contentView.addSubview(detailImageView)
     contentView.insertSubview(toolsIndicatorImageView, belowSubview: detailImageView)
@@ -43,7 +45,7 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
       detailImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
       detailImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
       detailImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-      detailImageView.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -8),
+      detailImageView.trailingAnchor.constraint(lessThanOrEqualTo: toolsIndicatorImageView.leadingAnchor, constant: -8),
       imageWidthConstraint,
       imageHeightConstraint,
       

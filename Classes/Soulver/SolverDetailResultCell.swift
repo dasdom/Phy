@@ -29,7 +29,8 @@ class SolverDetailResultCell: DDHBaseTableViewCell<SolverResult> {
     stackView.alignment = .center
 
     contentView.addSubview(stackView)
-    
+
+    selectionStyle = .none
     
     imageHeightConstraint = resultImageView.heightAnchor.constraint(equalToConstant: 20)
     imageWidthConstraint = resultImageView.widthAnchor.constraint(equalToConstant: 20)

@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "geometry_triangle_cosine_theorem_c_squared_root.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "template"
+  }
+}

@@ -611,14 +611,8 @@
                     "title": "Hangabtriebskraft",
                     "detailItems": [
                       {
-                        "results": [
-                          {
-                            "formula": "#m × #g × sin(#alpha)",
-                            "imageName": "hangabtriebskraft",
-                            "unit": "N"
-                          }
-                        ],
                         "title": "Hangabtriebskraft",
+                        "imageName": "hangabtriebskraft",
                         "inputs": [
                           {
                             "id": "m",
@@ -641,7 +635,13 @@
                             "inputType": "angleType"
                           }
                         ],
-                        "imageName": "hangabtriebskraft"
+                        "results": [
+                          {
+                            "formula": "#m × #g × sin(#alpha)",
+                            "imageName": "hangabtriebskraft",
+                            "unit": "N"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -711,7 +711,36 @@
                     "detailItems": [
                       {
                         "title": "Normalkraft02",
-                        "imageName": "normalkraft02"
+                        "imageName": "normalkraft02",
+                        "inputs": [
+                          {
+                            "id": "m",
+                            "unit": "kg",
+                            "imageName": "masse_abk"
+                          },
+                          {
+                            "id": "g",
+                            "unit": "m/s²",
+                            "imageName": "gravitationsbeschleunigung_abk",
+                            "value": "9.80665"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "neigungswinkel_abk"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#m × #g × cos(#alpha)",
+                            "imageName": "normalkraft02",
+                            "unit": "N"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -5613,7 +5642,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "ctStrich"
@@ -5640,7 +5669,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "xStrich"
@@ -5675,7 +5704,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "ct"
@@ -5702,7 +5731,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "x"
@@ -5725,7 +5754,7 @@
                             "id": "c",
                             "unit": "m s⁻¹",
                             "value": "2.99792458e8",
-                            "imageName": "c_abbr"
+                            "imageName": "c_colon"
                           }
                         ],
                         "imageName": "beta"
@@ -5793,7 +5822,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "massenzunahme"
@@ -5817,7 +5846,7 @@
                             "id": "c",
                             "unit": "m s⁻¹",
                             "value": "2.99792458e8",
-                            "imageName": "c_abbr"
+                            "imageName": "c_colon"
                           }
                         ],
                         "imageName": "beta"
@@ -5881,7 +5910,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "zeitdilatation"
@@ -5904,7 +5933,7 @@
                             "id": "c",
                             "unit": "m s⁻¹",
                             "value": "2.99792458e8",
-                            "imageName": "c_abbr"
+                            "imageName": "c_colon"
                           }
                         ],
                         "imageName": "beta"
@@ -5968,7 +5997,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "laengenkontraktion"
@@ -5991,7 +6020,7 @@
                             "id": "c",
                             "unit": "m s⁻¹",
                             "value": "2.99792458e8",
-                            "imageName": "c_abbr"
+                            "imageName": "c_colon"
                           }
                         ],
                         "imageName": "beta"
@@ -6062,7 +6091,7 @@
                             "id": "c",
                             "unit": "m s⁻¹",
                             "value": "2.99792458e8",
-                            "imageName": "c_abbr"
+                            "imageName": "c_colon"
                           }
                         ],
                         "imageName": "additionVonGeschwindigkeiten"
@@ -6131,7 +6160,7 @@
                           },
                           {
                             "id": "beta",
-                            "imageName": "beta_abbr"
+                            "imageName": "beta_colon"
                           }
                         ],
                         "imageName": "relativistischerImpuls"
@@ -6154,7 +6183,7 @@
                             "id": "c",
                             "unit": "m s⁻¹",
                             "value": "2.99792458e8",
-                            "imageName": "c_abbr"
+                            "imageName": "c_colon"
                           }
                         ],
                         "imageName": "beta"
@@ -6223,7 +6252,7 @@
                             "id": "c",
                             "unit": "m s⁻¹",
                             "value": "2.99792458e8",
-                            "imageName": "c_abbr"
+                            "imageName": "c_colon"
                           }
                         ],
                         "results": [

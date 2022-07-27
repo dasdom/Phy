@@ -9,7 +9,7 @@ class FavoritesCoordinator: FormulasCoordinator {
   override func start() {
     let viewController = FavoritesViewController(formulaStore: formulaStore)
     viewController.delegate = self
-    viewController.title = "Favoriten"
+    viewController.title = "Favoriten".localized
 
     presenter.pushViewController(viewController, animated: false)
   }

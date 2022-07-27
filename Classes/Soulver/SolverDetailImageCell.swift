@@ -16,6 +16,8 @@ class SolverDetailImageCell: DDHBaseTableViewCell<SolverTool> {
     formulaImageView.translatesAutoresizingMaskIntoConstraints = false
 
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+    selectionStyle = .none
     
     contentView.addSubview(formulaImageView)
     

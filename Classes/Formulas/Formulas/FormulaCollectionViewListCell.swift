@@ -65,7 +65,7 @@ class FormulaCollectionViewListCell: UICollectionViewListCell {
       imageHeightConstraint,
       imageWidthConstraint,
 
-      toolsIndicatorImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+      toolsIndicatorImageView.centerYAnchor.constraint(equalTo: nameLabel.centerYAnchor),
       toolsIndicatorImageView.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -5),
 
       toolsIndicatorImageView.widthAnchor.constraint(equalToConstant: 16),

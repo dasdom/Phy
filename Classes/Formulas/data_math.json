@@ -25,7 +25,24 @@
                   {
                     "detailItems": [
                       {
-                        "imageName": "geometry_triangle_area"
+                        "imageName": "geometry_triangle_area",
+                        "title": "Fläche",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a × #h ÷ 2",
+                            "imageName": "geometry_triangle_area"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -37,7 +54,7 @@
                       },
                       {
                         "title": "GrundseiteAbk",
-                        "imageName": "a_abbr"
+                        "imageName": "a_colon"
                       },
                       {
                         "title": "HoeheAbk",
@@ -63,7 +80,28 @@
                   {
                     "detailItems": [
                       {
-                        "imageName": "geometry_triangle_circumference"
+                        "imageName": "geometry_triangle_circumference",
+                        "title": "Umfang",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "b",
+                            "imageName": "b_colon"
+                          },
+                          {
+                            "id": "c",
+                            "imageName": "c_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a + #b + #c",
+                            "imageName": "geometry_triangle_circumference"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -145,22 +183,193 @@
                   {
                     "detailItems": [
                       {
-                        "imageName": "geometry_triangle_cosine_theorem_c_squared"
+                        "title": "Kosinussatz",
+                        "imageName": "geometry_triangle_cosine_theorem_c_squared",
+                        "solverImageName": "geometry_triangle_cosine_theorem_c_squared_root",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "b",
+                            "imageName": "b_colon"
+                          },
+                          {
+                            "id": "gamma",
+                            "imageName": "gamma_colon"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a^2 + #b^2 - 2 × #a × #b × cos(#gamma)",
+                            "imageName": "geometry_triangle_cosine_theorem_c_squared_root"
+                          }
+                        ]
                       },
                       {
-                        "imageName": "geometry_triangle_cosine_theorem_a_squared"
+                        "title": "Kosinussatz",
+                        "imageName": "geometry_triangle_cosine_theorem_a_squared",
+                        "solverImageName": "geometry_triangle_cosine_theorem_a_squared_root",
+                        "inputs": [
+                          {
+                            "id": "b",
+                            "imageName": "b_colon"
+                          },
+                          {
+                            "id": "c",
+                            "imageName": "c_colon",
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "alpha_colon"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#b^2 + #c^2 - 2 × #b × #c × cos(#alpha)",
+                            "imageName": "geometry_triangle_cosine_theorem_a_squared_root"
+                          }
+                        ]
                       },
                       {
-                        "imageName": "geometry_triangle_cosine_theorem_b_squared"
+                        "title": "Kosinussatz",
+                        "imageName": "geometry_triangle_cosine_theorem_b_squared",
+                        "solverImageName": "geometry_triangle_cosine_theorem_b_squared_root",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "c",
+                            "imageName": "c_colon",
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_colon"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a^2 + #c^2 - 2 × #a × #c × cos(#beta)",
+                            "imageName": "geometry_triangle_cosine_theorem_b_squared_root"
+                          }
+                        ]
                       },
                       {
-                        "imageName": "geometry_triangle_cosine_theorem_a"
+                        "title": "Kosinussatz",
+                        "imageName": "geometry_triangle_cosine_theorem_a",
+                        "inputs": [
+                          {
+                            "id": "_b",
+                            "imageName": "b_colon"
+                          },
+                          {
+                            "id": "gamma",
+                            "imageName": "gamma_colon"
+                          },
+                          {
+                            "id": "c",
+                            "imageName": "c_colon"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_colon"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#_b × cos(#gamma) + #c × cos(#beta)",
+                            "imageName": "geometry_triangle_cosine_theorem_a"
+                          }
+                        ]
                       },
                       {
-                        "imageName": "geometry_triangle_cosine_theorem_b"
+                        "title": "Kosinussatz",
+                        "imageName": "geometry_triangle_cosine_theorem_b",
+                        "inputs": [
+                          {
+                            "id": "_c",
+                            "imageName": "c_colon"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "alpha_colon"
+                          },
+                          {
+                            "id": "_a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "gamma",
+                            "imageName": "gamma_colon"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#_c × cos(#alpha) + #_a × cos(#gamma)",
+                            "imageName": "geometry_triangle_cosine_theorem_b"
+                          }
+                        ]
                       },
                       {
-                        "imageName": "geometry_triangle_cosine_theorem_c"
+                        "title": "Kosinussatz",
+                        "imageName": "geometry_triangle_cosine_theorem_c",
+                        "inputs": [
+                          {
+                            "id": "_a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "beta",
+                            "imageName": "beta_colon"
+                          },
+                          {
+                            "id": "_b",
+                            "imageName": "b_colon"
+                          },
+                          {
+                            "id": "alpha",
+                            "imageName": "alpha_colon"
+                          },
+                          {
+                            "id": "",
+                            "imageName": "",
+                            "inputType": "angleType"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#_a × cos(#beta) + #_b × cos(#alpha)",
+                            "imageName": "geometry_triangle_cosine_theorem_c"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -181,14 +390,43 @@
                     "detailItems": [
                       {
                         "type": "image",
-                        "imageName": "geometry_circle_image"
+                        "imageName": "geometry_circle_radius_diameter_image"
                       }
                     ]
                   },
                   {
                     "detailItems": [
                       {
-                        "imageName": "geometry_circle_area"
+                        "title": "Fläche",
+                        "imageName": "geometry_circle_area",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r^2",
+                            "imageName": "geometry_circle_area"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Fläche",
+                        "imageName": "geometry_circle_area_diameter",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × (#d ÷ 2)^2",
+                            "imageName": "geometry_circle_area_diameter"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -215,14 +453,43 @@
                     "detailItems": [
                       {
                         "type": "image",
-                        "imageName": "geometry_circle_image"
+                        "imageName": "geometry_circle_radius_diameter_image"
                       }
                     ]
                   },
                   {
                     "detailItems": [
                       {
-                        "imageName": "geometry_circle_circumference"
+                        "title": "Umfang",
+                        "imageName": "geometry_circle_circumference",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × 𝜋 × #r",
+                            "imageName": "geometry_circle_circumference"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Umfang",
+                        "imageName": "geometry_circle_circumference_diameter",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #d",
+                            "imageName": "geometry_circle_circumference_diameter"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -1016,11 +1283,11 @@
                     "detailItems": [
                       {
                         "title": "GegenkatheteAbk",
-                        "imageName": "a_abbr"
+                        "imageName": "a_colon"
                       },
                       {
                         "title": "HypotenuseAbk",
-                        "imageName": "c_abbr"
+                        "imageName": "c_colon"
                       }
                     ]
                   }

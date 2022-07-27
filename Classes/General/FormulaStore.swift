@@ -48,15 +48,17 @@ class FormulaStore: FormulaStoreProtocol {
 
     let allSpecialFieldSections = specialFieldSections(.physics_formulas) + specialFieldSections(.math_formulas)
 
-    let allFormulaSections = allSpecialFieldSections.flatMap({ $0.specialFields }).flatMap({ $0.formulaSections })
-
     var sections: [FormulaSection] = []
-    for formulaSection in allFormulaSections {
-      let formulas = formulaSection.formulas.filter { formula -> Bool in
-        return favorites.contains(formula.id)
-      }
-      if formulas.count > 0 {
-        sections.append(FormulaSection(id: formulaSection.id, title: formulaSection.title, formulas: formulas))
+    for specialField in allSpecialFieldSections.flatMap({ $0.specialFields }) {
+
+      for formulaSection in specialField.formulaSections {
+        let formulas = formulaSection.formulas.filter { formula -> Bool in
+          return favorites.contains(formula.id)
+        }
+        if formulas.count > 0 {
+          let title = "\(specialField.title.localized) - \(formulaSection.title.localized)"
+          sections.append(FormulaSection(id: formulaSection.id, title: title, formulas: formulas))
+        }
       }
     }
     return sections

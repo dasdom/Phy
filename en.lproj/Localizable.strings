@@ -686,7 +686,8 @@
 "GrundseiteAbk" = "Base";
 "Fläche" = "Area";
 "Winkelsumme" = "Angular Sum";
-"Umfang" = "Perimeter";
+"Umfang" = "Circumference";
+"UmfangAbk" = "Circumference";
 "Sinussatz" = "Sine Theorem";
 "Kosinussatz" = "Cosine Theorem";
 

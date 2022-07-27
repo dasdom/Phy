@@ -6,7 +6,7 @@ import UIKit
 
 class FavoritesViewController: FormulasViewController {
 
-  private var _sections: [ FormulaSection] = []
+  private var _sections: [FormulaSection] = []
   override var sectionsToShow: [FormulaSection] {
     return _sections
   }

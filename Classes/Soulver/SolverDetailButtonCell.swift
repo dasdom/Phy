@@ -19,6 +19,8 @@ class SolverDetailButtonCell: UITableViewCell {
     button.titleLabel?.font = .preferredFont(forTextStyle: .body)
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+    selectionStyle = .none
     
     contentView.addSubview(button)
     
