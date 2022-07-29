@@ -18,7 +18,6 @@
 		F2078E802621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078E7F2621994B0094D74D /* SpecialFieldsViewControllerProtocolStub.swift */; };
 		F2078EAB2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078EAA2622EECD0094D74D /* ChemElementDetailViewControllerTests.swift */; };
 		F2078EB22622F3D40094D74D /* ChemElementDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2078EB12622F3D40094D74D /* ChemElementDetailCell.swift */; };
-		F207F4FB1145B67200256864 /* Referenz.plist in Resources */ = {isa = PBXBuildFile; fileRef = F207F4FA1145B67200256864 /* Referenz.plist */; };
 		F20C82712658F82100A8F3FC /* ValueUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82702658F82100A8F3FC /* ValueUnitView.swift */; };
 		F20C82732658F93F00A8F3FC /* CalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C82722658F93F00A8F3FC /* CalcButton.swift */; };
 		F20C8276265912D500A8F3FC /* ActionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8275265912D500A8F3FC /* ActionRowView.swift */; };
@@ -83,7 +82,12 @@
 		F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
 		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
-		F2569B350F9E2B0100968581 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2569B340F9E2B0100968581 /* Data.plist */; };
+		F253B8642893C43500530142 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F253B8632893C43500530142 /* WidgetKit.framework */; };
+		F253B8662893C43500530142 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F253B8652893C43500530142 /* SwiftUI.framework */; };
+		F253B8692893C43500530142 /* Bookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253B8682893C43500530142 /* Bookmarks.swift */; };
+		F253B86B2893C43600530142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F253B86A2893C43600530142 /* Assets.xcassets */; };
+		F253B86F2893C43600530142 /* BookmarksExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F253B8622893C43500530142 /* BookmarksExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F25D83592894335400FF74D2 /* PDFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D83572894335200FF74D2 /* PDFImageView.swift */; };
 		F25DF966268CBF1D00B6E456 /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = F25DF965268CBF1D00B6E456 /* CommonExtensions */; };
 		F25DF96A268E46AB00B6E456 /* FormulaCollectionViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF969268E46AB00B6E456 /* FormulaCollectionViewListCell.swift */; };
 		F25DF96C268F68B200B6E456 /* FormulaHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF96B268F68B200B6E456 /* FormulaHeaderView.swift */; };
@@ -110,7 +114,6 @@
 		F27B8159268B755200785816 /* FormulaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8158268B755200785816 /* FormulaStore.swift */; };
 		F27B815B268B76C700785816 /* FormulaStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B815A268B76C700785816 /* FormulaStoreTests.swift */; };
 		F27B815E268B9B6E00785816 /* FormulaStoreProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B815D268B9B6E00785816 /* FormulaStoreProtocolMock.swift */; };
-		F27EEF771154F1F3008449FC /* DataLite.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27EEF761154F1F3008449FC /* DataLite.plist */; };
 		F28175F8263EA5FD00097228 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28175F7263EA5FD00097228 /* FileManagerExtension.swift */; };
 		F2817605263FE4D600097228 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2817604263FE4D600097228 /* FeedbackView.swift */; };
 		F2817609263FE5BF00097228 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2817608263FE5BF00097228 /* AppStrings.swift */; };
@@ -119,6 +122,31 @@
 		F282727B232E2746004E94E0 /* ChemElementCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F282727A232E2746004E94E0 /* ChemElementCellTests.swift */; };
 		F28B6FC026391FF0008C8F71 /* FormulaCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B6FBF26391FF0008C8F71 /* FormulaCellProtocol.swift */; };
 		F28BCAAF2695FF410018D382 /* FormulasViewControllerProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BCAAE2695FF410018D382 /* FormulasViewControllerProtocolMock.swift */; };
+		F28D75172893FD170088F573 /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = F28D75162893FD170088F573 /* CommonExtensions */; };
+		F28D75192893FF730088F573 /* data_math.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7923100CFE00E8F4E4 /* data_math.json */; };
+		F28D751A2893FF730088F573 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
+		F28D751B2893FF830088F573 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F270E2041005DD7000843391 /* Localizable.strings */; };
+		F28D751C2893FF960088F573 /* Units.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BC22D9C121001794E9 /* Units.xcassets */; };
+		F28D751D2893FF960088F573 /* Mathematics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BA22D9C0D8001794E9 /* Mathematics.xcassets */; };
+		F28D751E2893FF960088F573 /* Relativity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A622D9B914001794E9 /* Relativity.xcassets */; };
+		F28D751F2893FF960088F573 /* Lagrange.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53AA22D9B999001794E9 /* Lagrange.xcassets */; };
+		F28D75202893FF960088F573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53C022D9C6CA001794E9 /* Assets.xcassets */; };
+		F28D75212893FF960088F573 /* AtomPhysics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53B622D9BFA2001794E9 /* AtomPhysics.xcassets */; };
+		F28D75222893FF960088F573 /* Abbreviations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D04DD72642B6BD00938EFC /* Abbreviations.xcassets */; };
+		F28D75232893FF960088F573 /* Mechanics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A822D9B94C001794E9 /* Mechanics.xcassets */; };
+		F28D75242893FF960088F573 /* Electrodynamics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53AE22D9BB09001794E9 /* Electrodynamics.xcassets */; };
+		F28D75252893FF960088F573 /* QuantumPhysics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53B422D9BF18001794E9 /* QuantumPhysics.xcassets */; };
+		F28D75262893FF960088F573 /* DecimalPotents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53BE22D9C284001794E9 /* DecimalPotents.xcassets */; };
+		F28D75272893FF960088F573 /* Soulver.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29AEB4E22EB2C5A00EB4E26 /* Soulver.xcassets */; };
+		F28D75282893FF960088F573 /* LinearOptics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53B022D9BD04001794E9 /* LinearOptics.xcassets */; };
+		F28D75292893FF960088F573 /* Thermodynamics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53AC22D9B9FE001794E9 /* Thermodynamics.xcassets */; };
+		F28D752A2893FF960088F573 /* Fluidmechanics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53B822D9C0A1001794E9 /* Fluidmechanics.xcassets */; };
+		F28D752B2893FF960088F573 /* Constants.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53A422D9B6D4001794E9 /* Constants.xcassets */; };
+		F28D752C2893FF960088F573 /* WaveOptics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E53B222D9BEBC001794E9 /* WaveOptics.xcassets */; };
+		F28D75342894014D0088F573 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28175F7263EA5FD00097228 /* FileManagerExtension.swift */; };
+		F28D75362894017F0088F573 /* BookmarkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D75352894017F0088F573 /* BookmarkStore.swift */; };
+		F28D7538289401C30088F573 /* WidgetBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D7537289401C30088F573 /* WidgetBookmark.swift */; };
+		F28D753928941AA60088F573 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D4C23101A2C0098B42A /* Topic.swift */; };
 		F294101222E7AD1B00379868 /* ImprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100D22E7AD1B00379868 /* ImprintViewController.swift */; };
 		F294101322E7AD1B00379868 /* ImprintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100E22E7AD1B00379868 /* ImprintView.swift */; };
 		F294101422E7AD1B00379868 /* CaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294100F22E7AD1B00379868 /* CaveScene.swift */; };
@@ -199,7 +227,28 @@
 			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
 			remoteInfo = PhysForm;
 		};
+		F253B86D2893C43600530142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F253B8612893C43500530142;
+			remoteInfo = BookmarksExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F253B8742893C43600530142 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F253B86F2893C43600530142 /* BookmarksExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -293,7 +342,18 @@
 		F24201F32645DEA700E0CA97 /* PhyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyUITests.swift; sourceTree = "<group>"; };
 		F24201F52645DEA700E0CA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F253B8622893C43500530142 /* BookmarksExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BookmarksExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F253B8632893C43500530142 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F253B8652893C43500530142 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F253B8682893C43500530142 /* Bookmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmarks.swift; sourceTree = "<group>"; };
+		F253B86A2893C43600530142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F253B86C2893C43600530142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F253B8752893C66200530142 /* PhysFormDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhysFormDebug.entitlements; sourceTree = "<group>"; };
+		F253B8762893C6BF00530142 /* BookmarksExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookmarksExtensionDebug.entitlements; sourceTree = "<group>"; };
+		F253B8772893C72200530142 /* PhysFormRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhysFormRelease.entitlements; sourceTree = "<group>"; };
+		F253B8782893C73400530142 /* BookmarksExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookmarksExtensionRelease.entitlements; sourceTree = "<group>"; };
 		F2569B340F9E2B0100968581 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		F25D83572894335200FF74D2 /* PDFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFImageView.swift; sourceTree = "<group>"; };
 		F25DF969268E46AB00B6E456 /* FormulaCollectionViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaCollectionViewListCell.swift; sourceTree = "<group>"; };
 		F25DF96B268F68B200B6E456 /* FormulaHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaHeaderView.swift; sourceTree = "<group>"; };
 		F26C9AD82630B2C700A1B161 /* ConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
@@ -330,6 +390,8 @@
 		F282727A232E2746004E94E0 /* ChemElementCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemElementCellTests.swift; sourceTree = "<group>"; };
 		F28B6FBF26391FF0008C8F71 /* FormulaCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaCellProtocol.swift; sourceTree = "<group>"; };
 		F28BCAAE2695FF410018D382 /* FormulasViewControllerProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulasViewControllerProtocolMock.swift; sourceTree = "<group>"; };
+		F28D75352894017F0088F573 /* BookmarkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkStore.swift; sourceTree = "<group>"; };
+		F28D7537289401C30088F573 /* WidgetBookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBookmark.swift; sourceTree = "<group>"; };
 		F294100922E7ACF600379868 /* PhysForm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhysForm-Bridging-Header.h"; sourceTree = "<group>"; };
 		F294100D22E7AD1B00379868 /* ImprintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprintViewController.swift; sourceTree = "<group>"; };
 		F294100E22E7AD1B00379868 /* ImprintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprintView.swift; sourceTree = "<group>"; };
@@ -437,6 +499,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F253B85F2893C43500530142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28D75172893FD170088F573 /* CommonExtensions in Frameworks */,
+				F253B8662893C43500530142 /* SwiftUI.framework in Frameworks */,
+				F253B8642893C43500530142 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -470,6 +542,7 @@
 				1D6058910D05DD3D006BFB54 /* Phy.app */,
 				F239BAC820F8C0CD00612965 /* PhyTests.xctest */,
 				F24201F12645DEA700E0CA97 /* PhyUITests.xctest */,
+				F253B8622893C43500530142 /* BookmarksExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,12 +550,17 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F253B8782893C73400530142 /* BookmarksExtensionRelease.entitlements */,
+				F253B8772893C72200530142 /* PhysFormRelease.entitlements */,
+				F253B8762893C6BF00530142 /* BookmarksExtensionDebug.entitlements */,
+				F253B8752893C66200530142 /* PhysFormDebug.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				F2C8FA73267DCF6A008C8F82 /* PhysForm.xctestplan */,
 				F239BAC920F8C0CE00612965 /* PhyTests */,
 				F24201F22645DEA700E0CA97 /* PhyUITests */,
+				F253B8672893C43500530142 /* Bookmarks */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -543,6 +621,8 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				F2AC138813659F61006465C7 /* QuartzCore.framework */,
+				F253B8632893C43500530142 /* WidgetKit.framework */,
+				F253B8652893C43500530142 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -768,6 +848,19 @@
 				F2CBD48E269603F80043230B /* Search */,
 			);
 			path = Formulas;
+			sourceTree = "<group>";
+		};
+		F253B8672893C43500530142 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				F253B8682893C43500530142 /* Bookmarks.swift */,
+				F28D75352894017F0088F573 /* BookmarkStore.swift */,
+				F25D83572894335200FF74D2 /* PDFImageView.swift */,
+				F28D7537289401C30088F573 /* WidgetBookmark.swift */,
+				F253B86A2893C43600530142 /* Assets.xcassets */,
+				F253B86C2893C43600530142 /* Info.plist */,
+			);
+			path = Bookmarks;
 			sourceTree = "<group>";
 		};
 		F2716A1B22F87AC7007D1528 /* SpecialField */ = {
@@ -1009,10 +1102,12 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				F253B8742893C43600530142 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F253B86E2893C43600530142 /* PBXTargetDependency */,
 			);
 			name = PhysForm;
 			packageProductDependencies = (
@@ -1061,13 +1156,33 @@
 			productReference = F24201F12645DEA700E0CA97 /* PhyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F253B8612893C43500530142 /* BookmarksExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F253B8702893C43600530142 /* Build configuration list for PBXNativeTarget "BookmarksExtension" */;
+			buildPhases = (
+				F253B85E2893C43500530142 /* Sources */,
+				F253B85F2893C43500530142 /* Frameworks */,
+				F253B8602893C43500530142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookmarksExtension;
+			packageProductDependencies = (
+				F28D75162893FD170088F573 /* CommonExtensions */,
+			);
+			productName = BookmarksExtension;
+			productReference = F253B8622893C43500530142 /* BookmarksExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = dasdom;
 				TargetAttributes = {
@@ -1088,6 +1203,9 @@
 						DevelopmentTeam = Q6PD97MRX4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D6058900D05DD3D006BFB54;
+					};
+					F253B8612893C43500530142 = {
+						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
@@ -1114,6 +1232,7 @@
 				1D6058900D05DD3D006BFB54 /* PhysForm */,
 				F239BAC720F8C0CD00612965 /* PhyTests */,
 				F24201F02645DEA700E0CA97 /* PhyUITests */,
+				F253B8612893C43500530142 /* BookmarksExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1123,7 +1242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2569B350F9E2B0100968581 /* Data.plist in Resources */,
 				F294101522E7AD1B00379868 /* Spark.sks in Resources */,
 				F29AEB4F22EB2C5A00EB4E26 /* Soulver.xcassets in Resources */,
 				F20E53AD22D9B9FE001794E9 /* Thermodynamics.xcassets in Resources */,
@@ -1137,8 +1255,6 @@
 				F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */,
 				F2372E1522F0E3B4003C0605 /* topics.json in Resources */,
 				F279640E1143FAFD00B8EBDE /* favorites.db in Resources */,
-				F207F4FB1145B67200256864 /* Referenz.plist in Resources */,
-				F27EEF771154F1F3008449FC /* DataLite.plist in Resources */,
 				F2DB7D7323118E590098B42A /* data_elements.json in Resources */,
 				F20E53AF22D9BB09001794E9 /* Electrodynamics.xcassets in Resources */,
 				F26C9ADD2631E16E00A1B161 /* converter.json in Resources */,
@@ -1172,6 +1288,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F253B8602893C43500530142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28D75222893FF960088F573 /* Abbreviations.xcassets in Resources */,
+				F28D75282893FF960088F573 /* LinearOptics.xcassets in Resources */,
+				F28D75232893FF960088F573 /* Mechanics.xcassets in Resources */,
+				F28D751D2893FF960088F573 /* Mathematics.xcassets in Resources */,
+				F253B86B2893C43600530142 /* Assets.xcassets in Resources */,
+				F28D75242893FF960088F573 /* Electrodynamics.xcassets in Resources */,
+				F28D75212893FF960088F573 /* AtomPhysics.xcassets in Resources */,
+				F28D752B2893FF960088F573 /* Constants.xcassets in Resources */,
+				F28D751E2893FF960088F573 /* Relativity.xcassets in Resources */,
+				F28D751C2893FF960088F573 /* Units.xcassets in Resources */,
+				F28D751B2893FF830088F573 /* Localizable.strings in Resources */,
+				F28D75192893FF730088F573 /* data_math.json in Resources */,
+				F28D751F2893FF960088F573 /* Lagrange.xcassets in Resources */,
+				F28D75292893FF960088F573 /* Thermodynamics.xcassets in Resources */,
+				F28D75252893FF960088F573 /* QuantumPhysics.xcassets in Resources */,
+				F28D75272893FF960088F573 /* Soulver.xcassets in Resources */,
+				F28D75202893FF960088F573 /* Assets.xcassets in Resources */,
+				F28D751A2893FF730088F573 /* data_physics.json in Resources */,
+				F28D75262893FF960088F573 /* DecimalPotents.xcassets in Resources */,
+				F28D752A2893FF960088F573 /* Fluidmechanics.xcassets in Resources */,
+				F28D752C2893FF960088F573 /* WaveOptics.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1337,6 +1481,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F253B85E2893C43500530142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F253B8692893C43500530142 /* Bookmarks.swift in Sources */,
+				F25D83592894335400FF74D2 /* PDFImageView.swift in Sources */,
+				F28D753928941AA60088F573 /* Topic.swift in Sources */,
+				F28D7538289401C30088F573 /* WidgetBookmark.swift in Sources */,
+				F28D75342894014D0088F573 /* FileManagerExtension.swift in Sources */,
+				F28D75362894017F0088F573 /* BookmarkStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1349,6 +1506,11 @@
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* PhysForm */;
 			targetProxy = F24201F62645DEA700E0CA97 /* PBXContainerItemProxy */;
+		};
+		F253B86E2893C43600530142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F253B8612893C43500530142 /* BookmarksExtension */;
+			targetProxy = F253B86D2893C43600530142 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1368,10 +1530,12 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = PhysFormDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1384,6 +1548,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Physics++";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1405,10 +1570,12 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = PhysFormRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1419,6 +1586,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Physics++";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1557,6 +1725,7 @@
 		F21C82351022259600522F12 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1571,6 +1740,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhysForm_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Physics++";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1855,6 +2025,169 @@
 			};
 			name = Distribution;
 		};
+		F253B8712893C43600530142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = BookmarksExtensionDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookmarks/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bookmarks;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 dasdom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.Bookmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F253B8722893C43600530142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = BookmarksExtensionRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookmarks/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bookmarks;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 dasdom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.Bookmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F253B8732893C43600530142 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominik Hauser";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookmarks/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bookmarks;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 dasdom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.Bookmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1898,6 +2231,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F253B8702893C43600530142 /* Build configuration list for PBXNativeTarget "BookmarksExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F253B8712893C43600530142 /* Debug */,
+				F253B8722893C43600530142 /* Release */,
+				F253B8732893C43600530142 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1926,6 +2269,11 @@
 			productName = ViewInspector;
 		};
 		F25DF965268CBF1D00B6E456 /* CommonExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */;
+			productName = CommonExtensions;
+		};
+		F28D75162893FD170088F573 /* CommonExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */;
 			productName = CommonExtensions;

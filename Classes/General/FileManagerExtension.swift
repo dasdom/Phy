@@ -10,7 +10,22 @@ extension FileManager {
     return documentsURL().appendingPathComponent("history.json")
   }
 
-  func favorites() -> URL {
-    return documentsURL().appendingPathComponent("favorites.json")
+  func bookmarks() -> URL {
+
+    let urlInApp = documentsURL().appendingPathComponent("favorites.json")
+
+    if let url = containerURL(forSecurityApplicationGroupIdentifier:
+                                "group.com.yourcompany.phy") {
+
+      let bookmarkURL = url.appendingPathComponent("bookmarks.json")
+      if false == fileExists(atPath: bookmarkURL.path) {
+        if fileExists(atPath: urlInApp.path) {
+          try? copyItem(at: urlInApp, to: bookmarkURL)
+        }
+      }
+      return bookmarkURL
+    }
+
+    return urlInApp
   }
 }

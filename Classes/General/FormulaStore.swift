@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import WidgetKit
 
 protocol FormulaStoreProtocol {
   func specialFieldSections(_ type: TopicType) -> [SpecialFieldSection]
@@ -18,7 +19,7 @@ class FormulaStore: FormulaStoreProtocol {
   var favorites: [UUID]
 
   init() {
-    let url = FileManager.default.favorites()
+    let url = FileManager.default.bookmarks()
 
     do {
       let data = try Data(contentsOf: url)
@@ -86,6 +87,8 @@ class FormulaStore: FormulaStoreProtocol {
       favorites.append(formula.id)
     }
     writeFavorites()
+
+    WidgetCenter.shared.reloadAllTimelines()
   }
 
   func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection? {
@@ -93,7 +96,7 @@ class FormulaStore: FormulaStoreProtocol {
     if formulas.count < 1 {
       return nil
     }
-    return FormulaSection(id: favoritesUUID, title: "Favoriten", formulas: formulas)
+    return FormulaSection(id: favoritesUUID, title: "Lesezeichen", formulas: formulas)
   }
 
   func formulaIsFavorit(_ formula: Formula) -> Bool {
@@ -124,7 +127,7 @@ extension FormulaStore {
   private func writeFavorites() {
     do {
       let data = try JSONEncoder().encode(favorites)
-      try data.write(to: FileManager.default.favorites())
+      try data.write(to: FileManager.default.bookmarks())
     } catch {
       print("error \(error) in \(#file)")
     }

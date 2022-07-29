@@ -38,9 +38,9 @@ class FormulaDetailViewController: UITableViewController {
   func favButtonImage() -> UIImage? {
     let symbolName: String
     if formulaStore.formulaIsFavorit(formula) {
-      symbolName = "star.fill"
+      symbolName = "bookmark.fill"
     } else {
-      symbolName = "star"
+      symbolName = "bookmark"
     }
     return UIImage(systemName: symbolName)
   }

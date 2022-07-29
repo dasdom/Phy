@@ -60,7 +60,7 @@ class AppCoordinator: Coordinator {
     favoritesCoordinator.start()
     childCoordinators.append(favoritesCoordinator)
     
-    navigationController.tabBarItem = UITabBarItem(title: "Favoriten".localized, image: UIImage(systemName: "star"), tag: 3)
+    navigationController.tabBarItem = UITabBarItem(title: "Lesezeichen".localized, image: UIImage(systemName: "bookmark"), tag: 3)
     return navigationController
   }
   
