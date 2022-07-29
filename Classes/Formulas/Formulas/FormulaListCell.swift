@@ -20,7 +20,7 @@ class FormulaListCell: NameAndFormulaImageTableViewCell {
     contentView.insertSubview(toolsIndicatorImageView, belowSubview: self.formulaImageView)
     
     NSLayoutConstraint.activate([
-      toolsIndicatorImageView.centerYAnchor.constraint(equalTo: self.nameLabel.centerYAnchor),
+      toolsIndicatorImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
       toolsIndicatorImageView.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -5),
       
       toolsIndicatorImageView.widthAnchor.constraint(equalToConstant: 16),

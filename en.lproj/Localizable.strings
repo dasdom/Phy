@@ -690,6 +690,10 @@
 "UmfangAbk" = "Circumference";
 "Sinussatz" = "Sine Theorem";
 "Kosinussatz" = "Cosine Theorem";
+"Quadrat" = "Square";
+"SeitenlaengeAbk" = "Side length";
+"Diagonale" = "Diagonal";
+"DiagonaleAbk" = "Diagonal";
 
 // MARK: Potency Laws
 "Potenzgesetze" = "Potency Laws";

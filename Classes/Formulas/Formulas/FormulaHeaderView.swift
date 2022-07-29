@@ -11,6 +11,7 @@ class FormulaHeaderView: UICollectionReusableView {
 
     label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
+    label.numberOfLines = 0
 
     super.init(frame: frame)
 

@@ -378,6 +378,193 @@
             ]
           },
           {
+            "id": "D3952DCB-156B-424C-B580-843BD3AFAF03",
+            "title": "Quadrat",
+            "formulas": [
+              {
+                "id": "5ECCCC7D-11C8-4AFC-9342-BD87FD09CC5C",
+                "title": "Fläche",
+                "imageName": "geometry_square_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_square_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Fläche",
+                        "imageName": "geometry_square_area",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a^2",
+                            "imageName": "geometry_square_area"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Fläche",
+                        "imageName": "geometry_square_area_diagonal",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#d^2 ÷ 2",
+                            "imageName": "geometry_square_area_diagonal"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "FlaecheAbk",
+                        "imageName": "capital_a_abbr"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "DiagonaleAbk",
+                        "imageName": "d_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "A4DE0EA9-DFBC-42B1-A096-A36CC8772C1A",
+                "title": "Umfang",
+                "imageName": "geometry_square_circumference",
+                "details": [
+                 {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_square_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Umfang",
+                        "imageName": "geometry_square_circumference",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "4 × #a",
+                            "imageName": "geometry_square_circumference"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Umfang",
+                        "imageName": "geometry_square_circumference_diagonal",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × sqrt(2) × #d",
+                            "imageName": "geometry_square_circumference_diagonal"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "UmfangAbk",
+                        "imageName": "capital_c_abbr"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "DiagonaleAbk",
+                        "imageName": "d_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "46A350E8-6B57-47CA-80FD-917A5320E4F5",
+                "title": "Diagonale",
+                "imageName": "geometry_square_diagonal",
+                "details": [
+                 {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_square_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Diagonale",
+                        "imageName": "geometry_square_diagonal",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a × sqrt(2)",
+                            "imageName": "geometry_square_diagonal"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "DiagonaleAbk",
+                        "imageName": "d_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "F165FE64-C487-4E8E-83FE-BB67EE0455B2",
             "title": "Kreis",
             "formulas": [
