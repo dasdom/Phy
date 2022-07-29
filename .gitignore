@@ -138,6 +138,8 @@ playground.xcworkspace
 #!*.xcodeproj/xcshareddata/
 #!*.xcworkspace/contents.xcworkspacedata
 #**/xcshareddata/WorkspaceSettings.xcsettings
+*/project.xcworkspace/xcuserdata/dom.xcuserdatad/UserInterfaceState.xcuserstate
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,objective-c,xcode
+
 .DS_Store
