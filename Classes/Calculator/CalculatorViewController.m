@@ -73,15 +73,15 @@
     self.lastSelectedRange = self.calcStringView.selectedRange;
   }
   
-  NSString *numberOfCallsKey = @"numberOfCallsKey";
-  NSInteger numberOfCalls = [[NSUserDefaults standardUserDefaults] integerForKey:numberOfCallsKey];
-  if (numberOfCalls > 10) {
-    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:numberOfCallsKey];
-    [SKStoreReviewController requestReview];
-  } else {
-    numberOfCalls += 1;
-    [[NSUserDefaults standardUserDefaults] setInteger:numberOfCalls forKey:numberOfCallsKey];
-  }
+//  NSString *numberOfCallsKey = @"numberOfCallsKey";
+//  NSInteger numberOfCalls = [[NSUserDefaults standardUserDefaults] integerForKey:numberOfCallsKey];
+//  if (numberOfCalls > 10) {
+//    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:numberOfCallsKey];
+//    [SKStoreReviewController requestReview];
+//  } else {
+//    numberOfCalls += 1;
+//    [[NSUserDefaults standardUserDefaults] setInteger:numberOfCalls forKey:numberOfCallsKey];
+//  }
 }
 
 - (void)setCalcString:(NSMutableString *)calcString {

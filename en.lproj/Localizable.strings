@@ -694,6 +694,9 @@
 "SeitenlaengeAbk" = "Side length";
 "Diagonale" = "Diagonal";
 "DiagonaleAbk" = "Diagonal";
+"Rechteck" = "Rectangle";
+"Würfel" = "Cube";
+"Volumen" = "Volume";
 
 // MARK: Potency Laws
 "Potenzgesetze" = "Potency Laws";

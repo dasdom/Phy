@@ -107,4 +107,22 @@ final class FormulaStoreProtocolMock: FormulaStoreProtocol {
     formulaIsFavoritReceivedInvocations.append(formula)
     return formulaIsFavoritClosure.map({ $0(formula) }) ?? formulaIsFavoritReturnValue
   }
+
+  // MARK: - formula
+
+  var formulaForCallsCount = 0
+  var formulaForCalled: Bool {
+    formulaForCallsCount > 0
+  }
+  var formulaForReceivedId: UUID?
+  var formulaForReceivedInvocations: [UUID] = []
+  var formulaForReturnValue: Formula?
+  var formulaForClosure: ((UUID) -> Formula?)?
+
+  func formula(for id: UUID) -> Formula? {
+    formulaForCallsCount += 1
+    formulaForReceivedId = id
+    formulaForReceivedInvocations.append(id)
+    return formulaForClosure.map({ $0(id) }) ?? formulaForReturnValue
+  }
 }

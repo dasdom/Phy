@@ -4,6 +4,7 @@
 
 import UIKit
 import CommonExtensions
+import StoreKit
 
 enum AngleType : Int {
   case rad
@@ -44,6 +45,14 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
     tableView.register(SolverDetailInputCell.self, forCellReuseIdentifier: SolverDetailInputCell.identifier)
     tableView.register(SolverDetailButtonCell.self, forCellReuseIdentifier: SolverDetailButtonCell.identifier)
     tableView.register(SolverDetailResultCell.self, forCellReuseIdentifier: SolverDetailResultCell.identifier)
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+
+    if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+      SKStoreReviewController.requestReview(in: scene)
+    }
   }
   
   // MARK: UITableViewDataSource

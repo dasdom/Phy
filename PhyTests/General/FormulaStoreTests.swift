@@ -42,7 +42,7 @@ class FormulaStoreTests: XCTestCase {
                                               Formula(id: uuid, imageName: "bb1", title: "bb2")])
     ], favoritesUUID: UUID())
 
-    XCTAssertEqual(section?.title, "Favoriten")
+    XCTAssertEqual(section?.title, "Lesezeichen")
     XCTAssertEqual(section?.formulas.first?.referenceUUID, uuid)
     localSUT.addOrRemoveFavorite(formula: Formula(id: uuid, imageName: "Foo", title: "Bar"))
   }

@@ -862,6 +862,142 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "36CE44BA-EBE4-46FE-BA32-1E5F6C80CDE2",
+            "title": "Würfel",
+            "formulas": [
+              {
+                "id": "164DE0EE-155F-4A46-A5A6-C4C66DF1EAC4",
+                "title": "Volumen",
+                "imageName": "geometry_cube_volume",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cube_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Volumen",
+                        "imageName": "geometry_cube_volume",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a^3",
+                            "imageName": "geometry_cube_volume"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Volumen",
+                        "imageName": "geometry_cube_volume_diagonal",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#d^3 ÷ sqrt(3)^2",
+                            "imageName": "geometry_cube_volume_diagonal"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "VolumenAbk",
+                        "imageName": "capital_v_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "DiagonaleAbk",
+                        "imageName": "d_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "204A5F87-782A-4173-8A38-2F11923DA35F",
+                "title": "Umfang",
+                "imageName": "geometry_circle_circumference",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_circle_radius_diameter_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Umfang",
+                        "imageName": "geometry_circle_circumference",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × 𝜋 × #r",
+                            "imageName": "geometry_circle_circumference"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Umfang",
+                        "imageName": "geometry_circle_circumference_diameter",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #d",
+                            "imageName": "geometry_circle_circumference_diameter"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "UmfangAbk",
+                        "imageName": "capital_c_abbr"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_abbr"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
