@@ -25,6 +25,13 @@ class FormulasCoordinator: NSObject, Coordinator, UINavigationControllerDelegate
     viewController.delegate = self
     presenter.pushViewController(viewController, animated: false)
   }
+
+  func showFormula(with id: UUID) {
+    if let formula = formulaStore.formula(for: id) {
+      let notUsedViewController = UIViewController()
+      formulaSelected(notUsedViewController, formula: formula)
+    }
+  }
 }
 
 extension FormulasCoordinator: TopicViewControllerProtocol {

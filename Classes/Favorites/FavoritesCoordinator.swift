@@ -11,6 +11,6 @@ class FavoritesCoordinator: FormulasCoordinator {
     viewController.delegate = self
     viewController.title = "Lesezeichen".localized
 
-    presenter.pushViewController(viewController, animated: false)
+    presenter.viewControllers = [viewController]
   }
 }

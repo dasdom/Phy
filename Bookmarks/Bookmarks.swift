@@ -59,10 +59,12 @@ struct BookmarkEntry: TimelineEntry {
 
 struct BookmarksEntryView : View {
   var entry: Provider.Entry
-  
+
+  private static let deeplinkURL: URL = URL(string: "widget-deeplink://")!
+
   var body: some View {
-    VStack {
-      if let bookmark = entry.widgetBookmark {
+    if let bookmark = entry.widgetBookmark {
+      VStack {
         HStack {
           VStack(alignment: .leading) {
             HStack() {
@@ -80,14 +82,16 @@ struct BookmarksEntryView : View {
         }
         if let uiImage = UIImage(named: bookmark.imageName)?.resized(height: 50) {
           Image(uiImage: uiImage)
+            .renderingMode(.template)
             .resizable()
             .aspectRatio(contentMode: .fit)
         }
-      } else {
-        Text("No bookmarks found")
       }
+      .padding()
+      .widgetURL(URL(string: "widget://\(bookmark.id)")!)
+    } else {
+      Text("No bookmarks found")
     }
-    .padding()
   }
 }
 
@@ -130,7 +134,7 @@ struct Bookmarks: Widget {
 
 struct Bookmarks_Previews: PreviewProvider {
   static var previews: some View {
-    BookmarksEntryView(entry: BookmarkEntry(date: Date(), widgetBookmark: WidgetBookmark(field: "Foo", section: "Bar", title: "Baz", imageName: "impulserhaltungssatz")))
+    BookmarksEntryView(entry: BookmarkEntry(date: Date(), widgetBookmark: WidgetBookmark(id: UUID(), field: "Foo", section: "Bar", title: "Baz", imageName: "impulserhaltungssatz")))
       .previewContext(WidgetPreviewContext(family: .systemMedium))
   }
 }

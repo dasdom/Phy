@@ -8,8 +8,8 @@ import SwiftUI
 class AppCoordinator: Coordinator {
   
   private let window: UIWindow
-  private let tabBarController: UITabBarController
-  private var childCoordinators: [Coordinator] = []
+  let tabBarController: UITabBarController
+  private(set) var childCoordinators: [Coordinator] = []
   lazy var formulaStore: FormulaStoreProtocol = FormulaStore()
   
   init(window: UIWindow) {

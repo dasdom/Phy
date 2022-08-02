@@ -30,7 +30,7 @@ class BookmarkStore {
             return favorites.contains(formula.id)
           }
           for formula in formulas {
-            let bookmark = WidgetBookmark(field: specialField.title, section: formulaSection.title, title: formula.title ?? "", imageName: formula.imageName)
+            let bookmark = WidgetBookmark(id: formula.id, field: specialField.title, section: formulaSection.title, title: formula.title ?? "", imageName: formula.imageName)
             bookmarks.append(bookmark)
           }
         }

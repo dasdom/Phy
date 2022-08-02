@@ -12,6 +12,7 @@ protocol FormulaStoreProtocol {
   func addOrRemoveFavorite(formula: Formula)
   func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection?
   func formulaIsFavorit(_ formula: Formula) -> Bool
+  func formula(for id: UUID) -> Formula?
 }
 
 class FormulaStore: FormulaStoreProtocol {
@@ -104,6 +105,15 @@ class FormulaStore: FormulaStoreProtocol {
       return favorites.contains(id)
     }
     return favorites.contains(formula.id)
+  }
+
+  func formula(for id: UUID) -> Formula? {
+
+    let allSpecialFieldSections = specialFieldSections(.physics_formulas) + specialFieldSections(.math_formulas)
+
+    let allFormulas = allSpecialFieldSections.flatMap({ $0.specialFields }).flatMap({ $0.formulaSections }).flatMap({ $0.formulas })
+
+    return allFormulas.first(where: { $0.id == id })
   }
 }
 

@@ -5,6 +5,7 @@
 import Foundation
 
 struct WidgetBookmark: Codable {
+  let id: UUID
   let field: String
   let section: String
   let title: String

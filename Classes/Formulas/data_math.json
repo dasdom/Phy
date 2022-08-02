@@ -565,6 +565,173 @@
             ]
           },
           {
+            "id": "6C559DED-8749-4089-85DF-A27BD507662E",
+            "title": "Rechteck",
+            "formulas": [
+              {
+                "id": "F9903442-AF68-4C05-B186-ACB995BEE013",
+                "title": "Fläche",
+                "imageName": "geometry_rectangle_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_rectangle_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Fläche",
+                        "imageName": "geometry_rectangle_area",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "b",
+                            "imageName": "b_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a × #b",
+                            "imageName": "geometry_rectangle_area"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "FlaecheAbk",
+                        "imageName": "capital_a_abbr"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "b_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "926A9041-3FB4-4BC2-BD59-730C37493DDE",
+                "title": "Umfang",
+                "imageName": "geometry_rectangle_circumference",
+                "details": [
+                 {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_rectangle_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Umfang",
+                        "imageName": "geometry_rectangle_circumference",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "b",
+                            "imageName": "b_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × (#a + #b)",
+                            "imageName": "geometry_rectangle_circumference"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "UmfangAbk",
+                        "imageName": "capital_c_abbr"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "b_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "A8013433-0DF5-4A5E-B3D4-2BF82C11B9BA",
+                "title": "Diagonale",
+                "imageName": "geometry_rectangle_diagonal",
+                "details": [
+                 {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_rectangle_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Diagonale",
+                        "imageName": "geometry_rectangle_diagonal",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "b",
+                            "imageName": "b_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(#a^2 + #b^2)",
+                            "imageName": "geometry_rectangle_diagonal"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "DiagonaleAbk",
+                        "imageName": "d_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "F165FE64-C487-4E8E-83FE-BB67EE0455B2",
             "title": "Kreis",
             "formulas": [
