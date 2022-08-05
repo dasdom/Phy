@@ -18,12 +18,12 @@ class AppCoordinator: Coordinator {
   }
   
   func start() {
-    tabBarController.viewControllers = [formulas, converter, favorites, solver]
+    tabBarController.viewControllers = [formulas, converter, favorites]
     
     window.rootViewController = tabBarController
     window.makeKeyAndVisible()
   }
-  
+
   private var formulas: UIViewController {
     let navigationController = UINavigationController()
     navigationController.navigationBar.prefersLargeTitles = true
@@ -35,15 +35,15 @@ class AppCoordinator: Coordinator {
     return navigationController
   }
   
-  private var calculator: UIViewController {
-    let viewController = CalculatorViewController()
-    viewController.tabBarItem = UITabBarItem(title: "Rechner".localized, image: UIImage(systemName: "plusminus"), tag: 1)
-    return viewController
-  }
+//  private var calculator: UIViewController {
+//    let viewController = CalculatorViewController()
+//    viewController.tabBarItem = UITabBarItem(title: "Rechner".localized, image: UIImage(systemName: "plusminus"), tag: 2)
+//    return viewController
+//  }
   
   private var converter: UIViewController {
     let viewController = UIHostingController(rootView: ConverterList())
-    viewController.tabBarItem = UITabBarItem(title: "Konverter".localized, image: UIImage(systemName: "arrow.left.arrow.right"), tag: 2)
+    viewController.tabBarItem = UITabBarItem(title: "Konverter".localized, image: UIImage(systemName: "arrow.left.arrow.right"), tag: 1)
     return viewController
   }
   
@@ -60,16 +60,16 @@ class AppCoordinator: Coordinator {
     favoritesCoordinator.start()
     childCoordinators.append(favoritesCoordinator)
     
-    navigationController.tabBarItem = UITabBarItem(title: "Lesezeichen".localized, image: UIImage(systemName: "bookmark"), tag: 3)
+    navigationController.tabBarItem = UITabBarItem(title: "Lesezeichen".localized, image: UIImage(systemName: "bookmark"), tag: 2)
     return navigationController
   }
   
-  private var solver: UIViewController {
-    let viewController = SolverTableViewController()
-    viewController.tabBarItem = UITabBarItem(title: "Werkzeuge".localized, image: UIImage(systemName: "wrench.and.screwdriver"), tag: 4)
-    viewController.title = "Werkzeuge".localized
-    let navigationController = UINavigationController(rootViewController: viewController)
-    navigationController.navigationBar.prefersLargeTitles = true
-    return navigationController
-  }
+//  private var solver: UIViewController {
+//    let viewController = SolverTableViewController()
+//    viewController.tabBarItem = UITabBarItem(title: "Werkzeuge".localized, image: UIImage(systemName: "wrench.and.screwdriver"), tag: 4)
+//    viewController.title = "Werkzeuge".localized
+//    let navigationController = UINavigationController(rootViewController: viewController)
+//    navigationController.navigationBar.prefersLargeTitles = true
+//    return navigationController
+//  }
 }

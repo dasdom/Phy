@@ -50,13 +50,13 @@ class AppCoordinatorTests: XCTestCase {
     XCTAssertNotNil(result.delegate)
   }
   
-  func test_start_setsSolverToTabBarController() throws {
-    sut.start()
-    
-    let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
-    let navigationController = try XCTUnwrap(tabBarController.viewControllers?[3] as? UINavigationController)
-    let result = navigationController.topViewController
-
-    XCTAssertTrue(result is SolverTableViewController)
-  }
+//  func test_start_setsSolverToTabBarController() throws {
+//    sut.start()
+//    
+//    let tabBarController = try XCTUnwrap(window.rootViewController as? UITabBarController)
+//    let navigationController = try XCTUnwrap(tabBarController.viewControllers?[3] as? UINavigationController)
+//    let result = navigationController.topViewController
+//
+//    XCTAssertTrue(result is SolverTableViewController)
+//  }
 }

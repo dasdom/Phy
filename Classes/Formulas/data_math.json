@@ -1,6 +1,6 @@
 [
   {
-    "title": "None",
+    "title": "General",
     "specialFields": [
       {
         "title": "Geometrie",
@@ -427,6 +427,38 @@
                             "imageName": "geometry_square_area_diagonal"
                           }
                         ]
+                      },
+                      {
+                        "title": "Seitenlänge",
+                        "imageName": "geometry_side_length_from_area",
+                        "inputs": [
+                          {
+                            "id": "A",
+                            "imageName": "capital_a_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(#A)",
+                            "imageName": "geometry_side_length_from_area"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Diagonale",
+                        "imageName": "geometry_diagonal_from_area",
+                        "inputs": [
+                          {
+                            "id": "A",
+                            "imageName": "capital_a_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(2 × #A)",
+                            "imageName": "geometry_diagonal_from_area"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -494,6 +526,38 @@
                             "imageName": "geometry_square_circumference_diagonal"
                           }
                         ]
+                      },
+                      {
+                        "title": "Seitenlänge",
+                        "imageName": "geometry_side_length_from_circumfence",
+                        "inputs": [
+                          {
+                            "id": "C",
+                            "imageName": "capital_c_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#C ÷ 4",
+                            "imageName": "geometry_side_length_from_circumfence"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Diagonale",
+                        "imageName": "geometry_diagonal_from_circumfence",
+                        "inputs": [
+                          {
+                            "id": "C",
+                            "imageName": "capital_c_abbr"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#C ÷ (2 × sqrt(2))",
+                            "imageName": "geometry_diagonal_from_circumfence"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -543,6 +607,22 @@
                           {
                             "formula": "#a × sqrt(2)",
                             "imageName": "geometry_square_diagonal"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Seitenlänge",
+                        "imageName": "geometry_square_side_length_from_diagonal",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#d ÷ sqrt(2)",
+                            "imageName": "geometry_square_side_length_from_diagonal"
                           }
                         ]
                       }
@@ -936,38 +1016,38 @@
               },
               {
                 "id": "204A5F87-782A-4173-8A38-2F11923DA35F",
-                "title": "Umfang",
-                "imageName": "geometry_circle_circumference",
+                "title": "Oberfläche",
+                "imageName": "geometry_cube_surface",
                 "details": [
                   {
                     "detailItems": [
                       {
                         "type": "image",
-                        "imageName": "geometry_circle_radius_diameter_image"
+                        "imageName": "geometry_cube_image"
                       }
                     ]
                   },
                   {
                     "detailItems": [
                       {
-                        "title": "Umfang",
-                        "imageName": "geometry_circle_circumference",
+                        "title": "Oberfläche",
+                        "imageName": "geometry_cube_surface",
                         "inputs": [
                           {
-                            "id": "r",
-                            "imageName": "r_abbr"
+                            "id": "a",
+                            "imageName": "a_colon"
                           }
                         ],
                         "results": [
                           {
-                            "formula": "2 × 𝜋 × #r",
-                            "imageName": "geometry_circle_circumference"
+                            "formula": "6 × #a^2",
+                            "imageName": "geometry_cube_surface"
                           }
                         ]
                       },
                       {
-                        "title": "Umfang",
-                        "imageName": "geometry_circle_circumference_diameter",
+                        "title": "Oberfläche",
+                        "imageName": "geometry_cube_surface_diagonal",
                         "inputs": [
                           {
                             "id": "d",
@@ -976,8 +1056,8 @@
                         ],
                         "results": [
                           {
-                            "formula": "𝜋 × #d",
-                            "imageName": "geometry_circle_circumference_diameter"
+                            "formula": "2 × #d^2",
+                            "imageName": "geometry_cube_surface_diagonal"
                           }
                         ]
                       }
@@ -986,12 +1066,79 @@
                   {
                     "detailItems": [
                       {
-                        "title": "UmfangAbk",
-                        "imageName": "capital_c_abbr"
+                        "title": "OberflaecheAbk",
+                        "imageName": "capital_o_colon"
                       },
                       {
-                        "title": "RadiusAbk",
-                        "imageName": "r_abbr"
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "DiagonaleAbk",
+                        "imageName": "d_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "BEEFB6B1-97B9-4B84-999A-796F83350EC9",
+                "title": "Diagonale",
+                "imageName": "geometry_cube_diagonal",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cube_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Diagonale",
+                        "imageName": "geometry_cube_diagonal",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a × sqrt(3)",
+                            "imageName": "geometry_cube_diagonal"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Seitenlänge",
+                        "imageName": "geometry_cube_side_length_from_diagonal",
+                        "inputs": [
+                          {
+                            "id": "d",
+                            "imageName": "d_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#d ÷ sqrt(3)",
+                            "imageName": "geometry_cube_side_length_from_diagonal"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "DiagonaleAbk",
+                        "imageName": "d_colon"
                       }
                     ]
                   }
@@ -1998,6 +2145,103 @@
               {
                 "id": "A6F6E92C-EF5D-4202-87ED-D4A5A58899E5",
                 "imageName": "entwicklungssatz"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Helper",
+    "specialFields": [
+      {
+        "title": "Tools",
+        "formulaSections": [
+          {
+            "id": "4755BAEF-1153-4377-B2FF-07D6D3536E76",
+            "title": "Quadratische Funktionen",
+            "formulas": [
+              {
+                "id": "6DD7C231-5887-41FC-BEAD-8F69C143C358",
+                "title": "abc-Formel",
+                "imageName": "abc_formula",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "title": "abc-Formel",
+                        "imageName": "abc_formula",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_semicolon",
+                            "placeholder": "a"
+                          },
+                          {
+                            "id": "b",
+                            "imageName": "b_semicolon",
+                            "placeholder": "b"
+                          },
+                          {
+                            "id": "c",
+                            "imageName": "c_semicolon",
+                            "placeholder": "c"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "(-#b+sqrt(#b^(2)-4×#a×#c))÷(2×#a)",
+                            "imageName": "abc_solution_x1"
+                          },
+                          {
+                            "formula": "(-#b-sqrt(#b^(2)-4×#a×#c))÷(2×#a)",
+                            "imageName": "abc_solution_x2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "247539B1-81C2-4A14-9F69-BA31A194CE1B",
+                "title": "pq-Formel",
+                "imageName": "pq_formula",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "title": "pq-Formel",
+                        "imageName": "pq_formula",
+                        "inputs": [
+                          {
+                            "id": "p",
+                            "imageName": "p_colon",
+                            "placeholder": "p"
+                          },
+                          {
+                            "id": "q",
+                            "imageName": "q_colon",
+                            "placeholder": "q"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "-#p÷2+sqrt((#p÷2)^(2)-#q)",
+                            "imageName": "pq_solution_x1",
+                            "imageNameShort": "x1_equal"
+                          },
+                          {
+                            "formula": "-#p÷2-sqrt((#p÷2)^(2)-#q)",
+                            "imageName": "pq_solution_x2",
+                            "imageNameShort": "x2_equal"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

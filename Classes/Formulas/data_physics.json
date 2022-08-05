@@ -108,6 +108,46 @@
                           }
                         ],
                         "imageName": "geschwindigkeit01"
+                      },
+                      {
+                        "title": "Weg",
+                        "imageName": "distance_for_constant_velocity",
+                        "inputs": [
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk"
+                          },
+                          {
+                            "id": "t",
+                            "imageName": "zeit_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#v × #t",
+                            "imageName": "distance_for_constant_velocity"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Zeit",
+                        "imageName": "duration_for_constant_velocity",
+                        "inputs": [
+                          {
+                            "id": "s",
+                            "imageName": "zurueckgelegter_weg_abk"
+                          },
+                          {
+                            "id": "v",
+                            "imageName": "geschwindigkeit_abk"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#s ÷ #v",
+                            "imageName": "duration_for_constant_velocity"
+                          }
+                        ]
                       }
                     ]
                   },

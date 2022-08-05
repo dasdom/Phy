@@ -697,6 +697,8 @@
 "Rechteck" = "Rectangle";
 "Würfel" = "Cube";
 "Volumen" = "Volume";
+"OberflaecheAbk" = "Surface";
+"Oberfläche" = "Surface";
 
 // MARK: Potency Laws
 "Potenzgesetze" = "Potency Laws";
