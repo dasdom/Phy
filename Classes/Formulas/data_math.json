@@ -34,7 +34,7 @@
                           },
                           {
                             "id": "h",
-                            "imageName": "h_abbr"
+                            "imageName": "h_colon"
                           }
                         ],
                         "results": [
@@ -58,7 +58,7 @@
                       },
                       {
                         "title": "HoeheAbk",
-                        "imageName": "h_abbr"
+                        "imageName": "h_colon"
                       }
                     ]
                   }
@@ -1139,6 +1139,210 @@
                       {
                         "title": "DiagonaleAbk",
                         "imageName": "d_colon"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "E757572D-1AF3-4F79-87FD-31A246DE2303",
+            "title": "Pyramide",
+            "formulas": [
+              {
+                "id": "7CEA5486-59A7-42B9-914F-69354E6178A9",
+                "title": "Volumen",
+                "imageName": "geometry_pyramid_volume",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_pyramide_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Volumen",
+                        "imageName": "geometry_pyramid_volume",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ 3 × #a^2 × #h",
+                            "imageName": "geometry_pyramid_volume",
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Volumen",
+                        "imageName": "geometry_pyramid_volume_from_ground_area",
+                        "inputs": [
+                          {
+                            "id": "G",
+                            "imageName": "capital_g_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "1 ÷ 3 × #G × #h",
+                            "imageName": "geometry_pyramid_volume_from_ground_area"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "VolumenAbk",
+                        "imageName": "capital_v_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "HoeheAbk",
+                        "imageName": "h_colon"
+                      },
+                      {
+                        "title": "GrundflaecheAbk",
+                        "imageName": "capital_g_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9C62B6E7-D548-4C36-9C25-A80D2EA6D96B",
+                "title": "Oberfläche",
+                "imageName": "geometry_pyramid_surface",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_pyramide_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Oberfläche",
+                        "imageName": "geometry_pyramid_surface",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "hS",
+                            "imageName": "h_subscript_capital_s_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a^2 + 2 × #a × #hS",
+                            "imageName": "geometry_pyramid_surface"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Oberfläche",
+                        "imageName": "geometry_pyramid_surface_ground_mantle",
+                        "inputs": [
+                          {
+                            "id": "G",
+                            "imageName": "capital_g_colon"
+                          },
+                          {
+                            "id": "M",
+                            "imageName": "capital_m_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#G + #M",
+                            "imageName": "geometry_pyramid_surface_ground_mantle"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Grundfläche",
+                        "imageName": "geometry_pyramid_ground_area",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a^2",
+                            "imageName": "geometry_pyramid_ground_area"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Mantelfläche",
+                        "imageName": "geometry_pyramid_mantle_area",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "hS",
+                            "imageName": "h_subscript_capital_s_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × #a × #hS",
+                            "imageName": "geometry_pyramid_mantle_area"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "OberflaecheAbk",
+                        "imageName": "capital_o_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "SeitenhoeheAbk",
+                        "imageName": "h_subscript_capital_s_colon"
+                      },
+                      {
+                        "title": "GrundflaecheAbk",
+                        "imageName": "capital_g_colon"
+                      },
+                      {
+                        "title": "MantelflaecheAbk",
+                        "imageName": "capital_m_colon"
                       }
                     ]
                   }

@@ -80,7 +80,7 @@ struct BookmarksEntryView : View {
           }
           Spacer()
         }
-        if let uiImage = UIImage(named: bookmark.imageName)?.resized(height: 50) {
+        if let uiImage = UIImage(named: bookmark.imageName)?.resized(height: 40) {
           Image(uiImage: uiImage)
             .renderingMode(.template)
             .resizable()
