@@ -73,6 +73,7 @@
 		F23EBE74230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EBE73230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift */; };
 		F23EBE7B23100CFE00E8F4E4 /* data_math.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7923100CFE00E8F4E4 /* data_math.json */; };
 		F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
+		F241D41B289FAF6C00F603F8 /* data_elements.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DB7D7223118E590098B42A /* data_elements.json */; };
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
 		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
 		F253B8642893C43500530142 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F253B8632893C43500530142 /* WidgetKit.framework */; };
@@ -517,12 +518,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F241D41A289FAF4500F603F8 /* JSONs */,
 				32CA4F630368D1EE00C91783 /* PhysForm_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				F279640D1143FAFD00B8EBDE /* favorites.db */,
 				F279640B1143FAEA00B8EBDE /* addFormula.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				F2DB7D7223118E590098B42A /* data_elements.json */,
 				F270E2041005DD7000843391 /* Localizable.strings */,
 				F29558B220586259001D776D /* Launch Screen.storyboard */,
 				F27EEE671154D3A5008449FC /* InfoLite.plist */,
@@ -742,6 +743,16 @@
 			path = Topic;
 			sourceTree = "<group>";
 		};
+		F241D41A289FAF4500F603F8 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				F2DB7D7223118E590098B42A /* data_elements.json */,
+				F23EBE7A23100CFE00E8F4E4 /* data_physics.json */,
+				F23EBE7923100CFE00E8F4E4 /* data_math.json */,
+			);
+			name = JSONs;
+			sourceTree = "<group>";
+		};
 		F24201F22645DEA700E0CA97 /* PhyUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,8 +780,6 @@
 		F24E129722DF4D8000F4038F /* Formulas */ = {
 			isa = PBXGroup;
 			children = (
-				F23EBE7A23100CFE00E8F4E4 /* data_physics.json */,
-				F23EBE7923100CFE00E8F4E4 /* data_math.json */,
 				F236F4982620441400796E3D /* FormulasCoordinator.swift */,
 				F23EBE7D2310190800E8F4E4 /* Topic */,
 				F2716A1B22F87AC7007D1528 /* SpecialField */,
@@ -1198,6 +1207,7 @@
 			files = (
 				F28D75222893FF960088F573 /* Abbreviations.xcassets in Resources */,
 				F28D75282893FF960088F573 /* LinearOptics.xcassets in Resources */,
+				F241D41B289FAF6C00F603F8 /* data_elements.json in Resources */,
 				F28D75232893FF960088F573 /* Mechanics.xcassets in Resources */,
 				F28D751D2893FF960088F573 /* Mathematics.xcassets in Resources */,
 				F253B86B2893C43600530142 /* Assets.xcassets in Resources */,
