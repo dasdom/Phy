@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kMaxMass 500.0f
+#define kMaxMass 300.0f
 #define kMaxPauling 6.0f
 
 @interface CollectionOfElementsView : UIView

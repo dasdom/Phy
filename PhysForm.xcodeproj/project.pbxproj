@@ -790,6 +790,23 @@
 			path = Elements;
 			sourceTree = "<group>";
 		};
+		F241D42C28A165CA00F603F8 /* PeriodicTable */ = {
+			isa = PBXGroup;
+			children = (
+				F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */,
+				F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */,
+				F2C6D8962883F4CF000080B2 /* CollectionOfElementsView.h */,
+				F2C6D8972883F4CF000080B2 /* CollectionOfElementsView.m */,
+				F2FADFFB288ABAA200734BF9 /* ElementButton.h */,
+				F2FADFFC288ABAA200734BF9 /* ElementButton.m */,
+				F2300B6828885F0E00CC91D0 /* ElementInfoTableViewController.h */,
+				F2300B6928885F0E00CC91D0 /* ElementInfoTableViewController.m */,
+				F2D028FA2889A81700DC8564 /* ElementInfoCell.h */,
+				F2D028FB2889A81700DC8564 /* ElementInfoCell.m */,
+			);
+			path = PeriodicTable;
+			sourceTree = "<group>";
+		};
 		F24201F22645DEA700E0CA97 /* PhyUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -968,19 +985,10 @@
 		F29AEB2622EB02FE00EB4E26 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				F29AEB2722EB02FE00EB4E26 /* CollectionOfElementsViewController.h */,
-				F29AEB2D22EB02FE00EB4E26 /* CollectionOfElementsViewController.m */,
-				F2C6D8962883F4CF000080B2 /* CollectionOfElementsView.h */,
-				F2C6D8972883F4CF000080B2 /* CollectionOfElementsView.m */,
-				F2FADFFB288ABAA200734BF9 /* ElementButton.h */,
-				F2FADFFC288ABAA200734BF9 /* ElementButton.m */,
-				F2300B6828885F0E00CC91D0 /* ElementInfoTableViewController.h */,
-				F2300B6928885F0E00CC91D0 /* ElementInfoTableViewController.m */,
-				F2D028FA2889A81700DC8564 /* ElementInfoCell.h */,
-				F2D028FB2889A81700DC8564 /* ElementInfoCell.m */,
 				F2DB7D742311D7720098B42A /* ChemElement.swift */,
 				F2078E912622EA610094D74D /* List */,
 				F2078E942622EA6B0094D74D /* Detail */,
+				F241D42C28A165CA00F603F8 /* PeriodicTable */,
 			);
 			path = Elements;
 			sourceTree = "<group>";

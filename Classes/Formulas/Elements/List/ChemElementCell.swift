@@ -5,6 +5,7 @@
 import UIKit
 import CommonExtensions
 
+
 class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
 
   let abbreviationLabel: UILabel
@@ -15,21 +16,31 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
   private let detailStackView: UIStackView
   private let stackView: UIStackView
   private let abbreviationStackView: UIStackView
+  private let abbreviationHostView: UIView
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     abbreviationLabel = UILabel()
     abbreviationLabel.font = .preferredFont(forTextStyle: .title2)
     abbreviationLabel.textAlignment = .center
+    abbreviationLabel.textColor = .white
     abbreviationLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-    
+
     ordinalLabel = UILabel()
     ordinalLabel.font = .preferredFont(forTextStyle: .body)
     ordinalLabel.textAlignment = .center
+    ordinalLabel.textColor = .white
     ordinalLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
 
     abbreviationStackView = UIStackView(arrangedSubviews: [abbreviationLabel, ordinalLabel])
+    abbreviationStackView.translatesAutoresizingMaskIntoConstraints = false
     abbreviationStackView.axis = .vertical
+
+    abbreviationHostView = UIView()
+    abbreviationHostView.backgroundColor = .red
+    abbreviationHostView.addSubview(abbreviationStackView)
+    abbreviationHostView.layer.cornerCurve = .continuous
+    abbreviationHostView.layer.cornerRadius = 10
 
     nameLabel = UILabel()
     nameLabel.font = .preferredFont(forTextStyle: .headline)
@@ -40,6 +51,7 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     electronConfigurationLabel = UILabel()
     electronConfigurationLabel.font = .preferredFont(forTextStyle: .body)
     electronConfigurationLabel.numberOfLines = 0
+    electronConfigurationLabel.setContentHuggingPriority(.required, for: .horizontal)
 
     detailStackView = UIStackView(arrangedSubviews: [massLabel, electronConfigurationLabel])
     detailStackView.spacing = 5
@@ -47,9 +59,10 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     let infoStackView = UIStackView(arrangedSubviews: [nameLabel, detailStackView])
     infoStackView.axis = .vertical
     
-    stackView = UIStackView(arrangedSubviews: [abbreviationStackView, infoStackView])
+    stackView = UIStackView(arrangedSubviews: [abbreviationHostView, infoStackView])
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.spacing = 20
+    stackView.alignment = .center
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
@@ -60,8 +73,14 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
       stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
       stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
       stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-      
+
+      abbreviationStackView.topAnchor.constraint(equalTo: abbreviationHostView.topAnchor, constant: 8),
+      abbreviationStackView.leadingAnchor.constraint(equalTo: abbreviationHostView.leadingAnchor, constant: 8),
+      abbreviationStackView.bottomAnchor.constraint(equalTo: abbreviationHostView.bottomAnchor, constant: -8),
+      abbreviationStackView.trailingAnchor.constraint(equalTo: abbreviationHostView.trailingAnchor, constant: -8),
+
       abbreviationStackView.widthAnchor.constraint(greaterThanOrEqualToConstant: 60),
+      abbreviationStackView.heightAnchor.constraint(equalTo: abbreviationStackView.widthAnchor),
       ])
   }
   
@@ -75,7 +94,11 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     
     massLabel.text = "\(item.atomMass)"
     electronConfigurationLabel.text = item.electronConfiguration
-    
+
+    let colorFloat = item.atomMass/Double(kMaxMass)
+    let cellColor = UIColor(hue: colorFloat, saturation: 0.8, brightness: 0.7, alpha: 1)
+    abbreviationHostView.backgroundColor = cellColor
+
     if traitCollection.preferredContentSizeCategory.isAccessibilityCategory {
       detailStackView.axis = .vertical
       stackView.axis = .vertical

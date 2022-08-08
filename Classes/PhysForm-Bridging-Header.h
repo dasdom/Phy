@@ -4,3 +4,4 @@
 
 #import "Legacy_Calculator.h"
 #import "CollectionOfElementsViewController.h"
+#import "CollectionOfElementsView.h"
