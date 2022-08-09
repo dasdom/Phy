@@ -3,6 +3,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct BookmarksEntryView : View {
   var entry: BookmarksProvider.Entry
@@ -39,5 +40,12 @@ struct BookmarksEntryView : View {
     } else {
       Text("No bookmarks found")
     }
+  }
+}
+
+struct Bookmarks_Previews: PreviewProvider {
+  static var previews: some View {
+    BookmarksEntryView(entry: BookmarkEntry(date: Date(), widgetBookmark: WidgetBookmark(id: UUID(), field: "Foo", section: "Bar", title: "Baz", imageName: "impulserhaltungssatz")))
+      .previewContext(WidgetPreviewContext(family: .systemMedium))
   }
 }

@@ -81,6 +81,9 @@
 		F241D42728A04FC500F603F8 /* ElementsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D42628A04FC500F603F8 /* ElementsProvider.swift */; };
 		F241D42A28A0500800F603F8 /* ElementEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D42928A0500800F603F8 /* ElementEntry.swift */; };
 		F241D42B28A0505800F603F8 /* ChemElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D742311D7720098B42A /* ChemElement.swift */; };
+		F241D42E28A16D3800F603F8 /* ElementsEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D42D28A16D3800F603F8 /* ElementsEntryView.swift */; };
+		F241D43028A19BE000F603F8 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D42F28A19BE000F603F8 /* Elements.swift */; };
+		F241D43228A2B2FD00F603F8 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D43128A2B2FD00F603F8 /* WidgetProvider.swift */; };
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
 		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
 		F253B8642893C43500530142 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F253B8632893C43500530142 /* WidgetKit.framework */; };
@@ -323,6 +326,9 @@
 		F241D424289FC0DA00F603F8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		F241D42628A04FC500F603F8 /* ElementsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsProvider.swift; sourceTree = "<group>"; };
 		F241D42928A0500800F603F8 /* ElementEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementEntry.swift; sourceTree = "<group>"; };
+		F241D42D28A16D3800F603F8 /* ElementsEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsEntryView.swift; sourceTree = "<group>"; };
+		F241D42F28A19BE000F603F8 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
+		F241D43128A2B2FD00F603F8 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
 		F24201F12645DEA700E0CA97 /* PhyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24201F32645DEA700E0CA97 /* PhyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyUITests.swift; sourceTree = "<group>"; };
 		F24201F52645DEA700E0CA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -786,6 +792,8 @@
 			children = (
 				F241D42628A04FC500F603F8 /* ElementsProvider.swift */,
 				F241D42928A0500800F603F8 /* ElementEntry.swift */,
+				F241D42D28A16D3800F603F8 /* ElementsEntryView.swift */,
+				F241D42F28A19BE000F603F8 /* Elements.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -849,6 +857,7 @@
 		F253B8672893C43500530142 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				F241D43128A2B2FD00F603F8 /* WidgetProvider.swift */,
 				F241D42828A04FDE00F603F8 /* Elements */,
 				F241D41E289FBFEE00F603F8 /* Bookmarks */,
 				F253B86A2893C43600530142 /* Assets.xcassets */,
@@ -1430,9 +1439,12 @@
 				F28D753928941AA60088F573 /* Topic.swift in Sources */,
 				F241D42728A04FC500F603F8 /* ElementsProvider.swift in Sources */,
 				F28D7538289401C30088F573 /* WidgetBookmark.swift in Sources */,
+				F241D42E28A16D3800F603F8 /* ElementsEntryView.swift in Sources */,
 				F28D75342894014D0088F573 /* FileManagerExtension.swift in Sources */,
 				F241D421289FC05A00F603F8 /* BookmarkEntry.swift in Sources */,
 				F28D75362894017F0088F573 /* BookmarkStore.swift in Sources */,
+				F241D43228A2B2FD00F603F8 /* WidgetProvider.swift in Sources */,
+				F241D43028A19BE000F603F8 /* Elements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,7 +5,6 @@
 import WidgetKit
 import SwiftUI
 
-@main
 struct Bookmarks: Widget {
   let kind: String = "Bookmarks"
 
@@ -19,9 +18,3 @@ struct Bookmarks: Widget {
   }
 }
 
-struct Bookmarks_Previews: PreviewProvider {
-  static var previews: some View {
-    BookmarksEntryView(entry: BookmarkEntry(date: Date(), widgetBookmark: WidgetBookmark(id: UUID(), field: "Foo", section: "Bar", title: "Baz", imageName: "impulserhaltungssatz")))
-      .previewContext(WidgetPreviewContext(family: .systemMedium))
-  }
-}
