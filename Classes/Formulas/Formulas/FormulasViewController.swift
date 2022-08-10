@@ -64,6 +64,19 @@ class FormulasViewController: UIViewController {
       var config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
       config.headerMode = .supplementary
 
+      config.trailingSwipeActionsConfigurationProvider = { indexPath in
+        let formula = self.sectionsToShow[indexPath.section].formulas[indexPath.row]
+        let bookmarkAction = UIContextualAction(style: .normal, title: nil, handler: { action, view, completion in
+          self.formulaStore?.addOrRemoveFavorite(formula: formula)
+          self.newSnapshot()
+          completion(true)
+        })
+        bookmarkAction.image = self.bookmarkImage(for: formula, store: self.formulaStore)
+        return UISwipeActionsConfiguration(actions: [
+          bookmarkAction
+        ])
+      }
+
       let section = NSCollectionLayoutSection.list(using: config, layoutEnvironment: layoutEnvironment)
 
       let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
@@ -77,6 +90,21 @@ class FormulasViewController: UIViewController {
 
       return section
     }
+  }
+
+  func bookmarkImage(for formula: Formula, store: FormulaStoreProtocol?) -> UIImage? {
+
+    guard let store = store else {
+      return nil
+    }
+
+    let name: String
+    if store.formulaIsFavorit(formula) {
+      name = "bookmark.fill"
+    } else {
+      name = "bookmark"
+    }
+    return UIImage(systemName: name)
   }
 
   private func configureDataSource() {

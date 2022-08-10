@@ -1347,6 +1347,108 @@
                     ]
                   }
                 ]
+              },
+              {
+                "id": "5C61A6A5-1E87-4566-B91A-9B363C127BA5",
+                "title": "Grundfläche",
+                "imageName": "geometry_pyramid_ground_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_pyramide_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Grundfläche",
+                        "imageName": "geometry_pyramid_ground_area",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#a^2",
+                            "imageName": "geometry_pyramid_ground_area"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "GrundflaecheAbk",
+                        "imageName": "capital_g_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "F6B5326E-6C77-4BA4-A2FD-DF7C64F0E252",
+                "title": "Mantelfläche",
+                "imageName": "geometry_pyramid_mantle_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_pyramide_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Mantelfläche",
+                        "imageName": "geometry_pyramid_mantle_area",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "hS",
+                            "imageName": "h_subscript_capital_s_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × #a × #hS",
+                            "imageName": "geometry_pyramid_mantle_area"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "MantelflaecheAbk",
+                        "imageName": "capital_m_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "SeitenhoeheAbk",
+                        "imageName": "h_subscript_capital_s_colon"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
