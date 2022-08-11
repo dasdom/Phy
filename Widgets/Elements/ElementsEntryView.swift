@@ -18,12 +18,23 @@ struct ElementsEntryView: View {
           Spacer()
           Text(String(format: "%.2lf", entry.element.atomMass))
         }
-        .padding([.horizontal])
+        .padding([.horizontal, .top], 10)
 
-        Text(entry.element.abbreviation)
-          .font(.system(size: 60, weight: .bold, design: .rounded))
-        Text("\(entry.element.name)")
-          .font(.title2)
+        Spacer()
+
+        VStack {
+          Text(entry.element.abbreviation)
+            .font(.system(size: 50, weight: .bold, design: .rounded))
+          Text("\(entry.element.name.localized)")
+            .font(.title2)
+            .minimumScaleFactor(0.8)
+        }
+
+        HStack {
+          Text(entry.element.pauling)
+          Spacer()
+        }
+        .padding([.horizontal, .bottom], 10)
       }
       .foregroundColor(.white)
     }

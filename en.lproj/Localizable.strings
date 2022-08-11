@@ -699,6 +699,12 @@
 "Volumen" = "Volume";
 "OberflaecheAbk" = "Surface";
 "Oberfläche" = "Surface";
+"Pyramide" = "Pyramid";
+"Grundfläche" = "Base area";
+"Mantelfläche" = "Mantle surface";
+"GrundflaecheAbk" = "Base area";
+"MantelflaecheAbk" = "Mantle surface";
+"SeitenhoeheAbk" = "Side height";
 
 // MARK: Potency Laws
 "Potenzgesetze" = "Potency Laws";
