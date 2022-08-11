@@ -35,7 +35,7 @@ struct BookmarksEntryView : View {
             .aspectRatio(contentMode: .fit)
         }
       }
-      .padding()
+      .padding(10)
       .widgetURL(URL(string: "widget://\(bookmark.id)")!)
     } else {
       Text("No bookmarks found")
