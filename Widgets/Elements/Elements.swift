@@ -9,7 +9,7 @@ struct Elements: Widget {
   let kind: String = "Elements"
 
   var body: some WidgetConfiguration {
-    StaticConfiguration(kind: kind, provider: ElementsProvider()) { entry in
+    IntentConfiguration(kind: kind, intent: ViewElementIntent.self, provider: ElementsProvider()) { entry in
       ElementsEntryView(entry: entry)
     }
     .configurationDisplayName("Elements")

@@ -6,13 +6,13 @@ import WidgetKit
 
 struct BookmarksProvider: TimelineProvider {
   func placeholder(in context: Context) -> BookmarkEntry {
-    BookmarkEntry(date: Date(), widgetBookmark: nil)
+    BookmarkEntry(date: Date(), widgetBookmark: WidgetBookmark(id: UUID(uuidString: "BEA6B79D-6849-4803-AB36-27AE8CC99964")!, field: "Mechanik", section: "unbeschleunigte Bewegung", title: "Impulserhaltungssatz", imageName: "impulserhaltungssatz"))
   }
 
   func getSnapshot(in context: Context,
                    completion: @escaping (BookmarkEntry) -> ()) {
 
-    let entry = BookmarkEntry(date: Date(), widgetBookmark: nil)
+    let entry = BookmarkEntry(date: Date(), widgetBookmark: WidgetBookmark(id: UUID(uuidString: "BEA6B79D-6849-4803-AB36-27AE8CC99964")!, field: "Mechanik", section: "unbeschleunigte Bewegung", title: "Impulserhaltungssatz", imageName: "impulserhaltungssatz"))
     completion(entry)
   }
 

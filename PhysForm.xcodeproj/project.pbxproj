@@ -73,6 +73,9 @@
 		F23EBE74230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EBE73230DDF0200E8F4E4 /* SpecialFieldSectionTests.swift */; };
 		F23EBE7B23100CFE00E8F4E4 /* data_math.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7923100CFE00E8F4E4 /* data_math.json */; };
 		F23EBE7C23100CFE00E8F4E4 /* data_physics.json in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE7A23100CFE00E8F4E4 /* data_physics.json */; };
+		F2410B7828A54FF0002D2A66 /* data_elements.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DB7D7223118E590098B42A /* data_elements.json */; };
+		F2410B7A28A59318002D2A66 /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = F2410B7928A59318002D2A66 /* CommonExtensions */; };
+		F2410B7B28A59322002D2A66 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F270E2041005DD7000843391 /* Localizable.strings */; };
 		F241D41B289FAF6C00F603F8 /* data_elements.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DB7D7223118E590098B42A /* data_elements.json */; };
 		F241D41F289FC03A00F603F8 /* BookmarksProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D41C289FBFDB00F603F8 /* BookmarksProvider.swift */; };
 		F241D421289FC05A00F603F8 /* BookmarkEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D420289FC05A00F603F8 /* BookmarkEntry.swift */; };
@@ -84,6 +87,13 @@
 		F241D42E28A16D3800F603F8 /* ElementsEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D42D28A16D3800F603F8 /* ElementsEntryView.swift */; };
 		F241D43028A19BE000F603F8 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D42F28A19BE000F603F8 /* Elements.swift */; };
 		F241D43228A2B2FD00F603F8 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D43128A2B2FD00F603F8 /* WidgetProvider.swift */; };
+		F241D43D28A530C100F603F8 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F241D43C28A530C100F603F8 /* Intents.framework */; };
+		F241D44028A530C100F603F8 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D43F28A530C100F603F8 /* IntentHandler.swift */; };
+		F241D44428A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F241D43B28A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F241D44928A5318400F603F8 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */; };
+		F241D44C28A5393900F603F8 /* ChemElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D742311D7720098B42A /* ChemElement.swift */; };
+		F241D44D28A5402A00F603F8 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */; };
+		F241D44F28A54BC200F603F8 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */; };
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
 		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
 		F253B8642893C43500530142 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F253B8632893C43500530142 /* WidgetKit.framework */; };
@@ -211,6 +221,13 @@
 			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
 			remoteInfo = PhysForm;
 		};
+		F241D44228A530C100F603F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F241D43A28A530C100F603F8;
+			remoteInfo = PhysicsPlusPlusIntentHandler;
+		};
 		F24201F62645DEA700E0CA97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -235,6 +252,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				F253B86F2893C43600530142 /* WidgetsExtension.appex in Embed App Extensions */,
+				F241D44428A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +347,11 @@
 		F241D42D28A16D3800F603F8 /* ElementsEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsEntryView.swift; sourceTree = "<group>"; };
 		F241D42F28A19BE000F603F8 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 		F241D43128A2B2FD00F603F8 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
+		F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ElementsIntents.intentdefinition; sourceTree = "<group>"; };
+		F241D43B28A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhysicsPlusPlusIntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F241D43C28A530C100F603F8 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		F241D43F28A530C100F603F8 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		F241D44128A530C100F603F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24201F12645DEA700E0CA97 /* PhyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24201F32645DEA700E0CA97 /* PhyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyUITests.swift; sourceTree = "<group>"; };
 		F24201F52645DEA700E0CA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -461,6 +484,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F241D43828A530C100F603F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F241D43D28A530C100F603F8 /* Intents.framework in Frameworks */,
+				F2410B7A28A59318002D2A66 /* CommonExtensions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F24201EE2645DEA700E0CA97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +543,7 @@
 				F239BAC820F8C0CD00612965 /* PhyTests.xctest */,
 				F24201F12645DEA700E0CA97 /* PhyUITests.xctest */,
 				F253B8622893C43500530142 /* WidgetsExtension.appex */,
+				F241D43B28A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -523,11 +556,13 @@
 				F253B8762893C6BF00530142 /* BookmarksExtensionDebug.entitlements */,
 				F253B8752893C66200530142 /* PhysFormDebug.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
+				F241D43628A52A9E00F603F8 /* Intents */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				F2C8FA73267DCF6A008C8F82 /* PhysForm.xctestplan */,
 				F239BAC920F8C0CE00612965 /* PhyTests */,
 				F24201F22645DEA700E0CA97 /* PhyUITests */,
 				F253B8672893C43500530142 /* Widgets */,
+				F241D43E28A530C100F603F8 /* PhysicsPlusPlusIntentHandler */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -580,6 +615,7 @@
 				F2AC138813659F61006465C7 /* QuartzCore.framework */,
 				F253B8632893C43500530142 /* WidgetKit.framework */,
 				F253B8652893C43500530142 /* SwiftUI.framework */,
+				F241D43C28A530C100F603F8 /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -813,6 +849,23 @@
 				F2D028FB2889A81700DC8564 /* ElementInfoCell.m */,
 			);
 			path = PeriodicTable;
+			sourceTree = "<group>";
+		};
+		F241D43628A52A9E00F603F8 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		F241D43E28A530C100F603F8 /* PhysicsPlusPlusIntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				F241D43F28A530C100F603F8 /* IntentHandler.swift */,
+				F241D44128A530C100F603F8 /* Info.plist */,
+			);
+			path = PhysicsPlusPlusIntentHandler;
 			sourceTree = "<group>";
 		};
 		F24201F22645DEA700E0CA97 /* PhyUITests */ = {
@@ -1071,6 +1124,7 @@
 			);
 			dependencies = (
 				F253B86E2893C43600530142 /* PBXTargetDependency */,
+				F241D44328A530C100F603F8 /* PBXTargetDependency */,
 			);
 			name = PhysForm;
 			packageProductDependencies = (
@@ -1100,6 +1154,26 @@
 			productName = PhyTests;
 			productReference = F239BAC820F8C0CD00612965 /* PhyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F241D43A28A530C100F603F8 /* PhysicsPlusPlusIntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F241D44528A530C100F603F8 /* Build configuration list for PBXNativeTarget "PhysicsPlusPlusIntentHandler" */;
+			buildPhases = (
+				F241D43728A530C100F603F8 /* Sources */,
+				F241D43828A530C100F603F8 /* Frameworks */,
+				F241D43928A530C100F603F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysicsPlusPlusIntentHandler;
+			packageProductDependencies = (
+				F2410B7928A59318002D2A66 /* CommonExtensions */,
+			);
+			productName = PhysicsPlusPlusIntentHandler;
+			productReference = F241D43B28A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		F24201F02645DEA700E0CA97 /* PhyUITests */ = {
 			isa = PBXNativeTarget;
@@ -1161,6 +1235,9 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D6058900D05DD3D006BFB54;
 					};
+					F241D43A28A530C100F603F8 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					F24201F02645DEA700E0CA97 = {
 						CreatedOnToolsVersion = 12.5;
 						DevelopmentTeam = Q6PD97MRX4;
@@ -1196,6 +1273,7 @@
 				F239BAC720F8C0CD00612965 /* PhyTests */,
 				F24201F02645DEA700E0CA97 /* PhyUITests */,
 				F253B8612893C43500530142 /* WidgetsExtension */,
+				F241D43A28A530C100F603F8 /* PhysicsPlusPlusIntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -1243,6 +1321,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F241D43928A530C100F603F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2410B7828A54FF0002D2A66 /* data_elements.json in Resources */,
+				F2410B7B28A59322002D2A66 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1307,6 +1394,7 @@
 				F29AEB4422EB034E00EB4E26 /* Legacy_Calculator.m in Sources */,
 				F2DB7D6B231076250098B42A /* TopicDataSource.swift in Sources */,
 				F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */,
+				F241D44F28A54BC200F603F8 /* ElementsIntents.intentdefinition in Sources */,
 				F2DB7D5823101A730098B42A /* FormulaDetailItem.swift in Sources */,
 				F29FC6FE2670118D00A46182 /* ConvertersTableViewController.swift in Sources */,
 				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
@@ -1417,6 +1505,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F241D43728A530C100F603F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F241D44C28A5393900F603F8 /* ChemElement.swift in Sources */,
+				F241D44928A5318400F603F8 /* ElementsIntents.intentdefinition in Sources */,
+				F241D44028A530C100F603F8 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F24201ED2645DEA700E0CA97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1438,6 +1536,7 @@
 				F25D83592894335400FF74D2 /* PDFImageView.swift in Sources */,
 				F28D753928941AA60088F573 /* Topic.swift in Sources */,
 				F241D42728A04FC500F603F8 /* ElementsProvider.swift in Sources */,
+				F241D44D28A5402A00F603F8 /* ElementsIntents.intentdefinition in Sources */,
 				F28D7538289401C30088F573 /* WidgetBookmark.swift in Sources */,
 				F241D42E28A16D3800F603F8 /* ElementsEntryView.swift in Sources */,
 				F28D75342894014D0088F573 /* FileManagerExtension.swift in Sources */,
@@ -1455,6 +1554,11 @@
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* PhysForm */;
 			targetProxy = F239BACD20F8C0CE00612965 /* PBXContainerItemProxy */;
+		};
+		F241D44328A530C100F603F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F241D43A28A530C100F603F8 /* PhysicsPlusPlusIntentHandler */;
+			targetProxy = F241D44228A530C100F603F8 /* PBXContainerItemProxy */;
 		};
 		F24201F72645DEA700E0CA97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1707,7 +1811,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Classes/PhysForm-Bridging-Header.h";
@@ -1847,6 +1950,163 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phy.app/Phy";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		F241D44628A530C100F603F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PhysicsPlusPlusIntentHandler/PhysicsPlusPlusIntentHandlerDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhysicsPlusPlusIntentHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhysicsPlusPlusIntentHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 dasdom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.PhysicsPlusPlusIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F241D44728A530C100F603F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PhysicsPlusPlusIntentHandler/PhysicsPlusPlusIntentHandlerRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhysicsPlusPlusIntentHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhysicsPlusPlusIntentHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 dasdom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.PhysicsPlusPlusIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F241D44828A530C100F603F8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominik Hauser";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhysicsPlusPlusIntentHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhysicsPlusPlusIntentHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 dasdom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.PhysicsPlusPlusIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -2178,6 +2438,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F241D44528A530C100F603F8 /* Build configuration list for PBXNativeTarget "PhysicsPlusPlusIntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F241D44628A530C100F603F8 /* Debug */,
+				F241D44728A530C100F603F8 /* Release */,
+				F241D44828A530C100F603F8 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F24201FB2645DEA700E0CA97 /* Build configuration list for PBXNativeTarget "PhyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2224,6 +2494,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
+		};
+		F2410B7928A59318002D2A66 /* CommonExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */;
+			productName = CommonExtensions;
 		};
 		F25DF965268CBF1D00B6E456 /* CommonExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
