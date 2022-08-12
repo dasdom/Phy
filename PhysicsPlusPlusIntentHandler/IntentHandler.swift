@@ -33,11 +33,11 @@ extension IntentHandler: ViewElementIntentHandling {
     let elements: [Element]
     if let lowercaseSearchTerm = searchTerm?.lowercased() {
       elements = chemElements.filter({ $0.name.localized.lowercased().contains(lowercaseSearchTerm) }).map({ chemElement in
-        return Element(identifier: "\(chemElement.ordinal)", display: chemElement.name.localized)
+        return Element(identifier: "\(chemElement.ordinal)", display: "\(chemElement.ordinal) \(chemElement.name.localized)")
       })
     } else {
       elements = [Element(identifier: "-1", display: "Random")] + chemElements.map({ chemElement in
-        return Element(identifier: "\(chemElement.ordinal)", display: chemElement.name.localized)
+        return Element(identifier: "\(chemElement.ordinal)", display: "\(chemElement.ordinal) \(chemElement.name.localized)")
       })
     }
 //    let elements = [Element(identifier: "1", display: "Wasserstoff")]

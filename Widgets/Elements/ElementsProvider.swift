@@ -35,7 +35,7 @@ struct ElementsProvider: IntentTimelineProvider {
 
     var entries: [ElementEntry] = []
 
-    let filteredElement = elements.first(where: { $0.name.localized == configuration.element?.displayString })
+    let filteredElement = elements.first(where: { $0.ordinal == Int(configuration.element?.identifier ?? "-1") })
 
     let currentDate = Date()
     for hourOffset in 0..<10 {
