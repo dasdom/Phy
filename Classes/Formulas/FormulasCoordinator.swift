@@ -6,6 +6,7 @@ import UIKit
 import SwiftUI
 import MessageUI
 import CommonExtensions
+import Inject
 
 class FormulasCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
   
@@ -48,7 +49,7 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
       case .elements:
         let elements = formulaStore.elements()
         let dataSource = ChemElementsDataSource(elements: elements)
-        let next = ChemElementsTableViewController(style: .plain, dataSource: dataSource)
+        let next = Inject.ViewControllerHost(ChemElementsTableViewController(style: .plain, dataSource: dataSource))
         next.title = topic.title.localized
         presenter.pushViewController(next, animated: true)
       case .feedback:

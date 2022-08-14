@@ -16,7 +16,9 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
   private let detailStackView: UIStackView
   private let stackView: UIStackView
   private let abbreviationStackView: UIStackView
-  private let abbreviationHostView: UIView
+  private let coloredSquareView: UIView
+  private var coloredViewLeadingConstraint: NSLayoutConstraint?
+  private var coloredViewTrailingConstraint: NSLayoutConstraint?
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
@@ -25,22 +27,28 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     abbreviationLabel.textAlignment = .center
     abbreviationLabel.textColor = .white
     abbreviationLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+    abbreviationLabel.setContentCompressionResistancePriority(.required, for: .vertical)
 
     ordinalLabel = UILabel()
     ordinalLabel.font = .preferredFont(forTextStyle: .body)
     ordinalLabel.textAlignment = .center
     ordinalLabel.textColor = .white
     ordinalLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+    ordinalLabel.setContentCompressionResistancePriority(.required, for: .vertical)
 
     abbreviationStackView = UIStackView(arrangedSubviews: [abbreviationLabel, ordinalLabel])
     abbreviationStackView.translatesAutoresizingMaskIntoConstraints = false
     abbreviationStackView.axis = .vertical
 
-    abbreviationHostView = UIView()
-    abbreviationHostView.backgroundColor = .red
-    abbreviationHostView.addSubview(abbreviationStackView)
-    abbreviationHostView.layer.cornerCurve = .continuous
-    abbreviationHostView.layer.cornerRadius = 10
+    coloredSquareView = UIView()
+    coloredSquareView.translatesAutoresizingMaskIntoConstraints = false
+    coloredSquareView.backgroundColor = .red
+    coloredSquareView.addSubview(abbreviationStackView)
+    coloredSquareView.layer.cornerCurve = .continuous
+    coloredSquareView.layer.cornerRadius = 10
+
+    let hostView = UIView()
+    hostView.addSubview(coloredSquareView)
 
     nameLabel = UILabel()
     nameLabel.font = .preferredFont(forTextStyle: .headline)
@@ -58,30 +66,42 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
     
     let infoStackView = UIStackView(arrangedSubviews: [nameLabel, detailStackView])
     infoStackView.axis = .vertical
-    
-    stackView = UIStackView(arrangedSubviews: [abbreviationHostView, infoStackView])
+
+    stackView = UIStackView(arrangedSubviews: [hostView, infoStackView])
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.spacing = 20
-    stackView.alignment = .center
-    
+
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     contentView.addSubview(stackView)
-    
+
+    let coloredViewLeadingConstraint = coloredSquareView.leadingAnchor.constraint(equalTo: hostView.leadingAnchor)
+    let coloredViewTrailingConstraint = coloredSquareView.trailingAnchor.constraint(equalTo: hostView.trailingAnchor)
+
     NSLayoutConstraint.activate([
       stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
       stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
       stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
       stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
 
-      abbreviationStackView.topAnchor.constraint(equalTo: abbreviationHostView.topAnchor, constant: 8),
-      abbreviationStackView.leadingAnchor.constraint(equalTo: abbreviationHostView.leadingAnchor, constant: 8),
-      abbreviationStackView.bottomAnchor.constraint(equalTo: abbreviationHostView.bottomAnchor, constant: -8),
-      abbreviationStackView.trailingAnchor.constraint(equalTo: abbreviationHostView.trailingAnchor, constant: -8),
+      abbreviationStackView.topAnchor.constraint(equalTo: coloredSquareView.topAnchor, constant: 8),
+      abbreviationStackView.leadingAnchor.constraint(equalTo: coloredSquareView.leadingAnchor, constant: 8),
+      abbreviationStackView.bottomAnchor.constraint(equalTo: coloredSquareView.bottomAnchor, constant: -8),
+      abbreviationStackView.trailingAnchor.constraint(equalTo: coloredSquareView.trailingAnchor, constant: -8),
+
+      coloredSquareView.topAnchor.constraint(equalTo: hostView.topAnchor),
+      coloredSquareView.bottomAnchor.constraint(equalTo: hostView.bottomAnchor) ,
+//      coloredSquareView.centerXAnchor.constraint(equalTo: hostView.centerXAnchor),
+
+      coloredViewLeadingConstraint,
+      coloredViewTrailingConstraint,
 
       abbreviationStackView.widthAnchor.constraint(greaterThanOrEqualToConstant: 60),
       abbreviationStackView.heightAnchor.constraint(equalTo: abbreviationStackView.widthAnchor),
       ])
+
+    self.coloredViewLeadingConstraint = coloredViewLeadingConstraint
+    self.coloredViewTrailingConstraint = coloredViewTrailingConstraint
   }
   
   required init?(coder aDecoder: NSCoder) { fatalError() }
@@ -97,16 +117,20 @@ class ChemElementCell: DDHBaseTableViewCell<ChemElement> {
 
     let colorFloat = item.atomMass/Double(kMaxMass)
     let cellColor = UIColor(hue: colorFloat, saturation: 0.8, brightness: 0.7, alpha: 1)
-    abbreviationHostView.backgroundColor = cellColor
+    coloredSquareView.backgroundColor = cellColor
 
     if traitCollection.preferredContentSizeCategory.isAccessibilityCategory {
       detailStackView.axis = .vertical
       stackView.axis = .vertical
-      abbreviationStackView.alignment = .leading
+//      abbreviationStackView.alignment = .leading
+//      coloredViewLeadingConstraint?.isActive = false
+      coloredViewTrailingConstraint?.isActive = false
     } else {
       detailStackView.axis = .horizontal
       stackView.axis = .horizontal
-      abbreviationStackView.alignment = .fill
+//      abbreviationStackView.alignment = .fill
+//      coloredViewLeadingConstraint?.isActive = true
+      coloredViewTrailingConstraint?.isActive = true
     }
   }
 }

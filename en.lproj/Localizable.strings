@@ -705,6 +705,8 @@
 "GrundflaecheAbk" = "Base area";
 "MantelflaecheAbk" = "Mantle surface";
 "SeitenhoeheAbk" = "Side height";
+"Seitenhöhe" = "Side height";
+"Kegel" = "Cone";
 
 // MARK: Potency Laws
 "Potenzgesetze" = "Potency Laws";

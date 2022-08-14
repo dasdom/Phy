@@ -1449,6 +1449,101 @@
                     ]
                   }
                 ]
+              },
+              {
+                "id": "D58703A6-3860-45B9-94F7-947B7C674412",
+                "title": "Seitenhöhe",
+                "imageName": "geometry_pyramid_side_height",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_pyramide_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Seitenhöhe",
+                        "imageName": "geometry_pyramid_side_height",
+                        "inputs": [
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt((#a ÷ 2)^2 + #h^2)",
+                            "imageName": "geometry_pyramid_side_height"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Seitenlänge",
+                        "imageName": "geometry_pyramid_side_length_from_side_height_and_height",
+                        "inputs": [
+                          {
+                            "id": "hS",
+                            "imageName": "h_subscript_capital_s_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × sqrt(#hS^2 - #h^2)",
+                            "imageName": "geometry_pyramid_side_length_from_side_height_and_height"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Höhe",
+                        "imageName": "geometry_pyramid_height_from_side_height_and_side_length",
+                        "inputs": [
+                          {
+                            "id": "hS",
+                            "imageName": "h_subscript_capital_s_colon"
+                          },
+                          {
+                            "id": "a",
+                            "imageName": "a_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "sqrt(#hS^2 - (#a ÷ 2)^2)",
+                            "imageName": "geometry_pyramid_height_from_side_height_and_side_length"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "SeitenhoeheAbk",
+                        "imageName": "h_subscript_capital_s_colon"
+                      },
+                      {
+                        "title": "SeitenlaengeAbk",
+                        "imageName": "a_colon"
+                      },
+                      {
+                        "title": "HoeheAbk",
+                        "imageName": "h_colon"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1561,8 +1656,84 @@
                         ],
                         "results": [
                           {
-                            "formula": "𝜋 × #r^2 + 𝜋 × #r × sqrt(#r^2 + # h^2)",
+                            "formula": "𝜋 × #r^2 + 𝜋 × #r × sqrt(#r^2 + #h^2)",
                             "imageName": "geometry_cone_surface_r_h"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Oberfläche",
+                        "imageName": "geometry_cone_surface_ground_mantle",
+                        "inputs": [
+                          {
+                            "id": "G",
+                            "imageName": "capital_g_colon"
+                          },
+                          {
+                            "id": "M",
+                            "imageName": "capital_m_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "#G + #M",
+                            "imageName": "geometry_cone_surface_ground_mantle"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Grundfläche",
+                        "imageName": "geometry_cone_base_area",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r^2",
+                            "imageName": "geometry_cone_base_area"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Mantelfläche",
+                        "imageName": "geometry_cone_mantle_surface",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          },
+                          {
+                            "id": "hS",
+                            "imageName": "h_subscript_capital_s_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r × #hS",
+                            "imageName": "geometry_cone_mantle_surface"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Mantelfläche",
+                        "imageName": "geometry_cone_mantle_surface_with_radius_and_height",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r × sqrt(#r^2 + #h^2)",
+                            "imageName": "geometry_cone_mantle_surface_with_radius_and_height"
                           }
                         ]
                       }
@@ -1581,6 +1752,61 @@
                       {
                         "title": "SeitenhoeheAbk",
                         "imageName": "h_subscript_capital_s_colon"
+                      },
+                      {
+                        "title": "GrundflaecheAbk",
+                        "imageName": "capital_g_colon"
+                      },
+                      {
+                        "title": "MantelflaecheAbk",
+                        "imageName": "capital_m_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "F2B1A051-D689-4D27-AF68-109CA387A644",
+                "title": "Grundfläche",
+                "imageName": "geometry_cone_base_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cone_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Grundfläche",
+                        "imageName": "geometry_cone_base_area",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r^2",
+                            "imageName": "geometry_cone_base_area"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "GrundflaecheAbk",
+                        "imageName": "capital_g_colon"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_colon"
                       }
                     ]
                   }

@@ -119,6 +119,7 @@
 		F2716A1422F8766C007D1528 /* SpecialFieldCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1322F8766C007D1528 /* SpecialFieldCellTests.swift */; };
 		F2716A1622F8789F007D1528 /* FormulasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1522F8789F007D1528 /* FormulasViewController.swift */; };
 		F2716A1E22F8C753007D1528 /* NameAndFormulaImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716A1D22F8C753007D1528 /* NameAndFormulaImageTableViewCell.swift */; };
+		F274F8FE28A8E7E200C96BC1 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = F274F8FD28A8E7E200C96BC1 /* Inject */; };
 		F279640C1143FAEA00B8EBDE /* addFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = F279640B1143FAEA00B8EBDE /* addFormula.png */; };
 		F279640E1143FAFD00B8EBDE /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = F279640D1143FAFD00B8EBDE /* favorites.db */; };
 		F27B8151268A571D00785816 /* AddUUIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8150268A571D00785816 /* AddUUIDTests.swift */; };
@@ -473,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25DF966268CBF1D00B6E456 /* CommonExtensions in Frameworks */,
+				F274F8FE28A8E7E200C96BC1 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1129,6 +1131,7 @@
 			name = PhysForm;
 			packageProductDependencies = (
 				F25DF965268CBF1D00B6E456 /* CommonExtensions */,
+				F274F8FD28A8E7E200C96BC1 /* Inject */,
 			);
 			productName = PhysForm;
 			productReference = 1D6058910D05DD3D006BFB54 /* Phy.app */;
@@ -1265,6 +1268,7 @@
 			packageReferences = (
 				F20C827F265A260500A8F3FC /* XCRemoteSwiftPackageReference "ViewInspector" */,
 				F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */,
+				F274F8FC28A8E7E200C96BC1 /* XCRemoteSwiftPackageReference "Inject" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -1614,6 +1618,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.6.1;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1653,6 +1661,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.6.1;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1808,6 +1820,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.6.1;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy;
 				PRODUCT_NAME = Phy;
 				PROVISIONING_PROFILE = "";
@@ -1998,6 +2014,10 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.PhysicsPlusPlusIntentHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2049,6 +2069,10 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.PhysicsPlusPlusIntentHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2099,6 +2123,10 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.PhysicsPlusPlusIntentHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2288,6 +2316,10 @@
 				MARKETING_VERSION = 3.6.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2341,6 +2373,10 @@
 				MARKETING_VERSION = 3.6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2393,6 +2429,10 @@
 				MARKETING_VERSION = 3.6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.phy.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2487,6 +2527,14 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		F274F8FC28A8E7E200C96BC1 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2504,6 +2552,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F25DF964268CBF1D00B6E456 /* XCRemoteSwiftPackageReference "CommonExtensions" */;
 			productName = CommonExtensions;
+		};
+		F274F8FD28A8E7E200C96BC1 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F274F8FC28A8E7E200C96BC1 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
 		};
 		F28D75162893FD170088F573 /* CommonExtensions */ = {
 			isa = XCSwiftPackageProductDependency;

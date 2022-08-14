@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "geometry_cone_mantle_surface_with_radius_and_height.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "template"
+  }
+}
