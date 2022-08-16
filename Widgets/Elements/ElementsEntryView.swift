@@ -18,7 +18,7 @@ struct ElementsEntryView: View {
           Spacer()
           Text(String(format: "%.2lf", entry.element.atomMass))
         }
-        .padding([.horizontal, .top], 10)
+        .padding([.horizontal, .top])
 
         Spacer()
 
@@ -34,7 +34,7 @@ struct ElementsEntryView: View {
           Text(entry.element.pauling)
           Spacer()
         }
-        .padding([.horizontal, .bottom], 10)
+        .padding([.horizontal, .bottom])
       }
       .foregroundColor(.white)
     }

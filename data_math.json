@@ -1811,6 +1811,81 @@
                     ]
                   }
                 ]
+              },
+              {
+                "id": "D16CE040-BBF9-428A-8F45-0CF9B49BB778",
+                "title": "Mantelfläche",
+                "imageName": "geometry_cone_mantle_surface",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cone_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Mantelfläche",
+                        "imageName": "geometry_cone_mantle_surface",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          },
+                          {
+                            "id": "hS",
+                            "imageName": "h_subscript_capital_s_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r × #hS",
+                            "imageName": "geometry_cone_mantle_surface"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Mantelfläche",
+                        "imageName": "geometry_cone_mantle_surface_with_radius_and_height",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r × sqrt(#r^2 + #h^2)",
+                            "imageName": "geometry_cone_mantle_surface_with_radius_and_height"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "MantelflaecheAbk",
+                        "imageName": "capital_m_colon"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_colon"
+                      },
+                      {
+                        "title": "SeitenhoeheAbk",
+                        "imageName": "h_subscript_capital_s_colon"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
