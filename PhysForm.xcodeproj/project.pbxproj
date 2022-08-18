@@ -90,10 +90,7 @@
 		F241D43D28A530C100F603F8 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F241D43C28A530C100F603F8 /* Intents.framework */; };
 		F241D44028A530C100F603F8 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241D43F28A530C100F603F8 /* IntentHandler.swift */; };
 		F241D44428A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F241D43B28A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F241D44928A5318400F603F8 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */; };
 		F241D44C28A5393900F603F8 /* ChemElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7D742311D7720098B42A /* ChemElement.swift */; };
-		F241D44D28A5402A00F603F8 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */; };
-		F241D44F28A54BC200F603F8 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */; };
 		F24201F42645DEA700E0CA97 /* PhyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201F32645DEA700E0CA97 /* PhyUITests.swift */; };
 		F24201FE264B1CB100E0CA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24201FD264B1CB000E0CA97 /* SceneDelegate.swift */; };
 		F253B8642893C43500530142 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F253B8632893C43500530142 /* WidgetKit.framework */; };
@@ -212,6 +209,9 @@
 		F2E6176D263BEB9D008EB858 /* SearchFormulasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6176C263BEB9D008EB858 /* SearchFormulasViewController.swift */; };
 		F2F9033C2680F7AA0026732A /* SearchFormulasViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9033B2680F7AA0026732A /* SearchFormulasViewControllerTests.swift */; };
 		F2FADFFD288ABAA200734BF9 /* ElementButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FADFFC288ABAA200734BF9 /* ElementButton.m */; };
+		F2FF32F228AE550A00BC6622 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32F628AE550A00BC6622 /* ElementsIntents.intentdefinition */; };
+		F2FF32F328AE550A00BC6622 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32F628AE550A00BC6622 /* ElementsIntents.intentdefinition */; };
+		F2FF32F428AE550A00BC6622 /* ElementsIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32F628AE550A00BC6622 /* ElementsIntents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -348,7 +348,6 @@
 		F241D42D28A16D3800F603F8 /* ElementsEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsEntryView.swift; sourceTree = "<group>"; };
 		F241D42F28A19BE000F603F8 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 		F241D43128A2B2FD00F603F8 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
-		F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ElementsIntents.intentdefinition; sourceTree = "<group>"; };
 		F241D43B28A530C100F603F8 /* PhysicsPlusPlusIntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhysicsPlusPlusIntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F241D43C28A530C100F603F8 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		F241D43F28A530C100F603F8 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -466,6 +465,8 @@
 		F2F9033B2680F7AA0026732A /* SearchFormulasViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormulasViewControllerTests.swift; sourceTree = "<group>"; };
 		F2FADFFB288ABAA200734BF9 /* ElementButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementButton.h; sourceTree = "<group>"; };
 		F2FADFFC288ABAA200734BF9 /* ElementButton.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ElementButton.m; sourceTree = "<group>"; tabWidth = 4; };
+		F2FF32F528AE550A00BC6622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/ElementsIntents.intentdefinition; sourceTree = "<group>"; };
+		F2FF32F828AE550F00BC6622 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ElementsIntents.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -856,7 +857,7 @@
 		F241D43628A52A9E00F603F8 /* Intents */ = {
 			isa = PBXGroup;
 			children = (
-				F241D43328A52A8900F603F8 /* ElementsIntents.intentdefinition */,
+				F2FF32F628AE550A00BC6622 /* ElementsIntents.intentdefinition */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
@@ -1399,7 +1400,7 @@
 				F29AEB4422EB034E00EB4E26 /* Legacy_Calculator.m in Sources */,
 				F2DB7D6B231076250098B42A /* TopicDataSource.swift in Sources */,
 				F29AEB5922EB2F2100EB4E26 /* SolverResult.swift in Sources */,
-				F241D44F28A54BC200F603F8 /* ElementsIntents.intentdefinition in Sources */,
+				F2FF32F228AE550A00BC6622 /* ElementsIntents.intentdefinition in Sources */,
 				F2DB7D5823101A730098B42A /* FormulaDetailItem.swift in Sources */,
 				F29FC6FE2670118D00A46182 /* ConvertersTableViewController.swift in Sources */,
 				F294101622E7AD1B00379868 /* StartScene.swift in Sources */,
@@ -1515,7 +1516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F241D44C28A5393900F603F8 /* ChemElement.swift in Sources */,
-				F241D44928A5318400F603F8 /* ElementsIntents.intentdefinition in Sources */,
+				F2FF32F428AE550A00BC6622 /* ElementsIntents.intentdefinition in Sources */,
 				F241D44028A530C100F603F8 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1541,7 +1542,7 @@
 				F25D83592894335400FF74D2 /* PDFImageView.swift in Sources */,
 				F28D753928941AA60088F573 /* Topic.swift in Sources */,
 				F241D42728A04FC500F603F8 /* ElementsProvider.swift in Sources */,
-				F241D44D28A5402A00F603F8 /* ElementsIntents.intentdefinition in Sources */,
+				F2FF32F328AE550A00BC6622 /* ElementsIntents.intentdefinition in Sources */,
 				F28D7538289401C30088F573 /* WidgetBookmark.swift in Sources */,
 				F241D42E28A16D3800F603F8 /* ElementsEntryView.swift in Sources */,
 				F28D75342894014D0088F573 /* FileManagerExtension.swift in Sources */,
@@ -1585,6 +1586,15 @@
 				F270E2081005DDE400843391 /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F2FF32F628AE550A00BC6622 /* ElementsIntents.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2FF32F528AE550A00BC6622 /* Base */,
+				F2FF32F828AE550F00BC6622 /* de */,
+			);
+			name = ElementsIntents.intentdefinition;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
