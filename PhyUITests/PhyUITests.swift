@@ -14,6 +14,7 @@ class PhyUITests: XCTestCase {
     continueAfterFailure = false
     
     // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+
   }
   
   override func tearDownWithError() throws {
@@ -31,39 +32,44 @@ class PhyUITests: XCTestCase {
 
     sleep(1)
 
-    takeScreenshot(named: "start")
-    
     app.tables.firstMatch.cells.element(boundBy: 0).tap()
     
-    takeScreenshot(named: "special_fields")
+    takeScreenshot(named: "1_special_fields")
 
     app.tables.firstMatch.cells.element(boundBy: 4).tap()
     
-    takeScreenshot(named: "special_field")
+    takeScreenshot(named: "2_special_field")
 
-    app.collectionViews.firstMatch.cells.element(boundBy: 3).tap()
-    
-    takeScreenshot(named: "formula")
+    var button = app.navigationBars.buttons.firstMatch
+    if button.exists {
+      button.tap()
+    }
 
-//    app.tabBars.firstMatch.buttons.element(boundBy: 1).tap()
-//
-//    app.buttons["const"].tap()
-//
-//    takeScreenshot(named: "calculator_constants")
+    app.tables.firstMatch.cells.element(boundBy: 0).tap()
 
-//    app.tables.firstMatch.cells.element(boundBy: 2).tap()
-//
-//    var calcString: String = "×5.9723e24×455000÷400e3^2="
-//    calcString.forEach { character in
-//      let string = String(character)
-//      app.buttons[string].tap()
-//    }
-//
-//    takeScreenshot(named: "calculator_result")
+    if XCUIDevice.shared.supportsPointerInteraction {
+      app.collectionViews.firstMatch.cells.element(boundBy: 11).tap()
+    } else {
+      app.collectionViews.firstMatch.cells.element(boundBy: 9).tap()
+    }
+
+    takeScreenshot(named: "3_formula")
+
+    app.tables.firstMatch.cells.element(boundBy: 1).tap()
+
+    app.textFields.element(boundBy: 0).typeText("5")
+
+    let textField = app.textFields.element(boundBy: 2)
+    textField.tap()
+    textField.typeText("0.3")
+
+    app.buttons["Calculate"].tap()
+
+    takeScreenshot(named: "4_formula_calculator")
 
     app.tabBars.firstMatch.buttons.element(boundBy: 1).tap()
 
-    let button = app.navigationBars.buttons.firstMatch
+    button = app.navigationBars.buttons.firstMatch
     if button.exists {
       button.tap()
     }
@@ -76,52 +82,33 @@ class PhyUITests: XCTestCase {
       app.buttons[string].tap()
     }
     
-    takeScreenshot(named: "converter")
-    
-//    app.tabBars.firstMatch.buttons.element(boundBy: 3).tap()
-//
-//    takeScreenshot(named: "reference")
+    takeScreenshot(named: "5_converter")
 
-    app.tabBars.firstMatch.buttons.element(boundBy: 3).tap()
-    
-    app.tables.firstMatch.cells.element(boundBy: 0).tap()
-    
-    app.typeText("2")
-
-//    let nextKey = NSLocalizedString("weiter", comment: "")
-    let nextKey = NSLocalizedString("next", comment: "")
-
-    app.buttons[nextKey].firstMatch.tap()
-    
-    app.typeText("5")
-
-    app.buttons[nextKey].firstMatch.tap()
-    
-    app.typeText("3")
-    
-    app.buttons[nextKey].firstMatch.tap()
-
-    sleep(1)
-    
-    takeScreenshot(named: "tool")
-    
     app.tabBars.firstMatch.buttons.element(boundBy: 0).tap()
     app.tabBars.firstMatch.buttons.element(boundBy: 0).tap()
 
     app.tables.firstMatch.cells.element(boundBy: 2).tap()
 
-    takeScreenshot(named: "chemistry_list")
+    takeScreenshot(named: "6_chemistry_list")
 
     app.tables.firstMatch.cells.element(boundBy: 7).tap()
 
-    takeScreenshot(named: "chemistry_detail")
+    takeScreenshot(named: "7_chemistry_detail")
 
     XCUIDevice.shared.orientation = .landscapeRight
 
     sleep(1)
 
-    takeScreenshot(named: "chemistry_landscape")
+    takeScreenshot(named: "8_chemistry_landscape")
+
+    XCUIDevice.shared.orientation = .portrait
+
+    app.terminate()
+
+    takeScreenshot(named: "9_widgets")
+
   }
+
 }
 
 extension PhyUITests {
