@@ -1263,6 +1263,7 @@
 				German,
 				de,
 				en,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			packageReferences = (
