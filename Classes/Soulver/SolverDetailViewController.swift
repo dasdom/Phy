@@ -50,9 +50,9 @@ class SolverDetailViewController: UITableViewController, UITextFieldDelegate {
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
 
-//    if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-//      SKStoreReviewController.requestReview(in: scene)
-//    }
+    if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+      SKStoreReviewController.requestReview(in: scene)
+    }
   }
   
   // MARK: UITableViewDataSource
