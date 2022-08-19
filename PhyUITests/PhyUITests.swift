@@ -63,7 +63,9 @@ class PhyUITests: XCTestCase {
     textField.tap()
     textField.typeText("0.3")
 
-    app.buttons["Calculate"].tap()
+    app.buttons["Berechnen"].tap()
+
+//    app.buttons["Calculate"].tap()
 
     takeScreenshot(named: "4_formula_calculator")
 

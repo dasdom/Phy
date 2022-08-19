@@ -384,6 +384,7 @@
 "Komponentengleichung"              = "Components Equation";
 "Maximalhöhe (schiefer Wurf)"       = "Maximal Height (Oblique Throw)";
 "Maximalweite (schiefer Wurf)"      = "Maximal Range (Oblique Throw)";
+"Maximalweite"                      = "Maximal Range";
 "Steigzeit (schiefer Wurf)"         = "Rise Time (Oblique Throw)";
 "Wurfdauer (schiefer Wurf)"         = "Throw Time (Oblique Throw)";
 

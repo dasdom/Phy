@@ -258,6 +258,7 @@ extension SolverDetailViewController {
 
     if false == activityItems.isEmpty {
       let activity = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+      activity.popoverPresentationController?.barButtonItem = sender
       self.present(activity, animated: true)
     }
   }
