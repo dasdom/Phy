@@ -35,24 +35,12 @@ class AppCoordinator: Coordinator {
     return navigationController
   }
   
-//  private var calculator: UIViewController {
-//    let viewController = CalculatorViewController()
-//    viewController.tabBarItem = UITabBarItem(title: "Rechner".localized, image: UIImage(systemName: "plusminus"), tag: 2)
-//    return viewController
-//  }
-  
   private var converter: UIViewController {
     let viewController = UIHostingController(rootView: ConverterList())
     viewController.tabBarItem = UITabBarItem(title: "Konverter".localized, image: UIImage(systemName: "arrow.left.arrow.right"), tag: 1)
     return viewController
   }
   
-//  private var reference: UIViewController {
-//    let viewController = ReferenzViewController()
-//    viewController.tabBarItem = UITabBarItem(title: "Referenz".localized, image: UIImage(systemName: "doc.text.magnifyingglass"), tag: 3)
-//    return viewController
-//  }
-
   private var favorites: UIViewController {
     let navigationController = UINavigationController()
     navigationController.navigationBar.prefersLargeTitles = true
@@ -63,13 +51,4 @@ class AppCoordinator: Coordinator {
     navigationController.tabBarItem = UITabBarItem(title: "Lesezeichen".localized, image: UIImage(systemName: "bookmark"), tag: 2)
     return navigationController
   }
-  
-//  private var solver: UIViewController {
-//    let viewController = SolverTableViewController()
-//    viewController.tabBarItem = UITabBarItem(title: "Werkzeuge".localized, image: UIImage(systemName: "wrench.and.screwdriver"), tag: 4)
-//    viewController.title = "Werkzeuge".localized
-//    let navigationController = UINavigationController(rootViewController: viewController)
-//    navigationController.navigationBar.prefersLargeTitles = true
-//    return navigationController
-//  }
 }
