@@ -97,7 +97,9 @@ typedef NS_ENUM(NSInteger, ElementInfoRow) {
             break;
     }
 
-    [cell updateWithText: text];
+    if (text != nil) {
+        [cell updateWithText: text];
+    }
 
     return cell;
 }

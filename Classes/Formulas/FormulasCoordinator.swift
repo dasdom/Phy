@@ -6,7 +6,6 @@ import UIKit
 import SwiftUI
 import MessageUI
 import CommonExtensions
-import Inject
 
 class FormulasCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
   

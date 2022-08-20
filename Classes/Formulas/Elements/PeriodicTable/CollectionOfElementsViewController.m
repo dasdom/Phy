@@ -21,7 +21,7 @@
 @synthesize collenctionView;
 
 - (instancetype)initWithElements: (NSArray<ChemElement *> *)elements {
-    if (self == [super initWithNibName:nil bundle:nil]) {
+    if (self = [super initWithNibName:nil bundle:nil]) {
         [self setElementArray: elements];
     }
     return self;

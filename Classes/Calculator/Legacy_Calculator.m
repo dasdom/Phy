@@ -24,7 +24,7 @@
 - (NSDecimalNumber *)calculateString:(NSString *)calculationString {
     
     NSString *correctedCalculationString = [calculationString stringByReplacingOccurrencesOfString:@"*" withString:DDHTimes];
-    correctedCalculationString = [calculationString stringByReplacingOccurrencesOfString:@"/" withString:DDHDivide];
+    correctedCalculationString = [correctedCalculationString stringByReplacingOccurrencesOfString:@"/" withString:DDHDivide];
     
 	NSMutableString *mutableCalcString = [[NSMutableString alloc] initWithString: correctedCalculationString];
 	
