@@ -44,7 +44,12 @@ extension FormulasCoordinator: TopicViewControllerProtocol {
         let next = SpecialFieldsViewController(style: .insetGrouped, dataSource: dataSource)
         next.title = topic.title.localized
         next.delegate = self
-        presenter.pushViewController(next, animated: true)
+        if let splitViewController = viewController.splitViewController {
+          splitViewController.setViewController(next, for: .supplementary)
+          splitViewController.setViewController(nil, for: .secondary)
+        } else {
+          presenter.pushViewController(next, animated: true)
+        }
       case .elements:
         let elements = formulaStore.elements()
         let dataSource = ChemElementsDataSource(elements: elements)
@@ -76,7 +81,12 @@ extension FormulasCoordinator: SpecialFieldsViewControllerProtocol {
     let next = FormulasViewController(sectionsInSpecialField: specialField.formulaSections, formulaStore: formulaStore)
     next.title = specialField.title.localized
     next.delegate = self
-    presenter.pushViewController(next, animated: true)
+    if let splitViewController = viewController.splitViewController {
+      splitViewController.setViewController(nil, for: .secondary)
+      splitViewController.setViewController(next, for: .secondary)
+    } else {
+      presenter.pushViewController(next, animated: true)
+    }
   }
 
   func showSearch(_ viewController: UIViewController, specialFieldSections: [SpecialFieldSection]) {
@@ -94,7 +104,7 @@ extension FormulasCoordinator: FormulasViewControllerProtocol {
 //      let detail = UIHostingController(rootView: FormulaDetailView(formula: formula))
       detail.title = formula.title?.localized
       detail.delegate = self
-      presenter.pushViewController(detail, animated: true)
+      viewController.navigationController?.pushViewController(detail, animated: true)
     }
   }
 }

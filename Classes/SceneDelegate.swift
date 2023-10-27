@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
       let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
 
-      appCoordinator?.tabBarController.selectedIndex = 2
+      appCoordinator?.tabBarController?.selectedIndex = 2
 
       if let host = components?.host,
          let favoritesCoordinator = appCoordinator?.childCoordinators.first(where: { $0 is FavoritesCoordinator }) as? FavoritesCoordinator {

@@ -65,12 +65,95 @@
               {
                 "id": "FE1731FF-DC25-4EAF-9B0F-5268EB035D17",
                 "title": "2. Newtonsches Gesetz",
-                "imageName": "zweiterNewton"
+                "imageName": "zweiterNewton",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "mechanics_newton_two_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "zweiterNewton"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Abkürzung",
+                    "detailItems": [
+                      {
+                        "title": "KraftAbk",
+                        "imageName": "kraft_abk"
+                      },
+                      {
+                        "title": "ImpulsAbk",
+                        "imageName": "impuls_abk"
+                      },
+                      {
+                        "title": "ZeitAbk",
+                        "imageName": "zeit_abk"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Einheiten",
+                    "detailItems": [
+                      {
+                        "imageName": "kraft_einh"
+                      },
+                      {
+                        "imageName": "impuls_einh"
+                      },
+                      {
+                        "imageName": "zeit_einh"
+                      }
+                    ]
+                  }
+                ]
+
               },
               {
                 "id": "9CE3C82F-A731-4952-8B1C-59F888F9D050",
                 "title": "3. Newtonsches Gesetz",
-                "imageName": "dritterNewton"
+                "imageName": "dritterNewton",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "mechanics_newton_three_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "imageName": "dritterNewton"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Abkürzung",
+                    "detailItems": [
+                      {
+                        "title": "KraftAbk",
+                        "imageName": "kraft_abk"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Einheiten",
+                    "detailItems": [
+                      {
+                        "imageName": "kraft_einh"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -5044,7 +5127,7 @@
                       },
                       {
                         "title": "FederkonstanteEinh",
-                        "imageName": "federkonstante_einh"
+                        "imageName": "spring_constant_unit"
                       }
                     ]
                   }
@@ -5476,7 +5559,7 @@
                       },
                       {
                         "title": "FederkonstanteEinh",
-                        "imageName": "federkonstante_einh"
+                        "imageName": "spring_constant_unit"
                       },
                       {
                         "title": "AuslenkungEinh",

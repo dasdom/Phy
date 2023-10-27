@@ -402,8 +402,8 @@
 
 // MARK: harmonischer Oszillator
 "harmonischer Oszillator"                       = "Harmonic Oscillator";  //Sektion Titel
-"Differentialgleichung (harmonischer Oszillator)" = "Differential Equation (Harmonic Oscillator";
-"Bewegungsgleichung (harmonischer Oszillator)"  = "Equation of Motion (Harmonic Oscillator";
+"Differentialgleichung (harmonischer Oszillator)" = "Differential Equation (Harmonic Oscillator)";
+"Bewegungsgleichung (harmonischer Oszillator)"  = "Equation of Motion (Harmonic Oscillator)";
 "Periodendauer (harmonischer Oszillator)"       = "Periodic Time (Harmonic Oscillator)";
 "Periodendauer (Fadenpendel)"                   = "Periodic Time (Pendulum)";
 "Kreisfrequenz"                                 = "Angular Frequency";

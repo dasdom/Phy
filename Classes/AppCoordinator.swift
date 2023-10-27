@@ -8,19 +8,30 @@ import SwiftUI
 class AppCoordinator: Coordinator {
   
   private let window: UIWindow
-  let tabBarController: UITabBarController
+  var tabBarController: UITabBarController?
+  var splitViewController: UISplitViewController?
   private(set) var childCoordinators: [Coordinator] = []
   lazy var formulaStore: FormulaStoreProtocol = FormulaStore()
   
   init(window: UIWindow) {
     self.window = window
-    self.tabBarController = UITabBarController()
+
+    if window.traitCollection.horizontalSizeClass == .regular {
+      splitViewController = UISplitViewController(style: .tripleColumn)
+    } else {
+      tabBarController = UITabBarController()
+    }
   }
   
   func start() {
-    tabBarController.viewControllers = [formulas, converter, favorites]
-    
-    window.rootViewController = tabBarController
+    if window.traitCollection.horizontalSizeClass == .regular {
+      splitViewController?.setViewController(formulas, for: .primary)
+      window.rootViewController = splitViewController
+      splitViewController?.show(.primary)
+    } else {
+      tabBarController?.viewControllers = [formulas, converter, favorites]
+      window.rootViewController = tabBarController
+    }
     window.makeKeyAndVisible()
   }
 

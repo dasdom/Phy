@@ -775,7 +775,6 @@
 + (NSString *)stringFromResult:(NSDecimalNumber *)decimalNumber {
   
   NSNumberFormatter* numberFormatter = [[NSNumberFormatter alloc] init];
-  numberFormatter.decimalSeparator = @".";
   numberFormatter.maximumSignificantDigits = 10;
   
   double doubleValue = [decimalNumber doubleValue];

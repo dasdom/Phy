@@ -111,6 +111,16 @@ class PhyUITests: XCTestCase {
 
   }
 
+  func test_existence() {
+    let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+    let appIcon = springboard.icons["Settings"]
+    print(springboard.debugDescription)
+    if appIcon.exists {
+      print("YEAH!")
+    } else {
+      XCTFail()
+    }
+  }
 }
 
 extension PhyUITests {
@@ -139,3 +149,5 @@ extension PhyUITests {
     add(screenshotAttachment)
   }
 }
+
+

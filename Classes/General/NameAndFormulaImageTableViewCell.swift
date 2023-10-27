@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import OSLog
 
 class NameAndFormulaImageTableViewCell: DDHBaseTableViewCell<FormulaCellProtocol> {
   
@@ -75,7 +76,7 @@ class NameAndFormulaImageTableViewCell: DDHBaseTableViewCell<FormulaCellProtocol
     }
     
     guard let image = UIImage(named: item.imageName) else {
-      print("image missing: \(item.imageName)")
+      Logger.details.debug("image missing: \(item.imageName)")
       return
     }
     formulaImageView.image = image

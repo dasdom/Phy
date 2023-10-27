@@ -5,6 +5,7 @@
 import UIKit
 import CommonExtensions
 import StoreKit
+import OSLog
 
 enum AngleType : Int {
   case rad
@@ -229,12 +230,12 @@ extension SolverDetailViewController {
         if let inputType = input.inputType, inputType == .angleType {
           calculator.deg = (angleType == .deg)
         } else {
-          let userInput = inputValues[idx]
+          let userInput = inputValues[idx].replacingOccurrences(of: ",", with: ".")
           formulaString = formulaString.replacingOccurrences(of: "#\(input.id)", with: userInput)
         }
       }
       
-      print("formulaString: \(formulaString)")
+      Logger.solver.debug("formulaString: \(formulaString)")
       let result = calculator.calculate(formulaString)
       results.append(Legacy_Calculator.string(fromResult: result))
     }
