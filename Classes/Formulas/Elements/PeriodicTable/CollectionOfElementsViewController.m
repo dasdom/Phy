@@ -30,7 +30,7 @@
 #pragma mark - View lifecycle
 
 - (void)loadView {
-    collenctionView = [[CollectionOfElementsView alloc] initWithFrame: [[UIScreen mainScreen] bounds] andElementsArray: [self elementArray]];
+    collenctionView = [[CollectionOfElementsView alloc] initWithFrame: CGRectZero andElementsArray: [self elementArray]];
     [collenctionView setDelegate: self];
     [self setView: collenctionView];
 }

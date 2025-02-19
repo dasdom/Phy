@@ -3,7 +3,9 @@
 //
 
 import Foundation
+#if !os(visionOS)
 import WidgetKit
+#endif
 
 protocol FormulaStoreProtocol {
   func specialFieldSections(_ type: TopicType) -> [SpecialFieldSection]
@@ -89,7 +91,9 @@ class FormulaStore: FormulaStoreProtocol {
     }
     writeFavorites()
 
+    #if !os(visionOS)
     WidgetCenter.shared.reloadAllTimelines()
+    #endif
   }
 
   func favoritesSection(from sections: [FormulaSection], favoritesUUID: UUID) -> FormulaSection? {

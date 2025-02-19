@@ -68,15 +68,17 @@ class SolverDetailInputCell: DDHBaseTableViewCell<SolverInput> {
 //      textField.widthAnchor.constraint(greaterThanOrEqualToConstant: 20),
       ])
     
-    let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
+    let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 300, height: 44))
     toolbar.items = [
       UIBarButtonItem(title: "e", style: .plain, target: nil, action: .addE),
       UIBarButtonItem(image: UIImage(systemName: "plus.slash.minus"), style: .plain, target: nil, action: .togglePlusMinus),
       UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
       UIBarButtonItem(title: "weiter".localized, style: .plain, target: nil, action: .next)
     ]
-    
+
+    #if !os(visionOS)
     textField.inputAccessoryView = toolbar
+    #endif
   }
   
   required init?(coder aDecoder: NSCoder) {fatalError()}

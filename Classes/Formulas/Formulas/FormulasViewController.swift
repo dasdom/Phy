@@ -44,7 +44,7 @@ class FormulasViewController: UIViewController {
   }
 
   private func configureHierarchy() {
-    collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: createLayout())
+    collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
     collectionView.translatesAutoresizingMaskIntoConstraints = false
     collectionView.backgroundColor = UIColor.systemBackground
     collectionView.delegate = self
@@ -118,7 +118,8 @@ class FormulasViewController: UIViewController {
     }
 
     dataSource = UICollectionViewDiffableDataSource<Section, Formula>(collectionView: collectionView, cellProvider: { collectionView, indexPath, formula in
-      return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: formula)
+      let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: formula)
+      return cell
     })
 
     let headerRegistration = UICollectionView.SupplementaryRegistration<FormulaHeaderView>(elementKind: "header") { headerView, elementKind, indexPath in

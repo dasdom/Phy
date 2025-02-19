@@ -10,7 +10,7 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
   var imageHeightConstraint: NSLayoutConstraint?
   var imageWidthConstraint: NSLayoutConstraint?
   let toolsIndicatorImageView: UIImageView
-  
+
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     
     detailImageView = UIImageView(frame: .zero)
@@ -18,7 +18,7 @@ class FormulaDetailCell: DDHBaseTableViewCell<FormulaDetailItem> {
     toolsIndicatorImageView = UIImageView(image: UIImage(systemName: "wrench.and.screwdriver"))
     toolsIndicatorImageView.translatesAutoresizingMaskIntoConstraints = false
     toolsIndicatorImageView.isHidden = true
-    
+
     super.init(style: style, reuseIdentifier: reuseIdentifier)
 
     selectionStyle = .none

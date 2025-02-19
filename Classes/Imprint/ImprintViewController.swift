@@ -8,7 +8,7 @@ class ImprintViewController: UIViewController {
 
   override func loadView() {
     
-    let imprintView = ImprintView(frame: UIScreen.main.bounds)
+    let imprintView = ImprintView(frame: .zero)
     imprintView.textView.text = """
     Impressum
     Angaben gemäß § 5 TMG

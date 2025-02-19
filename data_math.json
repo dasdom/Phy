@@ -1888,6 +1888,220 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "52E007AE-E2AE-4D6A-BFC8-3EB06A97D146",
+            "title": "Zylinder",
+            "formulas": [
+              {
+                "id": "67EDBC57-2AE4-4E2B-A118-63F720E92033",
+                "title": "Volumen",
+                "imageName": "geometry_cylinder_volume",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cylinder_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Volumen",
+                        "imageName": "geometry_cylinder_volume",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r^2 × #h",
+                            "imageName": "geometry_cylinder_volume"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "VolumenAbk",
+                        "imageName": "capital_v_colon"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_colon"
+                      },
+                      {
+                        "title": "HoeheAbk",
+                        "imageName": "h_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "754DF1D0-DEAC-4377-8170-993D2868ACB6",
+                "title": "Oberfläche",
+                "imageName": "geometry_cylinder_surface",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cylinder_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Oberfläche",
+                        "imageName": "geometry_cylinder_surface",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × 𝜋 × #r × (#r + #h)",
+                            "imageName": "geometry_cylinder_surface"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_colon"
+                      },
+                      {
+                        "title": "HoeheAbk",
+                        "imageName": "h_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "C547B6D7-AC53-45B4-B164-C2274A94FDB7",
+                "title": "Grundfläche",
+                "imageName": "geometry_cone_base_area",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cylinder_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Grundfläche",
+                        "imageName": "geometry_cone_base_area",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "𝜋 × #r^2",
+                            "imageName": "geometry_cone_base_area"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "GrundflaecheAbk",
+                        "imageName": "capital_g_colon"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_colon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "0C37168A-8923-4215-A81D-05B27D604CEC",
+                "title": "Mantelfläche",
+                "imageName": "geometry_cylinder_mantle_surface",
+                "details": [
+                  {
+                    "detailItems": [
+                      {
+                        "type": "image",
+                        "imageName": "geometry_cylinder_image"
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "Mantelfläche",
+                        "imageName": "geometry_cylinder_mantle_surface",
+                        "inputs": [
+                          {
+                            "id": "r",
+                            "imageName": "r_colon"
+                          },
+                          {
+                            "id": "h",
+                            "imageName": "h_colon"
+                          }
+                        ],
+                        "results": [
+                          {
+                            "formula": "2 × 𝜋 × #r × #h",
+                            "imageName": "geometry_cylinder_mantle_surface"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "detailItems": [
+                      {
+                        "title": "MantelflaecheAbk",
+                        "imageName": "capital_m_colon"
+                      },
+                      {
+                        "title": "RadiusAbk",
+                        "imageName": "r_colon"
+                      },
+                      {
+                        "title": "HoeheAbk",
+                        "imageName": "h_colon"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
